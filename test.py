@@ -1,8 +1,6 @@
 from mvlocscript.ftl import parse_ftlxml, ftl_xpath_matchers
 from mvlocscript.xmltools import xpath, UniqueXPathGenerator
 from mvlocscript.potools import readpo, writepo, StringEntry, parsekey
-from pathlib import Path
-from pprint import pprint
 from json5 import load
 
 #'removeCrew', 'autoReward', 'crewMember', 'reveal_map', 'modifyPursuit', 'item_modify', 'ship'
@@ -37,14 +35,14 @@ class ChoiceTag():
             if tag.tag == 'removeCrew':
                 clonetag = xpath(tag, './clone')
                 if len(clonetag) != 1:
-                    info.append('Lose your crew')
-                    break
+                    info.append('Lose your crew(?)')
+                    continue
                 if clonetag[0].text == 'true':
                     info.append('Lose your crew(clonable)')
                 elif clonetag[0].text == 'false':
                     info.append('Lose your crew(UNCLONABLE)')
                 else:
-                    info.append('Lose your crew')
+                    info.append('Lose your crew(?)')
             
             elif tag.tag == 'crewMember':
                 race = tag.attrib.get('class', '?').replace('_', ' ').title()
@@ -92,7 +90,6 @@ for xmlpath in config['filePatterns']:
         tag.init_childChoiceTags()
     for tag in choiceTag_map.values():
         tag.set_additional_info()
-    #pprint([tag._additional_info for tag in choiceTag_map.values()])
     textTag_map = {choicetag.get_textTag_uniqueXPath(): choicetag for choicetag in choiceTag_map.values()}
     
     dict_original, _, _ = readpo(f'locale/{xmlpath}/en.po')
