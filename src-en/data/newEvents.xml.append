@@ -1,0 +1,158 @@
+﻿<FTL>
+<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
+
+<mod:findName type="eventList" name="NEBULA">
+  <mod:removeTag/>
+</mod:findName>
+<event name="NEBULA">
+	<!--<loadEvent ignoreUnique="true">NEBULA_EXIT_FILLER_LIST</loadEvent>-->
+	<loadEvent>NEBULA_EXIT_FILLER_LIST</loadEvent>
+</event>
+
+<!--NEBULA EVENT LISTS IN events_nebula-->
+
+<!--    
+	  ***********
+       TEXT LISTS			  
+	  ***********		
+-->
+
+<textList name="TIPS_LIST"> <!--make these accessible on demand/when relevant rather than random?-->
+	<text>Tip: You can press the "toggle button" on the top left side of your screen to change the mode of your toggle or amp equipment at any point - even in battle! It'll cost a drone-part to redeploy drones however.</text>
+	<text>Tip: The on-board lab can be accessed in the storage menu and can upgrade individual species or even subtypes when upgraded. You can install the lab for free with an upgraded Medbay!</text>
+	<text>Tip: You don't need items equipped for them to trigger blue options! If you think something might be useful, hang on to it for the future!</text>
+	<text>Tip: Hostile Autos, Hazards, or Zoltan Shielded enemies will never spawn in sector 1. However, make sure you can handle taking down a harder elite ship by the time you reach the exit!</text>
+	<text>Tip: Sector 6 and 7 will always be a unique sector. If you're hunting for unlocks for unique crew, make sure you can make it all the way there!</text>
+	<text>Tip: You may encounter more important Quests or locations with a [!] marker on your journeys. Sectors that contain this label in their name are unique, and Quests that have [!] cannot be overtaken by the Rebel fleet as long as they are active on the beacon!</text>
+	<text>Tip: Hostile stores might not always be immediately willing to trade with you. See what kind of store it is and try to bring crew for blue options if you can! Also remember, attacking stores won't make them want to sell to you!</text>
+	<text>Tip: Nearly all stores will always spawn with a section labeled "Essential Systems", where systems like Shields, Weapons, Oxygen, etc will be sold separately from regular systems. If you don't have Shields or Oxygen installed, they will always be available!</text>
+	<text>Tip: On the bottom right side of the enemy box some enemies will have special icons you can hover over to find out about special characterstics of that fight.</text>
+	<text>Tip: Later sectors will have a higher and higher chance to spawn random boss enemies called Renegade Cruisers. They will sometimes drop special loot unique to them if you manage to defeat them!</text>
+	<text>Tip: Read the event text! There are many new events and interactions in Multiverse different from Vanilla, and important details in events can be the secret to winning!</text>
+	<text>Tip: The Traveling Merchant will appear randomly but always spawns in sectors 1 and 8. Unless you choose to make him mad, he'll always present an opportunity to trade or sell resources. Sometimes he'll even tell you a story!</text>
+	<text>Tip: Keep an eye out for enemies with a "high threat level" indicator. This means they're a boss enemy! Across all runs their systems, crew, and weapons will remain consistent except for their Shields, which will still scale with sector.</text>
+	<text>Tip: Unique sectors will often have a loot transport encounter which will try to run if you choose to fight it. If you can crew kill, the ship will drop a special loot item that's an upgraded version of a regular weapon.</text>
+	<text>Tip: Unique sectors will often have a Trapper or Minelayer encounter. These enemies are optional and can be deadly, but will drop a Mine Launcher when defeated. Mine Launchers can be used as weapons or to delay the fleet!</text>
+	<text>Tip: Not all storage interactions can be performed using the storage button. Sometimes they will require a storage check in an event. Visiting stores, ignoring events, or revisiting old beacons will usually provide these opportunities!</text>
+	<text>Tip: You may sometimes stumble across special ruin beacons, which will appear unmarked on the map on most runs. Interacting with these ruins will sometimes provide you with special "Aether Tech", strong equipment that also provides new internal upgrade opportunities.</text>
+	<text>Tip: Some ships start with augments marked with [X], meaning they're external versions of existing internal upgrades. You can use these to install the internal upgrade for free, or keep them external - either to bypass any mutually exclusive upgrades they might have, or to stack effects further than normal.</text>
+	<text>Tip: Make sure you read the stats of the weapons and drones you find in stores carefully! Many weapons are different than their Vanilla counterparts and may not be what you expect.</text>
+	<text>Tip: Not every ship is made equal. Some are very strong, while others very weak. There's a large variety of playstyles and different starting advantages to try out as you unlock more and more ships!</text>
+	<text>Tip: Before every sector you will get an Atlas menu that provides additional information. If you find it overwhelming, don't worry about it for now. However, the information here can be very useful to finding potential unlocks if there are any!</text>
+	<text>Tip: Not all that glitters is gold. And in that same vein, not all that's blue is good. Make sure you read blue options carefully and understand the context - they aren't always beneficial, and some can even be dastardly!</text>
+	<text>Tip: Most sectors are protected by guard ships. Friendly guards usually won't bother you, but hostile guards might not be so benevolent. Blue options or bribes are good ways to get past them, but crew killing guards will always provide an item drop. Just be careful about reinforcements!</text>
+	<text>Tip: Remember that not all differences in crew of the same species are cosmetic! Most species of crew have a number of subtypes with different stats and abilities. You can always assume a subtype inherits the stats of its normal version unless its description explicitly says otherwise.</text>
+	
+	<text>Did You Know? Orchids replenish oxygen fast enough to replace an Oxygen system if you open your doors! However, they will not be able to fill depressurized ships (those without Life Support installed).</text>
+	<text>Did You Know? The Travelling Merchant can sometimes offer very special and powerful trades outside of sector 1, including loot that is normally exclusive to special boss fights or events.</text>
+	<text>Did You Know? There's more than one ending you can get in Multiverse! The game doesn't just end with defeating the Flagship, there's plenty more secrets to explore.</text>
+	<text>Did You Know? Kernel, Crystal, and Spore weapons have special elite variants of their regular versions. These are harder to get but also much stronger!</text>
+	<text>Did You Know? You can unlock all of the Vanilla ships, as faithful as possible to their original versions, as well as the new versions. You can find them all on page 15!</text>
+	<text>Did You Know? After your first run that gets to sector 8, you'll unlock the option to change your challenge level each run. These have many effects that can customize your run's difficulty beyond the standard hangar difficulties.</text>
+	<text>Did You Know? In the equipment grab at the start, the resources and crew items will always give the same thing. However, the weapon option will give you a choice between a basic Ion, Laser, and Missile!</text>
+	
+	<!--REMOVED FOR NOW
+	<text>TIP (Crew): Humans - Humans can perform any task acceptably, whether it be repairs, combat, or manning systems. They're great for when you need crew to manage many different tasks, or when you need some cannon fodder.</text>
+	<text>TIP (Crew): Engi - Engi are excellent repairmen, but they're terrible at fighting. Make sure you have a good fighting team to protect your Engi repairmen.</text>
+	<text>TIP (Crew): Separatist Engi - Separatists are more versatile than Harmony Engi, being a little better in combat than regular Engi but still less than most crew.</text>
+	<text>TIP (Crew): Zoltan - Zoltans are a niche race: they can extend your reactor power past the usual maximum and provide ion immunity to the system they're in. You can also make them go boom if you want.</text>
+	<text>TIP (Crew): Mantis - Mantis are some of the best fighters in the galaxy, but they can't do much in terms of repairs. Make sure you have a staff of good repairmen as backup.</text>
+	<text>TIP (Crew): Rockmen - Rockmen are great for deterring fires or boarding teams. Their large amounts of health means they can tank a lot of damage, but try not to move them around too much because of their slow movement speed.</text>
+	<text>TIP (Crew): Lost Sun Commandos - The Lost Sun have embraced the ways of fire. These well trained Rockmen excel at putting out fires but move just as slow as regular Rockmen.</text>
+	<text>TIP (Crew): Crystals - The Crystals are a very powerful, though reclusive, race. They need less oxygen and have more health, and can even generate a thick wall of crystals to trap crew.</text>
+	<text>TIP (Crew): Slugs - Slugs are tricky and deceptive. They make excellent pilots as they are completely immune to mind control.</text>
+	<text>TIP (Crew): Orchids - Orchids are very interesting aliens, capable of refilling the oxygen in their current room. The ship must have a life support system, but as long as it does, a single Orchid is able to outperform it!</text>
+	<text>TIP (Crew): Ghosts - Ghosts make great repairmen in dangerous situations, apart from Vagabond variants that are more hazardous. They are completely immune to suffocation and fires, and they can pass through doors, even if they're hacked or upgraded.</text>
+	<text>TIP (Crew): Lanius - Lanius are great for boarding or deterring boarders, as they drain oxygen from their current room. Just be careful about keeping them with your other aerobic crew.</text>
+	<text>TIP (Crew): Skills - Remember that every crew can learn certain skills. The more you have them do a certain task, the better they get at it.</text>
+	<text>TIP (Crew): Elite Crew - Most races have an elite variant. They're not easy to get but they have heavily buffed stats and sometimes even unique abilities! The easiest way to get them is to head to their Homeworld sector and look out for certain events.</text>
+	
+	<text>TIP (Faction): Civilians - Civilians aren't the best armed, and sometimes their ships don't even have weapons! You can always kill them of course, for low yielding rewards, but usually it's better to just help them out. Plus, you'll feel better about it too.</text>
+	<text>TIP (Faction): The Militiamen - The Militia is a Civilian managed military that protects Civilian sectors when the Federation cannot. They're serious folks, but they'll usually be happy to see you.</text>
+	<text>TIP (Faction): The Federation - The Federation may be in disrepair because of the Rebellion, but it's far from gone. You're bound to encounter plenty of helpful Federation ships. Just make sure they are who they say they are.</text>
+	<text>TIP (Faction): The Rebellion - The main threat to the Federation. It's highly unlikely you haven't heard of the Rebels. Every Rebel you kill makes the Galaxy a better place, but don't abandon your morals in the process.</text>
+	<text>TIP (Faction): Pirates - Pirates use stolen ships from other factions, but with crew which varies. Make sure you can deal with the different kinds of ships they may throw at you!</text>
+	<text>TIP (Faction): Slavers - Slavers are specialized pirates who, as you could guess, deal in the Galactic slave trade. You can often times purchase crew from these ships, but not every encounter with them will be friendly.</text>
+	<text>TIP (Faction): Mercenaries - Mercenaries work many different odd jobs, and hold no allegiances. Anyone can be a client, as long as you have the scrap required.</text>
+	<text>TIP (Faction): Smugglers - To Smugglers, everything and everyone is a chance for a profit. So long as you can offer something of value to Smugglers, they will be of little threat to you.</text>
+	<text>TIP (Faction): Rebel Auto-Ships - Rebel Auto-Ships are just as deadly as their manned ships. They're very weak early on but as you travel through the sectors they will get stronger and stronger. It's impossible to crew kill them, so make sure you have enough weapons to get through their defenses.</text>
+	<text>TIP (Faction): Federation Auto-Ships - The Federation has employed the use of basic Auto-ships for providing support. They're far less advanced than the Rebel AI, but they can still provide aid when necessary.</text>
+	<text>TIP (Faction): Zoltan Auto-Ships - The Zoltan Automated Fleet patrols their sectors to keep the peace. Make sure you're following their laws whenever one is nearby and there shouldn't be any issues.</text>
+	<text>TIP (Faction): Coalition - The Coalition is an alliance between the Slugs, Mantises, Rockmen, and Leeches. Their ships mix the technologies and tactics of all four races. Make sure you're prepared for handling this threat before entering their sectors.</text>
+	<text>TIP (Faction): Engi Harmony - The Engi are controlled by a single entity known as the Harmony. As long as you stay on its good side, the Engi will greet you as a friend.</text>
+	<text>TIP (Faction): Engi Separatists - The Separatists are Engi who managed to break free of the Harmony's control. They like to travel solo and their ships will usually have very few crew on-board.</text>
+	<text>TIP (Faction): Zoltan Republic - Zoltan ships are protected by powerful Zoltan Shields, which will protect them from most of your usual defense penetrating tactics.</text>
+	<text>TIP (Faction): The Duskbringers - The Duskbringers are a radical group of Zoltan who seek out the Federation's downfall. They're on generally neutral terms with the Rebellion and are protected by powerful Zoltan shields.</text>
+	<text>TIP (Faction): Zoltan Monks - The Zoltan Monks are dedicated to non-violence, refusing to harm others. Their ships usually don't have weapons, but when they do, it's only ion. You'll find them most often in their refuge in the nebula.</text>
+	<text>TIP (Faction): Mantis Hive - The Mantis Hive is no ally of yours. Before entering Mantis sectors, always make sure you can protect yourself from boarders, and maybe consider investing in a boarding team of your own.</text>
+	<text>TIP (Faction): Mantis Suzerains - The Mantis Suzerains are the leaders of the Mantis Hive. Their ships use advanced (stolen) drone tech and boarding equipment, and are piloted by Suzerain crew, very deadly warriors.</text>
+	<text>TIP (Faction): Free Mantis - The Free Mantis are allies of the Federation. They're not very intelligent and are very extreme about their devotion to you, so just be careful that you're always friendly to them, or they'll think you're a Rebel spy and cut off your head.</text>
+	<text>TIP (Faction): The Rock Theocracy - The Rockmen are devoutly religious folks. The Rockmen Elders will tolerate your presence in their territory so long as you don't challenge their leadership or their laws.</text>
+	<text>TIP (Faction): The Lost Suns - The Federation has been backing the Lost Suns for some time now, in hopes that they will bring about the downfall of the Coalition. They're obsessed with the holy fires and will stop at nothing to destroy the Rock Elders. Just stay on their good side, and everything will be fine.</text>
+	<text>TIP (Faction): Slug Kleptocracy - It takes a species of thieves to find pride in being officially deemed a Kleptocracy. If there was ever such a race, it would be the Slugs. Trust no Slug you meet unless you have the scrap to back it, and don't be suprised when that scrap is stolen too.</text>
+	<text>TIP (Faction): The Lanius Swarm - It's sometimes surprising that the Lanius are sentient. Having just awaken from a century long hibernation, the Lanius have assimilated once again into the Galactic scene.</text>
+	<text>TIP (Faction): The Crystals - After the discovery of the Multiverse drive, it didn't take long for the Crystal Homeworlds in nearly every reality to be swarmed by pioneers. The Crystals were forced to rejoin the Galactic scene and construct new sectors.</text>
+	<text>TIP (Faction): The Ghosts - No, the ghosts are not actual paranormal spirits. The striking resemblance to the undead that this gaseous race bears is from where their nickname originates. They populate stolen ships from other factions, with slight modifications.</text>
+	
+	<text>TIP (Ship Class): Trappers/Minelayers - These specialized ships wield only Mine Launchers. You won't encounter them as often as other ships, but if you can defeat them, you may be able to steal their weapons.</text>
+	<text>TIP (Ship Class): Strike Fighters - Strike Fighters are specialized stealth ships. They will never have shields, but usually have very strong cloaking systems and high evasion.</text>
+	<text>TIP (Ship Class): Guards - Guard ships are usually encountered at the entrance beacon to faction controlled sectors. Depending on the faction's friendliness with the Federation determines whether or not you can pass through without a fight.</text>
+	<text>TIP (Ship Class): Stations - Stations never have any evasion, meaning your shots will never miss. However, they are typically protected by advanced defensive systems and can wield impressive arsenals.</text>
+	<text>TIP (Ship Class): Transports - The Homeworlds or Coreworlds of any faction will always have a special Transport ship moving around. Capture it without damaging the cargo and you'll find specialized equipment!</text>
+	<text>TIP (Ship Class): Dropships - These ships are centralized around boarding. They will always have a teleporter and usually high level medical systems.</text>
+	<text>TIP (Ship Class): Battleships - Battleships are incredibly strong ships that can wield up to 6 different weapons at a time! You won't see them until much further into your journey.</text>
+	<text>TIP (Ship Class): Motherships - Motherships are very strong ships centred on drone tech. Their weapons are usually weaker but their onslaught of drones is nothing to laugh at.</text>
+	<text>TIP (Ship Class): Riggers - Riggers are a common class of ship that wield drone systems. They're roughly as strong as a fighter but serve more niche purposes.</text>
+	<text>TIP (Ship Class): Outriders - Outriders are roughly as strong as Scouts, but will always have upgraded piloting.</text>
+	<text>TIP (Ship Class): Shuttles - Shuttle ships are extremely small and weak, and sometimes don't even come equipped with weapons. They won't put up much of a fight.</text>
+	<text>TIP (Ship Class): Pickets - Pickets are massive ships, usually the strongest among any fleet. They're extremely well armed and protected, but luckily can't be found until you reach the final few sectors.</text>
+	<text>TIP (Ship Class): Jailers - Jailers are special ships built for the construction of prisoners. Taking these ships hostage may present you with the opportunity to rescue their prisoners for your own benefit.</text>
+	<text>TIP (Ship Class): Protectors - Protector ships have extremely advanced defenses, but mediocre weapon set-ups.</text>
+	<text>TIP (Ship Class): Skirmishers - Skirmishers are tiny versions of fighters, usually wielding similar yet weaker equipment.</text>
+	<text>TIP (Ship Class): Bombards - Bombards are tiny versions of bombers, usually wielding similar yet weaker equipment.</text>
+	<text>TIP (Ship Class): Elites - Many different factions have additional fleets of Elite class ships. They are much stronger and can pack a serious punch, but usually lead to even greater rewards when defeated.</text>
+	<text>TIP (Ship Class): MFK Aces - No regular ship can compare to the power of an MFK Ace. These are the strongest ships the Rebel fleet has to offer besides the Flagship itself. Very rarely you'll find them in the Rebel fleet, and you'll get extra rewards for killing them, which can extend to delaying the Rebel Fleet!</text>
+	<text>TIP (Ship Class): Auto-Ships - The Rebellion aren't the only faction with Automated vessels. The Federation and Zoltan fleets also consist of AI ships!</text>
+	
+	<text>TIP (Technology): Cealaforming - Cealaforming is technology used by the Slugms and the Coalition. It involves the transportation of nebula gasses to new locations to create artificial nebula beacons.</text>
+	<text>TIP (Technology): Combat Augments - Combat Augments can be used before any fight, including the Flagship, for different effects, usually to limit enemy systems. They're guaranteed to work as long as the enemy has the system in question, but will use some reactor power of your own.</text>
+	<text>TIP (Technology): Anti-Virus - The Anti-Virus augment can come in handy when dealing with hackers or slugs who try to shut down your systems. It doesn't cost any power, either!</text>
+	<text>TIP (Technology): Magnetic Arm - The Magnetic arm isn't nearly as efficient as regular scrap recovery arms, but they work much faster. Fast enough that you might even be able to salvage additional supplies when stuck in the Rebel Fleet!</text>
+	<text>TIP (Technology): Emergency Manual - The Emergency Manual augment provides you with additional pre-fight options like crafting fuel, salvaging scrap, or detonating a massive amount of explosives!</text>
+	<text>TIP (Technology): Zoltan Deleter - It's officially considered a war crime to use this devastating beam against any race other than the Zoltans. It's perfectly fine to kill the green energy dudes though.</text>
+	<text>TIP (Technology): Conservative Weapons - Conservative weapons require no power on their own, but rather feed off of power leaks in the weapon system. This has two downsides, at least one other weapon must be powered, and they have a much longer cooldown.</text>
+	<text>TIP (Technology): Recycler Weapons - Only regular ammunition consuming weapons come in recycler form. They synthesize ammunition from worthless junk, meaning they use no missiles to fire. However, they take much longer to charge.</text>
+	
+	<text>TIP (Weapons): Lasers - Lasers are a staple weapon of practically any ship. They're excellent for damage and penetrating defenses, and very reliable.</text>
+	<text>TIP (Weapons): Missiles - Missile weapons consume ammunition but pierce all shield layers. They're very niche weapons that can do a lot of damage, but every shot comes at a price.</text>
+	<text>TIP (Weapons): Beams - Beams never miss their target, and can hit multiple systems as well. They're extremely powerful, but struggle at taking down shields.</text>
+	<text>TIP (Weapons): Ions - Ions do no physical damage but can temporarily shut down systems.</text>
+	<text>TIP (Weapons): Bombs - Bombs pierce all shields, use ammunition, and do only system or crew damage. They're useful utilities that provide a unique strategic advantage against some ships, but cant kill most ships on their own.</text>
+	<text>TIP (Weapons): Energy Cannons - Energy cannons are a mix between ion and hull damage. This makes them extremely good at taking down shields, especially Zoltan shields.</text>
+	<text>TIP (Weapons): Pinpoint Weapons - Pinpoints are tiny Beam weapons that can only hit one room at a time. However, they can never miss and do more damage than usual Beam weapons do, as well as have a high breach chance.</text>
+	<text>TIP (Weapons): Mine Launchers - Mines can't be found in stores due to a shared hatred of them by most people. However, some specialized ships called Trappers can be found, and when defeated, will drop Mine Launcher tech that you can use. Or more likely, sell.</text>
+	<text>TIP (Weapons): Flak Cannons - Flak cannons shoot large chunks of worthless junk at the enemy ship, and are an effective way of taking down shields quickly.</text>
+	<text>TIP (Weapons): Crystal Guns - The Crystal race's specialized Crystal weapons shoot special projectiles that can pierce 1 shield each, and require no ammunition to use.</text>
+	<text>TIP (Weapons): Kernel Launchers - Kernels are the Orchid race's weapon of choice. They require missiles to use, but pierce all shields and have a chance to not consumme ammo.</text>
+	<text>TIP (Weapons): Scanner - The Scanner does no damage of any kind, but can temporarily reveal rooms. It's ineffective on most ships, but it can be useful if you have no sensors or are stuck in a nebula.</text>
+	
+	<text>TIP (General): Surrenders - Sometimes, a special surrender event will pop up. Every faction has its own list of unique surrenders that can sometimes occur.</text>
+	<text>TIP (General): Leftover Salvage - Occasionally when a ship escapes, wreckage from the fight will be left behind that you can salvage. It won't be much, but it's better than nothing.</text>
+	<text>TIP (General): Socializing - At empty beacons you can talk with your crew! Often times it'll just be useless chit-chat, but it is a free action.</text>
+	<text>TIP (General): Reinforcements - After killing guard ships, you might find yourself being hunted by additional reinforcements later on in the sector. Be sure to watch your back!</text>
+	<text>TIP (General): Jobs - As captain of this vessel, it's your task to make sure your crew are being productive. At empty beacons you are able to assign your crew to certain tasks.</text>
+	<text>TIP (General): Minibosses - Every Homeworld or Coreworld sector has a special miniboss event. It's always optional, and sometimes requires special blue option equipment. If you can defeat the powerful ship, you'll get insane rewards and sometimes even unique equipment. Minibosses will always be the same on any run, so you can master a strategy against them.</text>
+	<text>TIP (General): Pre-fight Preparations - Before every fight you will have a few options to make repairs or create supplies. It's not efficient scrap wise, but it can be life saving in some circumstances.</text>
+	<text>TIP (General): Special Augments - Some events give special augments that have no functional purpose other than to be sold or transported to a different location.</text>
+	<text>TIP (General): Loot - Some special transport encounters drop specialized weapons or drones. They're similar to regularly occurring equipment, but with a special modifier. They can do all kinds of things, like additional lockdown or piercing Zoltan shields!</text>
+	<text>TIP (General): Federation Outposts - Most peaceful sectors can sometimes host a Federation outpost. You'll be able to see these beacons from anywhere on the map, and they will provide free supplies or repairs.</text>
+	<text>TIP (General): Homeworlds, Coreworlds, and Strongholds - Many factions have their own "unique" sector that will only ever occur once. These sectors are generally more dangerous, even the peaceful ones, but have special loot transports, elite encounters, and minibosses with massive rewards.</text>
+	
+	<text>TIP (Last Stand): The Judges - At the Last Stand, one of three judges will always spawn. They will either evaluate your systems, crew, or weapons. Depending on what you have, you can get unique and powerful rewards that are impossible to get elsewhere.</text>
+	<text>TIP (Last Stand): The Base - If you arrive at the Federation Base before the Flagship does, you'll get a few more repairs and a small sampling of supplies.</text>
+	<text>TIP (Last Stand): Tully - Admiral Tully is a respectable man, and a well trained soldier. If you can win over his trust, maybe you can even convince him to help you personally.</text>
+	<text>TIP (Last Stand): Flagship - Just as in Universe 0, the Flagship is split into 3 stages, with an array of powerful artillery weapons. It's no less of a threat however, so make sure you're as prepared as you can be.</text>
+	<text>TIP (Last Stand): Flagship Crew - The Flagship specializes in many different humans of different professions. They'll be staffed by MFK Aces elites, soldiers, engineers, and medics!</text>-->
+</textList>
+
+</FTL>

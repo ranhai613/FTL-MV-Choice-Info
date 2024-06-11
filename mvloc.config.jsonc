@@ -1,0 +1,233 @@
+{
+    "filePatterns": [
+        // Files to translate (glob pattern)
+
+        "data/achievements.xml",
+        "data/autoBlueprints.xml.append",
+        "data/blueprints.xml.append",
+        "data/bosses.xml.append",
+        "data/dlcBlueprints.xml.append",
+        "data/dlcEvents.xml.append",
+        "data/events.xml.append",
+        // "data/events_fuel.xml.append", // nothing to translate
+        "data/events_sector_abandoned.xml",
+        "data/events_sector_asteroid.xml",
+        "data/events_sector_augmented.xml",
+        "data/events_sector_auto.xml",
+        "data/events_sector_clan.xml",
+        "data/events_sector_coalition.xml",
+        "data/events_sector_confederacy.xml",
+        "data/events_sector_droppoint.xml",
+        "data/events_sector_duskbringer.xml",
+        "data/events_sector_dynasty.xml",
+        "data/events_sector_empire.xml",
+        "data/events_sector_federation.xml",
+        "data/events_sector_freemantis.xml",
+        "data/events_sector_gathering.xml",
+        "data/events_sector_geniocracy.xml",
+        "data/events_sector_hacker.xml",
+        "data/events_sector_harmony.xml",
+        "data/events_sector_hektar.xml",
+        "data/events_sector_hive.xml",
+        "data/events_sector_innovation.xml",
+        "data/events_sector_jerry.xml",
+        "data/events_sector_kleptocracy.xml",
+        "data/events_sector_knight.xml",
+        "data/events_sector_lanius.xml",
+        "data/events_sector_laststand.xml",
+        "data/events_sector_lostsun.xml",
+        "data/events_sector_militia.xml",
+        "data/events_sector_ministry.xml",
+        "data/events_sector_monk.xml",
+        "data/events_sector_morph.xml",
+        "data/events_sector_nexus.xml",
+        "data/events_sector_obelisk.xml",
+        "data/events_sector_origins.xml",
+        "data/events_sector_outcast.xml",
+        "data/events_sector_pirate.xml",
+        "data/events_sector_rebel.xml",
+        "data/events_sector_republic.xml",
+        "data/events_sector_rhyme.xml",
+        "data/events_sector_separatist.xml",
+        "data/events_sector_showdown.xml",
+        "data/events_sector_siren.xml",
+        "data/events_sector_spider.xml",
+        "data/events_sector_theocracy.xml",
+        "data/events_sector_unexplored.xml",
+        "data/events_sector_union.xml",
+        "data/events_sector_vagabond.xml",
+        "data/events_ships.xml.append",
+        "data/events_special_anomaly.xml",
+        "data/events_special_boons.xml",
+        "data/events_special_curator.xml",
+        "data/events_special_defeat.xml",
+        "data/events_special_ellie.xml",
+        "data/events_special_filler.xml",
+        "data/events_special_fleet.xml",
+        "data/events_special_fuel.xml",
+        "data/events_special_gb.xml",
+        "data/events_special_guards.xml",
+        "data/events_special_jukebox.xml",
+        "data/events_special_lightspeed.xml",
+        "data/events_special_main.xml",
+        "data/events_special_mechanical.xml",
+        "data/events_special_morality.xml",
+        "data/events_special_multiverse.xml",
+        "data/events_special_outposts.xml",
+        "data/events_special_piracy.xml",
+        "data/events_special_ruins.xml",
+        "data/events_special_salvaging.xml",
+        "data/events_special_socialize.xml",
+        "data/events_special_standard.xml",
+        "data/events_special_storage.xml",
+        "data/events_special_transports.xml",
+        "data/events_special_trapper.xml",
+        "data/hyperspace.xml",
+        "data/newEvents.xml.append",
+        "data/sector_data.xml.append",
+        "data/text_blueprints.xml.append",
+        "data/text_events.xml.append",
+        "data/text_misc.xml.append",
+        "data/text_sectorname.xml.append",
+        "data/text_tooltips.xml.append",
+        "data/tutorial.xml",
+        "mod-appendix/metadata.xml",
+    ],
+    "stringSelectionXPath": [
+        // XML text extraction rules (XPath)
+
+        // vanilla achievements
+        "//achievement/desc",
+
+        // blueprints
+        "//crewBlueprint/title",
+        "//crewBlueprint/short",
+        "//crewBlueprint/desc",
+        "//crewBlueprint/powerList/power",
+        "//droneBlueprint/title",
+        "//droneBlueprint/short",
+        "//droneBlueprint/desc",
+        "//systemBlueprint/title",
+        "//systemBlueprint/desc",
+        "//itemBlueprint/title",
+        "//itemBlueprint/desc",
+        "//augBlueprint/title",
+        "//augBlueprint/desc",
+        "//weaponBlueprint/title",
+        "//weaponBlueprint/desc",
+        "//weaponBlueprint/short",
+        "//weaponBlueprint[starts-with(@name,'ARTILLERY_')]/tooltip",
+        "//weaponBlueprint/descriptionOverride",
+        "//weaponBlueprint/tooltipOverride",
+        "//shipBlueprint/class",
+        "//shipBlueprint/desc",
+        "//shipBlueprint/name",
+
+        // events
+        "//*[not(starts-with(@name,'TEXT_CREW_TALK_'))]/text",
+        "//triggeredEventBox/tooltip",
+        "//unvisitedTooltip",
+        "//visitedTooltip",
+        "//undiscoveredTooltip",
+        "//crewMember",
+        "//win/@text",
+        "//lose/@text",
+        "//ship/finalBoss/@text",       
+        "//eventButton/tooltip",
+        "//eventButton/inactiveTooltip",
+        "//backgroundObject/tooltip",
+
+        // hyperspace
+        "//shipIcon/tooltip",
+        "//powerEffect/buttonText",
+        "//powerEffect/tooltip",
+        "//customStore/category/customTitle",
+        "//customShip/crew/*/@name",
+        "//mod-append:customShip/crew/*/@name",
+        "//victories//name",
+        "//victories//description",
+        "//victories//secretName",
+        "//victories//secretDescription",
+        "//achievements/page/section/@text",
+        "//achievement/name", // Note: this element is shared between Hyperspace AND vanilla achievements
+        "//achievement/description",
+        "//achievement/header",
+        "//achievement/secretName",
+        "//achievement/secretDescription",
+        "//drones/drone/tooltipName",
+        "//spawnCrew/name",
+
+        // sector
+        "//sectorDescription/nameList/name",
+
+        // metadata
+        "/metadata/title",
+        "/metadata/description",
+
+        // tutorial
+        "//step/default",
+    ],
+
+    "languageSpecifics": {
+        "ko": {
+            "copySourceTemplate": [
+                // Aka wont-translate.
+                // Specify which entries are 1:1-copied from English by default when syncing the English changes.
+
+                "//crewBlueprint/short",
+                "//droneBlueprint/short",
+                "//weaponBlueprint/short",
+                "//crewMember",
+                "//customShip/crew/*/@name",
+                "//mod-append:customShip/crew/*/@name",
+                "//spawnCrew/name",
+            ],
+            "applyPostprocesses": {
+                // Specify additional logics to transform each XML in the `apply` command. These are implemented on
+                // per-need basis. For the list of postprocessing, see apply_postprocess() in the code for more info.
+                
+                // Languages based on TTF fonts don't include a proper type 3 font for displaying hull hit points.
+                // This patch makes it to use a custom type instead.
+                "substitute-font-for-hull-numbers": 0,
+            }
+        },
+        "zh_Hans": {
+            // Apply the translation flagged as fuzzy.
+            "applyUseFuzzy": true,
+             
+            "applyPostprocesses": {
+                // Languages based on TTF fonts don't include a proper type 3 font for displaying hull hit points.
+                // This patch makes it to use a custom type instead.
+                "substitute-font-for-hull-numbers": 10,
+            }
+        },
+        "ja": {
+            "applyPostprocesses": {
+                // Languages based on TTF fonts don't include a proper type 3 font for displaying hull hit points.
+                // This patch makes it to use a custom type instead.
+                "substitute-font-for-hull-numbers": 0,
+                //This patch changes x-position of enemy hull numbers so that they aren't overlapping translated "TARGET" text in the top-left corner of the enemy boxes.
+                "substitute-xposition-for-enemy-hull-numbers": 1010,
+                //This patch changes x-position of boss hull numbers so that they aren't overlapping translated "TARGET" text in the top-left corner of the boss boxes.
+                "substitute-xposition-for-boss-hull-numbers": 886,
+            }
+        },
+        "fr": {
+            "applyPostprocesses": {
+                //This patch changes x-position of hull numbers so that they aren't overlapping translated "HULL" text.
+                "substitute-xposition-for-hull-numbers": 95,
+            }
+        },
+    },
+
+    "packaging": {
+        "fullOriginal": [
+            //assets
+            "https://drive.usercontent.google.com/download?id=17TtZlTNmMKTC4DtXl1N5cK8MA2OYQPNs&export=download&confirm=xxx",
+            //data
+            "https://drive.usercontent.google.com/download?id=1C3lc3foHn_iP5RUp_mvOirGMJKLYoNpF&export=download&confirm=xxx"
+        ],
+        "prefix": "FTL-Multiverse",
+        "version": "5.4.6"
+    }
+}

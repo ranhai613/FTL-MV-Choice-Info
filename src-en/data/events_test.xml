@@ -1,0 +1,221 @@
+<FTL>
+<event name="TEST_HYPERSPACE_QUEST">
+	<text>This gives you a quest or something I dunno.</text>
+	<quest event="HIDDEN_FEDERATION_BASE_LIST"/>
+</event>
+
+
+<event name="TEST_HAZARDS">
+	<text>Huh... a sun.</text>
+	<environment type="sun"/>
+	<choice>
+		<text>It's not over yet</text>
+		<event>
+			<text>Oh god oh frick pulsar</text>
+			<environment type="pulsar"/>
+			<choice>
+				<text>That's not all</text>
+				<event>
+					<text>Oh god oh frick asteroids</text>
+					<environment type="asteroid"/>
+					<choice>
+						<text>It's not over yet</text>
+						<event>
+							<text>Oh god oh frick ASB</text>
+							<environment type="PDS" target="player"/>
+							<choice>
+								<text>Screw it, lets go even further</text>
+								<event>
+									<text>Hurray ion storm</text>
+									<environment type="storm"/>
+								</event>
+							</choice>
+							<choice>
+								<text>Ok thats enough</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="TEST_BOARDERS">
+	<text>Spawn a boarder</text>
+	<choice>
+		<text>SOLDIER</text>
+		<event>
+			<boarders min="1" max="1" class="human_soldier"/>
+		</event>
+	</choice>
+	<choice>
+		<text>MFK</text>
+		<event>
+			<boarders min="1" max="1" class="human_mfk"/>
+		</event>
+	</choice>
+	<choice>
+		<text>SUZERAIN</text>
+		<event>
+			<boarders min="1" max="1" class="mantis_suzerain"/>
+		</event>
+	</choice>
+	<choice>
+		<text>BISHOP</text>
+		<event>
+			<boarders min="1" max="1" class="mantis_bishop"/>
+		</event>
+	</choice>
+	<choice>
+		<text>RANGER</text>
+		<event>
+			<boarders min="1" max="1" class="slug_ranger"/>
+		</event>
+	</choice>
+	<choice>
+		<text>KNIGHT</text>
+		<event>
+			<boarders min="1" max="1" class="slug_knight"/>
+		</event>
+	</choice>
+	<choice>
+		<text>PALADIN</text>
+		<event>
+			<boarders min="1" max="1" class="rock_paladin"/>
+		</event>
+	</choice>
+	<choice>
+		<text>ROYAL</text>
+		<event>
+			<boarders min="1" max="1" class="obelisk_royal"/>
+		</event>
+	</choice>
+</event>
+
+<event name="KILL_BOARDERS">
+	<killEnemyBoarders/>
+</event>
+
+<event name="TEST_HYPERSPACE_CARGO">
+	<text>This event checks for ion blast mk 1.</text>
+	<choice req="ION_1">
+		<text>ITS DETECTING ION 1</text>
+		<event>
+			<text>oh ok cool.</text>
+			<choice>
+				<text>Remove the ion</text>
+				<event>
+					<text>it's gone</text>
+					<remove name="ION_1"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>This is just a second option</text>
+		<event>
+			<text>neato.</text>
+		</event>
+	</choice>
+</event>
+
+<event name="FREE_WIN">
+	<text>You win!</text>
+	<win creditsText="credit_victory_cheat" text="Nice" creditsBackground="VICTORY_DEFAULT"/>
+</event>
+
+<event name="TEST_DOUBLE_SPAWN_START">
+	<text>This is a ship!</text>
+	<ship load="TEST_DOUBLE_SPAWN_1" hostile="true"/>
+</event>
+<ship name="TEST_DOUBLE_SPAWN_1" auto_blueprint="MU_REBEL_FIGHTER">
+	<destroyed load="TEST_DOUBLE_SPAWN_2_LOAD"/>
+	<deadCrew load="TEST_DOUBLE_SPAWN_2_LOAD"/>
+</ship>
+<event name="TEST_DOUBLE_SPAWN_2_LOAD">
+	<loadEvent>TEST_DOUBLE_SPAWN_2</loadEvent>
+</event>
+<event name="TEST_DOUBLE_SPAWN_2">
+	<text>Its dead</text>
+	<choice>
+		<text>Ok</text>
+		<event>
+			<text>Second ship!</text>
+			<ship load="REBEL" hostile="true"/>
+		</event>
+	</choice>
+</event>
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					LOAD
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->	
+<event name="MAP">
+	<text>MAP</text>
+	<reveal_map/>
+</event>
+
+<event name="FLEET_SLOW">
+	<text>Fleet Slowed</text>
+	<modifyPursuit amount="-999"/>
+</event>
+
+<event name="FLEET_FAST">
+	<text>Fleet Sped Up</text>
+	<modifyPursuit amount="999"/>
+</event>
+
+<event name="FORCE_HOSTILE">
+	<text>Ship is hostile</text>
+	<ship hostile="true"/>
+</event>
+
+<event name="RECALL">
+	<recallBoarders force="true"/>
+</event>
+
+<event name="GIVE_CRIME">
+	<text>You now have +1 crime</text>
+	<variable name="rep_general" op="add" val="1"/>
+</event>
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					TEMPLATE
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->	
+<event name="PLACEHOLDER_OLD">
+	<text>You should never see this.</text>
+</event>
+
+<event name="EVENT_TEMPLATE">
+	<text>You can copy and paste this</text>
+	<choice>
+		<text>Ok</text>
+		<event>
+			<text>text</text>
+		</event>
+	</choice>
+</event>
+</FTL>
