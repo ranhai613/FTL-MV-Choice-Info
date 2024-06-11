@@ -64,7 +64,7 @@ class ChoiceTag():
         
         info = self._event_analize()
         if info is None:
-            return child_info
+            return [] + child_info
         return info + child_info
     
     def set_additional_info(self):
