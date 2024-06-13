@@ -6,12 +6,19 @@ from json5 import load
 import re
 from pprint import pprint
 
-#'removeCrew', 'autoReward', 'crewMember', 'reveal_map', 'modifyPursuit', 'item_modify', 'ship'
-class Choice():
+class ElementBaseClass():
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
         self._element = element
-        self._xmlpath = xmlpath
+        self._xmlpath = xmlpath.replace('src-en/', '')
         self._uniqueXPathGenerator = uniqueXPathGenerator
+    
+    def get_uniqueXPath(self):
+        return self._uniqueXPathGenerator.getpath(self._element)
+        
+#'removeCrew', 'autoReward', 'crewMember', 'reveal_map', 'modifyPursuit', 'item_modify', 'ship'
+class Choice(ElementBaseClass):
+    def __init__(self, element, xmlpath, uniqueXPathGenerator):
+        super().__init__(element, xmlpath, uniqueXPathGenerator)
         self._childEventTag = None
         self._additional_info = None
         
@@ -20,9 +27,7 @@ class Choice():
         childEventTags = xpath(self._element, './event')
         if len(childEventTags) == 1:
             self._childEventTag = Event(childEventTags[0], self._xmlpath, self._uniqueXPathGenerator)
-
-    def get_uniqueXPath(self):
-        return self._uniqueXPathGenerator.getpath(self._element)
+            self._childEventTag.init_childChoiceTags()
     
     def get_textTag_uniqueXPath(self):
         texttags = xpath(self._element, './text')
@@ -33,38 +38,43 @@ class Choice():
     
     def _event_analize(self):
         if self._childEventTag is None:
-            return None
+            return []
         
-        event = self._childEventTag._element
-        load_event_name = event.attrib.get('load', None)
-        if load_event_name:
+        events = [self._childEventTag._element]
+        
+        while True:
+            load_event_name = event.attrib.get('load', None)
+            if load_event_name is None:
+                break
             load_event = global_event_map.get(load_event_name, None)
-            if load_event is not None:
-                event = load_event._element
+            if load_event is None:
+                break
+            events = load_event.get_events()
         
         info = []
-        for tag in event.iterchildren('removeCrew', 'crewMember', 'reveal_map', 'autoReward'):
-            if tag.tag == 'removeCrew':
-                clonetag = xpath(tag, './clone')
-                if len(clonetag) != 1:
-                    info.append('Lose your crew(?)')
-                    continue
-                if clonetag[0].text == 'true':
-                    info.append('Lose your crew(clonable)')
-                elif clonetag[0].text == 'false':
-                    info.append('Lose your crew(UNCLONABLE)')
-                else:
-                    info.append('Lose your crew(?)')
-            
-            elif tag.tag == 'crewMember':
-                race = tag.attrib.get('class', '?').replace('_', ' ').title()
-                info.append(f'Gain a crew({race})')
+        for event in events:
+            for tag in event.iterchildren('removeCrew', 'crewMember', 'reveal_map', 'autoReward'):
+                if tag.tag == 'removeCrew':
+                    clonetag = xpath(tag, './clone')
+                    if len(clonetag) != 1:
+                        info.append('<!>Lose your crew(?)')
+                        continue
+                    if clonetag[0].text == 'true':
+                        info.append('<!>Lose your crew(clonable)')
+                    elif clonetag[0].text == 'false':
+                        info.append('<!>Lose your crew(UNCLONABLE)')
+                    else:
+                        info.append('<!>Lose your crew(?)')
                 
-            elif tag.tag == 'reveal_map':
-                info.append('Map Reveal')
-            
-            elif tag.tag == 'autoReward':
-                info.append('Reward')
+                elif tag.tag == 'crewMember':
+                    race = tag.attrib.get('class', '?').replace('_', ' ').title()
+                    info.append(f'Gain a crew({race})')
+                    
+                elif tag.tag == 'reveal_map':
+                    info.append('Map Reveal')
+                
+                elif tag.tag == 'autoReward':
+                    info.append('Reward')
 
         return info
                 
@@ -90,20 +100,30 @@ class Choice():
         choices = '\n'.join(choices)
         return choices
     
-class Event():
+class Event(ElementBaseClass):
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
-        self._element = element
-        self._xmlpath = xmlpath.replace('src-en/', '')
-        self._uniqueXPathGenerator = uniqueXPathGenerator
+        super().__init__(element, xmlpath, uniqueXPathGenerator)
         self._childChoiceTags = None
     
     
     def init_childChoiceTags(self):
         childChoiceTags = xpath(self._element, './choice')
         self._childChoiceTags = [global_choice_map.get(f'{self._xmlpath}${self._uniqueXPathGenerator.getpath(childChoiceTag)}') for childChoiceTag in childChoiceTags]
+    
+    def get_events(self):
+        return [self._element]
 
+class EventList(ElementBaseClass):
+    def __init__(self, element, xmlpath, uniqueXPathGenerator):
+        super().__init__(element, xmlpath, uniqueXPathGenerator)
+        self._childEventElements = [element for element in xpath(self._element, './event')]
+    
+    def get_events(self):
+        return self._childEventElements
 
 global_event_map = {}
+global_choice_map = {}
+
 for xmlpath in glob_posix('src-en/data/*'):
     if not re.match(r'.+\.(xml|xml.append)$', xmlpath):
         continue
@@ -111,15 +131,18 @@ for xmlpath in glob_posix('src-en/data/*'):
     root = tree.getroot()
     if root.tag != 'FTL':
         continue
-    events = xpath(tree, '//event')
+    
     uniqueXPathGenerator = UniqueXPathGenerator(tree, ftl_xpath_matchers())
+    events = xpath(tree, '//event')
     global_event_map.update({element.attrib.get('name'): Event(element, xmlpath, uniqueXPathGenerator) for element in events})
+
+    eventlists = xpath(tree, '//eventlist')
+    global_event_map.update({element.attrib.get('name'): EventList(element, xmlpath, uniqueXPathGenerator) for element in eventlists})
 
 
 with open('mvloc.config.jsonc', 'tr', encoding='utf8') as f:
     config = load(f)
 
-global_choice_map = {}
 for xmlpath in config['filePatterns']:
     tree = parse_ftlxml('src-en/' + xmlpath)
     uniqueXPathGenerator = UniqueXPathGenerator(tree, ftl_xpath_matchers())
