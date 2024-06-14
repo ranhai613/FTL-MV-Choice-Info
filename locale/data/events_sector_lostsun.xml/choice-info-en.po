@@ -58,7 +58,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_SHRINE\"]/choice[1]/text"
 msgstr ""
 "Lend them some missiles.\n"
-"[Reward[], []]"
+"-7}[Reward {(M)[], 6}[]]"
 
 #: src-en/data/events_sector_lostsun.xml:73
 msgid ""
@@ -74,7 +74,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_SHRINE\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Let them keep the missiles.\n"
-"Reward[]"
+"Reward {(M)[]"
 
 #: src-en/data/events_sector_lostsun.xml:80
 msgid ""
@@ -86,7 +86,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_SHRINE\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Request that they give the spares back.\n"
-"[]"
+"6}[]"
 
 #: src-en/data/events_sector_lostsun.xml:88
 msgid ""
@@ -134,8 +134,8 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_CACHE\"]/choice[1]/text"
 msgstr ""
 "Open it.\n"
-"Reward[] \n"
-"or [] \n"
+"Reward } Only(H)[] \n"
+"or Gain a weapon(Giftlist Fire)[] \n"
 "or [[]]"
 
 #: src-en/data/events_sector_lostsun.xml:119
@@ -205,7 +205,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_DONATION\"]/choice[1]/text"
 msgstr ""
 "Contact them.\n"
-"[[Reward[]], [Reward[]], [Reward[]], [[], []]]"
+"[-5}[Reward ~ Only(L)[]], -15}[Reward ~ Only(H)[]], [Reward ~ Only(L), Gain a weapon(Giftlist Fire)[]], [[], []]]"
 
 #: src-en/data/events_sector_lostsun.xml:157
 msgid ""
@@ -221,7 +221,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_DONATION\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Give them some missiles.\n"
-"[Reward[]]"
+"-5}[Reward ~ Only(L)[]]"
 
 #: src-en/data/events_sector_lostsun.xml:161
 msgid ""
@@ -235,7 +235,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_DONATION\"]/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_lostsun.xml:168
 msgid ""
@@ -247,7 +247,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_DONATION\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Give them many missiles.\n"
-"[Reward[]]"
+"-15}[Reward ~ Only(H)[]]"
 
 #: src-en/data/events_sector_lostsun.xml:177
 msgid ""
@@ -261,7 +261,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_DONATION\"]/choice[1]/event/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_lostsun.xml:184
 msgid ""
@@ -275,7 +275,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_DONATION\"]/choice[1]/event/choice[@req=\"RECYCLER\"]/text"
 msgstr ""
 "(Recycler Module) Give them the augment.\n"
-"[Reward[]]"
+"[Reward ~ Only(L), Gain a weapon(Giftlist Fire)[]]"
 
 #: src-en/data/events_sector_lostsun.xml:193
 msgid ""
@@ -289,7 +289,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_DONATION\"]/choice[1]/event/choice[@req=\"RECYCLER\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(L), Gain a weapon(Giftlist Fire)[]"
 
 #: src-en/data/events_sector_lostsun.xml:198
 msgid ""
@@ -363,9 +363,9 @@ msgid ""
 msgstr ""
 "Explore the asteroid field.\n"
 "[] \n"
-"or Reward[] \n"
-"or Reward[] \n"
-"or Reward[] \n"
+"or Reward { Only(H)[] \n"
+"or Reward }(M)[] \n"
+"or Reward |(M)[] \n"
 "or []"
 
 #: src-en/data/events_sector_lostsun.xml:262
@@ -399,7 +399,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"ASTEROID_EXPLORE_LOSTSUN\"]/choice[@req=\"SCRAP_COLLECTOR\"]/text"
 msgstr ""
 "(Scrap Recovery Arm) Attempt to mine the asteroids.\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_lostsun.xml:278
 msgid ""
@@ -413,7 +413,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"ASTEROID_EXPLORE_LOSTSUN\"]/choice[@req=\"BEAM_MINING\"]/text"
 msgstr ""
 "(Mining Equipment) Attempt to mine the asteroids.\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_lostsun.xml:285
 msgid ""
@@ -427,7 +427,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"ASTEROID_EXPLORE_LOSTSUN\"]/choice[@req=\"DRONE_CONTROL_BEAM_DRONE\"]/text"
 msgstr ""
 "(Beam Drone) Attempt to mine the asteroids. [-1|]\n"
-"Reward[]"
+"Reward ~ Only(H), -1|[]"
 
 #: src-en/data/events_sector_lostsun.xml:292
 msgid ""
@@ -724,7 +724,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_PRISONERS\"]/choice[@req=\"cloaking\"]/text"
 msgstr ""
 "(Cloaking) Wait for the patrol ship to pass by, then sabotage their defenses.\n"
-"[Reward[]]"
+"-3}[Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_lostsun.xml:500
 msgid ""
@@ -739,7 +739,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_PRISONERS\"]/choice[@req=\"cloaking\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_lostsun.xml:507
 msgid ""
@@ -763,7 +763,7 @@ msgstr ""
 "Pursue them.\n"
 "[[]] \n"
 "or [] \n"
-"or Reward[]"
+"or Reward Standard(L)[]"
 
 #: src-en/data/events_sector_lostsun.xml:523
 msgid ""
@@ -1358,7 +1358,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"DISTRESS_LOSTSUN_CIVILIAN\"]/choice[1]/text"
 msgstr ""
 "Lend some fuel.\n"
-"[Reward[]]"
+"-3{[Reward } Only(L)[]]"
 
 #: src-en/data/events_sector_lostsun.xml:834
 msgid ""
@@ -1370,7 +1370,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"DISTRESS_LOSTSUN_CIVILIAN\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward } Only(L)[]"
 
 #: src-en/data/events_sector_lostsun.xml:841
 msgid ""
@@ -1549,7 +1549,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"QUEST_LOSTSUN_DISRUPTION_QUEST\"]/choice[@req=\"hacking\"]/text"
 msgstr ""
 "(Hacking) Shut down the station's systems.\n"
-"[Reward[]]"
+"[Reward Standard(M)[]]"
 
 #: src-en/data/events_sector_lostsun.xml:946
 msgid ""
@@ -1564,7 +1564,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"QUEST_LOSTSUN_DISRUPTION_QUEST\"]/choice[@req=\"hacking\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_lostsun.xml:950
 msgid ""
@@ -1576,7 +1576,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"QUEST_LOSTSUN_DISRUPTION_QUEST\"]/choice[@req=\"LIST_CREW_SLUG\"]/text"
 msgstr ""
 "(Slug Crew) Have your Slug hack into their relay systems.\n"
-"[Reward[]]"
+"[Reward Standard(M)[]]"
 
 #: src-en/data/events_sector_lostsun.xml:959
 msgid ""
@@ -1591,7 +1591,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"QUEST_LOSTSUN_DISRUPTION_QUEST\"]/choice[@req=\"LIST_CREW_SLUG\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_lostsun.xml:963
 msgid ""
@@ -1603,7 +1603,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"QUEST_LOSTSUN_DISRUPTION_QUEST\"]/choice[@req=\"LIST_CREW_ENGI\"]/text"
 msgstr ""
 "(Engi Crew) Have your Engi hack into their relay systems.\n"
-"[Reward[]]"
+"[Reward Standard(M)[]]"
 
 #: src-en/data/events_sector_lostsun.xml:972
 msgid ""
@@ -1618,7 +1618,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"QUEST_LOSTSUN_DISRUPTION_QUEST\"]/choice[@req=\"LIST_CREW_ENGI\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_lostsun.xml:976
 msgid ""
@@ -1797,7 +1797,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_ESCORT_QUEST_RAID_WIN\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[Gain a crew(Rock Commando), Reward[], Reward[]]"
+"[Gain a crew(Rock Commando), Reward ~ Only(L)[], Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_lostsun.xml:1068
 msgid ""
@@ -1816,7 +1816,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_ESCORT_QUEST_RAID_WIN\"]/choice/event/choice[1]/text"
 msgstr ""
 "Accept.\n"
-"Gain a crew(Rock Commando), Reward[]"
+"Gain a crew(Rock Commando), Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_lostsun.xml:1072
 msgid ""
@@ -1831,7 +1831,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_ESCORT_QUEST_RAID_WIN\"]/choice/event/choice[2]/text"
 msgstr ""
 "Sorry, but we don't need more crew.\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_lostsun.xml:1080
 msgid ""
@@ -2232,7 +2232,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_FLEET_UNLOCK3\"]/choice[1]/text"
 msgstr ""
 "Continue...\n"
-"Gain a crew(Unique Ariadne), Reward[]"
+"<#>Unlock Ship(Lostsun), Gain a crew(Unique Ariadne), Reward Standard(H), Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_lostsun.xml:1342
 msgid ""
@@ -2253,7 +2253,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_FLEET_UNLOCK3\"]/choice[@req=\"ach_boss_rockcruiser\"]/text"
 msgstr ""
 "As a matter of fact, I did overthrow the Rock government once.\n"
-"Gain a crew(Unique Ariadne), Reward, Map Reveal[]"
+"<#>Unlock Ship(Lostsun), Gain a crew(Unique Ariadne), Reward Standard(H), System Upgrade(Weapons 2™), Map Reveal, Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_lostsun.xml:1353
 msgid ""

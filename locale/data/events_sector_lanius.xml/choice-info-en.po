@@ -38,7 +38,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_LANGUAGE\"]/choice[1]/text"
 msgstr ""
 "Agree, knowing it will likely take some time.\n"
-"[Reward[], Gain a crew(Lanius)[]]"
+"<!>Fleet Advance(1)[Reward Standard(M)[], Gain a crew(Lanius)[]]"
 
 #: src-en/data/events_sector_lanius.xml:66
 msgid ""
@@ -52,7 +52,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_LANGUAGE\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Accept the pay.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_lanius.xml:75
 msgid ""
@@ -105,7 +105,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_INJURED\"]/choice[1]/text"
 msgstr ""
 "Bring them on board.\n"
-"[[Gain a crew(Lanius)[]], Gain a crew(Lanius)[], []] \n"
+"[-35<~<-25[Gain a crew(Lanius)[]], Gain a crew(Lanius)[], []] \n"
 "or []"
 
 #: src-en/data/events_sector_lanius.xml:106
@@ -113,7 +113,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_INJURED\"]/choice[@req=\"LIST_CREW_LANIUS\"]/text"
 msgstr ""
 "(Lanius Crew) Assure the Lanius that you mean them no harm when you bring them on board.\n"
-"[[Gain a crew(Lanius)[]], Gain a crew(Lanius)[], []]"
+"[-35<~<-25[Gain a crew(Lanius)[]], Gain a crew(Lanius)[], []]"
 
 #: src-en/data/events_sector_lanius.xml:108
 msgid ""
@@ -128,7 +128,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_INJURED\"]/choice[@req=\"LIST_CREW_LANIUS\"]/event/choice[1]/text"
 msgstr ""
 "Heal them with scrap.\n"
-"[Gain a crew(Lanius)[]]"
+"-35<~<-25[Gain a crew(Lanius)[]]"
 
 #: src-en/data/events_sector_lanius.xml:112
 msgid ""
@@ -211,7 +211,7 @@ msgid ""
 "data/events_sector_lanius.xml$//eventList[@name=\"LANIUS_INJURED_RESCUE\"]/event[1]/choice[1]/text"
 msgstr ""
 "Heal them with scrap.\n"
-"[Gain a crew(Lanius)[]]"
+"-35<~<-25[Gain a crew(Lanius)[]]"
 
 #: src-en/data/events_sector_lanius.xml:159
 msgid ""
@@ -310,7 +310,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_LUNG_SCAN\"]/choice[@req=\"human\"]/text"
 msgstr ""
 "Let them scan your Human.\n"
-"[<!>Lose your crew(clonable)[Reward[], [[]]] nor Reward[]]"
+"[<!>Lose your crew(clonable)[Reward ~ Only(M)[], [[]]] or Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_lanius.xml:214
 msgid ""
@@ -325,15 +325,15 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_LUNG_SCAN\"]/choice[@req=\"human\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"<!>Lose your crew(clonable)[Reward[], [[]]] \n"
-"or Reward[]"
+"<!>Lose your crew(clonable)[Reward ~ Only(M)[], [[]]] \n"
+"or Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_lanius.xml:222
 msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_LUNG_SCAN\"]/choice[@req=\"human_engineer\"]/text"
 msgstr ""
 "Let them scan your Engineer.\n"
-"[<!>Lose your crew(clonable)[Reward[], [[]]] nor Reward[]]"
+"[<!>Lose your crew(clonable)[Reward ~ Only(M)[], [[]]] or Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_lanius.xml:224
 msgid ""
@@ -348,15 +348,15 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_LUNG_SCAN\"]/choice[@req=\"human_engineer\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"<!>Lose your crew(clonable)[Reward[], [[]]] \n"
-"or Reward[]"
+"<!>Lose your crew(clonable)[Reward ~ Only(M)[], [[]]] \n"
+"or Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_lanius.xml:232
 msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_LUNG_SCAN\"]/choice[@req=\"human_medic\"]/text"
 msgstr ""
 "Let them scan your Medic.\n"
-"[<!>Lose your crew(clonable)[Reward[], [[]]] nor Reward[]]"
+"[<!>Lose your crew(clonable)[Reward ~ Only(M)[], [[]]] or Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_lanius.xml:234
 msgid ""
@@ -371,15 +371,15 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_LUNG_SCAN\"]/choice[@req=\"human_medic\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"<!>Lose your crew(clonable)[Reward[], [[]]] \n"
-"or Reward[]"
+"<!>Lose your crew(clonable)[Reward ~ Only(M)[], [[]]] \n"
+"or Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_lanius.xml:242
 msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_LUNG_SCAN\"]/choice[@req=\"LIST_CREW_SOLDIER\"]/text"
 msgstr ""
 "Let them scan your Soldier.\n"
-"[[[]] nor Reward[]]"
+"[[[]] or Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_lanius.xml:244
 msgid ""
@@ -395,14 +395,14 @@ msgid ""
 msgstr ""
 "Continue...\n"
 "[[]] \n"
-"or Reward[]"
+"or Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_lanius.xml:252
 msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_LUNG_SCAN\"]/choice[@req=\"human_technician\"]/text"
 msgstr ""
 "Let them scan your Technician.\n"
-"[<!>Lose your crew(clonable)[Reward[], [[]]] nor Reward[]]"
+"[<!>Lose your crew(clonable)[Reward ~ Only(H)[], [[]]] or Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_lanius.xml:254
 msgid ""
@@ -417,8 +417,8 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_LUNG_SCAN\"]/choice[@req=\"human_technician\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"<!>Lose your crew(clonable)[Reward[], [[]]] \n"
-"or Reward[]"
+"<!>Lose your crew(clonable)[Reward ~ Only(H)[], [[]]] \n"
+"or Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_lanius.xml:262
 msgid ""
@@ -468,7 +468,7 @@ msgid ""
 "data/events_sector_lanius.xml$//eventList[@name=\"LANIUS_LUNG_SCAN_HUMAN\"]/event[1]/choice[1]/text"
 msgstr ""
 "Accept their payment.\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_lanius.xml:290
 msgid ""
@@ -518,7 +518,7 @@ msgid ""
 "data/events_sector_lanius.xml$//eventList[@name=\"LANIUS_LUNG_SCAN_ENGINEER\"]/event[1]/choice[1]/text"
 msgstr ""
 "Accept their payment.\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_lanius.xml:320
 msgid ""
@@ -568,7 +568,7 @@ msgid ""
 "data/events_sector_lanius.xml$//eventList[@name=\"LANIUS_LUNG_SCAN_TECH\"]/event[1]/choice[1]/text"
 msgstr ""
 "Accept their payment.\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_lanius.xml:350
 msgid ""
@@ -618,7 +618,7 @@ msgid ""
 "data/events_sector_lanius.xml$//eventList[@name=\"LANIUS_LUNG_SCAN_MEDIC\"]/event[1]/choice[1]/text"
 msgstr ""
 "Accept their payment.\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_lanius.xml:380
 msgid ""
@@ -706,9 +706,9 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_RESEARCHER_CONTACT_MV\"]/choice[1]/text"
 msgstr ""
 "Ask if they have anything that could help your mission.\n"
-"Reward[] \n"
-"or Reward[] \n"
-"or [] \n"
+"Reward ~ Only(M)[] \n"
+"or Reward |(M)[] \n"
+"or Gain a weapon(Random)[] \n"
 "or []"
 
 #: src-en/data/events_sector_lanius.xml:432
@@ -716,7 +716,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_RESEARCHER_CONTACT_MV\"]/choice[@req=\"LIST_CREW_LANIUS\"]/text"
 msgstr ""
 "(Lanius Crew) Offer to copy your translator's data suite.\n"
-"[[] nor [] nor []]"
+"[Gain an augment(Random)[] or Gain a weapon(Random)[] or Gain a drone(Random)[]]"
 
 #: src-en/data/events_sector_lanius.xml:434
 msgid ""
@@ -731,9 +731,9 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_RESEARCHER_CONTACT_MV\"]/choice[@req=\"LIST_CREW_LANIUS\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[] \n"
-"or [] \n"
-"or []"
+"Gain an augment(Random)[] \n"
+"or Gain a weapon(Random)[] \n"
+"or Gain a drone(Random)[]"
 
 #: src-en/data/events_sector_lanius.xml:442
 msgid ""
@@ -824,7 +824,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_RESEARCHER_CRAFT_MV\"]/choice[1]/text"
 msgstr ""
 "Inquire about the process.\n"
-"[[], [], [], [[], []], [[], [], [], [[], []]]]"
+"[-45~, Gain an augment(Random)[], -50~, Gain a weapon(Random)[], -40~, Gain a drone(Random)[], [[], []], [-35~, Gain an augment(Random)[], -40~, Gain a weapon(Random)[], -30~, Gain a drone(Random)[], [[], []]]]"
 
 #: src-en/data/events_sector_lanius.xml:493
 msgid ""
@@ -840,7 +840,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_RESEARCHER_CRAFT_MV\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Give 45 scrap to craft an augmentation.\n"
-"[]"
+"-45~, Gain an augment(Random)[]"
 
 #: src-en/data/events_sector_lanius.xml:497
 msgid ""
@@ -856,7 +856,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_RESEARCHER_CRAFT_MV\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Give 50 scrap to craft a weapon.\n"
-"[]"
+"-50~, Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_lanius.xml:507
 msgid ""
@@ -872,7 +872,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_RESEARCHER_CRAFT_MV\"]/choice[1]/event/choice[3]/text"
 msgstr ""
 "Give 40 scrap to craft a drone schematic.\n"
-"[]"
+"-40~, Gain a drone(Random)[]"
 
 #: src-en/data/events_sector_lanius.xml:517
 msgid ""
@@ -914,7 +914,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_RESEARCHER_CRAFT_MV\"]/choice[1]/event/choice[@req=\"LIST_CREW_LANIUS\"]/text"
 msgstr ""
 "(Lanius Crew) Offer to help in the process.\n"
-"[[], [], [], [[], []]]"
+"[-35~, Gain an augment(Random)[], -40~, Gain a weapon(Random)[], -30~, Gain a drone(Random)[], [[], []]]"
 
 #: src-en/data/events_sector_lanius.xml:541
 msgid ""
@@ -929,7 +929,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_RESEARCHER_CRAFT_MV\"]/choice[1]/event/choice[@req=\"LIST_CREW_LANIUS\"]/event/choice[1]/text"
 msgstr ""
 "Give 35 scrap to craft an augmentation.\n"
-"[]"
+"-35~, Gain an augment(Random)[]"
 
 #: src-en/data/events_sector_lanius.xml:545
 msgid ""
@@ -945,7 +945,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_RESEARCHER_CRAFT_MV\"]/choice[1]/event/choice[@req=\"LIST_CREW_LANIUS\"]/event/choice[2]/text"
 msgstr ""
 "Give 40 scrap to craft a weapon.\n"
-"[]"
+"-40~, Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_lanius.xml:555
 msgid ""
@@ -961,7 +961,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_RESEARCHER_CRAFT_MV\"]/choice[1]/event/choice[@req=\"LIST_CREW_LANIUS\"]/event/choice[3]/text"
 msgstr ""
 "Give 30 scrap to craft a drone schematic.\n"
-"[]"
+"-30~, Gain a drone(Random)[]"
 
 #: src-en/data/events_sector_lanius.xml:565
 msgid ""
@@ -1040,9 +1040,9 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_TRADER_TRANSLATOR_MV\"]/choice[1]/text"
 msgstr ""
 "Agree to the exchange.\n"
-"[] \n"
-"or [] \n"
-"or []"
+"-7<{<-3 15<~<30[] \n"
+"or -7<}<-3 20<~<40[] \n"
+"or -7<|<-3 20<~<40[]"
 
 #: src-en/data/events_sector_lanius.xml:613
 msgid ""
@@ -1075,7 +1075,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_TRADER_TRANSLATOR_MV\"]/choice[3]/text"
 msgstr ""
 "Decline but ask about their translation device.\n"
-"[Gain a crew(Lanius)[], [[], []]]"
+"[Gain a crew(Lanius), -40~[], [[], []]]"
 
 #: src-en/data/events_sector_lanius.xml:629
 msgid ""
@@ -1087,7 +1087,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_TRADER_TRANSLATOR_MV\"]/choice[3]/event/choice[1]/text"
 msgstr ""
 "Purchase the translator for 40 scrap.\n"
-"Gain a crew(Lanius)[]"
+"Gain a crew(Lanius), -40~[]"
 
 #: src-en/data/events_sector_lanius.xml:633
 msgid ""
@@ -1136,9 +1136,9 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_TRADER_MV\"]/choice[1]/text"
 msgstr ""
 "Agree to the exchange.\n"
-"[] \n"
-"or [] \n"
-"or []"
+"-7<{<-3 15<~<30[] \n"
+"or -7<}<-3 20<~<40[] \n"
+"or -7<|<-3 20<~<40[]"
 
 #: src-en/data/events_sector_lanius.xml:665
 msgid ""
@@ -1171,7 +1171,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_TRADER_MV\"]/choice[@req=\"LIST_CREW_LANIUS\"]/text"
 msgstr ""
 "(Lanius Crew) Ask for an alternative trade.\n"
-"[[] nor [] nor [], [[], []]]"
+"[-7<{<-3 20<~<35[] or -7<}<-3 25<~<50[] or -7<|<-3 25<~<50[], [[], []]]"
 
 #: src-en/data/events_sector_lanius.xml:681
 msgid ""
@@ -1185,9 +1185,9 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_TRADER_MV\"]/choice[@req=\"LIST_CREW_LANIUS\"]/event/choice[1]/text"
 msgstr ""
 "Agree to the exchange.\n"
-"[] \n"
-"or [] \n"
-"or []"
+"-7<{<-3 20<~<35[] \n"
+"or -7<}<-3 25<~<50[] \n"
+"or -7<|<-3 25<~<50[]"
 
 #: src-en/data/events_sector_lanius.xml:687
 msgid ""
@@ -1494,7 +1494,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_SOLO_SALVAGE_MV\"]/choice[@req=\"LIST_CREW_LANIUS\"]/text"
 msgstr ""
 "(Lanius Crew) Request some scrap.\n"
-"Reward[] \n"
+"Reward ~ Only(M)[] \n"
 "or [] \n"
 "or [[[]], []]"
 
@@ -1657,7 +1657,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_SCARED_CIVILIAN_MV\"]/choice[3]/text"
 msgstr ""
 "Try to contact the Lanius ship.\n"
-"[[] nor [] nor [[]]]"
+"[[] or [] or [[]]]"
 
 #: src-en/data/events_sector_lanius.xml:967
 msgid ""
@@ -1760,14 +1760,14 @@ msgid ""
 msgstr ""
 "Power weapons to attack.\n"
 "[[]] \n"
-"or [[[[], []], Reward[], [[]] nor Reward[], Reward[]], [[]]]"
+"or [[[[], []], Reward Stuff(M)[], [[]] or Reward ~ Only(L)[], Reward Standard(M)[]], [[]]]"
 
 #: src-en/data/events_sector_lanius.xml:1019
 msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_DORMANT_EVENT_MV\"]/choice[3]/text"
 msgstr ""
 "Investigate the vessel.\n"
-"[[[], []], Reward[], [[]] nor Reward[], Reward[]]"
+"[[[], []], Reward Stuff(M)[], [[]] or Reward ~ Only(L)[], Reward Standard(M)[]]"
 
 #: src-en/data/events_sector_lanius.xml:1025
 msgid ""
@@ -1793,7 +1793,7 @@ msgid ""
 "data/events_sector_lanius.xml$//eventList[@name=\"LANIUS_DORMANT_WEAPONS_MV\"]/event[2]/choice[1]/text"
 msgstr ""
 "Investigate the vessel.\n"
-"[[[], []], Reward[], [[]] nor Reward[], Reward[]]"
+"[[[], []], Reward Stuff(M)[], [[]] or Reward ~ Only(L)[], Reward Standard(M)[]]"
 
 #: src-en/data/events_sector_lanius.xml:1039
 msgid ""
@@ -1855,7 +1855,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_DORMANT_INVESTIGATE_MV\"]/choice[@req=\"LIST_CREW_LANIUS\"]/text"
 msgstr ""
 "(Lanius Crew) Send over a Lanius crewmember to plunder the ship of resources.\n"
-"Reward[]"
+"Reward Stuff(M)[]"
 
 #: src-en/data/events_sector_lanius.xml:1070
 msgid ""
@@ -1870,14 +1870,14 @@ msgid ""
 msgstr ""
 "Navigate carefully around the ship and strip what materials from the hull you can.\n"
 "[[]] \n"
-"or Reward[]"
+"or Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_lanius.xml:1079
 msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_DORMANT_INVESTIGATE_MV\"]/choice[@req=\"pilot\"]/text"
 msgstr ""
 "(Upg. Piloting) Engage the autopilot to strip the ship safely.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_lanius.xml:1081
 msgid ""
@@ -2396,14 +2396,14 @@ msgid ""
 msgstr ""
 "Only if we are paid.\n"
 "[[]] \n"
-"or Reward[]"
+"or Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_lanius.xml:1392
 msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_ZOLTAN_PEACE\"]/choice[@req=\"ZOLTAN_DELETER\"]/text"
 msgstr ""
 "(Zoltan Deleter) Get lost.\n"
-"Reward[[]]"
+"Reward Item(H)[[]]"
 
 #: src-en/data/events_sector_lanius.xml:1394
 msgid ""
@@ -2574,7 +2574,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_BEACON_EATER\"]/choice[1]/text"
 msgstr ""
 "Ask if they require assistance.\n"
-"[[], [] nor [] nor [] nor [[]]] \n"
+"[-30~, Gain an augment(Random)[], [] or [] or [] or [[]]] \n"
 "or [[]]"
 
 #: src-en/data/events_sector_lanius.xml:1482
@@ -2582,8 +2582,8 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_BEACON_EATER\"]/choice[2]/text"
 msgstr ""
 "Send them 30 scrap.\n"
-"[] \n"
-"or [[]]"
+"-30~, Gain an augment(Random)[] \n"
+"or -30~[[]]"
 
 #: src-en/data/events_sector_lanius.xml:1486
 msgid ""
@@ -2600,7 +2600,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_BEACON_EATER\"]/choice[@req=\"LIST_CREW_LANIUS\"]/text"
 msgstr ""
 "(Lanius Crew) Ask if they require assistance.\n"
-"[[], [], [], []]"
+"[Gain an augment(Random), -30~[], -6}, Gain an augment(Random)[], -6|, Gain an augment(Random)[], []]"
 
 #: src-en/data/events_sector_lanius.xml:1492
 msgid ""
@@ -2615,7 +2615,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_BEACON_EATER\"]/choice[@req=\"LIST_CREW_LANIUS\"]/event/choice[1]/text"
 msgstr ""
 "Give them 30 scrap.\n"
-"[]"
+"Gain an augment(Random), -30~[]"
 
 #: src-en/data/events_sector_lanius.xml:1496
 msgid ""
@@ -2630,7 +2630,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_BEACON_EATER\"]/choice[@req=\"LIST_CREW_LANIUS\"]/event/choice[2]/text"
 msgstr ""
 "Give them 6 missiles.\n"
-"[]"
+"-6}, Gain an augment(Random)[]"
 
 #: src-en/data/events_sector_lanius.xml:1506
 msgid ""
@@ -2645,7 +2645,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_BEACON_EATER\"]/choice[@req=\"LIST_CREW_LANIUS\"]/event/choice[3]/text"
 msgstr ""
 "Give them 6 drone parts.\n"
-"[]"
+"-6|, Gain an augment(Random)[]"
 
 #: src-en/data/events_sector_lanius.xml:1516
 msgid ""
@@ -2692,7 +2692,7 @@ msgid ""
 "data/events_sector_lanius.xml$//eventList[@name=\"LANIUS_BEACON_EATER_ASK\"]/event[1]/choice[1]/text"
 msgstr ""
 "Give them 30 scrap.\n"
-"[]"
+"-30~, Gain an augment(Random)[]"
 
 #: src-en/data/events_sector_lanius.xml:1543
 msgid ""
@@ -3100,7 +3100,7 @@ msgid ""
 " and @lvl=\"2\"]/text"
 msgstr ""
 "(Upg. Piloting) Engage the auto-pilot and safely harvest the debris.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_lanius.xml:1748
 msgid ""
@@ -3117,7 +3117,7 @@ msgid ""
 " and @lvl=\"3\"]/text"
 msgstr ""
 "(Adv. Piloting) Engage the auto-pilot and safely harvest the debris.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_sector_lanius.xml:1755
 msgid ""
@@ -3241,7 +3241,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_CONFUSED\"]/choice[@req=\"LIST_CHECK_ANY_CREW\"]/text"
 msgstr ""
 "Send out a crewmember to try and communicate.\n"
-"[[] nor [] nor <!>Lose your crew(clonable)[], Gain a crew(Lanius)[], []]"
+"[[] or [] or <!>Lose your crew(clonable)[], Gain a crew(Lanius)[], []]"
 
 #: src-en/data/events_sector_lanius.xml:1832
 msgid ""
@@ -3434,7 +3434,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_START\"]/choice[1]/text"
 msgstr ""
 "Promise to assist.\n"
-"[Reward[Reward[[[]]]], [[]], [[]]]"
+"[Reward Standard No Item(H), Gain an augment(Beacon Parts)[Reward Standard(M)[[[]]]], [[]], [[]]]"
 
 #: src-en/data/events_sector_lanius.xml:1957
 msgid ""
@@ -3449,7 +3449,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_START\"]/choice[1]/event/choice[@req=\"unique_anointed\"]/text"
 msgstr ""
 "(Anointed) Ask them to stop and give you the parts.\n"
-"Reward[Reward[[[]]]]"
+"Reward Standard No Item(H), Gain an augment(Beacon Parts)[Reward Standard(M)[[[]]]]"
 
 #: src-en/data/events_sector_lanius.xml:1961
 msgid ""
@@ -3464,7 +3464,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_START\"]/choice[1]/event/choice[@req=\"unique_anointed\"]/event/choice/text"
 msgstr ""
 "Respond to the station's hails.\n"
-"Reward[[[]]]"
+"Reward Standard(M)[[[]]]"
 
 #: src-en/data/events_sector_lanius.xml:1973
 msgid ""
@@ -3552,7 +3552,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_START_WIN\"]/choice/text"
 msgstr ""
 "Ask if they know what the 'Beacon Eater' is.\n"
-"[[], []]"
+"[[], Gain an augment(Beacon Parts), <!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_lanius.xml:2017
 msgid ""
@@ -3578,7 +3578,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_START_WIN\"]/choice/event/choice[2]/text"
 msgstr ""
 "Stay behind and take some time to salvage the 'gift'.\n"
-"[]"
+"Gain an augment(Beacon Parts), <!>Fleet Advance(1)[]"
 
 #: src-en/data/events_sector_lanius.xml:2026
 msgid ""
@@ -3636,7 +3636,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Continue...\n"
-"[[[Gain a crew(Unique Eater), Reward[], Gain a crew(Unique Eater), Reward[]]], [Reward[]]]"
+"[[[Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[], Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]]], [<#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]]]"
 
 #: src-en/data/events_sector_lanius.xml:2059
 msgid ""
@@ -3644,7 +3644,7 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "Continue...\n"
-"[[[Gain a crew(Unique Eater), Reward[[], []], Gain a crew(Unique Eater), Reward[]]], [Reward[]]]"
+"[[[Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[[], []], Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]]], [<#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]]]"
 
 #: src-en/data/events_sector_lanius.xml:2064
 msgid ""
@@ -3659,7 +3659,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Continue...\n"
-"[[[Gain a crew(Unique Eater), Reward[], Gain a crew(Unique Eater), Reward[]]], [Reward[]]]"
+"[[[Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[], Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]]], [<#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]]]"
 
 #: src-en/data/events_sector_lanius.xml:2071
 msgid ""
@@ -3667,7 +3667,7 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "Continue...\n"
-"[[[Gain a crew(Unique Eater), Reward[[], []], Gain a crew(Unique Eater), Reward[]]], [Reward[]]]"
+"[[[Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[[], []], Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]]], [<#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]]]"
 
 #: src-en/data/events_sector_lanius.xml:2092
 msgid "data/events_sector_lanius.xml$//event[@name=\"QUEST_BEACON_EATER\"]/text"
@@ -3790,7 +3790,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_WIN\"]/choice[@req=\"BEACON_PARTS\"]/text"
 msgstr ""
 "We still have the beacon parts. Give them to him.\n"
-"[[Gain a crew(Unique Eater), Reward[[], []], Gain a crew(Unique Eater), Reward[]]]"
+"[[Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[[], []], Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]]]"
 
 #: src-en/data/events_sector_lanius.xml:2152
 msgid ""
@@ -3807,7 +3807,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_WIN\"]/choice[@req=\"BEACON_PARTS\"]/event/choice/text"
 msgstr ""
 "The Forefathers?\n"
-"[Gain a crew(Unique Eater), Reward[[], []], Gain a crew(Unique Eater), Reward[]]"
+"[Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[[], []], Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]]"
 
 #: src-en/data/events_sector_lanius.xml:2158
 msgid ""
@@ -3826,21 +3826,21 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_WIN\"]/choice[@req=\"BEACON_PARTS\"]/event/choice/event/choice[1]/text"
 msgstr ""
 "Sounds like what the Rebels want.\n"
-"Gain a crew(Unique Eater), Reward[[], []]"
+"Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[[], []]"
 
 #: src-en/data/events_sector_lanius.xml:2164
 msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_WIN\"]/choice[@req=\"BEACON_PARTS\"]/event/choice/event/choice[@req=\"ANCIENT_ACTIVATOR\"]/text"
 msgstr ""
 "(Ancient Activator) We have a hibernating Forefather.\n"
-"Gain a crew(Unique Eater), Reward[]"
+"Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_lanius.xml:2172
 msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_WIN\"]/choice[2]/text"
 msgstr ""
 "He won't last long, just put him out of his misery.\n"
-"[Reward[]]"
+"[<#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]]"
 
 #: src-en/data/events_sector_lanius.xml:2174
 msgid ""
@@ -3855,7 +3855,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_WIN\"]/choice[2]/event/choice/text"
 msgstr ""
 "Respond.\n"
-"Reward[]"
+"<#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_lanius.xml:2183
 msgid "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_REWARD\"]/text"
@@ -3922,7 +3922,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_WIN_ANOINTED\"]/choice[@req=\"BEACON_PARTS\"]/text"
 msgstr ""
 "We still have the beacon parts. Give them to him.\n"
-"[[Gain a crew(Unique Eater), Reward[], Gain a crew(Unique Eater), Reward[]]]"
+"[[Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[], Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]]]"
 
 #: src-en/data/events_sector_lanius.xml:2212
 msgid ""
@@ -3939,7 +3939,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_WIN_ANOINTED\"]/choice[@req=\"BEACON_PARTS\"]/event/choice/text"
 msgstr ""
 "The Forefathers?\n"
-"[Gain a crew(Unique Eater), Reward[], Gain a crew(Unique Eater), Reward[]]"
+"[Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[], Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]]"
 
 #: src-en/data/events_sector_lanius.xml:2222
 msgid ""
@@ -3959,21 +3959,21 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_WIN_ANOINTED\"]/choice[@req=\"BEACON_PARTS\"]/event/choice/event/choice[1]/text"
 msgstr ""
 "Welcome aboard.\n"
-"Gain a crew(Unique Eater), Reward[]"
+"Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_lanius.xml:2229
 msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_WIN_ANOINTED\"]/choice[@req=\"BEACON_PARTS\"]/event/choice/event/choice[@req=\"ANCIENT_ACTIVATOR\"]/text"
 msgstr ""
 "(Ancient Activator) We have a hibernating Forefather.\n"
-"Gain a crew(Unique Eater), Reward[]"
+"Gain a crew(Unique Eater), <#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_lanius.xml:2237
 msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_WIN_ANOINTED\"]/choice[2]/text"
 msgstr ""
 "He won't last long, just put him out of his misery.\n"
-"[Reward[]]"
+"[<#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]]"
 
 #: src-en/data/events_sector_lanius.xml:2239
 msgid ""
@@ -3990,7 +3990,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_WIN_ANOINTED\"]/choice[2]/event/choice/text"
 msgstr ""
 "Respond.\n"
-"Reward[]"
+"<#>Unlock Ship(Lanius), Reward Standard(H), Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_lanius.xml:2248
 msgid ""

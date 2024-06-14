@@ -15,9 +15,9 @@ msgid ""
 "data/events_sector_droppoint.xml$//ship[@name=\"SHIP_UNION_PROTESTORS\"]/destroyed/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[]] \n"
+"Reward Stuff(L)[[]] \n"
 "or [] \n"
-"or Reward[]"
+"or Reward Stuff(M)[]"
 
 #: src-en/data/events_sector_droppoint.xml:34
 msgid ""
@@ -30,9 +30,9 @@ msgid ""
 "data/events_sector_droppoint.xml$//ship[@name=\"SHIP_UNION_PROTESTORS\"]/deadCrew/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[]] \n"
+"Reward Stuff(L)[[]] \n"
 "or [] \n"
-"or Reward[]"
+"or Reward Stuff(M)[]"
 
 #: src-en/data/events_sector_droppoint.xml:60
 msgid ""
@@ -92,7 +92,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//ship[@name=\"SHIP_BULKY_SMUGGLER\"]/surrender/choice[1]/text"
 msgstr ""
 "Accept their offer.\n"
-"Reward[]"
+"Reward Item(L)[]"
 
 #: src-en/data/events_sector_droppoint.xml:122
 msgid ""
@@ -114,7 +114,7 @@ msgstr ""
 "[] \n"
 "or [] \n"
 "or [] \n"
-"or Reward[]"
+"or Reward Item(L)[]"
 
 #: src-en/data/events_sector_droppoint.xml:135
 msgid ""
@@ -163,7 +163,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//ship[@name=\"SHIP_PIRATE_DROPPOINT_RAID\"]/surrender/choice[1]/text"
 msgstr ""
 "Agree to their compromise and split the supplies.\n"
-"Reward[]"
+"Reward Stuff(M)[]"
 
 #: src-en/data/events_sector_droppoint.xml:161
 msgid ""
@@ -282,7 +282,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//ship[@name=\"SHIP_FREEMANTIS_START_CHALLENGE\"]/deadCrew/choice[@req=\"BLUELIST_BOMBS_HEAL\"]/text"
 msgstr ""
 "(Healing Bomb) Revive the Free Mantis. [-1}]\n"
-"Gain a crew(Mantis Free)[]"
+"Gain a crew(Mantis Free), -1}[]"
 
 #: src-en/data/events_sector_droppoint.xml:249
 msgid ""
@@ -573,7 +573,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_QUEST_ESCORT\"]/choice[1]/text"
 msgstr ""
 "Accept.\n"
-"Reward[]"
+"Reward { Only(L)[]"
 
 #: src-en/data/events_sector_droppoint.xml:486
 msgid ""
@@ -762,15 +762,15 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_DISTRESS_TRAPPED_MINER\"]/choice[1]/text"
 msgstr ""
 "Try to dislodge the ship by shooting at the rocks.\n"
-"Reward[] \n"
-"or Reward[]"
+"Reward ~ Only(L)[] \n"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_sector_droppoint.xml:586
 msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_DISTRESS_TRAPPED_MINER\"]/choice[2]/text"
 msgstr ""
 "Destroy and loot the ship. They're just pirates.\n"
-"Reward[] \n"
+"Reward Standard(M)[] \n"
 "or [[]]"
 
 #: src-en/data/events_sector_droppoint.xml:590
@@ -778,7 +778,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_DISTRESS_TRAPPED_MINER\"]/choice[@req=\"BLUELIST_BEAMS_DAMAGE\"]/text"
 msgstr ""
 "(Beam Weapon) Carefully cut the ship out.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_droppoint.xml:592
 msgid ""
@@ -793,7 +793,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_DISTRESS_TRAPPED_MINER\"]/choice[@req=\"BLUELIST_FOCUS_DAMAGE\"]/text"
 msgstr ""
 "(Damaging Pinpoint Weapon) Attempt to meticulously cut out the pirate ship.\n"
-"[]"
+"<!>Fleet Advance(1)[]"
 
 #: src-en/data/events_sector_droppoint.xml:599
 msgid ""
@@ -809,7 +809,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_DISTRESS_TRAPPED_MINER\"]/choice[@req=\"DRONE_CONTROL_BEAM_DRONE\"]/text"
 msgstr ""
 "(Beam Drone) Have your drone cut the ship out.\n"
-"Reward[]"
+"Reward Standard(M), -1|[]"
 
 #: src-en/data/events_sector_droppoint.xml:606
 msgid ""
@@ -874,8 +874,8 @@ msgid ""
 msgstr ""
 "Pull closer.\n"
 "[[]] \n"
-"or [Gain a crew(Human)[] nor <!>Lose your crew(clonable)[], [], []] \n"
-"or [Reward[] nor [[]], []]"
+"or [Gain a crew(Human)[] or <!>Lose your crew(clonable)[], [], []] \n"
+"or [Reward Standard(M)[] or [[]], []]"
 
 #: src-en/data/events_sector_droppoint.xml:649
 msgid ""
@@ -914,7 +914,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//ship[@name=\"SHIP_REBEL_CRASH_LANDING_START\"]/destroyed/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Stuff(M)[]"
 
 #: src-en/data/events_sector_droppoint.xml:670
 msgid ""
@@ -934,7 +934,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//ship[@name=\"SHIP_REBEL_CRASH_LANDING_START\"]/deadCrew/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Stuff(M)[]"
 
 #: src-en/data/events_sector_droppoint.xml:681
 msgid ""
@@ -1003,7 +1003,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//eventList[@name=\"MV_CRASH_LANDING_INSPECT\"]/event[3]/choice[1]/text"
 msgstr ""
 "Scrap the ship.\n"
-"Reward[] \n"
+"Reward Standard(M)[] \n"
 "or [[]]"
 
 #: src-en/data/events_sector_droppoint.xml:718
@@ -1065,9 +1065,9 @@ msgid ""
 msgstr ""
 "Explore the asteroid field.\n"
 "[] \n"
-"or Reward[] \n"
-"or Reward[] \n"
-"or Reward[] \n"
+"or Reward { Only(H)[] \n"
+"or Reward }(M)[] \n"
+"or Reward |(M)[] \n"
 "or [] \n"
 "or [[]]"
 
@@ -1102,7 +1102,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_ASTEROID_EXPLORE\"]/choice[@req=\"SCRAP_COLLECTOR\"]/text"
 msgstr ""
 "(Scrap Recovery Arm) Attempt to mine the asteroids.\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_droppoint.xml:774
 msgid ""
@@ -1116,7 +1116,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_ASTEROID_EXPLORE\"]/choice[@req=\"MAGNET_ARM\"]/text"
 msgstr ""
 "(Magnetic Arm) Attempt to mine the asteroids.\n"
-"Reward[]"
+"Reward Stuff(L)[]"
 
 #: src-en/data/events_sector_droppoint.xml:781
 msgid ""
@@ -1130,7 +1130,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_ASTEROID_EXPLORE\"]/choice[@req=\"BEAM_MINING\"]/text"
 msgstr ""
 "(Mining Equipment) Attempt to mine the asteroids.\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_droppoint.xml:788
 msgid ""
@@ -1144,7 +1144,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_ASTEROID_EXPLORE\"]/choice[@req=\"DRONE_CONTROL_BEAM_DRONE\"]/text"
 msgstr ""
 "(Beam Drone) Attempt to mine the asteroids. [-1|]\n"
-"Reward[]"
+"Reward ~ Only(H), -1|[]"
 
 #: src-en/data/events_sector_droppoint.xml:795
 msgid ""
@@ -1211,14 +1211,14 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_TAVERN_HIRE\"]/choice[1]/text"
 msgstr ""
 "Hire a crewmember.\n"
-"Gain a crew(?)[]"
+"Gain a crew(?), -45<~<-25[]"
 
 #: src-en/data/events_sector_droppoint.xml:847
 msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_TAVERN_HIRE\"]/choice[2]/text"
 msgstr ""
 "Hire a crewmember.\n"
-"Gain a crew(?)[]"
+"Gain a crew(?), -55<~<-25[]"
 
 #: src-en/data/events_sector_droppoint.xml:856
 msgid ""
@@ -1273,9 +1273,9 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_HELP_MINERS\"]/choice[@req=\"EXPLOSIVE_REPLICATOR\"]/text"
 msgstr ""
 "(Explosive Replicator) Use the replicator to synthesize the missiles for them.\n"
-"[] \n"
+"15<~<25[] \n"
 "or [] \n"
-"or []"
+"or System Upgrade(Reactor 1™)[]"
 
 #: src-en/data/events_sector_droppoint.xml:886
 msgid ""
@@ -1297,7 +1297,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_HELP_MINERS\"]/choice[@req=\"BLUELIST_BOMBS\"]/text"
 msgstr ""
 "(Bomb Weapon) Offer to solve their problem by using a controlled explosion from your bomb. [-1}]\n"
-"[[] nor [] nor []]"
+"-1}[15<~<25[] or [] or System Upgrade(Reactor 1™)[]]"
 
 #: src-en/data/events_sector_droppoint.xml:894
 msgid ""
@@ -1311,16 +1311,16 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_HELP_MINERS\"]/choice[@req=\"BLUELIST_BOMBS\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[] \n"
+"15<~<25[] \n"
 "or [] \n"
-"or []"
+"or System Upgrade(Reactor 1™)[]"
 
 #: src-en/data/events_sector_droppoint.xml:905
 msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_HELP_MINERS\"]/choice[@req=\"LIST_CREW_LOSTSUN\"]/text"
 msgstr ""
 "(Lost Sun Crew) Offer to teach them how to construct makeshift explosives.\n"
-"Reward[]"
+"Reward {(M)[]"
 
 #: src-en/data/events_sector_droppoint.xml:907
 msgid ""
@@ -1375,7 +1375,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_TERRAFORMING_SCAN\"]/choice[1]/text"
 msgstr ""
 "You offer your assistance.\n"
-"[[] nor [[] nor [[]] nor [[[], [], []], []]], [] nor [[]] nor [[[], [], []], []], [] nor [[]] nor [[[], [], []], []], [] nor [[]] nor [[[], [], []], []], [] nor [[]] nor [[[], [], []], []], [] nor [[]] nor [[[], [], []], []]]"
+"[[] or [System Upgrade(Oxygen 1™)[] or [[]] or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]], System Upgrade(Oxygen 1™)[] or [[]] or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []], System Upgrade(Oxygen 1™)[] or [[]] or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []], System Upgrade(Oxygen 1™)[] or [[]] or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []], System Upgrade(Oxygen 1™)[] or [[]] or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []], System Upgrade(Oxygen 1™)[] or [[]] or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]]"
 
 #: src-en/data/events_sector_droppoint.xml:933
 msgid ""
@@ -1391,52 +1391,52 @@ msgid ""
 msgstr ""
 "Attempt to scan the planet.\n"
 "[] \n"
-"or [[] nor [[]] nor [[[], [], []], []]]"
+"or [System Upgrade(Oxygen 1™)[] or [[]] or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]]"
 
 #: src-en/data/events_sector_droppoint.xml:939
 msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_TERRAFORMING_SCAN\"]/choice[1]/event/choice[@req=\"sensors\"]/text"
 msgstr ""
 "(Upg. Sensors) Set sensors to maximum and scan.\n"
-"[] \n"
+"System Upgrade(Oxygen 1™)[] \n"
 "or [[]] \n"
-"or [[[], [], []], []]"
+"or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]"
 
 #: src-en/data/events_sector_droppoint.xml:943
 msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_TERRAFORMING_SCAN\"]/choice[1]/event/choice[@req=\"LIST_CREW_POWER\"]/text"
 msgstr ""
 "(Bonus Power Crew) Send your crewman to overcharge their systems.\n"
-"[] \n"
+"System Upgrade(Oxygen 1™)[] \n"
 "or [[]] \n"
-"or [[[], [], []], []]"
+"or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]"
 
 #: src-en/data/events_sector_droppoint.xml:947
 msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_TERRAFORMING_SCAN\"]/choice[1]/event/choice[@req=\"zoltan_osmian\"]/text"
 msgstr ""
 "(Osmian Crew) Generate a hologram to overcharge their systems.\n"
-"[] \n"
+"System Upgrade(Oxygen 1™)[] \n"
 "or [[]] \n"
-"or [[[], [], []], []]"
+"or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]"
 
 #: src-en/data/events_sector_droppoint.xml:951
 msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_TERRAFORMING_SCAN\"]/choice[1]/event/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr ""
 "(Long-Ranged Scanners) Scan the planet.\n"
-"[] \n"
+"System Upgrade(Oxygen 1™)[] \n"
 "or [[]] \n"
-"or [[[], [], []], []]"
+"or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]"
 
 #: src-en/data/events_sector_droppoint.xml:955
 msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_TERRAFORMING_SCAN\"]/choice[1]/event/choice[@req=\"LIST_CREW_SHELL_SCIENTIST\"]/text"
 msgstr ""
 "(Shell Scientist) Have your Shell assist them.\n"
-"[] \n"
+"System Upgrade(Oxygen 1™)[] \n"
 "or [[]] \n"
-"or [[[], [], []], []]"
+"or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]"
 
 #: src-en/data/events_sector_droppoint.xml:961
 msgid ""
@@ -1484,9 +1484,9 @@ msgid ""
 "data/events_sector_droppoint.xml$//eventList[@name=\"MV_NORMAL_SCAN_TERRAFORMING\"]/event[2]/choice/text"
 msgstr ""
 "Continue...\n"
-"[] \n"
+"System Upgrade(Oxygen 1™)[] \n"
 "or [[]] \n"
-"or [[[], [], []], []]"
+"or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]"
 
 #: src-en/data/events_sector_droppoint.xml:989
 msgid ""
@@ -1525,7 +1525,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//eventList[@name=\"MV_HIGH_SCAN_TERRAFORMING\"]/event[3]/choice[1]/text"
 msgstr ""
 "Tell them to stop. Any life is valuable.\n"
-"[[], [], []]"
+"[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []]"
 
 #: src-en/data/events_sector_droppoint.xml:1005
 msgid ""
@@ -1539,14 +1539,14 @@ msgid ""
 "data/events_sector_droppoint.xml$//eventList[@name=\"MV_HIGH_SCAN_TERRAFORMING\"]/event[3]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Accept the bribe and leave.\n"
-"[]"
+"15<~<25[]"
 
 #: src-en/data/events_sector_droppoint.xml:1015
 msgid ""
 "data/events_sector_droppoint.xml$//eventList[@name=\"MV_HIGH_SCAN_TERRAFORMING\"]/event[3]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Offer to pay them to at least delay until the mold can be studied.\n"
-"[]"
+"System Upgrade(Oxygen 1™), -25<~<-15[]"
 
 #: src-en/data/events_sector_droppoint.xml:1017
 msgid ""
@@ -1582,7 +1582,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"MV_ROGUE_REBEL\"]/choice[1]/text"
 msgstr ""
 "Go looking for the Rebel ship.\n"
-"[[[]], []] \n"
+"[<!>Fleet Advance(1)[[]], []] \n"
 "or [[]] \n"
 "or [[]]"
 
@@ -1670,7 +1670,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//eventList[@name=\"MV_ROGUE_REBEL_SEARCH\"]/event[1]/choice[1]/text"
 msgstr ""
 "Continue searching.\n"
-"[[]]"
+"<!>Fleet Advance(1)[[]]"
 
 #: src-en/data/events_sector_droppoint.xml:1090
 msgid ""
@@ -1840,7 +1840,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_SKETCHY_UPGRADES\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[], [[], [[]]], [[], []]]"
+"[System Upgrade(Engines 1™), -3{[], [System Upgrade(Engines 1™), -3{[], [[]]], [[], []]]"
 
 #: src-en/data/events_sector_droppoint.xml:1201
 msgid ""
@@ -1856,7 +1856,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_SKETCHY_UPGRADES\"]/choice/event/choice[1]/text"
 msgstr ""
 "Buy an engine upgrade.\n"
-"[]"
+"System Upgrade(Engines 1™), -3{[]"
 
 #: src-en/data/events_sector_droppoint.xml:1205
 msgid ""
@@ -1870,7 +1870,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_SKETCHY_UPGRADES\"]/choice/event/choice[2]/text"
 msgstr ""
 "Attack them!\n"
-"[[], [[]]]"
+"[System Upgrade(Engines 1™), -3{[], [[]]]"
 
 #: src-en/data/events_sector_droppoint.xml:1215
 msgid ""
@@ -1885,7 +1885,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_SKETCHY_UPGRADES\"]/choice/event/choice[2]/event/choice[1]/text"
 msgstr ""
 "Take the upgrade.\n"
-"[]"
+"System Upgrade(Engines 1™), -3{[]"
 
 #: src-en/data/events_sector_droppoint.xml:1219
 msgid ""
@@ -1953,8 +1953,8 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_SLAVER\"]/choice[1]/text"
 msgstr ""
 "See the slaves they're offering.\n"
-"[Gain a crew(Engi)[[]], Gain a crew(Mantis)[[]], []] \n"
-"or [Gain a crew(Rock)[[]], Gain a crew(Orchid)[[]], []]"
+"[Gain a crew(Engi), -35<~<-25[[]], Gain a crew(Mantis), -45<~<-35[[]], []] \n"
+"or [Gain a crew(Rock), -45<~<-35[[]], Gain a crew(Orchid), -40<~<-30[[]], []]"
 
 #: src-en/data/events_sector_droppoint.xml:1266
 msgid ""
@@ -2016,7 +2016,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//eventList[@name=\"DROPPOINT_SLAVER_LIST\"]/event[1]/choice[1]/text"
 msgstr ""
 "Buy an Engi slave.\n"
-"Gain a crew(Engi)[[]]"
+"Gain a crew(Engi), -35<~<-25[[]]"
 
 #: src-en/data/events_sector_droppoint.xml:1297
 msgid ""
@@ -2037,7 +2037,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//eventList[@name=\"DROPPOINT_SLAVER_LIST\"]/event[1]/choice[2]/text"
 msgstr ""
 "Buy a Mantis slave.\n"
-"Gain a crew(Mantis)[[]]"
+"Gain a crew(Mantis), -45<~<-35[[]]"
 
 #: src-en/data/events_sector_droppoint.xml:1311
 msgid ""
@@ -2073,7 +2073,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//eventList[@name=\"DROPPOINT_SLAVER_LIST\"]/event[2]/choice[1]/text"
 msgstr ""
 "Buy a Rock slave.\n"
-"Gain a crew(Rock)[[]]"
+"Gain a crew(Rock), -45<~<-35[[]]"
 
 #: src-en/data/events_sector_droppoint.xml:1332
 msgid ""
@@ -2094,7 +2094,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//eventList[@name=\"DROPPOINT_SLAVER_LIST\"]/event[2]/choice[2]/text"
 msgstr ""
 "Buy an Orchid slave.\n"
-"Gain a crew(Orchid)[[]]"
+"Gain a crew(Orchid), -40<~<-30[[]]"
 
 #: src-en/data/events_sector_droppoint.xml:1346
 msgid ""
@@ -2129,8 +2129,8 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_CACHE\"]/choice[1]/text"
 msgstr ""
 "Try to carefully open it.\n"
-"Reward[] \n"
-"or [] \n"
+"Reward } Only(H)[] \n"
+"or System Upgrade(Reactor 1™)[] \n"
 "or [] \n"
 "or []"
 
@@ -2139,7 +2139,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_CACHE\"]/choice[2]/text"
 msgstr ""
 "Blow it open!\n"
-"[[] nor [] nor []]"
+"-3}[[] or System Upgrade(Reactor 1™)[] or Gain a weapon(Random)[]]"
 
 #: src-en/data/events_sector_droppoint.xml:1373
 msgid ""
@@ -2155,15 +2155,15 @@ msgid ""
 msgstr ""
 "Continue...\n"
 "[] \n"
-"or [] \n"
-"or []"
+"or System Upgrade(Reactor 1™)[] \n"
+"or Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_droppoint.xml:1384
 msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_CACHE\"]/choice[3]/text"
 msgstr ""
 "Set a trap for the fleet.\n"
-"[]"
+"-3}, Fleet Delay(1)[]"
 
 #: src-en/data/events_sector_droppoint.xml:1386
 msgid ""
@@ -2263,7 +2263,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_ORCHIDS\"]/choice[1]/text"
 msgstr ""
 "Wait for them to hail.\n"
-"[Reward[], [[], Reward[]]]"
+"[Reward ~ Only(M)[], [[], Reward { Only(M)[]]]"
 
 #: src-en/data/events_sector_droppoint.xml:1446
 msgid ""
@@ -2281,7 +2281,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_ORCHIDS\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Yes, that's me. I'm Orwell. Definitely.\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_droppoint.xml:1450
 msgid ""
@@ -2296,7 +2296,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_ORCHIDS\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "I'm not 'Orwell'.\n"
-"[[], Reward[]]"
+"[[], Reward { Only(M)[]]"
 
 #: src-en/data/events_sector_droppoint.xml:1457
 msgid ""
@@ -2325,7 +2325,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_ORCHIDS\"]/choice[1]/event/choice[2]/event/choice[2]/text"
 msgstr ""
 "No idea.\n"
-"Reward[]"
+"Reward { Only(M)[]"
 
 #: src-en/data/events_sector_droppoint.xml:1467
 msgid ""
@@ -2453,7 +2453,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_PIRATE_RAID_WIN\"]/choice/text"
 msgstr ""
 "Salvage the remaining supplies.\n"
-"Reward[]"
+"Reward Stuff(H)[]"
 
 #: src-en/data/events_sector_droppoint.xml:1553
 msgid ""
@@ -2475,7 +2475,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_FORTIFICATIONS\"]/choice[1]/text"
 msgstr ""
 "Hail and ask if they need any assistance.\n"
-"[[[]], Reward, <!>Lose your crew(UNCLONABLE)[], [], [[], []]]"
+"[<!>Fleet Advance(1)[[]], Reward Item(M), <!>Lose your crew(UNCLONABLE)[], [], [[], []]]"
 
 #: src-en/data/events_sector_droppoint.xml:1564
 msgid ""
@@ -2491,7 +2491,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_FORTIFICATIONS\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Offer to wait behind longer and fight off the Rebels.\n"
-"[[]]"
+"<!>Fleet Advance(1)[[]]"
 
 #: src-en/data/events_sector_droppoint.xml:1568
 msgid ""
@@ -2513,7 +2513,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Lend a crew member to stay and assist them.\n"
-"Reward, <!>Lose your crew(UNCLONABLE)[]"
+"Reward Item(M), <!>Lose your crew(UNCLONABLE)[]"
 
 #: src-en/data/events_sector_droppoint.xml:1580
 msgid ""
@@ -2603,7 +2603,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_FORTIFICATIONS_GOTAWAY\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward { Only(L)[]"
 
 #: src-en/data/events_sector_droppoint.xml:1628
 msgid ""
@@ -2635,7 +2635,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_PROTESTORS\"]/choice[1]/text"
 msgstr ""
 "Investigate.\n"
-"[[[]], Reward[] nor <!>Lose your crew(clonable)[] nor Gain a crew(Human Medic)[], [], [[], []]]"
+"[[[]], Reward Stuff(M)[] or <!>Lose your crew(clonable)[] or Gain a crew(Human Medic)[], [], [[], []]]"
 
 #: src-en/data/events_sector_droppoint.xml:1644
 msgid ""
@@ -2672,7 +2672,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Send in a team of crew to assist.\n"
-"Reward[] \n"
+"Reward Stuff(M)[] \n"
 "or <!>Lose your crew(clonable)[] \n"
 "or Gain a crew(Human Medic)[]"
 
@@ -2831,15 +2831,15 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_CRAZYZOLTAN\"]/choice[2]/text"
 msgstr ""
 "Pay him.\n"
-"[] \n"
-"or []"
+"-20~[] \n"
+"or -20~, Fleet Delay(2)[]"
 
 #: src-en/data/events_sector_droppoint.xml:1743
 msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_CRAZYZOLTAN\"]/choice[@req=\"LIST_CREW_MONK\"]/text"
 msgstr ""
 "(Monk Crew) Retaliate with even greater spiritual nonsense.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_droppoint.xml:1745
 msgid ""
@@ -3060,7 +3060,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_BULKY_SMUGGLER\"]/choice[2]/text"
 msgstr ""
 "Ask them if they need any help.\n"
-"[Reward[[]], Reward[[]], Reward[[]] nor [[]], Reward[[]], [Reward[[]]], Reward[], []]"
+"[Reward Standard(M)[[]], Reward Standard(M)[[]], Reward Standard(M)[[]] or [[]], Reward Standard(M)[[]], <!>Fleet Advance(1)[Reward Standard(L)[[]]], Reward Standard(L)[], []]"
 
 #: src-en/data/events_sector_droppoint.xml:1862
 msgid ""
@@ -3074,7 +3074,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_BULKY_SMUGGLER\"]/choice[2]/event/choice[@req=\"LIST_CREW_FEDERATION_ELITE_EASTER\"]/text"
 msgstr ""
 "(Elite Federation Crew) Clear the smuggler for passage.\n"
-"Reward[[]]"
+"Reward Standard(M)[[]]"
 
 #: src-en/data/events_sector_droppoint.xml:1866
 msgid ""
@@ -3097,7 +3097,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_BULKY_SMUGGLER\"]/choice[2]/event/choice[@req=\"mind\"]/text"
 msgstr ""
 "(Mind Control) Convince the checkpoint to let them through.\n"
-"Reward[[]]"
+"Reward Standard(M)[[]]"
 
 #: src-en/data/events_sector_droppoint.xml:1877
 msgid ""
@@ -3122,7 +3122,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "(Hacking) Scramble the checkpoint's sensors.\n"
-"Reward[[]] \n"
+"Reward Standard(M)[[]] \n"
 "or [[]]"
 
 #: src-en/data/events_sector_droppoint.xml:1890
@@ -3131,7 +3131,7 @@ msgid ""
 " and @lvl=\"2\"]/text"
 msgstr ""
 "(Upg. Hacking) Scramble the checkpoint's sensors.\n"
-"Reward[[]]"
+"Reward Standard(M)[[]]"
 
 #: src-en/data/events_sector_droppoint.xml:1892
 msgid ""
@@ -3155,7 +3155,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_BULKY_SMUGGLER\"]/choice[2]/event/choice[5]/text"
 msgstr ""
 "Distract the checkpoint with idle chatter.\n"
-"[Reward[[]]]"
+"<!>Fleet Advance(1)[Reward Standard(L)[[]]]"
 
 #: src-en/data/events_sector_droppoint.xml:1903
 msgid ""
@@ -3172,7 +3172,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_BULKY_SMUGGLER\"]/choice[2]/event/choice[5]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[]]"
+"Reward Standard(L)[[]]"
 
 #: src-en/data/events_sector_droppoint.xml:1908
 msgid ""
@@ -3194,7 +3194,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_BULKY_SMUGGLER\"]/choice[2]/event/choice[6]/text"
 msgstr ""
 "Report the smuggler to the checkpoint.\n"
-"Reward[]"
+"Reward Standard(L)[]"
 
 #: src-en/data/events_sector_droppoint.xml:1921
 msgid ""
@@ -3282,7 +3282,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DISTRESS_DROPPOINT_ZOLTAN\"]/choice[@req=\"LIST_CHECK_ENERGY_SHIELD\"]/text"
 msgstr ""
 "(Energy Shield) Use your own shield to jumpstart theirs.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_sector_droppoint.xml:1982
 msgid ""
@@ -3296,7 +3296,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DISTRESS_DROPPOINT_ZOLTAN\"]/choice[@req=\"DEBUG_GENERATOR\"]/text"
 msgstr ""
 "(Emergency Generator) Use the Emergency Generator to jumpstart it.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_sector_droppoint.xml:1989
 msgid ""
@@ -3310,7 +3310,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DISTRESS_DROPPOINT_ZOLTAN\"]/choice[@req=\"battery\"]/text"
 msgstr ""
 "(Backup Battery) Use your battery subsystem to jumpstart it.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_sector_droppoint.xml:1996
 msgid ""
@@ -3341,18 +3341,18 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DISTRESS_DROPPOINT_ZOLTAN\"]/choice[@req=\"DRONE_CONTROL_REPAIR_CREW\"]/text"
 msgstr ""
 "(Repair Drone) Send a Repair Drone. [-1|]\n"
-"Reward[] \n"
-"or Reward[] \n"
-"or Reward[]"
+"-1|, Reward Standard(H)[] \n"
+"or -1|, Reward Standard(L)[] \n"
+"or -1|, Reward Standard(M)[]"
 
 #: src-en/data/events_sector_droppoint.xml:2012
 msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DISTRESS_DROPPOINT_ZOLTAN\"]/choice[@req=\"LIST_CHECK_ANY_CREW\"]/text"
 msgstr ""
 "Spend some time trying to fix it.\n"
-"Reward[] \n"
-"or Reward[] \n"
-"or Reward[] \n"
+"Reward Standard(H)[] \n"
+"or Reward Standard(L)[] \n"
+"or Reward Standard(M)[] \n"
 "or [] \n"
 "or []"
 
@@ -3491,7 +3491,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DISTRESS_DROPPOINT_HAZARDOUS_FACILITY\"]/choice[1]/text"
 msgstr ""
 "Hear them out.\n"
-"[[Reward[]], [Reward[]], [Reward[]], [Reward[]], [[], []]]"
+"[[Reward Augment(M)[]], [Reward Augment(M)[]], [Reward Augment(M)[]], [Reward Augment(M)[]], [[], []]]"
 
 #: src-en/data/events_sector_droppoint.xml:2092
 msgid ""
@@ -3509,7 +3509,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DISTRESS_DROPPOINT_HAZARDOUS_FACILITY\"]/choice[1]/event/choice[@req=\"BLUELIST_CREW_NO2\"]/text"
 msgstr ""
 "(Anaerobic Crew) Send an anaerobic crewmember.\n"
-"[Reward[]]"
+"[Reward Augment(M)[]]"
 
 #: src-en/data/events_sector_droppoint.xml:2096
 msgid ""
@@ -3525,14 +3525,14 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DISTRESS_DROPPOINT_HAZARDOUS_FACILITY\"]/choice[1]/event/choice[@req=\"BLUELIST_CREW_NO2\"]/event/choice/text"
 msgstr ""
 "Return the ship to its owner.\n"
-"Reward[]"
+"Reward Augment(M)[]"
 
 #: src-en/data/events_sector_droppoint.xml:2104
 msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DISTRESS_DROPPOINT_HAZARDOUS_FACILITY\"]/choice[1]/event/choice[@req=\"LIST_CREW_SHELL\"]/text"
 msgstr ""
 "(Shell Crew) Send a Shell crewmember.\n"
-"[Reward[]]"
+"[Reward Augment(M)[]]"
 
 #: src-en/data/events_sector_droppoint.xml:2106
 msgid ""
@@ -3548,14 +3548,14 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DISTRESS_DROPPOINT_HAZARDOUS_FACILITY\"]/choice[1]/event/choice[@req=\"LIST_CREW_SHELL\"]/event/choice/text"
 msgstr ""
 "Return the ship to its owner.\n"
-"Reward[]"
+"Reward Augment(M)[]"
 
 #: src-en/data/events_sector_droppoint.xml:2114
 msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DISTRESS_DROPPOINT_HAZARDOUS_FACILITY\"]/choice[1]/event/choice[@req=\"O2_MASKS\"]/text"
 msgstr ""
 "(Respirators) Have a crewmember enter the ship.\n"
-"[Reward[]]"
+"[Reward Augment(M)[]]"
 
 #: src-en/data/events_sector_droppoint.xml:2117
 msgid ""
@@ -3570,14 +3570,14 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DISTRESS_DROPPOINT_HAZARDOUS_FACILITY\"]/choice[1]/event/choice[@req=\"O2_MASKS\"]/event/choice/text"
 msgstr ""
 "Return the ship to its owner.\n"
-"Reward[]"
+"Reward Augment(M)[]"
 
 #: src-en/data/events_sector_droppoint.xml:2125
 msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DISTRESS_DROPPOINT_HAZARDOUS_FACILITY\"]/choice[1]/event/choice[@req=\"DRONE_CONTROL_SYSTEM_CREW\"]/text"
 msgstr ""
 "(System Drone) Send a system-manning drone onto the ship.\n"
-"[Reward[]]"
+"[Reward Augment(M)[]]"
 
 #: src-en/data/events_sector_droppoint.xml:2127
 msgid ""
@@ -3593,7 +3593,7 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DISTRESS_DROPPOINT_HAZARDOUS_FACILITY\"]/choice[1]/event/choice[@req=\"DRONE_CONTROL_SYSTEM_CREW\"]/event/choice/text"
 msgstr ""
 "Return the ship to its owner.\n"
-"Reward[]"
+"Reward Augment(M)[]"
 
 #: src-en/data/events_sector_droppoint.xml:2135
 msgid ""
@@ -3770,14 +3770,14 @@ msgid ""
 "data/events_sector_droppoint.xml$//event[@name=\"DROPPOINT_SUPPLY_DEPOT\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[], []] \n"
-"or Reward[[], []] \n"
-"or Reward[[], []] \n"
-"or Reward[[], []] \n"
-"or Reward[[], []] \n"
-"or Reward[[[]], [[], []]] \n"
-"or Reward[[[]], [[], []]] \n"
-"or Reward[[[]], [[], []]]"
+"Reward Stuff(M)[[], []] \n"
+"or Reward ~ Only(M)[[], []] \n"
+"or Reward {(H)[[], []] \n"
+"or Reward }(H)[[], []] \n"
+"or Reward |(M)[[], []] \n"
+"or Reward ~ Only(L)[[[]], [[], []]] \n"
+"or Reward ~ Only(L)[[[]], [[], []]] \n"
+"or Reward ~ Only(L)[[[]], [[], []]]"
 
 #: src-en/data/events_sector_droppoint.xml:2278
 msgid ""

@@ -37,7 +37,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"NEBULA_LEECH_PSA\"]/choice[1]/text"
 msgstr ""
 "Listen.\n"
-"[Reward[[], []]]"
+"[Reward ~ Only(L)[[], []]]"
 
 #: src-en/data/events_sector_republic.xml:61
 msgid ""
@@ -54,7 +54,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"NEBULA_LEECH_PSA\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[], []]"
+"Reward ~ Only(L)[[], []]"
 
 #: src-en/data/events_sector_republic.xml:65
 msgid ""
@@ -177,7 +177,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"NEBULA_LEECH_AMPERE_CONVERSION\"]/choice[@req=\"leech\"]/text"
 msgstr ""
 "(Leech Crew) Send your Leech onto a shuttle.\n"
-"[[], [[], []]]"
+"[-30~[], [[], []]]"
 
 #: src-en/data/events_sector_republic.xml:136
 msgid ""
@@ -192,7 +192,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"NEBULA_LEECH_AMPERE_CONVERSION\"]/choice[@req=\"leech\"]/event/choice[1]/text"
 msgstr ""
 "Pay the fee.\n"
-"[]"
+"-30~[]"
 
 #: src-en/data/events_sector_republic.xml:140
 msgid ""
@@ -301,9 +301,9 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"LEECH_SPACE_TRASH\"]/choice[1]/text"
 msgstr ""
 "Salvage some of the junk.\n"
-"Reward[] \n"
-"or [] \n"
-"or Reward[]"
+"Reward {(M)[] \n"
+"or Gain a weapon(Giftlist Rusty)[] \n"
+"or Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_republic.xml:205
 msgid ""
@@ -366,7 +366,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"LEECH_MISSION\"]/choice[1]/text"
 msgstr ""
 "Visit the mission.\n"
-"[[], Gain a crew(Rock)[], Reward[], []]"
+"[Gain a weapon(Giftlist Crystal), -60<~<-40[], Gain a crew(Rock), -50<~<-35[], Reward Standard(M)[], []]"
 
 #: src-en/data/events_sector_republic.xml:241
 msgid ""
@@ -381,7 +381,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"LEECH_MISSION\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Purchase a Crystal weapon from their shrine.\n"
-"[]"
+"Gain a weapon(Giftlist Crystal), -60<~<-40[]"
 
 #: src-en/data/events_sector_republic.xml:245
 msgid ""
@@ -395,7 +395,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"LEECH_MISSION\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Recruit one of the clergy to work aboard your ship.\n"
-"Gain a crew(Rock)[]"
+"Gain a crew(Rock), -50<~<-35[]"
 
 #: src-en/data/events_sector_republic.xml:255
 msgid ""
@@ -410,7 +410,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"LEECH_MISSION\"]/choice[1]/event/choice[@req=\"LIST_CREW_ROCK_FAITHFUL\"]/text"
 msgstr ""
 "(Theocracy Crew) Request repairs and supplies.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_republic.xml:265
 msgid ""
@@ -486,8 +486,8 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"LEECH_MINERS\"]/choice[1]/text"
 msgstr ""
 "Attack the settlement.\n"
-"Reward[] \n"
-"or Reward[] \n"
+"Reward Stuff(L)[] \n"
+"or Reward Stuff(L)[] \n"
 "or [[]]"
 
 #: src-en/data/events_sector_republic.xml:311
@@ -497,7 +497,7 @@ msgstr ""
 "Hail the settlement.\n"
 "[] \n"
 "or [] \n"
-"or []"
+"or Fleet Delay(2)[]"
 
 #: src-en/data/events_sector_republic.xml:315
 msgid ""
@@ -613,7 +613,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"NEBULA_LEECH_GARDEN\"]/choice[@req=\"LIST_CREW_VAMPWEED\"]/text"
 msgstr ""
 "(Vampweed Crew) Request access to the outpost.\n"
-"Reward[[], Gain a crew(Orchid Vampweed)[], []]"
+"Reward { Only(H)[Gain a weapon(Giftlist Spore), -60<~<-55[], Gain a crew(Orchid Vampweed), -55<~<-40[], []]"
 
 #: src-en/data/events_sector_republic.xml:408
 msgid ""
@@ -655,14 +655,14 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"LEECH_GARDEN_VISIT\"]/choice[1]/text"
 msgstr ""
 "Buy one of their Spore weapons.\n"
-"[]"
+"Gain a weapon(Giftlist Spore), -60<~<-55[]"
 
 #: src-en/data/events_sector_republic.xml:435
 msgid ""
 "data/events_sector_republic.xml$//event[@name=\"LEECH_GARDEN_VISIT\"]/choice[2]/text"
 msgstr ""
 "Hire one of the gardeners.\n"
-"Gain a crew(Orchid Vampweed)[]"
+"Gain a crew(Orchid Vampweed), -55<~<-40[]"
 
 #: src-en/data/events_sector_republic.xml:444
 msgid ""
@@ -1025,7 +1025,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"NEBULA_LEECH_SUICIDEMOON\"]/choice[2]/text"
 msgstr ""
 "Pay the fee to obliterate you and your ship violently.\n"
-"[]"
+"<#>Unlock Ship(Gold), -50~[]"
 
 #: src-en/data/events_sector_republic.xml:618
 msgid ""
@@ -1091,7 +1091,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"LEECH_SUICIDEMOON_WIN\"]/choice[2]/text"
 msgstr ""
 "Take charge of the queue now that the Slug is dead.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_republic.xml:653
 msgid ""
@@ -1114,7 +1114,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"NEBULA_LEECH_LITTERING\"]/choice[1]/text"
 msgstr ""
 "Hey! Stop that! Littering is bad!\n"
-"[[[Reward[], [], Gain a crew(Leech)[]]], [[]], Reward[]]"
+"[[[Reward { Only(L)[], [], Gain a crew(Leech)[]]], [[]], Reward Standard(M)[]]"
 
 #: src-en/data/events_sector_republic.xml:669
 msgid ""
@@ -1128,7 +1128,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"NEBULA_LEECH_LITTERING\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Offer to pick it up for them.\n"
-"[[Reward[], [], Gain a crew(Leech)[]]]"
+"[[Reward { Only(L)[], [], Gain a crew(Leech)[]]]"
 
 #: src-en/data/events_sector_republic.xml:673
 msgid ""
@@ -1142,7 +1142,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"NEBULA_LEECH_LITTERING\"]/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[Reward[], [], Gain a crew(Leech)[]]"
+"[Reward { Only(L)[], [], Gain a crew(Leech)[]]"
 
 #: src-en/data/events_sector_republic.xml:681
 msgid ""
@@ -1170,7 +1170,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"NEBULA_LEECH_LITTERING\"]/choice[1]/event/choice[@req=\"LIST_CREW_ORCHID\"]/text"
 msgstr ""
 "(Orchid Crew) Lecture the Leeches.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_republic.xml:694
 msgid ""
@@ -1224,7 +1224,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"LEECH_LITTERING_WIN\"]/choice[1]/text"
 msgstr ""
 "Use them for biofuel.\n"
-"Reward[]"
+"Reward { Only(L)[]"
 
 #: src-en/data/events_sector_republic.xml:720
 msgid ""
@@ -1270,7 +1270,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_CARGO_LOST\"]/choice[@req=\"MAGNET_ARM\"]/text"
 msgstr ""
 "(Magnetic Arm) Help the Leeches collect their strewn cargo.\n"
-"Reward[]"
+"Reward Standard(M), System Upgrade(Pilot 1™)[]"
 
 #: src-en/data/events_sector_republic.xml:767
 msgid ""
@@ -1288,7 +1288,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_CARGO_LOST\"]/choice[2]/text"
 msgstr ""
 "Take some time to help the Leeches collect their strewn cargo.\n"
-"Reward[]"
+"Reward Standard(M), System Upgrade(Pilot 1™), <!>Fleet Advance(1)[]"
 
 #: src-en/data/events_sector_republic.xml:775
 msgid ""
@@ -1349,7 +1349,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_ETERNAL_COMATOSE\"]/choice[@req=\"unique_anurak\"]/text"
 msgstr ""
 "(Anurak) Mix up a special remedy.\n"
-"[[]]"
+"[Gain a weapon(Giftlist Leech)[]]"
 
 #: src-en/data/events_sector_republic.xml:806
 msgid ""
@@ -1368,14 +1368,14 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_ETERNAL_COMATOSE\"]/choice[@req=\"unique_anurak\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Giftlist Leech)[]"
 
 #: src-en/data/events_sector_republic.xml:814
 msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_ETERNAL_COMATOSE\"]/choice[@req=\"unique_alkali\"]/text"
 msgstr ""
 "(Alkali) Have Alkali figure out what's going on.\n"
-"[[]]"
+"[Gain a weapon(Giftlist Leech)[]]"
 
 #: src-en/data/events_sector_republic.xml:816
 msgid ""
@@ -1392,14 +1392,14 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_ETERNAL_COMATOSE\"]/choice[@req=\"unique_alkali\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Giftlist Leech)[]"
 
 #: src-en/data/events_sector_republic.xml:824
 msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_ETERNAL_COMATOSE\"]/choice[@req=\"LIST_CREW_MEDIC\"]/text"
 msgstr ""
 "(Medic Crew) Treat the illness.\n"
-"[[]]"
+"[Gain a weapon(Giftlist Leech)[]]"
 
 #: src-en/data/events_sector_republic.xml:826
 msgid ""
@@ -1417,14 +1417,14 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_ETERNAL_COMATOSE\"]/choice[@req=\"LIST_CREW_MEDIC\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Giftlist Leech)[]"
 
 #: src-en/data/events_sector_republic.xml:834
 msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_ETERNAL_COMATOSE\"]/choice[@req=\"shell_scientist\"]/text"
 msgstr ""
 "(Shell Scientist) Treat the illness.\n"
-"[[]]"
+"[Gain a weapon(Giftlist Leech)[]]"
 
 #: src-en/data/events_sector_republic.xml:836
 msgid ""
@@ -1442,14 +1442,14 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_ETERNAL_COMATOSE\"]/choice[@req=\"shell_scientist\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Giftlist Leech)[]"
 
 #: src-en/data/events_sector_republic.xml:844
 msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_ETERNAL_COMATOSE\"]/choice[@req=\"medbay\"]/text"
 msgstr ""
 "(Adv. Medbay) Examine them in your upgraded Medbay.\n"
-"[[]]"
+"[Gain a weapon(Giftlist Leech)[]]"
 
 #: src-en/data/events_sector_republic.xml:846
 msgid ""
@@ -1466,14 +1466,14 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_ETERNAL_COMATOSE\"]/choice[@req=\"medbay\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Giftlist Leech)[]"
 
 #: src-en/data/events_sector_republic.xml:854
 msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_ETERNAL_COMATOSE\"]/choice[@req=\"QUARP_JUICE\"]/text"
 msgstr ""
 "(Quarp Juice) Give them something that will put some pep in their step.\n"
-"[[]]"
+"[Gain a weapon(Giftlist Leech)[]]"
 
 #: src-en/data/events_sector_republic.xml:856
 msgid ""
@@ -1488,7 +1488,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_ETERNAL_COMATOSE\"]/choice[@req=\"QUARP_JUICE\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Giftlist Leech)[]"
 
 #: src-en/data/events_sector_republic.xml:860
 msgid ""
@@ -1548,7 +1548,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_GRAPHITI\"]/choice[1]/text"
 msgstr ""
 "Agree.\n"
-"[[[[]], [[[]]], [Reward[]], [Reward[]]]]"
+"[[[[]], [[[]]], [Reward Item(M)[]], [Reward Item(M)[]]]]"
 
 #: src-en/data/events_sector_republic.xml:893
 msgid ""
@@ -1563,7 +1563,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_GRAPHITI\"]/choice[1]/event/choice/text"
 msgstr ""
 "Send a little warning shot to scare them.\n"
-"[[[]], [[[]]], [Reward[]], [Reward[]]]"
+"[[[]], [[[]]], [Reward Item(M)[]], [Reward Item(M)[]]]"
 
 #: src-en/data/events_sector_republic.xml:897
 msgid ""
@@ -1634,7 +1634,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_GRAPHITI\"]/choice[1]/event/choice/event/choice[@req=\"mind\"]/text"
 msgstr ""
 "(Mind Control) Give us the cargo.\n"
-"[Reward[]]"
+"[Reward Item(M)[]]"
 
 #: src-en/data/events_sector_republic.xml:929
 msgid ""
@@ -1650,14 +1650,14 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_GRAPHITI\"]/choice[1]/event/choice/event/choice[@req=\"mind\"]/event/choice/text"
 msgstr ""
 "Bring the cargo back to the Fed ship.\n"
-"Reward[]"
+"Reward Item(M)[]"
 
 #: src-en/data/events_sector_republic.xml:937
 msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_GRAPHITI\"]/choice[1]/event/choice/event/choice[@req=\"weapons\"]/text"
 msgstr ""
 "(Upg. Weapons) Pull a trick shot and start blasting up all the asteroids.\n"
-"[Reward[]]"
+"[Reward Item(M)[]]"
 
 #: src-en/data/events_sector_republic.xml:939
 msgid ""
@@ -1674,7 +1674,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"DISTRESS_LEECH_GRAPHITI\"]/choice[1]/event/choice/event/choice[@req=\"weapons\"]/event/choice/text"
 msgstr ""
 "Bring the cargo back to the Fed ship.\n"
-"Reward[]"
+"Reward Item(M)[]"
 
 #: src-en/data/events_sector_republic.xml:951
 msgid ""
@@ -1841,7 +1841,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"LEECH_DELEGATE_CAMP\"]/choice[@req=\"weapons\"]/text"
 msgstr ""
 "(Upg. Weapons) Threaten the slavers.\n"
-"[Reward[[]]]"
+"[Reward Standard(M)[[]]]"
 
 #: src-en/data/events_sector_republic.xml:1044
 msgid ""
@@ -1855,14 +1855,14 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"LEECH_DELEGATE_CAMP\"]/choice[@req=\"weapons\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[]]"
+"Reward Standard(M)[[]]"
 
 #: src-en/data/events_sector_republic.xml:1052
 msgid ""
 "data/events_sector_republic.xml$//event[@name=\"LEECH_DELEGATE_CAMP\"]/choice[3]/text"
 msgstr ""
 "Purchase one of the Zoltan slaves.\n"
-"Gain a crew(Zoltan)[]"
+"Gain a crew(Zoltan), -55<~<-40[]"
 
 #: src-en/data/events_sector_republic.xml:1054
 msgid ""
@@ -2355,7 +2355,7 @@ msgid ""
 "data/events_sector_republic.xml$//ship[@name=\"SHIP_LEECH_DREADNAUGHT\"]/destroyed/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[Reward[[[[[Gain a crew(Unique Alkram)[]]], [Gain a crew(Unique Tyrdeo)[Gain a crew(Unique Tyrdeo Bird)[]]]]]], Reward[]]]]"
+"[[[<#>Unlock Ship(Leech), Reward Stuff(H)[[[[[Gain a crew(Unique Alkram)[]]], [Gain a crew(Unique Tyrdeo)[Gain a crew(Unique Tyrdeo Bird)[]]]]]], Reward Item(M)[]]]]"
 
 #: src-en/data/events_sector_republic.xml:1359
 msgid ""
@@ -2369,7 +2369,7 @@ msgid ""
 "data/events_sector_republic.xml$//ship[@name=\"SHIP_LEECH_DREADNAUGHT\"]/deadCrew/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[Reward[[[[[Gain a crew(Unique Alkram)[]]], [Gain a crew(Unique Tyrdeo)[Gain a crew(Unique Tyrdeo Bird)[]]]]]], Reward[]]]]"
+"[[[<#>Unlock Ship(Leech), Reward Stuff(H)[[[[[Gain a crew(Unique Alkram)[]]], [Gain a crew(Unique Tyrdeo)[Gain a crew(Unique Tyrdeo Bird)[]]]]]], Reward Item(M)[]]]]"
 
 #: src-en/data/events_sector_republic.xml:1381
 msgid ""
@@ -2456,7 +2456,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"TYRDEO_PALACE_ENTER\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[Reward[[[[[Gain a crew(Unique Alkram)[]]], [Gain a crew(Unique Tyrdeo)[Gain a crew(Unique Tyrdeo Bird)[]]]]]], Reward[]]]"
+"[[<#>Unlock Ship(Leech), Reward Stuff(H)[[[[[Gain a crew(Unique Alkram)[]]], [Gain a crew(Unique Tyrdeo)[Gain a crew(Unique Tyrdeo Bird)[]]]]]], Reward Item(M)[]]]"
 
 #: src-en/data/events_sector_republic.xml:1417
 msgid ""
@@ -2472,7 +2472,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"TYRDEO_PALACE_ENTER\"]/choice/event/choice/text"
 msgstr ""
 "Your time is up, Tyrdeo!\n"
-"[Reward[[[[[Gain a crew(Unique Alkram)[]]], [Gain a crew(Unique Tyrdeo)[Gain a crew(Unique Tyrdeo Bird)[]]]]]], Reward[]]"
+"[<#>Unlock Ship(Leech), Reward Stuff(H)[[[[[Gain a crew(Unique Alkram)[]]], [Gain a crew(Unique Tyrdeo)[Gain a crew(Unique Tyrdeo Bird)[]]]]]], Reward Item(M)[]]"
 
 #: src-en/data/events_sector_republic.xml:1421
 msgid ""
@@ -2491,7 +2491,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"TYRDEO_PALACE_ENTER\"]/choice/event/choice/event/choice[1]/text"
 msgstr ""
 "We aren't hitmen - you'll answer for your crimes in front of your people.\n"
-"Reward[[[[[Gain a crew(Unique Alkram)[]]], [Gain a crew(Unique Tyrdeo)[Gain a crew(Unique Tyrdeo Bird)[]]]]]]"
+"<#>Unlock Ship(Leech), Reward Stuff(H)[[[[[Gain a crew(Unique Alkram)[]]], [Gain a crew(Unique Tyrdeo)[Gain a crew(Unique Tyrdeo Bird)[]]]]]]"
 
 #: src-en/data/events_sector_republic.xml:1425
 msgid ""
@@ -2672,7 +2672,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"TYRDEO_PALACE_ENTER\"]/choice/event/choice/event/choice[2]/text"
 msgstr ""
 "Kill him.\n"
-"Reward[]"
+"Reward Item(M)[]"
 
 #: src-en/data/events_sector_republic.xml:1485
 msgid ""
@@ -3066,7 +3066,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"LEECH_INQUISITIONER_CACHE_WIN\"]/choice/text"
 msgstr ""
 "Hail Gora.\n"
-"[Reward[], [], Gain a crew(Leech Ampere)[]]"
+"<#>Unlock Ship(Alkram)[Reward Stuff(H)[], Gain a weapon(Random)[], Gain a crew(Leech Ampere)[]]"
 
 #: src-en/data/events_sector_republic.xml:1686
 msgid ""
@@ -3082,7 +3082,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"LEECH_INQUISITIONER_CACHE_WIN\"]/choice/event/choice[1]/text"
 msgstr ""
 "Grab as many supplies as you can!\n"
-"Reward[]"
+"Reward Stuff(H)[]"
 
 #: src-en/data/events_sector_republic.xml:1691
 msgid ""
@@ -3098,7 +3098,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"LEECH_INQUISITIONER_CACHE_WIN\"]/choice/event/choice[2]/text"
 msgstr ""
 "Grab one of the weapons!\n"
-"[]"
+"Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_republic.xml:1698
 msgid ""
@@ -3211,7 +3211,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"REVOLUTIONARY_PALADIN_VICTORY\"]/choice/text"
 msgstr ""
 "Contact the Leeches.\n"
-"Reward[[], Gain a crew(Leech Ampere)[]]"
+"<#>Unlock Ship(Alkram), Reward Stuff(H)[Gain a weapon(Giftlist Leech)[], Gain a crew(Leech Ampere)[]]"
 
 #: src-en/data/events_sector_republic.xml:1756
 msgid ""
@@ -3227,7 +3227,7 @@ msgid ""
 "data/events_sector_republic.xml$//event[@name=\"REVOLUTIONARY_PALADIN_VICTORY\"]/choice/event/choice[1]/text"
 msgstr ""
 "Accept a weapon.\n"
-"[]"
+"Gain a weapon(Giftlist Leech)[]"
 
 #: src-en/data/events_sector_republic.xml:1766
 msgid ""

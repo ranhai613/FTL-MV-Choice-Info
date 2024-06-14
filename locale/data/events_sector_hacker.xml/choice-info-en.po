@@ -61,7 +61,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Continue...\n"
-"[[], [[]] nor [[]] nor [], []]"
+"[[], [[]] or [[]] or [], []]"
 
 #: src-en/data/events_sector_hacker.xml:71
 msgid ""
@@ -158,7 +158,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CIVILIAN_STATION\"]/choice[1]/text"
 msgstr ""
 "Give them fuel.\n"
-"[[[], [], []]]"
+"-8{[[[], Fleet Delay(2)[], System Upgrade(Reactor 1™)[]]]"
 
 #: src-en/data/events_sector_hacker.xml:144
 msgid ""
@@ -170,14 +170,14 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CIVILIAN_STATION\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[], [], []]"
+"[[], Fleet Delay(2)[], System Upgrade(Reactor 1™)[]]"
 
 #: src-en/data/events_sector_hacker.xml:155
 msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CIVILIAN_STATION\"]/choice[2]/text"
 msgstr ""
 "Give them missiles.\n"
-"[[[], [], []]]"
+"-5}[[[], Fleet Delay(2)[], System Upgrade(Reactor 1™)[]]]"
 
 #: src-en/data/events_sector_hacker.xml:157
 msgid ""
@@ -189,14 +189,14 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CIVILIAN_STATION\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[], [], []]"
+"[[], Fleet Delay(2)[], System Upgrade(Reactor 1™)[]]"
 
 #: src-en/data/events_sector_hacker.xml:168
 msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CIVILIAN_STATION\"]/choice[3]/text"
 msgstr ""
 "Give them droneparts.\n"
-"[[[], [], []]]"
+"-3|[[[], Fleet Delay(2)[], System Upgrade(Reactor 1™)[]]]"
 
 #: src-en/data/events_sector_hacker.xml:170
 msgid ""
@@ -208,7 +208,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CIVILIAN_STATION\"]/choice[3]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[], [], []]"
+"[[], Fleet Delay(2)[], System Upgrade(Reactor 1™)[]]"
 
 #: src-en/data/events_sector_hacker.xml:181
 msgid ""
@@ -261,7 +261,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CIVILIAN_STATION_THANK\"]/choice[2]/text"
 msgstr ""
 "We need to delay the fleet.\n"
-"[]"
+"Fleet Delay(2)[]"
 
 #: src-en/data/events_sector_hacker.xml:207
 msgid ""
@@ -275,7 +275,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CIVILIAN_STATION_THANK\"]/choice[3]/text"
 msgstr ""
 "We could use a reactor upgrade.\n"
-"[]"
+"System Upgrade(Reactor 1™)[]"
 
 #: src-en/data/events_sector_hacker.xml:214
 msgid ""
@@ -295,7 +295,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_MILITIA\"]/choice[1]/text"
 msgstr ""
 "Inspect the ship.\n"
-"[Gain a crew(Human)[] nor [], Reward[], [[[]]]]"
+"[Gain a crew(Human)[] or [], Reward Standard(L)[], [[[]]]]"
 
 #: src-en/data/events_sector_hacker.xml:225
 msgid ""
@@ -317,7 +317,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_MILITIA\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Offer to help with repairs.\n"
-"Reward[]"
+"Reward Standard(L)[]"
 
 #: src-en/data/events_sector_hacker.xml:237
 msgid ""
@@ -401,7 +401,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_OFFER\"]/choice[1]/text"
 msgstr ""
 "Express interest in what they may offer.\n"
-"[Map Reveal[], [], [], [[], []]]"
+"[Map Reveal, -30<~<-20[], Fleet Delay(2), -30<~<-20[], -90<~<-75[], [[], []]]"
 
 #: src-en/data/events_sector_hacker.xml:285
 msgid ""
@@ -415,7 +415,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_OFFER\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Pay for detailed data on the sector.\n"
-"Map Reveal[]"
+"Map Reveal, -30<~<-20[]"
 
 #: src-en/data/events_sector_hacker.xml:289
 msgid ""
@@ -429,7 +429,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_OFFER\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Pay for them to distract the fleet.\n"
-"[]"
+"Fleet Delay(2), -30<~<-20[]"
 
 #: src-en/data/events_sector_hacker.xml:299
 msgid ""
@@ -444,7 +444,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_OFFER\"]/choice[1]/event/choice[3]/text"
 msgstr ""
 "Buy a Hacking system.\n"
-"[]"
+"-90<~<-75[]"
 
 #: src-en/data/events_sector_hacker.xml:309
 msgid ""
@@ -585,7 +585,7 @@ msgstr ""
 msgid "data/events_sector_hacker.xml$//event[@name=\"HACKED_PDS\"]/choice[3]/text"
 msgstr ""
 "Offer the hacker some scrap to scram.\n"
-"[Reward[]]"
+"-35<~<-25[Reward Stuff(H), Gain a weapon(Giftlist Union)[]]"
 
 #: src-en/data/events_sector_hacker.xml:405
 msgid ""
@@ -600,7 +600,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_PDS\"]/choice[3]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Stuff(H), Gain a weapon(Giftlist Union)[]"
 
 #: src-en/data/events_sector_hacker.xml:418
 msgid "data/events_sector_hacker.xml$//event[@name=\"HACKED_PDS\"]/choice[4]/text"
@@ -655,7 +655,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_HOSTAGES\"]/choice[2]/text"
 msgstr ""
 "Pay the hackers to release the civilians.\n"
-"[Reward[] nor []]"
+"-30<~<-20[Reward { Only(H)[] or Gain a weapon(Random)[]]"
 
 #: src-en/data/events_sector_hacker.xml:446
 msgid ""
@@ -671,8 +671,8 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_HOSTAGES\"]/choice[2]/event/choice/text"
 msgstr ""
 "Contact the colony.\n"
-"Reward[] \n"
-"or []"
+"Reward { Only(H)[] \n"
+"or Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_hacker.xml:458
 msgid ""
@@ -713,8 +713,8 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_HOSTAGES_WIN\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[] \n"
-"or []"
+"Reward { Only(H)[] \n"
+"or Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_hacker.xml:482
 msgid ""
@@ -749,7 +749,7 @@ msgid ""
 msgstr ""
 "Scrap the ship.\n"
 "<!>Lose your crew(clonable)[[]] \n"
-"or Reward[] \n"
+"or Reward Stuff(M)[] \n"
 "or Gain a crew(?)[[]]"
 
 #: src-en/data/events_sector_hacker.xml:498
@@ -766,7 +766,7 @@ msgid ""
 msgstr ""
 "(Slug Crew) Have your Slug check the wreckage first.\n"
 "[[]] \n"
-"or Reward[] \n"
+"or Reward Stuff(M)[] \n"
 "or Gain a crew(?)[]"
 
 #: src-en/data/events_sector_hacker.xml:506
@@ -775,7 +775,7 @@ msgid ""
 msgstr ""
 "(Telepathic Shell) Have your Shell check the wreckage first.\n"
 "[[]] \n"
-"or Reward[] \n"
+"or Reward Stuff(M)[] \n"
 "or Gain a crew(?)[]"
 
 #: src-en/data/events_sector_hacker.xml:510
@@ -920,7 +920,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_FLEET_SPY\"]/choice[1]/text"
 msgstr ""
 "Pay them not to alert the fleet.\n"
-"[]"
+"-35<~<-25[]"
 
 #: src-en/data/events_sector_hacker.xml:594
 msgid ""
@@ -953,7 +953,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_FLEET_SPY\"]/choice[3]/text"
 msgstr ""
 "We aren't paying you anything.\n"
-"[[], []]"
+"<!>Fleet Advance(2)[[], []]"
 
 #: src-en/data/events_sector_hacker.xml:614
 msgid ""
@@ -1106,7 +1106,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"FANCY_CLASS_HACKER\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_hacker.xml:693
 msgid ""
@@ -1124,7 +1124,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"FANCY_CLASS_SLUG\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fleet Delay(2)[]"
 
 #: src-en/data/events_sector_hacker.xml:704
 msgid ""
@@ -1181,7 +1181,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"NEBULA_LOST_SHIP_HACKER\"]/choice[@req=\"teleporter\"]/text"
 msgstr ""
 "(Teleporter) Lock onto their life-signs with your teleporter.\n"
-"Gain a crew(?), Reward[]"
+"Gain a crew(?), Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_hacker.xml:739
 msgid ""
@@ -1424,7 +1424,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"QUEST_HACKER_HOSPITAL_DESTINATION\"]/choice[2]/text"
 msgstr ""
 "Pay the ransom to make them leave the hospital alone.\n"
-"[[[], [], [], [], Gain a crew(Human Medic)[], []]]"
+"-150~[[System Upgrade(Clonebay 1™)[], System Upgrade(Medbay 1™)[], [], [], Gain a crew(Human Medic)[], Fleet Delay(1)[]]]"
 
 #: src-en/data/events_sector_hacker.xml:893
 msgid ""
@@ -1438,7 +1438,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"QUEST_HACKER_HOSPITAL_DESTINATION\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[], [], [], [], Gain a crew(Human Medic)[], []]"
+"[System Upgrade(Clonebay 1™)[], System Upgrade(Medbay 1™)[], [], [], Gain a crew(Human Medic)[], Fleet Delay(1)[]]"
 
 #: src-en/data/events_sector_hacker.xml:905
 msgid ""
@@ -1478,7 +1478,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HOSPITAL_SAVED\"]/choice[@req=\"clonebay\"]/text"
 msgstr ""
 "Have them upgrade your Clone Bay.\n"
-"[]"
+"System Upgrade(Clonebay 1™)[]"
 
 #: src-en/data/events_sector_hacker.xml:924
 msgid ""
@@ -1492,7 +1492,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HOSPITAL_SAVED\"]/choice[@req=\"medbay\"]/text"
 msgstr ""
 "Have them upgrade your Medbay.\n"
-"[]"
+"System Upgrade(Medbay 1™)[]"
 
 #: src-en/data/events_sector_hacker.xml:931
 msgid ""
@@ -1548,7 +1548,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HOSPITAL_SAVED\"]/choice[6]/text"
 msgstr ""
 "Ask if they can delay the fleet.\n"
-"[]"
+"Fleet Delay(1)[]"
 
 #: src-en/data/events_sector_hacker.xml:959
 msgid ""
@@ -1677,7 +1677,7 @@ msgid ""
 "data/events_sector_hacker.xml$/FTL/event[@name=\"HACKED_DISABLED\"]/choice[1]/text"
 msgstr ""
 "Pay them their filthy money.\n"
-"[]"
+"-30<~<-20[]"
 
 #: src-en/data/events_sector_hacker.xml:1046
 msgid ""
@@ -1844,7 +1844,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CACHE_DEFEAT\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[Reward[[], []] nor [[], []] nor Reward[[], []] nor Gain a crew(Engi)[[], []] nor [[], []] nor [[], []]]"
+"[Reward | Only(L)[[], []] or Gain a weapon(Giftlist Ion)[[], []] or Reward Stuff(M)[[], []] or Gain a crew(Engi)[[], []] or [[], []] or Fleet Delay(1)[[], []]]"
 
 #: src-en/data/events_sector_hacker.xml:1169
 msgid ""
@@ -1858,12 +1858,12 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CACHE_DEFEAT\"]/choice/event/choice/text"
 msgstr ""
 "Open the cache.\n"
-"Reward[[], []] \n"
-"or [[], []] \n"
-"or Reward[[], []] \n"
+"Reward | Only(L)[[], []] \n"
+"or Gain a weapon(Giftlist Ion)[[], []] \n"
+"or Reward Stuff(M)[[], []] \n"
 "or Gain a crew(Engi)[[], []] \n"
 "or [[], []] \n"
-"or [[], []]"
+"or Fleet Delay(1)[[], []]"
 
 #: src-en/data/events_sector_hacker.xml:1179
 msgid ""
@@ -2046,7 +2046,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_FED_WIN\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward, Gain a crew(Slug Saboteur), Map Reveal[]"
+"<#>Unlock Ship(Hacker), Reward Standard(H), Gain a crew(Slug Saboteur), Fleet Delay(2), Map Reveal[]"
 
 #: src-en/data/events_sector_hacker.xml:1273
 msgid ""

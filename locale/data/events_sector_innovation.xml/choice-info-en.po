@@ -59,7 +59,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_BOLTS\"]/choice[1]/text"
 msgstr ""
 "Humor them.\n"
-"[Reward[], [], [], Reward[], Reward[], Reward[]]"
+"[Reward |(H)[], Gain an augment(Random)[], [], Reward Augment(H)[], Reward Augment(H)[], Reward Augment(H)[]]"
 
 #: src-en/data/events_sector_innovation.xml:73
 msgid ""
@@ -77,7 +77,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_BOLTS\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "It's called a nut.\n"
-"Reward[]"
+"Reward |(H)[]"
 
 #: src-en/data/events_sector_innovation.xml:77
 msgid ""
@@ -94,7 +94,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_BOLTS\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "It's called a bolt.\n"
-"[]"
+"Gain an augment(Random)[]"
 
 #: src-en/data/events_sector_innovation.xml:84
 msgid ""
@@ -127,7 +127,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_BOLTS\"]/choice[1]/event/choice[@req=\"LIST_CREW_ENGINEER\"]/text"
 msgstr ""
 "(Engineer Crew) Explain that Cole is holding a screw.\n"
-"Reward[]"
+"Reward Augment(H)[]"
 
 #: src-en/data/events_sector_innovation.xml:97
 msgid ""
@@ -145,7 +145,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_BOLTS\"]/choice[1]/event/choice[@req=\"LIST_CREW_LANIUS\"]/text"
 msgstr ""
 "(Lanius Crew) \"Food.\"\n"
-"Reward[]"
+"Reward Augment(H)[]"
 
 #: src-en/data/events_sector_innovation.xml:104
 msgid ""
@@ -163,7 +163,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_BOLTS\"]/choice[1]/event/choice[@req=\"LIST_CREW_MORPH\"]/text"
 msgstr ""
 "(Morph Crew) \"Pook pook!\"\n"
-"Reward[]"
+"Reward Augment(H)[]"
 
 #: src-en/data/events_sector_innovation.xml:111
 msgid ""
@@ -219,7 +219,7 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "Hail them.\n"
-"[Reward[], Reward[], [[], [], Reward[]]]"
+"[Reward ~ Only(L)[], Reward ~ Only(L)[], [Gain a drone(Giftlist Crew Drones)[], Gain a drone(Giftlist Combat Drones)[], Reward ~ Only(L)[]]]"
 
 #: src-en/data/events_sector_innovation.xml:140
 msgid ""
@@ -227,7 +227,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Hail them.\n"
-"[Reward[], Reward[], [[], [], Reward[]]]"
+"[Reward ~ Only(L)[], Reward ~ Only(L)[], [Gain a drone(Giftlist Crew Drones)[], Gain a drone(Giftlist Combat Drones)[], Reward ~ Only(L)[]]]"
 
 #: src-en/data/events_sector_innovation.xml:144
 msgid ""
@@ -272,7 +272,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_INVESTOR_QUESTIONS_NOTMET\"]/choice[1]/text"
 msgstr ""
 "They're Rebel supporters, and owned by Admiral Vance himself!\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_innovation.xml:164
 msgid ""
@@ -292,7 +292,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_INVESTOR_QUESTIONS_NOTMET\"]/choice[2]/text"
 msgstr ""
 "They're responsible for making Auto-ships that murder millions daily!\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_innovation.xml:171
 msgid ""
@@ -312,7 +312,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_INVESTOR_QUESTIONS_NOTMET\"]/choice[3]/text"
 msgstr ""
 "Eh. I've seen worse.\n"
-"[[], [], Reward[]]"
+"[Gain a drone(Giftlist Crew Drones)[], Gain a drone(Giftlist Combat Drones)[], Reward ~ Only(L)[]]"
 
 #: src-en/data/events_sector_innovation.xml:178
 msgid ""
@@ -330,7 +330,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_INVESTOR_QUESTIONS_NOTMET\"]/choice[3]/event/choice[1]/text"
 msgstr ""
 "They're pretty deadly.\n"
-"[]"
+"Gain a drone(Giftlist Crew Drones)[]"
 
 #: src-en/data/events_sector_innovation.xml:182
 msgid ""
@@ -349,7 +349,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_INVESTOR_QUESTIONS_NOTMET\"]/choice[3]/event/choice[2]/text"
 msgstr ""
 "They're useless.\n"
-"[]"
+"Gain a drone(Giftlist Combat Drones)[]"
 
 #: src-en/data/events_sector_innovation.xml:190
 msgid ""
@@ -367,7 +367,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_INVESTOR_QUESTIONS_NOTMET\"]/choice[3]/event/choice[3]/text"
 msgstr ""
 "I'll murder you with a coffee mug.\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_innovation.xml:198
 msgid ""
@@ -394,7 +394,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_INVESTOR_QUESTIONS_MET\"]/choice[1]/text"
 msgstr ""
 "They're Rebel supporters, and owned by Admiral Vance himself!\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_innovation.xml:211
 msgid ""
@@ -414,7 +414,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_INVESTOR_QUESTIONS_MET\"]/choice[2]/text"
 msgstr ""
 "They're responsible for making Auto-ships that murder millions daily!\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_innovation.xml:218
 msgid ""
@@ -434,7 +434,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_INVESTOR_QUESTIONS_MET\"]/choice[3]/text"
 msgstr ""
 "Eh. I've seen worse.\n"
-"[[], [], Reward[]]"
+"[Gain a drone(Giftlist Crew Drones)[], Gain a drone(Giftlist Combat Drones)[], Reward ~ Only(L)[]]"
 
 #: src-en/data/events_sector_innovation.xml:225
 msgid ""
@@ -452,7 +452,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_INVESTOR_QUESTIONS_MET\"]/choice[3]/event/choice[1]/text"
 msgstr ""
 "They're pretty deadly.\n"
-"[]"
+"Gain a drone(Giftlist Crew Drones)[]"
 
 #: src-en/data/events_sector_innovation.xml:229
 msgid ""
@@ -471,7 +471,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_INVESTOR_QUESTIONS_MET\"]/choice[3]/event/choice[2]/text"
 msgstr ""
 "They're useless.\n"
-"[]"
+"Gain a drone(Giftlist Combat Drones)[]"
 
 #: src-en/data/events_sector_innovation.xml:237
 msgid ""
@@ -489,7 +489,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_INVESTOR_QUESTIONS_MET\"]/choice[3]/event/choice[3]/text"
 msgstr ""
 "I'll murder you with a coffee mug.\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_innovation.xml:245
 msgid ""
@@ -512,7 +512,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_STATUE\"]/choice[1]/text"
 msgstr ""
 "Approach the planet.\n"
-"[Reward[], Reward[], Reward[], [], Reward[[]], []]"
+"[Reward Standard(L)[], Reward Standard(M)[], Reward Standard(M)[], [], Reward Augment(H)[[]], []]"
 
 #: src-en/data/events_sector_innovation.xml:259
 msgid ""
@@ -533,7 +533,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_STATUE\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Just shoot at the statue.\n"
-"Reward[]"
+"Reward Standard(L)[]"
 
 #: src-en/data/events_sector_innovation.xml:263
 msgid ""
@@ -548,7 +548,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_STATUE\"]/choice[1]/event/choice[@req=\"BLUELIST_WEAPONS_HEAVY\"]/text"
 msgstr ""
 "(Heavy Weapon) Blast the statue.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_innovation.xml:270
 msgid ""
@@ -565,7 +565,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_STATUE\"]/choice[1]/event/choice[@req=\"DRONE_CONTROL_BEAM_DRONE\"]/text"
 msgstr ""
 "(Beam Drone) Carve the statue.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_innovation.xml:277
 msgid ""
@@ -602,7 +602,7 @@ msgid ""
 " and @lvl=\"8\"]/text"
 msgstr ""
 "(Adv. Engines) Bring the statue on a collision course with the planet's military installment.\n"
-"Reward[[]]"
+"Reward Augment(H)[[]]"
 
 #: src-en/data/events_sector_innovation.xml:290
 msgid ""
@@ -732,7 +732,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_TECHNICIAN_REPAIR_SCRAP\"]/choice/text"
 msgstr ""
 "Destroy the Auto-ship facility.\n"
-"Reward[]"
+"Reward ~ Only(M), Fleet Delay(2)[]"
 
 #: src-en/data/events_sector_innovation.xml:368
 msgid ""
@@ -866,7 +866,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_BAR\"]/choice[1]/text"
 msgstr ""
 "Visit the bar.\n"
-"[[[]], [Gain a crew(Human Soldier)[]], [Gain a crew(Human Soldier)[]], []]"
+"[[[]], -35~[Gain a crew(Human Soldier)[]], [Gain a crew(Human Soldier)[]], []]"
 
 #: src-en/data/events_sector_innovation.xml:431
 msgid ""
@@ -905,7 +905,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_BAR\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Pay for drinks for all of them.\n"
-"[Gain a crew(Human Soldier)[]]"
+"-35~[Gain a crew(Human Soldier)[]]"
 
 #: src-en/data/events_sector_innovation.xml:446
 msgid ""
@@ -1023,7 +1023,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_STEWARD\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[]], Reward[]]"
+"[[[]], Reward Standard(M)[]]"
 
 #: src-en/data/events_sector_innovation.xml:500
 msgid ""
@@ -1059,7 +1059,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_STEWARD\"]/choice/event/choice[2]/text"
 msgstr ""
 "No.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_innovation.xml:515
 msgid ""
@@ -1256,7 +1256,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_DOCUMENTARY_SURRENDER\"]/choice[2]/text"
 msgstr ""
 "Report Cornelius to the documentary cast.\n"
-"Reward[]"
+"Reward Augment(M)[]"
 
 #: src-en/data/events_sector_innovation.xml:616
 msgid ""
@@ -1273,7 +1273,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_DOCUMENTARY_SURRENDER\"]/choice[@req=\"mind\"]/text"
 msgstr ""
 "(Mind Control) Remind Cornelius who he really is.\n"
-"Reward[]"
+"Reward Item(H)[]"
 
 #: src-en/data/events_sector_innovation.xml:624
 msgid ""
@@ -1375,7 +1375,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"DEFEAT_ENGINEER_ELITE_CHOICE\"]/choice/text"
 msgstr ""
 "Turn your attention to the Auto.\n"
-"Reward[]"
+"Reward Drone(H)[]"
 
 #: src-en/data/events_sector_innovation.xml:690
 msgid ""
@@ -1516,38 +1516,38 @@ msgstr ""
 "Try to rescue the ship.\n"
 "[] \n"
 "or [] \n"
-"or [Reward[] nor Gain a crew(Human Technician), Reward[], []] \n"
-"or [Reward[] nor Gain a crew(Human Technician), Reward[], []]"
+"or [Reward | Only(M), Gain a drone(Random)[] or Gain a crew(Human Technician), Reward |(M)[], Gain a weapon(Random)[]] \n"
+"or [Reward | Only(M), Gain a drone(Random)[] or Gain a crew(Human Technician), Reward |(M)[], Gain a weapon(Random)[]]"
 
 #: src-en/data/events_sector_innovation.xml:761
 msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"DISTRESS_ESTATE_SHIPWRECK\"]/choice[@req=\"PDS_DISABLE\"]/text"
 msgstr ""
 "(Signal Diluter) Mitigate the risk of a rescue mission.\n"
-"[Reward[] nor Gain a crew(Human Technician), Reward[], []]"
+"[Reward | Only(M), Gain a drone(Random)[] or Gain a crew(Human Technician), Reward |(M)[], Gain a weapon(Random)[]]"
 
 #: src-en/data/events_sector_innovation.xml:765
 msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"DISTRESS_ESTATE_SHIPWRECK\"]/choice[@req=\"cloaking\"]/text"
 msgstr ""
 "(Upg. Cloaking) Mitigate the risk of a rescue mission.\n"
-"[Reward[] nor Gain a crew(Human Technician), Reward[], []]"
+"[Reward | Only(M), Gain a drone(Random)[] or Gain a crew(Human Technician), Reward |(M)[], Gain a weapon(Random)[]]"
 
 #: src-en/data/events_sector_innovation.xml:769
 msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"DISTRESS_ESTATE_SHIPWRECK\"]/choice[@req=\"teleporter\"]/text"
 msgstr ""
 "(Upg. Teleporter) Board directly and look for survivors.\n"
-"Reward[] \n"
-"or Gain a crew(Human Technician), Reward[]"
+"Reward | Only(M), Gain a drone(Random)[] \n"
+"or Gain a crew(Human Technician), Reward |(M)[]"
 
 #: src-en/data/events_sector_innovation.xml:773
 msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"DISTRESS_ESTATE_SHIPWRECK\"]/choice[@req=\"LOCKED_GLOBAL_TELEPORT\"]/text"
 msgstr ""
 "(Central Teleport) Board directly and look for survivors.\n"
-"Reward[] \n"
-"or Gain a crew(Human Technician), Reward[]"
+"Reward | Only(M), Gain a drone(Random)[] \n"
+"or Gain a crew(Human Technician), Reward |(M)[]"
 
 #: src-en/data/events_sector_innovation.xml:777
 msgid ""
@@ -1611,15 +1611,15 @@ msgid ""
 "data/events_sector_innovation.xml$//eventList[@name=\"ESTATE_SHIPWRECK_BAD\"]/event[3]/choice[1]/text"
 msgstr ""
 "Look for survivors.\n"
-"Reward[] \n"
-"or Gain a crew(Human Technician), Reward[]"
+"Reward | Only(M), Gain a drone(Random)[] \n"
+"or Gain a crew(Human Technician), Reward |(M)[]"
 
 #: src-en/data/events_sector_innovation.xml:808
 msgid ""
 "data/events_sector_innovation.xml$//eventList[@name=\"ESTATE_SHIPWRECK_BAD\"]/event[3]/choice[2]/text"
 msgstr ""
 "Steal one of their weapons.\n"
-"[]"
+"Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_innovation.xml:817
 msgid ""
@@ -1635,15 +1635,15 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_SHIPWRECK_GOOD\"]/choice[1]/text"
 msgstr ""
 "Look for survivors.\n"
-"Reward[] \n"
-"or Gain a crew(Human Technician), Reward[]"
+"Reward | Only(M), Gain a drone(Random)[] \n"
+"or Gain a crew(Human Technician), Reward |(M)[]"
 
 #: src-en/data/events_sector_innovation.xml:823
 msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_SHIPWRECK_GOOD\"]/choice[2]/text"
 msgstr ""
 "Steal one of their weapons.\n"
-"[]"
+"Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_innovation.xml:831
 msgid ""
@@ -1831,7 +1831,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Dock.\n"
-"[[[[], [], [[]], []], [[[] nor [] nor Reward[]], [[] nor [] nor [] nor [] nor Reward[]], [Reward[]], []], [], []]]"
+"[[[Gain a weapon(Horse Gun), -10~[], Gain an augment(Quarp Juice), -25~[], Gain an augment(Quarp Juice), -25~[[]], []], [-10~[[] or [] or Reward ~ Only(M)[]], -5~[[] or [] or [] or [] or Reward ~ Only(M)[]], -5~[Reward ~ Only(M)[]], []], [], []]]"
 
 #: src-en/data/events_sector_innovation.xml:942
 msgid ""
@@ -1851,14 +1851,14 @@ msgid ""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[], [], [[]], []], [[[] nor [] nor Reward[]], [[] nor [] nor [] nor [] nor Reward[]], [Reward[]], []], [], []]"
+"[[Gain a weapon(Horse Gun), -10~[], Gain an augment(Quarp Juice), -25~[], Gain an augment(Quarp Juice), -25~[[]], []], [-10~[[] or [] or Reward ~ Only(M)[]], -5~[[] or [] or [] or [] or Reward ~ Only(M)[]], -5~[Reward ~ Only(M)[]], []], [], []]"
 
 #: src-en/data/events_sector_innovation.xml:950
 msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ELLIE_STUDIO\"]/choice[@req=\"LIST_CREW_ELLIE_COSTUME\"]/text"
 msgstr ""
 "Dock.\n"
-"[[[[], [], [[]], []], [[[] nor [] nor Reward[]], [[] nor [] nor [] nor [] nor Reward[]], [Reward[]], []], [], []]]"
+"[[[Gain a weapon(Horse Gun), -10~[], Gain an augment(Quarp Juice), -25~[], Gain an augment(Quarp Juice), -25~[[]], []], [-10~[[] or [] or Reward ~ Only(M)[]], -5~[[] or [] or [] or [] or Reward ~ Only(M)[]], -5~[Reward ~ Only(M)[]], []], [], []]]"
 
 #: src-en/data/events_sector_innovation.xml:952
 msgid ""
@@ -1876,7 +1876,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ELLIE_STUDIO\"]/choice[@req=\"LIST_CREW_ELLIE_COSTUME\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[], [], [[]], []], [[[] nor [] nor Reward[]], [[] nor [] nor [] nor [] nor Reward[]], [Reward[]], []], [], []]"
+"[[Gain a weapon(Horse Gun), -10~[], Gain an augment(Quarp Juice), -25~[], Gain an augment(Quarp Juice), -25~[[]], []], [-10~[[] or [] or Reward ~ Only(M)[]], -5~[[] or [] or [] or [] or Reward ~ Only(M)[]], -5~[Reward ~ Only(M)[]], []], [], []]"
 
 #: src-en/data/events_sector_innovation.xml:960
 msgid ""
@@ -1884,7 +1884,7 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "Dock.\n"
-"[[[], [], [[]], []], [[[] nor [] nor Reward[]], [[] nor [] nor [] nor [] nor Reward[]], [Reward[]], []], [], []]"
+"[[Gain a weapon(Horse Gun), -10~[], Gain an augment(Quarp Juice), -25~[], Gain an augment(Quarp Juice), -25~[[]], []], [-10~[[] or [] or Reward ~ Only(M)[]], -5~[[] or [] or [] or [] or Reward ~ Only(M)[]], -5~[Reward ~ Only(M)[]], []], [], []]"
 
 #: src-en/data/events_sector_innovation.xml:962
 msgid ""
@@ -1903,7 +1903,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ELLIE_STUDIO_NORMAL\"]/choice[1]/text"
 msgstr ""
 "Visit the gift shop.\n"
-"[[], [], [[]], []]"
+"[Gain a weapon(Horse Gun), -10~[], Gain an augment(Quarp Juice), -25~[], Gain an augment(Quarp Juice), -25~[[]], []]"
 
 #: src-en/data/events_sector_innovation.xml:966
 msgid ""
@@ -1919,7 +1919,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ELLIE_STUDIO_NORMAL\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Buy a plushie gun.\n"
-"[]"
+"Gain a weapon(Horse Gun), -10~[]"
 
 #: src-en/data/events_sector_innovation.xml:970
 msgid ""
@@ -1937,7 +1937,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ELLIE_STUDIO_NORMAL\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Buy some 'quarp juice'.\n"
-"[]"
+"Gain an augment(Quarp Juice), -25~[]"
 
 #: src-en/data/events_sector_innovation.xml:980
 msgid ""
@@ -1955,7 +1955,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ELLIE_STUDIO_NORMAL\"]/choice[1]/event/choice[@req=\"unique_alkali\"]/text"
 msgstr ""
 "(Alkali) Alkali really wants to buy some quarp juice.\n"
-"[[]]"
+"Gain an augment(Quarp Juice), -25~[[]]"
 
 #: src-en/data/events_sector_innovation.xml:990
 msgid ""
@@ -2002,7 +2002,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ELLIE_STUDIO_NORMAL\"]/choice[2]/text"
 msgstr ""
 "Visit the arcade.\n"
-"[[[] nor [] nor Reward[]], [[] nor [] nor [] nor [] nor Reward[]], [Reward[]], []]"
+"[-10~[[] or [] or Reward ~ Only(M)[]], -5~[[] or [] or [] or [] or Reward ~ Only(M)[]], -5~[Reward ~ Only(M)[]], []]"
 
 #: src-en/data/events_sector_innovation.xml:1012
 msgid ""
@@ -2017,7 +2017,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ELLIE_STUDIO_NORMAL\"]/choice[2]/event/choice[1]/text"
 msgstr ""
 "Play 'Sammy's Super Soaker Adventure'. It's apparently easier, but more expensive to play.\n"
-"[[] nor [] nor Reward[]]"
+"-10~[[] or [] or Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_innovation.xml:1016
 msgid ""
@@ -2034,14 +2034,14 @@ msgstr ""
 "Continue...\n"
 "[] \n"
 "or [] \n"
-"or Reward[]"
+"or Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_innovation.xml:1027
 msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ELLIE_STUDIO_NORMAL\"]/choice[2]/event/choice[2]/text"
 msgstr ""
 "Play 'Remmy's Racing Racket'. It's apparently harder but cheaper to play.\n"
-"[[] nor [] nor [] nor [] nor Reward[]]"
+"-5~[[] or [] or [] or [] or Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_innovation.xml:1029
 msgid ""
@@ -2060,14 +2060,14 @@ msgstr ""
 "or [] \n"
 "or [] \n"
 "or [] \n"
-"or Reward[]"
+"or Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_innovation.xml:1040
 msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ELLIE_STUDIO_NORMAL\"]/choice[2]/event/choice[@req=\"unique_jerry\"]/text"
 msgstr ""
 "(Jerry) Jerry wants to play.\n"
-"[Reward[]]"
+"-5~[Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_innovation.xml:1042
 msgid ""
@@ -2085,7 +2085,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ELLIE_STUDIO_NORMAL\"]/choice[2]/event/choice[@req=\"unique_jerry\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_innovation.xml:1053
 msgid ""
@@ -2713,7 +2713,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"CURA_DEFEATED\"]/choice/text"
 msgstr ""
 "Explore the shipyard.\n"
-"[]"
+"<#>Unlock Ship(Cura), Gain a weapon(Power Core)[]"
 
 #: src-en/data/events_sector_innovation.xml:1388
 msgid ""
@@ -3054,7 +3054,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_LEGION_DEFEAT\"]/choice[1]/text"
 msgstr ""
 "Explore the structure.\n"
-"[[Reward[]]]"
+"[[<#>Unlock Ship(Technician), Gain a weapon(Giftlist Estate), Reward Standard(H)[]]]"
 
 #: src-en/data/events_sector_innovation.xml:1557
 msgid ""
@@ -3072,7 +3072,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_LEGION_DEFEAT\"]/choice[1]/event/choice/text"
 msgstr ""
 "Inform Zenith you've found the robots.\n"
-"[Reward[]]"
+"[<#>Unlock Ship(Technician), Gain a weapon(Giftlist Estate), Reward Standard(H)[]]"
 
 #: src-en/data/events_sector_innovation.xml:1561
 msgid ""
@@ -3087,7 +3087,7 @@ msgid ""
 "data/events_sector_innovation.xml$//event[@name=\"ESTATE_LEGION_DEFEAT\"]/choice[1]/event/choice/event/choice/text"
 msgstr ""
 "Telling us you're bankrupt isn't a good prelude to that.\n"
-"Reward[]"
+"<#>Unlock Ship(Technician), Gain a weapon(Giftlist Estate), Reward Standard(H)[]"
 
 #: src-en/data/events_sector_innovation.xml:1567
 msgid ""

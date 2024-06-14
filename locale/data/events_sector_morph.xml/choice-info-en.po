@@ -19,7 +19,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"MORPH_ZOLTAN\"]/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr ""
 "(Long-Ranged Scanners) Share your advanced sensor readings with them.\n"
-"Reward[]"
+"Reward Standard(L)[]"
 
 #: src-en/data/events_sector_morph.xml:38
 msgid ""
@@ -33,7 +33,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"MORPH_ZOLTAN\"]/choice[@req=\"sensors\"]/text"
 msgstr ""
 "(Adv. Sensors) Show them your advanced sensor readings.\n"
-"Reward[]"
+"Reward Standard(L)[]"
 
 #: src-en/data/events_sector_morph.xml:45
 msgid ""
@@ -47,7 +47,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"MORPH_ZOLTAN\"]/choice[@req=\"shell_scientist\"]/text"
 msgstr ""
 "(Shell Scientist) Encourage your Shell Scientist to share some of their research.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_morph.xml:52
 msgid ""
@@ -62,7 +62,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"MORPH_ZOLTAN\"]/choice[@req=\"unique_alkali\"]/text"
 msgstr ""
 "(Alkali) Encourage Alkali to grant them access to his research.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_sector_morph.xml:59
 msgid ""
@@ -85,7 +85,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"MORPH_ZOLTAN\"]/choice[@req=\"LIST_CREW_MORPH\"]/text"
 msgstr ""
 "(Morph Crew) Show them your Morph crewmember.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_sector_morph.xml:74
 msgid ""
@@ -266,7 +266,7 @@ msgstr ""
 msgid "data/events_sector_morph.xml$//event[@name=\"MORPH_RUINS\"]/choice[1]/text"
 msgstr ""
 "Approach the wreck.\n"
-"[Reward[[[]]], Gain a crew(Shell Mechanic)[], Gain a crew(Shell Mechanic)[], Gain a crew(Shell Mechanic)[], []]"
+"[Reward Standard(M)[[[]]], -30~, Gain a crew(Shell Mechanic)[], Gain a crew(Shell Mechanic)[], Gain a crew(Shell Mechanic), -1|[], []]"
 
 #: src-en/data/events_sector_morph.xml:171
 msgid ""
@@ -283,7 +283,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"MORPH_RUINS\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Nah.\n"
-"Reward[[[]]]"
+"Reward Standard(M)[[[]]]"
 
 #: src-en/data/events_sector_morph.xml:176
 msgid ""
@@ -305,7 +305,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"MORPH_RUINS\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Offer some scrap to help. [-30~]\n"
-"Gain a crew(Shell Mechanic)[]"
+"-30~, Gain a crew(Shell Mechanic)[]"
 
 #: src-en/data/events_sector_morph.xml:188
 msgid ""
@@ -337,7 +337,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"MORPH_RUINS\"]/choice[1]/event/choice[@req=\"SHIP_REPAIR\"]/text"
 msgstr ""
 "(Hull Repair Drone) Fix up the station. [-1|]\n"
-"Gain a crew(Shell Mechanic)[]"
+"Gain a crew(Shell Mechanic), -1|[]"
 
 #: src-en/data/events_sector_morph.xml:205
 msgid ""
@@ -395,7 +395,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"MORPH_PIRATE_INSANE\"]/choice[1]/text"
 msgstr ""
 "Make an offering.\n"
-"[[]]"
+"-2{ -1} -10~[Gain an augment(Random)[]]"
 
 #: src-en/data/events_sector_morph.xml:240
 msgid ""
@@ -410,7 +410,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"MORPH_PIRATE_INSANE\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain an augment(Random)[]"
 
 #: src-en/data/events_sector_morph.xml:249
 msgid ""
@@ -424,7 +424,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"MORPH_PIRATE_INSANE\"]/choice[@req=\"LIST_CREW_MORPH\"]/text"
 msgstr ""
 "(Morph Crew) \"Jibble Jooble wip wip!\"\n"
-"[]"
+"Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_morph.xml:259
 msgid ""
@@ -470,18 +470,18 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_SOLAR\"]/choice[1]/text"
 msgstr ""
 "Take your chance and interface with the device.\n"
-"Reward[] \n"
+"Reward { Only(L)[] \n"
+"or System Upgrade(Reactor 1™)[] \n"
 "or [] \n"
-"or [] \n"
-"or Reward[[]]"
+"or Reward { Only(L)[[]]"
 
 #: src-en/data/events_sector_morph.xml:301
 msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_SOLAR\"]/choice[@req=\"LIST_CREW_SHELL_SCIENTIST\"]/text"
 msgstr ""
 "(Shell Scientist) Interface with the device.\n"
-"[] \n"
-"or [[]]"
+"System Upgrade(Reactor 1™)[] \n"
+"or System Upgrade(Reactor 1™)[[]]"
 
 #: src-en/data/events_sector_morph.xml:305
 msgid ""
@@ -572,7 +572,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_JUICE\"]/choice[1]/text"
 msgstr ""
 "Inquire if you can help.\n"
-"[[[], []], [[[], []], [] nor [] nor [], [] nor [] nor [], Reward[]], [] nor [] nor [], [] nor [] nor [], Reward[]]"
+"[[[], []], [[[], []], System Upgrade(Oxygen 1™)[] or System Upgrade(Shields 1™)[] or System Upgrade(Engines 1™)[], System Upgrade(Oxygen 1™)[] or System Upgrade(Shields 1™)[] or System Upgrade(Engines 1™)[], Reward Standard(H)[]], System Upgrade(Oxygen 1™)[] or System Upgrade(Shields 1™)[] or System Upgrade(Engines 1™)[], System Upgrade(Oxygen 1™)[] or System Upgrade(Shields 1™)[] or System Upgrade(Engines 1™)[], Reward Standard(H)[]]"
 
 #: src-en/data/events_sector_morph.xml:357
 msgid ""
@@ -615,7 +615,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_JUICE\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Uhm... Quarp Juice? What?\n"
-"[[[], []], [] nor [] nor [], [] nor [] nor [], Reward[]]"
+"[[[], []], System Upgrade(Oxygen 1™)[] or System Upgrade(Shields 1™)[] or System Upgrade(Engines 1™)[], System Upgrade(Oxygen 1™)[] or System Upgrade(Shields 1™)[] or System Upgrade(Engines 1™)[], Reward Standard(H)[]]"
 
 #: src-en/data/events_sector_morph.xml:375
 msgid ""
@@ -659,50 +659,50 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_JUICE\"]/choice[1]/event/choice[2]/event/choice[@req=\"sensors\"]/text"
 msgstr ""
 "(Adv. Sensors) Show them your databanks.\n"
-"[] \n"
-"or [] \n"
-"or []"
+"System Upgrade(Oxygen 1™)[] \n"
+"or System Upgrade(Shields 1™)[] \n"
+"or System Upgrade(Engines 1™)[]"
 
 #: src-en/data/events_sector_morph.xml:395
 msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_JUICE\"]/choice[1]/event/choice[2]/event/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr ""
 "(Long-Ranged Scanners) Show them your databanks.\n"
-"[] \n"
-"or [] \n"
-"or []"
+"System Upgrade(Oxygen 1™)[] \n"
+"or System Upgrade(Shields 1™)[] \n"
+"or System Upgrade(Engines 1™)[]"
 
 #: src-en/data/events_sector_morph.xml:399
 msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_JUICE\"]/choice[1]/event/choice[2]/event/choice[@req=\"unique_alkali\"]/text"
 msgstr ""
 "(Alkali) Contact them with Alkali.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_sector_morph.xml:405
 msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_JUICE\"]/choice[1]/event/choice[@req=\"sensors\"]/text"
 msgstr ""
 "(Adv. Sensors) Show them your databanks.\n"
-"[] \n"
-"or [] \n"
-"or []"
+"System Upgrade(Oxygen 1™)[] \n"
+"or System Upgrade(Shields 1™)[] \n"
+"or System Upgrade(Engines 1™)[]"
 
 #: src-en/data/events_sector_morph.xml:409
 msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_JUICE\"]/choice[1]/event/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr ""
 "(Long-Ranged Scanners) Show them your databanks.\n"
-"[] \n"
-"or [] \n"
-"or []"
+"System Upgrade(Oxygen 1™)[] \n"
+"or System Upgrade(Shields 1™)[] \n"
+"or System Upgrade(Engines 1™)[]"
 
 #: src-en/data/events_sector_morph.xml:413
 msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_JUICE\"]/choice[1]/event/choice[@req=\"unique_alkali\"]/text"
 msgstr ""
 "(Alkali) Contact them with Alkali.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_sector_morph.xml:419
 msgid ""
@@ -798,7 +798,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_PEEPEEPOOPOO\"]/choice[1]/text"
 msgstr ""
 "Take some time to decipher it.\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_morph.xml:470
 msgid ""
@@ -815,7 +815,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_PEEPEEPOOPOO\"]/choice[@req=\"LIST_CREW_MORPH\"]/text"
 msgstr ""
 "(Morph Crew) Have your Morph explain this meaning to you.\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_morph.xml:477
 msgid ""
@@ -890,7 +890,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_ENGINEER_TECHNO\"]/choice[1]/text"
 msgstr ""
 "Listen.\n"
-"[Gain a crew(Techno)[], Reward[]]"
+"[-6<|<-4, Gain a crew(Techno)[], Reward | Only(M)[]]"
 
 #: src-en/data/events_sector_morph.xml:515
 msgid ""
@@ -907,14 +907,14 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_ENGINEER_TECHNO\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Buy a Technopath.\n"
-"Gain a crew(Techno)[]"
+"-6<|<-4, Gain a crew(Techno)[]"
 
 #: src-en/data/events_sector_morph.xml:526
 msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_ENGINEER_TECHNO\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Acknowledge their success and carry on.\n"
-"Reward[]"
+"Reward | Only(M)[]"
 
 #: src-en/data/events_sector_morph.xml:528
 msgid ""
@@ -994,7 +994,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_SMUGGLER_CONFUSED\"]/choice[1]/text"
 msgstr ""
 "Hail and offer to trade.\n"
-"[Reward[] nor Gain a crew(Rock Outcast)[] nor [[]], Reward, <!>Lose your crew(clonable)[], Reward[]]"
+"[Reward Stuff(L)[] or Gain a crew(Rock Outcast)[] or [[]], Reward Standard(M), <!>Lose your crew(clonable)[], Reward Standard(M)[]]"
 
 #: src-en/data/events_sector_morph.xml:583
 msgid ""
@@ -1011,7 +1011,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_SMUGGLER_CONFUSED\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Just put the blaster down!\n"
-"Reward[] \n"
+"Reward Stuff(L)[] \n"
 "or Gain a crew(Rock Outcast)[] \n"
 "or [[]]"
 
@@ -1020,7 +1020,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_SMUGGLER_CONFUSED\"]/choice[1]/event/choice[@req=\"clonebay\"]/text"
 msgstr ""
 "(Clone Bay) There's no risk here. Blast the asshole and carry on.\n"
-"Reward, <!>Lose your crew(clonable)[]"
+"Reward Standard(M), <!>Lose your crew(clonable)[]"
 
 #: src-en/data/events_sector_morph.xml:591
 msgid ""
@@ -1036,7 +1036,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_SMUGGLER_CONFUSED\"]/choice[1]/event/choice[@req=\"LIST_CREW_MORPH\"]/text"
 msgstr ""
 "(Morph Crew) \"Koo! Yup tur loo!\"\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_morph.xml:602
 msgid ""
@@ -1115,7 +1115,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_FREEGUN\"]/choice[1]/text"
 msgstr ""
 "Grab the weapon.\n"
-"[] \n"
+"Gain a weapon(Random)[] \n"
 "or [] \n"
 "or Gain a crew(Techno)[[]]"
 
@@ -1184,7 +1184,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_SHELL_REFUGEE_SCIENCE\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[], []] nor Gain a crew(Shell Scientist)[] nor Reward[], [[]], [[[]]], [[], []]]"
+"[[[], []] or Gain a crew(Shell Scientist)[] or Reward ~ Only(M)[], -5<{<-3 -5<|<-3[Gain a drone(Random)[]], [[[]]], [[], []]]"
 
 #: src-en/data/events_sector_morph.xml:722
 msgid ""
@@ -1196,7 +1196,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_SHELL_REFUGEE_IMPOSTOR\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[]], [[[]]], [[]], [[]]]"
+"[[[]], -5<{<-3 -5<|<-3[[[]]], [[]], [[]]]"
 
 #: src-en/data/events_sector_morph.xml:730
 msgid ""
@@ -1213,14 +1213,14 @@ msgstr ""
 "Offer to take them aboard.\n"
 "[[], []] \n"
 "or Gain a crew(Shell Scientist)[] \n"
-"or Reward[]"
+"or Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_morph.xml:737
 msgid ""
 "data/events_sector_morph.xml$//event[@name=\"MORPH_SHELL_REFUGEE_SCIENCE\"]/choice[2]/text"
 msgstr ""
 "Offer them some supplies to better prepare themselves.\n"
-"[[]]"
+"-5<{<-3 -5<|<-3[Gain a drone(Random)[]]"
 
 #: src-en/data/events_sector_morph.xml:739
 msgid ""
@@ -1232,7 +1232,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"MORPH_SHELL_REFUGEE_SCIENCE\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a drone(Random)[]"
 
 #: src-en/data/events_sector_morph.xml:747
 msgid ""
@@ -1358,7 +1358,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"MORPH_SHELL_REFUGEE_IMPOSTER\"]/choice[2]/text"
 msgstr ""
 "Offer them some supplies to better prepare themselves.\n"
-"[[[]]]"
+"-5<{<-3 -5<|<-3[[[]]]"
 
 #: src-en/data/events_sector_morph.xml:818
 msgid ""
@@ -1464,7 +1464,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_MORPH_BLOCKADE\"]/choice[@req=\"unique_alkali\"]/text"
 msgstr ""
 "(Alkali) We are carrying a VIP right now.\n"
-"Reward[]"
+"Reward Stuff(H)[]"
 
 #: src-en/data/events_sector_morph.xml:878
 msgid ""
@@ -1569,8 +1569,8 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_DISTRESS_MORPH_REBEL_JAMMED\"]/choice[1]/text"
 msgstr ""
 "Try and fix up their engines.\n"
-"[[[]] nor Reward[]] \n"
-"or [[[]] nor Gain a crew(Human)[]]"
+"[[[]] or Reward Standard(H)[]] \n"
+"or [[[]] or Gain a crew(Human)[]]"
 
 #: src-en/data/events_sector_morph.xml:953
 msgid ""
@@ -1598,7 +1598,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_DISTRESS_MORPH_REBEL_JAMMED\"]/choice[@req=\"LIST_CREW_ENGINEER\"]/text"
 msgstr ""
 "(Engineer Crew) Have your engineer take a look at the engines.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_sector_morph.xml:967
 msgid ""
@@ -1613,7 +1613,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_DISTRESS_MORPH_REBEL_JAMMED\"]/choice[@req=\"LIST_CREW_ENGI\"]/text"
 msgstr ""
 "(Engi Crew) Have your Engi take a look at the engines.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_sector_morph.xml:974
 msgid ""
@@ -1628,7 +1628,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_DISTRESS_MORPH_REBEL_JAMMED\"]/choice[@req=\"LIST_CREW_MORPH\"]/text"
 msgstr ""
 "(Morph Crew) Have your Morph reawaken the hibernating goo.\n"
-"Reward, Gain a crew(Blob)[]"
+"Reward Standard(L), Gain a crew(Blob)[]"
 
 #: src-en/data/events_sector_morph.xml:981
 msgid ""
@@ -1681,7 +1681,7 @@ msgid ""
 msgstr ""
 "Continue...\n"
 "[[]] \n"
-"or Reward[]"
+"or Reward Standard(H)[]"
 
 #: src-en/data/events_sector_morph.xml:1010
 msgid ""
@@ -1778,8 +1778,8 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"NEBULA_DISTRESS_MORPH_SLICE\"]/choice[@req=\"DRONE_CONTROL_BOARDING_DAMAGE\"]/text"
 msgstr ""
 "(Boarding Drone) Send the drone in to eradicate the Morphs.\n"
-"Reward[] \n"
-"or [[[]], []]"
+"Reward Standard(M)[] \n"
+"or -1|[[[]], []]"
 
 #: src-en/data/events_sector_morph.xml:1069
 msgid ""
@@ -2037,7 +2037,7 @@ msgid ""
 "data/events_sector_morph.xml$//ship[@name=\"SHIP_SHELL_LAB_DELTA\"]/surrender/choice/text"
 msgstr ""
 "Demand they explain what's going on.\n"
-"[[[[]]]]"
+"[[[<#>Unlock Ship(Scientist), Gain a weapon(Beam Shell)[]]]]"
 
 #: src-en/data/events_sector_morph.xml:1220
 msgid ""
@@ -2052,7 +2052,7 @@ msgid ""
 "data/events_sector_morph.xml$//ship[@name=\"SHIP_SHELL_LAB_DELTA\"]/surrender/choice/event/choice/text"
 msgstr ""
 "Don't the Rebels hate aliens?\n"
-"[[[]]]"
+"[[<#>Unlock Ship(Scientist), Gain a weapon(Beam Shell)[]]]"
 
 #: src-en/data/events_sector_morph.xml:1224
 msgid ""
@@ -2068,7 +2068,7 @@ msgid ""
 "data/events_sector_morph.xml$//ship[@name=\"SHIP_SHELL_LAB_DELTA\"]/surrender/choice/event/choice/event/choice/text"
 msgstr ""
 "Demand they give you the cargo instead. If the Rebels have use for it, so does the Federation.\n"
-"[[]]"
+"[<#>Unlock Ship(Scientist), Gain a weapon(Beam Shell)[]]"
 
 #: src-en/data/events_sector_morph.xml:1228
 msgid ""
@@ -2084,7 +2084,7 @@ msgid ""
 "data/events_sector_morph.xml$//ship[@name=\"SHIP_SHELL_LAB_DELTA\"]/surrender/choice/event/choice/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"<#>Unlock Ship(Scientist), Gain a weapon(Beam Shell)[]"
 
 #: src-en/data/events_sector_morph.xml:1248
 msgid "data/events_sector_morph.xml$//event[@name=\"MORPH_SITE_DELTA\"]/text"
@@ -2268,7 +2268,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"SURRENDER_OOJ_UNLOCK\"]/choice[1]/text"
 msgstr ""
 "Listen to them and stop.\n"
-"[[[Gain a crew(Unique Ooj)[[]], [[]]], []]]"
+"[[[Gain a crew(Unique Ooj)[[]], Gain a weapon(Random)[[]]], []]]"
 
 #: src-en/data/events_sector_morph.xml:1364
 msgid ""
@@ -2283,7 +2283,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"SURRENDER_OOJ_UNLOCK\"]/choice[1]/event/choice/text"
 msgstr ""
 "Inquire about the voice.\n"
-"[[Gain a crew(Unique Ooj)[[]], [[]]], []]"
+"[[Gain a crew(Unique Ooj)[[]], Gain a weapon(Random)[[]]], []]"
 
 #: src-en/data/events_sector_morph.xml:1371
 msgid ""
@@ -2297,7 +2297,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"SURRENDER_OOJ_UNLOCK\"]/choice[1]/event/choice/event/choice[1]/text"
 msgstr ""
 "Yes.\n"
-"[Gain a crew(Unique Ooj)[[]], [[]]]"
+"[Gain a crew(Unique Ooj)[[]], Gain a weapon(Random)[[]]]"
 
 #: src-en/data/events_sector_morph.xml:1375
 msgid ""
@@ -2340,7 +2340,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"SURRENDER_OOJ_UNLOCK\"]/choice[1]/event/choice/event/choice[1]/event/choice[2]/text"
 msgstr ""
 "We aren't the right people for this task.\n"
-"[[]]"
+"Gain a weapon(Random)[[]]"
 
 #: src-en/data/events_sector_morph.xml:1391
 msgid ""
@@ -2974,7 +2974,7 @@ msgid ""
 "data/events_sector_morph.xml$//event[@name=\"ALKALI_SURRENDER\"]/choice[@req=\"unique_alkali\"]/text"
 msgstr ""
 "Alright, sure.\n"
-"<!>Lose your crew(UNCLONABLE)[]"
+"<!>Fleet Advance(2), <!>Lose your crew(UNCLONABLE)[]"
 
 #: src-en/data/events_sector_morph.xml:1706
 msgid "data/events_sector_morph.xml$//event[@name=\"SURRENDERED_ALKALI\"]/text"

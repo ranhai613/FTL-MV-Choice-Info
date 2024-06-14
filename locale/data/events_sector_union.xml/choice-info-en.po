@@ -60,54 +60,54 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_BREACH\"]/choice[1]/text"
 msgstr ""
 "Help them onboard.\n"
-"Reward[] \n"
+"Reward Standard(L)[] \n"
 "or Gain a crew(?)[] \n"
-"or [[] nor [], Reward[] nor []]"
+"or [[] or [], Reward Standard(H)[] or -3{ -25~ -2}[]]"
 
 #: src-en/data/events_sector_union.xml:81
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_BREACH\"]/choice[@req=\"LIST_CREW_ROCK\"]/text"
 msgstr ""
 "(Rock Crew) Let them aboard but station your Rock as extra security.\n"
-"Reward[] \n"
+"Reward Standard(L)[] \n"
 "or Gain a crew(?)[] \n"
-"or Reward[]"
+"or Reward Item(M)[]"
 
 #: src-en/data/events_sector_union.xml:85
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_BREACH\"]/choice[@req=\"LIST_CREW_SOLDIER\"]/text"
 msgstr ""
 "(Soldier Crew) Let them aboard but station your Soldier as extra security.\n"
-"Reward[] \n"
+"Reward Standard(L)[] \n"
 "or Gain a crew(?)[] \n"
-"or Reward[]"
+"or Reward Item(M)[]"
 
 #: src-en/data/events_sector_union.xml:89
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_BREACH\"]/choice[@req=\"LIST_CREW_SUZERAIN\"]/text"
 msgstr ""
 "(Hive Elite) Let them aboard but station your Mantis as extra security.\n"
-"Reward[] \n"
+"Reward Standard(L)[] \n"
 "or Gain a crew(?)[] \n"
-"or Reward[]"
+"or Reward Item(M)[]"
 
 #: src-en/data/events_sector_union.xml:93
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_BREACH\"]/choice[@req=\"DRONE_CONTROL_BOARDING_DAMAGE\"]/text"
 msgstr ""
 "(Boarding Drone) Let them aboard but station your drone as extra security.\n"
-"Reward[] \n"
+"Reward Standard(L)[] \n"
 "or Gain a crew(?)[] \n"
-"or Reward[]"
+"or Reward Item(M)[]"
 
 #: src-en/data/events_sector_union.xml:97
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_BREACH\"]/choice[@req=\"sensors\"]/text"
 msgstr ""
 "(Adv. Sensors) Let them aboard but keep constant scans running on them.\n"
-"Reward[] \n"
+"Reward Standard(L)[] \n"
 "or Gain a crew(?)[] \n"
-"or Reward[]"
+"or Reward Item(M)[]"
 
 #: src-en/data/events_sector_union.xml:101
 msgid ""
@@ -174,8 +174,8 @@ msgid ""
 "data/events_sector_union.xml$//eventList[@name=\"UNION_BREACH_BOARD\"]/event[3]/choice[2]/text"
 msgstr ""
 "Ignore the weapon.\n"
-"Reward[] \n"
-"or []"
+"Reward Standard(H)[] \n"
+"or -3{ -25~ -2}[]"
 
 #: src-en/data/events_sector_union.xml:138
 msgid ""
@@ -256,7 +256,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS\"]/choice[1]/text"
 msgstr ""
 "Agree to track down the Militia ship hunting them.\n"
-"[[[[]], [[]], [[[], Reward[], Reward[]]], []], [[]]]"
+"[[[[]], [[]], -20~[[[], Reward { Only(M)[], Reward ~ Only(M)[]]], []], [[]]]"
 
 #: src-en/data/events_sector_union.xml:180
 msgid ""
@@ -270,7 +270,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Contact the ship.\n"
-"[[[]], [[]], [[[], Reward[], Reward[]]], []]"
+"[[[]], [[]], -20~[[[], Reward { Only(M)[], Reward ~ Only(M)[]]], []]"
 
 #: src-en/data/events_sector_union.xml:185
 msgid ""
@@ -333,7 +333,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS\"]/choice[1]/event/choice[1]/event/choice[3]/text"
 msgstr ""
 "Bribe them.\n"
-"[[[], Reward[], Reward[]]]"
+"-20~[[[], Reward { Only(M)[], Reward ~ Only(M)[]]]"
 
 #: src-en/data/events_sector_union.xml:211
 msgid ""
@@ -347,7 +347,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS\"]/choice[1]/event/choice[1]/event/choice[3]/event/choice/text"
 msgstr ""
 "Go back to the Free Mantis.\n"
-"[[], Reward[], Reward[]]"
+"[[], Reward { Only(M)[], Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_union.xml:218
 msgid ""
@@ -375,7 +375,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS\"]/choice[1]/event/choice[1]/event/choice[3]/event/choice/event/choice[2]/text"
 msgstr ""
 "Fuel.\n"
-"Reward[]"
+"Reward { Only(M)[]"
 
 #: src-en/data/events_sector_union.xml:229
 msgid ""
@@ -387,7 +387,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS\"]/choice[1]/event/choice[1]/event/choice[3]/event/choice/event/choice[3]/text"
 msgstr ""
 "Scrap.\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_union.xml:236
 msgid ""
@@ -461,7 +461,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS_WIN\"]/choice/text"
 msgstr ""
 "Go back to the Free Mantis.\n"
-"Reward[[]]"
+"Reward Standard(M)[[]]"
 
 #: src-en/data/events_sector_union.xml:284
 msgid ""
@@ -490,7 +490,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS_SURRENDER\"]/choice[1]/text"
 msgstr ""
 "Let the Free Mantis go and we'll spare you.\n"
-"[[[], Reward[], Reward[]]]"
+"[[[], Reward { Only(M)[], Reward ~ Only(M)[]]]"
 
 #: src-en/data/events_sector_union.xml:298
 msgid ""
@@ -505,7 +505,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS_SURRENDER\"]/choice[1]/event/choice/text"
 msgstr ""
 "Go back to the Free Mantis.\n"
-"[[], Reward[], Reward[]]"
+"[[], Reward { Only(M)[], Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_union.xml:303
 msgid ""
@@ -533,7 +533,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS_SURRENDER\"]/choice[1]/event/choice/event/choice[2]/text"
 msgstr ""
 "Fuel.\n"
-"Reward[]"
+"Reward { Only(M)[]"
 
 #: src-en/data/events_sector_union.xml:314
 msgid ""
@@ -545,7 +545,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS_SURRENDER\"]/choice[1]/event/choice/event/choice[3]/text"
 msgstr ""
 "Scrap.\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_union.xml:321
 msgid ""
@@ -573,7 +573,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Inquire on the process.\n"
-"[[[]], [[]], [[]], [[]], [[]], [[]], [[]], [[]], [[]], [[]], [[]], [[]], [[]], [[]], [[]], [[], []]]"
+"[-45<~<-35[Gain a weapon(Laser Frost 2 Player)[]], -40<~<-30[Gain a weapon(Missiles Particle Player)[]], -35<~<-25[Gain a weapon(Ion Stun Chargegun Player)[]], -40<~<-30[Gain a weapon(Missiles Burst 2 Player)[]], -35<~<-25[Gain a weapon(Missiles Cloak Player)[]], -40<~<-30[Gain a weapon(Missiles Fire Player)[]], -45<~<-35[Gain a weapon(Beam 2 Player)[]], -35<~<-25[Gain a weapon(Beam Long Player)[]], -35<~<-25[Gain a weapon(Beam Fire Player)[]], -40<~<-30[Gain a weapon(Beam Guillotine Player)[]], -40<~<-30[Gain a weapon(Energy 2 Player)[]], -40<~<-30[Gain a weapon(Energy Stun Player)[]], -35<~<-25[Gain a weapon(Energy Chargegun Player)[]], -45<~<-35[Gain a weapon(Shotgun 2 Player)[]], -45<~<-35[Gain a weapon(Shotgun Toxic Player)[]], [[], []]]"
 
 #: src-en/data/events_sector_union.xml:341
 msgid ""
@@ -587,7 +587,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"LASER_FROST_2\"]/text"
 msgstr ""
 "Upgrade your Frost Laser Mk II.\n"
-"[[]]"
+"-45<~<-35[Gain a weapon(Laser Frost 2 Player)[]]"
 
 #: src-en/data/events_sector_union.xml:345
 msgid ""
@@ -601,7 +601,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"LASER_FROST_2\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Laser Frost 2 Player)[]"
 
 #: src-en/data/events_sector_union.xml:353
 msgid ""
@@ -618,7 +618,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"MISSILES_PARTICLE\"]/text"
 msgstr ""
 "Upgrade your Particle Missiles Launcher.\n"
-"[[]]"
+"-40<~<-30[Gain a weapon(Missiles Particle Player)[]]"
 
 #: src-en/data/events_sector_union.xml:362
 msgid ""
@@ -632,7 +632,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"MISSILES_PARTICLE\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Missiles Particle Player)[]"
 
 #: src-en/data/events_sector_union.xml:370
 msgid ""
@@ -649,7 +649,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"ION_STUN_CHARGEGUN\"]/text"
 msgstr ""
 "Upgrade your Ion Charge Stunner.\n"
-"[[]]"
+"-35<~<-25[Gain a weapon(Ion Stun Chargegun Player)[]]"
 
 #: src-en/data/events_sector_union.xml:379
 msgid ""
@@ -663,7 +663,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"ION_STUN_CHARGEGUN\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Ion Stun Chargegun Player)[]"
 
 #: src-en/data/events_sector_union.xml:387
 msgid ""
@@ -680,7 +680,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"MISSILES_BURST_2\"]/text"
 msgstr ""
 "Upgrade your Hydra Launcher.\n"
-"[[]]"
+"-40<~<-30[Gain a weapon(Missiles Burst 2 Player)[]]"
 
 #: src-en/data/events_sector_union.xml:396
 msgid ""
@@ -694,7 +694,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"MISSILES_BURST_2\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Missiles Burst 2 Player)[]"
 
 #: src-en/data/events_sector_union.xml:404
 msgid ""
@@ -711,7 +711,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"MISSILES_CLOAK\"]/text"
 msgstr ""
 "Upgrade your Nyx Launcher.\n"
-"[[]]"
+"-35<~<-25[Gain a weapon(Missiles Cloak Player)[]]"
 
 #: src-en/data/events_sector_union.xml:413
 msgid ""
@@ -725,7 +725,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"MISSILES_CLOAK\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Missiles Cloak Player)[]"
 
 #: src-en/data/events_sector_union.xml:421
 msgid ""
@@ -742,7 +742,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"MISSILES_FIRE\"]/text"
 msgstr ""
 "Upgrade your Hades Launcher.\n"
-"[[]]"
+"-40<~<-30[Gain a weapon(Missiles Fire Player)[]]"
 
 #: src-en/data/events_sector_union.xml:430
 msgid ""
@@ -756,7 +756,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"MISSILES_FIRE\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Missiles Fire Player)[]"
 
 #: src-en/data/events_sector_union.xml:438
 msgid ""
@@ -773,7 +773,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"BEAM_2\"]/text"
 msgstr ""
 "Upgrade your Halberd Beam.\n"
-"[[]]"
+"-45<~<-35[Gain a weapon(Beam 2 Player)[]]"
 
 #: src-en/data/events_sector_union.xml:447
 msgid ""
@@ -787,7 +787,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"BEAM_2\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Beam 2 Player)[]"
 
 #: src-en/data/events_sector_union.xml:455
 msgid ""
@@ -803,7 +803,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"BEAM_LONG\"]/text"
 msgstr ""
 "Upgrade your Pike Beam.\n"
-"[[]]"
+"-35<~<-25[Gain a weapon(Beam Long Player)[]]"
 
 #: src-en/data/events_sector_union.xml:464
 msgid ""
@@ -817,7 +817,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"BEAM_LONG\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Beam Long Player)[]"
 
 #: src-en/data/events_sector_union.xml:472
 msgid ""
@@ -833,7 +833,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"BEAM_FIRE\"]/text"
 msgstr ""
 "Upgrade your Torch Beam.\n"
-"[[]]"
+"-35<~<-25[Gain a weapon(Beam Fire Player)[]]"
 
 #: src-en/data/events_sector_union.xml:481
 msgid ""
@@ -847,7 +847,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"BEAM_FIRE\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Beam Fire Player)[]"
 
 #: src-en/data/events_sector_union.xml:489
 msgid ""
@@ -863,7 +863,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"BEAM_GUILLOTINE\"]/text"
 msgstr ""
 "Upgrade your Fauchard Beam.\n"
-"[[]]"
+"-40<~<-30[Gain a weapon(Beam Guillotine Player)[]]"
 
 #: src-en/data/events_sector_union.xml:498
 msgid ""
@@ -877,7 +877,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"BEAM_GUILLOTINE\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Beam Guillotine Player)[]"
 
 #: src-en/data/events_sector_union.xml:506
 msgid ""
@@ -894,7 +894,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"ENERGY_2\"]/text"
 msgstr ""
 "Upgrade your Energy Cannon Mk II.\n"
-"[[]]"
+"-40<~<-30[Gain a weapon(Energy 2 Player)[]]"
 
 #: src-en/data/events_sector_union.xml:515
 msgid ""
@@ -908,7 +908,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"ENERGY_2\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Energy 2 Player)[]"
 
 #: src-en/data/events_sector_union.xml:523
 msgid ""
@@ -924,7 +924,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"ENERGY_STUN\"]/text"
 msgstr ""
 "Upgrade your Energy Stunner.\n"
-"[[]]"
+"-40<~<-30[Gain a weapon(Energy Stun Player)[]]"
 
 #: src-en/data/events_sector_union.xml:532
 msgid ""
@@ -938,7 +938,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"ENERGY_STUN\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Energy Stun Player)[]"
 
 #: src-en/data/events_sector_union.xml:540
 msgid ""
@@ -954,7 +954,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"ENERGY_CHARGEGUN\"]/text"
 msgstr ""
 "Upgrade your Energy Charger.\n"
-"[[]]"
+"-35<~<-25[Gain a weapon(Energy Chargegun Player)[]]"
 
 #: src-en/data/events_sector_union.xml:549
 msgid ""
@@ -968,7 +968,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"ENERGY_CHARGEGUN\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Energy Chargegun Player)[]"
 
 #: src-en/data/events_sector_union.xml:557
 msgid ""
@@ -985,7 +985,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"SHOTGUN_2\"]/text"
 msgstr ""
 "Upgrade your Flak Cannon Mk II.\n"
-"[[]]"
+"-45<~<-35[Gain a weapon(Shotgun 2 Player)[]]"
 
 #: src-en/data/events_sector_union.xml:566
 msgid ""
@@ -999,7 +999,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"SHOTGUN_2\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Shotgun 2 Player)[]"
 
 #: src-en/data/events_sector_union.xml:574
 msgid ""
@@ -1015,7 +1015,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"SHOTGUN_TOXIC\"]/text"
 msgstr ""
 "Upgrade your Irradiated Flak Cannon.\n"
-"[[]]"
+"-45<~<-35[Gain a weapon(Shotgun Toxic Player)[]]"
 
 #: src-en/data/events_sector_union.xml:583
 msgid ""
@@ -1029,7 +1029,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"SHOTGUN_TOXIC\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Shotgun Toxic Player)[]"
 
 #: src-en/data/events_sector_union.xml:591
 msgid ""
@@ -1166,7 +1166,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_OUTCAST_REFUGEES\"]/choice[@req=\"unique_tuco\"]/text"
 msgstr ""
 "(Tuco) Threaten the Militia patrol.\n"
-"[Reward[[]]]"
+"[Reward Standard(H)[[]]]"
 
 #: src-en/data/events_sector_union.xml:681
 msgid ""
@@ -1185,7 +1185,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_OUTCAST_REFUGEES\"]/choice[@req=\"unique_tuco\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[]]"
+"Reward Standard(H)[[]]"
 
 #: src-en/data/events_sector_union.xml:691
 msgid ""
@@ -1208,7 +1208,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_OUTCAST_REFUGEES\"]/choice[@req=\"rock_outcast\"]/text"
 msgstr ""
 "(Outcast Crew) Recommend that the outcasts continue along.\n"
-"[Reward[]]"
+"[Reward Standard(L)[]]"
 
 #: src-en/data/events_sector_union.xml:704
 msgid ""
@@ -1225,14 +1225,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_OUTCAST_REFUGEES\"]/choice[@req=\"rock_outcast\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Standard(L)[]"
 
 #: src-en/data/events_sector_union.xml:716
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_OUTCAST_REFUGEES\"]/choice[3]/text"
 msgstr ""
 "Recommend that the outcasts continue along.\n"
-"[Reward[]] \n"
+"[Reward Standard(L)[]] \n"
 "or [[[[]]], []]"
 
 #: src-en/data/events_sector_union.xml:720
@@ -1240,7 +1240,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_OUTCAST_REFUGEES\"]/choice[4]/text"
 msgstr ""
 "Accuse the patrol of being prejudiced.\n"
-"[Reward[[]]] \n"
+"[Reward Standard(M)[[]]] \n"
 "or [[[[]]], []] \n"
 "or [[]]"
 
@@ -1322,7 +1322,7 @@ msgid ""
 "data/events_sector_union.xml$//eventList[@name=\"MILITIA_OUTCAST_REFUGEES_PERSUADE\"]/event[1]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Standard(L)[]"
 
 #: src-en/data/events_sector_union.xml:769
 msgid ""
@@ -1379,7 +1379,7 @@ msgid ""
 "data/events_sector_union.xml$//eventList[@name=\"MILITIA_OUTCAST_REFUGEES_ACCUSE\"]/event[1]/choice/text"
 msgstr ""
 "Talk to the refugees.\n"
-"Reward[[]]"
+"Reward Standard(M)[[]]"
 
 #: src-en/data/events_sector_union.xml:798
 msgid ""
@@ -1490,7 +1490,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_DRUNK\"]/choice[@req=\"unique_nights\"]/text"
 msgstr ""
 "(Nights) \"Your businesssss isss failing becausssse you SSSSUCK.\"\n"
-"[]"
+"Gain a weapon(Giftlist Union)[]"
 
 #: src-en/data/events_sector_union.xml:852
 msgid ""
@@ -1541,7 +1541,7 @@ msgstr ""
 msgid "data/events_sector_union.xml$//event[@name=\"UNION_DRUNK\"]/choice[4]/text"
 msgstr ""
 "Threaten to blow his ship to pieces.\n"
-"[] \n"
+"Gain a weapon(Giftlist Union)[] \n"
 "or [[]] \n"
 "or [[], []]"
 
@@ -1646,7 +1646,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_MINING\"]/choice[1]/text"
 msgstr ""
 "Inspect closer.\n"
-"[[[[]]], Reward[[[]]], Reward[[[]]], Reward[[[]]], []]"
+"[[[[]]], Reward {(M)[[[]]], Reward {(M), -1|[[[]]], Reward {(M)[[[]]], []]"
 
 #: src-en/data/events_sector_union.xml:938
 msgid ""
@@ -1680,7 +1680,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_MINING\"]/choice[1]/event/choice[@req=\"BEAM_MINING\"]/text"
 msgstr ""
 "(Mining Equipment) Mine some of the asteroids on the outskirts.\n"
-"Reward[[[]]]"
+"Reward {(M)[[[]]]"
 
 #: src-en/data/events_sector_union.xml:955
 msgid ""
@@ -1703,7 +1703,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_MINING\"]/choice[1]/event/choice[@req=\"DRONE_CONTROL_BEAM_DRONE\"]/text"
 msgstr ""
 "(Beam Drone) Mine some of the asteroids on the outskirts. [-1|]\n"
-"Reward[[[]]]"
+"Reward {(M), -1|[[[]]]"
 
 #: src-en/data/events_sector_union.xml:967
 msgid ""
@@ -1726,7 +1726,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_MINING\"]/choice[1]/event/choice[@req=\"SCRAP_COLLECTOR\"]/text"
 msgstr ""
 "(Scrap Arm) Mine some of the asteroids on the outskirts.\n"
-"Reward[[[]]]"
+"Reward {(M)[[[]]]"
 
 #: src-en/data/events_sector_union.xml:982
 msgid ""
@@ -1853,14 +1853,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FACTORY_CHOICE\"]/choice[1]/text"
 msgstr ""
 "Grab a weapon.\n"
-"[]"
+"Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_union.xml:1066
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FACTORY_CHOICE\"]/choice[2]/text"
 msgstr ""
 "Grab some ammunition.\n"
-"[]"
+"10}[]"
 
 #: src-en/data/events_sector_union.xml:1076
 msgid "data/events_sector_union.xml$//event[@name=\"UNION_CARAVAN\"]/text"
@@ -1894,7 +1894,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_CARAVAN\"]/choice[@req=\"cloaking\"]/text"
 msgstr ""
 "(Cloaking) Cloak and rob the Transport while they're distracted.\n"
-"Reward[]"
+"Reward Standard(L)[]"
 
 #: src-en/data/events_sector_union.xml:1092
 msgid ""
@@ -1909,7 +1909,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_CARAVAN\"]/choice[@req=\"LIST_CREW_SUZERAIN\"]/text"
 msgstr ""
 "(Hive Elite) Demand the Suzerain ship stand down.\n"
-"Gain a crew(?), Reward[]"
+"Gain a crew(?), Reward Standard(M)[]"
 
 #: src-en/data/events_sector_union.xml:1099
 msgid ""
@@ -1927,7 +1927,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_CARAVAN\"]/choice[@req=\"FLARE_DISTRACTION\"]/text"
 msgstr ""
 "(Flares) Use the flares to lure the Suzerain away from the caravan.\n"
-"Gain a crew(?), Reward[]"
+"Gain a crew(?), Reward Standard(M)[]"
 
 #: src-en/data/events_sector_union.xml:1107
 msgid ""
@@ -1988,7 +1988,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_CLINIC_HARMONY\"]/choice[1]/text"
 msgstr ""
 "Demand an explanation.\n"
-"[[Gain a crew(Human Medic)[[]]], [[[]]], [[[]]], [Reward[]], [Gain a crew(Human Medic)[[]]], [Gain a crew(Human Medic)[[]]], [[[]]], [[], []]]"
+"[[Gain a crew(Human Medic)[[]]], [[[]]], [[[]]], [Reward Stuff(L)[]], [Gain a crew(Human Medic)[[]]], [Gain a crew(Human Medic)[[]]], [[[]]], [[], []]]"
 
 #: src-en/data/events_sector_union.xml:1151
 msgid ""
@@ -2070,7 +2070,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_CLINIC_HARMONY\"]/choice[1]/event/choice[@req=\"engi\"]/text"
 msgstr ""
 "(Engi Crew) Have your Engi find a compromise.\n"
-"[Reward[]]"
+"[Reward Stuff(L)[]]"
 
 #: src-en/data/events_sector_union.xml:1191
 msgid ""
@@ -2084,7 +2084,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_CLINIC_HARMONY\"]/choice[1]/event/choice[@req=\"engi\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Stuff(L)[]"
 
 #: src-en/data/events_sector_union.xml:1195
 msgid ""
@@ -2280,7 +2280,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_LANIUS_MISTAKE\"]/choice[@req=\"BLUELIST_BEAMS_DAMAGE\"]/text"
 msgstr ""
 "(Damaging Beam) Cut the ship off the station.\n"
-"[Reward[[], [[]], [[]], [[]]]]"
+"[Reward Standard(L)[[], -45<~<-35[Gain a weapon(Shotgun 2)[]], -6<}<-4[Gain a weapon(Bomb Breach 1)[]], -5<|<-3[Gain a drone(Flak 1 Amp3)[]]]]"
 
 #: src-en/data/events_sector_union.xml:1294
 msgid ""
@@ -2294,14 +2294,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_LANIUS_MISTAKE\"]/choice[@req=\"BLUELIST_BEAMS_DAMAGE\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[], [[]], [[]], [[]]]"
+"Reward Standard(L)[[], -45<~<-35[Gain a weapon(Shotgun 2)[]], -6<}<-4[Gain a weapon(Bomb Breach 1)[]], -5<|<-3[Gain a drone(Flak 1 Amp3)[]]]"
 
 #: src-en/data/events_sector_union.xml:1302
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_LANIUS_MISTAKE\"]/choice[@req=\"DRONE_CONTROL_BEAM_DRONE\"]/text"
 msgstr ""
 "(Beam Drone) Cut the ship off the station.\n"
-"[Reward[[], [[]], [[]], [[]]]]"
+"-1|[Reward Standard(L)[[], -45<~<-35[Gain a weapon(Shotgun 2)[]], -6<}<-4[Gain a weapon(Bomb Breach 1)[]], -5<|<-3[Gain a drone(Flak 1 Amp3)[]]]]"
 
 #: src-en/data/events_sector_union.xml:1304
 msgid ""
@@ -2315,14 +2315,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_LANIUS_MISTAKE\"]/choice[@req=\"DRONE_CONTROL_BEAM_DRONE\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[], [[]], [[]], [[]]]"
+"Reward Standard(L)[[], -45<~<-35[Gain a weapon(Shotgun 2)[]], -6<}<-4[Gain a weapon(Bomb Breach 1)[]], -5<|<-3[Gain a drone(Flak 1 Amp3)[]]]"
 
 #: src-en/data/events_sector_union.xml:1315
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_LANIUS_MISTAKE\"]/choice[@req=\"LIST_CREW_LANIUS\"]/text"
 msgstr ""
 "(Lanius Crew) \"Lanius ship stuck. Doesn't mean harm. Wants to trade for scrap. Has goods. Broken translator.\"\n"
-"Reward[[]]"
+"Reward Standard(M)[Gain a weapon(Giftlist Lanius)[]]"
 
 #: src-en/data/events_sector_union.xml:1317
 msgid ""
@@ -2338,7 +2338,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_LANIUS_MISTAKE\"]/choice[@req=\"LIST_CREW_LANIUS\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Giftlist Lanius)[]"
 
 #: src-en/data/events_sector_union.xml:1322
 msgid ""
@@ -2371,7 +2371,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_LANIUS_MISTAKE\"]/choice[5]/text"
 msgstr ""
 "Try to communicate with the Lanius.\n"
-"[[Reward[[], [[]], [[]], [[]]]]] \n"
+"[[Reward Standard(L)[[], -45<~<-35[Gain a weapon(Shotgun 2)[]], -6<}<-4[Gain a weapon(Bomb Breach 1)[]], -5<|<-3[Gain a drone(Flak 1 Amp3)[]]]]] \n"
 "or [[]] \n"
 "or [[]]"
 
@@ -2429,7 +2429,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_LANIUS_SOLVED_NO_TRANSLATOR\"]/choice[2]/text"
 msgstr ""
 "Give it some scrap.\n"
-"[[]]"
+"-45<~<-35[Gain a weapon(Shotgun 2)[]]"
 
 #: src-en/data/events_sector_union.xml:1371
 msgid ""
@@ -2445,14 +2445,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_LANIUS_SOLVED_NO_TRANSLATOR\"]/choice[2]/event/choice/text"
 msgstr ""
 "Pick up the gift the Lanius left behind.\n"
-"[]"
+"Gain a weapon(Shotgun 2)[]"
 
 #: src-en/data/events_sector_union.xml:1384
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_LANIUS_SOLVED_NO_TRANSLATOR\"]/choice[3]/text"
 msgstr ""
 "Give it some missiles.\n"
-"[[]]"
+"-6<}<-4[Gain a weapon(Bomb Breach 1)[]]"
 
 #: src-en/data/events_sector_union.xml:1386
 msgid ""
@@ -2468,14 +2468,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_LANIUS_SOLVED_NO_TRANSLATOR\"]/choice[3]/event/choice/text"
 msgstr ""
 "Pick up the gift the Lanius left behind.\n"
-"[]"
+"Gain a weapon(Bomb Breach 1)[]"
 
 #: src-en/data/events_sector_union.xml:1399
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_LANIUS_SOLVED_NO_TRANSLATOR\"]/choice[4]/text"
 msgstr ""
 "Give it some drones.\n"
-"[[]]"
+"-5<|<-3[Gain a drone(Flak 1 Amp3)[]]"
 
 #: src-en/data/events_sector_union.xml:1401
 msgid ""
@@ -2491,7 +2491,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_LANIUS_SOLVED_NO_TRANSLATOR\"]/choice[4]/event/choice/text"
 msgstr ""
 "Pick up the gift the Lanius left behind.\n"
-"[]"
+"Gain a drone(Flak 1 Amp3)[]"
 
 #: src-en/data/events_sector_union.xml:1416
 msgid ""
@@ -2508,7 +2508,7 @@ msgid ""
 "data/events_sector_union.xml$//eventList[@name=\"DISTRESS_UNION_LANIUS_CONTACT\"]/event[1]/choice/text"
 msgstr ""
 "Inform the station.\n"
-"[Reward[[], [[]], [[]], [[]]]]"
+"[Reward Standard(L)[[], -45<~<-35[Gain a weapon(Shotgun 2)[]], -6<}<-4[Gain a weapon(Bomb Breach 1)[]], -5<|<-3[Gain a drone(Flak 1 Amp3)[]]]]"
 
 #: src-en/data/events_sector_union.xml:1420
 msgid ""
@@ -2523,7 +2523,7 @@ msgid ""
 "data/events_sector_union.xml$//eventList[@name=\"DISTRESS_UNION_LANIUS_CONTACT\"]/event[1]/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[], [[]], [[]], [[]]]"
+"Reward Standard(L)[[], -45<~<-35[Gain a weapon(Shotgun 2)[]], -6<}<-4[Gain a weapon(Bomb Breach 1)[]], -5<|<-3[Gain a drone(Flak 1 Amp3)[]]]"
 
 #: src-en/data/events_sector_union.xml:1429
 msgid ""
@@ -2579,7 +2579,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_UNION_HOTHEADED_CIV\"]/choice[1]/text"
 msgstr ""
 "Agree to help.\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_union.xml:1464
 msgid ""
@@ -2720,7 +2720,7 @@ msgstr ""
 msgid "data/events_sector_union.xml$//event[@name=\"RST_START\"]/choice[1]/text"
 msgstr ""
 "We don't know anything, sorry.\n"
-"[Reward[], [Reward[], []], []]"
+"[Reward Standard(L)[], [Reward Standard(L)[], []], []]"
 
 #: src-en/data/events_sector_union.xml:1571
 msgid ""
@@ -2738,7 +2738,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"RST_START\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Sure thing!\n"
-"Reward[]"
+"Reward Standard(L)[]"
 
 #: src-en/data/events_sector_union.xml:1575
 msgid ""
@@ -2752,7 +2752,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"RST_START\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Remind me who Dr. Renfield is?\n"
-"[Reward[], []]"
+"[Reward Standard(L)[], []]"
 
 #: src-en/data/events_sector_union.xml:1583
 msgid ""
@@ -2772,7 +2772,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"RST_START\"]/choice[1]/event/choice[2]/event/choice[1]/text"
 msgstr ""
 "Agree to the task.\n"
-"Reward[]"
+"Reward Standard(L)[]"
 
 #: src-en/data/events_sector_union.xml:1587
 msgid ""
@@ -3109,7 +3109,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"INFESTED_STATION_SURRENDER\"]/choice[1]/text"
 msgstr ""
 "Stop firing.\n"
-"Reward[]"
+"Reward Standard(L)[]"
 
 #: src-en/data/events_sector_union.xml:1743
 msgid ""
@@ -3155,7 +3155,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"KESTREL_UNLOCK\"]/choice[1]/text"
 msgstr ""
 "Inquire about the offer.\n"
-"[[[[], []], [[[], []]]], [[]]]"
+"[[[Gain a drone(Gana Battle)[], []], [[[], []]]], [[]]]"
 
 #: src-en/data/events_sector_union.xml:1775
 msgid ""
@@ -3201,7 +3201,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"KESTREL_UNLOCK_OFFER\"]/choice[1]/text"
 msgstr ""
 "We do.\n"
-"[[[], []], [[[], []]]]"
+"[[Gain a drone(Gana Battle)[], []], [[[], []]]]"
 
 #: src-en/data/events_sector_union.xml:1795
 msgid ""
@@ -3223,7 +3223,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"KESTREL_UNLOCK_OFFER\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "To sell it?\n"
-"[[], []]"
+"[Gain a drone(Gana Battle)[], []]"
 
 #: src-en/data/events_sector_union.xml:1799
 msgid ""
@@ -3240,7 +3240,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"KESTREL_UNLOCK_OFFER\"]/choice[1]/event/choice[1]/event/choice[1]/text"
 msgstr ""
 "What about that old Kestrel?\n"
-"[]"
+"Gain a drone(Gana Battle)[]"
 
 #: src-en/data/events_sector_union.xml:1803
 msgid ""
@@ -3522,7 +3522,7 @@ msgid ""
 "data/events_sector_union.xml$//ship[@name=\"SHIP_HEPHAESTUS_KESTREL\"]/destroyed/choice/text"
 msgstr ""
 "Continue...\n"
-"[[Reward[]]]"
+"[<#>Unlock Ship(Kestrel)[Reward Stuff(L)[]]]"
 
 #: src-en/data/events_sector_union.xml:1975
 msgid ""
@@ -3536,7 +3536,7 @@ msgid ""
 "data/events_sector_union.xml$//ship[@name=\"SHIP_HEPHAESTUS_KESTREL\"]/deadCrew/choice/text"
 msgstr ""
 "Continue...\n"
-"[[Reward[]]]"
+"[<#>Unlock Ship(Kestrel)[Reward Stuff(L)[]]]"
 
 #: src-en/data/events_sector_union.xml:1990
 msgid ""
@@ -3666,7 +3666,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"KESTREL_UNLOCK_QUEST_3\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[Reward[]]"
+"<#>Unlock Ship(Kestrel)[Reward Stuff(L)[]]"
 
 #: src-en/data/events_sector_union.xml:2050
 msgid ""
@@ -3682,7 +3682,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"KESTREL_UNLOCK_QUEST_3\"]/choice/event/choice/text"
 msgstr ""
 "Hideo Tanaka hired pirates to steal your ship for his collection.\n"
-"Reward[]"
+"Reward Stuff(L)[]"
 
 #: src-en/data/events_sector_union.xml:2055
 msgid ""
@@ -3712,7 +3712,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"COREWORLDS_EARTH\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[[[[[]]]], []]]], [[], []]]"
+"[<!>Fleet Advance(1)[[[[[[[]]]], []]]], [[], []]]"
 
 #: src-en/data/events_sector_union.xml:2076
 msgid ""
@@ -3728,7 +3728,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"COREWORLDS_EARTH\"]/choice/event/choice[1]/text"
 msgstr ""
 "Land and explore the park.\n"
-"[[[[[[[]]]], []]]]"
+"<!>Fleet Advance(1)[[[[[[[]]]], []]]]"
 
 #: src-en/data/events_sector_union.xml:2080
 msgid ""
@@ -4014,7 +4014,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BASE\"]/choice[1]/text"
 msgstr ""
 "We have a war of our own to fight. If these people were alive, they'd understand.\n"
-"[[[]], [[[]]], [[]], [[]]]"
+"[[[]], Gain a weapon(Part Gatling Base)[[[]]], [[]], [[]]]"
 
 #: src-en/data/events_sector_union.xml:2239
 msgid ""
@@ -4053,7 +4053,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BASE\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Dig up Jackson Newman.\n"
-"[[[]]]"
+"Gain a weapon(Part Gatling Base)[[[]]]"
 
 #: src-en/data/events_sector_union.xml:2254
 msgid ""
@@ -4174,7 +4174,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_AUGMENT\"]/choice/text"
 msgstr ""
 "Hail them.\n"
-"[[], [], [[]], [[], []]]"
+"[Gain an augment(Part Gatling Augment), -30~[], Gain an augment(Part Gatling Augment), -50~ 3{ 3} 3|[], [[]], [[], []]]"
 
 #: src-en/data/events_sector_union.xml:2330
 msgid ""
@@ -4191,14 +4191,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_AUGMENT\"]/choice/event/choice[1]/text"
 msgstr ""
 "Buy the Pre-Igniter.\n"
-"[]"
+"Gain an augment(Part Gatling Augment), -30~[]"
 
 #: src-en/data/events_sector_union.xml:2341
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_AUGMENT\"]/choice/event/choice[2]/text"
 msgstr ""
 "Buy the \"Jumbo Deal\" along with the Pre-Igniter.\n"
-"[]"
+"Gain an augment(Part Gatling Augment), -50~ 3{ 3} 3|[]"
 
 #: src-en/data/events_sector_union.xml:2353
 msgid ""

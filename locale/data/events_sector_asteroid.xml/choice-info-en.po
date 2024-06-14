@@ -17,7 +17,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"ASTEROID_REFINERY\"]/choice[1]/text"
 msgstr ""
 "Pay them to create a weapon.\n"
-"[]"
+"-60<~<-45, Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_asteroid.xml:61
 msgid ""
@@ -31,7 +31,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"ASTEROID_REFINERY\"]/choice[2]/text"
 msgstr ""
 "Pay them to create an augment.\n"
-"[]"
+"-50<~<-35, Gain an augment(Random)[]"
 
 #: src-en/data/events_sector_asteroid.xml:71
 msgid ""
@@ -100,12 +100,12 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"ASTEROID_CACHE\"]/choice[1]/text"
 msgstr ""
 "Raid the cache.\n"
-"Reward[] \n"
-"or Reward[] \n"
-"or Reward[] \n"
-"or Reward[] \n"
-"or Reward[] \n"
-"or Reward[]"
+"Gain a drone(Random), Reward | Only(H)[] \n"
+"or Gain a drone(Random), Reward | Only(H)[] \n"
+"or Gain a weapon(Random), Reward } Only(H)[] \n"
+"or Gain a weapon(Random), Reward } Only(H)[] \n"
+"or Gain an augment(Random), Reward { Only(H)[] \n"
+"or Gain an augment(Random), Reward { Only(H)[]"
 
 #: src-en/data/events_sector_asteroid.xml:113
 msgid ""
@@ -199,9 +199,9 @@ msgid ""
 msgstr ""
 "Board the platform.\n"
 "[[]] \n"
-"or Reward[] \n"
+"or Reward {(H)[] \n"
 "or Gain a crew(Rock)[] \n"
-"or []"
+"or System Upgrade(Shields 1™)[]"
 
 #: src-en/data/events_sector_asteroid.xml:170
 msgid ""
@@ -282,18 +282,18 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"ASTEROID_HURTMINER\"]/choice[1]/text"
 msgstr ""
 "Try to rescue the civilians.\n"
-"Reward[] \n"
+"Reward ~ Only(L)[] \n"
 "or Gain a crew(?)[] \n"
-"or Reward[]"
+"or Reward Stuff(M)[]"
 
 #: src-en/data/events_sector_asteroid.xml:217
 msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"ASTEROID_HURTMINER\"]/choice[2]/text"
 msgstr ""
 "Attempt to salvage some of the wreckage from the collision.\n"
-"Reward[[]] \n"
-"or Reward[] \n"
-"or Reward[]"
+"Reward Stuff(M)[[]] \n"
+"or Reward Stuff(M), <!>Fleet Advance(1)[] \n"
+"or Reward Stuff(H)[]"
 
 #: src-en/data/events_sector_asteroid.xml:221
 msgid ""
@@ -301,7 +301,7 @@ msgid ""
 msgstr ""
 "(Upg. Piloting) Use your advanced auto-pilot to correct their trajectory.\n"
 "Gain a crew(?)[] \n"
-"or Reward[]"
+"or Reward Stuff(M)[]"
 
 #: src-en/data/events_sector_asteroid.xml:225
 msgid ""
@@ -697,8 +697,8 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"ASTEROID_REBELOUTPOST\"]/choice[1]/text"
 msgstr ""
 "Contact them.\n"
-"[] \n"
-"or Reward[] \n"
+"<!>Fleet Advance(1)[] \n"
+"or Reward {(M)[] \n"
 "or []"
 
 #: src-en/data/events_sector_asteroid.xml:444
@@ -866,7 +866,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"ASTEROID_STANDOFF\"]/choice[@req=\"cloaking\"]/text"
 msgstr ""
 "(Upg. Cloaking) Stealthily raid the depot yourself.\n"
-"[]"
+"Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_asteroid.xml:528
 msgid ""
@@ -915,7 +915,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"ASTEROID_STANDOFF_DEPOT\"]/choice[1]/text"
 msgstr ""
 "Raid the depot.\n"
-"Reward[]"
+"Reward Standard(M), Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_asteroid.xml:552
 msgid ""
@@ -1091,7 +1091,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"DISTRESS_ASTEROID_PRESSURE_TANK\"]/choice[@req=\"BLUELIST_FOCUS_DAMAGE\"]/text"
 msgstr ""
 "(Damaging Pinpoint Beam) Precisely puncture the damaged tank to allow a controlled leakage.\n"
-"[Reward[]]"
+"[Gain a weapon(Beam Mining), Reward Standard(H)[]]"
 
 #: src-en/data/events_sector_asteroid.xml:663
 msgid ""
@@ -1106,7 +1106,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"DISTRESS_ASTEROID_PRESSURE_TANK\"]/choice[@req=\"BLUELIST_FOCUS_DAMAGE\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Gain a weapon(Beam Mining), Reward Standard(H)[]"
 
 #: src-en/data/events_sector_asteroid.xml:667
 msgid ""
@@ -1121,7 +1121,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"DISTRESS_ASTEROID_PRESSURE_TANK\"]/choice[@req=\"DRONE_CONTROL_BEAM_DRONE\"]/text"
 msgstr ""
 "(Beam Drone) Precisely puncture the damaged tank to allow a controlled leakage.\n"
-"[Reward[]]"
+"-1|[Gain a weapon(Beam Mining), Reward Standard(H)[]]"
 
 #: src-en/data/events_sector_asteroid.xml:677
 msgid ""
@@ -1136,7 +1136,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"DISTRESS_ASTEROID_PRESSURE_TANK\"]/choice[@req=\"DRONE_CONTROL_BEAM_DRONE\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Gain a weapon(Beam Mining), Reward Standard(H)[]"
 
 #: src-en/data/events_sector_asteroid.xml:684
 msgid ""
@@ -1151,15 +1151,15 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"DISTRESS_ASTEROID_PRESSURE_TANK\"]/choice[@req=\"BLUELIST_BEAMS_DAMAGE\"]/text"
 msgstr ""
 "(Damaging Beam Weapon) Try to cut the tank open with your beam weapon.\n"
-"[Reward[]] \n"
-"or [Reward[]]"
+"[Reward Standard(M)[]] \n"
+"or [Gain a weapon(Beam Mining), Reward Standard(H)[]]"
 
 #: src-en/data/events_sector_asteroid.xml:696
 msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"DISTRESS_ASTEROID_PRESSURE_TANK\"]/choice[4]/text"
 msgstr ""
 "Stay clear.\n"
-"Reward[]"
+"Reward {(L)[]"
 
 #: src-en/data/events_sector_asteroid.xml:698
 msgid ""
@@ -1175,7 +1175,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"DISTRESS_ASTEROID_PRESSURE_TANK\"]/choice[@req=\"teleporter\"]/text"
 msgstr ""
 "(Teleporter) Stay clear and evacuate the ship from afar with your teleporter.\n"
-"Reward, Gain a crew(?)[]"
+"Reward {(L), Gain a crew(?)[]"
 
 #: src-en/data/events_sector_asteroid.xml:705
 msgid ""
@@ -1192,7 +1192,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"DISTRESS_ASTEROID_PRESSURE_TANK\"]/choice[6]/text"
 msgstr ""
 "Risk your ship to save the miners.\n"
-"[Gain a crew(?), Reward[]]"
+"[Gain a crew(?), Reward {(L)[]]"
 
 #: src-en/data/events_sector_asteroid.xml:713
 msgid ""
@@ -1207,7 +1207,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"DISTRESS_ASTEROID_PRESSURE_TANK\"]/choice[6]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a crew(?), Reward[]"
+"Gain a crew(?), Reward {(L)[]"
 
 #: src-en/data/events_sector_asteroid.xml:718
 msgid ""
@@ -1232,7 +1232,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//eventList[@name=\"MINING_DISTRESS_PRESSURE_TANK_BEAM\"]/event[1]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_asteroid.xml:732
 msgid ""
@@ -1256,7 +1256,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//eventList[@name=\"MINING_DISTRESS_PRESSURE_TANK_BEAM\"]/event[2]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Gain a weapon(Beam Mining), Reward Standard(H)[]"
 
 #: src-en/data/events_sector_asteroid.xml:742
 msgid ""
@@ -1281,7 +1281,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"DISTRESS_ASTEROID_FREEDUMB\"]/choice[1]/text"
 msgstr ""
 "Agree to track down the murderers.\n"
-"[[Gain a crew(Mantis Free)[], Reward[]]]"
+"[[Gain a crew(Mantis Free)[], Reward ~ Only(M)[]]]"
 
 #: src-en/data/events_sector_asteroid.xml:756
 msgid ""
@@ -1297,7 +1297,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"DISTRESS_ASTEROID_FREEDUMB\"]/choice[1]/event/choice/text"
 msgstr ""
 "Are you the ones killing Theocracy miners?\n"
-"[Gain a crew(Mantis Free)[], Reward[]]"
+"[Gain a crew(Mantis Free)[], Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_asteroid.xml:760
 msgid ""
@@ -1330,7 +1330,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"DISTRESS_ASTEROID_FREEDUMB\"]/choice[1]/event/choice/event/choice[2]/text"
 msgstr ""
 "Nope, you're doing just fine.\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_asteroid.xml:771
 msgid ""
@@ -1383,7 +1383,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"DISTRESS_ASTEROID_BACTERIA\"]/choice[1]/text"
 msgstr ""
 "Offer to help.\n"
-"[[[[]]], [[Reward[], [[[]]]]]]"
+"[[[[]]], [[Reward Item(L)[], [[[]]]]]]"
 
 #: src-en/data/events_sector_asteroid.xml:801
 msgid ""
@@ -1420,7 +1420,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"DISTRESS_ASTEROID_BACTERIA\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Try and explain to the Vampweeds.\n"
-"[[Reward[], [[[]]]]]"
+"[[Reward Item(L)[], [[[]]]]]"
 
 #: src-en/data/events_sector_asteroid.xml:818
 msgid ""
@@ -1435,7 +1435,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"DISTRESS_ASTEROID_BACTERIA\"]/choice[1]/event/choice[2]/event/choice/text"
 msgstr ""
 "A Zoltan told us all this. We're just mercenaries.\n"
-"[Reward[], [[[]]]]"
+"[Reward Item(L)[], [[[]]]]"
 
 #: src-en/data/events_sector_asteroid.xml:822
 msgid ""
@@ -1451,7 +1451,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"DISTRESS_ASTEROID_BACTERIA\"]/choice[1]/event/choice[2]/event/choice/event/choice[1]/text"
 msgstr ""
 "Lie to the Zoltan.\n"
-"Reward[]"
+"Reward Item(L)[]"
 
 #: src-en/data/events_sector_asteroid.xml:826
 msgid ""
@@ -1530,7 +1530,7 @@ msgid ""
 "data/events_sector_asteroid.xml$//event[@name=\"QUEST_ASTEROID_TRANSPORT\"]/choice[1]/text"
 msgstr ""
 "Agree.\n"
-"Reward[]"
+"Reward Standard(L)[]"
 
 #: src-en/data/events_sector_asteroid.xml:884
 msgid ""
@@ -1607,7 +1607,7 @@ msgstr ""
 "[[]] \n"
 "or [[]] \n"
 "or [[]] \n"
-"or Reward[]"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_sector_asteroid.xml:970
 msgid ""

@@ -124,7 +124,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"VAGABOND_SEPARATISTS_OUTLAWS\"]/choice[2]/text"
 msgstr ""
 "Offer to shelter them from the Harmony.\n"
-"[[[]], [[[[]], [[[]]]], []]]"
+"[[[]], [[Gain a drone(Random)[[]], [[[]]]], []]]"
 
 #: src-en/data/events_sector_vagabond.xml:101
 msgid ""
@@ -162,7 +162,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"VAGABOND_SEPARATISTS_OUTLAWS\"]/choice[2]/event/choice[2]/text"
 msgstr ""
 "Leave them be.\n"
-"[[[[]], [[[]]]], []]"
+"[[Gain a drone(Random)[[]], [[[]]]], []]"
 
 #: src-en/data/events_sector_vagabond.xml:116
 msgid ""
@@ -176,7 +176,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"VAGABOND_SEPARATISTS_OUTLAWS\"]/choice[2]/event/choice[2]/event/choice[1]/text"
 msgstr ""
 "We aren't puppets to the Harmony. We're Multiverse Renegades. We enforce the law as we see fit.\n"
-"[[[]], [[[]]]]"
+"[Gain a drone(Random)[[]], [[[]]]]"
 
 #: src-en/data/events_sector_vagabond.xml:120
 msgid ""
@@ -191,7 +191,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"VAGABOND_SEPARATISTS_OUTLAWS\"]/choice[2]/event/choice[2]/event/choice[1]/event/choice[1]/text"
 msgstr ""
 "Pretend you did your job and take the pay.\n"
-"[[]]"
+"Gain a drone(Random)[[]]"
 
 #: src-en/data/events_sector_vagabond.xml:125
 msgid ""
@@ -522,7 +522,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Approach.\n"
-"[[], [[], [<!>Lose your crew(UNCLONABLE), Reward[], <!>Lose your crew(clonable), Reward[]], [[]]]]"
+"[[], [Gain a weapon(Random), <!>Fleet Advance(2)[], <!>Fleet Advance(2)[<!>Lose your crew(UNCLONABLE), Reward Standard(H), Gain a weapon(Random)[], <!>Lose your crew(clonable), Reward Standard(H), Gain a weapon(Random)[]], [[]]]]"
 
 #: src-en/data/events_sector_vagabond.xml:296
 msgid ""
@@ -548,7 +548,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[2]/text"
 msgstr ""
 "Offer to stay and help move their equipment.\n"
-"[[], [<!>Lose your crew(UNCLONABLE), Reward[], <!>Lose your crew(clonable), Reward[]], [[]]]"
+"[Gain a weapon(Random), <!>Fleet Advance(2)[], <!>Fleet Advance(2)[<!>Lose your crew(UNCLONABLE), Reward Standard(H), Gain a weapon(Random)[], <!>Lose your crew(clonable), Reward Standard(H), Gain a weapon(Random)[]], [[]]]"
 
 #: src-en/data/events_sector_vagabond.xml:304
 msgid ""
@@ -567,7 +567,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[2]/event/choice[1]/text"
 msgstr ""
 "Take cover indoors!\n"
-"[]"
+"Gain a weapon(Random), <!>Fleet Advance(2)[]"
 
 #: src-en/data/events_sector_vagabond.xml:308
 msgid ""
@@ -586,7 +586,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[2]/event/choice[2]/text"
 msgstr ""
 "Keep working!\n"
-"[<!>Lose your crew(UNCLONABLE), Reward[], <!>Lose your crew(clonable), Reward[]]"
+"<!>Fleet Advance(2)[<!>Lose your crew(UNCLONABLE), Reward Standard(H), Gain a weapon(Random)[], <!>Lose your crew(clonable), Reward Standard(H), Gain a weapon(Random)[]]"
 
 #: src-en/data/events_sector_vagabond.xml:316
 msgid ""
@@ -607,7 +607,7 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "Continue...\n"
-"<!>Lose your crew(UNCLONABLE), Reward[]"
+"<!>Lose your crew(UNCLONABLE), Reward Standard(H), Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_vagabond.xml:321
 msgid ""
@@ -640,7 +640,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Continue...\n"
-"<!>Lose your crew(clonable), Reward[]"
+"<!>Lose your crew(clonable), Reward Standard(H), Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_vagabond.xml:333
 msgid ""
@@ -821,7 +821,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"GHOST_REBEL_TRUCE\"]/choice[3]/text"
 msgstr ""
 "Pay them to delay the fleet.\n"
-"[]"
+"Fleet Delay(1), -20~[]"
 
 #: src-en/data/events_sector_vagabond.xml:426
 msgid ""
@@ -873,15 +873,15 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_VAGABOND_FLEETCRASH\"]/choice[1]/text"
 msgstr ""
 "Try to scrap some of the outer regions of the ship.\n"
-"Reward[] \n"
-"or Reward[[]]"
+"Reward Standard(M)[] \n"
+"or Reward Standard(L)[[]]"
 
 #: src-en/data/events_sector_vagabond.xml:472
 msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_VAGABOND_FLEETCRASH\"]/choice[2]/text"
 msgstr ""
 "Hail the Ghosts.\n"
-"[[], Reward[[]], []]"
+"[-5<}<-2[], Reward Standard(L)[[]], []]"
 
 #: src-en/data/events_sector_vagabond.xml:474
 msgid ""
@@ -896,14 +896,14 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_VAGABOND_FLEETCRASH\"]/choice[2]/event/choice[1]/text"
 msgstr ""
 "Give them some missiles to access a store.\n"
-"[]"
+"-5<}<-2[]"
 
 #: src-en/data/events_sector_vagabond.xml:485
 msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_VAGABOND_FLEETCRASH\"]/choice[2]/event/choice[2]/text"
 msgstr ""
 "Ignore their request and scrap the wreck.\n"
-"Reward[[]]"
+"Reward Standard(L)[[]]"
 
 #: src-en/data/events_sector_vagabond.xml:487
 msgid ""
@@ -990,7 +990,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_VAGABOND_ACID\"]/choice[1]/text"
 msgstr ""
 "Not sure. Could you describe one?\n"
-"[[[[]] nor Reward[], Reward[]], Reward[], Gain a crew(Phantom Wraith)[], Gain a crew(Phantom Wraith)[], Gain a crew(Phantom Wraith)[]]"
+"[[[[]] or Reward Stuff(M)[], Reward Stuff(M)[]], Reward Stuff(L)[], Gain a crew(Phantom Wraith)[], Gain a crew(Phantom Wraith)[], Gain a crew(Phantom Wraith)[]]"
 
 #: src-en/data/events_sector_vagabond.xml:540
 msgid ""
@@ -1004,7 +1004,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_VAGABOND_ACID\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Lie and say you've heard about them.\n"
-"[[[]] nor Reward[], Reward[]]"
+"[[[]] or Reward Stuff(M)[], Reward Stuff(M)[]]"
 
 #: src-en/data/events_sector_vagabond.xml:544
 msgid ""
@@ -1017,14 +1017,14 @@ msgid ""
 msgstr ""
 "Make up some coordinates.\n"
 "[[]] \n"
-"or Reward[]"
+"or Reward Stuff(M)[]"
 
 #: src-en/data/events_sector_vagabond.xml:550
 msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_VAGABOND_ACID\"]/choice[1]/event/choice[1]/event/choice[@req=\"mind\"]/text"
 msgstr ""
 "(Mind Control) Give him a very 'convincing' lie.\n"
-"Reward[]"
+"Reward Stuff(M)[]"
 
 #: src-en/data/events_sector_vagabond.xml:552
 msgid ""
@@ -1038,7 +1038,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_VAGABOND_ACID\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Tell the truth. You've never seen one.\n"
-"Reward[]"
+"Reward Stuff(L)[]"
 
 #: src-en/data/events_sector_vagabond.xml:561
 msgid ""
@@ -1271,9 +1271,9 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_GHOST_DONATION\"]/choice[2]/text"
 msgstr ""
 "Pay them scrap to fix up their hull. [-35~]\n"
-"Gain a crew(Phantom Goul)[] \n"
-"or Gain a crew(Phantom Mare)[] \n"
-"or Gain a crew(Phantom Wraith)[]"
+"-35~, Gain a crew(Phantom Goul)[] \n"
+"or -35~, Gain a crew(Phantom Mare)[] \n"
+"or -35~, Gain a crew(Phantom Wraith)[]"
 
 #: src-en/data/events_sector_vagabond.xml:673
 msgid ""
@@ -1340,7 +1340,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_GHOST_BREEDER\"]/choice[1]/text"
 msgstr ""
 "Hail them.\n"
-"[Gain a crew(Phantom)[] nor Gain a crew(Phantom Goul)[] nor Gain a crew(Phantom Mare)[] nor Gain a crew(Phantom Wraith)[], [Gain a crew(Phantom Goul Alpha)[]], [[], []], [[], []]]"
+"[-40~, Gain a crew(Phantom)[] or -40~, Gain a crew(Phantom Goul)[] or -40~, Gain a crew(Phantom Mare)[] or -40~, Gain a crew(Phantom Wraith)[], [Gain a crew(Phantom Goul Alpha)[]], [60~[], []], [[], []]]"
 
 #: src-en/data/events_sector_vagabond.xml:718
 msgid ""
@@ -1356,10 +1356,10 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_GHOST_BREEDER\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Offer to buy one of their test subjects as crew.\n"
-"Gain a crew(Phantom)[] \n"
-"or Gain a crew(Phantom Goul)[] \n"
-"or Gain a crew(Phantom Mare)[] \n"
-"or Gain a crew(Phantom Wraith)[]"
+"-40~, Gain a crew(Phantom)[] \n"
+"or -40~, Gain a crew(Phantom Goul)[] \n"
+"or -40~, Gain a crew(Phantom Mare)[] \n"
+"or -40~, Gain a crew(Phantom Wraith)[]"
 
 #: src-en/data/events_sector_vagabond.xml:724
 msgid ""
@@ -1398,7 +1398,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_GHOST_BREEDER\"]/choice[1]/event/choice[@req=\"GHOST_DUPLICATOR\"]/text"
 msgstr ""
 "(Ghost Splitter) Show them the replicator.\n"
-"[[], []]"
+"[60~[], []]"
 
 #: src-en/data/events_sector_vagabond.xml:739
 msgid ""
@@ -1414,7 +1414,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_GHOST_BREEDER\"]/choice[1]/event/choice[@req=\"GHOST_DUPLICATOR\"]/event/choice[@req=\"GHOST_DUPLICATOR\"]/text"
 msgstr ""
 "Sell them the augment.\n"
-"[]"
+"60~[]"
 
 #: src-en/data/events_sector_vagabond.xml:743
 msgid ""
@@ -1821,7 +1821,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"GHOST_FEDMORALITY_FINISH\"]/choice[2]/text"
 msgstr ""
 "It's for the best. Let them die and scrap their ship.\n"
-"Reward[]"
+"Reward Standard(L)[]"
 
 #: src-en/data/events_sector_vagabond.xml:984
 msgid ""
@@ -1898,8 +1898,8 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_DRIFTER_CHOICE_GHOST\"]/choice[1]/text"
 msgstr ""
 "Scrap it.\n"
-"Reward[[]] \n"
-"or Reward[]"
+"Reward Standard(L)[[]] \n"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_sector_vagabond.xml:1030
 msgid ""
@@ -2011,7 +2011,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_GHOST_INSANE_ROCKMEN\"]/choice[@req=\"LIST_CREW_GHOST\"]/text"
 msgstr ""
 "(Ghost Crew) Show them your Ghost crew.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_vagabond.xml:1097
 msgid ""
@@ -2141,7 +2141,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_GHOST_UPGRADERS\"]/choice[2]/text"
 msgstr ""
 "Wait and see.\n"
-"[] \n"
+"System Upgrade(Engines 1™)[] \n"
 "or []"
 
 #: src-en/data/events_sector_vagabond.xml:1167
@@ -2178,7 +2178,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_VAGABOND_ORCHID\"]/choice[1]/text"
 msgstr ""
 "Agree to help.\n"
-"[[[]], [[]], Reward[]]"
+"[[[]], [[]], Reward Standard(L), Gain a weapon(Giftlist Kernel)[]]"
 
 #: src-en/data/events_sector_vagabond.xml:1196
 msgid ""
@@ -2238,7 +2238,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_VAGABOND_ORCHID\"]/choice[1]/event/choice[@req=\"LIST_CREW_GOUL\"]/text"
 msgstr ""
 "(Goul Crew) Negotiate with them.\n"
-"Reward[]"
+"Reward Standard(L), Gain a weapon(Giftlist Kernel)[]"
 
 #: src-en/data/events_sector_vagabond.xml:1222
 msgid ""
@@ -2291,7 +2291,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"NEBULA_GHOST_ESCORT\"]/choice[1]/text"
 msgstr ""
 "Accept.\n"
-"Reward[]"
+"Reward Standard(L)[]"
 
 #: src-en/data/events_sector_vagabond.xml:1254
 msgid ""
@@ -2714,7 +2714,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"UNLOCK_GHOST_QUEST_WIN\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"<#>Unlock Ship(Ghost), 10<{<15 80<~<110 7<}<10 5<|<9[Gain an augment(Proton Pack)[]]"
 
 #: src-en/data/events_sector_vagabond.xml:1510
 msgid ""
@@ -2732,7 +2732,7 @@ msgid ""
 "data/events_sector_vagabond.xml$//event[@name=\"UNLOCK_GHOST_QUEST_WIN\"]/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain an augment(Proton Pack)[]"
 
 #: src-en/data/events_sector_vagabond.xml:1522
 msgid ""

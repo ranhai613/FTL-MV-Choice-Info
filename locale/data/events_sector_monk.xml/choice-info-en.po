@@ -17,7 +17,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"NEBULA_MONK_GRAVE\"]/choice[1]/text"
 msgstr ""
 "Land.\n"
-"[[Reward[], [], [Reward[], [[[]]], Gain a crew(Zoltan Devotee)[]], Gain a crew(Zoltan Devotee)[], [[[]]]], [[[]]] nor [], []]"
+"[[Reward Standard(M)[], [], [Reward Standard(M)[], [[[]]], Gain a crew(Zoltan Devotee)[]], Gain a crew(Zoltan Devotee), -15~[], [[[]]]], [[[]]] or Gain a weapon(Giftlist Energy)[], []]"
 
 #: src-en/data/events_sector_monk.xml:41
 msgid ""
@@ -34,7 +34,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"NEBULA_MONK_GRAVE\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Ask what's wrong.\n"
-"[Reward[], [], [Reward[], [[[]]], Gain a crew(Zoltan Devotee)[]], Gain a crew(Zoltan Devotee)[], [[[]]]]"
+"[Reward Standard(M)[], [], [Reward Standard(M)[], [[[]]], Gain a crew(Zoltan Devotee)[]], Gain a crew(Zoltan Devotee), -15~[], [[[]]]]"
 
 #: src-en/data/events_sector_monk.xml:46
 msgid ""
@@ -49,7 +49,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"NEBULA_MONK_GRAVE\"]/choice[1]/event/choice[1]/event/choice[1]/text"
 msgstr ""
 "Apologize for the Federation's mistakes.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_monk.xml:52
 msgid ""
@@ -86,7 +86,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"NEBULA_MONK_GRAVE\"]/choice[1]/event/choice[1]/event/choice[3]/text"
 msgstr ""
 "What about the Node 17 Memorials?\n"
-"[Reward[], [[[]]], Gain a crew(Zoltan Devotee)[]]"
+"[Reward Standard(M)[], [[[]]], Gain a crew(Zoltan Devotee)[]]"
 
 #: src-en/data/events_sector_monk.xml:65
 msgid ""
@@ -104,7 +104,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"NEBULA_MONK_GRAVE\"]/choice[1]/event/choice[1]/event/choice[3]/event/choice[1]/text"
 msgstr ""
 "It is shameful, how they buried your history.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_monk.xml:69
 msgid ""
@@ -168,7 +168,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"NEBULA_MONK_GRAVE\"]/choice[1]/event/choice[1]/event/choice[4]/text"
 msgstr ""
 "Leave some scrap as an offering on one of the graves.\n"
-"Gain a crew(Zoltan Devotee)[]"
+"Gain a crew(Zoltan Devotee), -15~[]"
 
 #: src-en/data/events_sector_monk.xml:96
 msgid ""
@@ -224,7 +224,7 @@ msgid ""
 msgstr ""
 "Rob his ship.\n"
 "[[[]]] \n"
-"or []"
+"or Gain a weapon(Giftlist Energy)[]"
 
 #: src-en/data/events_sector_monk.xml:121
 msgid ""
@@ -342,7 +342,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Agree to the tour.\n"
-"[<!>Lose your crew(UNCLONABLE)[], []]"
+"[System Upgrade(Reactor 2™), <!>Lose your crew(UNCLONABLE)[], []]"
 
 #: src-en/data/events_sector_monk.xml:190
 msgid ""
@@ -359,7 +359,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[1]/text"
 msgstr ""
 "Agree, let them go.\n"
-"<!>Lose your crew(UNCLONABLE)[]"
+"System Upgrade(Reactor 2™), <!>Lose your crew(UNCLONABLE)[]"
 
 #: src-en/data/events_sector_monk.xml:194
 msgid ""
@@ -439,7 +439,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"NEBULA_MONK_BEGGAR\"]/choice[1]/text"
 msgstr ""
 "Give him the money.\n"
-"[[[], []] nor Gain a crew(Zoltan Monk)[] nor []]"
+"-10~[[[], []] or Gain a crew(Zoltan Monk)[] or System Upgrade(Reactor 1™)[]]"
 
 #: src-en/data/events_sector_monk.xml:237
 msgid ""
@@ -453,7 +453,7 @@ msgstr ""
 "Continue...\n"
 "[[], []] \n"
 "or Gain a crew(Zoltan Monk)[] \n"
-"or []"
+"or System Upgrade(Reactor 1™)[]"
 
 #: src-en/data/events_sector_monk.xml:248
 msgid ""
@@ -554,7 +554,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"NEBULA_MONK_STRANDED_FED\"]/choice[2]/text"
 msgstr ""
 "Give them scrap for their repairs. [-25~]\n"
-"Reward, Map Reveal[]"
+"-25~, Reward { Only(H), Map Reveal[]"
 
 #: src-en/data/events_sector_monk.xml:309
 msgid ""
@@ -603,7 +603,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"NEBULA_MONK_GHOST\"]/choice[1]/text"
 msgstr ""
 "Contact them.\n"
-"[Gain a crew(Phantom Wraith)[], Gain a crew(Phantom Wraith Alpha)[], [[]], [[], []]]"
+"[-5}, Gain a crew(Phantom Wraith)[], -10}, Gain a crew(Phantom Wraith Alpha)[], [[]], [[], []]]"
 
 #: src-en/data/events_sector_monk.xml:340
 msgid ""
@@ -619,7 +619,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"NEBULA_MONK_GHOST\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Give them 5 missiles.\n"
-"Gain a crew(Phantom Wraith)[]"
+"-5}, Gain a crew(Phantom Wraith)[]"
 
 #: src-en/data/events_sector_monk.xml:344
 msgid ""
@@ -639,7 +639,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"NEBULA_MONK_GHOST\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Give them 10 missiles.\n"
-"Gain a crew(Phantom Wraith Alpha)[]"
+"-10}, Gain a crew(Phantom Wraith Alpha)[]"
 
 #: src-en/data/events_sector_monk.xml:354
 msgid ""
@@ -1076,7 +1076,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"NEBULA_MONK_HOSTAGES\"]/choice[2]/text"
 msgstr ""
 "Pay to free the Monks.\n"
-"[Gain a crew(Zoltan Monk)[]]"
+"-125<~<-110[Gain a crew(Zoltan Monk)[]]"
 
 #: src-en/data/events_sector_monk.xml:608
 msgid ""
@@ -1268,7 +1268,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"NEBULA_MONK_LOST_MAN\"]/choice[2]/text"
 msgstr ""
 "Ignore the lifepod and just scrap the ship.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_monk.xml:728
 msgid ""
@@ -1760,7 +1760,7 @@ msgstr ""
 msgid "data/events_sector_monk.xml$//event[@name=\"MONK_WEAPON\"]/choice[1]/text"
 msgstr ""
 "Offer some scrap for the weapon.\n"
-"[[]]"
+"-50<~<-30[Gain a weapon(Random)[]]"
 
 #: src-en/data/events_sector_monk.xml:1031
 msgid ""
@@ -1772,14 +1772,14 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_WEAPON\"]/choice[1]/event/choice/text"
 msgstr ""
 "Take the weapon.\n"
-"[]"
+"Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_monk.xml:1044
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_WEAPON\"]/choice[@req=\"LIST_CREW_MONK\"]/text"
 msgstr ""
 "(Monk Crew) Pledge to use the weapon responsibly for a discount.\n"
-"[[]]"
+"-30<~<-10[Gain a weapon(Random)[]]"
 
 #: src-en/data/events_sector_monk.xml:1046
 msgid ""
@@ -1791,7 +1791,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_WEAPON\"]/choice[@req=\"LIST_CREW_MONK\"]/event/choice/text"
 msgstr ""
 "Take the weapon.\n"
-"[]"
+"Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_monk.xml:1059
 msgid "data/events_sector_monk.xml$//event[@name=\"MONK_WEAPON\"]/choice[3]/text"
@@ -1854,7 +1854,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ORCHID\"]/choice[@req=\"orchid_caretaker\"]/text"
 msgstr ""
 "(Caretaker Crew) Talk to the monks.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_monk.xml:1091
 msgid ""
@@ -1871,7 +1871,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ORCHID\"]/choice[@req=\"LIST_CREW_FLORAL\"]/text"
 msgstr ""
 "(Floral Crew) Convince the Orchids to look elsewhere.\n"
-"Reward[]"
+"Reward Stuff(L)[]"
 
 #: src-en/data/events_sector_monk.xml:1098
 msgid ""
@@ -1887,7 +1887,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ORCHID\"]/choice[@req=\"unique_mayeb\"]/text"
 msgstr ""
 "(Mayeb) Talk to the monks.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_sector_monk.xml:1105
 msgid ""
@@ -1906,7 +1906,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ORCHID\"]/choice[@req=\"LIST_CREW_MONK\"]/text"
 msgstr ""
 "(Monk Crew) Talk the monks into it.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_monk.xml:1118
 msgid ""
@@ -1922,7 +1922,7 @@ msgstr ""
 msgid "data/events_sector_monk.xml$//event[@name=\"MONK_ORCHID\"]/choice[5]/text"
 msgstr ""
 "Attempt to mediate.\n"
-"Reward[] \n"
+"Reward Standard(L)[] \n"
 "or []"
 
 #: src-en/data/events_sector_monk.xml:1127
@@ -2022,7 +2022,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT\"]/choice[1]/text"
 msgstr ""
 "Visit the monastery.\n"
-"[[[[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]], [[[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]], [[[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]], [[[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]], [Reward[], [[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]], [Reward[], [[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]], [Reward[], [[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]]]"
+"[[[-35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], []]], [[-35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], []]], [[-35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], []]], [[-35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], []]], [Reward {(H)[], [-35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], []]], [Gain a weapon(Ancient Stun), Reward {(H)[], [[[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], []]], [Gain a weapon(Ancient Stun), Reward {(H)[], [[[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], []]]]"
 
 #: src-en/data/events_sector_monk.xml:1183
 msgid ""
@@ -2039,7 +2039,7 @@ msgid ""
 " and @lvl=\"7\"]/text"
 msgstr ""
 "Experience illumination.\n"
-"[[[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]]"
+"[[-35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], []]]"
 
 #: src-en/data/events_sector_monk.xml:1187
 msgid ""
@@ -2057,7 +2057,7 @@ msgid ""
 " and @lvl=\"7\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]"
+"[-35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], []]"
 
 #: src-en/data/events_sector_monk.xml:1195
 msgid ""
@@ -2065,7 +2065,7 @@ msgid ""
 " and @lvl=\"5\"]/text"
 msgstr ""
 "Experience illumination.\n"
-"[[[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]]"
+"[[-35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], []]]"
 
 #: src-en/data/events_sector_monk.xml:1197
 msgid ""
@@ -2083,7 +2083,7 @@ msgid ""
 " and @lvl=\"5\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]"
+"[-35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], []]"
 
 #: src-en/data/events_sector_monk.xml:1205
 msgid ""
@@ -2091,7 +2091,7 @@ msgid ""
 " and @lvl=\"3\"]/text"
 msgstr ""
 "Experience illumination.\n"
-"[[[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]]"
+"[[-35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], []]]"
 
 #: src-en/data/events_sector_monk.xml:1207
 msgid ""
@@ -2109,7 +2109,7 @@ msgid ""
 " and @lvl=\"3\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]"
+"[-35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], []]"
 
 #: src-en/data/events_sector_monk.xml:1215
 msgid ""
@@ -2117,7 +2117,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Experience illumination.\n"
-"[[[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]]"
+"[[-35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], []]]"
 
 #: src-en/data/events_sector_monk.xml:1217
 msgid ""
@@ -2134,7 +2134,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]"
+"[-35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], []]"
 
 #: src-en/data/events_sector_monk.xml:1225
 msgid ""
@@ -2142,7 +2142,7 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "Experience illumination.\n"
-"[Reward[], [[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]]"
+"[Reward {(H)[], [-35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], []]]"
 
 #: src-en/data/events_sector_monk.xml:1227
 msgid ""
@@ -2161,7 +2161,7 @@ msgid ""
 "@lvl=\"1\"]/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward {(H)[]"
 
 #: src-en/data/events_sector_monk.xml:1231
 msgid ""
@@ -2181,7 +2181,7 @@ msgid ""
 "@lvl=\"0\"]/text"
 msgstr ""
 "Continue...\n"
-"[[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]"
+"[-35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], -35~[[<!>Fleet Advance(1)[]]], []]"
 
 #: src-en/data/events_sector_monk.xml:1242
 msgid ""
@@ -2189,7 +2189,7 @@ msgid ""
 " and @lvl=\"-4\"]/text"
 msgstr ""
 "Experience illumination.\n"
-"[Reward[], [[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]]"
+"[Gain a weapon(Ancient Stun), Reward {(H)[], [[[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], []]]"
 
 #: src-en/data/events_sector_monk.xml:1244
 msgid ""
@@ -2207,7 +2207,7 @@ msgid ""
 "@lvl=\"1\"]/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Gain a weapon(Ancient Stun), Reward {(H)[]"
 
 #: src-en/data/events_sector_monk.xml:1250
 msgid ""
@@ -2216,7 +2216,7 @@ msgid ""
 "@lvl=\"0\"]/text"
 msgstr ""
 "Continue...\n"
-"[[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]"
+"[[[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], []]"
 
 #: src-en/data/events_sector_monk.xml:1256
 msgid ""
@@ -2224,7 +2224,7 @@ msgid ""
 " and @lvl=\"-999\"]/text"
 msgstr ""
 "Experience illumination.\n"
-"[Reward[], [[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]]"
+"[Gain a weapon(Ancient Stun), Reward {(H)[], [[[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], []]]"
 
 #: src-en/data/events_sector_monk.xml:1258
 msgid ""
@@ -2243,7 +2243,7 @@ msgid ""
 "@lvl=\"1\"]/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Gain a weapon(Ancient Stun), Reward {(H)[]"
 
 #: src-en/data/events_sector_monk.xml:1264
 msgid ""
@@ -2252,7 +2252,7 @@ msgid ""
 "@lvl=\"0\"]/text"
 msgstr ""
 "Continue...\n"
-"[[[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], [[[]]], []]"
+"[[[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], [[<!>Fleet Advance(1)[]]], []]"
 
 #: src-en/data/events_sector_monk.xml:1272
 msgid ""
@@ -2295,154 +2295,154 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_general\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern nobody in particular.\n"
-"[[[]]]"
+"-35~[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1297
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_general\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1303
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_union\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Union.\n"
-"[[[]]]"
+"-35~[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1311
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_union\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1317
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_zoltan\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Zoltan Ministry.\n"
-"[[[]]]"
+"-35~[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1325
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_zoltan\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1331
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_orchid\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Ctl'Yae Gathering.\n"
-"[[[]]]"
+"-35~[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1339
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_orchid\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1345
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_engi\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Engi Harmony.\n"
-"[[[]]]"
+"-35~[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1353
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_engi\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1359
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_crystal\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Crystal Empire.\n"
-"[[[]]]"
+"-35~[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1367
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_crystal\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1373
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_outcast\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Outcast Rockmen.\n"
-"[[[]]]"
+"-35~[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1381
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_outcast\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1387
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_vampweed\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Oro'bache Confederacy.\n"
-"[[[]]]"
+"-35~[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1395
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_vampweed\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1401
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_freemantis\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Free Mantis.\n"
-"[[[]]]"
+"-35~[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1409
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_freemantis\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1415
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_shell\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Shell Geniocracy.\n"
-"[[[]]]"
+"-35~[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1423
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_shell\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1429
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_slug\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Slug Kleptocracy.\n"
-"[[[]]]"
+"-35~[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1437
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER\"]/choice[@req=\"rep_slug\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1443
 msgid ""
@@ -2475,154 +2475,154 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_general\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern nobody in particular.\n"
-"[[[]]]"
+"[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1457
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_general\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1463
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_union\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Union.\n"
-"[[[]]]"
+"[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1468
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_union\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1474
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_zoltan\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Zoltan Ministry.\n"
-"[[[]]]"
+"[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1479
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_zoltan\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1485
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_orchid\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Ctl'Yae Gathering.\n"
-"[[[]]]"
+"[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1490
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_orchid\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1496
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_engi\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Engi Harmony.\n"
-"[[[]]]"
+"[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1501
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_engi\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1507
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_crystal\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Crystal Empire.\n"
-"[[[]]]"
+"[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1512
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_crystal\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1518
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_outcast\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Outcast Rockmen.\n"
-"[[[]]]"
+"[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1523
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_outcast\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1529
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_vampweed\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Oro'bache Confederacy.\n"
-"[[[]]]"
+"[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1534
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_vampweed\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1540
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_freemantis\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Free Mantis.\n"
-"[[[]]]"
+"[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1545
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_freemantis\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1551
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_shell\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Shell Geniocracy.\n"
-"[[[]]]"
+"[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1556
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_shell\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1562
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_slug\"]/text"
 msgstr ""
 "Atone for the misdeeds that concern the Slug Kleptocracy.\n"
-"[[[]]]"
+"[[<!>Fleet Advance(1)[]]]"
 
 #: src-en/data/events_sector_monk.xml:1567
 msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_ATONEMENT_OFFER_GOOD_KARMA\"]/choice[@req=\"rep_slug\"]/event/choice/text"
 msgstr ""
 "Close your eyes and relax...\n"
-"[[]]"
+"[<!>Fleet Advance(1)[]]"
 
 #: src-en/data/events_sector_monk.xml:1573
 msgid ""
@@ -2650,7 +2650,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"ATONEMENT_NIGHTMARE\"]/choice/text"
 msgstr ""
 "Wake up.\n"
-"[]"
+"<!>Fleet Advance(1)[]"
 
 #: src-en/data/events_sector_monk.xml:1586
 msgid ""
@@ -2681,7 +2681,7 @@ msgstr ""
 msgid "data/events_sector_monk.xml$//event[@name=\"MONK_TEMPLE\"]/choice[1]/text"
 msgstr ""
 "Hail the monks inside.\n"
-"[[[[]], []], [[], []]]"
+"[[<!>Fleet Advance(2)[[]], []], [[], []]]"
 
 #: src-en/data/events_sector_monk.xml:1612
 msgid ""
@@ -2697,7 +2697,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_TEMPLE\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Take a look inside.\n"
-"[[[]], []]"
+"[<!>Fleet Advance(2)[[]], []]"
 
 #: src-en/data/events_sector_monk.xml:1616
 msgid ""
@@ -2714,7 +2714,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_TEMPLE\"]/choice[1]/event/choice[1]/event/choice[1]/text"
 msgstr ""
 "Join them in meditation.\n"
-"[[]]"
+"<!>Fleet Advance(2)[[]]"
 
 #: src-en/data/events_sector_monk.xml:1631
 msgid ""
@@ -2857,7 +2857,7 @@ msgid ""
 "data/events_sector_monk.xml$//eventList[@name=\"ZOLTAN_AUTO_TEMPLE_WIN\"]/event[2]/choice[2]/text"
 msgstr ""
 "Kill all of the monks.\n"
-"[]"
+"2{, Gain an augment(Zoltan Statue)[]"
 
 #: src-en/data/events_sector_monk.xml:1708
 msgid ""
@@ -2894,7 +2894,7 @@ msgid ""
 "data/events_sector_monk.xml$/FTL/event[@name=\"NEBULA_MONK_EYE_OFFERING\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[] nor Reward[] nor [] nor Reward[] nor [] nor [] nor Gain a crew(Slug)[] nor [Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[]] nor [[]] nor [[]] nor [] nor [] nor [Reward, <!>Lose your crew(UNCLONABLE)[], []] nor [] nor [] nor Gain a crew(?)[] nor [] nor <!>Lose your crew(UNCLONABLE)[] nor [] nor [[]] nor [] nor [] nor [] nor [], [], [[]], [] nor Reward[] nor [] nor Reward[] nor [] nor [] nor Gain a crew(Slug)[] nor [Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[]] nor [[]] nor [[]] nor [] nor [] nor [Reward, <!>Lose your crew(UNCLONABLE)[], []] nor [] nor [] nor Gain a crew(?)[] nor [], [[[[]]], [[], []]], [[], []]]"
+"[Gain a weapon(Bomb Heal)[] or Reward ~ Only(H)[] or [] or Reward { Only(H)[] or [] or Gain a weapon(Random)[] or Gain a crew(Slug)[] or [Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[]] or [[]] or [[]] or -5{ 25~[] or Fleet Delay(1)[] or [Reward Item(H), <!>Lose your crew(UNCLONABLE)[], []] or [] or 35~[] or Gain a crew(?)[] or [] or <!>Lose your crew(UNCLONABLE)[] or <!>Fleet Advance(2)[] or <!>Fleet Advance(1)[[]] or [] or [] or [] or [], [], -15~[[]], Gain a weapon(Bomb Heal)[] or Reward ~ Only(H)[] or [] or Reward { Only(H)[] or [] or Gain a weapon(Random)[] or Gain a crew(Slug)[] or [Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[]] or [[]] or [[]] or -5{ 25~[] or Fleet Delay(1)[] or [Reward Item(H), <!>Lose your crew(UNCLONABLE)[], []] or [] or 35~[] or Gain a crew(?)[] or [], [Gain an augment(Combat Hazard)[[[]]], [[], []]], [[], []]]"
 
 #: src-en/data/events_sector_monk.xml:1747
 msgid ""
@@ -2923,7 +2923,7 @@ msgid ""
 "data/events_sector_monk.xml$/FTL/event[@name=\"NEBULA_MONK_EYE_NORMAL\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[] nor Reward[] nor [] nor Reward[] nor [] nor [] nor Gain a crew(Slug)[] nor [Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[]] nor [[]] nor [[]] nor [] nor [] nor [Reward, <!>Lose your crew(UNCLONABLE)[], []] nor [] nor [] nor Gain a crew(?)[] nor [] nor <!>Lose your crew(UNCLONABLE)[] nor [] nor [[]] nor [] nor [] nor [] nor [], [], [[]], [] nor Reward[] nor [] nor Reward[] nor [] nor [] nor Gain a crew(Slug)[] nor [Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[]] nor [[]] nor [[]] nor [] nor [] nor [Reward, <!>Lose your crew(UNCLONABLE)[], []] nor [] nor [] nor Gain a crew(?)[] nor [], [[[[]]], [[], []]], [[], []]]"
+"[Gain a weapon(Bomb Heal)[] or Reward ~ Only(H)[] or [] or Reward { Only(H)[] or [] or Gain a weapon(Random)[] or Gain a crew(Slug)[] or [Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[]] or [[]] or [[]] or -5{ 25~[] or Fleet Delay(1)[] or [Reward Item(H), <!>Lose your crew(UNCLONABLE)[], []] or [] or 35~[] or Gain a crew(?)[] or [] or <!>Lose your crew(UNCLONABLE)[] or <!>Fleet Advance(2)[] or <!>Fleet Advance(1)[[]] or [] or [] or [] or [], [], -15~[[]], Gain a weapon(Bomb Heal)[] or Reward ~ Only(H)[] or [] or Reward { Only(H)[] or [] or Gain a weapon(Random)[] or Gain a crew(Slug)[] or [Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[]] or [[]] or [[]] or -5{ 25~[] or Fleet Delay(1)[] or [Reward Item(H), <!>Lose your crew(UNCLONABLE)[], []] or [] or 35~[] or Gain a crew(?)[] or [], [Gain an augment(Combat Hazard)[[[]]], [[], []]], [[], []]]"
 
 #: src-en/data/events_sector_monk.xml:1758
 msgid "data/events_sector_monk.xml$//event[@name=\"MONK_EYE_OPTIONS\"]/text"
@@ -2937,26 +2937,26 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Speak to the Monolith and await your fate.\n"
-"[] \n"
-"or Reward[] \n"
+"Gain a weapon(Bomb Heal)[] \n"
+"or Reward ~ Only(H)[] \n"
 "or [] \n"
-"or Reward[] \n"
+"or Reward { Only(H)[] \n"
 "or [] \n"
-"or [] \n"
+"or Gain a weapon(Random)[] \n"
 "or Gain a crew(Slug)[] \n"
 "or [Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[]] \n"
 "or [[]] \n"
 "or [[]] \n"
+"or -5{ 25~[] \n"
+"or Fleet Delay(1)[] \n"
+"or [Reward Item(H), <!>Lose your crew(UNCLONABLE)[], []] \n"
 "or [] \n"
-"or [] \n"
-"or [Reward, <!>Lose your crew(UNCLONABLE)[], []] \n"
-"or [] \n"
-"or [] \n"
+"or 35~[] \n"
 "or Gain a crew(?)[] \n"
 "or [] \n"
 "or <!>Lose your crew(UNCLONABLE)[] \n"
-"or [] \n"
-"or [[]] \n"
+"or <!>Fleet Advance(2)[] \n"
+"or <!>Fleet Advance(1)[[]] \n"
 "or [] \n"
 "or [] \n"
 "or [] \n"
@@ -2975,7 +2975,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_EYE_OPTIONS\"]/choice[@req=\"prof_eye_offering\"]/text"
 msgstr ""
 "Make an offering to the Great Eye.\n"
-"[[]]"
+"-15~[[]]"
 
 #: src-en/data/events_sector_monk.xml:1770
 msgid ""
@@ -2997,21 +2997,21 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_EYE_OPTIONS\"]/choice[@req=\"LIST_CREW_MONK\"]/text"
 msgstr ""
 "(Monk Crew) Pray to the Eye for a chance at better rewards.\n"
-"[] \n"
-"or Reward[] \n"
+"Gain a weapon(Bomb Heal)[] \n"
+"or Reward ~ Only(H)[] \n"
 "or [] \n"
-"or Reward[] \n"
+"or Reward { Only(H)[] \n"
 "or [] \n"
-"or [] \n"
+"or Gain a weapon(Random)[] \n"
 "or Gain a crew(Slug)[] \n"
 "or [Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[], Gain a crew(Engi Separatist)[]] \n"
 "or [[]] \n"
 "or [[]] \n"
+"or -5{ 25~[] \n"
+"or Fleet Delay(1)[] \n"
+"or [Reward Item(H), <!>Lose your crew(UNCLONABLE)[], []] \n"
 "or [] \n"
-"or [] \n"
-"or [Reward, <!>Lose your crew(UNCLONABLE)[], []] \n"
-"or [] \n"
-"or [] \n"
+"or 35~[] \n"
 "or Gain a crew(?)[] \n"
 "or []"
 
@@ -3020,7 +3020,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_EYE_OPTIONS\"]/choice[@req=\"LIST_CREW_ANCIENT\"]/text"
 msgstr ""
 "(Obelisk Crew) Your Obelisk recognizes this structure.\n"
-"[[[[]]], [[], []]]"
+"[Gain an augment(Combat Hazard)[[[]]], [[], []]]"
 
 #: src-en/data/events_sector_monk.xml:1790
 msgid ""
@@ -3037,7 +3037,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_EYE_OPTIONS\"]/choice[@req=\"LIST_CREW_ANCIENT\"]/event/choice[1]/text"
 msgstr ""
 "Take the Reality Manipulator.\n"
-"[[[]]]"
+"Gain an augment(Combat Hazard)[[[]]]"
 
 #: src-en/data/events_sector_monk.xml:1794
 msgid ""
@@ -3296,7 +3296,7 @@ msgid ""
 "data/events_sector_monk.xml$//eventList[@name=\"GREAT_EYE_LIST\"]/event[13]/choice[1]/text"
 msgstr ""
 "Make the sacrifice.\n"
-"Reward, <!>Lose your crew(UNCLONABLE)[]"
+"Reward Item(H), <!>Lose your crew(UNCLONABLE)[]"
 
 #: src-en/data/events_sector_monk.xml:1935
 msgid ""
@@ -3618,7 +3618,7 @@ msgid ""
 "data/events_sector_monk.xml$//eventList[@name=\"GREAT_EYE_LIST_GOOD\"]/event[13]/choice[1]/text"
 msgstr ""
 "Make the sacrifice.\n"
-"Reward, <!>Lose your crew(UNCLONABLE)[]"
+"Reward Item(H), <!>Lose your crew(UNCLONABLE)[]"
 
 #: src-en/data/events_sector_monk.xml:2119
 msgid ""
@@ -3932,7 +3932,7 @@ msgid ""
 "data/events_sector_monk.xml$//event[@name=\"MONK_PEACE_QUEST_REWARD\"]/choice[1]/text"
 msgstr ""
 "Request the tech.\n"
-"[]"
+"Gain an augment(Energy Shield)[]"
 
 #: src-en/data/events_sector_monk.xml:2307
 msgid ""

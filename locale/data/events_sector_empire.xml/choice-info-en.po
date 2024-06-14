@@ -78,8 +78,8 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_FOREIGNER_MAP\"]/choice[1]/text"
 msgstr ""
 "Buy the map data.\n"
-"Map Reveal[] \n"
-"or [[[[[]], [], []], []]]"
+"Map Reveal, -20~[] \n"
+"or -20~[[[[[]], 20~[], []], []]]"
 
 #: src-en/data/events_sector_empire.xml:83
 msgid ""
@@ -122,7 +122,7 @@ msgid ""
 "data/events_sector_empire.xml$//eventList[@name=\"CRYSTAL_FOREIGNER_MAP_BUY\"]/event[2]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[]], [], []], []]"
+"[[[[]], 20~[], []], []]"
 
 #: src-en/data/events_sector_empire.xml:113
 msgid ""
@@ -137,7 +137,7 @@ msgid ""
 "data/events_sector_empire.xml$//eventList[@name=\"CRYSTAL_FOREIGNER_MAP_BUY\"]/event[2]/choice/event/choice[1]/text"
 msgstr ""
 "Confront them about it.\n"
-"[[[]], [], []]"
+"[[[]], 20~[], []]"
 
 #: src-en/data/events_sector_empire.xml:117
 msgid ""
@@ -172,7 +172,7 @@ msgid ""
 "data/events_sector_empire.xml$//eventList[@name=\"CRYSTAL_FOREIGNER_MAP_BUY\"]/event[2]/choice/event/choice[1]/event/choice[@req=\"mind\"]/text"
 msgstr ""
 "(Mind Control) 'Convince' them to give a full refund.\n"
-"[]"
+"20~[]"
 
 #: src-en/data/events_sector_empire.xml:132
 msgid ""
@@ -217,7 +217,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_CACHE_MV\"]/choice[@req=\"BLUELIST_WEAPONS_HEAVY\"]/text"
 msgstr ""
 "(Heavy Weapon) Use your weapon.\n"
-"[Reward[] nor Reward[] nor [<!>Lose your crew(clonable)[], Reward[], [], Reward[]], [[], []]]"
+"[Gain a weapon(Giftlist Crystal), Reward Stuff(L)[] or Gain a weapon(Giftlist Crystal), Reward Stuff(L)[] or [<!>Lose your crew(clonable)[], -999{, Gain a weapon(Random), Reward ~ Only(M)[], [], Gain a weapon(Random), Reward Stuff(L)[]], [[], []]]"
 
 #: src-en/data/events_sector_empire.xml:162
 msgid ""
@@ -232,9 +232,9 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Investigate the cache.\n"
-"Reward[] \n"
-"or Reward[] \n"
-"or [<!>Lose your crew(clonable)[], Reward[], [], Reward[]]"
+"Gain a weapon(Giftlist Crystal), Reward Stuff(L)[] \n"
+"or Gain a weapon(Giftlist Crystal), Reward Stuff(L)[] \n"
+"or [<!>Lose your crew(clonable)[], -999{, Gain a weapon(Random), Reward ~ Only(M)[], [], Gain a weapon(Random), Reward Stuff(L)[]]"
 
 #: src-en/data/events_sector_empire.xml:168
 msgid ""
@@ -271,7 +271,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_CACHE_MV\"]/choice[@req=\"LIST_CREW_CRYSTAL\"]/text"
 msgstr ""
 "(Crystal Crew) Have your Crystal crew recalibrate your weapons.\n"
-"[Reward[] nor Reward[] nor [<!>Lose your crew(clonable)[], Reward[], [], Reward[]]]"
+"[Gain a weapon(Giftlist Crystal), Reward Stuff(L)[] or Gain a weapon(Giftlist Crystal), Reward Stuff(L)[] or [<!>Lose your crew(clonable)[], -999{, Gain a weapon(Random), Reward ~ Only(M)[], [], Gain a weapon(Random), Reward Stuff(L)[]]]"
 
 #: src-en/data/events_sector_empire.xml:186
 msgid ""
@@ -286,9 +286,9 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_CACHE_MV\"]/choice[@req=\"LIST_CREW_CRYSTAL\"]/event/choice/text"
 msgstr ""
 "Investigate the cache.\n"
-"Reward[] \n"
-"or Reward[] \n"
-"or [<!>Lose your crew(clonable)[], Reward[], [], Reward[]]"
+"Gain a weapon(Giftlist Crystal), Reward Stuff(L)[] \n"
+"or Gain a weapon(Giftlist Crystal), Reward Stuff(L)[] \n"
+"or [<!>Lose your crew(clonable)[], -999{, Gain a weapon(Random), Reward ~ Only(M)[], [], Gain a weapon(Random), Reward Stuff(L)[]]"
 
 #: src-en/data/events_sector_empire.xml:194
 msgid ""
@@ -425,7 +425,7 @@ msgid ""
 "data/events_sector_empire.xml$//eventList[@name=\"CRYSTAL_CACHE_MV_LIST\"]/event[3]/choice[2]/text"
 msgstr ""
 "Detonate your entire fuel reserves to escape with your crew and the cargo.\n"
-"Reward[]"
+"-999{, Gain a weapon(Random), Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_empire.xml:264
 msgid ""
@@ -457,7 +457,7 @@ msgid ""
 "data/events_sector_empire.xml$//eventList[@name=\"CRYSTAL_CACHE_MV_LIST\"]/event[3]/choice[@req=\"engines\"]/text"
 msgstr ""
 "(Adv. Engines) Rescue your crewmember and the cargo.\n"
-"Reward[]"
+"Gain a weapon(Random), Reward Stuff(L)[]"
 
 #: src-en/data/events_sector_empire.xml:281
 msgid ""
@@ -482,7 +482,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_SCRAP_EXCITED_MV\"]/choice[1]/text"
 msgstr ""
 "Offer 35 scrap.\n"
-"[Gain a crew(Crystal)[], [] nor []]"
+"-35~[Gain a crew(Crystal)[], Gain a weapon(Bomb Lock)[] or Gain a weapon(Crystal Burst 2)[]]"
 
 #: src-en/data/events_sector_empire.xml:294
 msgid ""
@@ -511,8 +511,8 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_SCRAP_EXCITED_MV\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Request another payment.\n"
-"[] \n"
-"or []"
+"Gain a weapon(Bomb Lock)[] \n"
+"or Gain a weapon(Crystal Burst 2)[]"
 
 #: src-en/data/events_sector_empire.xml:312
 msgid ""
@@ -570,9 +570,9 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_HUMAN_TESTS_MV\"]/choice[1]/text"
 msgstr ""
 "Allow them to run tests on a crewmember.\n"
-"<!>Lose your crew(clonable), Reward[] \n"
-"or Reward[] \n"
-"or Reward[]"
+"<!>Lose your crew(clonable), Reward Weapon(L)[] \n"
+"or Reward Stuff(M)[] \n"
+"or Reward Drone(L)[]"
 
 #: src-en/data/events_sector_empire.xml:344
 msgid ""
@@ -623,7 +623,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_HUMAN_TESTS_MV\"]/choice[@req=\"LIST_CREW_ROCK\"]/text"
 msgstr ""
 "(Rock Crew) Send your Rockman crew.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_empire.xml:368
 msgid ""
@@ -639,7 +639,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_HUMAN_TESTS_MV\"]/choice[@req=\"LIST_CREW_OBYN\"]/text"
 msgstr ""
 "(Saltman Crew) Send your Saltman crew.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_sector_empire.xml:375
 msgid ""
@@ -669,7 +669,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_HUMAN_TESTS_MV\"]/choice[@req=\"BACKUP_DNA\"]/text"
 msgstr ""
 "(Backup DNA Bank) Send your crew's data.\n"
-"Reward[]"
+"Reward Weapon(M)[]"
 
 #: src-en/data/events_sector_empire.xml:388
 msgid ""
@@ -780,7 +780,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_CHATTY_MV\"]/choice[1]/text"
 msgstr ""
 "Yes.\n"
-"[[[]] nor Reward[] nor [], [[], []]]"
+"[[[]] or Reward Stuff(R)[] or [], [[], []]]"
 
 #: src-en/data/events_sector_empire.xml:449
 msgid ""
@@ -795,7 +795,7 @@ msgid ""
 msgstr ""
 "Try to answer his questions.\n"
 "[[]] \n"
-"or Reward[] \n"
+"or Reward Stuff(R)[] \n"
 "or []"
 
 #: src-en/data/events_sector_empire.xml:455
@@ -857,7 +857,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_CHATTY_MV\"]/choice[@req=\"LIST_CREW_CRYSTAL\"]/text"
 msgstr ""
 "(Crystal Crew) Have your crew speak to them.\n"
-"Reward[]"
+"Reward {(R)[]"
 
 #: src-en/data/events_sector_empire.xml:487
 msgid ""
@@ -911,7 +911,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_MONTY\"]/choice[1]/text"
 msgstr ""
 "Ask me the questions. I am not afraid.\n"
-"[[[Reward[], [[]], Reward[], [[]], [[]], [[]]] nor [Reward[], [[]], [[]], Reward[], [[]], [[]]] nor [Reward[], Reward[], [[]], [[]], [[]], [[]]]]]"
+"[[[Reward Standard(M)[], [[]], Reward Standard(M)[], [[]], [[]], [[]]] or [Reward Standard(M)[], [[]], [[]], Reward Standard(M)[], [[]], [[]]] or [Reward Standard(M)[], Reward Standard(M)[], [[]], [[]], [[]], [[]]]]]"
 
 #: src-en/data/events_sector_empire.xml:539
 msgid ""
@@ -923,7 +923,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_MONTY\"]/choice[1]/event/choice/text"
 msgstr ""
 "Tell him your name.\n"
-"[[Reward[], [[]], Reward[], [[]], [[]], [[]]] nor [Reward[], [[]], [[]], Reward[], [[]], [[]]] nor [Reward[], Reward[], [[]], [[]], [[]], [[]]]]"
+"[[Reward Standard(M)[], [[]], Reward Standard(M)[], [[]], [[]], [[]]] or [Reward Standard(M)[], [[]], [[]], Reward Standard(M)[], [[]], [[]]] or [Reward Standard(M)[], Reward Standard(M)[], [[]], [[]], [[]], [[]]]]"
 
 #: src-en/data/events_sector_empire.xml:543
 msgid ""
@@ -935,9 +935,9 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_MONTY\"]/choice[1]/event/choice/event/choice/text"
 msgstr ""
 "To defeat the Flagship.\n"
-"[Reward[], [[]], Reward[], [[]], [[]], [[]]] \n"
-"or [Reward[], [[]], [[]], Reward[], [[]], [[]]] \n"
-"or [Reward[], Reward[], [[]], [[]], [[]], [[]]]"
+"[Reward Standard(M)[], [[]], Reward Standard(M)[], [[]], [[]], [[]]] \n"
+"or [Reward Standard(M)[], [[]], [[]], Reward Standard(M)[], [[]], [[]]] \n"
+"or [Reward Standard(M)[], Reward Standard(M)[], [[]], [[]], [[]], [[]]]"
 
 #: src-en/data/events_sector_empire.xml:553
 msgid ""
@@ -968,7 +968,7 @@ msgid ""
 "data/events_sector_empire.xml$//eventList[@name=\"CRYSTAL_MONTY_FINAL\"]/event[1]/choice[@req=\"LIST_CREW_MANTIS\"]/text"
 msgstr ""
 "(Mantis Crew) The answer is Leikonpliiinakra.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_empire.xml:572
 msgid ""
@@ -982,7 +982,7 @@ msgid ""
 "data/events_sector_empire.xml$//eventList[@name=\"CRYSTAL_MONTY_FINAL\"]/event[1]/choice[3]/text"
 msgstr ""
 "Leikonpliiinakra.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_empire.xml:580
 msgid ""
@@ -1015,7 +1015,7 @@ msgid ""
 "data/events_sector_empire.xml$//eventList[@name=\"CRYSTAL_MONTY_FINAL\"]/event[2]/choice[@req=\"LIST_CREW_ORCHID\"]/text"
 msgstr ""
 "(Orchid Crew) The answer is Rt'lak Et.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_empire.xml:599
 msgid ""
@@ -1036,7 +1036,7 @@ msgid ""
 "data/events_sector_empire.xml$//eventList[@name=\"CRYSTAL_MONTY_FINAL\"]/event[2]/choice[4]/text"
 msgstr ""
 "Rt'lak Et.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_empire.xml:611
 msgid ""
@@ -1062,14 +1062,14 @@ msgid ""
 "data/events_sector_empire.xml$//eventList[@name=\"CRYSTAL_MONTY_FINAL\"]/event[3]/choice[@req=\"LIST_CREW_ZOLTAN\"]/text"
 msgstr ""
 "(Zoltan Crew) The answer is Illesctrianism.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_empire.xml:626
 msgid ""
 "data/events_sector_empire.xml$//eventList[@name=\"CRYSTAL_MONTY_FINAL\"]/event[3]/choice[2]/text"
 msgstr ""
 "Illesctrianism.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_empire.xml:630
 msgid ""
@@ -1321,7 +1321,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_REBEL_CRYSTAL_MV\"]/choice[2]/text"
 msgstr ""
 "Attack the Crystalline ship.\n"
-"[[[]]]"
+"<!>Fleet Advance(1)[[[]]]"
 
 #: src-en/data/events_sector_empire.xml:775
 msgid ""
@@ -1657,7 +1657,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_FED_DESERTER_MV\"]/choice[1]/text"
 msgstr ""
 "Offer supplies.\n"
-"Map Reveal[]"
+"-3<{<-1 -25<~<-15, Map Reveal[]"
 
 #: src-en/data/events_sector_empire.xml:952
 msgid ""
@@ -1729,7 +1729,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_REQUEST_MV\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[Reward[[]], Reward[] nor [[[]]], Reward[], [[], []]]"
+"[Reward ~ Only(H), <!>Fleet Advance(1)[[]], Reward ~ Only(H), Fleet Delay(1)[] or [[[]]], Reward ~ Only(H), Fleet Delay(1)[], [[], []]]"
 
 #: src-en/data/events_sector_empire.xml:993
 msgid ""
@@ -1744,7 +1744,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_REQUEST_MV\"]/choice/event/choice[1]/text"
 msgstr ""
 "Give them your flight plans.\n"
-"Reward[[]]"
+"Reward ~ Only(H), <!>Fleet Advance(1)[[]]"
 
 #: src-en/data/events_sector_empire.xml:997
 msgid ""
@@ -1766,7 +1766,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_REQUEST_MV\"]/choice/event/choice[2]/text"
 msgstr ""
 "Accept the scrap but give them false flight plans.\n"
-"Reward[] \n"
+"Reward ~ Only(H), Fleet Delay(1)[] \n"
 "or [[[]]]"
 
 #: src-en/data/events_sector_empire.xml:1012
@@ -1774,7 +1774,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_REQUEST_MV\"]/choice/event/choice[@req=\"DISTRACTION_BUOY\"]/text"
 msgstr ""
 "(Distraction Buoys) Accept the scrap but give them falsified flight plans.\n"
-"Reward[]"
+"Reward ~ Only(H), Fleet Delay(1)[]"
 
 #: src-en/data/events_sector_empire.xml:1014
 msgid ""
@@ -1849,7 +1849,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Send a crewmember to help.\n"
-"[Reward, <!>Lose your crew(UNCLONABLE)[[]], [[[]]], [Reward, <!>Lose your crew(UNCLONABLE)[], [[[]]], Reward[[]]]]"
+"[Reward {(H), <!>Lose your crew(UNCLONABLE)[[]], [[[]]], <!>Fleet Advance(1)[Reward {(H), <!>Lose your crew(UNCLONABLE)[], [[[]]], <!>Fleet Advance(1), Reward ~ Only(H), Gain a weapon(Crystal Heavy 2), Gain an augment(Random)[[]]]]"
 
 #: src-en/data/events_sector_empire.xml:1060
 msgid ""
@@ -1866,7 +1866,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[1]/text"
 msgstr ""
 "Leave your crewmember behind.\n"
-"Reward, <!>Lose your crew(UNCLONABLE)[[]]"
+"Reward {(H), <!>Lose your crew(UNCLONABLE)[[]]"
 
 #: src-en/data/events_sector_empire.xml:1064
 msgid ""
@@ -1918,7 +1918,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[3]/text"
 msgstr ""
 "Wait.\n"
-"[Reward, <!>Lose your crew(UNCLONABLE)[], [[[]]], Reward[[]]]"
+"<!>Fleet Advance(1)[Reward {(H), <!>Lose your crew(UNCLONABLE)[], [[[]]], <!>Fleet Advance(1), Reward ~ Only(H), Gain a weapon(Crystal Heavy 2), Gain an augment(Random)[[]]]"
 
 #: src-en/data/events_sector_empire.xml:1090
 msgid ""
@@ -1936,7 +1936,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[3]/event/choice[1]/text"
 msgstr ""
 "Leave your crewmember behind.\n"
-"Reward, <!>Lose your crew(UNCLONABLE)[]"
+"Reward {(H), <!>Lose your crew(UNCLONABLE)[]"
 
 #: src-en/data/events_sector_empire.xml:1095
 msgid ""
@@ -1980,7 +1980,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[3]/event/choice[3]/text"
 msgstr ""
 "Wait.\n"
-"Reward[[]]"
+"<!>Fleet Advance(1), Reward ~ Only(H), Gain a weapon(Crystal Heavy 2), Gain an augment(Random)[[]]"
 
 #: src-en/data/events_sector_empire.xml:1117
 msgid ""
@@ -2052,7 +2052,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"DISTRESS_CRYSTAL_SICK_FIRE\"]/choice[@req=\"teleporter\"]/text"
 msgstr ""
 "(Teleporter) Put out the fire.\n"
-"Reward[[], []]"
+"Reward Standard(M)[Gain a weapon(Giftlist Crystal)[], []]"
 
 #: src-en/data/events_sector_empire.xml:1185
 msgid ""
@@ -2069,7 +2069,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"DISTRESS_CRYSTAL_SICK_FIRE\"]/choice[@req=\"teleporter\"]/event/choice[@req=\"medbay\"]/text"
 msgstr ""
 "(Upg. Medbay) Offer to treat the lock-down prone patient.\n"
-"[]"
+"Gain a weapon(Giftlist Crystal)[]"
 
 #: src-en/data/events_sector_empire.xml:1192
 msgid ""
@@ -2083,7 +2083,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"DISTRESS_CRYSTAL_SICK_FIRE\"]/choice[@req=\"BLUELIST_CREW_NODOORS\"]/text"
 msgstr ""
 "(Phasing Crew) Put out the fire.\n"
-"Reward[[], []]"
+"Reward Standard(M)[Gain a weapon(Giftlist Crystal)[], []]"
 
 #: src-en/data/events_sector_empire.xml:1200
 msgid ""
@@ -2100,7 +2100,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"DISTRESS_CRYSTAL_SICK_FIRE\"]/choice[@req=\"BLUELIST_CREW_NODOORS\"]/event/choice[@req=\"UPG_MEDBAY_AND_TELEPORT\"]/text"
 msgstr ""
 "(Upg. Medbay + Teleporter) Offer to treat the lock-down prone patient.\n"
-"[]"
+"Gain a weapon(Giftlist Crystal)[]"
 
 #: src-en/data/events_sector_empire.xml:1207
 msgid ""
@@ -2114,7 +2114,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"DISTRESS_CRYSTAL_SICK_FIRE\"]/choice[@req=\"LIST_CREW_JERRY_GRIEF\"]/text"
 msgstr ""
 "(Jerry) Break down the crystal barrier and put out the fire.\n"
-"Reward[[], []]"
+"Reward Standard(M)[Gain a weapon(Giftlist Crystal)[], []]"
 
 #: src-en/data/events_sector_empire.xml:1215
 msgid ""
@@ -2132,7 +2132,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"DISTRESS_CRYSTAL_SICK_FIRE\"]/choice[@req=\"LIST_CREW_JERRY_GRIEF\"]/event/choice[@req=\"medbay\"]/text"
 msgstr ""
 "(Upg. Medbay) Offer to treat the lock-down prone patient.\n"
-"[]"
+"Gain a weapon(Giftlist Crystal)[]"
 
 #: src-en/data/events_sector_empire.xml:1222
 msgid ""
@@ -2146,7 +2146,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"DISTRESS_CRYSTAL_SICK_FIRE\"]/choice[@req=\"rock_paladin\"]/text"
 msgstr ""
 "(Paladin Crew) Break down the crystal barrier and put out the fire.\n"
-"Reward[[], []]"
+"Reward Standard(M)[Gain a weapon(Giftlist Crystal)[], []]"
 
 #: src-en/data/events_sector_empire.xml:1230
 msgid ""
@@ -2163,7 +2163,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"DISTRESS_CRYSTAL_SICK_FIRE\"]/choice[@req=\"rock_paladin\"]/event/choice[@req=\"medbay\"]/text"
 msgstr ""
 "(Upg. Medbay) Offer to treat the lock-down prone patient.\n"
-"[]"
+"Gain a weapon(Giftlist Crystal)[]"
 
 #: src-en/data/events_sector_empire.xml:1237
 msgid ""
@@ -2177,7 +2177,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"DISTRESS_CRYSTAL_SICK_FIRE\"]/choice[@req=\"LIST_CREW_MORPH_RECON\"]/text"
 msgstr ""
 "(Recon Drone) Use your Recon Drone to break in and evacuate the clinic.\n"
-"Reward[[], []]"
+"Reward Standard(M)[Gain a weapon(Giftlist Crystal)[], []]"
 
 #: src-en/data/events_sector_empire.xml:1245
 msgid ""
@@ -2194,7 +2194,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"DISTRESS_CRYSTAL_SICK_FIRE\"]/choice[@req=\"LIST_CREW_MORPH_RECON\"]/event/choice[@req=\"medbay\"]/text"
 msgstr ""
 "(Upg. Medbay) Offer to treat the lock-down prone patient.\n"
-"[]"
+"Gain a weapon(Giftlist Crystal)[]"
 
 #: src-en/data/events_sector_empire.xml:1252
 msgid ""
@@ -2216,8 +2216,8 @@ msgid ""
 msgstr ""
 "Break down the crystal barrier and put out the fire.\n"
 "[] \n"
-"or Reward[] \n"
-"or Reward[[], []]"
+"or Reward Stuff(L)[] \n"
+"or Reward Standard(M)[Gain a weapon(Giftlist Crystal)[], []]"
 
 #: src-en/data/events_sector_empire.xml:1266
 msgid ""
@@ -2288,7 +2288,7 @@ msgid ""
 "data/events_sector_empire.xml$//eventList[@name=\"CRYSTAL_DISTRESS_SICK_FIRE_BREAK\"]/event[3]/choice[@req=\"medbay\"]/text"
 msgstr ""
 "(Upg. Medbay) Offer to treat the lock-down prone patient.\n"
-"[]"
+"Gain a weapon(Giftlist Crystal)[]"
 
 #: src-en/data/events_sector_empire.xml:1300
 msgid ""
@@ -2355,7 +2355,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"DISTRESS_CRYSTAL_VAGABOND_CONFLICT\"]/choice[@req=\"unique_dianesh\"]/text"
 msgstr ""
 "(Dianesh) Mediate between the ships.\n"
-"Reward[Reward[]]"
+"Reward ~ Only(L), Gain a weapon(Giftlist Rusty)[Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_empire.xml:1334
 msgid ""
@@ -2374,7 +2374,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"DISTRESS_CRYSTAL_VAGABOND_CONFLICT\"]/choice[@req=\"unique_dianesh\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_empire.xml:1346
 msgid ""
@@ -2389,7 +2389,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"DISTRESS_CRYSTAL_VAGABOND_CONFLICT\"]/choice[@req=\"unique_dessius\"]/text"
 msgstr ""
 "(Dessius) Convince the Vagabonds to turn over the ship.\n"
-"Gain a crew(List Crew Ghost Noalpha)[Reward[]]"
+"Gain a crew(List Crew Ghost Noalpha)[Reward Standard(M)[]]"
 
 #: src-en/data/events_sector_empire.xml:1357
 msgid ""
@@ -2406,7 +2406,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"DISTRESS_CRYSTAL_VAGABOND_CONFLICT\"]/choice[@req=\"unique_dessius\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_empire.xml:1362
 msgid ""
@@ -2658,7 +2658,7 @@ msgid ""
 msgstr ""
 "Give them the bomb - the Zoltans must have been delivering this.\n"
 "[[]] \n"
-"or Reward[]"
+"or Reward Standard(H)[]"
 
 #: src-en/data/events_sector_empire.xml:1514
 msgid ""
@@ -2666,14 +2666,14 @@ msgid ""
 msgstr ""
 "Detonate the bomb - the Zoltans must have wanted revenge for being attacked.\n"
 "[[]] \n"
-"or Reward[]"
+"or Reward Item(L)[]"
 
 #: src-en/data/events_sector_empire.xml:1518
 msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTALHOME_ZOLTENVOY_DELIVERY\"]/choice[3]/text"
 msgstr ""
 "Avoid the outpost.\n"
-"Reward[[], []]"
+"Reward } Only(L)[[], []]"
 
 #: src-en/data/events_sector_empire.xml:1520
 msgid ""
@@ -2990,7 +2990,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"NEBULA_CRYSTAL_MIRROR\"]/choice[1]/text"
 msgstr ""
 "Dock and explore.\n"
-"[Gain a crew(Crystal)[] nor Reward[], [] nor [[]] nor Gain a crew(Orchid Caretaker)[], [Reward[Gain a crew(Orchid Praetor)[]]]]"
+"[Gain a crew(Crystal)[] or Gain a weapon(Giftlist Crystal), Reward ~ Only(L)[], [] or [[]] or Gain a crew(Orchid Caretaker)[], [Reward Standard(M)[Gain a crew(Orchid Praetor)[]]]]"
 
 #: src-en/data/events_sector_empire.xml:1702
 msgid ""
@@ -3009,7 +3009,7 @@ msgid ""
 msgstr ""
 "It's quite beautiful indeed.\n"
 "Gain a crew(Crystal)[] \n"
-"or Reward[]"
+"or Gain a weapon(Giftlist Crystal), Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_empire.xml:1708
 msgid ""
@@ -3025,7 +3025,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"NEBULA_CRYSTAL_MIRROR\"]/choice[1]/event/choice[@req=\"unique_nights\"]/text"
 msgstr ""
 "(Nights) Nights is eager to answer that question.\n"
-"[Reward[Gain a crew(Orchid Praetor)[]]]"
+"[Reward Standard(M)[Gain a crew(Orchid Praetor)[]]]"
 
 #: src-en/data/events_sector_empire.xml:1714
 msgid ""
@@ -3040,7 +3040,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"NEBULA_CRYSTAL_MIRROR\"]/choice[1]/event/choice[@req=\"unique_nights\"]/event/choice/text"
 msgstr ""
 "Call in the captain's crew so they can check on him.\n"
-"Reward[Gain a crew(Orchid Praetor)[]]"
+"Reward Standard(M)[Gain a crew(Orchid Praetor)[]]"
 
 #: src-en/data/events_sector_empire.xml:1720
 msgid ""
@@ -3189,7 +3189,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_SANCTUARY\"]/choice[1]/text"
 msgstr ""
 "Investigate the gateway.\n"
-"[[[[], Gain a crew(Crystal Sentinel)[], [], [[]]]]]"
+"[[[Gain a weapon(Giftlist Crystal Elite)[], Gain a crew(Crystal Sentinel)[], [], [[]]]]]"
 
 #: src-en/data/events_sector_empire.xml:1819
 msgid ""
@@ -3205,7 +3205,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_SANCTUARY\"]/choice[1]/event/choice/text"
 msgstr ""
 "Uh oh...\n"
-"[[[], Gain a crew(Crystal Sentinel)[], [], [[]]]]"
+"[[Gain a weapon(Giftlist Crystal Elite)[], Gain a crew(Crystal Sentinel)[], [], [[]]]]"
 
 #: src-en/data/events_sector_empire.xml:1824
 msgid ""
@@ -3222,7 +3222,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_SANCTUARY\"]/choice[1]/event/choice/event/choice/text"
 msgstr ""
 "Negotiate what?\n"
-"[[], Gain a crew(Crystal Sentinel)[], [], [[]]]"
+"[Gain a weapon(Giftlist Crystal Elite)[], Gain a crew(Crystal Sentinel)[], [], [[]]]"
 
 #: src-en/data/events_sector_empire.xml:1828
 msgid ""
@@ -3240,7 +3240,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_SANCTUARY\"]/choice[1]/event/choice/event/choice/event/choice[1]/text"
 msgstr ""
 "Request a weapon.\n"
-"[]"
+"Gain a weapon(Giftlist Crystal Elite)[]"
 
 #: src-en/data/events_sector_empire.xml:1832
 msgid ""
@@ -3371,7 +3371,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_BOSS_SURRENDER\"]/choice[1]/text"
 msgstr ""
 "Show them mercy.\n"
-"[[Gain a crew(Unique Dianesh), Reward[]]]"
+"[[<#>Unlock Ship(Crystalline), Gain a crew(Unique Dianesh), Reward Standard(H), Gain a weapon(Giftlist Crystal)[]]]"
 
 #: src-en/data/events_sector_empire.xml:1900
 msgid ""
@@ -3387,7 +3387,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_BOSS_SURRENDER\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[Gain a crew(Unique Dianesh), Reward[]]"
+"[<#>Unlock Ship(Crystalline), Gain a crew(Unique Dianesh), Reward Standard(H), Gain a weapon(Giftlist Crystal)[]]"
 
 #: src-en/data/events_sector_empire.xml:1910
 msgid ""
@@ -3412,7 +3412,7 @@ msgid ""
 "data/events_sector_empire.xml$//event[@name=\"CRYSTAL_BOSS_MERCY\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a crew(Unique Dianesh), Reward[]"
+"<#>Unlock Ship(Crystalline), Gain a crew(Unique Dianesh), Reward Standard(H), Gain a weapon(Giftlist Crystal)[]"
 
 #: src-en/data/events_sector_empire.xml:1923
 msgid ""

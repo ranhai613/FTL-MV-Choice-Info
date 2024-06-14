@@ -108,7 +108,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_RACE\"]/choice[3]/text"
 msgstr ""
 "Place a bet on a random spider.\n"
-"[[]]"
+"-30~[[]]"
 
 #: src-en/data/events_sector_spider.xml:104
 msgid ""
@@ -613,7 +613,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_SLAVERS\"]/choice[1]/text"
 msgstr ""
 "Buy a slave.\n"
-"Gain a crew(?)[[]]"
+"Gain a crew(?), -30<~<-15[[]]"
 
 #: src-en/data/events_sector_spider.xml:374
 msgid ""
@@ -632,7 +632,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_SLAVERS\"]/choice[@req=\"rep_comb_slaver\"]/text"
 msgstr ""
 "[Reputation: 1+] Buy an exotic slave.\n"
-"Gain a crew(List Slaves Great)[[]]"
+"-60<~<-45, Gain a crew(List Slaves Great)[[]]"
 
 #: src-en/data/events_sector_spider.xml:388
 msgid ""
@@ -705,7 +705,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_ORPHAN\"]/choice[1]/text"
 msgstr ""
 "Explore the cave.\n"
-"[[[], [Gain a crew(Rock)[], Reward[]], []], Reward[], []]"
+"[[[], [Gain a crew(Rock)[], Reward ~ Only(H)[]], []], Reward ~ Only(L)[], []]"
 
 #: src-en/data/events_sector_spider.xml:432
 msgid ""
@@ -719,7 +719,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_ORPHAN\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Look for the source.\n"
-"[[], [Gain a crew(Rock)[], Reward[]], []]"
+"[[], [Gain a crew(Rock)[], Reward ~ Only(H)[]], []]"
 
 #: src-en/data/events_sector_spider.xml:436
 msgid ""
@@ -751,7 +751,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_ORPHAN\"]/choice[1]/event/choice[1]/event/choice[2]/text"
 msgstr ""
 "Announce your presence peacefully.\n"
-"[Gain a crew(Rock)[], Reward[]]"
+"[Gain a crew(Rock)[], Reward ~ Only(H)[]]"
 
 #: src-en/data/events_sector_spider.xml:447
 msgid ""
@@ -790,7 +790,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_ORPHAN\"]/choice[1]/event/choice[1]/event/choice[2]/event/choice[2]/text"
 msgstr ""
 "Request to see the wreck site.\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_spider.xml:458
 msgid ""
@@ -813,7 +813,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_ORPHAN\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Continue on your current path and ignore the sound.\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_spider.xml:473
 msgid ""
@@ -869,7 +869,7 @@ msgid ""
 msgstr ""
 "Scrap the hull.\n"
 "Gain a crew(?)[] \n"
-"or Reward[] \n"
+"or Reward Standard(M)[] \n"
 "or [] \n"
 "or <!>Lose your crew(clonable)[]"
 
@@ -913,7 +913,7 @@ msgid ""
 msgstr ""
 "(Slug Crew) Check for life signs.\n"
 "[] \n"
-"or Reward[]"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_sector_spider.xml:528
 msgid ""
@@ -921,7 +921,7 @@ msgid ""
 msgstr ""
 "(Telepathic Shell) Check for life signs.\n"
 "[] \n"
-"or Reward[]"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_sector_spider.xml:532
 msgid ""
@@ -929,7 +929,7 @@ msgid ""
 msgstr ""
 "(Lifeform Scanner) Scan the wreckage.\n"
 "[] \n"
-"or Reward[]"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_sector_spider.xml:536
 msgid ""
@@ -937,7 +937,7 @@ msgid ""
 msgstr ""
 "(Upg. Sensors) Scan the wreckage.\n"
 "[] \n"
-"or Reward[]"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_sector_spider.xml:542
 msgid ""
@@ -1123,8 +1123,8 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Send a team aboard the infested vessel to capture a hatchling.\n"
-"Reward, <!>Lose your crew(clonable)[] \n"
-"or [Reward[] nor [[]]]"
+"Reward ~ Only(L), <!>Lose your crew(clonable)[] \n"
+"or [Reward Weapon(H)[] or [[]]]"
 
 #: src-en/data/events_sector_spider.xml:663
 msgid ""
@@ -1139,7 +1139,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_SHELL\"]/choice[@req=\"teleporter\"]/text"
 msgstr ""
 "(Teleporter) Beam back a spider without any risk.\n"
-"[Reward[] nor [[]]]"
+"[Reward Weapon(H)[] or [[]]]"
 
 #: src-en/data/events_sector_spider.xml:669
 msgid ""
@@ -1153,7 +1153,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_SHELL\"]/choice[@req=\"teleporter\"]/event/choice/text"
 msgstr ""
 "Contact the Shells.\n"
-"Reward[] \n"
+"Reward Weapon(H)[] \n"
 "or [[]]"
 
 #: src-en/data/events_sector_spider.xml:677
@@ -1212,7 +1212,7 @@ msgid ""
 "data/events_sector_spider.xml$//eventList[@name=\"INFESTATION_SHELL_RISKY\"]/event[2]/choice/text"
 msgstr ""
 "Contact the Shells.\n"
-"Reward[] \n"
+"Reward Weapon(H)[] \n"
 "or [[]]"
 
 #: src-en/data/events_sector_spider.xml:710
@@ -1248,7 +1248,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_MAFIA\"]/choice[1]/text"
 msgstr ""
 "Board the yacht, it's large enough that you could look around without being noticed.\n"
-"[[[[Reward[[[]]], [[]] nor []]], [Reward[[[]]], [[]] nor []]]]"
+"[[[[Reward } Only(H)[[[]]], [[]] or []]], [Reward } Only(H)[[[]]], [[]] or []]]]"
 
 #: src-en/data/events_sector_spider.xml:728
 msgid ""
@@ -1264,7 +1264,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_MAFIA\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[Reward[[[]]], [[]] nor []]], [Reward[[[]]], [[]] nor []]]"
+"[[[Reward } Only(H)[[[]]], [[]] or []]], [Reward } Only(H)[[[]]], [[]] or []]]"
 
 #: src-en/data/events_sector_spider.xml:732
 msgid ""
@@ -1279,7 +1279,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_MAFIA\"]/choice[1]/event/choice/event/choice[1]/text"
 msgstr ""
 "Check the Club.\n"
-"[[Reward[[[]]], [[]] nor []]]"
+"[[Reward } Only(H)[[[]]], [[]] or []]]"
 
 #: src-en/data/events_sector_spider.xml:736
 msgid ""
@@ -1294,14 +1294,14 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_MAFIA\"]/choice[1]/event/choice/event/choice[1]/event/choice/text"
 msgstr ""
 "Check the Explosive Room.\n"
-"[Reward[[[]]], [[]] nor []]"
+"[Reward } Only(H)[[[]]], [[]] or []]"
 
 #: src-en/data/events_sector_spider.xml:744
 msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_MAFIA\"]/choice[1]/event/choice/event/choice[2]/text"
 msgstr ""
 "Check the Explosive Room.\n"
-"[Reward[[[]]], [[]] nor []]"
+"[Reward } Only(H)[[[]]], [[]] or []]"
 
 #: src-en/data/events_sector_spider.xml:752
 msgid ""
@@ -1341,7 +1341,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_MAFIA_EXPLOSIVES\"]/choice[1]/text"
 msgstr ""
 "Grab some of the explosives.\n"
-"Reward[[[]]]"
+"Reward } Only(H)[[[]]]"
 
 #: src-en/data/events_sector_spider.xml:771
 msgid ""
@@ -1409,7 +1409,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_BAKE_SALE\"]/choice[1]/text"
 msgstr ""
 "Have a donut.\n"
-"[[[]], [[], [[]]]]"
+"[-999~[<#>Unlock Ship(Gold)[]], [[], [[]]]]"
 
 #: src-en/data/events_sector_spider.xml:809
 msgid ""
@@ -1423,7 +1423,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_BAKE_SALE\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Pay it.\n"
-"[[]]"
+"-999~[<#>Unlock Ship(Gold)[]]"
 
 #: src-en/data/events_sector_spider.xml:813
 msgid ""
@@ -1435,7 +1435,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_BAKE_SALE\"]/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"<#>Unlock Ship(Gold)[]"
 
 #: src-en/data/events_sector_spider.xml:824
 msgid ""
@@ -1603,7 +1603,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_PURGER_WIN\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Laser Fire Special)[]"
 
 #: src-en/data/events_sector_spider.xml:917
 msgid ""
@@ -1736,7 +1736,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"DISTRESS_INFESTATION_CRASH\"]/choice[1]/text"
 msgstr ""
 "Investigate.\n"
-"[[Gain a crew(Human Soldier)[], Gain a crew(Human), Reward[]]]"
+"[[Gain a crew(Human Soldier)[], Gain a crew(Human), Reward Item(M)[]]]"
 
 #: src-en/data/events_sector_spider.xml:1005
 msgid ""
@@ -1752,7 +1752,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"DISTRESS_INFESTATION_CRASH\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[Gain a crew(Human Soldier)[], Gain a crew(Human), Reward[]]"
+"[Gain a crew(Human Soldier)[], Gain a crew(Human), Reward Item(M)[]]"
 
 #: src-en/data/events_sector_spider.xml:1009
 msgid ""
@@ -1790,7 +1790,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"DISTRESS_INFESTATION_CRASH\"]/choice[1]/event/choice/event/choice[2]/text"
 msgstr ""
 "Agree to go after the cache.\n"
-"Gain a crew(Human), Reward[]"
+"Gain a crew(Human), Reward Item(M)[]"
 
 #: src-en/data/events_sector_spider.xml:1020
 msgid ""
@@ -1992,7 +1992,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_PHOTOGRAPHER_SURRENDER\"]/choice[1]/text"
 msgstr ""
 "Let him live.\n"
-"[Reward[], Gain a crew(Human)[]]"
+"[Reward {(M)[], Gain a crew(Human)[]]"
 
 #: src-en/data/events_sector_spider.xml:1132
 msgid ""
@@ -2006,7 +2006,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_PHOTOGRAPHER_SURRENDER\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Drop him off at the nearest station for the reward.\n"
-"Reward[]"
+"Reward {(M)[]"
 
 #: src-en/data/events_sector_spider.xml:1137
 msgid ""
@@ -2352,7 +2352,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_IRWIN_WIN\"]/choice/text"
 msgstr ""
 "Check on Irwin.\n"
-"[[[[[Gain a crew(Unique Irwin), Reward[]]]]]]"
+"[[[[[Gain a crew(Unique Irwin), Reward Standard(M), <#>Unlock Ship(Spider)[]]]]]]"
 
 #: src-en/data/events_sector_spider.xml:1352
 msgid ""
@@ -2369,7 +2369,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_IRWIN_WIN\"]/choice/event/choice/text"
 msgstr ""
 "We aren't looking for pay. But we wouldn't mind information.\n"
-"[[[[Gain a crew(Unique Irwin), Reward[]]]]]"
+"[[[[Gain a crew(Unique Irwin), Reward Standard(M), <#>Unlock Ship(Spider)[]]]]]"
 
 #: src-en/data/events_sector_spider.xml:1356
 msgid ""
@@ -2387,7 +2387,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_IRWIN_WIN\"]/choice/event/choice/event/choice/text"
 msgstr ""
 "That's not the point. Tell us about this Virgo fellow.\n"
-"[[[Gain a crew(Unique Irwin), Reward[]]]]"
+"[[[Gain a crew(Unique Irwin), Reward Standard(M), <#>Unlock Ship(Spider)[]]]]"
 
 #: src-en/data/events_sector_spider.xml:1360
 msgid ""
@@ -2404,7 +2404,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_IRWIN_WIN\"]/choice/event/choice/event/choice/event/choice/text"
 msgstr ""
 "Follow through with what?\n"
-"[[Gain a crew(Unique Irwin), Reward[]]]"
+"[[Gain a crew(Unique Irwin), Reward Standard(M), <#>Unlock Ship(Spider)[]]]"
 
 #: src-en/data/events_sector_spider.xml:1364
 msgid ""
@@ -2422,7 +2422,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_IRWIN_WIN\"]/choice/event/choice/event/choice/event/choice/event/choice/text"
 msgstr ""
 "Didn't you use to be a Clansman?\n"
-"[Gain a crew(Unique Irwin), Reward[]]"
+"[Gain a crew(Unique Irwin), Reward Standard(M), <#>Unlock Ship(Spider)[]]"
 
 #: src-en/data/events_sector_spider.xml:1368
 msgid ""
@@ -2443,7 +2443,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_IRWIN_WIN\"]/choice/event/choice/event/choice/event/choice/event/choice/event/choice/text"
 msgstr ""
 "Right...\n"
-"Gain a crew(Unique Irwin), Reward[]"
+"Gain a crew(Unique Irwin), Reward Standard(M), <#>Unlock Ship(Spider)[]"
 
 #: src-en/data/events_sector_spider.xml:1372
 msgid ""
@@ -2474,7 +2474,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_NEST\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[[[[[[[[]], Reward[]]]], []], Reward, <!>Lose your crew(clonable)[]]]], [], Reward[]], []]"
+"[[[[[[[[[[[]], Reward Weapon(H)[]]]], []], Reward Weapon(H), <!>Lose your crew(clonable)[]]]], [], Reward Standard(M)[]], []]"
 
 #: src-en/data/events_sector_spider.xml:1411
 msgid ""
@@ -2489,7 +2489,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_NEST\"]/choice/event/choice[1]/text"
 msgstr ""
 "Enter the cavern.\n"
-"[[[[[[[[[[]], Reward[]]]], []], Reward, <!>Lose your crew(clonable)[]]]], [], Reward[]]"
+"[[[[[[[[[[]], Reward Weapon(H)[]]]], []], Reward Weapon(H), <!>Lose your crew(clonable)[]]]], [], Reward Standard(M)[]]"
 
 #: src-en/data/events_sector_spider.xml:1415
 msgid ""
@@ -2506,7 +2506,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "If we don't detonate these, no one else can.\n"
-"[[[[[[[[[]], Reward[]]]], []], Reward, <!>Lose your crew(clonable)[]]]]"
+"[[[[[[[[[]], Reward Weapon(H)[]]]], []], Reward Weapon(H), <!>Lose your crew(clonable)[]]]]"
 
 #: src-en/data/events_sector_spider.xml:1419
 msgid ""
@@ -2525,7 +2525,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr ""
 "Stealthily begin setting up the bombs.\n"
-"[[[[[[[[]], Reward[]]]], []], Reward, <!>Lose your crew(clonable)[]]]"
+"[[[[[[[[]], Reward Weapon(H)[]]]], []], Reward Weapon(H), <!>Lose your crew(clonable)[]]]"
 
 #: src-en/data/events_sector_spider.xml:1423
 msgid ""
@@ -2545,7 +2545,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[[[[]], Reward[]]]], []], Reward, <!>Lose your crew(clonable)[]]"
+"[[[[[[[]], Reward Weapon(H)[]]]], []], Reward Weapon(H), <!>Lose your crew(clonable)[]]"
 
 #: src-en/data/events_sector_spider.xml:1427
 msgid ""
@@ -2566,7 +2566,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice/event/choice/event/choice[1]/text"
 msgstr ""
 "Put down your laser.\n"
-"[[[[[[]], Reward[]]]], []]"
+"[[[[[[]], Reward Weapon(H)[]]]], []]"
 
 #: src-en/data/events_sector_spider.xml:1431
 msgid ""
@@ -2588,7 +2588,7 @@ msgid ""
 "@lvl=\"1\"]/event/choice/event/choice/event/choice[1]/event/choice[1]/text"
 msgstr ""
 "Follow her.\n"
-"[[[[[]], Reward[]]]]"
+"[[[[[]], Reward Weapon(H)[]]]]"
 
 #: src-en/data/events_sector_spider.xml:1435
 msgid ""
@@ -2614,7 +2614,7 @@ msgid ""
 "@lvl=\"1\"]/event/choice/event/choice/event/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Read the letter.\n"
-"[[[[]], Reward[]]]"
+"[[[[]], Reward Weapon(H)[]]]"
 
 #: src-en/data/events_sector_spider.xml:1440
 msgid ""
@@ -2635,7 +2635,7 @@ msgid ""
 "@lvl=\"1\"]/event/choice/event/choice/event/choice[1]/event/choice[1]/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[]], Reward[]]"
+"[[[]], Reward Weapon(H)[]]"
 
 #: src-en/data/events_sector_spider.xml:1448
 msgid ""
@@ -2690,7 +2690,7 @@ msgid ""
 "@lvl=\"1\"]/event/choice/event/choice/event/choice[1]/event/choice[1]/event/choice/event/choice/event/choice[2]/text"
 msgstr ""
 "Abandon the lab and the spiders and leave.\n"
-"Reward[]"
+"Reward Weapon(H)[]"
 
 #: src-en/data/events_sector_spider.xml:1464
 msgid ""
@@ -2722,7 +2722,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice/event/choice/event/choice[2]/text"
 msgstr ""
 "Take no chances, shoot the queen.\n"
-"Reward, <!>Lose your crew(clonable)[]"
+"Reward Weapon(H), <!>Lose your crew(clonable)[]"
 
 #: src-en/data/events_sector_spider.xml:1483
 msgid ""
@@ -2761,7 +2761,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_NEST\"]/choice/event/choice[1]/event/choice[3]/text"
 msgstr ""
 "Leave with the bombs and give them to someone better qualified.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_spider.xml:1505
 msgid ""
@@ -2797,7 +2797,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_NEST_WIN\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[Gain a crew(Unique Queen)[[]]]"
+"[Gain a crew(Unique Queen)[<#>Unlock Ship(Brood)[]]]"
 
 #: src-en/data/events_sector_spider.xml:1527
 msgid ""
@@ -2815,7 +2815,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_NEST_WIN\"]/choice/event/choice/text"
 msgstr ""
 "We have to rescue the queen!\n"
-"Gain a crew(Unique Queen)[[]]"
+"Gain a crew(Unique Queen)[<#>Unlock Ship(Brood)[]]"
 
 #: src-en/data/events_sector_spider.xml:1532
 msgid ""
@@ -2839,7 +2839,7 @@ msgid ""
 "data/events_sector_spider.xml$//event[@name=\"INFESTATION_NEST_WIN\"]/choice/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"<#>Unlock Ship(Brood)[]"
 
 #: src-en/data/events_sector_spider.xml:1538
 msgid ""

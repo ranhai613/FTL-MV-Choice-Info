@@ -44,7 +44,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_START\"]/choice[2]/text"
 msgstr ""
 "Offer to help.\n"
-"[[Reward[]], [Reward[]] nor [Reward[]], [Reward[]] nor [Reward[]] nor [Reward[]] nor [[]], [[]] nor [Reward[]], Gain a crew(List Crew Holodrone Chaos)[[[]]], Reward[[]], [Reward[]] nor [Reward[]], [Reward[]], [Reward[]] nor [Reward[]], [Reward[]] nor [Reward[]] nor [Reward[]] nor [Reward[]], [Reward[]] nor [Reward[]] nor [Reward[]], [Reward[]] nor [Reward[]] nor [Reward[]] nor [Reward[]], [Reward[]] nor [[]] nor [[]] nor [[]], [Reward[]] nor [[]], [Reward[]] nor [Reward[]] nor [Reward[]], [Reward[]] nor [Reward[]] nor [Reward[]], [[]], [[], []]]"
+"[-1Drone[Reward Weapon(H)[]], -1Drone[Reward ~ Only(H)[]] or -1Drone[Reward Weapon(H)[]], -1Drone[Reward ~ Only(H)[]] or -1Drone[Reward ~ Only(L)[]] or -1Drone[Reward ~ Only(L)[]] or -1Drone[[]], -1Drone[[]] or -1Drone[Reward ~ Only(L)[]], Gain a crew(List Crew Holodrone Chaos), -1Drone[[[]]], Reward Weapon(H)[[]], [Reward ~ Only(H)[]] or [Reward ~ Only(L)[]], [Reward Weapon(H)[]], [Reward Weapon(H)[]] or [Reward ~ Only(H)[]], [Reward Weapon(H)[]] or [Reward ~ Only(H)[]] or [Reward ~ Only(H)[]] or [Reward ~ Only(H)[]], [Reward Weapon(H)[]] or [Reward ~ Only(H)[]] or [Reward ~ Only(H)[]], [Reward Weapon(H)[]] or [Reward ~ Only(H)[]] or [Reward ~ Only(H)[]] or [Reward ~ Only(L)[]], [Reward ~ Only(L)[]] or [[]] or [[]] or [[]], [Reward ~ Only(L)[]] or [[]], [Reward ~ Only(H)[]] or [Reward ~ Only(H)[]] or [Reward ~ Only(L)[]], [Reward ~ Only(H)[]] or [Reward ~ Only(H)[]] or [Reward ~ Only(L)[]], [[]], [[], []]]"
 
 #: src-en/data/events_sector_clan.xml:56
 msgid ""
@@ -103,7 +103,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OFFER_TO_HELP\"]/choice[@req=\"LIST_A55\"]/text"
 msgstr ""
 "(A55) \"Let me show ye how it be done!\" [-1|]\n"
-"[Reward[]]"
+"-1Drone[Reward Weapon(H)[]]"
 
 #: src-en/data/events_sector_clan.xml:86
 msgid ""
@@ -119,40 +119,40 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OFFER_TO_HELP\"]/choice[@req=\"LIST_A55\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Weapon(H)[]"
 
 #: src-en/data/events_sector_clan.xml:101
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OFFER_TO_HELP\"]/choice[@req=\"BLUELIST_POWERFUL_BOARDING_NO_A55\"]/text"
 msgstr ""
 "(Special Boarding Drone) Send a powerful drone to help assist the Slugs. [-1|]\n"
-"[Reward[]] \n"
-"or [Reward[]]"
+"-1Drone[Reward ~ Only(H)[]] \n"
+"or -1Drone[Reward Weapon(H)[]]"
 
 #: src-en/data/events_sector_clan.xml:105
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OFFER_TO_HELP\"]/choice[@req=\"BLUELIST_MID_LEVEL_BOARDING\"]/text"
 msgstr ""
 "(Boarding Drone Offense) Send a drone to help assist the Slugs [-1|].\n"
-"[Reward[]] \n"
-"or [Reward[]] \n"
-"or [Reward[]] \n"
-"or [[]]"
+"-1Drone[Reward ~ Only(H)[]] \n"
+"or -1Drone[Reward ~ Only(L)[]] \n"
+"or -1Drone[Reward ~ Only(L)[]] \n"
+"or -1Drone[[]]"
 
 #: src-en/data/events_sector_clan.xml:109
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OFFER_TO_HELP\"]/choice[@req=\"BLUELIST_BOARDING_SUPPORT\"]/text"
 msgstr ""
 "(Boarding Drone Support) Send a weak drone to help assist the Slugs. [-1|]\n"
-"[[]] \n"
-"or [Reward[]]"
+"-1Drone[[]] \n"
+"or -1Drone[Reward ~ Only(L)[]]"
 
 #: src-en/data/events_sector_clan.xml:113
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OFFER_TO_HELP\"]/choice[@req=\"BLUELIST_HOLODRONE_CHAOS\"]/text"
 msgstr ""
 "(Chaotic Holodrone) Tell them you have a fantastic idea. [-1|]\n"
-"Gain a crew(List Crew Holodrone Chaos)[[[]]]"
+"Gain a crew(List Crew Holodrone Chaos), -1Drone[[[]]]"
 
 #: src-en/data/events_sector_clan.xml:115
 msgid ""
@@ -181,7 +181,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OFFER_TO_HELP\"]/choice[@req=\"eldritch_cat\"]/text"
 msgstr ""
 "(The One Who Rhymes) \"Everyone should stand aside. Let me be your horror guide!\"\n"
-"Reward[[]]"
+"Reward Weapon(H)[[]]"
 
 #: src-en/data/events_sector_clan.xml:129
 msgid ""
@@ -215,15 +215,15 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OFFER_TO_HELP\"]/choice[@req=\"LIST_CREW_SIREN\"]/text"
 msgstr ""
 "(Siren Crew) Your Siren may prove useful.\n"
-"[Reward[]] \n"
-"or [Reward[]]"
+"[Reward ~ Only(H)[]] \n"
+"or [Reward ~ Only(L)[]]"
 
 #: src-en/data/events_sector_clan.xml:145
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OFFER_TO_HELP\"]/choice[@req=\"unique_irwin\"]/text"
 msgstr ""
 "(Irwin) Have Irwin direct them.\n"
-"[Reward[]]"
+"[Reward Weapon(H)[]]"
 
 #: src-en/data/events_sector_clan.xml:147
 msgid ""
@@ -240,51 +240,51 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OFFER_TO_HELP\"]/choice[@req=\"unique_irwin\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Weapon(H)[]"
 
 #: src-en/data/events_sector_clan.xml:155
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OFFER_TO_HELP\"]/choice[@req=\"unique_vortigon\"]/text"
 msgstr ""
 "(Vortigon) Vortigon seems eager to face the challenge.\n"
-"[Reward[]] \n"
-"or [Reward[]]"
+"[Reward Weapon(H)[]] \n"
+"or [Reward ~ Only(H)[]]"
 
 #: src-en/data/events_sector_clan.xml:159
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OFFER_TO_HELP\"]/choice[@req=\"BLUELIST_SNAIL_ALKALI\"]/text"
 msgstr ""
 "(Telepathic Alkali) \"How interesting. I'll provide medical support if you let me study thhhe beast.\"\n"
-"[Reward[]] \n"
-"or [Reward[]] \n"
-"or [Reward[]] \n"
-"or [Reward[]]"
+"[Reward Weapon(H)[]] \n"
+"or [Reward ~ Only(H)[]] \n"
+"or [Reward ~ Only(H)[]] \n"
+"or [Reward ~ Only(H)[]]"
 
 #: src-en/data/events_sector_clan.xml:163
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OFFER_TO_HELP\"]/choice[@req=\"unique_turzil\"]/text"
 msgstr ""
 "(Turzil) Turzil supports an all-out offensive strike.\n"
-"[Reward[]] \n"
-"or [Reward[]] \n"
-"or [Reward[]]"
+"[Reward Weapon(H)[]] \n"
+"or [Reward ~ Only(H)[]] \n"
+"or [Reward ~ Only(H)[]]"
 
 #: src-en/data/events_sector_clan.xml:167
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OFFER_TO_HELP\"]/choice[@req=\"rock_cultist\"]/text"
 msgstr ""
 "(Cultist) Your Cultist volunteers.\n"
-"[Reward[]] \n"
-"or [Reward[]] \n"
-"or [Reward[]] \n"
-"or [Reward[]]"
+"[Reward Weapon(H)[]] \n"
+"or [Reward ~ Only(H)[]] \n"
+"or [Reward ~ Only(H)[]] \n"
+"or [Reward ~ Only(L)[]]"
 
 #: src-en/data/events_sector_clan.xml:171
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OFFER_TO_HELP\"]/choice[@req=\"LIST_VARIANT_SEPARATIST\"]/text"
 msgstr ""
 "(Separatist Crew) You offer your Engi Separatist.\n"
-"[Reward[]] \n"
+"[Reward ~ Only(L)[]] \n"
 "or [[]] \n"
 "or [[]] \n"
 "or [[]]"
@@ -294,7 +294,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OFFER_TO_HELP\"]/choice[@req=\"engi_defender\"]/text"
 msgstr ""
 "(Defender Crew) You offer your Engi Defender.\n"
-"[Reward[]] \n"
+"[Reward ~ Only(L)[]] \n"
 "or [[]]"
 
 #: src-en/data/events_sector_clan.xml:179
@@ -302,18 +302,18 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OFFER_TO_HELP\"]/choice[@req=\"zoltan_osmian\"]/text"
 msgstr ""
 "(Osmian Crew) Your Osmian can lend support.\n"
-"[Reward[]] \n"
-"or [Reward[]] \n"
-"or [Reward[]]"
+"[Reward ~ Only(H)[]] \n"
+"or [Reward ~ Only(H)[]] \n"
+"or [Reward ~ Only(L)[]]"
 
 #: src-en/data/events_sector_clan.xml:183
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OFFER_TO_HELP\"]/choice[@req=\"human_technician\"]/text"
 msgstr ""
 "(Technician Crew) Your Technician can lend support.\n"
-"[Reward[]] \n"
-"or [Reward[]] \n"
-"or [Reward[]]"
+"[Reward ~ Only(H)[]] \n"
+"or [Reward ~ Only(H)[]] \n"
+"or [Reward ~ Only(L)[]]"
 
 #: src-en/data/events_sector_clan.xml:187
 msgid ""
@@ -375,7 +375,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_50_50_POWERFUL\"]/event[1]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_clan.xml:224
 msgid ""
@@ -390,7 +390,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_50_50_POWERFUL\"]/event[2]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Weapon(H)[]"
 
 #: src-en/data/events_sector_clan.xml:236
 msgid ""
@@ -405,7 +405,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_25_50_25_MID\"]/event[1]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_clan.xml:246
 msgid "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_MID_PYRRHIC\"]/text"
@@ -420,7 +420,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_MID_PYRRHIC\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_clan.xml:257
 msgid ""
@@ -464,7 +464,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_50_50_SUPPORT\"]/event[2]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_clan.xml:291
 msgid ""
@@ -482,7 +482,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_50_50_SIREN\"]/event[1]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_clan.xml:298
 msgid ""
@@ -499,7 +499,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_50_50_SIREN\"]/event[2]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_clan.xml:307
 msgid ""
@@ -515,7 +515,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_50_50_VORTIGON\"]/event[1]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Weapon(H)[]"
 
 #: src-en/data/events_sector_clan.xml:314
 msgid ""
@@ -532,7 +532,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_50_50_VORTIGON\"]/event[2]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_clan.xml:323
 msgid ""
@@ -548,7 +548,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_25_75_ALKALI\"]/event[1]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Weapon(H)[]"
 
 #: src-en/data/events_sector_clan.xml:330
 msgid ""
@@ -564,7 +564,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_ALKALI_SUCCESS\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_clan.xml:342
 msgid ""
@@ -581,7 +581,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_33_66_TURZIL\"]/event[1]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Weapon(H)[]"
 
 #: src-en/data/events_sector_clan.xml:349
 msgid ""
@@ -600,7 +600,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_TURZIL_SUCCESS\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_clan.xml:360
 msgid ""
@@ -617,7 +617,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_25_50_25_CULTIST\"]/event[1]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Weapon(H)[]"
 
 #: src-en/data/events_sector_clan.xml:367
 msgid ""
@@ -633,7 +633,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_CULTIST_SUCCESS\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_clan.xml:375
 msgid ""
@@ -650,7 +650,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_25_50_25_CULTIST\"]/event[4]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_clan.xml:385
 msgid ""
@@ -667,7 +667,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_25_75_SEPARATIST\"]/event[1]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_clan.xml:392
 msgid ""
@@ -701,7 +701,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_50_50_DEFENDER\"]/event[1]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_clan.xml:411
 msgid ""
@@ -734,7 +734,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_OSMIAN_SUCCESS\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_clan.xml:429
 msgid ""
@@ -751,7 +751,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_66_33_OSMIAN\"]/event[3]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_clan.xml:439
 msgid ""
@@ -768,7 +768,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_FAUNA_TECHNICIAN_SUCCESS\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_clan.xml:447
 msgid ""
@@ -786,7 +786,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_66_33_TECHNICIAN\"]/event[3]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_clan.xml:456
 msgid ""
@@ -878,7 +878,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_TOURISTS\"]/choice[@req=\"weapons\"]/text"
 msgstr ""
 "(Upg. Weapons) Give me everything you have or die.\n"
-"Reward[[]]"
+"Reward Stuff(L)[[]]"
 
 #: src-en/data/events_sector_clan.xml:503
 msgid ""
@@ -899,7 +899,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_TOURISTS\"]/choice[@req=\"LIST_CREW_CRYSTAL\"]/text"
 msgstr ""
 "(Crystal Crew) Request supplies.\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_clan.xml:514
 msgid ""
@@ -1097,7 +1097,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHARPSHOOTER\"]/choice[1]/text"
 msgstr ""
 "Pay for entry.\n"
-"[Reward[[[[[]], []] nor [[[]], []] nor [], [], [], [], [], []], [[[[]], []] nor [[[]], []] nor [], [], [], [], [], []], [] nor Gain a crew(Human Soldier)[] nor []]]"
+"-15~[Reward { Only(H)[[[-40~[Gain a weapon(Giftlist Kernel)[]], []] or [-40~[Gain a weapon(Giftlist Kernel)[]], []] or Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[]], [[-40~[Gain a weapon(Giftlist Crystal)[]], []] or [-40~[Gain a weapon(Giftlist Crystal)[]], []] or Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[]], [] or Gain a crew(Human Soldier)[] or Gain a weapon(Giftlist Slug)[]]]"
 
 #: src-en/data/events_sector_clan.xml:638
 msgid ""
@@ -1109,14 +1109,14 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHARPSHOOTER\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[[[[]], []] nor [[[]], []] nor [], [], [], [], [], []], [[[[]], []] nor [[[]], []] nor [], [], [], [], [], []], [] nor Gain a crew(Human Soldier)[] nor []]"
+"Reward { Only(H)[[[-40~[Gain a weapon(Giftlist Kernel)[]], []] or [-40~[Gain a weapon(Giftlist Kernel)[]], []] or Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[]], [[-40~[Gain a weapon(Giftlist Crystal)[]], []] or [-40~[Gain a weapon(Giftlist Crystal)[]], []] or Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[]], [] or Gain a crew(Human Soldier)[] or Gain a weapon(Giftlist Slug)[]]"
 
 #: src-en/data/events_sector_clan.xml:649
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHARPSHOOTER\"]/choice[@req=\"LIST_CREW_CLAN\"]/text"
 msgstr ""
 "(Guild Crew) Request a member's discount.\n"
-"[Reward[[[[[]], []] nor [[[]], []] nor [], [], [], [], [], []], [[[[]], []] nor [[[]], []] nor [], [], [], [], [], []], [] nor Gain a crew(Human Soldier)[] nor []]]"
+"-7~[Reward { Only(H)[[[-40~[Gain a weapon(Giftlist Kernel)[]], []] or [-40~[Gain a weapon(Giftlist Kernel)[]], []] or Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[]], [[-40~[Gain a weapon(Giftlist Crystal)[]], []] or [-40~[Gain a weapon(Giftlist Crystal)[]], []] or Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[]], [] or Gain a crew(Human Soldier)[] or Gain a weapon(Giftlist Slug)[]]]"
 
 #: src-en/data/events_sector_clan.xml:651
 msgid ""
@@ -1128,7 +1128,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHARPSHOOTER\"]/choice[@req=\"LIST_CREW_CLAN\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[[[[]], []] nor [[[]], []] nor [], [], [], [], [], []], [[[[]], []] nor [[[]], []] nor [], [], [], [], [], []], [] nor Gain a crew(Human Soldier)[] nor []]"
+"Reward { Only(H)[[[-40~[Gain a weapon(Giftlist Kernel)[]], []] or [-40~[Gain a weapon(Giftlist Kernel)[]], []] or Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[]], [[-40~[Gain a weapon(Giftlist Crystal)[]], []] or [-40~[Gain a weapon(Giftlist Crystal)[]], []] or Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[]], [] or Gain a crew(Human Soldier)[] or Gain a weapon(Giftlist Slug)[]]"
 
 #: src-en/data/events_sector_clan.xml:662
 msgid ""
@@ -1175,7 +1175,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHARPSHOOTER_INTERIOR\"]/choice[1]/text"
 msgstr ""
 "Try out the Orchid themed \"Guardians of Rt'lak Et\" stage.\n"
-"[[[[]], []] nor [[[]], []] nor [], [], [], [], [], []]"
+"[[-40~[Gain a weapon(Giftlist Kernel)[]], []] or [-40~[Gain a weapon(Giftlist Kernel)[]], []] or Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[], Gain a weapon(Giftlist Kernel)[]]"
 
 #: src-en/data/events_sector_clan.xml:682
 msgid ""
@@ -1192,51 +1192,51 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHARPSHOOTER_INTERIOR\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Try it out yourself.\n"
-"[[[]], []] \n"
-"or [[[]], []] \n"
-"or []"
+"[-40~[Gain a weapon(Giftlist Kernel)[]], []] \n"
+"or [-40~[Gain a weapon(Giftlist Kernel)[]], []] \n"
+"or Gain a weapon(Giftlist Kernel)[]"
 
 #: src-en/data/events_sector_clan.xml:688
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHARPSHOOTER_INTERIOR\"]/choice[1]/event/choice[@req=\"LIST_CREW_SOLDIER\"]/text"
 msgstr ""
 "(Soldier Crew) Your Soldier's firearm training should give them an edge in this game.\n"
-"[]"
+"Gain a weapon(Giftlist Kernel)[]"
 
 #: src-en/data/events_sector_clan.xml:692
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHARPSHOOTER_INTERIOR\"]/choice[1]/event/choice[@req=\"orchid_praetor\"]/text"
 msgstr ""
 "(Praetor Crew) Your Praetor's unique firearm should give them an edge in this game.\n"
-"[]"
+"Gain a weapon(Giftlist Kernel)[]"
 
 #: src-en/data/events_sector_clan.xml:696
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHARPSHOOTER_INTERIOR\"]/choice[1]/event/choice[@req=\"unique_haynes\"]/text"
 msgstr ""
 "(Haynes) Haynes' unique firearm should help out in this game.\n"
-"[]"
+"Gain a weapon(Giftlist Kernel)[]"
 
 #: src-en/data/events_sector_clan.xml:700
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHARPSHOOTER_INTERIOR\"]/choice[1]/event/choice[@req=\"unique_irwin\"]/text"
 msgstr ""
 "(Irwin) Irwin's unique firearm should help out in this game.\n"
-"[]"
+"Gain a weapon(Giftlist Kernel)[]"
 
 #: src-en/data/events_sector_clan.xml:704
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHARPSHOOTER_INTERIOR\"]/choice[1]/event/choice[@req=\"LIST_CREW_JERRY_GRIEF\"]/text"
 msgstr ""
 "(Jerry) Jerry has a really, really big gun. What more needs to be said?\n"
-"[]"
+"Gain a weapon(Giftlist Kernel)[]"
 
 #: src-en/data/events_sector_clan.xml:710
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHARPSHOOTER_INTERIOR\"]/choice[2]/text"
 msgstr ""
 "Try out the Crystal themed \"Ycathine's Wonders\" stage.\n"
-"[[[[]], []] nor [[[]], []] nor [], [], [], [], [], []]"
+"[[-40~[Gain a weapon(Giftlist Crystal)[]], []] or [-40~[Gain a weapon(Giftlist Crystal)[]], []] or Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[], Gain a weapon(Giftlist Crystal)[]]"
 
 #: src-en/data/events_sector_clan.xml:712
 msgid ""
@@ -1255,44 +1255,44 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHARPSHOOTER_INTERIOR\"]/choice[2]/event/choice[1]/text"
 msgstr ""
 "Try it out yourself.\n"
-"[[[]], []] \n"
-"or [[[]], []] \n"
-"or []"
+"[-40~[Gain a weapon(Giftlist Crystal)[]], []] \n"
+"or [-40~[Gain a weapon(Giftlist Crystal)[]], []] \n"
+"or Gain a weapon(Giftlist Crystal)[]"
 
 #: src-en/data/events_sector_clan.xml:718
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHARPSHOOTER_INTERIOR\"]/choice[2]/event/choice[@req=\"LIST_CREW_SOLDIER\"]/text"
 msgstr ""
 "(Soldier Crew) Your Soldier's firearm training should give them an edge in this game.\n"
-"[]"
+"Gain a weapon(Giftlist Crystal)[]"
 
 #: src-en/data/events_sector_clan.xml:722
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHARPSHOOTER_INTERIOR\"]/choice[2]/event/choice[@req=\"orchid_praetor\"]/text"
 msgstr ""
 "(Praetor Crew) Your Praetor's unique firearm should give them an edge in this game.\n"
-"[]"
+"Gain a weapon(Giftlist Crystal)[]"
 
 #: src-en/data/events_sector_clan.xml:726
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHARPSHOOTER_INTERIOR\"]/choice[2]/event/choice[@req=\"unique_haynes\"]/text"
 msgstr ""
 "(Haynes) Haynes' unique firearm should help out in this game.\n"
-"[]"
+"Gain a weapon(Giftlist Crystal)[]"
 
 #: src-en/data/events_sector_clan.xml:730
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHARPSHOOTER_INTERIOR\"]/choice[2]/event/choice[@req=\"unique_irwin\"]/text"
 msgstr ""
 "(Irwin) Irwin's unique firearm should help out in this game.\n"
-"[]"
+"Gain a weapon(Giftlist Crystal)[]"
 
 #: src-en/data/events_sector_clan.xml:734
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHARPSHOOTER_INTERIOR\"]/choice[2]/event/choice[@req=\"LIST_CREW_JERRY_GRIEF\"]/text"
 msgstr ""
 "(Jerry) Jerry has a really, really big gun. What more needs to be said?\n"
-"[]"
+"Gain a weapon(Giftlist Crystal)[]"
 
 #: src-en/data/events_sector_clan.xml:740
 msgid ""
@@ -1301,7 +1301,7 @@ msgstr ""
 "Try talking to the other disinterested people here.\n"
 "[] \n"
 "or Gain a crew(Human Soldier)[] \n"
-"or []"
+"or Gain a weapon(Giftlist Slug)[]"
 
 #: src-en/data/events_sector_clan.xml:746
 msgid ""
@@ -1315,7 +1315,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_SHARPSHOOTER_KERNEL_SOLO\"]/event[1]/choice[1]/text"
 msgstr ""
 "Have another go.\n"
-"[[]]"
+"-40~[Gain a weapon(Giftlist Kernel)[]]"
 
 #: src-en/data/events_sector_clan.xml:750
 msgid ""
@@ -1328,7 +1328,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_SHARPSHOOTER_KERNEL_SOLO_2\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Giftlist Kernel)[]"
 
 #: src-en/data/events_sector_clan.xml:757
 msgid ""
@@ -1360,7 +1360,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_SHARPSHOOTER_KERNEL_SOLO\"]/event[2]/choice[1]/text"
 msgstr ""
 "Have another go.\n"
-"[[]]"
+"-40~[Gain a weapon(Giftlist Kernel)[]]"
 
 #: src-en/data/events_sector_clan.xml:775
 msgid ""
@@ -1414,7 +1414,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_SHARPSHOOTER_CRYSTAL_SOLO\"]/event[1]/choice[1]/text"
 msgstr ""
 "Have another go.\n"
-"[[]]"
+"-40~[Gain a weapon(Giftlist Crystal)[]]"
 
 #: src-en/data/events_sector_clan.xml:798
 msgid ""
@@ -1427,7 +1427,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_SHARPSHOOTER_CRYSTAL_SOLO_2\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Giftlist Crystal)[]"
 
 #: src-en/data/events_sector_clan.xml:805
 msgid ""
@@ -1459,7 +1459,7 @@ msgid ""
 "data/events_sector_clan.xml$//eventList[@name=\"CLAN_SHARPSHOOTER_CRYSTAL_SOLO\"]/event[2]/choice[1]/text"
 msgstr ""
 "Have another go.\n"
-"[[]]"
+"-40~[Gain a weapon(Giftlist Crystal)[]]"
 
 #: src-en/data/events_sector_clan.xml:823
 msgid ""
@@ -1547,32 +1547,32 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_JAMMER_SALESMAN\"]/choice[1]/text"
 msgstr ""
 "Purchase a mobility jammer.\n"
-"[] \n"
-"or []"
+"-35<~<-25, Gain an augment(Ex Ftl Jammer)[] \n"
+"or -45<~<-35, Gain an augment(Combat Engine Jammer)[]"
 
 #: src-en/data/events_sector_clan.xml:863
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_JAMMER_SALESMAN\"]/choice[2]/text"
 msgstr ""
 "Purchase an offensive system jammer.\n"
-"[] \n"
-"or []"
+"-45<~<-35, Gain an augment(Combat Weapon Jammer)[] \n"
+"or -55<~<-45, Gain an augment(Combat Warp Jammer)[]"
 
 #: src-en/data/events_sector_clan.xml:867
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_JAMMER_SALESMAN\"]/choice[3]/text"
 msgstr ""
 "Purchase a defensive system jammer.\n"
-"[] \n"
-"or []"
+"-75<~<-60, Gain an augment(Combat Cloaking Jammer)[] \n"
+"or -50<~<-40, Gain an augment(Combat Shields Jammer)[]"
 
 #: src-en/data/events_sector_clan.xml:871
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_JAMMER_SALESMAN\"]/choice[4]/text"
 msgstr ""
 "Purchase a jammer of vital ship operations.\n"
-"[] \n"
-"or []"
+"-90<~<-75, Gain an augment(Combat Reactor Jammer)[] \n"
+"or -40<~<-30, Gain an augment(Combat Oxygen Jammer)[]"
 
 #: src-en/data/events_sector_clan.xml:875
 msgid ""
@@ -1614,7 +1614,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_RODEO\"]/choice[1]/text"
 msgstr ""
 "Ask about the rodeo.\n"
-"[[[[] nor []], [[] nor [] nor []], [[Gain a crew(Pony Tamed)[]]], [[] nor [] nor []]], [], [Gain a crew(Pony Tamed)[], Gain a crew(Pony)[], []], []]"
+"[-25~[[[] or Gain a weapon(Giftlist Big Beam)[]], [[] or Gain a weapon(Giftlist Big Beam)[] or Gain a weapon(Giftlist Big Beam)[]], [Gain a weapon(Giftlist Big Beam)[Gain a crew(Pony Tamed)[]]], [[] or Gain a weapon(Giftlist Big Beam)[] or Gain a weapon(Giftlist Big Beam)[]]], [], [-30~, Gain a crew(Pony Tamed)[], -20~, Gain a crew(Pony)[], []], []]"
 
 #: src-en/data/events_sector_clan.xml:952
 msgid ""
@@ -1633,7 +1633,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Enter the rodeo.\n"
-"[[[] nor []], [[] nor [] nor []], [[Gain a crew(Pony Tamed)[]]], [[] nor [] nor []]]"
+"-25~[[[] or Gain a weapon(Giftlist Big Beam)[]], [[] or Gain a weapon(Giftlist Big Beam)[] or Gain a weapon(Giftlist Big Beam)[]], [Gain a weapon(Giftlist Big Beam)[Gain a crew(Pony Tamed)[]]], [[] or Gain a weapon(Giftlist Big Beam)[] or Gain a weapon(Giftlist Big Beam)[]]]"
 
 #: src-en/data/events_sector_clan.xml:956
 msgid ""
@@ -1650,7 +1650,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[1]/text"
 msgstr ""
 "Send out a random crew member.\n"
-"[[] nor []]"
+"[[] or Gain a weapon(Giftlist Big Beam)[]]"
 
 #: src-en/data/events_sector_clan.xml:963
 msgid ""
@@ -1668,7 +1668,7 @@ msgid ""
 msgstr ""
 "Wish your crew luck and wait for the results.\n"
 "[] \n"
-"or []"
+"or Gain a weapon(Giftlist Big Beam)[]"
 
 #: src-en/data/events_sector_clan.xml:971
 msgid ""
@@ -1676,7 +1676,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"LIST_CREW_SOLDIER\"]/text"
 msgstr ""
 "(Soldier Crew) Your Soldier has some training in mounted combat. Send him.\n"
-"[[] nor [] nor []]"
+"[[] or Gain a weapon(Giftlist Big Beam)[] or Gain a weapon(Giftlist Big Beam)[]]"
 
 #: src-en/data/events_sector_clan.xml:973
 msgid ""
@@ -1694,8 +1694,8 @@ msgid ""
 msgstr ""
 "Wish your crew luck and wait for the results.\n"
 "[] \n"
-"or [] \n"
-"or []"
+"or Gain a weapon(Giftlist Big Beam)[] \n"
+"or Gain a weapon(Giftlist Big Beam)[]"
 
 #: src-en/data/events_sector_clan.xml:981
 msgid ""
@@ -1703,7 +1703,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"LIST_CREW_JERRY\"]/text"
 msgstr ""
 "(Jerry) Jerry really really wants to ride the horse! Send him.\n"
-"[[Gain a crew(Pony Tamed)[]]]"
+"[Gain a weapon(Giftlist Big Beam)[Gain a crew(Pony Tamed)[]]]"
 
 #: src-en/data/events_sector_clan.xml:983
 msgid ""
@@ -1719,7 +1719,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"LIST_CREW_JERRY\"]/event/choice/text"
 msgstr ""
 "Wish your crew luck and wait for the results.\n"
-"[Gain a crew(Pony Tamed)[]]"
+"Gain a weapon(Giftlist Big Beam)[Gain a crew(Pony Tamed)[]]"
 
 #: src-en/data/events_sector_clan.xml:991
 msgid ""
@@ -1727,7 +1727,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"LIST_CREW_LIZARD\"]/text"
 msgstr ""
 "(Lizard Crew) Your Lizard has ridden Equinoids before. Send him.\n"
-"[[] nor [] nor []]"
+"[[] or Gain a weapon(Giftlist Big Beam)[] or Gain a weapon(Giftlist Big Beam)[]]"
 
 #: src-en/data/events_sector_clan.xml:993
 msgid ""
@@ -1745,8 +1745,8 @@ msgid ""
 msgstr ""
 "Wish your crew luck and wait for the results.\n"
 "[] \n"
-"or [] \n"
-"or []"
+"or Gain a weapon(Giftlist Big Beam)[] \n"
+"or Gain a weapon(Giftlist Big Beam)[]"
 
 #: src-en/data/events_sector_clan.xml:1003
 msgid ""
@@ -1761,7 +1761,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_RODEO\"]/choice[1]/event/choice[3]/text"
 msgstr ""
 "Inquire about these 'Equinoids' instead.\n"
-"[Gain a crew(Pony Tamed)[], Gain a crew(Pony)[], []]"
+"[-30~, Gain a crew(Pony Tamed)[], -20~, Gain a crew(Pony)[], []]"
 
 #: src-en/data/events_sector_clan.xml:1009
 msgid ""
@@ -1777,14 +1777,14 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_RODEO\"]/choice[1]/event/choice[3]/event/choice[1]/text"
 msgstr ""
 "Buy a tamed Equinoid.\n"
-"Gain a crew(Pony Tamed)[]"
+"-30~, Gain a crew(Pony Tamed)[]"
 
 #: src-en/data/events_sector_clan.xml:1020
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_RODEO\"]/choice[1]/event/choice[3]/event/choice[2]/text"
 msgstr ""
 "Buy one of their younger, untamed Equinoids.\n"
-"Gain a crew(Pony)[]"
+"-20~, Gain a crew(Pony)[]"
 
 #: src-en/data/events_sector_clan.xml:1029
 msgid ""
@@ -1906,7 +1906,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_PLUSHIES\"]/choice[1]/text"
 msgstr ""
 "Board and check it out.\n"
-"[[[[Gain a crew(Slug Ranger)[], []], []], [[Gain a crew(Slug Ranger)[], []], []], [[Gain a crew(Slug Ranger)[], []], []]]]"
+"[[[-7~[-14~, Gain a crew(Slug Ranger)[], []], []], [-7~[-14~, Gain a crew(Slug Ranger)[], []], []], [-7~[-14~, Gain a crew(Slug Ranger)[], []], []]]]"
 
 #: src-en/data/events_sector_clan.xml:1097
 msgid ""
@@ -1923,7 +1923,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_PLUSHIES\"]/choice[1]/event/choice/text"
 msgstr ""
 "What are you selling?\n"
-"[[[Gain a crew(Slug Ranger)[], []], []], [[Gain a crew(Slug Ranger)[], []], []], [[Gain a crew(Slug Ranger)[], []], []]]"
+"[[-7~[-14~, Gain a crew(Slug Ranger)[], []], []], [-7~[-14~, Gain a crew(Slug Ranger)[], []], []], [-7~[-14~, Gain a crew(Slug Ranger)[], []], []]]"
 
 #: src-en/data/events_sector_clan.xml:1101
 msgid ""
@@ -1938,7 +1938,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_PLUSHIES\"]/choice[1]/event/choice/event/choice[1]/text"
 msgstr ""
 "Look at the spider plushie.\n"
-"[[Gain a crew(Slug Ranger)[], []], []]"
+"[-7~[-14~, Gain a crew(Slug Ranger)[], []], []]"
 
 #: src-en/data/events_sector_clan.xml:1105
 msgid ""
@@ -1953,7 +1953,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_PLUSHIES\"]/choice[1]/event/choice/event/choice[1]/event/choice[1]/text"
 msgstr ""
 "Buy the plushie. [7~]\n"
-"[Gain a crew(Slug Ranger)[], []]"
+"-7~[-14~, Gain a crew(Slug Ranger)[], []]"
 
 #: src-en/data/events_sector_clan.xml:1109
 msgid ""
@@ -1968,7 +1968,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_PLUSHIES\"]/choice[1]/event/choice/event/choice[1]/event/choice[1]/event/choice[1]/text"
 msgstr ""
 "Buy the rest of them. [14~]\n"
-"Gain a crew(Slug Ranger)[]"
+"-14~, Gain a crew(Slug Ranger)[]"
 
 #: src-en/data/events_sector_clan.xml:1116
 msgid ""
@@ -2008,7 +2008,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_PLUSHIES\"]/choice[1]/event/choice/event/choice[2]/text"
 msgstr ""
 "Look at the horse plushie.\n"
-"[[Gain a crew(Slug Ranger)[], []], []]"
+"[-7~[-14~, Gain a crew(Slug Ranger)[], []], []]"
 
 #: src-en/data/events_sector_clan.xml:1142
 msgid ""
@@ -2023,7 +2023,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_PLUSHIES\"]/choice[1]/event/choice/event/choice[2]/event/choice[1]/text"
 msgstr ""
 "Buy the plushie. [7~]\n"
-"[Gain a crew(Slug Ranger)[], []]"
+"-7~[-14~, Gain a crew(Slug Ranger)[], []]"
 
 #: src-en/data/events_sector_clan.xml:1146
 msgid ""
@@ -2038,7 +2038,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_PLUSHIES\"]/choice[1]/event/choice/event/choice[2]/event/choice[1]/event/choice[1]/text"
 msgstr ""
 "Buy the rest of them. [14~]\n"
-"Gain a crew(Slug Ranger)[]"
+"-14~, Gain a crew(Slug Ranger)[]"
 
 #: src-en/data/events_sector_clan.xml:1153
 msgid ""
@@ -2078,7 +2078,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_PLUSHIES\"]/choice[1]/event/choice/event/choice[3]/text"
 msgstr ""
 "Look at the lizard plushie.\n"
-"[[Gain a crew(Slug Ranger)[], []], []]"
+"[-7~[-14~, Gain a crew(Slug Ranger)[], []], []]"
 
 #: src-en/data/events_sector_clan.xml:1179
 msgid ""
@@ -2092,7 +2092,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_PLUSHIES\"]/choice[1]/event/choice/event/choice[3]/event/choice[1]/text"
 msgstr ""
 "Buy the plushie. [7~]\n"
-"[Gain a crew(Slug Ranger)[], []]"
+"-7~[-14~, Gain a crew(Slug Ranger)[], []]"
 
 #: src-en/data/events_sector_clan.xml:1183
 msgid ""
@@ -2107,7 +2107,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_PLUSHIES\"]/choice[1]/event/choice/event/choice[3]/event/choice[1]/event/choice[1]/text"
 msgstr ""
 "Buy the rest of them. [14~]\n"
-"Gain a crew(Slug Ranger)[]"
+"-14~, Gain a crew(Slug Ranger)[]"
 
 #: src-en/data/events_sector_clan.xml:1190
 msgid ""
@@ -2221,7 +2221,7 @@ msgid ""
 " and not(@lvl)]/text"
 msgstr ""
 "(Shell Crew) Oppose the Guild.\n"
-"[[], [], [], Reward[], [[], []]]"
+"[[], 3<}<6[], 2<|<5[], Reward ~ Only(M)[], [[], []]]"
 
 #: src-en/data/events_sector_clan.xml:1279
 msgid ""
@@ -2229,7 +2229,7 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "Oppose the Guild.\n"
-"[[], [], [], Reward[], [[], []]] \n"
+"[[], 3<}<6[], 2<|<5[], Reward ~ Only(M)[], [[], []]] \n"
 "or [[], []]"
 
 #: src-en/data/events_sector_clan.xml:1283
@@ -2339,7 +2339,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_MECHANIC_BELIEF\"]/choice[2]/text"
 msgstr ""
 "Ask for missiles.\n"
-"[]"
+"3<}<6[]"
 
 #: src-en/data/events_sector_clan.xml:1345
 msgid ""
@@ -2351,7 +2351,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_MECHANIC_BELIEF\"]/choice[3]/text"
 msgstr ""
 "Ask for drone parts.\n"
-"[]"
+"2<|<5[]"
 
 #: src-en/data/events_sector_clan.xml:1354
 msgid ""
@@ -2363,7 +2363,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_MECHANIC_BELIEF\"]/choice[4]/text"
 msgstr ""
 "Ask for scrap.\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_clan.xml:1363
 msgid ""
@@ -2433,7 +2433,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHELLANGRY\"]/choice[@req=\"LIST_CREW_SHELL\"]/text"
 msgstr ""
 "(Shell Crew) Reason with them.\n"
-"Reward[]"
+"Reward {(M)[]"
 
 #: src-en/data/events_sector_clan.xml:1401
 msgid ""
@@ -2448,7 +2448,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHELLANGRY\"]/choice[@req=\"LIST_CREW_MONK\"]/text"
 msgstr ""
 "(Monk Crew) Reason with them.\n"
-"Reward[]"
+"Reward {(M)[]"
 
 #: src-en/data/events_sector_clan.xml:1408
 msgid ""
@@ -2465,7 +2465,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHELLANGRY\"]/choice[@req=\"COMBAT_OXYGEN_JAMMER\"]/text"
 msgstr ""
 "(Asphyxiator) Teach them a lesson.\n"
-"Reward[]"
+"Reward Stuff(M)[]"
 
 #: src-en/data/events_sector_clan.xml:1415
 msgid ""
@@ -2529,7 +2529,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHELL_RADIANT\"]/choice[1]/text"
 msgstr ""
 "What's the Geniocracy doing in Guild space?\n"
-"[[[[]]], [[], [], []], Reward[], []]"
+"[[[[]]], [-7}, Gain a drone(Random)[], -7|, Gain a weapon(Random)[], []], Reward Standard(M)[], []]"
 
 #: src-en/data/events_sector_clan.xml:1448
 msgid ""
@@ -2568,7 +2568,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHELL_RADIANT\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Offer your assistance to the Shells.\n"
-"[[], [], []]"
+"[-7}, Gain a drone(Random)[], -7|, Gain a weapon(Random)[], []]"
 
 #: src-en/data/events_sector_clan.xml:1463
 msgid ""
@@ -2582,7 +2582,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHELL_RADIANT\"]/choice[1]/event/choice[2]/event/choice[1]/text"
 msgstr ""
 "Give them 7 missiles.\n"
-"[]"
+"-7}, Gain a drone(Random)[]"
 
 #: src-en/data/events_sector_clan.xml:1467
 msgid ""
@@ -2596,7 +2596,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHELL_RADIANT\"]/choice[1]/event/choice[2]/event/choice[2]/text"
 msgstr ""
 "Give them 7 droneparts.\n"
-"[]"
+"-7|, Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_clan.xml:1477
 msgid ""
@@ -2617,7 +2617,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SHELL_RADIANT\"]/choice[1]/event/choice[@req=\"LIST_CREW_SHELL\"]/text"
 msgstr ""
 "(Shell Crew) Request help.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_clan.xml:1493
 msgid ""
@@ -2677,7 +2677,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SUZERAIN\"]/choice[1]/text"
 msgstr ""
 "Hail the Suzerains.\n"
-"[[Reward[], [[]], [[[[], [[]]]]]], [[[[[], [[], Gain a crew(Mantis Suzerain)[], Reward[]]], [[], [[], Gain a crew(Mantis Suzerain)[], Reward[]]]], Reward[]], [[[], [[]]]], []], [], []]"
+"[[Reward Standard(H)[], [[]], [[[[], [[]]]]]], [[[[[], [[], Gain a crew(Mantis Suzerain)[], Reward Standard(H)[]]], [[], [[], Gain a crew(Mantis Suzerain)[], Reward Standard(H)[]]]], Reward Standard(M)[]], [[[], [[]]]], []], [], []]"
 
 #: src-en/data/events_sector_clan.xml:1528
 msgid ""
@@ -2691,7 +2691,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SUZERAIN\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Isn't this a nebula though?\n"
-"[Reward[], [[]], [[[[], [[]]]]]]"
+"[Reward Standard(H)[], [[]], [[[[], [[]]]]]]"
 
 #: src-en/data/events_sector_clan.xml:1532
 msgid ""
@@ -2706,7 +2706,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SUZERAIN\"]/choice[1]/event/choice[1]/event/choice[@req=\"ach_boss_cealaformer\"]/text"
 msgstr ""
 "Yeah, I think I've fought one of those before.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_sector_clan.xml:1536
 msgid ""
@@ -2818,7 +2818,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SUZERAIN\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "But aren't the Mantis and Slugs allied? Through the Coalition, that is?\n"
-"[[[[[], [[], Gain a crew(Mantis Suzerain)[], Reward[]]], [[], [[], Gain a crew(Mantis Suzerain)[], Reward[]]]], Reward[]], [[[], [[]]]], []]"
+"[[[[[], [[], Gain a crew(Mantis Suzerain)[], Reward Standard(H)[]]], [[], [[], Gain a crew(Mantis Suzerain)[], Reward Standard(H)[]]]], Reward Standard(M)[]], [[[], [[]]]], []]"
 
 #: src-en/data/events_sector_clan.xml:1591
 msgid ""
@@ -2833,7 +2833,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SUZERAIN\"]/choice[1]/event/choice[2]/event/choice[1]/text"
 msgstr ""
 "So... you are allied?\n"
-"[[[[], [[], Gain a crew(Mantis Suzerain)[], Reward[]]], [[], [[], Gain a crew(Mantis Suzerain)[], Reward[]]]], Reward[]]"
+"[[[[], [[], Gain a crew(Mantis Suzerain)[], Reward Standard(H)[]]], [[], [[], Gain a crew(Mantis Suzerain)[], Reward Standard(H)[]]]], Reward Standard(M)[]]"
 
 #: src-en/data/events_sector_clan.xml:1595
 msgid ""
@@ -2848,7 +2848,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SUZERAIN\"]/choice[1]/event/choice[2]/event/choice[1]/event/choice[1]/text"
 msgstr ""
 "Wouldn't that mean the EHG is only hunting in Slug territory?\n"
-"[[[], [[], Gain a crew(Mantis Suzerain)[], Reward[]]], [[], [[], Gain a crew(Mantis Suzerain)[], Reward[]]]]"
+"[[[], [[], Gain a crew(Mantis Suzerain)[], Reward Standard(H)[]]], [[], [[], Gain a crew(Mantis Suzerain)[], Reward Standard(H)[]]]]"
 
 #: src-en/data/events_sector_clan.xml:1599
 msgid ""
@@ -2863,7 +2863,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SUZERAIN\"]/choice[1]/event/choice[2]/event/choice[1]/event/choice[1]/event/choice[1]/text"
 msgstr ""
 "Why don't the other members of the Coalition step in?\n"
-"[[], [[], Gain a crew(Mantis Suzerain)[], Reward[]]]"
+"[[], [[], Gain a crew(Mantis Suzerain)[], Reward Standard(H)[]]]"
 
 #: src-en/data/events_sector_clan.xml:1603
 msgid ""
@@ -2893,7 +2893,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SUZERAIN\"]/choice[1]/event/choice[2]/event/choice[1]/event/choice[1]/event/choice[1]/event/choice[2]/text"
 msgstr ""
 "I agree, that's pretty scummy.\n"
-"[[], Gain a crew(Mantis Suzerain)[], Reward[]]"
+"[[], Gain a crew(Mantis Suzerain)[], Reward Standard(H)[]]"
 
 #: src-en/data/events_sector_clan.xml:1613
 msgid ""
@@ -2938,7 +2938,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SUZERAIN\"]/choice[1]/event/choice[2]/event/choice[1]/event/choice[1]/event/choice[1]/event/choice[2]/event/choice[3]/text"
 msgstr ""
 "Why not go solo? Surely as a Suzerain you could be a famous bounty hunter in no time.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_sector_clan.xml:1630
 msgid ""
@@ -2954,7 +2954,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SUZERAIN\"]/choice[1]/event/choice[2]/event/choice[1]/event/choice[1]/event/choice[2]/text"
 msgstr ""
 "What treaty? Who did this land belong to first?\n"
-"[[], [[], Gain a crew(Mantis Suzerain)[], Reward[]]]"
+"[[], [[], Gain a crew(Mantis Suzerain)[], Reward Standard(H)[]]]"
 
 #: src-en/data/events_sector_clan.xml:1641
 msgid ""
@@ -2985,7 +2985,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SUZERAIN\"]/choice[1]/event/choice[2]/event/choice[1]/event/choice[1]/event/choice[2]/event/choice[2]/text"
 msgstr ""
 "I agree, that's pretty scummy.\n"
-"[[], Gain a crew(Mantis Suzerain)[], Reward[]]"
+"[[], Gain a crew(Mantis Suzerain)[], Reward Standard(H)[]]"
 
 #: src-en/data/events_sector_clan.xml:1651
 msgid ""
@@ -3030,7 +3030,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SUZERAIN\"]/choice[1]/event/choice[2]/event/choice[1]/event/choice[1]/event/choice[2]/event/choice[2]/event/choice[3]/text"
 msgstr ""
 "Why not go solo? Surely as a Suzerain you could be a famous bounty hunter in no time.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_sector_clan.xml:1668
 msgid ""
@@ -3046,7 +3046,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_SUZERAIN\"]/choice[1]/event/choice[2]/event/choice[1]/event/choice[2]/text"
 msgstr ""
 "Couldn't you just ask for permission to hunt here? The EHG seems fairly friendly to tourists and outsiders.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_clan.xml:1681
 msgid ""
@@ -3195,7 +3195,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_TAX\"]/choice[1]/text"
 msgstr ""
 "Chase them.\n"
-"[[[[Reward[]], [[]], [Reward[]], [[]], []]]]"
+"[[[-7}[Reward ~ Only(M)[]], [[]], [Reward ~ Only(M)[]], [System Upgrade(Reactor 1™)[]], []]]]"
 
 #: src-en/data/events_sector_clan.xml:1759
 msgid ""
@@ -3210,7 +3210,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_TAX\"]/choice[1]/event/choice/text"
 msgstr ""
 "Ask them about the situation.\n"
-"[[[Reward[]], [[]], [Reward[]], [[]], []]]"
+"[[-7}[Reward ~ Only(M)[]], [[]], [Reward ~ Only(M)[]], [System Upgrade(Reactor 1™)[]], []]]"
 
 #: src-en/data/events_sector_clan.xml:1764
 msgid ""
@@ -3226,7 +3226,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_TAX\"]/choice[1]/event/choice/event/choice/text"
 msgstr ""
 "How much?\n"
-"[[Reward[]], [[]], [Reward[]], [[]], []]"
+"[-7}[Reward ~ Only(M)[]], [[]], [Reward ~ Only(M)[]], [System Upgrade(Reactor 1™)[]], []]"
 
 #: src-en/data/events_sector_clan.xml:1768
 msgid ""
@@ -3241,7 +3241,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_TAX\"]/choice[1]/event/choice/event/choice/event/choice[1]/text"
 msgstr ""
 "Use some missiles to blow the Clansmen out of the cave.\n"
-"[Reward[]]"
+"-7}[Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_clan.xml:1772
 msgid ""
@@ -3256,7 +3256,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_TAX\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_clan.xml:1783
 msgid ""
@@ -3286,7 +3286,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_TAX\"]/choice[1]/event/choice/event/choice/event/choice[@req=\"LIST_CREW_SLUG\"]/text"
 msgstr ""
 "(Slug Crew) Try to reason with the Clansmen.\n"
-"[Reward[]]"
+"[Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_clan.xml:1796
 msgid ""
@@ -3302,14 +3302,14 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_TAX\"]/choice[1]/event/choice/event/choice/event/choice[@req=\"LIST_CREW_SLUG\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_clan.xml:1804
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_TAX\"]/choice[1]/event/choice/event/choice/event/choice[@req=\"LIST_CREW_SLUG_KING\"]/text"
 msgstr ""
 "(Ex-Slug King) \"Perhapsss I can pardon them?\"\n"
-"[[]]"
+"[System Upgrade(Reactor 1™)[]]"
 
 #: src-en/data/events_sector_clan.xml:1806
 msgid ""
@@ -3327,7 +3327,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_TAX\"]/choice[1]/event/choice/event/choice/event/choice[@req=\"LIST_CREW_SLUG_KING\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"System Upgrade(Reactor 1™)[]"
 
 #: src-en/data/events_sector_clan.xml:1814
 msgid ""
@@ -3680,7 +3680,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_PHEROMONES\"]/choice[1]/text"
 msgstr ""
 "Investigate further.\n"
-"[[[], [[[[[]], []]]], []]]"
+"[[Gain an augment(Crew Stims), -15~[], [[[[[]], []]]], []]]"
 
 #: src-en/data/events_sector_clan.xml:2036
 msgid ""
@@ -3695,7 +3695,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_PHEROMONES\"]/choice[1]/event/choice/text"
 msgstr ""
 "I don't think so.\n"
-"[[], [[[[[]], []]]], []]"
+"[Gain an augment(Crew Stims), -15~[], [[[[[]], []]]], []]"
 
 #: src-en/data/events_sector_clan.xml:2040
 msgid ""
@@ -3711,7 +3711,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_CLAN_PHEROMONES\"]/choice[1]/event/choice/event/choice[1]/text"
 msgstr ""
 "Buy some pheromones.\n"
-"[]"
+"Gain an augment(Crew Stims), -15~[]"
 
 #: src-en/data/events_sector_clan.xml:2044
 msgid ""
@@ -3841,7 +3841,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_PHEROMONES_DEMAND\"]/choice[1]/text"
 msgstr ""
 "Shut down his facility.\n"
-"Reward[]"
+"Gain an augment(Crew Stims), Reward { Only(M)[]"
 
 #: src-en/data/events_sector_clan.xml:2115
 msgid ""
@@ -3874,7 +3874,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_PHEROMONES_DEMAND\"]/choice[3]/text"
 msgstr ""
 "Make him dance.\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_clan.xml:2130
 msgid ""
@@ -3889,7 +3889,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CLAN_PHEROMONES_DEMAND\"]/choice[@req=\"LIST_CREW_ZOLTAN\"]/text"
 msgstr ""
 "(Zoltan Crew) Carry out this arrest in an official manner.\n"
-"Reward, Gain a crew(Slug Clansman)[]"
+"Reward Standard(H), Gain a crew(Slug Clansman)[]"
 
 #: src-en/data/events_sector_clan.xml:2137
 msgid ""
@@ -3920,7 +3920,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_QUEST_CLAN_PHEROMONES_STORE\"]/choice[1]/text"
 msgstr ""
 "Excuse me, is this the Mantis store?\n"
-"[[[[[[[[]]]]]]], [[]], []]"
+"[-500~[Gain a weapon(List Weapons All Crapbucket)[Gain a weapon(List Weapons All Crapbucket)[Gain a weapon(List Weapons All Crapbucket)[Gain a weapon(List Weapons All Crapbucket)[Gain a weapon(List Weapons All Crapbucket)[<#>Unlock Ship(Stupidghost)[]]]]]]], [[]], []]"
 
 #: src-en/data/events_sector_clan.xml:2154
 msgid ""
@@ -3937,7 +3937,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_QUEST_CLAN_PHEROMONES_STORE\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Buy a Mantis ship.\n"
-"[[[[[[[]]]]]]]"
+"-500~[Gain a weapon(List Weapons All Crapbucket)[Gain a weapon(List Weapons All Crapbucket)[Gain a weapon(List Weapons All Crapbucket)[Gain a weapon(List Weapons All Crapbucket)[Gain a weapon(List Weapons All Crapbucket)[<#>Unlock Ship(Stupidghost)[]]]]]]]"
 
 #: src-en/data/events_sector_clan.xml:2158
 msgid ""
@@ -3952,7 +3952,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_QUEST_CLAN_PHEROMONES_STORE\"]/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[[[]]]]]]"
+"Gain a weapon(List Weapons All Crapbucket)[Gain a weapon(List Weapons All Crapbucket)[Gain a weapon(List Weapons All Crapbucket)[Gain a weapon(List Weapons All Crapbucket)[Gain a weapon(List Weapons All Crapbucket)[<#>Unlock Ship(Stupidghost)[]]]]]]"
 
 #: src-en/data/events_sector_clan.xml:2165
 msgid ""
@@ -3966,7 +3966,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_QUEST_CLAN_PHEROMONES_STORE\"]/choice[1]/event/choice[1]/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[[]]]]]"
+"Gain a weapon(List Weapons All Crapbucket)[Gain a weapon(List Weapons All Crapbucket)[Gain a weapon(List Weapons All Crapbucket)[Gain a weapon(List Weapons All Crapbucket)[<#>Unlock Ship(Stupidghost)[]]]]]"
 
 #: src-en/data/events_sector_clan.xml:2170
 msgid ""
@@ -3978,7 +3978,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_QUEST_CLAN_PHEROMONES_STORE\"]/choice[1]/event/choice[1]/event/choice/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[]]]]"
+"Gain a weapon(List Weapons All Crapbucket)[Gain a weapon(List Weapons All Crapbucket)[Gain a weapon(List Weapons All Crapbucket)[<#>Unlock Ship(Stupidghost)[]]]]"
 
 #: src-en/data/events_sector_clan.xml:2175
 msgid ""
@@ -3990,7 +3990,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_QUEST_CLAN_PHEROMONES_STORE\"]/choice[1]/event/choice[1]/event/choice/event/choice/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[]]]"
+"Gain a weapon(List Weapons All Crapbucket)[Gain a weapon(List Weapons All Crapbucket)[<#>Unlock Ship(Stupidghost)[]]]"
 
 #: src-en/data/events_sector_clan.xml:2180
 msgid ""
@@ -4002,7 +4002,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_QUEST_CLAN_PHEROMONES_STORE\"]/choice[1]/event/choice[1]/event/choice/event/choice/event/choice/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"Gain a weapon(List Weapons All Crapbucket)[<#>Unlock Ship(Stupidghost)[]]"
 
 #: src-en/data/events_sector_clan.xml:2185
 msgid ""
@@ -4014,7 +4014,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_QUEST_CLAN_PHEROMONES_STORE\"]/choice[1]/event/choice[1]/event/choice/event/choice/event/choice/event/choice/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"<#>Unlock Ship(Stupidghost)[]"
 
 #: src-en/data/events_sector_clan.xml:2204
 msgid ""
@@ -4083,7 +4083,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_QUEST_CLAN_PHEROMONES_STORE_CHOICE\"]/choice[1]/text"
 msgstr ""
 "Loot some stuff.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_clan.xml:2240
 msgid ""
@@ -4403,7 +4403,7 @@ msgstr ""
 msgid "data/events_sector_clan.xml$//event[@name=\"PONY_WORLD_WIN\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[Reward[[], Gain a crew(Ponyc)[], []]]"
+"[<#>Unlock Ship(Clan), Reward Standard(H)[[], Gain a crew(Ponyc)[], []]]"
 
 #: src-en/data/events_sector_clan.xml:2394
 msgid ""
@@ -4420,7 +4420,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"PONY_WORLD_WIN\"]/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[], Gain a crew(Ponyc)[], []]"
+"<#>Unlock Ship(Clan), Reward Standard(H)[[], Gain a crew(Ponyc)[], []]"
 
 #: src-en/data/events_sector_clan.xml:2398
 msgid ""
@@ -5128,7 +5128,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_SALT_QUEST_2\"]/choice/text"
 msgstr ""
 "Wow, that's big.\n"
-"[[[[[[[[[]], []]]]], [[[[[[]], []]]]], [[[[[[]], []]]]], [[[]]]], [[[[[]], []]]], [[]], [[[[[]], []]]]]]"
+"[[[[[[[-25~[[]], []]]]], [[[[-25~[[]], []]]]], [[[[-25~[[]], []]]]], [[[]]]], [[[-25~[[]], []]]], [[]], [[[-25~[[]], []]]]]]"
 
 #: src-en/data/events_sector_clan.xml:2773
 msgid ""
@@ -5143,7 +5143,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_SALT_QUEST_2\"]/choice/event/choice/text"
 msgstr ""
 "Just fly up to the facility, what could go wrong?\n"
-"[[[[[[[[]], []]]]], [[[[[[]], []]]]], [[[[[[]], []]]]], [[[]]]], [[[[[]], []]]], [[]], [[[[[]], []]]]]"
+"[[[[[[-25~[[]], []]]]], [[[[-25~[[]], []]]]], [[[[-25~[[]], []]]]], [[[]]]], [[[-25~[[]], []]]], [[]], [[[-25~[[]], []]]]]"
 
 #: src-en/data/events_sector_clan.xml:2777
 msgid ""
@@ -5159,7 +5159,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_SALT_QUEST_2\"]/choice/event/choice/event/choice[1]/text"
 msgstr ""
 "Of course!\n"
-"[[[[[[[]], []]]]], [[[[[[]], []]]]], [[[[[[]], []]]]], [[[]]]]"
+"[[[[[-25~[[]], []]]]], [[[[-25~[[]], []]]]], [[[[-25~[[]], []]]]], [[[]]]]"
 
 #: src-en/data/events_sector_clan.xml:2781
 msgid ""
@@ -5173,21 +5173,21 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_SALT_QUEST_2\"]/choice/event/choice/event/choice[1]/event/choice[1]/text"
 msgstr ""
 "Rule thy mind, rule they honor!\n"
-"[[[[[[]], []]]]]"
+"[[[[-25~[[]], []]]]]"
 
 #: src-en/data/events_sector_clan.xml:2787
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_SALT_QUEST_2\"]/choice/event/choice/event/choice[1]/event/choice[2]/text"
 msgstr ""
 "A valiant death before a cowardly life!\n"
-"[[[[[[]], []]]]]"
+"[[[[-25~[[]], []]]]]"
 
 #: src-en/data/events_sector_clan.xml:2791
 msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_SALT_QUEST_2\"]/choice/event/choice/event/choice[1]/event/choice[3]/text"
 msgstr ""
 "Who is better is greater than the rest!\n"
-"[[[[[[]], []]]]]"
+"[[[[-25~[[]], []]]]]"
 
 #: src-en/data/events_sector_clan.xml:2795
 msgid ""
@@ -5234,7 +5234,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_SALT_QUEST_2\"]/choice/event/choice/event/choice[@req=\"mind\"]/text"
 msgstr ""
 "(Mind Control) Of course!\n"
-"[[[[[]], []]]]"
+"[[[-25~[[]], []]]]"
 
 #: src-en/data/events_sector_clan.xml:2815
 msgid ""
@@ -5249,7 +5249,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_SALT_QUEST_2\"]/choice/event/choice/event/choice[@req=\"mind\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[]], []]]"
+"[[-25~[[]], []]]"
 
 #: src-en/data/events_sector_clan.xml:2824
 msgid ""
@@ -5277,7 +5277,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_SALT_QUEST_2\"]/choice/event/choice/event/choice[4]/text"
 msgstr ""
 "Nah.\n"
-"[[[[[]], []]]]"
+"[[[-25~[[]], []]]]"
 
 #: src-en/data/events_sector_clan.xml:2836
 msgid ""
@@ -5291,7 +5291,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"NEBULA_SALT_QUEST_2\"]/choice/event/choice/event/choice[4]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[]], []]]"
+"[[-25~[[]], []]]"
 
 #: src-en/data/events_sector_clan.xml:2849
 msgid ""
@@ -5305,7 +5305,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"SALT_QUEST_2_MOTTO_WRONG\"]/choice/text"
 msgstr ""
 "No, you're lying.\n"
-"[[[[[]], []]]]"
+"[[[-25~[[]], []]]]"
 
 #: src-en/data/events_sector_clan.xml:2853
 msgid ""
@@ -5319,7 +5319,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"SALT_QUEST_2_MOTTO_WRONG\"]/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[]], []]]"
+"[[-25~[[]], []]]"
 
 #: src-en/data/events_sector_clan.xml:2862
 msgid "data/events_sector_clan.xml$//event[@name=\"SALT_QUEST_2_STUPID\"]/text"
@@ -5332,7 +5332,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"SALT_QUEST_2_STUPID\"]/choice/text"
 msgstr ""
 "Wait for them to finish inspection.\n"
-"[[[]], []]"
+"[-25~[[]], []]"
 
 #: src-en/data/events_sector_clan.xml:2866
 msgid ""
@@ -5349,7 +5349,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"SALT_QUEST_2_STUPID\"]/choice/event/choice[1]/text"
 msgstr ""
 "Buy the membership.\n"
-"[[]]"
+"-25~[[]]"
 
 #: src-en/data/events_sector_clan.xml:2870
 msgid ""
@@ -5393,7 +5393,7 @@ msgid ""
 "data/events_sector_clan.xml$//ship[@name=\"SHIP_CLAN_CRUISER\"]/destroyed/choice/text"
 msgstr ""
 "Oh boy...\n"
-"[[[[[Reward[[], [], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]], [Reward[[], [], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]]]], Reward[]], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]"
+"[[[[[<#>Unlock Ship(Salt), Reward ~ Only(H)[[], [], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[]]], [<#>Unlock Ship(Salt), Reward ~ Only(H)[[], [], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[]]]]], <#>Unlock Ship(Salt), Reward ~ Only(H), Gain a weapon(Salt Launcher)[]], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]"
 
 #: src-en/data/events_sector_clan.xml:2899
 msgid ""
@@ -5409,7 +5409,7 @@ msgid ""
 "data/events_sector_clan.xml$//ship[@name=\"SHIP_CLAN_CRUISER\"]/deadCrew/choice/text"
 msgstr ""
 "Oh boy...\n"
-"[[[[[Reward[[], [], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]], [Reward[[], [], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]]]], Reward[]], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]"
+"[[[[[<#>Unlock Ship(Salt), Reward ~ Only(H)[[], [], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[]]], [<#>Unlock Ship(Salt), Reward ~ Only(H)[[], [], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[]]]]], <#>Unlock Ship(Salt), Reward ~ Only(H), Gain a weapon(Salt Launcher)[]], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]"
 
 #: src-en/data/events_sector_clan.xml:2908
 msgid ""
@@ -5425,7 +5425,7 @@ msgid ""
 "data/events_sector_clan.xml$//ship[@name=\"SHIP_CLAN_CRUISER_CHAOS\"]/destroyed/choice/text"
 msgstr ""
 "Oh boy...\n"
-"[[Reward[[], []], <!>Lose your crew(UNCLONABLE)[]], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]"
+"[[Reward ~ Only(H)[<#>Unlock Ship(Salt)[], <#>Unlock Ship(Salt)[]], <!>Lose your crew(UNCLONABLE)[]], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]"
 
 #: src-en/data/events_sector_clan.xml:2915
 msgid ""
@@ -5441,7 +5441,7 @@ msgid ""
 "data/events_sector_clan.xml$//ship[@name=\"SHIP_CLAN_CRUISER_CHAOS\"]/deadCrew/choice/text"
 msgstr ""
 "Oh boy...\n"
-"[[Reward[[], []], <!>Lose your crew(UNCLONABLE)[]], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]"
+"[[Reward ~ Only(H)[<#>Unlock Ship(Salt)[], <#>Unlock Ship(Salt)[]], <!>Lose your crew(UNCLONABLE)[]], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]"
 
 #: src-en/data/events_sector_clan.xml:2929
 msgid ""
@@ -5725,7 +5725,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"SYLVAN_DOES_AN_EX_MACHINA\"]/choice[@req=\"pilot\"]/text"
 msgstr ""
 "No, screw you! I'm tired of listening to your dumb accents!\n"
-"[[[[Reward[[], [], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]], [Reward[[], [], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]]]], Reward[]]"
+"[[[[<#>Unlock Ship(Salt), Reward ~ Only(H)[[], [], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[]]], [<#>Unlock Ship(Salt), Reward ~ Only(H)[[], [], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[]]]]], <#>Unlock Ship(Salt), Reward ~ Only(H), Gain a weapon(Salt Launcher)[]]"
 
 #: src-en/data/events_sector_clan.xml:3037
 msgid ""
@@ -5743,7 +5743,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Continue...\n"
-"[[[Reward[[], [], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]], [Reward[[], [], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]]]]"
+"[[[<#>Unlock Ship(Salt), Reward ~ Only(H)[[], [], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[]]], [<#>Unlock Ship(Salt), Reward ~ Only(H)[[], [], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[]]]]]"
 
 #: src-en/data/events_sector_clan.xml:3045
 msgid ""
@@ -5762,7 +5762,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[Reward[[], [], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]], [Reward[[], [], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]]]"
+"[[<#>Unlock Ship(Salt), Reward ~ Only(H)[[], [], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[]]], [<#>Unlock Ship(Salt), Reward ~ Only(H)[[], [], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[]]]]"
 
 #: src-en/data/events_sector_clan.xml:3053
 msgid ""
@@ -5781,7 +5781,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice/event/choice[1]/text"
 msgstr ""
 "Keep listening.\n"
-"[Reward[[], [], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]]"
+"[<#>Unlock Ship(Salt), Reward ~ Only(H)[[], [], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[]]]"
 
 #: src-en/data/events_sector_clan.xml:3061
 msgid ""
@@ -5798,7 +5798,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[], [], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]"
+"<#>Unlock Ship(Salt), Reward ~ Only(H)[[], [], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[]]"
 
 #: src-en/data/events_sector_clan.xml:3071
 msgid ""
@@ -5806,7 +5806,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice/event/choice[2]/text"
 msgstr ""
 "Look guys, this is sweet and all, but could you save the personal stuff for later please?\n"
-"[Reward[[], [], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]]"
+"[<#>Unlock Ship(Salt), Reward ~ Only(H)[[], [], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[]]]"
 
 #: src-en/data/events_sector_clan.xml:3073
 msgid ""
@@ -5824,7 +5824,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice/event/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[], [], <!>Lose your crew(UNCLONABLE)[], <!>Lose your crew(UNCLONABLE)[]]"
+"<#>Unlock Ship(Salt), Reward ~ Only(H)[[], [], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[], Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[]]"
 
 #: src-en/data/events_sector_clan.xml:3085
 msgid ""
@@ -5832,7 +5832,7 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"<#>Unlock Ship(Salt), Reward ~ Only(H), Gain a weapon(Salt Launcher)[]"
 
 #: src-en/data/events_sector_clan.xml:3091
 msgid ""
@@ -5896,7 +5896,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"GNOME_DOES_AN_EX_MACHINA\"]/choice[@req=\"pilot\"]/text"
 msgstr ""
 "No, screw you! I'm tired of listening to your dumb accents!\n"
-"[Reward[[], []], <!>Lose your crew(UNCLONABLE)[]]"
+"[Reward ~ Only(H)[<#>Unlock Ship(Salt)[], <#>Unlock Ship(Salt)[]], <!>Lose your crew(UNCLONABLE)[]]"
 
 #: src-en/data/events_sector_clan.xml:3118
 msgid ""
@@ -5912,7 +5912,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Continue...\n"
-"Reward[[], []]"
+"Reward ~ Only(H)[<#>Unlock Ship(Salt)[], <#>Unlock Ship(Salt)[]]"
 
 #: src-en/data/events_sector_clan.xml:3127
 msgid ""
@@ -6047,7 +6047,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"SYLVAN_SALT_REWARD_OBYN\"]/choice[3]/text"
 msgstr ""
 "Entice him to go with his old crew and continue his quest.\n"
-"<!>Lose your crew(UNCLONABLE)[]"
+"Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[]"
 
 #: src-en/data/events_sector_clan.xml:3191
 msgid ""
@@ -6064,7 +6064,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"SYLVAN_SALT_REWARD_OBYN\"]/choice[4]/text"
 msgstr ""
 "Entice him to go with his old crew and continue his quest.\n"
-"<!>Lose your crew(UNCLONABLE)[]"
+"Gain a weapon(Salt Launcher), <!>Lose your crew(UNCLONABLE)[]"
 
 #: src-en/data/events_sector_clan.xml:3202
 msgid ""
@@ -6091,7 +6091,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CHAOS_SALT_REWARD_OBYN\"]/choice[@req=\"unique_obyn_temp\"]/text"
 msgstr ""
 "I have no idea what's happening either, but the gnome wants you to come with us.\n"
-"[]"
+"<#>Unlock Ship(Salt)[]"
 
 #: src-en/data/events_sector_clan.xml:3217
 msgid ""
@@ -6106,7 +6106,7 @@ msgid ""
 "data/events_sector_clan.xml$//event[@name=\"CHAOS_SALT_REWARD_OBYN\"]/choice[@req=\"unique_obyn\"]/text"
 msgstr ""
 "I have no idea what's happening either, but the gnome wants you to come with us.\n"
-"[]"
+"<#>Unlock Ship(Salt)[]"
 
 #: src-en/data/events_sector_clan.xml:3227
 msgid ""

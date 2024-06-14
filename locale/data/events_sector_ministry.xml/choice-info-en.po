@@ -42,7 +42,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"ZOLTAN_FASCISM\"]/choice[1]/text"
 msgstr ""
 "That... doesn't sound right.\n"
-"[[], [], []]"
+"[Gain a weapon(Random)[], System Upgrade(Reactor 1™)[], []]"
 
 #: src-en/data/events_sector_ministry.xml:62
 msgid ""
@@ -59,7 +59,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"ZOLTAN_FASCISM\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "If you hate fascists, maybe you can help us with the Rebels?\n"
-"[]"
+"Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_ministry.xml:66
 msgid ""
@@ -78,7 +78,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"ZOLTAN_FASCISM\"]/choice[1]/event/choice[@req=\"LIST_CREW_MEDICAL\"]/text"
 msgstr ""
 "(Medical Crew) Examine his mental state.\n"
-"[]"
+"System Upgrade(Reactor 1™)[]"
 
 #: src-en/data/events_sector_ministry.xml:73
 msgid ""
@@ -103,7 +103,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"ZOLTAN_FASCISM\"]/choice[@req=\"LIST_CREW_HUMAN\"]/text"
 msgstr ""
 "(Human Crew) Apologise for being solely responsible for inventing fascism.\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_ministry.xml:86
 msgid ""
@@ -243,7 +243,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"ZOLTAN_TRADE_HUB_MV\"]/choice[@req=\"LIST_CREW_ZOLTAN_CAPITAL\"]/text"
 msgstr ""
 "(Ministry Crew) Present his official documentation and pay the entry fee.\n"
-"[[]]"
+"-10~[[]]"
 
 #: src-en/data/events_sector_ministry.xml:159
 msgid ""
@@ -338,7 +338,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"ZOLTAN_FIGHTER_MONK\"]/choice[1]/text"
 msgstr ""
 "See who they might have on sale.\n"
-"[[Gain a crew(Zoltan Monk)[[]]], []]"
+"[-35~[Gain a crew(Zoltan Monk)[[]]], []]"
 
 #: src-en/data/events_sector_ministry.xml:215
 msgid ""
@@ -353,7 +353,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"ZOLTAN_FIGHTER_MONK\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Purchase the Zoltan.\n"
-"[Gain a crew(Zoltan Monk)[[]]]"
+"-35~[Gain a crew(Zoltan Monk)[[]]]"
 
 #: src-en/data/events_sector_ministry.xml:219
 msgid ""
@@ -488,9 +488,9 @@ msgid ""
 msgstr ""
 "Check it out.\n"
 "[] \n"
-"or Reward[] \n"
-"or Reward[] \n"
-"or [Reward[] nor [] nor Reward[], []]"
+"or Reward Weapon(L)[] \n"
+"or Reward ~ Only(M)[] \n"
+"or [-1}, Reward ~ Only(R)[] or -1}[] or Reward Weapon(R), -1}[], []]"
 
 #: src-en/data/events_sector_ministry.xml:294
 msgid ""
@@ -525,7 +525,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"ZOLTAN_ODD_MOON_MV\"]/choice[@req=\"DRONE_CONTROL_BOARDING\"]/text"
 msgstr ""
 "(Boarding Drone) Send a drone to probe the surface.\n"
-"[Gain a crew(Zoltan)[]]"
+"-1|[Gain a crew(Zoltan)[]]"
 
 #: src-en/data/events_sector_ministry.xml:310
 msgid ""
@@ -583,9 +583,9 @@ msgid ""
 "data/events_sector_ministry.xml$//eventList[@name=\"ZOLTAN_ODD_MOON_MV_CHECK\"]/event[4]/choice[1]/text"
 msgstr ""
 "Attempt to detonate an explosive to break through the surface. [-1}]\n"
-"Reward[] \n"
-"or [] \n"
-"or Reward[]"
+"-1}, Reward ~ Only(R)[] \n"
+"or -1}[] \n"
+"or Reward Weapon(R), -1}[]"
 
 #: src-en/data/events_sector_ministry.xml:343
 msgid ""
@@ -693,7 +693,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"ZOLTAN_CREW_SCAN_MV\"]/choice[@req=\"LIST_CREW_SLUG\"]/text"
 msgstr ""
 "(Slug Crew) Have your Slug talk them into letting you go.\n"
-"Reward[]"
+"Reward { Only(M)[]"
 
 #: src-en/data/events_sector_ministry.xml:422
 msgid ""
@@ -724,7 +724,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"ZOLTAN_CREW_SCAN_MV\"]/choice[@req=\"mind\"]/text"
 msgstr ""
 "(Mind Control) Make the guards believe they have already checked your crew today.\n"
-"Reward[]"
+"Reward { Only(M)[]"
 
 #: src-en/data/events_sector_ministry.xml:435
 msgid ""
@@ -824,7 +824,7 @@ msgid ""
 msgstr ""
 "Dock with them.\n"
 "[[]] \n"
-"or Reward[]"
+"or Reward Stuff(M)[]"
 
 #: src-en/data/events_sector_ministry.xml:490
 msgid ""
@@ -1028,7 +1028,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"ZOLTAN_TICKET\"]/choice[2]/text"
 msgstr ""
 "Whatever, just pay the fine.\n"
-"[]"
+"-10~[]"
 
 #: src-en/data/events_sector_ministry.xml:608
 msgid ""
@@ -1180,7 +1180,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"ZOLTAN_REVOLT\"]/choice[1]/text"
 msgstr ""
 "Pull closer to survey the chaos.\n"
-"[[[]], [[]], Reward[], []]"
+"[[[]], [[]], Reward Stuff(R)[], []]"
 
 #: src-en/data/events_sector_ministry.xml:704
 msgid ""
@@ -1239,7 +1239,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"ZOLTAN_REVOLT\"]/choice[1]/event/choice[@req=\"cloaking\"]/text"
 msgstr ""
 "(Cloaking) Cloak and loot some of the buildings while everyone is distracted.\n"
-"Reward[]"
+"Reward Stuff(R)[]"
 
 #: src-en/data/events_sector_ministry.xml:730
 msgid ""
@@ -1517,7 +1517,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"DISTRESS_ZOLTAN_ARREST\"]/choice[2]/text"
 msgstr ""
 "Report the pirates to the Zoltans.\n"
-"Reward[]"
+"Reward { Only(L)[]"
 
 #: src-en/data/events_sector_ministry.xml:905
 msgid ""
@@ -1724,7 +1724,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"CAPITAL_RAID_SELITE_WIN\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[Reward, Gain a crew(Zoltan Peacekeeper)[]]"
+"[Reward Stuff(M), Gain a crew(Zoltan Peacekeeper)[]]"
 
 #: src-en/data/events_sector_ministry.xml:1013
 msgid ""
@@ -1739,7 +1739,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"CAPITAL_RAID_SELITE_WIN\"]/choice/event/choice/text"
 msgstr ""
 "Contact the Zoltans.\n"
-"Reward, Gain a crew(Zoltan Peacekeeper)[]"
+"Reward Stuff(M), Gain a crew(Zoltan Peacekeeper)[]"
 
 #: src-en/data/events_sector_ministry.xml:1017
 msgid ""
@@ -1837,7 +1837,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"ZOLTAN_QUEST_LAWBOOK_PIRATE\"]/choice[1]/text"
 msgstr ""
 "Pay for the lawbook.\n"
-"[[]]"
+"-30~[[]]"
 
 #: src-en/data/events_sector_ministry.xml:1087
 msgid ""
@@ -1877,7 +1877,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"ZOLTAN_QUEST_LAWBOOK_PIRATE\"]/choice[3]/text"
 msgstr ""
 "Leave.\n"
-"[[[]], [[]], [[], []]]"
+"[-15~[[]], [[]], [[], []]]"
 
 #: src-en/data/events_sector_ministry.xml:1111
 msgid ""
@@ -1889,7 +1889,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"ZOLTAN_QUEST_LAWBOOK_PIRATE\"]/choice[3]/event/choice[1]/text"
 msgstr ""
 "Pay for the lawbook.\n"
-"[[]]"
+"-15~[[]]"
 
 #: src-en/data/events_sector_ministry.xml:1115
 msgid ""
@@ -2365,7 +2365,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"QUEST_ZOLTAN_LANIUS_CORE_MONK\"]/choice[1]/text"
 msgstr ""
 "Agree to \"test your mind\".\n"
-"Gain a crew(Zoltan Monk)[[[], []]]"
+"Gain a crew(Zoltan Monk), <!>Fleet Advance(1)[[[], System Upgrade(Shields 1™)[]]]"
 
 #: src-en/data/events_sector_ministry.xml:1395
 msgid ""
@@ -2381,14 +2381,14 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"QUEST_ZOLTAN_LANIUS_CORE_MONK\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[], []]"
+"[[], System Upgrade(Shields 1™)[]]"
 
 #: src-en/data/events_sector_ministry.xml:1405
 msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"QUEST_ZOLTAN_LANIUS_CORE_MONK\"]/choice[@req=\"LIST_CREW_MONK\"]/text"
 msgstr ""
 "(Monk Crew) Negotiate with them for the core.\n"
-"[[[], []]]"
+"[[[], System Upgrade(Shields 1™)[]]]"
 
 #: src-en/data/events_sector_ministry.xml:1407
 msgid ""
@@ -2402,7 +2402,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"QUEST_ZOLTAN_LANIUS_CORE_MONK\"]/choice[@req=\"LIST_CREW_MONK\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[], []]"
+"[[], System Upgrade(Shields 1™)[]]"
 
 #: src-en/data/events_sector_ministry.xml:1415
 msgid ""
@@ -2442,7 +2442,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"QUEST_ZOLTAN_LANIUS_CORE_AUTO\"]/choice[1]/text"
 msgstr ""
 "Attempt to salvage the core.\n"
-"[[[], []]] \n"
+"[[[], System Upgrade(Shields 1™)[]]] \n"
 "or [[]]"
 
 #: src-en/data/events_sector_ministry.xml:1438
@@ -2450,7 +2450,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"QUEST_ZOLTAN_LANIUS_CORE_AUTO\"]/choice[@req=\"hacking\"]/text"
 msgstr ""
 "(Hacking) Hack the Auto-ship to keep it offline.\n"
-"[[[], []]]"
+"[[[], System Upgrade(Shields 1™)[]]]"
 
 #: src-en/data/events_sector_ministry.xml:1440
 msgid ""
@@ -2462,14 +2462,14 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"QUEST_ZOLTAN_LANIUS_CORE_AUTO\"]/choice[@req=\"hacking\"]/event/choice/text"
 msgstr ""
 "Inspect the core.\n"
-"[[], []]"
+"[[], System Upgrade(Shields 1™)[]]"
 
 #: src-en/data/events_sector_ministry.xml:1448
 msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"QUEST_ZOLTAN_LANIUS_CORE_AUTO\"]/choice[@req=\"cloaking\"]/text"
 msgstr ""
 "(Cloaking) Cloak the ship while extracting the core.\n"
-"[[[], []]]"
+"[[[], System Upgrade(Shields 1™)[]]]"
 
 #: src-en/data/events_sector_ministry.xml:1450
 msgid ""
@@ -2481,7 +2481,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"QUEST_ZOLTAN_LANIUS_CORE_AUTO\"]/choice[@req=\"cloaking\"]/event/choice/text"
 msgstr ""
 "Inspect the core.\n"
-"[[], []]"
+"[[], System Upgrade(Shields 1™)[]]"
 
 #: src-en/data/events_sector_ministry.xml:1458
 msgid ""
@@ -2520,7 +2520,7 @@ msgid ""
 "data/events_sector_ministry.xml$//eventList[@name=\"QUEST_ZOLTAN_LANIUS_CORE_AUTO_SALVAGE\"]/event[1]/choice/text"
 msgstr ""
 "Inspect the core.\n"
-"[[], []]"
+"[[], System Upgrade(Shields 1™)[]]"
 
 #: src-en/data/events_sector_ministry.xml:1481
 msgid ""
@@ -2561,7 +2561,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"QUEST_ZOLTAN_LANIUS_CORE_OBTAIN\"]/choice[@req=\"shields\"]/text"
 msgstr ""
 "Dismantle the core and use it to upgrade your shields.\n"
-"[]"
+"System Upgrade(Shields 1™)[]"
 
 #: src-en/data/events_sector_ministry.xml:1501
 msgid ""
@@ -2597,7 +2597,7 @@ msgstr ""
 "[[]] \n"
 "or [[]] \n"
 "or [[]] \n"
-"or Reward[]"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_sector_ministry.xml:1558
 msgid ""
@@ -2726,7 +2726,7 @@ msgstr ""
 "[[]] \n"
 "or [[]] \n"
 "or [[]] \n"
-"or Reward[]"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_sector_ministry.xml:1615
 msgid ""
@@ -2743,7 +2743,7 @@ msgstr ""
 "[[]] \n"
 "or [[]] \n"
 "or [[]] \n"
-"or Reward[]"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_sector_ministry.xml:1624
 msgid ""
@@ -3296,21 +3296,21 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"SECRET_WORD_ABADOTH_MV\"]/choice[@req=\"LIST_CREW_SLUG\"]/text"
 msgstr ""
 "(Slug Crew) Ask your Slug crewmember to scan for life forms.\n"
-"[[[]], Reward[], Reward[], [[]], Reward[], [[]]]"
+"[[[]], Reward Standard(M)[], Reward Standard(M)[], [[]], Reward Standard(M)[], [[]]]"
 
 #: src-en/data/events_sector_ministry.xml:1908
 msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"SECRET_WORD_ABADOTH_MV\"]/choice[@req=\"BLUELIST_CREW_SNAIL\"]/text"
 msgstr ""
 "(Telepathic Shell) Ask your Shell crewmember to scan for life forms.\n"
-"[[[]], Reward[], Reward[], [[]], Reward[], [[]]]"
+"[[[]], Reward Standard(M)[], Reward Standard(M)[], [[]], Reward Standard(M)[], [[]]]"
 
 #: src-en/data/events_sector_ministry.xml:1912
 msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"SECRET_WORD_ABADOTH_MV\"]/choice[3]/text"
 msgstr ""
 "Do a full system scan - though you're sure to lose some of your lead with the Rebels.\n"
-"[[[[]], Reward[], Reward[], [[]], Reward[], [[]]]]"
+"<!>Fleet Advance(1)[[[[]], Reward Standard(M)[], Reward Standard(M)[], [[]], Reward Standard(M)[], [[]]]]"
 
 #: src-en/data/events_sector_ministry.xml:1914
 msgid ""
@@ -3323,7 +3323,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"SECRET_WORD_ABADOTH_MV\"]/choice[3]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[]], Reward[], Reward[], [[]], Reward[], [[]]]"
+"[[[]], Reward Standard(M)[], Reward Standard(M)[], [[]], Reward Standard(M)[], [[]]]"
 
 #: src-en/data/events_sector_ministry.xml:1924
 msgid ""
@@ -3359,7 +3359,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"SECRET_WORD_ABADOTH_CONCLUSION_MV\"]/choice[@req=\"LIST_CREW_ENGI\"]/text"
 msgstr ""
 "(Engi Crew) Say ABADOTH.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_ministry.xml:1940
 msgid ""
@@ -3376,7 +3376,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"SECRET_WORD_ABADOTH_CONCLUSION_MV\"]/choice[@req=\"LIST_CREW_COGNITIVE\"]/text"
 msgstr ""
 "(Cognitive Crew) Say ABADOTH.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_ministry.xml:1947
 msgid ""
@@ -3415,7 +3415,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"SECRET_WORD_ABADOTH_CONCLUSION_MV\"]/choice[5]/text"
 msgstr ""
 "Say ABADOTH.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_ministry.xml:1965
 msgid ""
@@ -3460,8 +3460,8 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"NEBULA_ZOLTAN_STUDY\"]/choice[1]/text"
 msgstr ""
 "Participate in their study.\n"
-"Reward[] \n"
-"or Reward[] \n"
+"Reward ~ Only(L)[] \n"
+"or Reward ~ Only(L)[] \n"
 "or [[]]"
 
 #: src-en/data/events_sector_ministry.xml:1990
@@ -3495,7 +3495,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"NEBULA_ZOLTAN_STUDY\"]/choice[@req=\"medbay\"]/text"
 msgstr ""
 "(Adv. Medbay) Give them your medical records.\n"
-"Reward[]"
+"Gain a drone(Random), Reward Stuff(L)[]"
 
 #: src-en/data/events_sector_ministry.xml:2006
 msgid ""
@@ -3510,7 +3510,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"NEBULA_ZOLTAN_STUDY\"]/choice[@req=\"LIST_CREW_SHELL\"]/text"
 msgstr ""
 "(Shell Crew) Request an exchange with the Zoltan science team.\n"
-"Reward[]"
+"Gain a drone(Random), Reward Stuff(L)[]"
 
 #: src-en/data/events_sector_ministry.xml:2014
 msgid ""
@@ -3871,7 +3871,7 @@ msgid ""
 "data/events_sector_ministry.xml$//ship[@name=\"SHIP_OSMIAN_CRUISER\"]/destroyed/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[], [[[]], [[]], [[]], []]]"
+"Reward |(H), Gain a drone(Drone Shield Powerless), <#>Unlock Ship(Zoltan)[[], [[[]], [[]], [[]], []]]"
 
 #: src-en/data/events_sector_ministry.xml:2220
 msgid ""
@@ -3886,7 +3886,7 @@ msgid ""
 "data/events_sector_ministry.xml$//ship[@name=\"SHIP_OSMIAN_CRUISER\"]/deadCrew/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[], [[[]], [[]], [[]], []]]"
+"Reward |(H), Gain a drone(Drone Shield Powerless), <#>Unlock Ship(Zoltan)[[], [[[]], [[]], [[]], []]]"
 
 #: src-en/data/events_sector_ministry.xml:2229
 msgid "data/events_sector_ministry.xml$//event[@name=\"OSMIA_RAID_ESCAPE\"]/text"
@@ -3952,14 +3952,14 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"OSMIA_GOTAWAY\"]/choice[1]/text"
 msgstr ""
 "Continue...\n"
-"Reward[[], [[[]], [[]], [[]], []]]"
+"Reward |(H), Gain a drone(Drone Shield Powerless), <#>Unlock Ship(Zoltan)[[], [[[]], [[]], [[]], []]]"
 
 #: src-en/data/events_sector_ministry.xml:2264
 msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"OSMIA_GOTAWAY\"]/choice[@req=\"loc_evidence_os_escape_offer\"]/text"
 msgstr ""
 "Grab the coordinates of the terrorist ship's new location first.\n"
-"[Reward[[], [[[]], [[]], [[]], []]]]"
+"[Reward |(H), Gain a drone(Drone Shield Powerless), <#>Unlock Ship(Zoltan)[[], [[[]], [[]], [[]], []]]]"
 
 #: src-en/data/events_sector_ministry.xml:2266
 msgid ""
@@ -3975,7 +3975,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"OSMIA_GOTAWAY\"]/choice[@req=\"loc_evidence_os_escape_offer\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[], [[[]], [[]], [[]], []]]"
+"Reward |(H), Gain a drone(Drone Shield Powerless), <#>Unlock Ship(Zoltan)[[], [[[]], [[]], [[]], []]]"
 
 #: src-en/data/events_sector_ministry.xml:2276
 msgid "data/events_sector_ministry.xml$//event[@name=\"OSMIA_RAID_WIN\"]/text"
@@ -4433,7 +4433,7 @@ msgid ""
 "data/events_sector_ministry.xml$//ship[@name=\"SHIP_ZOLTAN_LAB\"]/destroyed/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[[Gain a crew(Zoltan Osmian)[]]], [[[Gain a crew(Zoltan Osmian)[]]]]], []]]"
+"<#>Unlock Ship(Osmia)[[[[[Gain a crew(Zoltan Osmian)[]]], Gain an augment(Zoltan Spawner)[[[Gain a crew(Zoltan Osmian)[]]]]], []]]"
 
 #: src-en/data/events_sector_ministry.xml:2471
 msgid ""
@@ -4448,7 +4448,7 @@ msgid ""
 "data/events_sector_ministry.xml$//ship[@name=\"SHIP_ZOLTAN_LAB\"]/deadCrew/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[[Gain a crew(Zoltan Osmian)[]]], [[[Gain a crew(Zoltan Osmian)[]]]]], []]]"
+"<#>Unlock Ship(Osmia)[[[[[Gain a crew(Zoltan Osmian)[]]], Gain an augment(Zoltan Spawner)[[[Gain a crew(Zoltan Osmian)[]]]]], []]]"
 
 #: src-en/data/events_sector_ministry.xml:2482
 msgid ""
@@ -4563,7 +4563,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"OSMIA_LAB_WIN\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[Gain a crew(Zoltan Osmian)[]]], [[[Gain a crew(Zoltan Osmian)[]]]]], []]"
+"[[[[Gain a crew(Zoltan Osmian)[]]], Gain an augment(Zoltan Spawner)[[[Gain a crew(Zoltan Osmian)[]]]]], []]"
 
 #: src-en/data/events_sector_ministry.xml:2544
 msgid ""
@@ -4582,7 +4582,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"OSMIA_LAB_WIN\"]/choice/event/choice[1]/text"
 msgstr ""
 "Assist the Osmians in moving the stasis pods.\n"
-"[[[Gain a crew(Zoltan Osmian)[]]], [[[Gain a crew(Zoltan Osmian)[]]]]]"
+"[[[Gain a crew(Zoltan Osmian)[]]], Gain an augment(Zoltan Spawner)[[[Gain a crew(Zoltan Osmian)[]]]]]"
 
 #: src-en/data/events_sector_ministry.xml:2548
 msgid ""
@@ -4607,7 +4607,7 @@ msgid ""
 "data/events_sector_ministry.xml$//event[@name=\"OSMIA_LAB_WIN\"]/choice/event/choice[1]/event/choice[@req=\"BLUELIST_CREW_STRONG\"]/text"
 msgstr ""
 "(Strong Crew) Haul some of the pods onto your ship.\n"
-"[[[Gain a crew(Zoltan Osmian)[]]]]"
+"Gain an augment(Zoltan Spawner)[[[Gain a crew(Zoltan Osmian)[]]]]"
 
 #: src-en/data/events_sector_ministry.xml:2556
 msgid ""

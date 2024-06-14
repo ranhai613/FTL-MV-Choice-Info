@@ -70,7 +70,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Continue...\n"
-"[[[[[]]], Reward, <!>Lose your crew(UNCLONABLE)[[]], [[[]]]]]"
+"[[[<#>Unlock Ship(Engi)[[]]], Reward Augment(H), <!>Lose your crew(UNCLONABLE)[[]], [[[]]]]]"
 
 #: src-en/data/events_sector_harmony.xml:86
 msgid "data/events_sector_harmony.xml$//event[@name=\"ENGI_GIFT\"]/choice[1]/text"
@@ -123,7 +123,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_SALVAGER\"]/choice[1]/text"
 msgstr ""
 "Hail the Lanius.\n"
-"[[Reward[] nor [] nor [Gain a crew(Engi)[], Reward[]]] nor [[]], [[]]]"
+"[[Reward |(M)[] or Gain a drone(Random)[] or [Gain a crew(Engi)[], Reward Standard(M)[]]] or [[]], [[]]]"
 
 #: src-en/data/events_sector_harmony.xml:107
 msgid ""
@@ -137,7 +137,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_SALVAGER\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Try to explain that there are Engi onboard.\n"
-"[Reward[] nor [] nor [Gain a crew(Engi)[], Reward[]]] \n"
+"[Reward |(M)[] or Gain a drone(Random)[] or [Gain a crew(Engi)[], Reward Standard(M)[]]] \n"
 "or [[]]"
 
 #: src-en/data/events_sector_harmony.xml:113
@@ -200,9 +200,9 @@ msgid ""
 "data/events_sector_harmony.xml$//eventList[@name=\"ENGI_SALVAGER_EXPLAIN\"]/event[1]/choice/text"
 msgstr ""
 "Hail the Engi.\n"
-"Reward[] \n"
-"or [] \n"
-"or [Gain a crew(Engi)[], Reward[]]"
+"Reward |(M)[] \n"
+"or Gain a drone(Random)[] \n"
+"or [Gain a crew(Engi)[], Reward Standard(M)[]]"
 
 #: src-en/data/events_sector_harmony.xml:149
 msgid ""
@@ -260,7 +260,7 @@ msgid ""
 "data/events_sector_harmony.xml$//eventList[@name=\"ENGI_SALVAGER_SAVE\"]/event[3]/choice[2]/text"
 msgstr ""
 "Let them explode and salvage the scrap.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_harmony.xml:178
 msgid ""
@@ -291,7 +291,7 @@ msgstr "\"Request granted. Repair drone dispatched.\""
 msgid "data/events_sector_harmony.xml$//event[@name=\"ENGI_AID\"]/choice[2]/text"
 msgstr ""
 "Fuel.\n"
-"Reward[]"
+"Reward { Only(M)[]"
 
 #: src-en/data/events_sector_harmony.xml:197
 msgid ""
@@ -302,7 +302,7 @@ msgstr "\"Request granted. Refueling drone dispatched.\""
 msgid "data/events_sector_harmony.xml$//event[@name=\"ENGI_AID\"]/choice[3]/text"
 msgstr ""
 "Ammunition.\n"
-"Reward[]"
+"Reward } Only(M)[]"
 
 #: src-en/data/events_sector_harmony.xml:204
 msgid ""
@@ -313,7 +313,7 @@ msgstr "\"Request granted. Payload drone dispatched.\""
 msgid "data/events_sector_harmony.xml$//event[@name=\"ENGI_AID\"]/choice[4]/text"
 msgstr ""
 "Map Data.\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_harmony.xml:211
 msgid ""
@@ -334,7 +334,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_FLEET_DELAY_MV\"]/choice[1]/text"
 msgstr ""
 "Booby trap the cache.\n"
-"[]"
+"-2}, Fleet Delay(2)[]"
 
 #: src-en/data/events_sector_harmony.xml:222
 msgid ""
@@ -348,7 +348,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_FLEET_DELAY_MV\"]/choice[2]/text"
 msgstr ""
 "Secure the cache.\n"
-"Reward[]"
+"Reward Drone(M)[]"
 
 #: src-en/data/events_sector_harmony.xml:232
 msgid ""
@@ -369,14 +369,14 @@ msgid ""
 msgstr ""
 "Explain that you're friendly.\n"
 "[] \n"
-"or Reward[]"
+"or Reward Standard(R)[]"
 
 #: src-en/data/events_sector_harmony.xml:246
 msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_SURRENDER_MV\"]/choice[2]/text"
 msgstr ""
 "Accept their offer of surrender.\n"
-"Reward[[]]"
+"Reward Standard(R)[[]]"
 
 #: src-en/data/events_sector_harmony.xml:248
 msgid ""
@@ -460,7 +460,7 @@ msgid ""
 "data/events_sector_harmony.xml$/FTL/event[@name=\"HARMONY_SEARCH_NORMAL_STANDING\"]/choice[@req=\"rep_comb_engi\"]/text"
 msgstr ""
 "Remind them that you are in good standing with the Harmony, and of the importance of your mission.\n"
-"Reward[[], []]"
+"Reward Standard(L)[[], []]"
 
 #: src-en/data/events_sector_harmony.xml:325
 msgid ""
@@ -488,7 +488,7 @@ msgid ""
 "data/events_sector_harmony.xml$/FTL/event[@name=\"HARMONY_SEARCH_NORMAL_STANDING\"]/choice[@req=\"engi_defender\"]/text"
 msgstr ""
 "(Engi Defender) This ship is cleared already. Our mission will benefit the Harmony.\n"
-"Reward[[], []]"
+"Reward Standard(L)[[], []]"
 
 #: src-en/data/events_sector_harmony.xml:340
 msgid ""
@@ -688,14 +688,14 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_ADVISORY\"]/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr ""
 "(Long-Ranged Scanners) Locate the Mantis with your scanners.\n"
-"[[[]], [[]], Reward[]]"
+"[[[]], [[]], Reward |(L)[]]"
 
 #: src-en/data/events_sector_harmony.xml:439
 msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_ADVISORY\"]/choice[@req=\"sensors\"]/text"
 msgstr ""
 "(Adv. Sensors) Locate the Mantis with your sensors.\n"
-"[[[]], [[]], Reward[]]"
+"[[[]], [[]], Reward |(L)[]]"
 
 #: src-en/data/events_sector_harmony.xml:443
 msgid ""
@@ -835,7 +835,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_LOCATE_MANTIS_AMBUSH\"]/choice[3]/text"
 msgstr ""
 "Just forward the information.\n"
-"Reward[]"
+"Reward |(L)[]"
 
 #: src-en/data/events_sector_harmony.xml:516
 msgid ""
@@ -849,7 +849,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DEFEAT_SUZERAIN_ELITE_ADVISORY\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[Reward[]]"
+"Gain a weapon(Giftlist Mantis)[Reward |(L)[]]"
 
 #: src-en/data/events_sector_harmony.xml:521
 msgid ""
@@ -863,7 +863,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DEFEAT_SUZERAIN_ELITE_ADVISORY\"]/choice/event/choice/text"
 msgstr ""
 "Forward the rest of the information to the Harmony.\n"
-"Reward[]"
+"Reward |(L)[]"
 
 #: src-en/data/events_sector_harmony.xml:532
 msgid "data/events_sector_harmony.xml$//event[@name=\"ENGI_IMPLANT_UNION\"]/text"
@@ -1117,7 +1117,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_SEX\"]/choice[@req=\"LIST_CREW_ENGI\"]/text"
 msgstr ""
 "(Engi Crew) Have your Engi crewmember hail the vessel and assess the damage.\n"
-"[Reward[]]"
+"[Reward Stuff(M)[]]"
 
 #: src-en/data/events_sector_harmony.xml:661
 msgid ""
@@ -1134,7 +1134,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_SEX\"]/choice[@req=\"LIST_CREW_ENGI\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Stuff(M)[]"
 
 #: src-en/data/events_sector_harmony.xml:665
 msgid ""
@@ -1168,8 +1168,8 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_DECONSTRUCTOR_JUNKYARD\"]/choice[1]/text"
 msgstr ""
 "Explore the pile of metallic debris.\n"
-"Reward[] \n"
-"or Reward[] \n"
+"Reward Standard No Item(M), Gain a weapon(Giftlist Rusty)[] \n"
+"or Reward Standard(H), Gain a weapon(Giftlist Rusty)[] \n"
 "or [[]] \n"
 "or [[[[]]], []]"
 
@@ -1178,7 +1178,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_DECONSTRUCTOR_JUNKYARD\"]/choice[2]/text"
 msgstr ""
 "Explore the mass between the fields.\n"
-"[Reward[Gain a crew(Engi)[], [], []], [[[[]]], []], [[[]]], []]"
+"[Reward Standard No Item(M)[Gain a crew(Engi)[], Gain a drone(Giftlist Crew Drones)[], Gain a drone(Giftlist Combat Drones)[]], [[[[]]], []], [[[]]], []]"
 
 #: src-en/data/events_sector_harmony.xml:694
 msgid ""
@@ -1195,7 +1195,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_DECONSTRUCTOR_JUNKYARD\"]/choice[2]/event/choice[@req=\"LIST_CREW_HARMONY\"]/text"
 msgstr ""
 "(Harmony Crew) \"Assistance = required.\"\n"
-"Reward[Gain a crew(Engi)[], [], []]"
+"Reward Standard No Item(M)[Gain a crew(Engi)[], Gain a drone(Giftlist Crew Drones)[], Gain a drone(Giftlist Combat Drones)[]]"
 
 #: src-en/data/events_sector_harmony.xml:699
 msgid ""
@@ -1224,7 +1224,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_DECONSTRUCTOR_JUNKYARD\"]/choice[2]/event/choice[@req=\"LIST_CREW_HARMONY\"]/event/choice[2]/text"
 msgstr ""
 "Request a crew drone.\n"
-"[]"
+"Gain a drone(Giftlist Crew Drones)[]"
 
 #: src-en/data/events_sector_harmony.xml:711
 msgid ""
@@ -1238,7 +1238,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_DECONSTRUCTOR_JUNKYARD\"]/choice[2]/event/choice[@req=\"LIST_CREW_HARMONY\"]/event/choice[3]/text"
 msgstr ""
 "Request a combat drone.\n"
-"[]"
+"Gain a drone(Giftlist Combat Drones)[]"
 
 #: src-en/data/events_sector_harmony.xml:718
 msgid ""
@@ -1323,8 +1323,8 @@ msgstr ""
 "Explore the other debris field.\n"
 "[] \n"
 "or [] \n"
-"or Reward[] \n"
-"or Reward[] \n"
+"or Reward } Only(M)[] \n"
+"or Reward Stuff(M)[] \n"
 "or [Gain a crew(Lanius)[], []] \n"
 "or [Gain a crew(List Crew Vagabond Noalpha)[], []] \n"
 "or [Gain a crew(Rock Outcast)[], []]"
@@ -1573,7 +1573,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"JUNKYARD_HAIL_SWARM\"]/choice[2]/text"
 msgstr ""
 "Request a crew drone.\n"
-"[]"
+"Gain a drone(Giftlist Crew Drones)[]"
 
 #: src-en/data/events_sector_harmony.xml:893
 msgid ""
@@ -1587,7 +1587,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"JUNKYARD_HAIL_SWARM\"]/choice[3]/text"
 msgstr ""
 "Request a combat drone.\n"
-"[]"
+"Gain a drone(Giftlist Combat Drones)[]"
 
 #: src-en/data/events_sector_harmony.xml:900
 msgid ""
@@ -1608,7 +1608,7 @@ msgstr ""
 msgid "data/events_sector_harmony.xml$//event[@name=\"ENGI_VIRUS\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[]], [[[]]], [[[[]]]], [Reward[[]]], [[[[]]]], [[[[]]]], [[[]]], Reward[[]], <!>Lose your crew(UNCLONABLE)[[]], Reward[[]], Reward[[]]]"
+"[[[]], [[[]]], [System Upgrade(Reactor 1™)[Gain an augment(Random)[[]]]], [Reward Standard(L), Gain an augment(Random)[[]]], [System Upgrade(Reactor 1™)[Gain an augment(Random)[[]]]], [System Upgrade(Reactor 1™)[Gain an augment(Random)[[]]]], [Gain an augment(Random)[[]]], Reward ~ Only(M), Gain an augment(Random)[[]], <!>Lose your crew(UNCLONABLE)[[]], Reward ~ Only(M), Gain an augment(Random)[[]], Reward ~ Only(M), Gain an augment(Random)[[]]]"
 
 #: src-en/data/events_sector_harmony.xml:911
 msgid ""
@@ -1663,7 +1663,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_VIRUS\"]/choice/event/choice[@req=\"unique_turzil\"]/text"
 msgstr ""
 "(Turzil) Negotiate with the virus.\n"
-"[[[[]]]]"
+"[System Upgrade(Reactor 1™)[Gain an augment(Random)[[]]]]"
 
 #: src-en/data/events_sector_harmony.xml:939
 msgid ""
@@ -1677,7 +1677,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_VIRUS\"]/choice/event/choice[@req=\"unique_turzil\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[]]]"
+"System Upgrade(Reactor 1™)[Gain an augment(Random)[[]]]"
 
 #: src-en/data/events_sector_harmony.xml:943
 msgid ""
@@ -1693,7 +1693,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_VIRUS\"]/choice/event/choice[@req=\"unique_turzil\"]/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"Gain an augment(Random)[[]]"
 
 #: src-en/data/events_sector_harmony.xml:949
 msgid ""
@@ -1716,7 +1716,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "(Hacking) Isolate and quarantine the virus.\n"
-"[Reward[[]]]"
+"[Reward Standard(L), Gain an augment(Random)[[]]]"
 
 #: src-en/data/events_sector_harmony.xml:964
 msgid ""
@@ -1734,7 +1734,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[]]"
+"Reward Standard(L), Gain an augment(Random)[[]]"
 
 #: src-en/data/events_sector_harmony.xml:968
 msgid ""
@@ -1758,7 +1758,7 @@ msgid ""
 " and @lvl=\"2\"]/text"
 msgstr ""
 "(Upg. Hacking) Reprogram the virus.\n"
-"[[[[]]]]"
+"[System Upgrade(Reactor 1™)[Gain an augment(Random)[[]]]]"
 
 #: src-en/data/events_sector_harmony.xml:982
 msgid ""
@@ -1774,7 +1774,7 @@ msgid ""
 " and @lvl=\"2\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[]]]"
+"System Upgrade(Reactor 1™)[Gain an augment(Random)[[]]]"
 
 #: src-en/data/events_sector_harmony.xml:986
 msgid ""
@@ -1791,7 +1791,7 @@ msgid ""
 " and @lvl=\"2\"]/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"Gain an augment(Random)[[]]"
 
 #: src-en/data/events_sector_harmony.xml:992
 msgid ""
@@ -1815,7 +1815,7 @@ msgid ""
 " and @lvl=\"3\"]/text"
 msgstr ""
 "(Adv. Hacking) Reprogram the virus.\n"
-"[[[[]]]]"
+"[System Upgrade(Reactor 1™)[Gain an augment(Random)[[]]]]"
 
 #: src-en/data/events_sector_harmony.xml:1007
 msgid ""
@@ -1831,7 +1831,7 @@ msgid ""
 " and @lvl=\"3\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[]]]"
+"System Upgrade(Reactor 1™)[Gain an augment(Random)[[]]]"
 
 #: src-en/data/events_sector_harmony.xml:1011
 msgid ""
@@ -1848,7 +1848,7 @@ msgid ""
 " and @lvl=\"3\"]/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"Gain an augment(Random)[[]]"
 
 #: src-en/data/events_sector_harmony.xml:1017
 msgid ""
@@ -1871,7 +1871,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_VIRUS\"]/choice/event/choice[@req=\"ANTI_VIRUS\"]/text"
 msgstr ""
 "(Anti-Virus) Purge the virus.\n"
-"[[[]]]"
+"[Gain an augment(Random)[[]]]"
 
 #: src-en/data/events_sector_harmony.xml:1032
 msgid ""
@@ -1885,7 +1885,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_VIRUS\"]/choice/event/choice[@req=\"ANTI_VIRUS\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"Gain an augment(Random)[[]]"
 
 #: src-en/data/events_sector_harmony.xml:1036
 msgid ""
@@ -1906,7 +1906,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_VIRUS\"]/choice/event/choice[@req=\"LIST_CREW_LANIUS\"]/text"
 msgstr ""
 "(Lanius Crew) Your Lanius crewmember gestures frantically.\n"
-"Reward[[]]"
+"Reward ~ Only(M), Gain an augment(Random)[[]]"
 
 #: src-en/data/events_sector_harmony.xml:1049
 msgid ""
@@ -1959,7 +1959,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_VIRUS\"]/choice/event/choice[@req=\"engi_defender\"]/text"
 msgstr ""
 "(Engi Defender) Have your Defender crewmember negotiate with the Engi ship.\n"
-"Reward[[]]"
+"Reward ~ Only(M), Gain an augment(Random)[[]]"
 
 #: src-en/data/events_sector_harmony.xml:1076
 msgid ""
@@ -1983,7 +1983,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_VIRUS\"]/choice/event/choice[@req=\"LIST_CREW_COGNITIVE_ALL\"]/text"
 msgstr ""
 "(Cognitive Crew) Have your Cognitive negotiate with the virus.\n"
-"Reward[[]]"
+"Reward ~ Only(M), Gain an augment(Random)[[]]"
 
 #: src-en/data/events_sector_harmony.xml:1088
 msgid ""
@@ -2158,7 +2158,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Try to reprogram one of the Engi to serve you.\n"
-"Reward, <!>Lose your crew(clonable)[]"
+"Reward Standard(M), <!>Lose your crew(clonable)[]"
 
 #: src-en/data/events_sector_harmony.xml:1174
 msgid ""
@@ -2193,7 +2193,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DEAD_CREW_ENGI_COMPLEX\"]/choice[3]/text"
 msgstr ""
 "Ignore the tubes and scrap the station.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_sector_harmony.xml:1189
 msgid ""
@@ -2207,7 +2207,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DEAD_CREW_ENGI_COMPLEX\"]/choice[@req=\"LIST_CREW_ENGI\"]/text"
 msgstr ""
 "(Engi Crew) Reprogram one of the Engi to serve you.\n"
-"Reward, Gain a crew(Engi)[]"
+"Reward Stuff(M), Gain a crew(Engi)[]"
 
 #: src-en/data/events_sector_harmony.xml:1196
 msgid ""
@@ -2223,7 +2223,7 @@ msgid ""
 " and not(@lvl)]/text"
 msgstr ""
 "(Hacking) Reprogram one of the Engi to serve you.\n"
-"Reward, Gain a crew(Engi)[]"
+"Reward Stuff(M), Gain a crew(Engi)[]"
 
 #: src-en/data/events_sector_harmony.xml:1204
 msgid ""
@@ -2240,7 +2240,7 @@ msgid ""
 " and @lvl=\"3\"]/text"
 msgstr ""
 "(Adv. Hacking) Reprogram one of the Engi to serve you.\n"
-"Reward, Gain a crew(Engi Defender)[]"
+"Reward Stuff(M), Gain a crew(Engi Defender)[]"
 
 #: src-en/data/events_sector_harmony.xml:1212
 msgid ""
@@ -2256,7 +2256,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DEAD_CREW_ENGI_COMPLEX\"]/choice[@req=\"LIST_CREW_ANCIENT\"]/text"
 msgstr ""
 "(Obelisk Crew) Your Obelisk knows how to manufacture Engi.\n"
-"Reward, Gain a crew(Engi Defender)[]"
+"Reward Stuff(M), Gain a crew(Engi Defender)[]"
 
 #: src-en/data/events_sector_harmony.xml:1220
 msgid ""
@@ -2279,7 +2279,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_SALVAGE\"]/choice[1]/text"
 msgstr ""
 "Hail them.\n"
-"[[[[[[[[]]], [[]]]], [[[]]], [[]], [] nor [[[]], [[[]]]]]], [[], []]]"
+"[4{ 50~ 5} 3|, <!>Fleet Advance(1)[[-4{ -50~ -5} -3|[[[[[]]], [[]]]], [[[]]], -2{ -25~ -2} -2|[[]], [] or [[[]], [[[]]]]]], [[], []]]"
 
 #: src-en/data/events_sector_harmony.xml:1248
 msgid ""
@@ -2294,7 +2294,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_SALVAGE\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Agree, knowing it will take a lot of time.\n"
-"[[[[[[[]]], [[]]]], [[[]]], [[]], [] nor [[[]], [[[]]]]]]"
+"4{ 50~ 5} 3|, <!>Fleet Advance(1)[[-4{ -50~ -5} -3|[[[[[]]], [[]]]], [[[]]], -2{ -25~ -2} -2|[[]], [] or [[[]], [[[]]]]]]"
 
 #: src-en/data/events_sector_harmony.xml:1252
 msgid ""
@@ -2308,7 +2308,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_SALVAGE\"]/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[[[]]], [[]]]], [[[]]], [[]], [] nor [[[]], [[[]]]]]"
+"[-4{ -50~ -5} -3|[[[[[]]], [[]]]], [[[]]], -2{ -25~ -2} -2|[[]], [] or [[[]], [[[]]]]]"
 
 #: src-en/data/events_sector_harmony.xml:1263
 msgid ""
@@ -2322,7 +2322,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_SALVAGE\"]/choice[1]/event/choice[1]/event/choice/event/choice[1]/text"
 msgstr ""
 "Give the supplies back to the Engi.\n"
-"[[[[[]]], [[]]]]"
+"-4{ -50~ -5} -3|[[[[[]]], [[]]]]"
 
 #: src-en/data/events_sector_harmony.xml:1267
 msgid ""
@@ -2412,7 +2412,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_SALVAGE\"]/choice[1]/event/choice[1]/event/choice/event/choice[@req=\"LIST_CREW_HARMONY\"]/text"
 msgstr ""
 "(Harmony Crew) Request you split the supplies.\n"
-"[[]]"
+"-2{ -25~ -2} -2|[[]]"
 
 #: src-en/data/events_sector_harmony.xml:1317
 msgid ""
@@ -2469,7 +2469,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_SALVAGE\"]/choice[2]/text"
 msgstr ""
 "Salvage some of the wreckage.\n"
-"Reward[[]]"
+"Reward Standard(L)[[]]"
 
 #: src-en/data/events_sector_harmony.xml:1357
 msgid ""
@@ -2524,7 +2524,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_HARMONY_SALVAGE_HELP_DESTROY\"]/choice/text"
 msgstr ""
 "Collect some more of the wreckage.\n"
-"Reward[]"
+"Reward Stuff(L)[]"
 
 #: src-en/data/events_sector_harmony.xml:1387
 msgid ""
@@ -2608,7 +2608,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_HARMONY_HACKER_WIN\"]/choice/text"
 msgstr ""
 "Contact the Engi.\n"
-"Reward[]"
+"Reward | Only(M)[]"
 
 #: src-en/data/events_sector_harmony.xml:1442
 msgid ""
@@ -2632,7 +2632,7 @@ msgid ""
 msgstr ""
 "Board the station.\n"
 "[] \n"
-"or [<!>Lose your crew(clonable)[Gain a crew(Engi), Reward[]] nor Gain a crew(Engi), Reward[], <!>Lose your crew(clonable), Reward[] nor Reward[], Reward[]]"
+"or [<!>Lose your crew(clonable)[Gain a crew(Engi), Reward ~ Only(L)[]] or Gain a crew(Engi), Reward ~ Only(L)[], <!>Lose your crew(clonable), Reward ~ Only(L)[] or Reward Drone(L)[], Reward ~ Only(L)[]]"
 
 #: src-en/data/events_sector_harmony.xml:1457
 msgid ""
@@ -2647,7 +2647,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_REACTOR\"]/choice[@req=\"DRONE_CONTROL_BOARDING\"]/text"
 msgstr ""
 "(Boarding Drone) Send the boarding drone.\n"
-"[Gain a crew(Engi), Reward[], Gain a crew(Engi), Reward[], Reward[], Reward[], []]"
+"[Gain a crew(Engi), Reward ~ Only(L)[], Gain a crew(Engi), Reward ~ Only(L)[], Reward Drone(L)[], Reward Drone(L)[], []]"
 
 #: src-en/data/events_sector_harmony.xml:1465
 msgid ""
@@ -2682,14 +2682,14 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_REACTOR\"]/choice[@req=\"sensors\"]/text"
 msgstr ""
 "(Upg. Sensors) Run another scan.\n"
-"[Gain a crew(Engi), Reward[], Gain a crew(Engi), Reward[], Reward[], Reward[], []]"
+"[Gain a crew(Engi), Reward ~ Only(L)[], Gain a crew(Engi), Reward ~ Only(L)[], Reward Drone(L)[], Reward Drone(L)[], []]"
 
 #: src-en/data/events_sector_harmony.xml:1483
 msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_REACTOR\"]/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr ""
 "(Long-Ranged Scanners) Run another scan.\n"
-"[Gain a crew(Engi), Reward[], Gain a crew(Engi), Reward[], Reward[], Reward[], []]"
+"[Gain a crew(Engi), Reward ~ Only(L)[], Gain a crew(Engi), Reward ~ Only(L)[], Reward Drone(L)[], Reward Drone(L)[], []]"
 
 #: src-en/data/events_sector_harmony.xml:1489
 msgid ""
@@ -2711,23 +2711,23 @@ msgid ""
 "data/events_sector_harmony.xml$//eventList[@name=\"DISTRESS_ENGI_REACTOR_LIST1\"]/event[2]/choice[1]/text"
 msgstr ""
 "Save the Engi!\n"
-"<!>Lose your crew(clonable)[Gain a crew(Engi), Reward[]] \n"
-"or Gain a crew(Engi), Reward[]"
+"<!>Lose your crew(clonable)[Gain a crew(Engi), Reward ~ Only(L)[]] \n"
+"or Gain a crew(Engi), Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_harmony.xml:1498
 msgid ""
 "data/events_sector_harmony.xml$//eventList[@name=\"DISTRESS_ENGI_REACTOR_LIST1\"]/event[2]/choice[2]/text"
 msgstr ""
 "Save the drone schematic.\n"
-"<!>Lose your crew(clonable), Reward[] \n"
-"or Reward[]"
+"<!>Lose your crew(clonable), Reward ~ Only(L)[] \n"
+"or Reward Drone(L)[]"
 
 #: src-en/data/events_sector_harmony.xml:1502
 msgid ""
 "data/events_sector_harmony.xml$//eventList[@name=\"DISTRESS_ENGI_REACTOR_LIST1\"]/event[2]/choice[3]/text"
 msgstr ""
 "Save yourselves!\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_harmony.xml:1504
 msgid ""
@@ -2757,7 +2757,7 @@ msgid ""
 "data/events_sector_harmony.xml$//eventList[@name=\"DISTRESS_ENGI_REACTOR_ENGI\"]/event[1]/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a crew(Engi), Reward[]"
+"Gain a crew(Engi), Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_harmony.xml:1520
 msgid ""
@@ -2808,7 +2808,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_REACTOR_SCAN\"]/choice[1]/text"
 msgstr ""
 "Save the Engi!\n"
-"Gain a crew(Engi), Reward[]"
+"Gain a crew(Engi), Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_harmony.xml:1551
 msgid ""
@@ -2823,7 +2823,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_REACTOR_SCAN\"]/choice[2]/text"
 msgstr ""
 "(Boarding Drone) Save the Engi!\n"
-"Gain a crew(Engi), Reward[]"
+"Gain a crew(Engi), Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_harmony.xml:1559
 msgid ""
@@ -2838,7 +2838,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_REACTOR_SCAN\"]/choice[3]/text"
 msgstr ""
 "Save the Drone Schematic!\n"
-"Reward[]"
+"Reward Drone(L)[]"
 
 #: src-en/data/events_sector_harmony.xml:1567
 msgid ""
@@ -2853,7 +2853,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_REACTOR_SCAN\"]/choice[4]/text"
 msgstr ""
 "(Boarding Drone) Save the Drone Schematic!\n"
-"Reward[]"
+"Reward Drone(L)[]"
 
 #: src-en/data/events_sector_harmony.xml:1574
 msgid ""
@@ -2898,16 +2898,16 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_REBEL_RESULT\"]/choice[1]/text"
 msgstr ""
 "Give them 25 scrap.\n"
-"[] \n"
-"or [] \n"
-"or []"
+"-25~[] \n"
+"or Gain a weapon(Bomb Heal), -25~[] \n"
+"or Gain a drone(Random), -25~[]"
 
 #: src-en/data/events_sector_harmony.xml:1600
 msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_REBEL_RESULT\"]/choice[2]/text"
 msgstr ""
 "Give them 40 scrap, 2 missiles and 2 fuel.\n"
-"[[]]"
+"-40~ -2{ -2}, Gain an augment(Nanobot Defense System)[[]]"
 
 #: src-en/data/events_sector_harmony.xml:1604
 msgid ""
@@ -2972,7 +2972,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_PARTY\"]/choice[1]/text"
 msgstr ""
 "Hail the Engi to see what's wrong.\n"
-"[Reward[], Reward[], Reward[], Reward[], [[]] nor []]"
+"[Reward Stuff(M)[], Reward ~ Only(M)[], Reward ~ Only(M)[], Reward Stuff(H)[], [[]] or []]"
 
 #: src-en/data/events_sector_harmony.xml:1653
 msgid ""
@@ -2988,7 +2988,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_PARTY\"]/choice[1]/event/choice[@req=\"BLUELIST_ION\"]/text"
 msgstr ""
 "(Ion Weapon) Zap the Engi, it's close enough.\n"
-"Reward[]"
+"Reward Stuff(M)[]"
 
 #: src-en/data/events_sector_harmony.xml:1657
 msgid ""
@@ -3004,7 +3004,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_PARTY\"]/choice[1]/event/choice[@req=\"BLUELIST_PHEROMONES\"]/text"
 msgstr ""
 "(Mantis Pheromones) Disperse the pheromones over their ship.\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_harmony.xml:1664
 msgid ""
@@ -3020,7 +3020,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_PARTY\"]/choice[1]/event/choice[@req=\"LIST_CREW_ORCHID\"]/text"
 msgstr ""
 "(Orchid Crew) Have your Orchid work some magic on them.\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_harmony.xml:1671
 msgid ""
@@ -3035,7 +3035,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_PARTY\"]/choice[1]/event/choice[@req=\"LIST_BUTLER\"]/text"
 msgstr ""
 "(Butler Drone) Turn it up to eleven.\n"
-"Reward[]"
+"Reward Stuff(H)[]"
 
 #: src-en/data/events_sector_harmony.xml:1678
 msgid ""
@@ -3184,7 +3184,7 @@ msgid ""
 "data/events_sector_harmony.xml$//eventList[@name=\"DISTRESS_ENGI_DANGER_SAVE\"]/event[3]/choice[1]/text"
 msgstr ""
 "Request fuel.\n"
-"Reward[[]]"
+"Reward {(H)[[]]"
 
 #: src-en/data/events_sector_harmony.xml:1762
 msgid ""
@@ -3203,7 +3203,7 @@ msgid ""
 "data/events_sector_harmony.xml$//eventList[@name=\"DISTRESS_ENGI_DANGER_SAVE\"]/event[3]/choice[2]/text"
 msgstr ""
 "Request weapon.\n"
-"Reward[[]]"
+"Reward Weapon(L)[[]]"
 
 #: src-en/data/events_sector_harmony.xml:1773
 msgid ""
@@ -3222,7 +3222,7 @@ msgid ""
 "data/events_sector_harmony.xml$//eventList[@name=\"DISTRESS_ENGI_DANGER_SAVE\"]/event[3]/choice[3]/text"
 msgstr ""
 "Request drone.\n"
-"Reward[[]]"
+"Reward Drone(L)[[]]"
 
 #: src-en/data/events_sector_harmony.xml:1784
 msgid ""
@@ -3241,7 +3241,7 @@ msgid ""
 "data/events_sector_harmony.xml$//eventList[@name=\"DISTRESS_ENGI_DANGER_SAVE\"]/event[3]/choice[@req=\"LIST_CREW_HARMONY\"]/text"
 msgstr ""
 "(Harmony Crew) \"Threat unresolved. Current mission imperative: Protocol 52.34.\"\n"
-"Reward[[]]"
+"Reward Weapon(L)[[]]"
 
 #: src-en/data/events_sector_harmony.xml:1796
 msgid ""
@@ -3544,7 +3544,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"QUEST_ENGI_CRIME\"]/choice[1]/text"
 msgstr ""
 "Hail them to ask about the wreck.\n"
-"[[[], [], [], [], []] nor [[], [], [], [], []] nor [[], [], [], [], []] nor [[], [], [], [], []], [[], []]]"
+"[[[], [], [], [], []] or [[], [], [], [], []] or [[], [], [], [], []] or [[], [], [], [], []], [[], []]]"
 
 #: src-en/data/events_sector_harmony.xml:1969
 msgid ""
@@ -4573,9 +4573,9 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Continue...\n"
-"[[[]], [Gain a crew(Engi)[], Gain a crew(Engi Defender)[], []], [[], []]] \n"
-"or [[[[]]], [[[[]]], [], []], Reward[], [[], []]] \n"
-"or [[[]], Reward[[]], []]"
+"[[[]], [Gain a crew(Engi), -60<~<-50[], Gain a crew(Engi Defender), -110<~<-95[], []], [[], []]] \n"
+"or [[[[]]], [[[[]]], [], []], Reward | Only(M)[], [[], []]] \n"
+"or [[[]], Reward Standard(M)[[]], []]"
 
 #: src-en/data/events_sector_harmony.xml:2546
 msgid ""
@@ -4583,8 +4583,8 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "Continue...\n"
-"[[[[]]], [[[[]]], [], []], Reward[], [[], []]] \n"
-"or [[[]], [Gain a crew(Engi)[], Gain a crew(Engi Defender)[], []], [[], []]]"
+"[[[[]]], [[[[]]], [], []], Reward | Only(M)[], [[], []]] \n"
+"or [[[]], [Gain a crew(Engi), -60<~<-50[], Gain a crew(Engi Defender), -110<~<-95[], []], [[], []]]"
 
 #: src-en/data/events_sector_harmony.xml:2554
 msgid ""
@@ -4609,7 +4609,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Continue...\n"
-"[[[]], Reward[[]], []]"
+"[[[]], Reward Standard(M)[[]], []]"
 
 #: src-en/data/events_sector_harmony.xml:2564
 msgid ""
@@ -4617,8 +4617,8 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "Continue...\n"
-"[[[[]]], [[[[]]], [], []], Reward[], [[], []]] \n"
-"or [[[]], [Gain a crew(Engi)[], Gain a crew(Engi Defender)[], []], [[], []]]"
+"[[[[]]], [[[[]]], [], []], Reward | Only(M)[], [[], []]] \n"
+"or [[[]], [Gain a crew(Engi), -60<~<-50[], Gain a crew(Engi Defender), -110<~<-95[], []], [[], []]]"
 
 #: src-en/data/events_sector_harmony.xml:2581
 msgid ""
@@ -4703,7 +4703,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"HARMONY_LINK_FIGHTENGI\"]/choice[@req=\"LIST_CREW_HARMONY\"]/text"
 msgstr ""
 "(Harmony Crew) Request supplies.\n"
-"Reward[]"
+"Reward | Only(M)[]"
 
 #: src-en/data/events_sector_harmony.xml:2622
 msgid ""
@@ -4768,7 +4768,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"HARMONY_LINK_FIGHTMANTIS\"]/choice[2]/text"
 msgstr ""
 "Ask if they have slaves to offer.\n"
-"[Gain a crew(Engi)[], Gain a crew(Engi Defender)[], []]"
+"[Gain a crew(Engi), -60<~<-50[], Gain a crew(Engi Defender), -110<~<-95[], []]"
 
 #: src-en/data/events_sector_harmony.xml:2659
 msgid ""
@@ -4782,7 +4782,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"HARMONY_LINK_FIGHTMANTIS\"]/choice[2]/event/choice[1]/text"
 msgstr ""
 "Buy a regular Engi.\n"
-"Gain a crew(Engi)[]"
+"Gain a crew(Engi), -60<~<-50[]"
 
 #: src-en/data/events_sector_harmony.xml:2663
 msgid ""
@@ -4794,7 +4794,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"HARMONY_LINK_FIGHTMANTIS\"]/choice[2]/event/choice[2]/text"
 msgstr ""
 "Buy an Engi Defender.\n"
-"Gain a crew(Engi Defender)[]"
+"Gain a crew(Engi Defender), -110<~<-95[]"
 
 #: src-en/data/events_sector_harmony.xml:2673
 msgid ""
@@ -4901,7 +4901,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"HARMONY_LINK_ANCIENT\"]/choice[2]/text"
 msgstr ""
 "Attempt to salvage without alerting the ship.\n"
-"Reward[[]]"
+"Reward Standard(M)[[]]"
 
 #: src-en/data/events_sector_harmony.xml:2749
 msgid ""
@@ -5051,7 +5051,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"TURZIL_PIRATE_SURRENDER\"]/choice[1]/text"
 msgstr ""
 "Accept their surrender.\n"
-"[[Gain a crew(Unique Turzil), Reward[], []]]"
+"[[Gain a crew(Unique Turzil), Reward ~ Only(L)[], []]]"
 
 #: src-en/data/events_sector_harmony.xml:2839
 msgid ""
@@ -5065,7 +5065,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"TURZIL_PIRATE_SURRENDER\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[Gain a crew(Unique Turzil), Reward[], []]"
+"[Gain a crew(Unique Turzil), Reward ~ Only(L)[], []]"
 
 #: src-en/data/events_sector_harmony.xml:2844
 msgid ""
@@ -5079,7 +5079,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"TURZIL_PIRATE_SURRENDER\"]/choice[1]/event/choice/event/choice[1]/text"
 msgstr ""
 "Accept.\n"
-"Gain a crew(Unique Turzil), Reward[]"
+"Gain a crew(Unique Turzil), Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_harmony.xml:2848
 msgid ""
@@ -5119,7 +5119,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"TURZIL_PIRATE_DEADCREW\"]/choice/text"
 msgstr ""
 "Open the cargo.\n"
-"[[Gain a crew(Unique Turzil), Reward[], []]]"
+"[[Gain a crew(Unique Turzil), Reward ~ Only(L)[], []]]"
 
 #: src-en/data/events_sector_harmony.xml:2875
 msgid ""
@@ -5135,7 +5135,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"TURZIL_PIRATE_DEADCREW\"]/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[Gain a crew(Unique Turzil), Reward[], []]"
+"[Gain a crew(Unique Turzil), Reward ~ Only(L)[], []]"
 
 #: src-en/data/events_sector_harmony.xml:2880
 msgid ""
@@ -5149,7 +5149,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"TURZIL_PIRATE_DEADCREW\"]/choice/event/choice/event/choice[1]/text"
 msgstr ""
 "Accept.\n"
-"Gain a crew(Unique Turzil), Reward[]"
+"Gain a crew(Unique Turzil), Reward ~ Only(L)[]"
 
 #: src-en/data/events_sector_harmony.xml:2884
 msgid ""
@@ -5174,7 +5174,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"HARMONY_FUGITIVE\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[]]], Reward, <!>Lose your crew(UNCLONABLE)[[]], [[[]]]]"
+"[[<#>Unlock Ship(Engi)[[]]], Reward Augment(H), <!>Lose your crew(UNCLONABLE)[[]], [[[]]]]"
 
 #: src-en/data/events_sector_harmony.xml:2910
 msgid ""
@@ -5189,7 +5189,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"HARMONY_FUGITIVE\"]/choice/event/choice[@req=\"unique_tully\"]/text"
 msgstr ""
 "(Tully) Assert your diplomatic status.\n"
-"[[[]]]"
+"[<#>Unlock Ship(Engi)[[]]]"
 
 #: src-en/data/events_sector_harmony.xml:2914
 msgid ""
@@ -5208,7 +5208,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"HARMONY_FUGITIVE\"]/choice/event/choice[@req=\"unique_tully\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"<#>Unlock Ship(Engi)[[]]"
 
 #: src-en/data/events_sector_harmony.xml:2924
 msgid ""
@@ -5234,7 +5234,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"HARMONY_FUGITIVE\"]/choice/event/choice[2]/text"
 msgstr ""
 "Hand over the fugitive.\n"
-"Reward, <!>Lose your crew(UNCLONABLE)[[]]"
+"Reward Augment(H), <!>Lose your crew(UNCLONABLE)[[]]"
 
 #: src-en/data/events_sector_harmony.xml:2946
 msgid ""
@@ -5296,7 +5296,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"HARMONY_FUGITIVE_SURRENDER\"]/choice[@req=\"unique_turzil\"]/text"
 msgstr ""
 "Give up the fugitive.\n"
-"Reward, <!>Lose your crew(UNCLONABLE)[]"
+"Reward Stuff(M), <!>Lose your crew(UNCLONABLE)[]"
 
 #: src-en/data/events_sector_harmony.xml:2981
 msgid ""
@@ -5340,7 +5340,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"<#>Unlock Ship(Engi)[]"
 
 #: src-en/data/events_sector_harmony.xml:3006
 msgid ""

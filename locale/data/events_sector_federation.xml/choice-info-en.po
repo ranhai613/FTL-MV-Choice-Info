@@ -38,21 +38,21 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_SUPPLY\"]/choice[1]/text"
 msgstr ""
 "Purchase fuel.\n"
-"[]"
+"5<{<7 -20<~<-10[]"
 
 #: src-en/data/events_sector_federation.xml:69
 msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_SUPPLY\"]/choice[2]/text"
 msgstr ""
 "Purchase ammunition.\n"
-"[]"
+"8<}<10 -40<~<-25[]"
 
 #: src-en/data/events_sector_federation.xml:78
 msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_SUPPLY\"]/choice[3]/text"
 msgstr ""
 "Purchase a weapon.\n"
-"[]"
+"-60<~<-40, Gain a weapon(Random)[]"
 
 #: src-en/data/events_sector_federation.xml:87
 msgid ""
@@ -184,7 +184,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_RANT\"]/choice[1]/text"
 msgstr ""
 "Absolutely.\n"
-"[]"
+"Fleet Delay(1)[]"
 
 #: src-en/data/events_sector_federation.xml:160
 msgid ""
@@ -255,21 +255,21 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_AMMO\"]/choice[1]/text"
 msgstr ""
 "Sell 3 missiles.\n"
-"[]"
+"21~ -3}[]"
 
 #: src-en/data/events_sector_federation.xml:205
 msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_AMMO\"]/choice[2]/text"
 msgstr ""
 "Sell 7 missiles.\n"
-"[]"
+"49~ -7}[]"
 
 #: src-en/data/events_sector_federation.xml:215
 msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_AMMO\"]/choice[3]/text"
 msgstr ""
 "Sell 12 missiles.\n"
-"[]"
+"84~ -12}[]"
 
 #: src-en/data/events_sector_federation.xml:225
 msgid ""
@@ -384,7 +384,7 @@ msgid ""
 msgstr ""
 "Attempt to contact the drone.\n"
 "[[]] \n"
-"or Reward[]"
+"or Reward Stuff(L)[]"
 
 #: src-en/data/events_sector_federation.xml:299
 msgid ""
@@ -392,14 +392,14 @@ msgid ""
 msgstr ""
 "Salvage the drone.\n"
 "[[]] \n"
-"or Reward[]"
+"or Reward Standard(L)[]"
 
 #: src-en/data/events_sector_federation.xml:303
 msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_BROKEN_DRONE\"]/choice[@req=\"LIST_CREW_ENGI\"]/text"
 msgstr ""
 "(Engi Crew) Fix the drone.\n"
-"Reward[]"
+"Reward Stuff(R)[]"
 
 #: src-en/data/events_sector_federation.xml:305
 msgid ""
@@ -437,7 +437,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_BROKEN_DRONE\"]/choice[@req=\"DRONE_CONTROL_REPAIR_ALL\"]/text"
 msgstr ""
 "(Repair Drone) Fix the drone. [1|]\n"
-"Reward[]"
+"Reward Stuff(R), -1|[]"
 
 #: src-en/data/events_sector_federation.xml:325
 msgid ""
@@ -451,7 +451,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_BROKEN_DRONE\"]/choice[@req=\"LIST_CREW_LANIUS\"]/text"
 msgstr ""
 "(Lanius Crew) Have your Lanius salvage the drone.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_federation.xml:336
 msgid ""
@@ -662,7 +662,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_HANGAR_RAID\"]/choice[1]/text"
 msgstr ""
 "Dock.\n"
-"Reward[[[]]]"
+"Reward { Only(H)[[[]]]"
 
 #: src-en/data/events_sector_federation.xml:452
 msgid ""
@@ -729,7 +729,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_SHIPCLASS\"]/choice[1]/text"
 msgstr ""
 "Answer them.\n"
-"[[[[[]], []] nor [[[]], []] nor [[[]], []] nor Reward[], [[[]], []] nor [[[]], []] nor [[[]], []] nor Reward[], [[[]], []] nor [[[]], []] nor [[[]], []] nor Reward[], [[[]], []] nor [[[]], []] nor [[[]], []] nor Reward[], [[[]], []] nor [[[]], []] nor [[[]], []] nor Reward[], [[[]], []] nor [[[]], []] nor [[[]], []] nor Reward[], []]]"
+"[[[[[]], []] or [[[]], []] or [[[]], []] or Reward Standard(M)[], [[[]], []] or [[[]], []] or [[[]], []] or Reward Standard(M)[], [[[]], []] or [[[]], []] or [[[]], []] or Reward Standard(M)[], [[[]], []] or [[[]], []] or [[[]], []] or Reward Standard(M)[], [[[]], []] or [[[]], []] or [[[]], []] or Reward Standard(M)[], [[[]], []] or [[[]], []] or [[[]], []] or Reward Standard(M)[], []]]"
 
 #: src-en/data/events_sector_federation.xml:490
 msgid ""
@@ -743,7 +743,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_SHIPCLASS\"]/choice[1]/event/choice/text"
 msgstr ""
 "What's the matter?\n"
-"[[[[]], []] nor [[[]], []] nor [[[]], []] nor Reward[], [[[]], []] nor [[[]], []] nor [[[]], []] nor Reward[], [[[]], []] nor [[[]], []] nor [[[]], []] nor Reward[], [[[]], []] nor [[[]], []] nor [[[]], []] nor Reward[], [[[]], []] nor [[[]], []] nor [[[]], []] nor Reward[], [[[]], []] nor [[[]], []] nor [[[]], []] nor Reward[], []]"
+"[[[[]], []] or [[[]], []] or [[[]], []] or Reward Standard(M)[], [[[]], []] or [[[]], []] or [[[]], []] or Reward Standard(M)[], [[[]], []] or [[[]], []] or [[[]], []] or Reward Standard(M)[], [[[]], []] or [[[]], []] or [[[]], []] or Reward Standard(M)[], [[[]], []] or [[[]], []] or [[[]], []] or Reward Standard(M)[], [[[]], []] or [[[]], []] or [[[]], []] or Reward Standard(M)[], []]"
 
 #: src-en/data/events_sector_federation.xml:494
 msgid ""
@@ -763,7 +763,7 @@ msgstr ""
 "[[[]], []] \n"
 "or [[[]], []] \n"
 "or [[[]], []] \n"
-"or Reward[]"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_sector_federation.xml:500
 msgid ""
@@ -773,7 +773,7 @@ msgstr ""
 "[[[]], []] \n"
 "or [[[]], []] \n"
 "or [[[]], []] \n"
-"or Reward[]"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_sector_federation.xml:504
 msgid ""
@@ -783,7 +783,7 @@ msgstr ""
 "[[[]], []] \n"
 "or [[[]], []] \n"
 "or [[[]], []] \n"
-"or Reward[]"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_sector_federation.xml:508
 msgid ""
@@ -793,7 +793,7 @@ msgstr ""
 "[[[]], []] \n"
 "or [[[]], []] \n"
 "or [[[]], []] \n"
-"or Reward[]"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_sector_federation.xml:512
 msgid ""
@@ -803,7 +803,7 @@ msgstr ""
 "[[[]], []] \n"
 "or [[[]], []] \n"
 "or [[[]], []] \n"
-"or Reward[]"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_sector_federation.xml:516
 msgid ""
@@ -813,7 +813,7 @@ msgstr ""
 "[[[]], []] \n"
 "or [[[]], []] \n"
 "or [[[]], []] \n"
-"or Reward[]"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_sector_federation.xml:520
 msgid ""
@@ -922,7 +922,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"DISTRESS_FEDERATION_COLONY_HOSTAGE\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[], [] nor [], [], []], [[], []]]"
+"[[-1|[], -1|[] or -1|[], [], []], [[], []]]"
 
 #: src-en/data/events_sector_federation.xml:590
 msgid ""
@@ -939,7 +939,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"DISTRESS_FEDERATION_COLONY_HOSTAGE\"]/choice/event/choice[1]/text"
 msgstr ""
 "Agree to take on the pirates.\n"
-"[[], [] nor [], [], []]"
+"[-1|[], -1|[] or -1|[], [], []]"
 
 #: src-en/data/events_sector_federation.xml:594
 msgid ""
@@ -954,7 +954,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"DISTRESS_FEDERATION_COLONY_HOSTAGE\"]/choice/event/choice[1]/event/choice[@req=\"BLUELIST_DRONES_DEFENSE_STRONG\"]/text"
 msgstr ""
 "(Strong Defense Drone) Attempt to shoot down the pods with your Defense Drone.\n"
-"[]"
+"-1|[]"
 
 #: src-en/data/events_sector_federation.xml:598
 msgid ""
@@ -974,8 +974,8 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"DISTRESS_FEDERATION_COLONY_HOSTAGE\"]/choice/event/choice[1]/event/choice[@req=\"BLUELIST_DRONES_DEFENSE_WEAK\"]/text"
 msgstr ""
 "(Weak Defense Drone) Attempt to shoot down the pods with your Defense Drone.\n"
-"[] \n"
-"or []"
+"-1|[] \n"
+"or -1|[]"
 
 #: src-en/data/events_sector_federation.xml:618
 msgid ""
@@ -1058,7 +1058,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_BOARDINGPODS_WAVE2\"]/choice[@req=\"BLUELIST_DRONES_DEFENSE_STRONG\"]/text"
 msgstr ""
 "(Strong Defense Drone) Attempt to shoot down the pods with your Defense Drone.\n"
-"[]"
+"-1|[]"
 
 #: src-en/data/events_sector_federation.xml:669
 msgid ""
@@ -1098,7 +1098,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_BOARDINGPODS_WAVE2\"]/choice[@req=\"BLUELIST_DRONES_DEFENSE_WEAK\"]/text"
 msgstr ""
 "(Weak Defense Drone) Attempt to shoot down the pods with your Defense Drone.\n"
-"[[] nor []]"
+"-1|[[] or []]"
 
 #: src-en/data/events_sector_federation.xml:701
 msgid ""
@@ -1215,7 +1215,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_BOARDINGPODS_WAVE3\"]/choice[@req=\"BLUELIST_DRONES_DEFENSE_STRONG\"]/text"
 msgstr ""
 "(Strong Defense Drone) Attempt to shoot down the pods with your Defense Drone.\n"
-"[]"
+"-1|[]"
 
 #: src-en/data/events_sector_federation.xml:809
 msgid ""
@@ -1245,7 +1245,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_BOARDINGPODS_WAVE3\"]/choice[@req=\"BLUELIST_DRONES_DEFENSE_WEAK\"]/text"
 msgstr ""
 "(Weak Defense Drone) Attempt to shoot down the pods with your Defense Drone.\n"
-"[[] nor []]"
+"-1|[[] or []]"
 
 #: src-en/data/events_sector_federation.xml:829
 msgid ""
@@ -1311,7 +1311,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"DISTRESS_FEDERATION_EMBASSY\"]/choice[1]/text"
 msgstr ""
 "Board the embassy.\n"
-"[Reward[] nor [[]] nor [[]], [Gain a crew(Zoltan Peacekeeper), Reward[[]]], [[[[]], []], [[[Gain a crew(Zoltan Peacekeeper), Reward[[]]], [[[]], []]], [[[]], []], [Gain a crew(Zoltan Peacekeeper), Reward[[]], Gain a crew(Zoltan Peacekeeper), Reward[[]]]], [[[]], []], [[[]], []]], []]"
+"[Reward Augment(H)[] or [[]] or [[]], [Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]]], [[[[]], []], [[[Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]]], [[[]], []]], [[[]], []], [Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]], Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]]]], [[[]], []], [[[]], []]], []]"
 
 #: src-en/data/events_sector_federation.xml:871
 msgid ""
@@ -1336,7 +1336,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"DISTRESS_FEDERATION_EMBASSY\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Shoot the Duskbringer.\n"
-"Reward[] \n"
+"Reward Augment(H)[] \n"
 "or [[]] \n"
 "or [[]]"
 
@@ -1345,14 +1345,14 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"DISTRESS_FEDERATION_EMBASSY\"]/choice[1]/event/choice[@req=\"unique_devorak\"]/text"
 msgstr ""
 "(Devorak) De-escalate the situation.\n"
-"[Gain a crew(Zoltan Peacekeeper), Reward[[]]]"
+"[Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]]]"
 
 #: src-en/data/events_sector_federation.xml:881
 msgid ""
 "data/events_sector_federation.xml$//event[@name=\"DISTRESS_FEDERATION_EMBASSY\"]/choice[1]/event/choice[3]/text"
 msgstr ""
 "Reveal yourself and attempt to debate with the Duskbringer.\n"
-"[[[[]], []], [[[Gain a crew(Zoltan Peacekeeper), Reward[[]]], [[[]], []]], [[[]], []], [Gain a crew(Zoltan Peacekeeper), Reward[[]], Gain a crew(Zoltan Peacekeeper), Reward[[]]]], [[[]], []], [[[]], []]]"
+"[[[[]], []], [[[Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]]], [[[]], []]], [[[]], []], [Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]], Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]]]], [[[]], []], [[[]], []]]"
 
 #: src-en/data/events_sector_federation.xml:885
 msgid ""
@@ -1441,7 +1441,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FED_EMBASSY_MESSY\"]/choice[3]/text"
 msgstr ""
 "Offer some scrap as compensation.\n"
-"[]"
+"-30~[]"
 
 #: src-en/data/events_sector_federation.xml:926
 msgid ""
@@ -1511,7 +1511,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FED_EMBASSY_DEVORAK\"]/choice/text"
 msgstr ""
 "Talk to the Zoltans.\n"
-"Gain a crew(Zoltan Peacekeeper), Reward[[]]"
+"Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]]"
 
 #: src-en/data/events_sector_federation.xml:969
 msgid ""
@@ -1576,7 +1576,7 @@ msgid ""
 "data/events_sector_federation.xml$//eventList[@name=\"FED_EMBASSY_DEBATE\"]/event/choice[2]/text"
 msgstr ""
 "If you claim to be Zoltan supremacists, then why are you endangering the lives of so many of your kind?\n"
-"[[[Gain a crew(Zoltan Peacekeeper), Reward[[]]], [[[]], []]], [[[]], []], [Gain a crew(Zoltan Peacekeeper), Reward[[]], Gain a crew(Zoltan Peacekeeper), Reward[[]]]]"
+"[[[Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]]], [[[]], []]], [[[]], []], [Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]], Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]]]]"
 
 #: src-en/data/events_sector_federation.xml:1001
 msgid ""
@@ -1599,7 +1599,7 @@ msgid ""
 "data/events_sector_federation.xml$//eventList[@name=\"FED_EMBASSY_DEBATE\"]/event/choice[2]/event/choice[1]/text"
 msgstr ""
 "But who can truly decide which beings are and are not superior? What makes you the judge?\n"
-"[[Gain a crew(Zoltan Peacekeeper), Reward[[]]], [[[]], []]]"
+"[[Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]]], [[[]], []]]"
 
 #: src-en/data/events_sector_federation.xml:1005
 msgid ""
@@ -1619,7 +1619,7 @@ msgid ""
 "data/events_sector_federation.xml$//eventList[@name=\"FED_EMBASSY_DEBATE\"]/event/choice[2]/event/choice[1]/event/choice[1]/text"
 msgstr ""
 "So you aren't judges at all - just radicals who've jumped the gun.\n"
-"[Gain a crew(Zoltan Peacekeeper), Reward[[]]]"
+"[Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]]]"
 
 #: src-en/data/events_sector_federation.xml:1009
 msgid ""
@@ -1642,7 +1642,7 @@ msgid ""
 "data/events_sector_federation.xml$//eventList[@name=\"FED_EMBASSY_DEBATE\"]/event/choice[2]/event/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Take the reward.\n"
-"Gain a crew(Zoltan Peacekeeper), Reward[[]]"
+"Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]]"
 
 #: src-en/data/events_sector_federation.xml:1017
 msgid ""
@@ -1712,7 +1712,7 @@ msgid ""
 "data/events_sector_federation.xml$//eventList[@name=\"FED_EMBASSY_DEBATE\"]/event/choice[2]/event/choice[3]/text"
 msgstr ""
 "Pick your nose and pretend you don't get it.\n"
-"[Gain a crew(Zoltan Peacekeeper), Reward[[]], Gain a crew(Zoltan Peacekeeper), Reward[[]]]"
+"[Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]], Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]]]"
 
 #: src-en/data/events_sector_federation.xml:1049
 msgid ""
@@ -1733,14 +1733,14 @@ msgid ""
 "data/events_sector_federation.xml$//eventList[@name=\"FED_EMBASSY_DEBATE\"]/event/choice[2]/event/choice[3]/event/choice[1]/text"
 msgstr ""
 "Take the reward.\n"
-"Gain a crew(Zoltan Peacekeeper), Reward[[]]"
+"Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]]"
 
 #: src-en/data/events_sector_federation.xml:1055
 msgid ""
 "data/events_sector_federation.xml$//eventList[@name=\"FED_EMBASSY_DEBATE\"]/event/choice[2]/event/choice[3]/event/choice[2]/text"
 msgstr ""
 "Stand there silently for longer.\n"
-"Gain a crew(Zoltan Peacekeeper), Reward[[]]"
+"Gain a crew(Zoltan Peacekeeper), Reward Augment(H)[[]]"
 
 #: src-en/data/events_sector_federation.xml:1057
 msgid ""
@@ -2123,7 +2123,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"STEALTH_UNLOCK_2FAKE_SURRENDER\"]/choice/text"
 msgstr ""
 "Demand information on the stolen technology.\n"
-"[[], []]"
+"[<!>Fleet Advance(1)[], []]"
 
 #: src-en/data/events_sector_federation.xml:1296
 msgid ""
@@ -2138,7 +2138,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"STEALTH_UNLOCK_2FAKE_SURRENDER\"]/choice/event/choice[1]/text"
 msgstr ""
 "Let them go.\n"
-"[]"
+"<!>Fleet Advance(1)[]"
 
 #: src-en/data/events_sector_federation.xml:1300
 msgid ""
@@ -2252,7 +2252,7 @@ msgid ""
 "data/events_sector_federation.xml$//ship[@name=\"SHIP_STEALTH_UNLOCK_3\"]/deadCrew/choice/text"
 msgstr ""
 "Continue...\n"
-"[[Reward[]]]"
+"[[<#>Unlock Ship(Cloak), Reward Standard No Item(H), Gain an augment(System Casing New)[]]]"
 
 #: src-en/data/events_sector_federation.xml:1382
 msgid ""
@@ -2288,7 +2288,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"STEALTH_UNLOCK_4\"]/choice/text"
 msgstr ""
 "Ask about the Mantis ships.\n"
-"[Reward[]]"
+"[<#>Unlock Ship(Cloak), Reward Standard No Item(H), Gain an augment(System Casing New)[]]"
 
 #: src-en/data/events_sector_federation.xml:1397
 msgid ""
@@ -2303,7 +2303,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"STEALTH_UNLOCK_4\"]/choice/event/choice/text"
 msgstr ""
 "Transmit coordinates of Federation command.\n"
-"Reward[]"
+"<#>Unlock Ship(Cloak), Reward Standard No Item(H), Gain an augment(System Casing New)[]"
 
 #: src-en/data/events_sector_federation.xml:1401
 msgid ""
@@ -2431,7 +2431,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FED_MEMORIAL_DESTROY\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[Reward[[[]]]]"
+"[<#>Unlock Ship(Federation), Reward Standard(H), Gain a weapon(List Loot Federation)[Gain an augment(Tully Present)[[]]]]"
 
 #: src-en/data/events_sector_federation.xml:1466
 msgid ""
@@ -2449,7 +2449,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FED_MEMORIAL_DEAD_CREW\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[Reward[[[]]]]"
+"[<#>Unlock Ship(Federation), Reward Standard(H), Gain a weapon(List Loot Federation)[Gain an augment(Tully Present)[[]]]]"
 
 #: src-en/data/events_sector_federation.xml:1473
 msgid "data/events_sector_federation.xml$//event[@name=\"FED_MEMORIAL_WIN\"]/text"
@@ -2467,7 +2467,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FED_MEMORIAL_WIN\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[[]]]"
+"<#>Unlock Ship(Federation), Reward Standard(H), Gain a weapon(List Loot Federation)[Gain an augment(Tully Present)[[]]]"
 
 #: src-en/data/events_sector_federation.xml:1477
 msgid ""
@@ -2485,7 +2485,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FED_MEMORIAL_WIN\"]/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"Gain an augment(Tully Present)[[]]"
 
 #: src-en/data/events_sector_federation.xml:1486
 msgid ""

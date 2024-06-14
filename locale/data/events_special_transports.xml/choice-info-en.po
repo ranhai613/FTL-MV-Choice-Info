@@ -18,21 +18,21 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_DESTROYED\"]/choice[@req=\"SCRAP_COLLECTOR\"]/text"
 msgstr ""
 "(Scrap Arm) Use the arm to collect extra scrap.\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_special_transports.xml:23
 msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_DESTROYED\"]/choice[@req=\"DRONE_RECOVERY\"]/text"
 msgstr ""
 "(Drone Arm) Use the arm to collect extra drone parts.\n"
-"Reward[]"
+"Reward | Only(M)[]"
 
 #: src-en/data/events_special_transports.xml:29
 msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_DESTROYED\"]/choice[@req=\"MAGNET_ARM\"]/text"
 msgstr ""
 "(Magnet Arm) Use the magnet to draw in some extra supplies.\n"
-"Reward[]"
+"Reward Stuff(L)[]"
 
 #: src-en/data/events_special_transports.xml:35
 msgid ""
@@ -93,7 +93,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_UNION_LOOT\"]/choice[@req=\"UNION_CREW_MORAL\"]/text"
 msgstr ""
 "(Union Elite + Good Reputation) Talk to the transport.\n"
-"[[[]], [[[]]], [[], []]]"
+"[Gain a weapon(List Loot Union), -60<~<-45[[]], [[[]]], [[], []]]"
 
 #: src-en/data/events_special_transports.xml:80
 msgid ""
@@ -109,7 +109,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_UNION_LOOT\"]/choice[@req=\"UNION_CREW_MORAL\"]/event/choice[1]/text"
 msgstr ""
 "Buy the cargo.\n"
-"[[]]"
+"Gain a weapon(List Loot Union), -60<~<-45[[]]"
 
 #: src-en/data/events_special_transports.xml:84
 msgid ""
@@ -256,7 +256,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_MILITIA_LOOT\"]/choice[@req=\"UNION_CREW_MORAL\"]/text"
 msgstr ""
 "(Union Elite + Good Reputation) Talk to the transport.\n"
-"[[[]], [[[]]], [[], []]]"
+"[Gain a weapon(List Loot Militia), -80<~<-65[[]], [[[]]], [[], []]]"
 
 #: src-en/data/events_special_transports.xml:188
 msgid ""
@@ -272,7 +272,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_MILITIA_LOOT\"]/choice[@req=\"UNION_CREW_MORAL\"]/event/choice[1]/text"
 msgstr ""
 "Buy the cargo.\n"
-"[[]]"
+"Gain a weapon(List Loot Militia), -80<~<-65[[]]"
 
 #: src-en/data/events_special_transports.xml:192
 msgid ""
@@ -419,7 +419,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_FEDERATION_LOOT\"]/choice[@req=\"FEDERATION_CREW_MORAL\"]/text"
 msgstr ""
 "(Federation Elite + Good Reputation) Talk to the transport.\n"
-"[[[]], [[[]]], [[], []]]"
+"[Gain a weapon(List Loot Federation), -75<~<-60[[]], [[[]]], [[], []]]"
 
 #: src-en/data/events_special_transports.xml:296
 msgid ""
@@ -435,7 +435,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_FEDERATION_LOOT\"]/choice[@req=\"FEDERATION_CREW_MORAL\"]/event/choice[1]/text"
 msgstr ""
 "Buy the cargo.\n"
-"[[]]"
+"Gain a weapon(List Loot Federation), -75<~<-60[[]]"
 
 #: src-en/data/events_special_transports.xml:300
 msgid ""
@@ -647,7 +647,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_JERRY_LOOT\"]/choice[@req=\"unique_jerry\"]/text"
 msgstr ""
 "Jerry is on board... do you have anything for him?\n"
-"[[]]"
+"[Gain a weapon(Horse Gun)[]]"
 
 #: src-en/data/events_special_transports.xml:454
 msgid ""
@@ -668,7 +668,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_JERRY_LOOT\"]/choice[@req=\"unique_jerry\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Gain a weapon(Horse Gun)[]"
 
 #: src-en/data/events_special_transports.xml:459
 msgid ""
@@ -742,21 +742,21 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_DESTROYED_JERRY\"]/choice[@req=\"SCRAP_COLLECTOR\"]/text"
 msgstr ""
 "(Scrap Arm) Use the arm to collect extra scrap.\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_special_transports.xml:504
 msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_DESTROYED_JERRY\"]/choice[@req=\"DRONE_RECOVERY\"]/text"
 msgstr ""
 "(Drone Arm) Use the arm to collect extra drone parts.\n"
-"Reward[]"
+"Reward | Only(M)[]"
 
 #: src-en/data/events_special_transports.xml:510
 msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_DESTROYED_JERRY\"]/choice[@req=\"MAGNET_ARM\"]/text"
 msgstr ""
 "(Magnet Arm) Use the magnet to draw in some extra supplies.\n"
-"Reward[]"
+"Reward Stuff(L)[]"
 
 #: src-en/data/events_special_transports.xml:516
 msgid ""
@@ -777,7 +777,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_CAPTURE_JERRY\"]/choice/text"
 msgstr ""
 "Open the cargo.\n"
-"[]"
+"Gain a weapon(Horse Gun)[]"
 
 #: src-en/data/events_special_transports.xml:528
 msgid ""
@@ -1007,7 +1007,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_ENGI_LOOT\"]/choice[@req=\"ENGI_CREW_MORAL\"]/text"
 msgstr ""
 "(Harmony Elite + Good Reputation) Talk to the transport.\n"
-"[[[]], [[[]]], [[], []]]"
+"[Gain a drone(List Loot Engi), -60<~<-45[[]], [[[]]], [[], []]]"
 
 #: src-en/data/events_special_transports.xml:693
 msgid ""
@@ -1023,7 +1023,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_ENGI_LOOT\"]/choice[@req=\"ENGI_CREW_MORAL\"]/event/choice[1]/text"
 msgstr ""
 "Buy the cargo.\n"
-"[[]]"
+"Gain a drone(List Loot Engi), -60<~<-45[[]]"
 
 #: src-en/data/events_special_transports.xml:697
 msgid ""
@@ -1251,7 +1251,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_ZOLTAN_LOOT\"]/choice[@req=\"ZOLTAN_CREW_MORAL\"]/text"
 msgstr ""
 "(Ministry Elite + Good Reputation) Talk to the transport.\n"
-"[[[]], [[[]]], [[], []]]"
+"[Gain a weapon(List Loot Zoltan), -70<~<-55[[]], [[[]]], [[], []]]"
 
 #: src-en/data/events_special_transports.xml:863
 msgid ""
@@ -1267,7 +1267,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_ZOLTAN_LOOT\"]/choice[@req=\"ZOLTAN_CREW_MORAL\"]/event/choice[1]/text"
 msgstr ""
 "Buy the cargo.\n"
-"[[]]"
+"Gain a weapon(List Loot Zoltan), -70<~<-55[[]]"
 
 #: src-en/data/events_special_transports.xml:867
 msgid ""
@@ -1576,7 +1576,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_FREEMANTIS_LOOT\"]/choice[@req=\"FREEMANTIS_CREW_MORAL\"]/text"
 msgstr ""
 "(Free Mantis Elite + Good Reputation) Talk to the transport.\n"
-"[[[]], [[[]]], [[], []]]"
+"[Gain a weapon(List Loot Freemantis), -55<~<-40[[]], [[[]]], [[], []]]"
 
 #: src-en/data/events_special_transports.xml:1098
 msgid ""
@@ -1592,7 +1592,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_FREEMANTIS_LOOT\"]/choice[@req=\"FREEMANTIS_CREW_MORAL\"]/event/choice[1]/text"
 msgstr ""
 "Buy the cargo.\n"
-"[[]]"
+"Gain a weapon(List Loot Freemantis), -55<~<-40[[]]"
 
 #: src-en/data/events_special_transports.xml:1102
 msgid ""
@@ -1739,7 +1739,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_ORCHID_LOOT\"]/choice[@req=\"ORCHID_CREW_MORAL\"]/text"
 msgstr ""
 "(Gathering Elite + Good Reputation) Talk to the transport.\n"
-"[[[]], [[[]]], [[], []]]"
+"[Gain a weapon(List Loot Orchid), -75<~<-60[[]], [[[]]], [[], []]]"
 
 #: src-en/data/events_special_transports.xml:1206
 msgid ""
@@ -1755,7 +1755,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_ORCHID_LOOT\"]/choice[@req=\"ORCHID_CREW_MORAL\"]/event/choice[1]/text"
 msgstr ""
 "Buy the cargo.\n"
-"[[]]"
+"Gain a weapon(List Loot Orchid), -75<~<-60[[]]"
 
 #: src-en/data/events_special_transports.xml:1210
 msgid ""
@@ -1902,7 +1902,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_VAMPWEED_LOOT\"]/choice[@req=\"VAMPWEED_CREW_MORAL\"]/text"
 msgstr ""
 "(Confederate Elite + Good Reputation) Talk to the transport.\n"
-"[[[]], [[[]]], [[], []]]"
+"[Gain a weapon(List Loot Vampweed), -75<~<-60[[]], [[[]]], [[], []]]"
 
 #: src-en/data/events_special_transports.xml:1314
 msgid ""
@@ -1918,7 +1918,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_VAMPWEED_LOOT\"]/choice[@req=\"VAMPWEED_CREW_MORAL\"]/event/choice[1]/text"
 msgstr ""
 "Buy the cargo.\n"
-"[[]]"
+"Gain a weapon(List Loot Vampweed), -75<~<-60[[]]"
 
 #: src-en/data/events_special_transports.xml:1318
 msgid ""
@@ -2065,7 +2065,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_CRYSTAL_LOOT\"]/choice[@req=\"CRYSTAL_CREW_MORAL\"]/text"
 msgstr ""
 "(Imperial Elite + Good Reputation) Talk to the transport.\n"
-"[[[]], [[[]]], [[], []]]"
+"[Gain a weapon(List Loot Crystal), -75<~<-60[[]], [[[]]], [[], []]]"
 
 #: src-en/data/events_special_transports.xml:1422
 msgid ""
@@ -2081,7 +2081,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_CRYSTAL_LOOT\"]/choice[@req=\"CRYSTAL_CREW_MORAL\"]/event/choice[1]/text"
 msgstr ""
 "Buy the cargo.\n"
-"[[]]"
+"Gain a weapon(List Loot Crystal), -75<~<-60[[]]"
 
 #: src-en/data/events_special_transports.xml:1426
 msgid ""
@@ -2795,7 +2795,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"NEBULA_TRANSPORT_SHELL_LOOT\"]/choice[@req=\"SHELL_CREW_MORAL\"]/text"
 msgstr ""
 "(Geniocracy Elite + Good Reputation) Talk to the transport.\n"
-"[[[]], [[[]]], [[], []]]"
+"[Gain a weapon(List Loot Shell), -60<~<-45[[]], [[[]]], [[], []]]"
 
 #: src-en/data/events_special_transports.xml:1964
 msgid ""
@@ -2811,7 +2811,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"NEBULA_TRANSPORT_SHELL_LOOT\"]/choice[@req=\"SHELL_CREW_MORAL\"]/event/choice[1]/text"
 msgstr ""
 "Buy the cargo.\n"
-"[[]]"
+"Gain a weapon(List Loot Shell), -60<~<-45[[]]"
 
 #: src-en/data/events_special_transports.xml:1968
 msgid ""
@@ -3397,7 +3397,7 @@ msgid ""
 "data/events_special_transports.xml$//event[@name=\"TRANSPORT_CAPTURE_ROYAL\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a crew(Cognitive Advanced)[]"
+"Gain a crew(Cognitive Advanced), Gain a weapon(Giftlist Royal)[]"
 
 #: src-en/data/events_special_transports.xml:2394
 msgid ""

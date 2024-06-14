@@ -253,7 +253,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_EQUINOID\"]/choice[1]/text"
 msgstr ""
 "Investigate.\n"
-"[Gain a crew(Engi), Reward[] nor [], [], [], Gain a crew(Engi Defender), Reward[], Gain a crew(Pony), Reward[], Gain a crew(Pony), Reward[], Gain a crew(Pony Tamed)[], Gain a crew(Pony)[], Gain a crew(Engi Separatist), Reward[], Gain a crew(Pony)[] nor [], <!>Lose your crew(UNCLONABLE)[], Gain a crew(Pony)[]]"
+"[Gain a crew(Engi), Reward Standard(L)[] or [], [], [], Gain a crew(Engi Defender), Reward ~ Only(H)[], Gain a crew(Pony), Reward Stuff(H)[], Gain a crew(Pony), Reward Stuff(H)[], Gain a crew(Pony Tamed)[], Gain a crew(Pony)[], Gain a crew(Engi Separatist), Reward Stuff(H)[], Gain a crew(Pony)[] or [], <!>Lose your crew(UNCLONABLE)[], Gain a crew(Pony)[]]"
 
 #: src-en/data/events_special_filler.xml:227
 msgid ""
@@ -268,7 +268,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_EQUINOID\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Try to communicate peacefully.\n"
-"Gain a crew(Engi), Reward[] \n"
+"Gain a crew(Engi), Reward Standard(L)[] \n"
 "or []"
 
 #: src-en/data/events_special_filler.xml:233
@@ -295,7 +295,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_EQUINOID\"]/choice[1]/event/choice[@req=\"unique_nights\"]/text"
 msgstr ""
 "(Nights) \"Oi, lisssten up you freakin' horssse thingsss!\"\n"
-"Gain a crew(Engi Defender), Reward[]"
+"Gain a crew(Engi Defender), Reward ~ Only(H)[]"
 
 #: src-en/data/events_special_filler.xml:245
 msgid ""
@@ -312,7 +312,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_EQUINOID\"]/choice[1]/event/choice[@req=\"LIST_CREW_SLUG\"]/text"
 msgstr ""
 "(Slug Crew) Attempt to communicate telepathically.\n"
-"Gain a crew(Pony), Reward[]"
+"Gain a crew(Pony), Reward Stuff(H)[]"
 
 #: src-en/data/events_special_filler.xml:253
 msgid ""
@@ -329,7 +329,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_EQUINOID\"]/choice[1]/event/choice[@req=\"BLUELIST_CREW_SNAIL\"]/text"
 msgstr ""
 "(Telepathic Shell) Attempt to communicate telepathically.\n"
-"Gain a crew(Pony), Reward[]"
+"Gain a crew(Pony), Reward Stuff(H)[]"
 
 #: src-en/data/events_special_filler.xml:261
 msgid ""
@@ -376,7 +376,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_EQUINOID\"]/choice[1]/event/choice[@req=\"LIST_CREW_PONY_ENGI\"]/text"
 msgstr ""
 "(Cyberpony) \"Neighhh! L-L-Let me [roam] around!\"\n"
-"Gain a crew(Engi Separatist), Reward[]"
+"Gain a crew(Engi Separatist), Reward Stuff(H)[]"
 
 #: src-en/data/events_special_filler.xml:283
 msgid ""
@@ -514,8 +514,8 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Dock with the station and investigate.\n"
-"Reward[] \n"
-"or Gain a crew(?)[[], Gain a crew(?), Reward[]] \n"
+"Reward |(M)[] \n"
+"or Gain a crew(?)[[], Gain a crew(?), Reward ~ Only(M)[]] \n"
 "or [Gain a crew(Traitor)[], Gain a crew(Traitor)[], [], Gain a crew(?)[]]"
 
 #: src-en/data/events_special_filler.xml:357
@@ -557,9 +557,9 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_SICK\"]/choice[@req=\"DRONE_CONTROL_BOARDING\"]/text"
 msgstr ""
 "(Boarding Drone) Use a drone to investigate.\n"
-"[] \n"
-"or [] \n"
-"or Reward[]"
+"-1|[] \n"
+"or -1|[] \n"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_special_filler.xml:379
 msgid ""
@@ -567,14 +567,14 @@ msgid ""
 msgstr ""
 "(Life Scanner) Run advanced life scans.\n"
 "[] \n"
-"or Reward[]"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_special_filler.xml:383
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_SICK\"]/choice[@req=\"sensors\"]/text"
 msgstr ""
 "(Adv. Sensors) Gather the station's logs.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_special_filler.xml:385
 msgid ""
@@ -631,7 +631,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_SICK_LIST\"]/event[2]/choice[@req=\"medbay\"]/text"
 msgstr ""
 "(Adv. Medbay) Have the Advanced Medbay analyze their condition.\n"
-"Gain a crew(?), Reward[]"
+"Gain a crew(?), Reward ~ Only(M)[]"
 
 #: src-en/data/events_special_filler.xml:416
 msgid ""
@@ -754,9 +754,9 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Board the station and look for survivors.\n"
-"Reward[] \n"
-"or Reward, Gain a crew(Human)[] \n"
-"or Reward[<!>Lose your crew(UNCLONABLE)[], []]"
+"Reward ~ Only(L)[] \n"
+"or Reward ~ Only(L), Gain a crew(Human)[] \n"
+"or Reward ~ Only(L)[<!>Lose your crew(UNCLONABLE)[], []]"
 
 #: src-en/data/events_special_filler.xml:482
 msgid ""
@@ -771,7 +771,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_PLAGUE\"]/choice[3]/text"
 msgstr ""
 "Scrap some of the debris.\n"
-"Reward[]"
+"Reward ~ Only(R)[]"
 
 #: src-en/data/events_special_filler.xml:488
 msgid ""
@@ -785,7 +785,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_PLAGUE\"]/choice[@req=\"LIST_CREW_SLUG\"]/text"
 msgstr ""
 "(Slug Crew) Your Slug senses lifeforms aboard the ship, none of them look promising.\n"
-"Reward[]"
+"Reward ~ Only(R)[]"
 
 #: src-en/data/events_special_filler.xml:495
 msgid ""
@@ -800,7 +800,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_PLAGUE\"]/choice[@req=\"BLUELIST_CREW_SNAIL\"]/text"
 msgstr ""
 "(Telepathic Shell) Your Shell senses lifeforms aboard the ship, none of them look promising.\n"
-"Reward[]"
+"Reward ~ Only(R)[]"
 
 #: src-en/data/events_special_filler.xml:502
 msgid ""
@@ -815,7 +815,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_PLAGUE\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr ""
 "(Lifeform Scanners) Run scans on the station.\n"
-"Reward[]"
+"Reward ~ Only(R)[]"
 
 #: src-en/data/events_special_filler.xml:509
 msgid ""
@@ -830,7 +830,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_PLAGUE\"]/choice[@req=\"DRONE_CONTROL_BOARDING\"]/text"
 msgstr ""
 "(Boarding Drone) Send the drone.\n"
-"Reward, Gain a crew(Human)[]"
+"Reward ~ Only(L), Gain a crew(Human)[]"
 
 #: src-en/data/events_special_filler.xml:516
 msgid ""
@@ -909,9 +909,9 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_UPGRADES\"]/choice[1]/text"
 msgstr ""
 "Agree to the trade.\n"
-"[] \n"
-"or [] \n"
-"or []"
+"-5<}<-3 -2<|<0, System Upgrade(Reactor 1™)[] \n"
+"or -2<}<0 -3<|<-2, System Upgrade(Reactor 1™)[] \n"
+"or -2<}<0 -2<|<0 -3<{<-2, System Upgrade(Reactor 1™)[]"
 
 #: src-en/data/events_special_filler.xml:561
 msgid ""
@@ -987,9 +987,9 @@ msgid ""
 msgstr ""
 "Explore the asteroid field.\n"
 "[] \n"
-"or Reward[] \n"
-"or Reward[] \n"
-"or Reward[] \n"
+"or Reward { Only(H)[] \n"
+"or Reward }(M)[] \n"
+"or Reward |(M)[] \n"
 "or [] \n"
 "or [[]]"
 
@@ -1024,7 +1024,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_EXPLORE\"]/choice[@req=\"SCRAP_COLLECTOR\"]/text"
 msgstr ""
 "(Scrap Recovery Arm) Attempt to mine the asteroids.\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_special_filler.xml:630
 msgid ""
@@ -1038,7 +1038,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_EXPLORE\"]/choice[@req=\"MAGNET_ARM\"]/text"
 msgstr ""
 "(Magnetic Arm) Attempt to mine the asteroids.\n"
-"Reward[]"
+"Reward Stuff(L)[]"
 
 #: src-en/data/events_special_filler.xml:637
 msgid ""
@@ -1052,7 +1052,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_EXPLORE\"]/choice[@req=\"BEAM_MINING\"]/text"
 msgstr ""
 "(Mining Equipment) Attempt to mine the asteroids.\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_special_filler.xml:644
 msgid ""
@@ -1066,7 +1066,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_EXPLORE\"]/choice[@req=\"DRONE_CONTROL_BEAM_DRONE\"]/text"
 msgstr ""
 "(Beam Drone) Attempt to mine the asteroids. [-1|]\n"
-"Reward[]"
+"Reward ~ Only(H), -1|[]"
 
 #: src-en/data/events_special_filler.xml:651
 msgid ""
@@ -1132,7 +1132,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_SELL_DRONES\"]/choice[1]/text"
 msgstr ""
 "Sell 3 drone parts for 12 scrap.\n"
-"[]"
+"-3| 12~[]"
 
 #: src-en/data/events_special_filler.xml:698
 msgid ""
@@ -1144,7 +1144,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_SELL_DRONES\"]/choice[2]/text"
 msgstr ""
 "Sell 6 drone parts for 24 scrap.\n"
-"[]"
+"-6| 24~[]"
 
 #: src-en/data/events_special_filler.xml:708
 msgid ""
@@ -1156,7 +1156,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_SELL_DRONES\"]/choice[3]/text"
 msgstr ""
 "Sell 12 drone parts for 48 scrap.\n"
-"[]"
+"-12| 48~[]"
 
 #: src-en/data/events_special_filler.xml:718
 msgid ""
@@ -1223,7 +1223,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_SELL_MISSILES\"]/choice[1]/text"
 msgstr ""
 "Sell 5 missiles for 15 scrap.\n"
-"[]"
+"-5} 15~[]"
 
 #: src-en/data/events_special_filler.xml:758
 msgid ""
@@ -1235,7 +1235,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_SELL_MISSILES\"]/choice[2]/text"
 msgstr ""
 "Sell 10 missiles for 30 scrap.\n"
-"[]"
+"-10} 30~[]"
 
 #: src-en/data/events_special_filler.xml:768
 msgid ""
@@ -1247,7 +1247,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_SELL_MISSILES\"]/choice[3]/text"
 msgstr ""
 "Sell 15 missiles for 45 scrap.\n"
-"[]"
+"-15} 45~[]"
 
 #: src-en/data/events_special_filler.xml:778
 msgid ""
@@ -1306,10 +1306,10 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_TRADER_CIV\"]/choice[1]/text"
 msgstr ""
 "Trade.\n"
-"[] \n"
-"or [] \n"
-"or [] \n"
-"or []"
+"5<{<10 -2<|<-1[] \n"
+"or 4<}<5 -2<{<-1[] \n"
+"or 2<|<3 -3<}<-2[] \n"
+"or 4<{<10 -4<}<-2[]"
 
 #: src-en/data/events_special_filler.xml:820
 msgid ""
@@ -1410,7 +1410,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_FUEL_FOR_DRONE\"]/event[1]/choice[1]/text"
 msgstr ""
 "Accept the offer.\n"
-"[]"
+"-4<{<-2 1<|<3[]"
 
 #: src-en/data/events_special_filler.xml:894
 msgid ""
@@ -1470,7 +1470,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_FUEL_FOR_DRONE\"]/event[2]/choice[1]/text"
 msgstr ""
 "Accept the offer.\n"
-"[]"
+"-4<{<-2 1<|<3[]"
 
 #: src-en/data/events_special_filler.xml:932
 msgid ""
@@ -1530,7 +1530,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_FUEL_FOR_DRONE\"]/event[3]/choice[1]/text"
 msgstr ""
 "Accept the offer.\n"
-"[]"
+"-4<{<-2 1<|<3[]"
 
 #: src-en/data/events_special_filler.xml:970
 msgid ""
@@ -1588,7 +1588,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_REFUEL\"]/choice[1]/text"
 msgstr ""
 "Buy 6 fuel for 12 scrap.\n"
-"[]"
+"6{ -12~[]"
 
 #: src-en/data/events_special_filler.xml:1003
 msgid ""
@@ -1600,7 +1600,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_REFUEL\"]/choice[2]/text"
 msgstr ""
 "Buy 3 fuel for 6 scrap.\n"
-"[]"
+"3{ -6~[]"
 
 #: src-en/data/events_special_filler.xml:1013
 msgid ""
@@ -1612,7 +1612,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_REFUEL\"]/choice[3]/text"
 msgstr ""
 "Buy 1 fuel for 2 scrap.\n"
-"[]"
+"1{ -2~[]"
 
 #: src-en/data/events_special_filler.xml:1023
 msgid ""
@@ -1678,7 +1678,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_REPAIR\"]/choice[1]/text"
 msgstr ""
 "Repair 20 damage.\n"
-"[]"
+"-40~[]"
 
 #: src-en/data/events_special_filler.xml:1063
 msgid ""
@@ -1690,7 +1690,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_REPAIR\"]/choice[2]/text"
 msgstr ""
 "Repair 10 damage.\n"
-"[]"
+"-20~[]"
 
 #: src-en/data/events_special_filler.xml:1073
 msgid ""
@@ -1702,7 +1702,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_REPAIR\"]/choice[3]/text"
 msgstr ""
 "Repair 5 damage.\n"
-"[]"
+"-10~[]"
 
 #: src-en/data/events_special_filler.xml:1083
 msgid ""
@@ -1767,10 +1767,10 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_SOLARWRECK\"]/choice[1]/text"
 msgstr ""
 "Attempt to salvage the wreck.\n"
-"[[] nor []] \n"
-"or Reward[[] nor []] \n"
-"or Gain a crew(Rock)[[] nor []] \n"
-"or [[] nor []] \n"
+"Gain a drone(Random)[[] or []] \n"
+"or Reward ~ Only(L)[[] or []] \n"
+"or Gain a crew(Rock)[[] or []] \n"
+"or [[] or []] \n"
 "or [[]]"
 
 #: src-en/data/events_special_filler.xml:1125
@@ -1778,8 +1778,8 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_SOLARWRECK\"]/choice[@req=\"BLUELIST_ARMOR\"]/text"
 msgstr ""
 "(Hull Armor) We can approach with little risk.\n"
-"[] \n"
-"or Reward[] \n"
+"Gain a drone(Random)[] \n"
+"or Reward ~ Only(L)[] \n"
 "or Gain a crew(Rock)[] \n"
 "or [] \n"
 "or [[]]"
@@ -1930,14 +1930,14 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_TAVERN_HIRE\"]/choice[1]/text"
 msgstr ""
 "Hire a crewmember.\n"
-"Gain a crew(?)[]"
+"Gain a crew(?), -35<~<-20[]"
 
 #: src-en/data/events_special_filler.xml:1223
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_TAVERN_HIRE\"]/choice[2]/text"
 msgstr ""
 "Hire a crewmember.\n"
-"Gain a crew(?)[]"
+"Gain a crew(?), -35<~<-20[]"
 
 #: src-en/data/events_special_filler.xml:1232
 msgid ""
@@ -2000,27 +2000,27 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_HELP_MINERS\"]/choice[1]/text"
 msgstr ""
 "Give them the requested 5 missiles.\n"
-"[] \n"
-"or [] \n"
-"or []"
+"15<~<25 -5}[] \n"
+"or -5}[] \n"
+"or System Upgrade(Reactor 1™), -5}[]"
 
 #: src-en/data/events_special_filler.xml:1259
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_HELP_MINERS\"]/choice[2]/text"
 msgstr ""
 "Give them 15 missiles.\n"
-"[] \n"
-"or [] \n"
-"or []"
+"30<~<40 -15}[] \n"
+"or System Upgrade(Reactor 1™), -15}[] \n"
+"or Gain an augment(Random), -15}[]"
 
 #: src-en/data/events_special_filler.xml:1263
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_HELP_MINERS\"]/choice[@req=\"EXPLOSIVE_REPLICATOR\"]/text"
 msgstr ""
 "(Explosive Replicator) Use the replicator to synthesize the missiles for them.\n"
-"[] \n"
+"15<~<25[] \n"
 "or [] \n"
-"or []"
+"or System Upgrade(Reactor 1™)[]"
 
 #: src-en/data/events_special_filler.xml:1267
 msgid ""
@@ -2042,7 +2042,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_HELP_MINERS\"]/choice[@req=\"BLUELIST_BOMBS\"]/text"
 msgstr ""
 "(Bomb Weapon) Offer to solve their problem by using a controlled explosion from your bomb. [-1}]\n"
-"[[] nor [] nor []]"
+"-1}[15<~<25[] or [] or System Upgrade(Reactor 1™)[]]"
 
 #: src-en/data/events_special_filler.xml:1275
 msgid ""
@@ -2056,16 +2056,16 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_HELP_MINERS\"]/choice[@req=\"BLUELIST_BOMBS\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[] \n"
+"15<~<25[] \n"
 "or [] \n"
-"or []"
+"or System Upgrade(Reactor 1™)[]"
 
 #: src-en/data/events_special_filler.xml:1286
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_HELP_MINERS\"]/choice[@req=\"LIST_CREW_LOSTSUN\"]/text"
 msgstr ""
 "(Lost Sun Crew) Offer to teach them how to construct makeshift explosives.\n"
-"Reward[]"
+"Reward {(M)[]"
 
 #: src-en/data/events_special_filler.xml:1288
 msgid ""
@@ -2172,7 +2172,7 @@ msgid ""
 " and @lvl=\"2\"]/text"
 msgstr ""
 "(Upg. Sensors) Use your Sensors to scan the wreckage.\n"
-"Reward[]"
+"Reward Stuff(M)[]"
 
 #: src-en/data/events_special_filler.xml:1377
 msgid ""
@@ -2189,16 +2189,16 @@ msgid ""
 " and @lvl=\"3\"]/text"
 msgstr ""
 "(Adv. Sensors) Use your Sensors to scan the wreckage.\n"
-"Reward[] \n"
-"or Reward[]"
+"Reward Stuff(H)[] \n"
+"or Reward Weapon(L)[]"
 
 #: src-en/data/events_special_filler.xml:1386
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_WRECKAGE_EVENT\"]/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr ""
 "(Long-Ranged Scanners) Use your Sensors to scan the wreckage.\n"
-"Reward[] \n"
-"or Reward[]"
+"Reward Stuff(H)[] \n"
+"or Reward Weapon(L)[]"
 
 #: src-en/data/events_special_filler.xml:1390
 msgid ""
@@ -2209,8 +2209,8 @@ msgstr ""
 "or [] \n"
 "or [] \n"
 "or [] \n"
-"or Reward[] \n"
-"or Reward[] \n"
+"or Reward Stuff(M)[] \n"
+"or Reward }(M)[] \n"
 "or [[]] \n"
 "or [[]] \n"
 "or [[]] \n"
@@ -2449,7 +2449,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_TERRAFORMING_SCAN\"]/choice[1]/text"
 msgstr ""
 "You offer your assistance.\n"
-"[[] nor [[] nor [] nor [[]] nor [[]] nor [[[], [], []], []]], [] nor [] nor [[]] nor [[]] nor [[[], [], []], []], [] nor [] nor [[]] nor [[]] nor [[[], [], []], []], [] nor [] nor [[]] nor [[]] nor [[[], [], []], []], [] nor [] nor [[]] nor [[]] nor [[[], [], []], []], [] nor [] nor [[]] nor [[]] nor [[[], [], []], []], [] nor [] nor [[]] nor [[]] nor [[[], [], []], []], [] nor [] nor [[]] nor [[]] nor [[[], [], []], []]]"
+"[[] or [System Upgrade(Oxygen 1™)[] or System Upgrade(Reactor 1™)[] or [[]] or [[]] or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]], System Upgrade(Oxygen 1™)[] or System Upgrade(Reactor 1™)[] or [[]] or [[]] or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []], System Upgrade(Oxygen 1™)[] or System Upgrade(Reactor 1™)[] or [[]] or [[]] or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []], System Upgrade(Oxygen 1™)[] or System Upgrade(Reactor 1™)[] or [[]] or [[]] or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []], System Upgrade(Oxygen 1™)[] or System Upgrade(Reactor 1™)[] or [[]] or [[]] or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []], System Upgrade(Oxygen 1™)[] or System Upgrade(Reactor 1™)[] or [[]] or [[]] or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []], System Upgrade(Oxygen 1™)[] or System Upgrade(Reactor 1™)[] or [[]] or [[]] or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []], System Upgrade(Oxygen 1™)[] or System Upgrade(Reactor 1™)[] or [[]] or [[]] or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]]"
 
 #: src-en/data/events_special_filler.xml:1494
 msgid ""
@@ -2465,84 +2465,84 @@ msgid ""
 msgstr ""
 "Attempt to scan the planet.\n"
 "[] \n"
-"or [[] nor [] nor [[]] nor [[]] nor [[[], [], []], []]]"
+"or [System Upgrade(Oxygen 1™)[] or System Upgrade(Reactor 1™)[] or [[]] or [[]] or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]]"
 
 #: src-en/data/events_special_filler.xml:1500
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_TERRAFORMING_SCAN\"]/choice[1]/event/choice[@req=\"sensors\"]/text"
 msgstr ""
 "(Adv. Sensors) Set sensors to maximum and scan.\n"
-"[] \n"
-"or [] \n"
+"System Upgrade(Oxygen 1™)[] \n"
+"or System Upgrade(Reactor 1™)[] \n"
 "or [[]] \n"
 "or [[]] \n"
-"or [[[], [], []], []]"
+"or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]"
 
 #: src-en/data/events_special_filler.xml:1504
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_TERRAFORMING_SCAN\"]/choice[1]/event/choice[@req=\"LIST_CREW_POWER\"]/text"
 msgstr ""
 "(Bonus Power Crew) Send your crewman to overcharge their systems.\n"
-"[] \n"
-"or [] \n"
+"System Upgrade(Oxygen 1™)[] \n"
+"or System Upgrade(Reactor 1™)[] \n"
 "or [[]] \n"
 "or [[]] \n"
-"or [[[], [], []], []]"
+"or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]"
 
 #: src-en/data/events_special_filler.xml:1508
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_TERRAFORMING_SCAN\"]/choice[1]/event/choice[@req=\"zoltan_osmian\"]/text"
 msgstr ""
 "(Osmian Crew) Generate a hologram to overcharge their systems.\n"
-"[] \n"
-"or [] \n"
+"System Upgrade(Oxygen 1™)[] \n"
+"or System Upgrade(Reactor 1™)[] \n"
 "or [[]] \n"
 "or [[]] \n"
-"or [[[], [], []], []]"
+"or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]"
 
 #: src-en/data/events_special_filler.xml:1512
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_TERRAFORMING_SCAN\"]/choice[1]/event/choice[@req=\"LIST_CREW_SLUG\"]/text"
 msgstr ""
 "(Slug Crew) Check if your Slug senses any presence.\n"
-"[] \n"
-"or [] \n"
+"System Upgrade(Oxygen 1™)[] \n"
+"or System Upgrade(Reactor 1™)[] \n"
 "or [[]] \n"
 "or [[]] \n"
-"or [[[], [], []], []]"
+"or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]"
 
 #: src-en/data/events_special_filler.xml:1516
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_TERRAFORMING_SCAN\"]/choice[1]/event/choice[@req=\"BLUELIST_CREW_SNAIL\"]/text"
 msgstr ""
 "(Telepathic Shell) Check if your Shell senses any presence.\n"
-"[] \n"
-"or [] \n"
+"System Upgrade(Oxygen 1™)[] \n"
+"or System Upgrade(Reactor 1™)[] \n"
 "or [[]] \n"
 "or [[]] \n"
-"or [[[], [], []], []]"
+"or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]"
 
 #: src-en/data/events_special_filler.xml:1520
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_TERRAFORMING_SCAN\"]/choice[1]/event/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr ""
 "(Long-Ranged Scanners) Scan the planet.\n"
-"[] \n"
-"or [] \n"
+"System Upgrade(Oxygen 1™)[] \n"
+"or System Upgrade(Reactor 1™)[] \n"
 "or [[]] \n"
 "or [[]] \n"
-"or [[[], [], []], []]"
+"or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]"
 
 #: src-en/data/events_special_filler.xml:1524
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_TERRAFORMING_SCAN\"]/choice[1]/event/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr ""
 "(Lifeform Scanners) Scan the planet.\n"
-"[] \n"
-"or [] \n"
+"System Upgrade(Oxygen 1™)[] \n"
+"or System Upgrade(Reactor 1™)[] \n"
 "or [[]] \n"
 "or [[]] \n"
-"or [[[], [], []], []]"
+"or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]"
 
 #: src-en/data/events_special_filler.xml:1530
 msgid ""
@@ -2590,11 +2590,11 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_NORMAL_SCAN_TERRAFORMING\"]/event[2]/choice/text"
 msgstr ""
 "Continue...\n"
-"[] \n"
-"or [] \n"
+"System Upgrade(Oxygen 1™)[] \n"
+"or System Upgrade(Reactor 1™)[] \n"
 "or [[]] \n"
 "or [[]] \n"
-"or [[[], [], []], []]"
+"or [[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []], []]"
 
 #: src-en/data/events_special_filler.xml:1558
 msgid ""
@@ -2657,7 +2657,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_HIGH_SCAN_TERRAFORMING\"]/event[5]/choice[1]/text"
 msgstr ""
 "Tell them to stop. Any life is valuable.\n"
-"[[], [], []]"
+"[15<~<25[], System Upgrade(Oxygen 1™), -25<~<-15[], []]"
 
 #: src-en/data/events_special_filler.xml:1586
 msgid ""
@@ -2671,14 +2671,14 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_HIGH_SCAN_TERRAFORMING\"]/event[5]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Accept the bribe and leave.\n"
-"[]"
+"15<~<25[]"
 
 #: src-en/data/events_special_filler.xml:1596
 msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_HIGH_SCAN_TERRAFORMING\"]/event[5]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Offer to pay them to at least delay until the mold can be studied.\n"
-"[]"
+"System Upgrade(Oxygen 1™), -25<~<-15[]"
 
 #: src-en/data/events_special_filler.xml:1598
 msgid ""
@@ -2721,14 +2721,14 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CONFUSED_MANTIS\"]/choice[1]/text"
 msgstr ""
 "Listen to their problem.\n"
-"[[[Gain a crew(Mantis Free)[], []]] nor <!>Lose your crew(clonable)[] nor [], [], [], [[Gain a crew(Mantis Free)[], []]], [[Gain a crew(Mantis Free)[], []]], <!>Lose your crew(clonable)[], Reward[], Reward[]]"
+"[[[Gain a crew(Mantis Free)[], System Upgrade(Engines 1™)[]]] or <!>Lose your crew(clonable)[] or [], [], [], [[Gain a crew(Mantis Free)[], System Upgrade(Engines 1™)[]]], [[Gain a crew(Mantis Free)[], System Upgrade(Engines 1™)[]]], <!>Lose your crew(clonable)[], Reward Standard(L)[], Reward Standard(M)[]]"
 
 #: src-en/data/events_special_filler.xml:1627
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CONFUSED_MANTIS\"]/choice[@req=\"ANTI_VIRUS\"]/text"
 msgstr ""
 "(Anti-Virus) Offer to use your anti-virus.\n"
-"[[[[Gain a crew(Mantis Free)[], []]] nor <!>Lose your crew(clonable)[] nor [], [], [], [[Gain a crew(Mantis Free)[], []]], [[Gain a crew(Mantis Free)[], []]], <!>Lose your crew(clonable)[], Reward[], Reward[]]]"
+"[[[[Gain a crew(Mantis Free)[], System Upgrade(Engines 1™)[]]] or <!>Lose your crew(clonable)[] or [], [], [], [[Gain a crew(Mantis Free)[], System Upgrade(Engines 1™)[]]], [[Gain a crew(Mantis Free)[], System Upgrade(Engines 1™)[]]], <!>Lose your crew(clonable)[], Reward Standard(L)[], Reward Standard(M)[]]]"
 
 #: src-en/data/events_special_filler.xml:1629
 msgid ""
@@ -2743,7 +2743,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CONFUSED_MANTIS\"]/choice[@req=\"ANTI_VIRUS\"]/event/choice/text"
 msgstr ""
 "Listen to their problem.\n"
-"[[[Gain a crew(Mantis Free)[], []]] nor <!>Lose your crew(clonable)[] nor [], [], [], [[Gain a crew(Mantis Free)[], []]], [[Gain a crew(Mantis Free)[], []]], <!>Lose your crew(clonable)[], Reward[], Reward[]]"
+"[[[Gain a crew(Mantis Free)[], System Upgrade(Engines 1™)[]]] or <!>Lose your crew(clonable)[] or [], [], [], [[Gain a crew(Mantis Free)[], System Upgrade(Engines 1™)[]]], [[Gain a crew(Mantis Free)[], System Upgrade(Engines 1™)[]]], <!>Lose your crew(clonable)[], Reward Standard(L)[], Reward Standard(M)[]]"
 
 #: src-en/data/events_special_filler.xml:1637
 msgid ""
@@ -2787,7 +2787,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Send a shuttle with an away team to help.\n"
-"[[Gain a crew(Mantis Free)[], []]] \n"
+"[[Gain a crew(Mantis Free)[], System Upgrade(Engines 1™)[]]] \n"
 "or <!>Lose your crew(clonable)[] \n"
 "or []"
 
@@ -2811,7 +2811,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CONFUSED_MANTIS_PROBLEM\"]/choice[@req=\"LIST_CREW_HUMAN\"]/text"
 msgstr ""
 "(Human Crew) Send your human crewmember to communicate with the Mantis.\n"
-"[[Gain a crew(Mantis Free)[], []]]"
+"[[Gain a crew(Mantis Free)[], System Upgrade(Engines 1™)[]]]"
 
 #: src-en/data/events_special_filler.xml:1668
 msgid ""
@@ -2826,14 +2826,14 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CONFUSED_MANTIS_PROBLEM\"]/choice[@req=\"LIST_CREW_HUMAN\"]/event/choice/text"
 msgstr ""
 "Return him home.\n"
-"[Gain a crew(Mantis Free)[], []]"
+"[Gain a crew(Mantis Free)[], System Upgrade(Engines 1™)[]]"
 
 #: src-en/data/events_special_filler.xml:1676
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CONFUSED_MANTIS_PROBLEM\"]/choice[@req=\"LIST_CREW_FREEMAN\"]/text"
 msgstr ""
 "(Free Mantis Crew) Send your Mantis crewmember to communicate with the Mantis.\n"
-"[[Gain a crew(Mantis Free)[], []]]"
+"[[Gain a crew(Mantis Free)[], System Upgrade(Engines 1™)[]]]"
 
 #: src-en/data/events_special_filler.xml:1678
 msgid ""
@@ -2848,7 +2848,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CONFUSED_MANTIS_PROBLEM\"]/choice[@req=\"LIST_CREW_FREEMAN\"]/event/choice/text"
 msgstr ""
 "Return him home.\n"
-"[Gain a crew(Mantis Free)[], []]"
+"[Gain a crew(Mantis Free)[], System Upgrade(Engines 1™)[]]"
 
 #: src-en/data/events_special_filler.xml:1686
 msgid ""
@@ -2878,7 +2878,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CONFUSED_MANTIS_PROBLEM\"]/choice[@req=\"LIST_CREW_SUZERAIN\"]/text"
 msgstr ""
 "(Hive Elite) Your elite Mantis is a natural leader. Send them in.\n"
-"Reward[]"
+"Reward Standard(L)[]"
 
 #: src-en/data/events_special_filler.xml:1698
 msgid ""
@@ -2895,7 +2895,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CONFUSED_MANTIS_PROBLEM\"]/choice[@req=\"mind\"]/text"
 msgstr ""
 "(Mind Control) Use your Mind Control system to calm him down.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_special_filler.xml:1705
 msgid ""
@@ -2938,7 +2938,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CONFUSED_MANTIS_HOME\"]/choice[2]/text"
 msgstr ""
 "Ask if they can take a look at your engines.\n"
-"[]"
+"System Upgrade(Engines 1™)[]"
 
 #: src-en/data/events_special_filler.xml:1722
 msgid ""
@@ -2960,7 +2960,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_CONFUSED_MANTIS_DEFAULT\"]/event[1]/choice/text"
 msgstr ""
 "Continue...\n"
-"[Gain a crew(Mantis Free)[], []]"
+"[Gain a crew(Mantis Free)[], System Upgrade(Engines 1™)[]]"
 
 #: src-en/data/events_special_filler.xml:1736
 msgid ""
@@ -3094,7 +3094,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CROPS\"]/choice[@req=\"BLUELIST_FIRE_NONBALLISTIC\"]/text"
 msgstr ""
 "(Fire Weapon) Show the pirate how to intimidate settlers: burn their crops!\n"
-"Reward[[]]"
+"Reward Drone(H)[[]]"
 
 #: src-en/data/events_special_filler.xml:1824
 msgid ""
@@ -3116,7 +3116,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CROPS\"]/choice[@req=\"BLUELIST_FIRE_BALLISTIC\"]/text"
 msgstr ""
 "(Ballistic Fire Weapon) Show the pirate how to intimidate settlers: start fires in their crude dwellings. [-1}]\n"
-"Reward[[]]"
+"-1}, Reward Drone(H)[[]]"
 
 #: src-en/data/events_special_filler.xml:1835
 msgid ""
@@ -3140,7 +3140,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CROPS\"]/choice[@req=\"BLUELIST_PARTICLE\"]/text"
 msgstr ""
 "(Particle Tech) Show the pirate how to intimidate settlers: burn their crops!\n"
-"Reward[[]]"
+"Reward Drone(H)[[]]"
 
 #: src-en/data/events_special_filler.xml:1849
 msgid ""
@@ -3204,7 +3204,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CLAIRVOYANT\"]/choice[2]/text"
 msgstr ""
 "Offer your help.\n"
-"[[Reward[] nor [[]]], [Reward[]], [Reward[]], []]"
+"[-3{[Reward Item(M)[] or [[]]], -3{[Reward Item(M)[]], -3{[Reward Item(M)[]], []]"
 
 #: src-en/data/events_special_filler.xml:1884
 msgid ""
@@ -3219,7 +3219,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CLAIRVOYANT\"]/choice[2]/event/choice[1]/text"
 msgstr ""
 "Give them some fuel.\n"
-"[Reward[] nor [[]]]"
+"-3{[Reward Item(M)[] or [[]]]"
 
 #: src-en/data/events_special_filler.xml:1888
 msgid ""
@@ -3231,7 +3231,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CLAIRVOYANT\"]/choice[2]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[] \n"
+"Reward Item(M)[] \n"
 "or [[]]"
 
 #: src-en/data/events_special_filler.xml:1899
@@ -3239,7 +3239,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CLAIRVOYANT\"]/choice[2]/event/choice[@req=\"LIST_CREW_SLUG\"]/text"
 msgstr ""
 "(Slug Crew) Have your Slug make the trade.\n"
-"[Reward[]]"
+"-3{[Reward Item(M)[]]"
 
 #: src-en/data/events_special_filler.xml:1901
 msgid ""
@@ -3253,7 +3253,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CLAIRVOYANT\"]/choice[2]/event/choice[@req=\"LIST_CREW_SLUG\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Item(M)[]"
 
 #: src-en/data/events_special_filler.xml:1908
 msgid ""
@@ -3268,7 +3268,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CLAIRVOYANT\"]/choice[2]/event/choice[@req=\"weapons\"]/text"
 msgstr ""
 "(Upg. Weapons) Keep your weapons powered while making the trade.\n"
-"[Reward[]]"
+"-3{[Reward Item(M)[]]"
 
 #: src-en/data/events_special_filler.xml:1917
 msgid ""
@@ -3282,7 +3282,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CLAIRVOYANT\"]/choice[2]/event/choice[@req=\"weapons\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Item(M)[]"
 
 #: src-en/data/events_special_filler.xml:1924
 msgid ""
@@ -3372,7 +3372,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_EXPLODED\"]/choice[1]/text"
 msgstr ""
 "Dock with the ship and save as many of the crew as you can.\n"
-"Reward[] \n"
+"Reward Standard(L)[] \n"
 "or Gain a crew(?)[] \n"
 "or []"
 
@@ -3381,18 +3381,18 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_EXPLODED\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr ""
 "(Lifeform Scanners) Run a scan on the ship, just to be certain.\n"
-"Reward[] \n"
+"Reward Standard(L)[] \n"
 "or Gain a crew(?)[] \n"
-"or Reward[]"
+"or Reward Standard(L)[]"
 
 #: src-en/data/events_special_filler.xml:1990
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_EXPLODED\"]/choice[@req=\"sensors\"]/text"
 msgstr ""
 "(Upg. Sensors) Run a scan on the ship, just to be certain.\n"
-"Reward[] \n"
+"Reward Standard(L)[] \n"
 "or Gain a crew(?)[] \n"
-"or Reward[]"
+"or Reward Standard(L)[]"
 
 #: src-en/data/events_special_filler.xml:1994
 msgid ""
@@ -3491,7 +3491,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_TIMER\"]/choice[@req=\"BLUELIST_ARMOR\"]/text"
 msgstr ""
 "(Hull Armor) Block the asteroid with your vessel.\n"
-"Reward[]"
+"Reward {(M)[]"
 
 #: src-en/data/events_special_filler.xml:2050
 msgid ""
@@ -3506,7 +3506,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_TIMER\"]/choice[@req=\"BLUELIST_WEAPONS_HEAVY\"]/text"
 msgstr ""
 "(Heavy Weapon) Blast the asteroid.\n"
-"Reward[]"
+"Reward {(M)[]"
 
 #: src-en/data/events_special_filler.xml:2058
 msgid ""
@@ -3564,9 +3564,9 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "This is a great opportunity. Let's dock and see if we can find valuable supplies.\n"
-"[Reward[] nor [Reward[[[]] nor [[], [[]]]], [[]] nor Reward[[[]] nor [[], [[]]]] nor [[], [], <!>Lose your crew(clonable)[]]], Reward[[[]] nor [[], [[]]]], Reward[[[]] nor [[], [[]]]]] \n"
-"or Reward[] \n"
-"or [Reward[[[]] nor [[], [[]]]], [[]] nor Reward[[[]] nor [[], [[]]]] nor [[], [], <!>Lose your crew(clonable)[]]]"
+"[Reward Weapon(H)[] or [Reward ~ Only(M)[[[]] or [[], [[]]]], [[]] or Reward Standard(H)[[[]] or [[], [[]]]] or [[], [], <!>Lose your crew(clonable)[]]], Reward ~ Only(L)[[[]] or [[], [[]]]], Reward ~ Only(M)[[[]] or [[], [[]]]]] \n"
+"or Reward Weapon(H)[] \n"
+"or [Reward ~ Only(M)[[[]] or [[], [[]]]], [[]] or Reward Standard(H)[[[]] or [[], [[]]]] or [[], [], <!>Lose your crew(clonable)[]]]"
 
 #: src-en/data/events_special_filler.xml:2098
 msgid ""
@@ -3581,7 +3581,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_GHOSTSHIP\"]/choice[3]/text"
 msgstr ""
 "We're in a hurry, let's just quickly pull some scrap off the ship.\n"
-"Reward[[[]] nor [[], [[]]]]"
+"Reward ~ Only(L)[[[]] or [[], [[]]]]"
 
 #: src-en/data/events_special_filler.xml:2106
 msgid ""
@@ -3651,22 +3651,22 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_GHOSTSHIP_DOCK\"]/event[1]/choice[1]/text"
 msgstr ""
 "They're being ridiculous. Finish the job.\n"
-"Reward[] \n"
-"or [Reward[[[]] nor [[], [[]]]], [[]] nor Reward[[[]] nor [[], [[]]]] nor [[], [], <!>Lose your crew(clonable)[]]]"
+"Reward Weapon(H)[] \n"
+"or [Reward ~ Only(M)[[[]] or [[], [[]]]], [[]] or Reward Standard(H)[[[]] or [[], [[]]]] or [[], [], <!>Lose your crew(clonable)[]]]"
 
 #: src-en/data/events_special_filler.xml:2134
 msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_GHOSTSHIP_DOCK\"]/event[1]/choice[2]/text"
 msgstr ""
 "They've gathered enough supplies. Let's get going.\n"
-"Reward[[[]] nor [[], [[]]]]"
+"Reward ~ Only(L)[[[]] or [[], [[]]]]"
 
 #: src-en/data/events_special_filler.xml:2138
 msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_GHOSTSHIP_DOCK\"]/event[1]/choice[@req=\"sensors\"]/text"
 msgstr ""
 "(Adv. Sensors) Wait, sensors are picking up something strange...\n"
-"Reward[[[]] nor [[], [[]]]]"
+"Reward ~ Only(M)[[[]] or [[], [[]]]]"
 
 #: src-en/data/events_special_filler.xml:2140
 msgid ""
@@ -3767,7 +3767,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_GHOSTSHIP_BOARDING\"]/event[2]/choice[1]/text"
 msgstr ""
 "Order your crew to retreat with what they can and get back to the ship.\n"
-"Reward[[[]] nor [[], [[]]]]"
+"Reward ~ Only(M)[[[]] or [[], [[]]]]"
 
 #: src-en/data/events_special_filler.xml:2197
 msgid ""
@@ -3790,7 +3790,7 @@ msgid ""
 msgstr ""
 "Order them to stand their ground, they should be able to handle a few Ghosts.\n"
 "[[]] \n"
-"or Reward[[[]] nor [[], [[]]]] \n"
+"or Reward Standard(H)[[[]] or [[], [[]]]] \n"
 "or [[], [], <!>Lose your crew(clonable)[]]"
 
 #: src-en/data/events_special_filler.xml:2213
@@ -3889,7 +3889,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_ARGEONN_SALESMAN_START\"]/choice[1]/text"
 msgstr ""
 "Hail the ship.\n"
-"[[[], [[]], [], [], [], [[]]], [[]], [], Reward[[]], Reward[[]]]"
+"[[-25~ 5|[], -35<~<-25, Gain a drone(Random)[[]], -20<~<-15, System Upgrade(| 1™)[], -33<~<-25, System Upgrade(| 1™)[], -65<~<-50, System Upgrade(| 1™)[], [[]]], [[]], [], Reward ~ Only(H)[[]], Reward ~ Only(H)[[]]]"
 
 #: src-en/data/events_special_filler.xml:2268
 msgid ""
@@ -3963,7 +3963,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"CONTACT_PIRATE_SALESMAN\"]/choice[1]/text"
 msgstr ""
 "Dock with the ship.\n"
-"[[], [[]], [], [], [], [[]]]"
+"[-25~ 5|[], -35<~<-25, Gain a drone(Random)[[]], -20<~<-15, System Upgrade(| 1™)[], -33<~<-25, System Upgrade(| 1™)[], -65<~<-50, System Upgrade(| 1™)[], [[]]]"
 
 #: src-en/data/events_special_filler.xml:2312
 msgid ""
@@ -3998,7 +3998,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"CONTACT_PIRATE_SALESMAN\"]/choice[@req=\"hacking\"]/text"
 msgstr ""
 "(Hacking) Disable their Weapon system before docking.\n"
-"Reward[[]]"
+"Reward ~ Only(H)[[]]"
 
 #: src-en/data/events_special_filler.xml:2329
 msgid ""
@@ -4020,7 +4020,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"CONTACT_PIRATE_SALESMAN\"]/choice[@req=\"COMBAT_WEAPON_JAMMER\"]/text"
 msgstr ""
 "(Targeting Jammer) Disable their Weapon system before docking.\n"
-"Reward[[]]"
+"Reward ~ Only(H)[[]]"
 
 #: src-en/data/events_special_filler.xml:2340
 msgid ""
@@ -4048,14 +4048,14 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"DOCK_DRONE_SALESMAN\"]/choice[1]/text"
 msgstr ""
 "Buy some Drone parts.\n"
-"[]"
+"-25~ 5|[]"
 
 #: src-en/data/events_special_filler.xml:2364
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"DOCK_DRONE_SALESMAN\"]/choice[2]/text"
 msgstr ""
 "Buy a Drone schematic.\n"
-"[[]]"
+"-35<~<-25, Gain a drone(Random)[[]]"
 
 #: src-en/data/events_special_filler.xml:2366
 msgid ""
@@ -4076,21 +4076,21 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"DOCK_DRONE_SALESMAN\"]/choice[3]/text"
 msgstr ""
 "Buy a Drone system upgrade.\n"
-"[]"
+"-20<~<-15, System Upgrade(| 1™)[]"
 
 #: src-en/data/events_special_filler.xml:2387
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"DOCK_DRONE_SALESMAN\"]/choice[4]/text"
 msgstr ""
 "Buy a Drone system upgrade.\n"
-"[]"
+"-33<~<-25, System Upgrade(| 1™)[]"
 
 #: src-en/data/events_special_filler.xml:2396
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"DOCK_DRONE_SALESMAN\"]/choice[5]/text"
 msgstr ""
 "Buy a Drone system upgrade.\n"
-"[]"
+"-65<~<-50, System Upgrade(| 1™)[]"
 
 #: src-en/data/events_special_filler.xml:2405
 msgid ""
@@ -4121,9 +4121,9 @@ msgid ""
 msgstr ""
 "Move in to examine the station.\n"
 "[] \n"
-"or Reward[] \n"
-"or Reward[] \n"
-"or [[Gain a crew(?)[] nor Gain a crew(?)[] nor []], Reward[]] \n"
+"or Reward ~ Only(L)[] \n"
+"or Reward ~ Only(L)[] \n"
+"or [[Gain a crew(?)[] or Gain a crew(?)[] or []], Reward ~ Only(L)[]] \n"
 "or [[]] \n"
 "or []"
 
@@ -4207,7 +4207,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_EMPTY_STATION_LIST\"]/event[4]/choice[@req=\"clonebay\"]/text"
 msgstr ""
 "(Clone Bay) Search for a surviving DNA bank.\n"
-"[Gain a crew(?)[] nor Gain a crew(?)[] nor []]"
+"[Gain a crew(?)[] or Gain a crew(?)[] or []]"
 
 #: src-en/data/events_special_filler.xml:2463
 msgid ""
@@ -4231,7 +4231,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_EMPTY_STATION_LIST\"]/event[4]/choice[2]/text"
 msgstr ""
 "Scrap the machinery.\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_special_filler.xml:2473
 msgid ""
@@ -4389,7 +4389,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_REBEL_CHECKPOINT\"]/choice[2]/text"
 msgstr ""
 "Bribe the Rebels to release the civilian ships.\n"
-"[[] nor Reward[] nor Reward[] nor [[]]]"
+"-15<~<-10[[] or Reward ~ Only(L)[] or Reward Standard(L)[] or [[]]]"
 
 #: src-en/data/events_special_filler.xml:2548
 msgid ""
@@ -4397,8 +4397,8 @@ msgid ""
 msgstr ""
 "Contact the civilian ships.\n"
 "[] \n"
-"or Reward[] \n"
-"or Reward[] \n"
+"or Reward ~ Only(L)[] \n"
+"or Reward Standard(L)[] \n"
 "or [[]]"
 
 #: src-en/data/events_special_filler.xml:2554
@@ -4627,7 +4627,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_REBEL_HELPERS\"]/choice[@req=\"human_mfk\"]/text"
 msgstr ""
 "(MFK Ace Crew) Pretend to be a Rebel ship and deliver the supplies yourself.\n"
-"[[], Reward[] nor Reward[] nor [] nor Reward[]]"
+"[System Upgrade(Weapons 1™)[], Reward |(L), Gain a drone(Manning)[] or Reward ~ Only(M)[] or Gain a weapon(Bomb Heal)[] or Reward } Only(L)[]]"
 
 #: src-en/data/events_special_filler.xml:2653
 msgid ""
@@ -4642,7 +4642,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_REBEL_HELPERS\"]/choice[@req=\"human_mfk\"]/event/choice[1]/text"
 msgstr ""
 "Deliver the supplies.\n"
-"[]"
+"System Upgrade(Weapons 1™)[]"
 
 #: src-en/data/events_special_filler.xml:2657
 msgid ""
@@ -4657,23 +4657,23 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_REBEL_HELPERS\"]/choice[@req=\"human_mfk\"]/event/choice[2]/text"
 msgstr ""
 "Steal the supplies.\n"
-"Reward[] \n"
-"or Reward[] \n"
-"or [] \n"
-"or Reward[]"
+"Reward |(L), Gain a drone(Manning)[] \n"
+"or Reward ~ Only(M)[] \n"
+"or Gain a weapon(Bomb Heal)[] \n"
+"or Reward } Only(L)[]"
 
 #: src-en/data/events_special_filler.xml:2669
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_REBEL_HELPERS\"]/choice[3]/text"
 msgstr ""
 "Wait and steal the supplies from the civilians.\n"
-"Reward[[]] \n"
+"Reward |(L)[[]] \n"
 "or [[]] \n"
-"or Reward[[]] \n"
+"or Reward ~ Only(L)[[]] \n"
 "or [[]] \n"
-"or [[]] \n"
-"or Reward[[]] \n"
-"or Reward[[]]"
+"or Gain a weapon(Bomb Heal)[[]] \n"
+"or Reward } Only(L)[[]] \n"
+"or Reward ~ Only(L)[[]]"
 
 #: src-en/data/events_special_filler.xml:2673
 msgid ""
@@ -4868,7 +4868,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_ROGUE_REBEL\"]/choice[1]/text"
 msgstr ""
 "Go looking for the Rebel ship.\n"
-"[[[]], []] \n"
+"[<!>Fleet Advance(1)[[]], []] \n"
 "or [[]]"
 
 #: src-en/data/events_special_filler.xml:2779
@@ -4976,7 +4976,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_ROGUE_REBEL_SEARCH\"]/event[1]/choice[1]/text"
 msgstr ""
 "Continue searching.\n"
-"[[]]"
+"<!>Fleet Advance(1)[[]]"
 
 #: src-en/data/events_special_filler.xml:2834
 msgid ""
@@ -5030,7 +5030,7 @@ msgid ""
 msgstr ""
 "Prepare to board and investigate.\n"
 "[] \n"
-"or Reward[] \n"
+"or Reward }(M)[] \n"
 "or Gain a crew(?)[] \n"
 "or <!>Lose your crew(clonable)[] \n"
 "or []"
@@ -5049,9 +5049,9 @@ msgid ""
 msgstr ""
 "(Boarding Drone) Use a drone to investigate.\n"
 "[] \n"
-"or Reward[] \n"
+"or Reward }(M)[] \n"
 "or Gain a crew(?)[] \n"
-"or [] \n"
+"or -1|[] \n"
 "or []"
 
 #: src-en/data/events_special_filler.xml:2905
@@ -5307,7 +5307,7 @@ msgid ""
 msgstr ""
 "Send in your crew to help control the crowds.\n"
 "[] \n"
-"or <!>Lose your crew(UNCLONABLE), Reward[]"
+"or <!>Lose your crew(UNCLONABLE), Reward Stuff(M)[]"
 
 #: src-en/data/events_special_filler.xml:3044
 msgid ""
@@ -5350,7 +5350,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_DISEASE\"]/choice[@req=\"LIST_CREW_ROCK\"]/text"
 msgstr ""
 "(Rock Crew) Send your Rock crew-member to prevent a riot.\n"
-"Reward[]"
+"Reward Stuff(M)[]"
 
 #: src-en/data/events_special_filler.xml:3064
 msgid ""
@@ -5366,7 +5366,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_DISEASE\"]/choice[@req=\"LIST_CREW_ENGI\"]/text"
 msgstr ""
 "(Engi Crew) Send your Engi to calm down the infected.\n"
-"Reward[]"
+"Reward Stuff(M)[]"
 
 #: src-en/data/events_special_filler.xml:3071
 msgid ""
@@ -5383,7 +5383,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_DISEASE\"]/choice[@req=\"LIST_CREW_GHOST\"]/text"
 msgstr ""
 "(Ghost Crew) Send your Ghost to calm down the infected.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_special_filler.xml:3078
 msgid ""
@@ -5402,7 +5402,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_DISEASE\"]/choice[@req=\"LIST_CREW_ANCIENT\"]/text"
 msgstr ""
 "(Obelisk Crew) Send your Obelisk to calm down the infected.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_special_filler.xml:3085
 msgid ""
@@ -5419,7 +5419,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_DISEASE\"]/choice[@req=\"DRONE_CONTROL_MEDICAL\"]/text"
 msgstr ""
 "(Medical Drone) Send your drone to treat the infected. [-1|]\n"
-"Reward[]"
+"Reward Standard(H), -1|[]"
 
 #: src-en/data/events_special_filler.xml:3092
 msgid ""
@@ -5436,7 +5436,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_DISEASE\"]/choice[@req=\"LIST_CREW_MEDICAL\"]/text"
 msgstr ""
 "(Medical Crew) Send your crew to treat the infected.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_special_filler.xml:3102
 msgid ""
@@ -5452,7 +5452,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_DISEASE\"]/choice[@req=\"medbay\"]/text"
 msgstr ""
 "(Adv. Medbay) Use your Medbay to help synthesize a cure.\n"
-"[Reward[], Reward[]]"
+"[Reward Stuff(M)[], Reward Weapon(H)[]]"
 
 #: src-en/data/events_special_filler.xml:3109
 msgid ""
@@ -5468,7 +5468,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_DISEASE\"]/choice[@req=\"medbay\"]/event/choice[1]/text"
 msgstr ""
 "Continue...\n"
-"Reward[]"
+"Reward Stuff(M)[]"
 
 #: src-en/data/events_special_filler.xml:3113
 msgid ""
@@ -5483,7 +5483,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_DISEASE\"]/choice[@req=\"medbay\"]/event/choice[@req=\"NANO_MEDBAY\"]/text"
 msgstr ""
 "(Med-bot Dispersal) Use the Nano med-bots to accelerate the dispersal of the cure.\n"
-"Reward[]"
+"Reward Weapon(H)[]"
 
 #: src-en/data/events_special_filler.xml:3120
 msgid ""
@@ -5533,8 +5533,8 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_FIRE\"]/choice[1]/text"
 msgstr ""
 "Send your crew in a shuttle to help put out the fire.\n"
-"<!>Lose your crew(clonable), Reward[] \n"
-"or Reward[]"
+"<!>Lose your crew(clonable), Reward ~ Only(L)[] \n"
+"or Reward ~ Only(H)[]"
 
 #: src-en/data/events_special_filler.xml:3149
 msgid ""
@@ -5548,8 +5548,8 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_FIRE\"]/choice[3]/text"
 msgstr ""
 "Dock and try to rescue the survivors.\n"
-"Reward[] \n"
-"or Reward, Gain a crew(Zoltan)[]"
+"Reward ~ Only(L)[] \n"
+"or Reward ~ Only(L), Gain a crew(Zoltan)[]"
 
 #: src-en/data/events_special_filler.xml:3157
 msgid ""
@@ -5613,7 +5613,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_FIRE\"]/choice[@req=\"BLUELIST_CREW_NOFIRE\"]/text"
 msgstr ""
 "(Fireproof Crew) Send your crew-member in.\n"
-"[Reward[]]"
+"[Reward Augment(H)[]]"
 
 #: src-en/data/events_special_filler.xml:3187
 msgid ""
@@ -5629,7 +5629,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_FIRE\"]/choice[@req=\"BLUELIST_CREW_NOFIRE\"]/event/choice/text"
 msgstr ""
 "Contact the survivors.\n"
-"Reward[]"
+"Reward Augment(H)[]"
 
 #: src-en/data/events_special_filler.xml:3191
 msgid ""
@@ -5643,7 +5643,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_FIRE\"]/choice[@req=\"LIST_CREW_ELITE_FIRE\"]/text"
 msgstr ""
 "(Elite Crew) Send your elite crew-member in.\n"
-"[Reward[]]"
+"[Reward Augment(H)[]]"
 
 #: src-en/data/events_special_filler.xml:3200
 msgid ""
@@ -5657,7 +5657,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_FIRE\"]/choice[@req=\"LIST_CREW_ELITE_FIRE\"]/event/choice/text"
 msgstr ""
 "Contact the survivors.\n"
-"Reward[]"
+"Reward Augment(H)[]"
 
 #: src-en/data/events_special_filler.xml:3204
 msgid ""
@@ -5671,7 +5671,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_FIRE\"]/choice[@req=\"DRONE_CONTROL_REPAIR_CREW\"]/text"
 msgstr ""
 "(Repair Drone) Send your Repair drone into the fire.\n"
-"[Reward[]]"
+"[Reward Drone(H)[]]"
 
 #: src-en/data/events_special_filler.xml:3213
 msgid ""
@@ -5685,7 +5685,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_FIRE\"]/choice[@req=\"DRONE_CONTROL_REPAIR_CREW\"]/event/choice/text"
 msgstr ""
 "Contact the survivors.\n"
-"Reward[]"
+"Reward Drone(H)[]"
 
 #: src-en/data/events_special_filler.xml:3217
 msgid ""
@@ -5700,7 +5700,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_FIRE\"]/choice[@req=\"FIRE_EXTINGUISHERS\"]/text"
 msgstr ""
 "(Extinguishers) Use your tech to suppress the fire.\n"
-"[Reward[]]"
+"[Reward Drone(H)[]]"
 
 #: src-en/data/events_special_filler.xml:3226
 msgid ""
@@ -5715,7 +5715,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_FIRE\"]/choice[@req=\"FIRE_EXTINGUISHERS\"]/event/choice/text"
 msgstr ""
 "Contact the survivors.\n"
-"Reward[]"
+"Reward Drone(H)[]"
 
 #: src-en/data/events_special_filler.xml:3230
 msgid ""
@@ -5787,7 +5787,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_SATELLITE\"]/choice[1]/text"
 msgstr ""
 "Promise to help.\n"
-"[Reward[] nor [], Reward[], Reward[], Reward[], Reward[], Reward[], Reward[], Reward[], Reward[], Reward[]]"
+"[Reward Standard(L)[] or [], Reward Standard(H)[], Reward Standard(L)[], Reward Standard(L)[], Reward Standard(M)[], Reward Standard(H)[], Reward Standard(H)[], Reward Standard(H)[], Reward ~ Only(H)[], Reward Standard(H)[]]"
 
 #: src-en/data/events_special_filler.xml:3271
 msgid ""
@@ -5799,7 +5799,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_SATELLITE\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Simply fire on the defense system from a distance.\n"
-"Reward[] \n"
+"Reward Standard(L)[] \n"
 "or []"
 
 #: src-en/data/events_special_filler.xml:3277
@@ -5807,7 +5807,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_SATELLITE\"]/choice[1]/event/choice[@req=\"BLUELIST_ION\"]/text"
 msgstr ""
 "(Ion Weapon) Disable the defense system.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_special_filler.xml:3279
 msgid ""
@@ -5822,7 +5822,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_SATELLITE\"]/choice[1]/event/choice[@req=\"BLUELIST_ENERGY\"]/text"
 msgstr ""
 "(Energy Weapon) Disable the defense system.\n"
-"Reward[]"
+"Reward Standard(L)[]"
 
 #: src-en/data/events_special_filler.xml:3286
 msgid ""
@@ -5838,7 +5838,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "(Cloaking) Use your Cloaking to disable the system.\n"
-"Reward[]"
+"Reward Standard(L)[]"
 
 #: src-en/data/events_special_filler.xml:3293
 msgid ""
@@ -5856,7 +5856,7 @@ msgid ""
 " and @lvl=\"2\"]/text"
 msgstr ""
 "(Upg. Cloaking) Use your Cloaking to disable the system.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_special_filler.xml:3300
 msgid ""
@@ -5873,7 +5873,7 @@ msgid ""
 " and @lvl=\"3\"]/text"
 msgstr ""
 "(Adv. Cloaking) Use your Cloaking to disable the system.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_special_filler.xml:3307
 msgid ""
@@ -5889,7 +5889,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_SATELLITE\"]/choice[1]/event/choice[@req=\"LIST_CREW_ENGI\"]/text"
 msgstr ""
 "(Engi Crew) Remotely repair its targeting system.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_special_filler.xml:3314
 msgid ""
@@ -5904,7 +5904,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_SATELLITE\"]/choice[1]/event/choice[@req=\"LIST_CREW_ENGINEER\"]/text"
 msgstr ""
 "(Engineer Crew) Remotely repair its targeting system.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_special_filler.xml:3321
 msgid ""
@@ -5919,7 +5919,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_SATELLITE\"]/choice[1]/event/choice[@req=\"LIST_CREW_LANIUS\"]/text"
 msgstr ""
 "(Lanius Crew) Your crew offers to help.\n"
-"Reward[]"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_special_filler.xml:3328
 msgid ""
@@ -5936,7 +5936,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_SATELLITE\"]/choice[1]/event/choice[@req=\"PDS_DISABLE\"]/text"
 msgstr ""
 "(Signal Diluter) Block the satellite's targeting capabilities.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_special_filler.xml:3335
 msgid ""
@@ -6000,15 +6000,15 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_MINER\"]/choice[1]/text"
 msgstr ""
 "Try to dislodge the ship by shooting at the rocks.\n"
-"Reward[] \n"
-"or Reward[]"
+"Reward ~ Only(L)[] \n"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_special_filler.xml:3377
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_MINER\"]/choice[2]/text"
 msgstr ""
 "Destroy and loot the ship. They're just pirates.\n"
-"Reward[] \n"
+"Reward Standard(M)[] \n"
 "or [[]]"
 
 #: src-en/data/events_special_filler.xml:3381
@@ -6016,7 +6016,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_MINER\"]/choice[@req=\"BLUELIST_BEAMS_DAMAGE\"]/text"
 msgstr ""
 "(Damaging Beam Weapon) Carefully cut the ship out.\n"
-"Reward[]"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_special_filler.xml:3383
 msgid ""
@@ -6031,7 +6031,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_MINER\"]/choice[@req=\"BLUELIST_FOCUS_DAMAGE\"]/text"
 msgstr ""
 "(Damaging Pinpoint Weapon) Attempt to meticulously cut out the pirate ship.\n"
-"[]"
+"<!>Fleet Advance(1)[]"
 
 #: src-en/data/events_special_filler.xml:3390
 msgid ""
@@ -6047,7 +6047,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_MINER\"]/choice[@req=\"DRONE_CONTROL_BEAM_DRONE\"]/text"
 msgstr ""
 "(Beam Drone) Have your drone cut the ship out.\n"
-"Reward[]"
+"Reward Standard(M), -1|[]"
 
 #: src-en/data/events_special_filler.xml:3397
 msgid ""
@@ -6112,7 +6112,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_ESCORT\"]/choice[1]/text"
 msgstr ""
 "Lead them to their destination.\n"
-"Reward[]"
+"Reward ~ Only(L)[]"
 
 #: src-en/data/events_special_filler.xml:3438
 msgid ""
@@ -6175,7 +6175,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_ESCORT\"]/choice[@req=\"FTL_JUMPER\"]/text"
 msgstr ""
 "(Advanced Navigation) Have your navigation software calculate and upload route instructions to their ship.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_special_filler.xml:3471
 msgid ""
@@ -6209,7 +6209,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_COMBAT\"]/choice[@req=\"COMBAT_WEAPON_JAMMER\"]/text"
 msgstr ""
 "(Targeting Jammer) Disable the Rebel weapons so the Fed ship can escape.\n"
-"[[Gain a crew(?), Reward[], Gain a crew(?), Reward[], Gain a crew(?), Reward[], [Gain a crew(?), Reward[]], [Gain a crew(?), Reward[]], [Gain a crew(?), Reward[]]] nor Reward[]]"
+"[[Gain a crew(?), Reward Standard(L)[], Gain a crew(?), Reward {(H)[], Gain a crew(?), Reward ~ Only(M)[], -1}[Gain a crew(?), Reward ~ Only(M)[]], [Gain a crew(?), Reward ~ Only(M)[]], [Gain a crew(?), Reward ~ Only(M)[]]] or Reward Standard(M)[]]"
 
 #: src-en/data/events_special_filler.xml:3495
 msgid ""
@@ -6225,15 +6225,15 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_COMBAT\"]/choice[@req=\"COMBAT_WEAPON_JAMMER\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[Gain a crew(?), Reward[], Gain a crew(?), Reward[], Gain a crew(?), Reward[], [Gain a crew(?), Reward[]], [Gain a crew(?), Reward[]], [Gain a crew(?), Reward[]]] \n"
-"or Reward[]"
+"[Gain a crew(?), Reward Standard(L)[], Gain a crew(?), Reward {(H)[], Gain a crew(?), Reward ~ Only(M)[], -1}[Gain a crew(?), Reward ~ Only(M)[]], [Gain a crew(?), Reward ~ Only(M)[]], [Gain a crew(?), Reward ~ Only(M)[]]] \n"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_special_filler.xml:3503
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_COMBAT\"]/choice[@req=\"FLARE_DISTRACTION\"]/text"
 msgstr ""
 "(Flares) Use the flares to make a distraction so the Fed ship can escape.\n"
-"[[Gain a crew(?), Reward[], Gain a crew(?), Reward[], Gain a crew(?), Reward[], [Gain a crew(?), Reward[]], [Gain a crew(?), Reward[]], [Gain a crew(?), Reward[]]] nor Reward[]]"
+"[[Gain a crew(?), Reward Standard(L)[], Gain a crew(?), Reward {(H)[], Gain a crew(?), Reward ~ Only(M)[], -1}[Gain a crew(?), Reward ~ Only(M)[]], [Gain a crew(?), Reward ~ Only(M)[]], [Gain a crew(?), Reward ~ Only(M)[]]] or Reward Standard(M)[]]"
 
 #: src-en/data/events_special_filler.xml:3505
 msgid ""
@@ -6249,8 +6249,8 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_COMBAT\"]/choice[@req=\"FLARE_DISTRACTION\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[Gain a crew(?), Reward[], Gain a crew(?), Reward[], Gain a crew(?), Reward[], [Gain a crew(?), Reward[]], [Gain a crew(?), Reward[]], [Gain a crew(?), Reward[]]] \n"
-"or Reward[]"
+"[Gain a crew(?), Reward Standard(L)[], Gain a crew(?), Reward {(H)[], Gain a crew(?), Reward ~ Only(M)[], -1}[Gain a crew(?), Reward ~ Only(M)[]], [Gain a crew(?), Reward ~ Only(M)[]], [Gain a crew(?), Reward ~ Only(M)[]]] \n"
+"or Reward Standard(M)[]"
 
 #: src-en/data/events_special_filler.xml:3513
 msgid ""
@@ -6315,7 +6315,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_DISTRESS_COMBAT_LIST\"]/event[1]/choice[1]/text"
 msgstr ""
 "Quickly try to rescue the crew.\n"
-"Gain a crew(?), Reward[]"
+"Gain a crew(?), Reward Standard(L)[]"
 
 #: src-en/data/events_special_filler.xml:3538
 msgid ""
@@ -6330,7 +6330,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_DISTRESS_COMBAT_LIST\"]/event[1]/choice[@req=\"NANO_MEDBAY\"]/text"
 msgstr ""
 "(Med-bot Dispersal) Pump their ship with Nano Med-bots to aid in the rescue.\n"
-"Gain a crew(?), Reward[]"
+"Gain a crew(?), Reward {(H)[]"
 
 #: src-en/data/events_special_filler.xml:3546
 msgid ""
@@ -6345,7 +6345,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_DISTRESS_COMBAT_LIST\"]/event[1]/choice[@req=\"teleporter\"]/text"
 msgstr ""
 "(Teleporter) Lock on to all remaining life signatures and beam them onto your ship.\n"
-"Gain a crew(?), Reward[]"
+"Gain a crew(?), Reward ~ Only(M)[]"
 
 #: src-en/data/events_special_filler.xml:3554
 msgid ""
@@ -6360,7 +6360,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_DISTRESS_COMBAT_LIST\"]/event[1]/choice[@req=\"BLUELIST_BOMBS_HEAL\"]/text"
 msgstr ""
 "(Heal Bomb) Use a healing bomb to keep them alive.\n"
-"[Gain a crew(?), Reward[]]"
+"-1}[Gain a crew(?), Reward ~ Only(M)[]]"
 
 #: src-en/data/events_special_filler.xml:3562
 msgid ""
@@ -6375,7 +6375,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_DISTRESS_COMBAT_LIST\"]/event[1]/choice[@req=\"BLUELIST_BOMBS_HEAL\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a crew(?), Reward[]"
+"Gain a crew(?), Reward ~ Only(M)[]"
 
 #: src-en/data/events_special_filler.xml:3569
 msgid ""
@@ -6389,7 +6389,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_DISTRESS_COMBAT_LIST\"]/event[1]/choice[@req=\"DRONE_CONTROL_MEDICAL\"]/text"
 msgstr ""
 "(Medical Drone) Use the drone to keep them alive.\n"
-"[Gain a crew(?), Reward[]]"
+"[Gain a crew(?), Reward ~ Only(M)[]]"
 
 #: src-en/data/events_special_filler.xml:3579
 msgid ""
@@ -6404,7 +6404,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_DISTRESS_COMBAT_LIST\"]/event[1]/choice[@req=\"DRONE_CONTROL_MEDICAL\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a crew(?), Reward[]"
+"Gain a crew(?), Reward ~ Only(M)[]"
 
 #: src-en/data/events_special_filler.xml:3583
 msgid ""
@@ -6418,7 +6418,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_DISTRESS_COMBAT_LIST\"]/event[1]/choice[@req=\"LIST_CREW_MEDICAL\"]/text"
 msgstr ""
 "(Medical Crew) Send your crewmember to stabilize their condition.\n"
-"[Gain a crew(?), Reward[]]"
+"[Gain a crew(?), Reward ~ Only(M)[]]"
 
 #: src-en/data/events_special_filler.xml:3593
 msgid ""
@@ -6433,7 +6433,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_DISTRESS_COMBAT_LIST\"]/event[1]/choice[@req=\"LIST_CREW_MEDICAL\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a crew(?), Reward[]"
+"Gain a crew(?), Reward ~ Only(M)[]"
 
 #: src-en/data/events_special_filler.xml:3597
 msgid ""
@@ -6462,7 +6462,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_COLLISION\"]/choice/text"
 msgstr ""
 "Hail them to offer assistance.\n"
-"[Reward[] nor Reward[] nor Reward[], [[], []] nor [[], []], Reward[], Reward[], Reward[], Reward[], Gain a crew(?)[] nor Reward[], Reward[], Reward[]]"
+"[Reward {(H)[] or Reward ~ Only(L)[] or Reward ~ Only(L)[], <!>Fleet Advance(1)[[], []] or [[], []], Reward Weapon(M), -1|[], Reward Weapon(M), -1|[], Reward Weapon(M), -1|[], Reward Weapon(M), -1}[], Gain a crew(?)[] or Reward Standard(L), System Upgrade(Reactor 1™)[], Reward {(M)[], Reward Weapon(M)[]]"
 
 #: src-en/data/events_special_filler.xml:3620
 msgid ""
@@ -6474,16 +6474,16 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_COLLISION_2\"]/choice[1]/text"
 msgstr ""
 "Try to shield their ship with yours.\n"
-"Reward[] \n"
-"or Reward[] \n"
-"or Reward[]"
+"Reward {(H)[] \n"
+"or Reward ~ Only(L)[] \n"
+"or Reward ~ Only(L)[]"
 
 #: src-en/data/events_special_filler.xml:3626
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_COLLISION_2\"]/choice[2]/text"
 msgstr ""
 "Don't risk our ship. Leave them to their fate.\n"
-"[[], []] \n"
+"<!>Fleet Advance(1)[[], []] \n"
 "or [[], []]"
 
 #: src-en/data/events_special_filler.xml:3630
@@ -6491,28 +6491,28 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_COLLISION_2\"]/choice[@req=\"DRONE_CONTROL_DEFENSE\"]/text"
 msgstr ""
 "(Defense Drone) Use a Defense Drone to protect their ship. [-1|]\n"
-"Reward[]"
+"Reward Weapon(M), -1|[]"
 
 #: src-en/data/events_special_filler.xml:3634
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_COLLISION_2\"]/choice[@req=\"DRONE_CONTROL_OVERCHARGER\"]/text"
 msgstr ""
 "(Overcharger Drone) Use an Overcharger Drone to protect their ship. [-1|]\n"
-"Reward[]"
+"Reward Weapon(M), -1|[]"
 
 #: src-en/data/events_special_filler.xml:3638
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_COLLISION_2\"]/choice[@req=\"DRONE_CONTROL_REPAIR_CREW\"]/text"
 msgstr ""
 "(Repair Drone) Send a Repair Drone to fix their Shields. [-1|]\n"
-"Reward[]"
+"Reward Weapon(M), -1|[]"
 
 #: src-en/data/events_special_filler.xml:3642
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_COLLISION_2\"]/choice[@req=\"BLUELIST_BOMB_REPAIR\"]/text"
 msgstr ""
 "(Repair Cluster) Launch a repair bomb into their Shields. [-1}]\n"
-"Reward[]"
+"Reward Weapon(M), -1}[]"
 
 #: src-en/data/events_special_filler.xml:3644
 msgid ""
@@ -6528,14 +6528,14 @@ msgid ""
 msgstr ""
 "(Teleporter) Offer to beam them aboard your ship.\n"
 "Gain a crew(?)[] \n"
-"or Reward[]"
+"or Reward Standard(L), System Upgrade(Reactor 1™)[]"
 
 #: src-en/data/events_special_filler.xml:3656
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_COLLISION_2\"]/choice[@req=\"BLUELIST_ARMOR\"]/text"
 msgstr ""
 "(Hull Armor) Shield their ship with yours and escort them out.\n"
-"Reward[]"
+"Reward {(M)[]"
 
 #: src-en/data/events_special_filler.xml:3658
 msgid ""
@@ -6551,7 +6551,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_COLLISION_2\"]/choice[@req=\"COMBAT_REPAIR\"]/text"
 msgstr ""
 "(Repair-Bot Dispersal) Repair their shields with the nanobots.\n"
-"Reward[]"
+"Reward Weapon(M)[]"
 
 #: src-en/data/events_special_filler.xml:3669
 msgid ""
@@ -6778,8 +6778,8 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_STRANDED\"]/choice[1]/text"
 msgstr ""
 "Go down to the surface to investigate.\n"
-"[Gain a crew(?)[] nor Gain a crew(?)[] nor Gain a crew(?)[] nor Gain a crew(?)[] nor Gain a crew(?)[] nor Gain a crew(?)[], Reward[] nor Reward[] nor []] \n"
-"or [<!>Lose your crew(clonable)[] nor Gain a crew(?)[] nor [] nor [[], Gain a crew(?)[], Gain a crew(?)[]], [], [], Gain a crew(?)[], Gain a crew(?)[], Gain a crew(?)[], [] nor Gain a crew(Human)[], [] nor Gain a crew(Human)[]]"
+"[Gain a crew(?)[] or Gain a crew(?)[] or Gain a crew(?)[] or Gain a crew(?)[] or Gain a crew(?)[] or Gain a crew(?)[], Reward ~ Only(H)[] or Reward ~ Only(M)[] or []] \n"
+"or [<!>Lose your crew(clonable)[] or Gain a crew(?)[] or [] or [[], Gain a crew(?)[], Gain a crew(?)[]], [], [], Gain a crew(?)[], Gain a crew(?)[], Gain a crew(?)[], [] or Gain a crew(Human)[], [] or Gain a crew(Human)[]]"
 
 #: src-en/data/events_special_filler.xml:3809
 msgid ""
@@ -6831,8 +6831,8 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"DISTRESS_STRANDED_EXPLORE\"]/event[1]/choice[2]/text"
 msgstr ""
 "Take him home to his family on a nearby planet in this system.\n"
-"Reward[] \n"
-"or Reward[] \n"
+"Reward ~ Only(H)[] \n"
+"or Reward ~ Only(M)[] \n"
 "or []"
 
 #: src-en/data/events_special_filler.xml:3836
@@ -7207,7 +7207,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_FRIENDLY\"]/choice[1]/text"
 msgstr ""
 "Give them the fuel.\n"
-"[Map Reveal[] nor Reward[] nor Reward[] nor [] nor []]"
+"-4<{<-2[Map Reveal[] or Reward ~ Only(H)[] or Reward ~ Only(H)[] or Gain a weapon(Random)[] or System Upgrade(Reactor 1™)[]]"
 
 #: src-en/data/events_special_filler.xml:4001
 msgid ""
@@ -7220,17 +7220,17 @@ msgid ""
 msgstr ""
 "Continue...\n"
 "Map Reveal[] \n"
-"or Reward[] \n"
-"or Reward[] \n"
-"or [] \n"
-"or []"
+"or Reward ~ Only(H)[] \n"
+"or Reward ~ Only(H)[] \n"
+"or Gain a weapon(Random)[] \n"
+"or System Upgrade(Reactor 1™)[]"
 
 #: src-en/data/events_special_filler.xml:4012
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_FRIENDLY\"]/choice[@req=\"FUEL_CONSERVER\"]/text"
 msgstr ""
 "(Fuel Conserver) Show them how to wire up their own conserver.\n"
-"[Map Reveal[] nor Reward[] nor Reward[] nor [] nor []]"
+"[Map Reveal[] or Reward ~ Only(H)[] or Reward ~ Only(H)[] or Gain a weapon(Random)[] or System Upgrade(Reactor 1™)[]]"
 
 #: src-en/data/events_special_filler.xml:4014
 msgid ""
@@ -7246,17 +7246,17 @@ msgid ""
 msgstr ""
 "Continue...\n"
 "Map Reveal[] \n"
-"or Reward[] \n"
-"or Reward[] \n"
-"or [] \n"
-"or []"
+"or Reward ~ Only(H)[] \n"
+"or Reward ~ Only(H)[] \n"
+"or Gain a weapon(Random)[] \n"
+"or System Upgrade(Reactor 1™)[]"
 
 #: src-en/data/events_special_filler.xml:4022
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_FRIENDLY\"]/choice[@req=\"EXTRA_PREP\"]/text"
 msgstr ""
 "(Emergency Manual) Teach the civilians how to produce fuel onboard.\n"
-"[Map Reveal[] nor Reward[] nor Reward[] nor [] nor []]"
+"[Map Reveal[] or Reward ~ Only(H)[] or Reward ~ Only(H)[] or Gain a weapon(Random)[] or System Upgrade(Reactor 1™)[]]"
 
 #: src-en/data/events_special_filler.xml:4024
 msgid ""
@@ -7272,10 +7272,10 @@ msgid ""
 msgstr ""
 "Continue...\n"
 "Map Reveal[] \n"
-"or Reward[] \n"
-"or Reward[] \n"
-"or [] \n"
-"or []"
+"or Reward ~ Only(H)[] \n"
+"or Reward ~ Only(H)[] \n"
+"or Gain a weapon(Random)[] \n"
+"or System Upgrade(Reactor 1™)[]"
 
 #: src-en/data/events_special_filler.xml:4032
 msgid ""
@@ -7408,7 +7408,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_FACTORY\"]/choice[1]/text"
 msgstr ""
 "Approach the factory.\n"
-"[[] nor Gain a crew(?)[], Gain a crew(?)[], Gain a crew(?)[], []]"
+"[[] or Gain a crew(?)[], Gain a crew(?)[], Gain a crew(?)[], []]"
 
 #: src-en/data/events_special_filler.xml:4093
 msgid ""
@@ -7525,8 +7525,8 @@ msgid ""
 msgstr ""
 "Scrap the ship.\n"
 "[[]] \n"
-"or Reward[] \n"
-"or Gain a crew(Mantis Free), Reward[]"
+"or Reward Augment(M)[] \n"
+"or Gain a crew(Mantis Free), Reward Stuff(L)[]"
 
 #: src-en/data/events_special_filler.xml:4154
 msgid ""
@@ -7691,8 +7691,8 @@ msgid ""
 msgstr ""
 "Pull closer.\n"
 "[[]] \n"
-"or [Gain a crew(Human)[] nor <!>Lose your crew(clonable)[], [], []] \n"
-"or [Reward[] nor [[]], []]"
+"or [Gain a crew(Human)[] or <!>Lose your crew(clonable)[], [], []] \n"
+"or [Reward Standard(M)[] or [[]], []]"
 
 #: src-en/data/events_special_filler.xml:4250
 msgid ""
@@ -7700,7 +7700,7 @@ msgid ""
 msgstr ""
 "(Adv. Sensors) Run a thorough scan.\n"
 "[[[]], []] \n"
-"or Reward[] \n"
+"or Reward Standard(M)[] \n"
 "or Gain a crew(Human)[]"
 
 #: src-en/data/events_special_filler.xml:4254
@@ -7709,7 +7709,7 @@ msgid ""
 msgstr ""
 "(Long-Ranged Scanners) Run a thorough scan.\n"
 "[[[]], []] \n"
-"or Reward[] \n"
+"or Reward Standard(M)[] \n"
 "or Gain a crew(Human)[]"
 
 #: src-en/data/events_special_filler.xml:4258
@@ -7798,7 +7798,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_CRASH_INSPECT\"]/event[3]/choice[1]/text"
 msgstr ""
 "Scrap the ship.\n"
-"Reward[] \n"
+"Reward Standard(M)[] \n"
 "or [[]]"
 
 #: src-en/data/events_special_filler.xml:4303
@@ -7909,7 +7909,7 @@ msgid ""
 msgstr ""
 "Keep looking.\n"
 "[] \n"
-"or [[Reward[], Reward[], Reward[], Reward[], Reward[], []] nor [[]], []] \n"
+"or [[Reward Item(H), <!>Fleet Advance(1)[], Reward Item(H), -1|[], Reward Item(H)[], Reward Item(H)[], Reward Item(H), -1}[], []] or [[]], []] \n"
 "or [[]]"
 
 #: src-en/data/events_special_filler.xml:4373
@@ -7917,7 +7917,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_FEDERATION_LOST\"]/choice[@req=\"sensors\"]/text"
 msgstr ""
 "(Adv. Sensors) Collect the logs of the most recent arrival.\n"
-"[Reward[], Reward[], Reward[], Reward[], Reward[], []] \n"
+"[Reward Item(H), <!>Fleet Advance(1)[], Reward Item(H), -1|[], Reward Item(H)[], Reward Item(H)[], Reward Item(H), -1}[], []] \n"
 "or [[[]], []]"
 
 #: src-en/data/events_special_filler.xml:4377
@@ -7967,7 +7967,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"DISTRESS_FEDERATION_LOST_TRACK\"]/event[2]/choice[1]/text"
 msgstr ""
 "Hail the ship.\n"
-"[Reward[], Reward[], Reward[], Reward[], Reward[], []] \n"
+"[Reward Item(H), <!>Fleet Advance(1)[], Reward Item(H), -1|[], Reward Item(H)[], Reward Item(H)[], Reward Item(H), -1}[], []] \n"
 "or [[]]"
 
 #: src-en/data/events_special_filler.xml:4402
@@ -8003,7 +8003,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"DISTRESS_FEDERATION_LOST_HAIL\"]/event[1]/choice[1]/text"
 msgstr ""
 "Take some time to repair their hull.\n"
-"Reward[]"
+"Reward Item(H), <!>Fleet Advance(1)[]"
 
 #: src-en/data/events_special_filler.xml:4422
 msgid ""
@@ -8017,7 +8017,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"DISTRESS_FEDERATION_LOST_HAIL\"]/event[1]/choice[@req=\"DRONE_CONTROL_SHIPREPAIR\"]/text"
 msgstr ""
 "(Hull Repair) Dispatch the drone to fix up their hull. [-1|]\n"
-"Reward[]"
+"Reward Item(H), -1|[]"
 
 #: src-en/data/events_special_filler.xml:4430
 msgid ""
@@ -8030,7 +8030,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"DISTRESS_FEDERATION_LOST_HAIL\"]/event[1]/choice[@req=\"BEAM_REPAIR\"]/text"
 msgstr ""
 "(Pro-Hull Beam) Use the beam to fix up their hull.\n"
-"Reward[]"
+"Reward Item(H)[]"
 
 #: src-en/data/events_special_filler.xml:4440
 msgid ""
@@ -8043,7 +8043,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"DISTRESS_FEDERATION_LOST_HAIL\"]/event[1]/choice[@req=\"REPAIR_ARM\"]/text"
 msgstr ""
 "(Repair Arm) Use the arm to fix up their hull.\n"
-"Reward[]"
+"Reward Item(H)[]"
 
 #: src-en/data/events_special_filler.xml:4447
 msgid ""
@@ -8056,7 +8056,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"DISTRESS_FEDERATION_LOST_HAIL\"]/event[1]/choice[@req=\"BLUELIST_BOMB_REPAIR\"]/text"
 msgstr ""
 "(Repair Bomb) Use the bomb to fix up their hull. [-1}]\n"
-"Reward[]"
+"Reward Item(H), -1}[]"
 
 #: src-en/data/events_special_filler.xml:4454
 msgid ""
@@ -8099,7 +8099,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"DISTRESS_FEDERATION_LOST_LOGS\"]/event[1]/choice[1]/text"
 msgstr ""
 "Take some time to repair their hull.\n"
-"Reward[]"
+"Reward Item(H), <!>Fleet Advance(1)[]"
 
 #: src-en/data/events_special_filler.xml:4482
 msgid ""
@@ -8113,7 +8113,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"DISTRESS_FEDERATION_LOST_LOGS\"]/event[1]/choice[@req=\"DRONE_CONTROL_SHIPREPAIR\"]/text"
 msgstr ""
 "(Hull Repair) Dispatch the drone to fix up their hull. [-1|]\n"
-"Reward[]"
+"Reward Item(H), -1|[]"
 
 #: src-en/data/events_special_filler.xml:4490
 msgid ""
@@ -8126,7 +8126,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"DISTRESS_FEDERATION_LOST_LOGS\"]/event[1]/choice[@req=\"BEAM_REPAIR\"]/text"
 msgstr ""
 "(Pro-Hull Beam) Use the beam to fix up their hull.\n"
-"Reward[]"
+"Reward Item(H)[]"
 
 #: src-en/data/events_special_filler.xml:4500
 msgid ""
@@ -8139,7 +8139,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"DISTRESS_FEDERATION_LOST_LOGS\"]/event[1]/choice[@req=\"REPAIR_ARM\"]/text"
 msgstr ""
 "(Repair Arm) Use the arm to fix up their hull.\n"
-"Reward[]"
+"Reward Item(H)[]"
 
 #: src-en/data/events_special_filler.xml:4507
 msgid ""
@@ -8152,7 +8152,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"DISTRESS_FEDERATION_LOST_LOGS\"]/event[1]/choice[@req=\"BLUELIST_BOMB_REPAIR\"]/text"
 msgstr ""
 "(Repair Bomb) Use the bomb to fix up their hull. [-1}]\n"
-"Reward[]"
+"Reward Item(H), -1}[]"
 
 #: src-en/data/events_special_filler.xml:4514
 msgid ""
@@ -8364,7 +8364,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_INVASION_START\"]/choice[1]/text"
 msgstr ""
 "Pledge to do what you can.\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_special_filler.xml:4651
 msgid ""
@@ -8427,7 +8427,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"QUEST_FILLER_INVASION\"]/choice[@req=\"BLUELIST_MISSILES_ALL\"]/text"
 msgstr ""
 "(Missile Weapon) Bombard their key structures.\n"
-"[[]]"
+"-1}[[]]"
 
 #: src-en/data/events_special_filler.xml:4684
 msgid ""
@@ -8449,7 +8449,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"QUEST_FILLER_INVASION\"]/choice[@req=\"BOMB_FIRE\"]/text"
 msgstr ""
 "(Fire Bomb) Teleport fire bombs into key structures.\n"
-"[Reward, Gain a crew(Engi)[]]"
+"-2}[Reward Stuff(H), Gain a crew(Engi)[]]"
 
 #: src-en/data/events_special_filler.xml:4698
 msgid ""
@@ -8465,7 +8465,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"QUEST_FILLER_INVASION\"]/choice[@req=\"BOMB_FIRE\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward, Gain a crew(Engi)[]"
+"Reward Stuff(H), Gain a crew(Engi)[]"
 
 #: src-en/data/events_special_filler.xml:4705
 msgid ""
@@ -8635,7 +8635,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_MERCHANT_REQUEST\"]/choice[1]/text"
 msgstr ""
 "Yes.\n"
-"[[], [[], []]] \n"
+"[5|[], [[], []]] \n"
 "or [[], [[], []]]"
 
 #: src-en/data/events_special_filler.xml:4800
@@ -8678,7 +8678,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_MERCHANT_REQUEST_LIST\"]/event[1]/choice[1]/text"
 msgstr ""
 "Accept.\n"
-"[]"
+"5|[]"
 
 #: src-en/data/events_special_filler.xml:4820
 msgid ""
@@ -8785,7 +8785,7 @@ msgid ""
 msgstr ""
 "Continue...\n"
 "[[], [], []] \n"
-"or [[], [[], []] nor [], [[], []], []]"
+"or [20<~<30 -5|[], [40<~<55 -5|[], []] or [], [40<~<55 -5|[], []], 55<~<70 -5| 2<{<5[]]"
 
 #: src-en/data/events_special_filler.xml:4880
 msgid ""
@@ -8828,7 +8828,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_MERCHANT_DELIVER_LIST\"]/event[2]/choice[1]/text"
 msgstr ""
 "Accept the paltry payment.\n"
-"[]"
+"20<~<30 -5|[]"
 
 #: src-en/data/events_special_filler.xml:4899
 msgid ""
@@ -8840,7 +8840,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_MERCHANT_DELIVER_LIST\"]/event[2]/choice[2]/text"
 msgstr ""
 "Refuse and keep the drone parts.\n"
-"[[], []] \n"
+"[40<~<55 -5|[], []] \n"
 "or []"
 
 #: src-en/data/events_special_filler.xml:4911
@@ -8848,7 +8848,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_MERCHANT_DELIVER_LIST\"]/event[2]/choice[@req=\"mind\"]/text"
 msgstr ""
 "(Mind Control) Convince him that he's being 'unfair'.\n"
-"[[], []]"
+"[40<~<55 -5|[], []]"
 
 #: src-en/data/events_special_filler.xml:4913
 msgid ""
@@ -8862,7 +8862,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_MERCHANT_DELIVER_LIST\"]/event[2]/choice[@req=\"mind\"]/event/choice[1]/text"
 msgstr ""
 "Accept the new offer.\n"
-"[]"
+"40<~<55 -5|[]"
 
 #: src-en/data/events_special_filler.xml:4924
 msgid ""
@@ -8876,7 +8876,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_MERCHANT_DELIVER_LIST\"]/event[2]/choice[@req=\"weapons\"]/text"
 msgstr ""
 "(Adv. Weapons) Remain silent but power up your weapons.\n"
-"[]"
+"55<~<70 -5| 2<{<5[]"
 
 #: src-en/data/events_special_filler.xml:4932
 msgid ""
@@ -8897,7 +8897,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"MERCHANT_DELIVER_BLUFF_LIST\"]/event[1]/choice[1]/text"
 msgstr ""
 "Accept the new offer.\n"
-"[]"
+"40<~<55 -5|[]"
 
 #: src-en/data/events_special_filler.xml:4955
 msgid ""
@@ -8928,8 +8928,8 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_MERCHANT_INVESTIGATE\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward[[], [] nor [] nor Reward[]] \n"
-"or [Gain a crew(?)[], [] nor [] nor Reward[]] \n"
+"Reward Standard(M)[[], [] or Gain a weapon(Random)[] or Reward Standard(H)[]] \n"
+"or [Gain a crew(?)[], [] or Gain a weapon(Random)[] or Reward Standard(H)[]] \n"
 "or [[]]"
 
 #: src-en/data/events_special_filler.xml:4976
@@ -8953,8 +8953,8 @@ msgid ""
 msgstr ""
 "Take the cargo for yourself.\n"
 "[] \n"
-"or [] \n"
-"or Reward[]"
+"or Gain a weapon(Random)[] \n"
+"or Reward Standard(H)[]"
 
 #: src-en/data/events_special_filler.xml:4990
 msgid ""
@@ -8985,8 +8985,8 @@ msgid ""
 msgstr ""
 "Take the cargo but drop them off at a nearby station.\n"
 "[] \n"
-"or [] \n"
-"or Reward[]"
+"or Gain a weapon(Random)[] \n"
+"or Reward Standard(H)[]"
 
 #: src-en/data/events_special_filler.xml:5009
 msgid ""
@@ -9042,7 +9042,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_QUEST_ESCORT\"]/choice[1]/text"
 msgstr ""
 "Accept.\n"
-"Reward[]"
+"Reward { Only(L)[]"
 
 #: src-en/data/events_special_filler.xml:5046
 msgid ""
@@ -9196,7 +9196,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DELIVERY_START\"]/choice[1]/text"
 msgstr ""
 "Express your interest.\n"
-"[[], [], []]"
+"[[], [], -3{ 10<~<15[]]"
 
 #: src-en/data/events_special_filler.xml:5134
 msgid ""
@@ -9301,7 +9301,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"MERCENARY_DELIVERY_INTEREST\"]/choice[3]/text"
 msgstr ""
 "Sell them a bit of your fuel.\n"
-"[]"
+"-3{ 10<~<15[]"
 
 #: src-en/data/events_special_filler.xml:5189
 msgid ""
@@ -9329,14 +9329,14 @@ msgid ""
 msgstr ""
 "Transfer the contraband over.\n"
 "[[[]]] \n"
-"or Reward[]"
+"or Reward ~ Only(H)[]"
 
 #: src-en/data/events_special_filler.xml:5209
 msgid ""
 "data/events_special_filler.xml$//event[@name=\"QUEST_MERCENARY_DELIVERY_END\"]/choice[2]/text"
 msgstr ""
 "Demand payment first.\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_special_filler.xml:5211
 msgid ""
@@ -9495,7 +9495,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CONSTRUCTIONYARD\"]/choice[1]/text"
 msgstr ""
 "Offer your help.\n"
-"[]"
+"0<}<4 0<|<2 2<{<4[]"
 
 #: src-en/data/events_special_filler.xml:5296
 msgid ""
@@ -9535,7 +9535,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CONSTRUCTIONYARD\"]/choice[@req=\"LIST_CREW_LANIUS\"]/text"
 msgstr ""
 "(Lanius Crew) Offer to have your crewmember help.\n"
-"[[Reward, <!>Lose your crew(UNCLONABLE)[], Reward[]]]"
+"[[Reward Augment(H), <!>Lose your crew(UNCLONABLE)[], Reward ~ Only(M)[]]]"
 
 #: src-en/data/events_special_filler.xml:5322
 msgid ""
@@ -9551,7 +9551,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CONSTRUCTIONYARD\"]/choice[@req=\"LIST_CREW_LANIUS\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[Reward, <!>Lose your crew(UNCLONABLE)[], Reward[]]"
+"[Reward Augment(H), <!>Lose your crew(UNCLONABLE)[], Reward ~ Only(M)[]]"
 
 #: src-en/data/events_special_filler.xml:5326
 msgid ""
@@ -9565,7 +9565,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CONSTRUCTIONYARD\"]/choice[@req=\"LIST_CREW_LANIUS\"]/event/choice/event/choice[1]/text"
 msgstr ""
 "Ask your crew if they agree.\n"
-"Reward, <!>Lose your crew(UNCLONABLE)[]"
+"Reward Augment(H), <!>Lose your crew(UNCLONABLE)[]"
 
 #: src-en/data/events_special_filler.xml:5330
 msgid ""
@@ -9587,7 +9587,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_CONSTRUCTIONYARD\"]/choice[@req=\"LIST_CREW_LANIUS\"]/event/choice/event/choice[2]/text"
 msgstr ""
 "Our crew is not for sale.\n"
-"Reward[]"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_special_filler.xml:5341
 msgid ""
@@ -9727,7 +9727,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_CONSTRUCTIONYARD_LIST\"]/event[3]/choice[1]/text"
 msgstr ""
 "Give them the requested 4 fuel.\n"
-"Reward[]"
+"Reward ~ Only(M), -4{[]"
 
 #: src-en/data/events_special_filler.xml:5418
 msgid ""
@@ -9741,7 +9741,7 @@ msgid ""
 "data/events_special_filler.xml$//eventList[@name=\"FILLER_CONSTRUCTIONYARD_LIST\"]/event[3]/choice[2]/text"
 msgstr ""
 "Give them 1 fuel.\n"
-"[]"
+"-1{[]"
 
 #: src-en/data/events_special_filler.xml:5428
 msgid ""
@@ -9969,7 +9969,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_INFORMANT\"]/choice[2]/text"
 msgstr ""
 "Try to reason with them.\n"
-"[Reward[], Reward[], Reward[], [[]]]"
+"[Reward Standard(H)[], Reward Standard(H)[], Reward Standard(L)[], [[]]]"
 
 #: src-en/data/events_special_filler.xml:5576
 msgid ""
@@ -9983,7 +9983,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_INFORMANT\"]/choice[2]/event/choice[@req=\"LIST_CREW_JERRY\"]/text"
 msgstr ""
 "(Jerry) Persuade them further.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_special_filler.xml:5580
 msgid ""
@@ -9998,7 +9998,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_INFORMANT\"]/choice[2]/event/choice[@req=\"human_mfk\"]/text"
 msgstr ""
 "(MFK Ace Crew) Persuade them further.\n"
-"Reward[]"
+"Reward Standard(H)[]"
 
 #: src-en/data/events_special_filler.xml:5587
 msgid ""
@@ -10014,7 +10014,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_INFORMANT\"]/choice[2]/event/choice[@req=\"LIST_CREW_ENGINEER\"]/text"
 msgstr ""
 "(Engineer Crew) Persuade them further.\n"
-"Reward[]"
+"Reward Standard(L)[]"
 
 #: src-en/data/events_special_filler.xml:5594
 msgid ""
@@ -10117,7 +10117,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_INFORMANT\"]/choice[7]/text"
 msgstr ""
 "Just let them escape.\n"
-"[]"
+"<!>Fleet Advance(1)[]"
 
 #: src-en/data/events_special_filler.xml:5640
 msgid ""
@@ -10141,7 +10141,7 @@ msgid ""
 "data/events_special_filler.xml$//event[@name=\"FILLER_DISTRESS_ASB\"]/choice[1]/text"
 msgstr ""
 "Pay the \"fee of protection\".\n"
-"[]"
+"-25<~<-15[]"
 
 #: src-en/data/events_special_filler.xml:5666
 msgid ""
