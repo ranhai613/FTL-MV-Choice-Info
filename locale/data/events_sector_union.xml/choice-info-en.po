@@ -15,9 +15,7 @@ msgstr ""
 #: src-en/data/events_sector_union.xml:32
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"FINISH_BEACON_UNION\"]/choice[2]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:36
 msgid ""
@@ -37,9 +35,7 @@ msgstr ""
 #: src-en/data/events_sector_union.xml:61
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_TRAFFIC\"]/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:65
 msgid ""
@@ -62,7 +58,7 @@ msgstr ""
 "Help them onboard.\n"
 "Reward Standard(L)[] \n"
 "or Gain a crew(?)[] \n"
-"or [[] or [], Reward Standard(H)[] or {-3 ~-25 }-2[]]"
+"or [[] or <!>Enemy Boarding(x2-x4 Random)[], Reward Standard(H)[] or <!>Enemy Boarding(x2-x3 Random){-3 ~-25 }-2[]]"
 
 #: src-en/data/events_sector_union.xml:81
 msgid ""
@@ -114,7 +110,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_BREACH\"]/choice[7]/text"
 msgstr ""
 "We can't help.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:103
 msgid ""
@@ -126,9 +122,7 @@ msgstr ""
 #: src-en/data/events_sector_union.xml:105
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_BREACH\"]/choice[7]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:109
 msgid ""
@@ -167,7 +161,7 @@ msgid ""
 msgstr ""
 "Call them out.\n"
 "[] \n"
-"or []"
+"or <!>Enemy Boarding(x2-x4 Random)[]"
 
 #: src-en/data/events_sector_union.xml:131
 msgid ""
@@ -175,7 +169,8 @@ msgid ""
 msgstr ""
 "Ignore the weapon.\n"
 "Reward Standard(H)[] \n"
-"or {-3 ~-25 }-2[]"
+"or <!>Enemy Boarding(x2-x3 Random)\n"
+"{-3 ~-25 }-2[]"
 
 #: src-en/data/events_sector_union.xml:138
 msgid ""
@@ -256,7 +251,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS\"]/choice[1]/text"
 msgstr ""
 "Agree to track down the Militia ship hunting them.\n"
-"[[[[]], [[]], ~-20[[[], Reward { Only(M)[], Reward ~ Only(M)[]]], []], [[]]]"
+"[[[Fight(CK: [Reward Standard(M)[[]]])(HK: [Reward Standard(M)[[]]])], [Fight(CK: [Reward Standard(M)[[]]])(HK: [Reward Standard(M)[[]]])], ~-20[[[], Reward { Only(M)[], Reward ~ Only(M)[]]], []], [Fight(CK: [Reward Standard(M)[[]]])(HK: [Reward Standard(M)[[]]])]]"
 
 #: src-en/data/events_sector_union.xml:180
 msgid ""
@@ -270,7 +265,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Contact the ship.\n"
-"[[[]], [[]], ~-20[[[], Reward { Only(M)[], Reward ~ Only(M)[]]], []]"
+"[[Fight(CK: [Reward Standard(M)[[]]])(HK: [Reward Standard(M)[[]]])], [Fight(CK: [Reward Standard(M)[[]]])(HK: [Reward Standard(M)[[]]])], ~-20[[[], Reward { Only(M)[], Reward ~ Only(M)[]]], []]"
 
 #: src-en/data/events_sector_union.xml:185
 msgid ""
@@ -287,7 +282,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS\"]/choice[1]/event/choice[1]/event/choice[1]/text"
 msgstr ""
 "Force them to surrender.\n"
-"[[]]"
+"[Fight(CK: [Reward Standard(M)[[]]])(HK: [Reward Standard(M)[[]]])]"
 
 #: src-en/data/events_sector_union.xml:189
 msgid ""
@@ -301,14 +296,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS\"]/choice[1]/event/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Reward Standard(M)[[]]])(HK: [Reward Standard(M)[[]]])"
 
 #: src-en/data/events_sector_union.xml:198
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS\"]/choice[1]/event/choice[1]/event/choice[@req=\"LIST_CREW_FREEMAN\"]/text"
 msgstr ""
 "(Free Mantis Crew) Talk to the Militiamen.\n"
-"[[]]"
+"[Fight(CK: [Reward Standard(M)[[]]])(HK: [Reward Standard(M)[[]]])]"
 
 #: src-en/data/events_sector_union.xml:200
 msgid ""
@@ -326,7 +321,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS\"]/choice[1]/event/choice[1]/event/choice[@req=\"LIST_CREW_FREEMAN\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Reward Standard(M)[[]]])(HK: [Reward Standard(M)[[]]])"
 
 #: src-en/data/events_sector_union.xml:209
 msgid ""
@@ -407,7 +402,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Destroy the ship.\n"
-"[[]]"
+"[Fight(CK: [Reward Standard(M)[[]]])(HK: [Reward Standard(M)[[]]])]"
 
 #: src-en/data/events_sector_union.xml:253
 msgid ""
@@ -422,14 +417,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS\"]/choice[1]/event/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Reward Standard(M)[[]]])(HK: [Reward Standard(M)[[]]])"
 
 #: src-en/data/events_sector_union.xml:264
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS\"]/choice[2]/text"
 msgstr ""
 "Refuse.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:266
 msgid ""
@@ -439,9 +434,7 @@ msgstr "\"Ah. Very well. Best luck on mission!\""
 #: src-en/data/events_sector_union.xml:268
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FREEMANTIS\"]/choice[2]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:272
 msgid ""
@@ -573,7 +566,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Inquire on the process.\n"
-"[-45≤~≤-35[Gain a weapon(Laser Frost 2 Player)[]], -40≤~≤-30[Gain a weapon(Missiles Particle Player)[]], -35≤~≤-25[Gain a weapon(Ion Stun Chargegun Player)[]], -40≤~≤-30[Gain a weapon(Missiles Burst 2 Player)[]], -35≤~≤-25[Gain a weapon(Missiles Cloak Player)[]], -40≤~≤-30[Gain a weapon(Missiles Fire Player)[]], -45≤~≤-35[Gain a weapon(Beam 2 Player)[]], -35≤~≤-25[Gain a weapon(Beam Long Player)[]], -35≤~≤-25[Gain a weapon(Beam Fire Player)[]], -40≤~≤-30[Gain a weapon(Beam Guillotine Player)[]], -40≤~≤-30[Gain a weapon(Energy 2 Player)[]], -40≤~≤-30[Gain a weapon(Energy Stun Player)[]], -35≤~≤-25[Gain a weapon(Energy Chargegun Player)[]], -45≤~≤-35[Gain a weapon(Shotgun 2 Player)[]], -45≤~≤-35[Gain a weapon(Shotgun Toxic Player)[]], [Storage Check[], []]]"
+"[-45≤~≤-35[Gain a weapon(Laser Frost 2 Player)[]], -40≤~≤-30[Gain a weapon(Missiles Particle Player)[]], -35≤~≤-25[Gain a weapon(Ion Stun Chargegun Player)[]], -40≤~≤-30[Gain a weapon(Missiles Burst 2 Player)[]], -35≤~≤-25[Gain a weapon(Missiles Cloak Player)[]], -40≤~≤-30[Gain a weapon(Missiles Fire Player)[]], -45≤~≤-35[Gain a weapon(Beam 2 Player)[]], -35≤~≤-25[Gain a weapon(Beam Long Player)[]], -35≤~≤-25[Gain a weapon(Beam Fire Player)[]], -40≤~≤-30[Gain a weapon(Beam Guillotine Player)[]], -40≤~≤-30[Gain a weapon(Energy 2 Player)[]], -40≤~≤-30[Gain a weapon(Energy Stun Player)[]], -35≤~≤-25[Gain a weapon(Energy Chargegun Player)[]], -45≤~≤-35[Gain a weapon(Shotgun 2 Player)[]], -45≤~≤-35[Gain a weapon(Shotgun Toxic Player)[]], [, []]]"
 
 #: src-en/data/events_sector_union.xml:341
 msgid ""
@@ -1046,7 +1039,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[@req=\"pilot\"]/text"
 msgstr ""
 "Change your mind.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:600
 msgid ""
@@ -1058,9 +1051,7 @@ msgstr "You turn down the offer and continue on your way."
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_EFFICIENCY_ENGINEER\"]/choice[@req=\"LIST_WEAPONS_PLAYER\""
 " and @lvl=\"1\"]/event/choice[@req=\"pilot\"]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:606
 msgid ""
@@ -1076,7 +1067,7 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "Inquire on the process.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:616
 msgid ""
@@ -1090,9 +1081,7 @@ msgstr ""
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_EFFICIENCY_ENGINEER\"]/choice[@req=\"LIST_WEAPONS_PLAYER\""
 " and @lvl=\"0\"]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:622
 msgid ""
@@ -1107,7 +1096,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_EFFICIENCY_ENGINEER\"]/choice[3]/text"
 msgstr ""
 "Attack them!\n"
-"[[[]]]"
+"[[]]"
 
 #: src-en/data/events_sector_union.xml:630
 msgid ""
@@ -1119,14 +1108,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_EFFICIENCY_ENGINEER\"]/choice[3]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[]"
 
 #: src-en/data/events_sector_union.xml:639
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_EFFICIENCY_ENGINEER\"]/choice[4]/text"
 msgstr ""
 "Ignore the offer.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:641
 msgid ""
@@ -1136,9 +1125,7 @@ msgstr "You turn down the offer and continue on your way."
 #: src-en/data/events_sector_union.xml:643
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_EFFICIENCY_ENGINEER\"]/choice[4]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:647
 msgid ""
@@ -1233,7 +1220,7 @@ msgid ""
 msgstr ""
 "Recommend that the outcasts continue along.\n"
 "[Reward Standard(L)[]] \n"
-"or [[[[]]], []]"
+"or [[[]], []]"
 
 #: src-en/data/events_sector_union.xml:720
 msgid ""
@@ -1241,15 +1228,15 @@ msgid ""
 msgstr ""
 "Accuse the patrol of being prejudiced.\n"
 "[Reward Standard(M)[[]]] \n"
-"or [[[[]]], []] \n"
-"or [[]]"
+"or [[[]], []] \n"
+"or [Fight(CK: [Reward Standard(L)[]])(HK: [Reward Standard(L)[]])]"
 
 #: src-en/data/events_sector_union.xml:724
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_OUTCAST_REFUGEES\"]/choice[5]/text"
 msgstr ""
 "Attack the Outcast escort.\n"
-"[[[]]]"
+"[[]]"
 
 #: src-en/data/events_sector_union.xml:726
 msgid ""
@@ -1261,14 +1248,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_OUTCAST_REFUGEES\"]/choice[5]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[]"
 
 #: src-en/data/events_sector_union.xml:735
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_OUTCAST_REFUGEES\"]/choice[6]/text"
 msgstr ""
 "Attack the Militia patrol.\n"
-"[[[]]]"
+"[[]]"
 
 #: src-en/data/events_sector_union.xml:737
 msgid ""
@@ -1282,14 +1269,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_OUTCAST_REFUGEES\"]/choice[6]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[]"
 
 #: src-en/data/events_sector_union.xml:746
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_OUTCAST_REFUGEES\"]/choice[7]/text"
 msgstr ""
 "Ignore the conflict.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:748
 msgid ""
@@ -1299,9 +1286,7 @@ msgstr "Their shouting match is none of your business."
 #: src-en/data/events_sector_union.xml:750
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_OUTCAST_REFUGEES\"]/choice[7]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:754
 msgid ""
@@ -1337,7 +1322,7 @@ msgid ""
 "data/events_sector_union.xml$//eventList[@name=\"MILITIA_OUTCAST_REFUGEES_PERSUADE\"]/event[2]/choice[1]/text"
 msgstr ""
 "Attack.\n"
-"[[[]]]"
+"[[]]"
 
 #: src-en/data/events_sector_union.xml:773
 msgid ""
@@ -1349,7 +1334,7 @@ msgid ""
 "data/events_sector_union.xml$//eventList[@name=\"MILITIA_OUTCAST_REFUGEES_PERSUADE\"]/event[2]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[]"
 
 #: src-en/data/events_sector_union.xml:782
 msgid ""
@@ -1394,7 +1379,7 @@ msgid ""
 "data/events_sector_union.xml$//eventList[@name=\"MILITIA_OUTCAST_REFUGEES_ACCUSE\"]/event[2]/choice[1]/text"
 msgstr ""
 "Attack them.\n"
-"[[[]]]"
+"[[]]"
 
 #: src-en/data/events_sector_union.xml:802
 msgid ""
@@ -1408,7 +1393,7 @@ msgid ""
 "data/events_sector_union.xml$//eventList[@name=\"MILITIA_OUTCAST_REFUGEES_ACCUSE\"]/event[2]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[]"
 
 #: src-en/data/events_sector_union.xml:811
 msgid ""
@@ -1436,7 +1421,7 @@ msgid ""
 "data/events_sector_union.xml$//eventList[@name=\"MILITIA_OUTCAST_REFUGEES_ACCUSE\"]/event[3]/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Reward Standard(L)[]])(HK: [Reward Standard(L)[]])"
 
 #: src-en/data/events_sector_union.xml:827
 msgid ""
@@ -1521,7 +1506,7 @@ msgstr ""
 msgid "data/events_sector_union.xml$//event[@name=\"UNION_DRUNK\"]/choice[3]/text"
 msgstr ""
 "Hurl insults at him.\n"
-"[[]]"
+"[Fight(CK: [])(HK: [])]"
 
 #: src-en/data/events_sector_union.xml:868
 msgid ""
@@ -1535,21 +1520,21 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_DRUNK\"]/choice[3]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [])(HK: [])"
 
 #: src-en/data/events_sector_union.xml:877
 msgid "data/events_sector_union.xml$//event[@name=\"UNION_DRUNK\"]/choice[4]/text"
 msgstr ""
 "Threaten to blow his ship to pieces.\n"
 "Gain a weapon(Giftlist Union)[] \n"
-"or [[]] \n"
-"or [Storage Check[], []]"
+"or [] \n"
+"or [, []]"
 
 #: src-en/data/events_sector_union.xml:881
 msgid "data/events_sector_union.xml$//event[@name=\"UNION_DRUNK\"]/choice[5]/text"
 msgstr ""
 "Actually blow his ship to pieces.\n"
-"[[[]]]"
+"[[]]"
 
 #: src-en/data/events_sector_union.xml:883
 msgid ""
@@ -1563,13 +1548,13 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_DRUNK\"]/choice[5]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[]"
 
 #: src-en/data/events_sector_union.xml:892
 msgid "data/events_sector_union.xml$//event[@name=\"UNION_DRUNK\"]/choice[6]/text"
 msgstr ""
 "Completely ignore him.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:894
 msgid ""
@@ -1580,9 +1565,7 @@ msgstr ""
 #: src-en/data/events_sector_union.xml:896
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_DRUNK\"]/choice[6]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:900
 msgid ""
@@ -1609,9 +1592,7 @@ msgstr ""
 #: src-en/data/events_sector_union.xml:915
 msgid ""
 "data/events_sector_union.xml$//eventList[@name=\"UNION_DRUNK_THREATEN\"]/event[2]/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_sector_union.xml:920
 msgid ""
@@ -1623,9 +1604,7 @@ msgstr ""
 #: src-en/data/events_sector_union.xml:923
 msgid ""
 "data/events_sector_union.xml$//eventList[@name=\"UNION_DRUNK_THREATEN\"]/event[3]/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:927
 msgid ""
@@ -1646,7 +1625,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_MINING\"]/choice[1]/text"
 msgstr ""
 "Inspect closer.\n"
-"[[[[]]], Reward {(M)[[[]]], Reward {(M), |-1[[[]]], Reward {(M)[[[]]], []]"
+"[[[]], Reward {(M)[[]], Reward {(M)|-1[[]], Reward {(M)[[]], []]"
 
 #: src-en/data/events_sector_union.xml:938
 msgid ""
@@ -1661,7 +1640,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_MINING\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Attack them.\n"
-"[[[]]]"
+"[[]]"
 
 #: src-en/data/events_sector_union.xml:944
 msgid ""
@@ -1673,14 +1652,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_MINING\"]/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[]"
 
 #: src-en/data/events_sector_union.xml:953
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_MINING\"]/choice[1]/event/choice[@req=\"BEAM_MINING\"]/text"
 msgstr ""
 "(Mining Equipment) Mine some of the asteroids on the outskirts.\n"
-"Reward {(M)[[[]]]"
+"Reward {(M)[[]]"
 
 #: src-en/data/events_sector_union.xml:955
 msgid ""
@@ -1696,14 +1675,15 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_MINING\"]/choice[1]/event/choice[@req=\"BEAM_MINING\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[]"
 
 #: src-en/data/events_sector_union.xml:965
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_MINING\"]/choice[1]/event/choice[@req=\"DRONE_CONTROL_BEAM_DRONE\"]/text"
 msgstr ""
 "(Beam Drone) Mine some of the asteroids on the outskirts. [-1|]\n"
-"Reward {(M), |-1[[[]]]"
+"Reward {(M)\n"
+"|-1[[]]"
 
 #: src-en/data/events_sector_union.xml:967
 msgid ""
@@ -1719,14 +1699,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_MINING\"]/choice[1]/event/choice[@req=\"DRONE_CONTROL_BEAM_DRONE\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[]"
 
 #: src-en/data/events_sector_union.xml:980
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_MINING\"]/choice[1]/event/choice[@req=\"SCRAP_COLLECTOR\"]/text"
 msgstr ""
 "(Scrap Arm) Mine some of the asteroids on the outskirts.\n"
-"Reward {(M)[[[]]]"
+"Reward {(M)[[]]"
 
 #: src-en/data/events_sector_union.xml:982
 msgid ""
@@ -1742,7 +1722,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_MINING\"]/choice[1]/event/choice[@req=\"SCRAP_COLLECTOR\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[]"
 
 #: src-en/data/events_sector_union.xml:992
 msgid ""
@@ -1756,7 +1736,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_MINING\"]/choice[2]/text"
 msgstr ""
 "Ignore them.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:1000
 msgid ""
@@ -1766,9 +1746,7 @@ msgstr "You have no interest in the mining operation."
 #: src-en/data/events_sector_union.xml:1002
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_MINING\"]/choice[2]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:1006
 msgid ""
@@ -1801,7 +1779,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FACTORY\"]/choice[1]/text"
 msgstr ""
 "Attack the guard to get to the factory.\n"
-"[[[]]]"
+"[[]]"
 
 #: src-en/data/events_sector_union.xml:1027
 msgid ""
@@ -1813,14 +1791,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FACTORY\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[]"
 
 #: src-en/data/events_sector_union.xml:1043
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FACTORY\"]/choice[2]/text"
 msgstr ""
 "Ignore the factory.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:1045
 msgid ""
@@ -1830,9 +1808,7 @@ msgstr "You have no interest in the factory."
 #: src-en/data/events_sector_union.xml:1047
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_FACTORY\"]/choice[2]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:1051
 msgid ""
@@ -1875,7 +1851,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_CARAVAN\"]/choice[1]/text"
 msgstr ""
 "Protect the Militiamen.\n"
-"[[]]"
+"[Fight(CK: [Reward Item(H)[]])(HK: [Reward Item(H)[]])]"
 
 #: src-en/data/events_sector_union.xml:1081
 msgid ""
@@ -1887,7 +1863,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_CARAVAN\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Reward Item(H)[]])(HK: [Reward Item(H)[]])"
 
 #: src-en/data/events_sector_union.xml:1090
 msgid ""
@@ -1909,7 +1885,8 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_CARAVAN\"]/choice[@req=\"LIST_CREW_SUZERAIN\"]/text"
 msgstr ""
 "(Hive Elite) Demand the Suzerain ship stand down.\n"
-"Gain a crew(?), Reward Standard(M)[]"
+"Gain a crew(?)\n"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_union.xml:1099
 msgid ""
@@ -1927,7 +1904,8 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_CARAVAN\"]/choice[@req=\"FLARE_DISTRACTION\"]/text"
 msgstr ""
 "(Flares) Use the flares to lure the Suzerain away from the caravan.\n"
-"Gain a crew(?), Reward Standard(M)[]"
+"Gain a crew(?)\n"
+"Reward Standard(M)[]"
 
 #: src-en/data/events_sector_union.xml:1107
 msgid ""
@@ -1945,7 +1923,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_CARAVAN\"]/choice[5]/text"
 msgstr ""
 "Ignore the ships.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:1115
 msgid ""
@@ -1957,9 +1935,7 @@ msgstr ""
 #: src-en/data/events_sector_union.xml:1117
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"UNION_CARAVAN\"]/choice[5]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:1121
 msgid ""
@@ -1988,7 +1964,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_CLINIC_HARMONY\"]/choice[1]/text"
 msgstr ""
 "Demand an explanation.\n"
-"[[Gain a crew(Human Medic)[[]]], [[[]]], [[[]]], [Reward Stuff(L)[]], [Gain a crew(Human Medic)[[]]], [Gain a crew(Human Medic)[[]]], [[[]]], [Storage Check[], []]]"
+"[[Gain a crew(Human Medic)[[]]], [[]], [[]], [Reward Stuff(L)[]], [Gain a crew(Human Medic)[[]]], [Gain a crew(Human Medic)[[]]], [[]], [, []]]"
 
 #: src-en/data/events_sector_union.xml:1151
 msgid ""
@@ -2026,7 +2002,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_CLINIC_HARMONY\"]/choice[1]/event/choice[@req=\"LIST_VARIANT_SEPARATIST\"]/text"
 msgstr ""
 "(Separatist Crew) Admonish the attackers.\n"
-"[[[]]]"
+"[[]]"
 
 #: src-en/data/events_sector_union.xml:1165
 msgid ""
@@ -2041,14 +2017,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_CLINIC_HARMONY\"]/choice[1]/event/choice[@req=\"LIST_VARIANT_SEPARATIST\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[]"
 
 #: src-en/data/events_sector_union.xml:1176
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_CLINIC_HARMONY\"]/choice[1]/event/choice[@req=\"unique_turzil\"]/text"
 msgstr ""
 "(Turzil) Admonish the attackers.\n"
-"[[[]]]"
+"[[]]"
 
 #: src-en/data/events_sector_union.xml:1178
 msgid ""
@@ -2063,7 +2039,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_CLINIC_HARMONY\"]/choice[1]/event/choice[@req=\"unique_turzil\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[]"
 
 #: src-en/data/events_sector_union.xml:1189
 msgid ""
@@ -2143,7 +2119,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_CLINIC_HARMONY\"]/choice[1]/event/choice[7]/text"
 msgstr ""
 "Try to talk them out of it.\n"
-"[[[]]]"
+"[[]]"
 
 #: src-en/data/events_sector_union.xml:1224
 msgid ""
@@ -2157,14 +2133,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_CLINIC_HARMONY\"]/choice[1]/event/choice[7]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[]"
 
 #: src-en/data/events_sector_union.xml:1233
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_CLINIC_HARMONY\"]/choice[1]/event/choice[8]/text"
 msgstr ""
 "Acquiesce to the Engi's demands.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:1235
 msgid ""
@@ -2176,9 +2152,7 @@ msgstr ""
 #: src-en/data/events_sector_union.xml:1237
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_CLINIC_HARMONY\"]/choice[1]/event/choice[8]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:1241
 msgid ""
@@ -2192,7 +2166,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_CLINIC_HARMONY\"]/choice[2]/text"
 msgstr ""
 "Protect the clinic.\n"
-"[[[]]]"
+"[[]]"
 
 #: src-en/data/events_sector_union.xml:1251
 msgid ""
@@ -2206,14 +2180,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_CLINIC_HARMONY\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[]"
 
 #: src-en/data/events_sector_union.xml:1260
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_CLINIC_HARMONY\"]/choice[3]/text"
 msgstr ""
 "Acquiesce to the Engi's demands.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:1262
 msgid ""
@@ -2225,9 +2199,7 @@ msgstr ""
 #: src-en/data/events_sector_union.xml:1264
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_CLINIC_HARMONY\"]/choice[3]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:1268
 msgid ""
@@ -2350,7 +2322,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_LANIUS_MISTAKE\"]/choice[4]/text"
 msgstr ""
 "Attack the offending Lanius vessel.\n"
-"[[]]"
+"[Fight(CK: [Reward Standard(L)[]])(HK: [[]])]"
 
 #: src-en/data/events_sector_union.xml:1331
 msgid ""
@@ -2364,7 +2336,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_LANIUS_MISTAKE\"]/choice[4]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Reward Standard(L)[]])(HK: [[]])"
 
 #: src-en/data/events_sector_union.xml:1341
 msgid ""
@@ -2373,14 +2345,14 @@ msgstr ""
 "Try to communicate with the Lanius.\n"
 "[[Reward Standard(L)[[], -45≤~≤-35[Gain a weapon(Shotgun 2)[]], -6≤}≤-4[Gain a weapon(Bomb Breach 1)[]], -5≤|≤-3[Gain a drone(Flak 1 Amp3)[]]]]] \n"
 "or [[]] \n"
-"or [[]]"
+"or [Fight(CK: [Reward Standard(L)[]])(HK: [[]])]"
 
 #: src-en/data/events_sector_union.xml:1345
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_LANIUS_MISTAKE\"]/choice[6]/text"
 msgstr ""
 "Leave the scene alone.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:1347
 msgid ""
@@ -2390,9 +2362,7 @@ msgstr "Both the ship and station continue to hail, but you pay them no mind."
 #: src-en/data/events_sector_union.xml:1349
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"DISTRESS_UNION_LANIUS_MISTAKE\"]/choice[6]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:1353
 msgid ""
@@ -2561,7 +2531,7 @@ msgid ""
 "data/events_sector_union.xml$//eventList[@name=\"DISTRESS_UNION_LANIUS_CONTACT\"]/event[3]/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Reward Standard(L)[]])(HK: [[]])"
 
 #: src-en/data/events_sector_union.xml:1460
 msgid ""
@@ -2593,7 +2563,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_UNION_HOTHEADED_CIV\"]/choice[2]/text"
 msgstr ""
 "We don't have time for this.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:1472
 msgid ""
@@ -2604,9 +2574,7 @@ msgstr ""
 #: src-en/data/events_sector_union.xml:1474
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_UNION_HOTHEADED_CIV\"]/choice[2]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:1478
 msgid ""
@@ -2632,7 +2600,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_UNION_HOTHEADED_CIV_SPOT\"]/choice[@req=\"hacking\"]/text"
 msgstr ""
 "(Upg. Hacking) Hack their mainframe before they notice you.\n"
-"[[]]"
+"[Fight(CK: [Reward ~ Only(M)[]])(HK: [Reward ~ Only(M)[]])]"
 
 #: src-en/data/events_sector_union.xml:1493
 msgid ""
@@ -2647,14 +2615,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_UNION_HOTHEADED_CIV_SPOT\"]/choice[@req=\"hacking\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Reward ~ Only(M)[]])(HK: [Reward ~ Only(M)[]])"
 
 #: src-en/data/events_sector_union.xml:1502
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_UNION_HOTHEADED_CIV_SPOT\"]/choice[2]/text"
 msgstr ""
 "Attack the Slug ship.\n"
-"[[]]"
+"[Fight(CK: [Reward ~ Only(M)[]])(HK: [[]])]"
 
 #: src-en/data/events_sector_union.xml:1504
 msgid ""
@@ -2668,7 +2636,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_UNION_HOTHEADED_CIV_SPOT\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Reward ~ Only(M)[]])(HK: [[]])"
 
 #: src-en/data/events_sector_union.xml:1515
 msgid ""
@@ -2690,7 +2658,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"ENCOUNTER_PIRATE_STATION_UNION\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [])(HK: [])"
 
 #: src-en/data/events_sector_union.xml:1546
 msgid ""
@@ -2705,7 +2673,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"ENCOUNTER_COALITION_UNION\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [])(HK: [])"
 
 #: src-en/data/events_sector_union.xml:1566
 msgid "data/events_sector_union.xml$//event[@name=\"RST_START\"]/text"
@@ -2809,7 +2777,7 @@ msgstr "\"Understandable. We will not waste your time any further! R.S.T. out.\"
 msgid "data/events_sector_union.xml$//event[@name=\"RST_START\"]/choice[2]/text"
 msgstr ""
 "Oh yeah I know all about Renfield. I think he was my brother or something?\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:1611
 msgid ""
@@ -2821,9 +2789,7 @@ msgstr ""
 #: src-en/data/events_sector_union.xml:1613
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"RST_START\"]/choice[2]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:1617
 msgid ""
@@ -2846,7 +2812,7 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "We're no civilian ship, what is the issue?\n"
-"[[[]], [[[]], []], []]"
+"[[Fight(CK: [[[]], []])(HK: [])], [[Fight(CK: [[[]], []])(HK: [])], []], []]"
 
 #: src-en/data/events_sector_union.xml:1633
 msgid ""
@@ -2863,7 +2829,7 @@ msgid ""
 " and @lvl=\"0\"]/event/choice[1]/text"
 msgstr ""
 "Agree.\n"
-"[[]]"
+"[Fight(CK: [[[]], []])(HK: [])]"
 
 #: src-en/data/events_sector_union.xml:1638
 msgid ""
@@ -2882,7 +2848,7 @@ msgid ""
 " and @lvl=\"0\"]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [[[]], []])(HK: [])"
 
 #: src-en/data/events_sector_union.xml:1647
 msgid ""
@@ -2890,7 +2856,7 @@ msgid ""
 " and @lvl=\"0\"]/event/choice[@req=\"unique_haynes\"]/text"
 msgstr ""
 "(Haynes) \"Excuse me... did you say... spiders?\"\n"
-"[[[]], []]"
+"[[Fight(CK: [[[]], []])(HK: [])], []]"
 
 #: src-en/data/events_sector_union.xml:1649
 msgid ""
@@ -2913,7 +2879,7 @@ msgid ""
 " and @lvl=\"0\"]/event/choice[@req=\"unique_haynes\"]/event/choice[1]/text"
 msgstr ""
 "Agree to help.\n"
-"[[]]"
+"[Fight(CK: [[[]], []])(HK: [])]"
 
 #: src-en/data/events_sector_union.xml:1653
 msgid ""
@@ -2935,7 +2901,7 @@ msgid ""
 "@lvl=\"0\"]/event/choice[@req=\"unique_haynes\"]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [[[]], []])(HK: [])"
 
 #: src-en/data/events_sector_union.xml:1662
 msgid ""
@@ -2969,7 +2935,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "We're no civilian ship, what is the issue?\n"
-"[[[]], []]"
+"[[Fight(CK: [])(HK: [])], []]"
 
 #: src-en/data/events_sector_union.xml:1678
 msgid ""
@@ -2987,7 +2953,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[1]/text"
 msgstr ""
 "Agree.\n"
-"[[]]"
+"[Fight(CK: [])(HK: [])]"
 
 #: src-en/data/events_sector_union.xml:1683
 msgid ""
@@ -3004,7 +2970,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [])(HK: [])"
 
 #: src-en/data/events_sector_union.xml:1692
 msgid ""
@@ -3019,7 +2985,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"SPIDER_QUEST_START\"]/choice[@req=\"pilot\"]/text"
 msgstr ""
 "Agree to leave.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:1700
 msgid ""
@@ -3031,9 +2997,7 @@ msgstr ""
 #: src-en/data/events_sector_union.xml:1702
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"SPIDER_QUEST_START\"]/choice[@req=\"pilot\"]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:1706
 msgid ""
@@ -3162,7 +3126,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"KESTREL_UNLOCK\"]/choice[2]/text"
 msgstr ""
 "Ignore the offer.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:1777
 msgid ""
@@ -3174,9 +3138,7 @@ msgstr ""
 #: src-en/data/events_sector_union.xml:1779
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"KESTREL_UNLOCK\"]/choice[2]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:1783
 msgid ""
@@ -3412,7 +3374,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"KESTREL_UNLOCK_PIRATE\"]/choice[1]/text"
 msgstr ""
 "We can take them.\n"
-"[[]]"
+"[Fight(CK: [])(HK: [])]"
 
 #: src-en/data/events_sector_union.xml:1905
 msgid ""
@@ -3426,14 +3388,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"KESTREL_UNLOCK_PIRATE\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [])(HK: [])"
 
 #: src-en/data/events_sector_union.xml:1914
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"KESTREL_UNLOCK_PIRATE\"]/choice[2]/text"
 msgstr ""
 "We aren't picking a fight with the Brood.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:1916
 msgid ""
@@ -3445,9 +3407,7 @@ msgstr ""
 #: src-en/data/events_sector_union.xml:1918
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"KESTREL_UNLOCK_PIRATE\"]/choice[2]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:1922
 msgid ""
@@ -3570,7 +3530,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"KESTREL_UNLOCK_RINGSHIP\"]/choice[1]/text"
 msgstr ""
 "Demand they give back the Kasparov.\n"
-"[[[[]], []]]"
+"[[[Fight(CK: [[<#>Unlock Ship(Kestrel)[Reward Stuff(L)[]]]])(HK: [[<#>Unlock Ship(Kestrel)[Reward Stuff(L)[]]]])], []]]"
 
 #: src-en/data/events_sector_union.xml:2006
 msgid ""
@@ -3584,7 +3544,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"KESTREL_UNLOCK_RINGSHIP\"]/choice[1]/event/choice/text"
 msgstr ""
 "It's the Kasparov.\n"
-"[[[]], []]"
+"[[Fight(CK: [[<#>Unlock Ship(Kestrel)[Reward Stuff(L)[]]]])(HK: [[<#>Unlock Ship(Kestrel)[Reward Stuff(L)[]]]])], []]"
 
 #: src-en/data/events_sector_union.xml:2010
 msgid ""
@@ -3602,7 +3562,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"KESTREL_UNLOCK_RINGSHIP\"]/choice[1]/event/choice/event/choice[1]/text"
 msgstr ""
 "Well, if it's a fight you want...\n"
-"[[]]"
+"[Fight(CK: [[<#>Unlock Ship(Kestrel)[Reward Stuff(L)[]]]])(HK: [[<#>Unlock Ship(Kestrel)[Reward Stuff(L)[]]]])]"
 
 #: src-en/data/events_sector_union.xml:2014
 msgid ""
@@ -3616,7 +3576,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"KESTREL_UNLOCK_RINGSHIP\"]/choice[1]/event/choice/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [[<#>Unlock Ship(Kestrel)[Reward Stuff(L)[]]]])(HK: [[<#>Unlock Ship(Kestrel)[Reward Stuff(L)[]]]])"
 
 #: src-en/data/events_sector_union.xml:2023
 msgid ""
@@ -3630,7 +3590,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"KESTREL_UNLOCK_RINGSHIP\"]/choice[2]/text"
 msgstr ""
 "Ignore the depot.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:2033
 msgid ""
@@ -3642,9 +3602,7 @@ msgstr ""
 #: src-en/data/events_sector_union.xml:2035
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"KESTREL_UNLOCK_RINGSHIP\"]/choice[2]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:2039
 msgid ""
@@ -3712,7 +3670,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"COREWORLDS_EARTH\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[<!>Fleet Advance(1)[[[[[[[]]]], []]]], [Storage Check[], []]]"
+"[<!>Fleet Advance(1)[[[[[[[]]]], []]]], [, []]]"
 
 #: src-en/data/events_sector_union.xml:2076
 msgid ""
@@ -3847,7 +3805,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"COREWORLDS_EARTH\"]/choice/event/choice[2]/text"
 msgstr ""
 "Ignore the park.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:2136
 msgid ""
@@ -3858,9 +3816,7 @@ msgstr ""
 #: src-en/data/events_sector_union.xml:2138
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"COREWORLDS_EARTH\"]/choice/event/choice[2]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:2142
 msgid ""
@@ -3886,7 +3842,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BARREL\"]/choice[1]/text"
 msgstr ""
 "Hail them and try to negotiate.\n"
-"[[[[]]], [[[]]]]"
+"[[[Fight(CK: [Gain a weapon(Part Gatling Barrel)[]])(HK: [])]], [[Fight(CK: [Gain a weapon(Part Gatling Barrel)[]])(HK: [])]]]"
 
 #: src-en/data/events_sector_union.xml:2171
 msgid ""
@@ -3900,7 +3856,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BARREL\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "We've come for the Gatling Barrel.\n"
-"[[[]]]"
+"[[Fight(CK: [Gain a weapon(Part Gatling Barrel)[]])(HK: [])]]"
 
 #: src-en/data/events_sector_union.xml:2175
 msgid ""
@@ -3915,7 +3871,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BARREL\"]/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Then we'll have to take it!\n"
-"[[]]"
+"[Fight(CK: [Gain a weapon(Part Gatling Barrel)[]])(HK: [])]"
 
 #: src-en/data/events_sector_union.xml:2179
 msgid ""
@@ -3930,14 +3886,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BARREL\"]/choice[1]/event/choice[1]/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a weapon(Part Gatling Barrel)[]])(HK: [])"
 
 #: src-en/data/events_sector_union.xml:2190
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BARREL\"]/choice[1]/event/choice[@req=\"LIST_CREW_MANTIS\"]/text"
 msgstr ""
 "(Mantis Crew) Negotiate for the Barrel.\n"
-"[[[]]]"
+"[[Fight(CK: [Gain a weapon(Part Gatling Barrel)[]])(HK: [])]]"
 
 #: src-en/data/events_sector_union.xml:2192
 msgid ""
@@ -3951,7 +3907,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BARREL\"]/choice[1]/event/choice[@req=\"LIST_CREW_MANTIS\"]/event/choice/text"
 msgstr ""
 "Attack!\n"
-"[[]]"
+"[Fight(CK: [Gain a weapon(Part Gatling Barrel)[]])(HK: [])]"
 
 #: src-en/data/events_sector_union.xml:2196
 msgid ""
@@ -3966,14 +3922,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BARREL\"]/choice[1]/event/choice[@req=\"LIST_CREW_MANTIS\"]/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a weapon(Part Gatling Barrel)[]])(HK: [])"
 
 #: src-en/data/events_sector_union.xml:2209
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BARREL\"]/choice[2]/text"
 msgstr ""
 "This is risky, we should leave.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:2211
 msgid ""
@@ -3985,9 +3941,7 @@ msgstr ""
 #: src-en/data/events_sector_union.xml:2213
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BARREL\"]/choice[2]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:2217
 msgid ""
@@ -4014,7 +3968,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BASE\"]/choice[1]/text"
 msgstr ""
 "We have a war of our own to fight. If these people were alive, they'd understand.\n"
-"[[[]], Gain a weapon(Part Gatling Base)[[[]]], [[]], [[]]]"
+"[[Fight(CK: [Gain a weapon(Giftlist Federation)[]])(HK: [Gain a weapon(Giftlist Federation)[]])], Gain a weapon(Part Gatling Base)[[Fight(CK: [Gain a weapon(Giftlist Federation)[]])(HK: [Gain a weapon(Giftlist Federation)[]])]], [Fight(CK: [Gain a weapon(Giftlist Federation)[]])(HK: [Gain a weapon(Giftlist Federation)[]])], [Fight(CK: [Gain a weapon(Giftlist Federation)[]])(HK: [Gain a weapon(Giftlist Federation)[]])]]"
 
 #: src-en/data/events_sector_union.xml:2239
 msgid ""
@@ -4030,7 +3984,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BASE\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Dig up Adam Miller.\n"
-"[[]]"
+"[Fight(CK: [Gain a weapon(Giftlist Federation)[]])(HK: [Gain a weapon(Giftlist Federation)[]])]"
 
 #: src-en/data/events_sector_union.xml:2243
 msgid ""
@@ -4046,14 +4000,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BASE\"]/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a weapon(Giftlist Federation)[]])(HK: [Gain a weapon(Giftlist Federation)[]])"
 
 #: src-en/data/events_sector_union.xml:2252
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BASE\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Dig up Jackson Newman.\n"
-"Gain a weapon(Part Gatling Base)[[[]]]"
+"Gain a weapon(Part Gatling Base)[[Fight(CK: [Gain a weapon(Giftlist Federation)[]])(HK: [Gain a weapon(Giftlist Federation)[]])]]"
 
 #: src-en/data/events_sector_union.xml:2254
 msgid ""
@@ -4067,7 +4021,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BASE\"]/choice[1]/event/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[Fight(CK: [Gain a weapon(Giftlist Federation)[]])(HK: [Gain a weapon(Giftlist Federation)[]])]"
 
 #: src-en/data/events_sector_union.xml:2259
 msgid ""
@@ -4082,14 +4036,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BASE\"]/choice[1]/event/choice[2]/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a weapon(Giftlist Federation)[]])(HK: [Gain a weapon(Giftlist Federation)[]])"
 
 #: src-en/data/events_sector_union.xml:2270
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BASE\"]/choice[1]/event/choice[3]/text"
 msgstr ""
 "Dig up Alaster Williams.\n"
-"[[]]"
+"[Fight(CK: [Gain a weapon(Giftlist Federation)[]])(HK: [Gain a weapon(Giftlist Federation)[]])]"
 
 #: src-en/data/events_sector_union.xml:2272
 msgid ""
@@ -4105,14 +4059,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BASE\"]/choice[1]/event/choice[3]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a weapon(Giftlist Federation)[]])(HK: [Gain a weapon(Giftlist Federation)[]])"
 
 #: src-en/data/events_sector_union.xml:2281
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BASE\"]/choice[1]/event/choice[4]/text"
 msgstr ""
 "Dig up Jake Willson.\n"
-"[[]]"
+"[Fight(CK: [Gain a weapon(Giftlist Federation)[]])(HK: [Gain a weapon(Giftlist Federation)[]])]"
 
 #: src-en/data/events_sector_union.xml:2283
 msgid ""
@@ -4128,14 +4082,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BASE\"]/choice[1]/event/choice[4]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a weapon(Giftlist Federation)[]])(HK: [Gain a weapon(Giftlist Federation)[]])"
 
 #: src-en/data/events_sector_union.xml:2294
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BASE\"]/choice[2]/text"
 msgstr ""
 "We have better things to do than dishonouring the dead.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:2296
 msgid ""
@@ -4145,9 +4099,7 @@ msgstr "You ignore the graveyard and fly away."
 #: src-en/data/events_sector_union.xml:2298
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_BASE\"]/choice[2]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:2302
 msgid ""
@@ -4174,7 +4126,7 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_AUGMENT\"]/choice/text"
 msgstr ""
 "Hail them.\n"
-"[Gain an augment(Part Gatling Augment), ~-30[], Gain an augment(Part Gatling Augment), ~-50 {3 }3 |3[], [[]], [Storage Check[], []]]"
+"[Gain an augment(Part Gatling Augment)~-30[], Gain an augment(Part Gatling Augment)~-50 {3 }3 |3[], [Fight(CK: [Gain an augment(Part Gatling Augment)[]])(HK: [])], [, []]]"
 
 #: src-en/data/events_sector_union.xml:2330
 msgid ""
@@ -4191,21 +4143,23 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_AUGMENT\"]/choice/event/choice[1]/text"
 msgstr ""
 "Buy the Pre-Igniter.\n"
-"Gain an augment(Part Gatling Augment), ~-30[]"
+"Gain an augment(Part Gatling Augment)\n"
+"~-30[]"
 
 #: src-en/data/events_sector_union.xml:2341
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_AUGMENT\"]/choice/event/choice[2]/text"
 msgstr ""
 "Buy the \"Jumbo Deal\" along with the Pre-Igniter.\n"
-"Gain an augment(Part Gatling Augment), ~-50 {3 }3 |3[]"
+"Gain an augment(Part Gatling Augment)\n"
+"~-50 {3 }3 |3[]"
 
 #: src-en/data/events_sector_union.xml:2353
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_AUGMENT\"]/choice/event/choice[3]/text"
 msgstr ""
 "Take it through force!\n"
-"[[]]"
+"[Fight(CK: [Gain an augment(Part Gatling Augment)[]])(HK: [])]"
 
 #: src-en/data/events_sector_union.xml:2355
 msgid ""
@@ -4219,14 +4173,14 @@ msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_AUGMENT\"]/choice/event/choice[3]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain an augment(Part Gatling Augment)[]])(HK: [])"
 
 #: src-en/data/events_sector_union.xml:2364
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_AUGMENT\"]/choice/event/choice[4]/text"
 msgstr ""
 "Whatever, let's go.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_union.xml:2366
 msgid ""
@@ -4236,9 +4190,7 @@ msgstr "You ignore the station and fly away."
 #: src-en/data/events_sector_union.xml:2368
 msgid ""
 "data/events_sector_union.xml$//event[@name=\"QUEST_GATLING_AUGMENT\"]/choice/event/choice[4]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_union.xml:2372
 msgid ""

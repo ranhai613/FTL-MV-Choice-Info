@@ -6,8 +6,9 @@ from json5 import load
 import re
 from pprint import pprint
 
-FIXED_EVENT = {
-    'STORAGE_CHECK': 'Storage Check'
+FIXED_EVENT_MAP = {
+    'STORAGE_CHECK': 'Storage Check',
+    'COMBAT_CHECK': 'Fight'
 }
 
 CUSTOM_FONT = {
@@ -29,53 +30,80 @@ class ElementBaseClass():
         self._element = element
         self._xmlpath = xmlpath.replace('src-en/', '')
         self._uniqueXPathGenerator = uniqueXPathGenerator
+        self._childEvents = None
     
     def get_uniqueXPath(self):
         return self._uniqueXPathGenerator.getpath(self._element)
+    
+    def _ensure_childEvents(self, childEvents):
+        while True:
+            new_events = []
+            is_changed = False
+            for event in childEvents:
+                if isinstance(event, FixedEvent) or isinstance(event, FightEvent):
+                    new_events.append(event)
+                    continue
+                
+                load_event_name = event._element.get('load')
+                if not load_event_name:
+                    new_events.append(event)
+                    continue
+                
+                if load_event_name == 'COMBAT_CHECK' and self._ship is not None:
+                    fightEvent = FightEvent(self._ship)
+                    fightEvent.init_childEventTags()
+                    new_events.append(fightEvent)
+                    is_changed = True
+                    continue
+                
+                load_event = global_event_map.get(load_event_name)
+                if not load_event:
+                    new_events.append(event)
+                    continue
+                
+                if isinstance(load_event, Event):
+                    new_events.append(load_event)
+                elif isinstance(load_event, EventList):
+                    new_events.extend(load_event._childEvents)
+                elif isinstance(load_event, FixedEvent):
+                    new_events.append(load_event)
+                    continue
+                is_changed = True
+            
+            childEvents = new_events
+            if not is_changed:
+                return childEvents
+    
+    def init_childChoiceTags(self):
+        return
         
-#not done: 'environment', 'recallBoarders', 'boarders', 'choiceRequiresCrew', 'instantEscape', '', 'ship'
+#not done: 'environment', 'recallBoarders', '', 'choiceRequiresCrew', 'instantEscape', '', 'ship'
 class Choice(ElementBaseClass):
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
         self._childEvents = []
+        self._ship = None
         self._additional_info = None
 
-    def _ensure_childEvents(self):
-        new_events = []
-        is_changed = False
-        for event in self._childEvents:
-            if isinstance(event, FixedEvent):
-                new_events.append(event)
-                continue
-            
-            load_event_name = event._element.attrib.get('load')
-            if not load_event_name:
-                new_events.append(event)
-                continue
-            
-            load_event = global_event_map.get(load_event_name)
-            if not load_event:
-                new_events.append(event)
-                continue
-            
-            if isinstance(load_event, Event):
-                new_events.append(load_event)
-            elif isinstance(load_event, EventList):
-                new_events.extend(load_event._childEvents)
-            elif isinstance(load_event, FixedEvent):
-                new_events.append(load_event)
-                continue
-            is_changed = True
-        
-        self._childEvents = new_events
-        return is_changed
 
     def init_childEventTags(self):
         self._childEvents = [Event(element, self._xmlpath, self._uniqueXPathGenerator) for element in xpath(self._element, './event')]
-        while self._ensure_childEvents():
-            pass
+        self._childEvents = self._ensure_childEvents(self._childEvents)
         for event in self._childEvents:
             event.init_childChoiceTags()
+    
+    def init_ShipTag(self):
+        for parent in self._element.iterancestors():
+            ships = [ship.get('load') for ship in xpath(parent, './ship') if ship.get('load')]
+            if len(ships) > 0:
+                break
+        else:
+            return None
+        if len(ships) > 1:
+            return None
+        
+        self._ship = global_ship_map.get(ships[0])
+        
     
     def get_textTag_uniqueXPath(self):
         texttags = xpath(self._element, './text')
@@ -86,11 +114,10 @@ class Choice(ElementBaseClass):
     
     def _event_analize(self, event):
         if isinstance(event, FixedEvent):
-            print(event._event)
             return [event._event]
         
         info = []
-        for tag in event._element.iterchildren('unlockCustomShip', 'removeCrew', 'crewMember', 'reveal_map', 'autoReward', 'item_modify', 'modifyPursuit', 'weapon', 'drone', 'augment', 'damage', 'upgrade'):
+        for tag in event._element.iterchildren():
             if tag.tag == 'unlockCustomShip':
                 text = textAjust(tag.text.replace('PLAYER_SHIP_', ''), False)
                 info.append(f'<#>Unlock Ship({text})')
@@ -108,14 +135,14 @@ class Choice(ElementBaseClass):
                     info.append('<!>Lose your crew(?)')
             
             elif tag.tag == 'crewMember':
-                race = textAjust(tag.attrib.get('class', '?'), False)
+                race = textAjust(tag.get('class', '?').replace('LIST_CREW_', ''), False)
                 info.append(f'Gain a crew({race})')
                 
             elif tag.tag == 'reveal_map':
                 info.append('Map Reveal')
             
             elif tag.tag == 'autoReward':
-                level = tag.attrib.get('level', '?')[0]
+                level = tag.get('level', '?')[0]
                 stuff_type = textAjust(tag.text)
                 info.append(f'Reward {stuff_type}({level})')
             
@@ -126,9 +153,9 @@ class Choice(ElementBaseClass):
                 
                 itemlist = []
                 for itemtag in itemtags:
-                    item = textAjust(itemtag.attrib.get('type'))
-                    amount_min = itemtag.attrib.get('min')
-                    amount_max = itemtag.attrib.get('max')
+                    item = textAjust(itemtag.get('type'))
+                    amount_min = itemtag.get('min')
+                    amount_max = itemtag.get('max')
                     try:
                         amount_min = int(amount_min)
                         amount_max = int(amount_max)
@@ -142,7 +169,7 @@ class Choice(ElementBaseClass):
                 info.append(' '.join(itemlist))
             
             elif tag.tag == 'modifyPursuit':
-                amount = tag.attrib.get('amount')
+                amount = tag.get('amount')
                 if amount is None:
                     continue
                 amount = int(amount)
@@ -153,15 +180,15 @@ class Choice(ElementBaseClass):
                     info.append(f'<!>Fleet Advance({str(amount)})')
             
             elif tag.tag == 'weapon' or tag.tag == 'drone':
-                name = textAjust(tag.attrib.get('name', '?'), False)
+                name = textAjust(tag.get('name', '?'), False)
                 info.append(f'Gain a {tag.tag}({name})')
             
             elif tag.tag == 'augment':
-                name = textAjust(tag.attrib.get('name', '?'), False)
+                name = textAjust(tag.get('name', '?'), False)
                 info.append(f'Gain an augment({name})')
             
             elif tag.tag == 'damage':
-                amount = tag.attrib.get('damage')
+                amount = tag.get('damage')
                 if amount is None:
                     continue
                 amount = int(amount)
@@ -172,12 +199,28 @@ class Choice(ElementBaseClass):
                     info.append(f'<!>Damage Hull({str(amount)})')
             
             elif tag.tag == 'upgrade':
-                system = textAjust(tag.attrib.get('system'))
-                amount = tag.attrib.get('amount')
+                system = textAjust(tag.get('system'))
+                amount = tag.get('amount')
                 if system is None or amount is None:
                     continue
                 
                 info.append(f'System Upgrade({system} {amount}™)')
+            
+            elif tag.tag == 'boarders':
+                race = textAjust(tag.get('class', '?').replace('LIST_CREW_', ''), False)
+                amount_min = tag.get('min')
+                amount_max = tag.get('max')
+                try:
+                    amount_min = int(amount_min)
+                    amount_max = int(amount_max)
+                except TypeError:
+                    info.append(f'<!>Enemy Boarding({race})')
+                    continue
+                
+                if amount_min == amount_max:
+                    info.append(f'<!>Enemy Boarding(x{str(amount_min)} {race})')
+                else:
+                    info.append(f'<!>Enemy Boarding(x{str(amount_min)}-x{str(amount_max)} {race})')
 
         return info
                 
@@ -185,11 +228,28 @@ class Choice(ElementBaseClass):
     def _get_recursive_info(self):
         all_info = []
         for childEvent in self._childEvents:
-            child_info = []
-            if childEvent._childChoices is not None and len(childEvent._childChoices) > 0:
-                child_info = [childChoice._get_recursive_info() for childChoice in childEvent._childChoices]
-            
-            all_info.append(', '.join(self._event_analize(childEvent)) + re.sub(r'[\\\'"]+', '', str(child_info).replace('\\n', '')))
+            if isinstance(childEvent, Event):
+                child_info = []
+                if childEvent._childChoices is not None and len(childEvent._childChoices) > 0:
+                    child_info = [childChoice._get_recursive_info() for childChoice in childEvent._childChoices]
+                
+                all_info.append('\n'.join(self._event_analize(childEvent)) + re.sub(r'[\\\'"]+', '', str(child_info).replace('\\n', '')))
+            elif isinstance(childEvent, FightEvent):
+                HK_child_info = []
+                try:
+                    if len(childEvent._hullKillEvents[0]._childChoices) > 0:
+                        HK_child_info = [childChoice._get_recursive_info() for childChoice in childEvent._hullKillEvents[0]._childChoices]
+                    HK_format = re.sub(r'[\\\'"]+', '', str(HK_child_info).replace('\\n', ''))
+                except Exception:
+                    HK_format = ''
+                CK_child_info = []
+                try:
+                    if len(childEvent._crewKillEvents[0]._childChoices) > 0:
+                        CK_child_info = [childChoice._get_recursive_info() for childChoice in childEvent._crewKillEvents[0]._childChoices]
+                    CK_format = re.sub(r'[\\\'"]+', '', str(CK_child_info).replace('\\n', ''))
+                except Exception:
+                    CK_format = ''
+                all_info.append(f'Fight(CK: {CK_format})(HK: {HK_format})')
         return ' \nor '.join(all_info)
     
     def set_additional_info(self):
@@ -202,28 +262,45 @@ class Event(ElementBaseClass):
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
         self._childChoices = None
-    
+        self._childShips = None
     
     def init_childChoiceTags(self):
-        childChoiceElements = xpath(self._element, './choice')
-        self._childChoices = [global_choice_map.get(f'{self._xmlpath}${self._uniqueXPathGenerator.getpath(element)}') for element in childChoiceElements]
+        self._childChoices = [global_choice_map.get(f'{self._xmlpath}${self._uniqueXPathGenerator.getpath(element)}') for element in xpath(self._element, './choice')]
+    
+    def init_childShipTags(self):
+        self._childShips = [global_ship_map.get(element.get('name')) for element in xpath(self._element, './ship')]
     
 class EventList(ElementBaseClass):
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
         self._childEvents = [Event(element, xmlpath, uniqueXPathGenerator) for element in xpath(self._element, './event')]
     
-    def init_childChoiceTags(self):
-        return
-
 class FixedEvent(ElementBaseClass):
     def __init__(self, eventText, element=None, xmlpath='', uniqueXPathGenerator=None):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
         self._event = eventText
         self._childChoices = None
         
-    def init_childChoiceTags(self):
-        return
+class Ship(ElementBaseClass):
+    def __init__(self, element, xmlpath, uniqueXPathGenerator):
+        super().__init__(element, xmlpath, uniqueXPathGenerator)
+        
+
+class FightEvent(ElementBaseClass):
+    def __init__(self, ship: Ship, element=None, xmlpath='', uniqueXPathGenerator=None):
+        super().__init__(element, xmlpath, uniqueXPathGenerator)
+        self._ship = ship
+        self._hullKillEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './destroyed')]
+        self._crewKillEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './deadCrew')]
+        
+    def init_childEventTags(self):
+        self._hullKillEvents = self._ensure_childEvents(self._hullKillEvents)
+        self._crewKillEvents = self._ensure_childEvents(self._crewKillEvents)
+        for event in self._hullKillEvents:
+            event.init_childChoiceTags()
+        for event in self._crewKillEvents:
+            event.init_childChoiceTags()
+        
 
 def textAjust(text, use_custom_font = True):
     if text is None:
@@ -237,6 +314,7 @@ def textAjust(text, use_custom_font = True):
 
 global_event_map = {}
 global_choice_map = {}
+global_ship_map = {}
 
 for xmlpath in glob_posix('src-en/data/*'):
     if not re.match(r'.+\.(xml|xml.append)$', xmlpath):
@@ -247,13 +325,13 @@ for xmlpath in glob_posix('src-en/data/*'):
         continue
     
     uniqueXPathGenerator = UniqueXPathGenerator(tree, ftl_xpath_matchers())
-    events = xpath(tree, '//event')
-    global_event_map.update({element.attrib.get('name'): Event(element, xmlpath, uniqueXPathGenerator) for element in events})
+    global_event_map.update({element.get('name'): Event(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//event')})
+    global_event_map.update({element.get('name'): EventList(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//eventList')})
+    global_ship_map.update({element.get('name'): Ship(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//ship')})
 
-    eventlists = xpath(tree, '//eventList')
-    global_event_map.update({element.attrib.get('name'): EventList(element, xmlpath, uniqueXPathGenerator) for element in eventlists})
+global_event_map.update({key: FixedEvent(value) for key, value in FIXED_EVENT_MAP.items()})
 
-global_event_map.update({key: FixedEvent(value) for key, value in FIXED_EVENT.items()})
+print(global_event_map['MORALITY_UPDATE_ZOLTAN_FIGHT']._xmlpath)
 
 with open('mvloc.config.jsonc', 'tr', encoding='utf8') as f:
     config = load(f)
@@ -266,6 +344,7 @@ for xmlpath in config['filePatterns']:
     global_choice_map.update({f'{xmlpath}${uniqueXPathGenerator.getpath(element)}': Choice(element, xmlpath, uniqueXPathGenerator) for element in elements})
 
 for tag in global_choice_map.values():
+    tag.init_ShipTag()
     tag.init_childEventTags()
 for tag in global_event_map.values():
     tag.init_childChoiceTags()
@@ -289,4 +368,3 @@ for xmlpath in config['filePatterns']:
         
         new_entries.append(StringEntry(key, value, entry.lineno, False, False))
     writepo(f'locale/{xmlpath}/choice-info-en.po', new_entries, f'src-en/{xmlpath}')
-    #print(f'replaced {count} texts in total!')

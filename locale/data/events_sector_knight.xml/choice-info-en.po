@@ -18,7 +18,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_CALL_CENTER\"]/choice[1]/text"
 msgstr ""
 "Blow them up!\n"
-"[[]]"
+"[Fight(CK: [])(HK: [])]"
 
 #: src-en/data/events_sector_knight.xml:41
 msgid ""
@@ -32,14 +32,14 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_CALL_CENTER\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [])(HK: [])"
 
 #: src-en/data/events_sector_knight.xml:50
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_CALL_CENTER\"]/choice[2]/text"
 msgstr ""
 "Approach the station.\n"
-"[[[]], []]"
+"[[Fight(CK: [])(HK: [])], []]"
 
 #: src-en/data/events_sector_knight.xml:52
 msgid ""
@@ -57,7 +57,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_CALL_CENTER\"]/choice[2]/event/choice[1]/text"
 msgstr ""
 "No, we definitely are. Pretty sure scamming is a crime.\n"
-"[[]]"
+"[Fight(CK: [])(HK: [])]"
 
 #: src-en/data/events_sector_knight.xml:56
 msgid ""
@@ -71,7 +71,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_CALL_CENTER\"]/choice[2]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [])(HK: [])"
 
 #: src-en/data/events_sector_knight.xml:65
 msgid ""
@@ -93,7 +93,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_CALL_CENTER\"]/choice[3]/text"
 msgstr ""
 "Who cares about some scammers? Leave.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_knight.xml:75
 msgid ""
@@ -103,9 +103,7 @@ msgstr "You prepare to jump away."
 #: src-en/data/events_sector_knight.xml:77
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_CALL_CENTER\"]/choice[3]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_knight.xml:81
 msgid ""
@@ -119,7 +117,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_CALL_CENTER\"]/choice[@req=\"LIST_CREW_SLUG\"]/text"
 msgstr ""
 "(Slug Crew) \"I have an idea...\"\n"
-"[|1, Gain a drone(Random)[]]"
+"[|1Gain a drone(Random)[]]"
 
 #: src-en/data/events_sector_knight.xml:89
 msgid ""
@@ -138,7 +136,8 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_CALL_CENTER\"]/choice[@req=\"LIST_CREW_SLUG\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"|1, Gain a drone(Random)[]"
+"|1\n"
+"Gain a drone(Random)[]"
 
 #: src-en/data/events_sector_knight.xml:99
 msgid ""
@@ -168,7 +167,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"unique_mayeb\"]/text"
 msgstr ""
 "(Mayeb) Talk about the Gathering.\n"
-"Gain a crew(Slug Knight)[[[]]]"
+"Gain a crew(Slug Knight)[[Fight(CK: [])(HK: [])]]"
 
 #: src-en/data/events_sector_knight.xml:117
 msgid ""
@@ -188,7 +187,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"unique_mayeb\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[Fight(CK: [])(HK: [])]"
 
 #: src-en/data/events_sector_knight.xml:124
 msgid ""
@@ -202,14 +201,15 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"unique_mayeb\"]/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [])(HK: [])"
 
 #: src-en/data/events_sector_knight.xml:135
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"unique_ivar\"]/text"
 msgstr ""
 "(Ivar) Tell the Knight about the Gathering.\n"
-"Reward ~ Only(H), Gain a weapon(Giftlist Knight)[]"
+"Reward ~ Only(H)\n"
+"Gain a weapon(Giftlist Knight)[]"
 
 #: src-en/data/events_sector_knight.xml:137
 msgid ""
@@ -232,7 +232,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"unique_tyerel\"]/text"
 msgstr ""
 "(Ty E'Rel) \"I will support your emigration.\"\n"
-"Gain a crew(Slug Knight)[[[]]]"
+"Gain a crew(Slug Knight)[[Fight(CK: [])(HK: [])]]"
 
 #: src-en/data/events_sector_knight.xml:155
 msgid ""
@@ -258,7 +258,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"unique_tyerel\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[Fight(CK: [])(HK: [])]"
 
 #: src-en/data/events_sector_knight.xml:168
 msgid ""
@@ -272,7 +272,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"unique_tyerel\"]/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [])(HK: [])"
 
 #: src-en/data/events_sector_knight.xml:179
 msgid ""
@@ -466,7 +466,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"MINELAUNCHER_KERNEL\"]/text"
 msgstr ""
 "Offer the knight a Kernel Mine Launcher.\n"
-"[Gain a weapon(Giftlist Knight), Reward ~ Only(M)[]]"
+"[Gain a weapon(Giftlist Knight)Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_knight.xml:279
 msgid ""
@@ -480,14 +480,15 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"MINELAUNCHER_KERNEL\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a weapon(Giftlist Knight), Reward ~ Only(M)[]"
+"Gain a weapon(Giftlist Knight)\n"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_knight.xml:288
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"KERNEL_1_ELITE\"]/text"
 msgstr ""
 "Offer the knight an elite Kernel Burst 1.\n"
-"[Gain a weapon(Giftlist Knight), Reward ~ Only(M)[]]"
+"[Gain a weapon(Giftlist Knight)Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_knight.xml:290
 msgid ""
@@ -501,14 +502,15 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"KERNEL_1_ELITE\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a weapon(Giftlist Knight), Reward ~ Only(M)[]"
+"Gain a weapon(Giftlist Knight)\n"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_knight.xml:299
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"KERNEL_2_ELITE\"]/text"
 msgstr ""
 "Offer the knight an elite Kernel Burst 2.\n"
-"[Gain a weapon(Giftlist Knight), Reward ~ Only(M)[]]"
+"[Gain a weapon(Giftlist Knight)Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_knight.xml:301
 msgid ""
@@ -522,14 +524,15 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"KERNEL_2_ELITE\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a weapon(Giftlist Knight), Reward ~ Only(M)[]"
+"Gain a weapon(Giftlist Knight)\n"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_knight.xml:310
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"KERNEL_HEAVY_ELITE\"]/text"
 msgstr ""
 "Offer the knight an elite Heavy Kernel.\n"
-"[Gain a weapon(Giftlist Knight), Reward ~ Only(M)[]]"
+"[Gain a weapon(Giftlist Knight)Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_knight.xml:312
 msgid ""
@@ -543,14 +546,15 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"KERNEL_HEAVY_ELITE\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a weapon(Giftlist Knight), Reward ~ Only(M)[]"
+"Gain a weapon(Giftlist Knight)\n"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_knight.xml:321
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"KERNEL_FIRE_ELITE\"]/text"
 msgstr ""
 "Offer the knight an elite Fire Kernel.\n"
-"[Gain a weapon(Giftlist Knight), Reward ~ Only(M)[]]"
+"[Gain a weapon(Giftlist Knight)Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_knight.xml:323
 msgid ""
@@ -564,14 +568,15 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"KERNEL_FIRE_ELITE\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a weapon(Giftlist Knight), Reward ~ Only(M)[]"
+"Gain a weapon(Giftlist Knight)\n"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_knight.xml:332
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"KERNEL_CHAIN_ELITE\"]/text"
 msgstr ""
 "Offer the knight an elite Chain Kernel.\n"
-"[Gain a weapon(Giftlist Knight), Reward ~ Only(M)[]]"
+"[Gain a weapon(Giftlist Knight)Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_knight.xml:334
 msgid ""
@@ -585,14 +590,15 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"KERNEL_CHAIN_ELITE\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a weapon(Giftlist Knight), Reward ~ Only(M)[]"
+"Gain a weapon(Giftlist Knight)\n"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_knight.xml:343
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"KERNEL_CHARGE_ELITE\"]/text"
 msgstr ""
 "Offer the knight an elite Charge Kernel.\n"
-"[Gain a weapon(Giftlist Knight), Reward ~ Only(M)[]]"
+"[Gain a weapon(Giftlist Knight)Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_knight.xml:345
 msgid ""
@@ -606,14 +612,15 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"KERNEL_CHARGE_ELITE\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a weapon(Giftlist Knight), Reward ~ Only(M)[]"
+"Gain a weapon(Giftlist Knight)\n"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_knight.xml:354
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"STRAWBERRY\"]/text"
 msgstr ""
 "Offer the knight a Strawberry Gun.\n"
-"[System Upgrade(Reactor 1™), System Upgrade(Weapons 1™), Gain a weapon(Giftlist Knight), Reward ~ Only(M)[]]"
+"[System Upgrade(Reactor 1™)System Upgrade(Weapons 1™)Gain a weapon(Giftlist Knight)Reward ~ Only(M)[]]"
 
 #: src-en/data/events_sector_knight.xml:356
 msgid ""
@@ -627,7 +634,10 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[@req=\"STRAWBERRY\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"System Upgrade(Reactor 1™), System Upgrade(Weapons 1™), Gain a weapon(Giftlist Knight), Reward ~ Only(M)[]"
+"System Upgrade(Reactor 1™)\n"
+"System Upgrade(Weapons 1™)\n"
+"Gain a weapon(Giftlist Knight)\n"
+"Reward ~ Only(M)[]"
 
 #: src-en/data/events_sector_knight.xml:365
 msgid ""
@@ -660,7 +670,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[23]/text"
 msgstr ""
 "Attack the Knight's ship.\n"
-"[[]]"
+"[Fight(CK: [])(HK: [])]"
 
 #: src-en/data/events_sector_knight.xml:380
 msgid ""
@@ -674,14 +684,14 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[23]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [])(HK: [])"
 
 #: src-en/data/events_sector_knight.xml:389
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[24]/text"
 msgstr ""
 "Ignore the strange Knight.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_knight.xml:391
 msgid ""
@@ -691,9 +701,7 @@ msgstr "The knight makes no moves to interfere with you."
 #: src-en/data/events_sector_knight.xml:393
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_ORCHID_LOVER\"]/choice[24]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_knight.xml:397
 msgid ""
@@ -751,7 +759,8 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_HEKTAR\"]/choice[@req=\"LIST_VARIANT_BILLY\"]/text"
 msgstr ""
 "(Billy) \"Are you wassssting company money on thissss?\"\n"
-"Reward ~ Only(H), Gain a weapon(Giftlist Modules)[[Storage Check[], []]]"
+"Reward ~ Only(H)\n"
+"Gain a weapon(Giftlist Modules)[[, []]]"
 
 #: src-en/data/events_sector_knight.xml:437
 msgid ""
@@ -767,7 +776,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_HEKTAR\"]/choice[@req=\"LIST_VARIANT_BILLY\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_knight.xml:444
 msgid ""
@@ -779,9 +788,7 @@ msgstr ""
 #: src-en/data/events_sector_knight.xml:446
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_HEKTAR\"]/choice[@req=\"LIST_VARIANT_BILLY\"]/event/choice/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_knight.xml:450
 msgid ""
@@ -795,7 +802,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_HEKTAR\"]/choice[@req=\"unique_metyunt\"]/text"
 msgstr ""
 "(Metyunt) \"This isn't up to regulation.\"\n"
-"Reward ~ Only(L)[[Storage Check[], []]]"
+"Reward ~ Only(L)[[, []]]"
 
 #: src-en/data/events_sector_knight.xml:460
 msgid ""
@@ -812,7 +819,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_HEKTAR\"]/choice[@req=\"unique_metyunt\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_knight.xml:466
 msgid ""
@@ -822,9 +829,7 @@ msgstr "You have the opportunity to do something on your ship after you shop."
 #: src-en/data/events_sector_knight.xml:468
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_HEKTAR\"]/choice[@req=\"unique_metyunt\"]/event/choice/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_knight.xml:472
 msgid ""
@@ -838,7 +843,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_HEKTAR\"]/choice[@req=\"LIST_VARIANT_HEKTAR\"]/text"
 msgstr ""
 "(Hektar Employee) Ask them if they really expect this to work.\n"
-"[[Storage Check[], []]]"
+"[[, []]]"
 
 #: src-en/data/events_sector_knight.xml:482
 msgid ""
@@ -853,7 +858,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_HEKTAR\"]/choice[@req=\"LIST_VARIANT_HEKTAR\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_knight.xml:487
 msgid ""
@@ -863,9 +868,7 @@ msgstr "You have the opportunity to do something on your ship after you shop."
 #: src-en/data/events_sector_knight.xml:489
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_HEKTAR\"]/choice[@req=\"LIST_VARIANT_HEKTAR\"]/event/choice/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_knight.xml:493
 msgid ""
@@ -895,7 +898,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_HEKTAR\"]/choice[5]/text"
 msgstr ""
 "Attack the wayward Hektar.\n"
-"[[]]"
+"[Fight(CK: [])(HK: [])]"
 
 #: src-en/data/events_sector_knight.xml:513
 msgid ""
@@ -908,14 +911,14 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_HEKTAR\"]/choice[5]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [])(HK: [])"
 
 #: src-en/data/events_sector_knight.xml:522
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_HEKTAR\"]/choice[6]/text"
 msgstr ""
 "Don't waste your money on this weirdo.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_knight.xml:524
 msgid ""
@@ -925,9 +928,7 @@ msgstr "\"Renegade, you have no tasssste!\""
 #: src-en/data/events_sector_knight.xml:526
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_HEKTAR\"]/choice[6]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_knight.xml:530
 msgid ""
@@ -996,7 +997,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_AMPERE_HOPEFUL\"]/choice[4]/text"
 msgstr ""
 "Attack this idiot.\n"
-"[[]]"
+"[Fight(CK: [Gain a weapon(Giftlist Leech)[]])(HK: [Gain a weapon(Giftlist Leech)[]])]"
 
 #: src-en/data/events_sector_knight.xml:564
 msgid ""
@@ -1010,7 +1011,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_AMPERE_HOPEFUL\"]/choice[4]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a weapon(Giftlist Leech)[]])(HK: [Gain a weapon(Giftlist Leech)[]])"
 
 #: src-en/data/events_sector_knight.xml:589
 msgid "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_QUIZ\"]/text"
@@ -1025,7 +1026,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_QUIZ\"]/choice[1]/text"
 msgstr ""
 "Respond.\n"
-"[[[Reward Stuff(M)[], [[]], [[]]], [[]], Reward Stuff(L)[]], [], Reward Stuff(M), Gain a crew(Slug Saboteur)[]]"
+"[[[Reward Stuff(M)[], [Fight(CK: [Gain a weapon(Giftlist Slug)[]])(HK: [Gain a weapon(Giftlist Slug)[]])], [Fight(CK: [Gain a weapon(Giftlist Slug)[]])(HK: [Gain a weapon(Giftlist Slug)[]])]], [Fight(CK: [Gain a weapon(Giftlist Slug)[]])(HK: [Gain a weapon(Giftlist Slug)[]])], Reward Stuff(L)[]], [], Reward Stuff(M)Gain a crew(Slug Saboteur)[]]"
 
 #: src-en/data/events_sector_knight.xml:595
 msgid ""
@@ -1040,7 +1041,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_QUIZ\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Yes.\n"
-"[[Reward Stuff(M)[], [[]], [[]]], [[]], Reward Stuff(L)[]]"
+"[[Reward Stuff(M)[], [Fight(CK: [Gain a weapon(Giftlist Slug)[]])(HK: [Gain a weapon(Giftlist Slug)[]])], [Fight(CK: [Gain a weapon(Giftlist Slug)[]])(HK: [Gain a weapon(Giftlist Slug)[]])]], [Fight(CK: [Gain a weapon(Giftlist Slug)[]])(HK: [Gain a weapon(Giftlist Slug)[]])], Reward Stuff(L)[]]"
 
 #: src-en/data/events_sector_knight.xml:599
 msgid ""
@@ -1055,7 +1056,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_QUIZ\"]/choice[1]/event/choice[1]/event/choice[1]/text"
 msgstr ""
 "Slocknog is the true king.\n"
-"[Reward Stuff(M)[], [[]], [[]]]"
+"[Reward Stuff(M)[], [Fight(CK: [Gain a weapon(Giftlist Slug)[]])(HK: [Gain a weapon(Giftlist Slug)[]])], [Fight(CK: [Gain a weapon(Giftlist Slug)[]])(HK: [Gain a weapon(Giftlist Slug)[]])]]"
 
 #: src-en/data/events_sector_knight.xml:603
 msgid ""
@@ -1081,7 +1082,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_QUIZ\"]/choice[1]/event/choice[1]/event/choice[1]/event/choice[2]/text"
 msgstr ""
 "His name has a lot of S's in it.\n"
-"[[]]"
+"[Fight(CK: [Gain a weapon(Giftlist Slug)[]])(HK: [Gain a weapon(Giftlist Slug)[]])]"
 
 #: src-en/data/events_sector_knight.xml:614
 msgid ""
@@ -1098,14 +1099,14 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_QUIZ\"]/choice[1]/event/choice[1]/event/choice[1]/event/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a weapon(Giftlist Slug)[]])(HK: [Gain a weapon(Giftlist Slug)[]])"
 
 #: src-en/data/events_sector_knight.xml:623
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_QUIZ\"]/choice[1]/event/choice[1]/event/choice[1]/event/choice[3]/text"
 msgstr ""
 "He has yellow skin. That's pretty cool.\n"
-"[[]]"
+"[Fight(CK: [Gain a weapon(Giftlist Slug)[]])(HK: [Gain a weapon(Giftlist Slug)[]])]"
 
 #: src-en/data/events_sector_knight.xml:625
 msgid ""
@@ -1122,14 +1123,14 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_QUIZ\"]/choice[1]/event/choice[1]/event/choice[1]/event/choice[3]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a weapon(Giftlist Slug)[]])(HK: [Gain a weapon(Giftlist Slug)[]])"
 
 #: src-en/data/events_sector_knight.xml:636
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_QUIZ\"]/choice[1]/event/choice[1]/event/choice[2]/text"
 msgstr ""
 "Nights is the true king.\n"
-"[[]]"
+"[Fight(CK: [Gain a weapon(Giftlist Slug)[]])(HK: [Gain a weapon(Giftlist Slug)[]])]"
 
 #: src-en/data/events_sector_knight.xml:638
 msgid ""
@@ -1146,7 +1147,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_QUIZ\"]/choice[1]/event/choice[1]/event/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a weapon(Giftlist Slug)[]])(HK: [Gain a weapon(Giftlist Slug)[]])"
 
 #: src-en/data/events_sector_knight.xml:647
 msgid ""
@@ -1182,7 +1183,8 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_QUIZ\"]/choice[1]/event/choice[@req=\"unique_slocknog\"]/text"
 msgstr ""
 "(Slocknog) \"Yesss, it isss indeed that ssship.\"\n"
-"Reward Stuff(M), Gain a crew(Slug Saboteur)[]"
+"Reward Stuff(M)\n"
+"Gain a crew(Slug Saboteur)[]"
 
 #: src-en/data/events_sector_knight.xml:664
 msgid ""
@@ -1196,7 +1198,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_QUIZ\"]/choice[2]/text"
 msgstr ""
 "Respond with violence!\n"
-"[[]]"
+"[Fight(CK: [Gain a weapon(Giftlist Slug)[]])(HK: [Gain a weapon(Giftlist Slug)[]])]"
 
 #: src-en/data/events_sector_knight.xml:674
 msgid ""
@@ -1210,7 +1212,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_QUIZ\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a weapon(Giftlist Slug)[]])(HK: [Gain a weapon(Giftlist Slug)[]])"
 
 #: src-en/data/events_sector_knight.xml:685
 msgid "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_TRAP\"]/text"
@@ -1224,7 +1226,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_TRAP\"]/choice[1]/text"
 msgstr ""
 "Question them.\n"
-"[Reward Standard(L)[], [[]]]"
+"[Reward Standard(L)[], [Fight(CK: [[[] or Reward }(H)[], [] or Reward }(H)[], [] or Reward }(H)[], []]])(HK: [[[] or Reward }(H)[], [] or Reward }(H)[], [] or Reward }(H)[], []]])]]"
 
 #: src-en/data/events_sector_knight.xml:692
 msgid ""
@@ -1253,7 +1255,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_TRAP\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Don't tell them the truth, but kill them and go investigate yourself.\n"
-"[[]]"
+"[Fight(CK: [[[] or Reward }(H)[], [] or Reward }(H)[], [] or Reward }(H)[], []]])(HK: [[[] or Reward }(H)[], [] or Reward }(H)[], [] or Reward }(H)[], []]])]"
 
 #: src-en/data/events_sector_knight.xml:703
 msgid ""
@@ -1265,14 +1267,14 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_TRAP\"]/choice[1]/event/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [[[] or Reward }(H)[], [] or Reward }(H)[], [] or Reward }(H)[], []]])(HK: [[[] or Reward }(H)[], [] or Reward }(H)[], [] or Reward }(H)[], []]])"
 
 #: src-en/data/events_sector_knight.xml:714
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_TRAP\"]/choice[2]/text"
 msgstr ""
 "Ignore the Slugs.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_knight.xml:716
 msgid ""
@@ -1282,9 +1284,7 @@ msgstr "You watch as the Slugs fly past you with mild curiosity."
 #: src-en/data/events_sector_knight.xml:718
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_TRAP\"]/choice[2]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_knight.xml:722
 msgid ""
@@ -1378,7 +1378,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_SMUGGLER\"]/choice[1]/text"
 msgstr ""
 "Hail them, maybe we can buy some contraband off of them.\n"
-"[Gain an augment(Slug Narcotics), ~-30[], [[]] or [[]] or [Gain an augment(Slug Narcotics), ~-20[], [[]]], Gain an augment(Slug Narcotics)[], Gain an augment(Slug Narcotics)[], Gain an augment(Slug Narcotics)[], []]"
+"[Gain an augment(Slug Narcotics)~-30[], [] or [] or [Gain an augment(Slug Narcotics)~-20[], []], Gain an augment(Slug Narcotics)[], Gain an augment(Slug Narcotics)[], Gain an augment(Slug Narcotics)[], []]"
 
 #: src-en/data/events_sector_knight.xml:774
 msgid ""
@@ -1396,7 +1396,8 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_SMUGGLER\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Buy the narcotics, they could be a valuable bargaining chip among Nights' men.\n"
-"Gain an augment(Slug Narcotics), ~-30[]"
+"Gain an augment(Slug Narcotics)\n"
+"~-30[]"
 
 #: src-en/data/events_sector_knight.xml:778
 msgid ""
@@ -1411,9 +1412,9 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_SMUGGLER\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Fight them for the drugs!\n"
-"[[]] \n"
-"or [[]] \n"
-"or [Gain an augment(Slug Narcotics), ~-20[], [[]]]"
+"[] \n"
+"or [] \n"
+"or [Gain an augment(Slug Narcotics)~-20[], []]"
 
 #: src-en/data/events_sector_knight.xml:790
 msgid ""
@@ -1469,7 +1470,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_SMUGGLER\"]/choice[2]/text"
 msgstr ""
 "Ignore the Smugglers.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_knight.xml:819
 msgid ""
@@ -1479,9 +1480,7 @@ msgstr "The smugglers slip away into the nebula not much longer."
 #: src-en/data/events_sector_knight.xml:821
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_SMUGGLER\"]/choice[2]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_knight.xml:825
 msgid ""
@@ -1498,9 +1497,7 @@ msgstr "You arm the weapons and attack the smugglers!"
 #: src-en/data/events_sector_knight.xml:836
 msgid ""
 "data/events_sector_knight.xml$//eventList[@name=\"KNIGHT_SMUGGLER_ATTACK\"]/event[1]/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_sector_knight.xml:841
 msgid ""
@@ -1510,9 +1507,7 @@ msgstr "You arm the weapons and attack the smugglers!"
 #: src-en/data/events_sector_knight.xml:844
 msgid ""
 "data/events_sector_knight.xml$//eventList[@name=\"KNIGHT_SMUGGLER_ATTACK\"]/event[2]/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_sector_knight.xml:849
 msgid ""
@@ -1526,7 +1521,8 @@ msgid ""
 "data/events_sector_knight.xml$//eventList[@name=\"KNIGHT_SMUGGLER_ATTACK\"]/event[3]/choice[1]/text"
 msgstr ""
 "Buy the new deal.\n"
-"Gain an augment(Slug Narcotics), ~-20[]"
+"Gain an augment(Slug Narcotics)\n"
+"~-20[]"
 
 #: src-en/data/events_sector_knight.xml:853
 msgid ""
@@ -1541,7 +1537,7 @@ msgid ""
 "data/events_sector_knight.xml$//eventList[@name=\"KNIGHT_SMUGGLER_ATTACK\"]/event[3]/choice[2]/text"
 msgstr ""
 "No, we're still going to kill you.\n"
-"[[]]"
+"[]"
 
 #: src-en/data/events_sector_knight.xml:863
 msgid ""
@@ -1551,9 +1547,7 @@ msgstr "You arm the weapons and attack the smugglers!"
 #: src-en/data/events_sector_knight.xml:866
 msgid ""
 "data/events_sector_knight.xml$//eventList[@name=\"KNIGHT_SMUGGLER_ATTACK\"]/event[3]/choice[2]/event/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_sector_knight.xml:874
 msgid "data/events_sector_knight.xml$//event[@name=\"SLUG_NARCOTICS\"]/text"
@@ -1574,7 +1568,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_DUEL\"]/choice[1]/text"
 msgstr ""
 "Accept.\n"
-"[{-999[], [[], [[]]]] \n"
+"[{-999[], [, []]] \n"
 "or 75≤~≤85[]"
 
 #: src-en/data/events_sector_knight.xml:889
@@ -1678,7 +1672,7 @@ msgid ""
 "data/events_sector_knight.xml$//eventList[@name=\"KNIGHT_DUEL_DUEL\"]/event[1]/choice[2]/text"
 msgstr ""
 "Refuse.\n"
-"[[], [[]]]"
+"[, []]"
 
 #: src-en/data/events_sector_knight.xml:944
 msgid ""
@@ -1691,16 +1685,14 @@ msgstr ""
 #: src-en/data/events_sector_knight.xml:948
 msgid ""
 "data/events_sector_knight.xml$//eventList[@name=\"KNIGHT_DUEL_DUEL\"]/event[1]/choice[2]/event/choice[1]/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_sector_knight.xml:952
 msgid ""
 "data/events_sector_knight.xml$//eventList[@name=\"KNIGHT_DUEL_DUEL\"]/event[1]/choice[2]/event/choice[@req=\"ANTI_VIRUS\"]/text"
 msgstr ""
 "(Anti-Virus) Unjam your shields.\n"
-"[[]]"
+"[]"
 
 #: src-en/data/events_sector_knight.xml:954
 msgid ""
@@ -1710,9 +1702,7 @@ msgstr "You re-enable your shields, and prepare to fight the Slugs."
 #: src-en/data/events_sector_knight.xml:957
 msgid ""
 "data/events_sector_knight.xml$//eventList[@name=\"KNIGHT_DUEL_DUEL\"]/event[1]/choice[2]/event/choice[@req=\"ANTI_VIRUS\"]/event/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_sector_knight.xml:966
 msgid ""
@@ -1734,7 +1724,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_COALITION\"]/choice[1]/text"
 msgstr ""
 "Attack the Coalition!\n"
-"[[]]"
+"[Fight(CK: [])(HK: [])]"
 
 #: src-en/data/events_sector_knight.xml:995
 msgid ""
@@ -1746,14 +1736,14 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_COALITION\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [])(HK: [])"
 
 #: src-en/data/events_sector_knight.xml:1004
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_COALITION\"]/choice[@req=\"SLUG_NARCOTICS\"]/text"
 msgstr ""
 "Bribe the Coalition with the Narcotics.\n"
-"[[]] \n"
+"[] \n"
 "or Reward Weapon(H)[]"
 
 #: src-en/data/events_sector_knight.xml:1008
@@ -1761,7 +1751,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_COALITION\"]/choice[3]/text"
 msgstr ""
 "Ignore the Coalition.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_knight.xml:1010
 msgid ""
@@ -1773,9 +1763,7 @@ msgstr ""
 #: src-en/data/events_sector_knight.xml:1012
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_COALITION\"]/choice[3]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_knight.xml:1016
 msgid ""
@@ -1792,9 +1780,7 @@ msgstr "\"What? Drugs? Why would we need these? Get lost, Federation!\""
 #: src-en/data/events_sector_knight.xml:1027
 msgid ""
 "data/events_sector_knight.xml$//eventList[@name=\"KNIGHT_COALITION_BRIBE\"]/event[1]/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_sector_knight.xml:1032
 msgid ""
@@ -1829,7 +1815,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_CHOICE\"]/choice[1]/text"
 msgstr ""
 "Get involved.\n"
-"[[[]], [Gain a weapon(Random)[]], [[]]]"
+"[[Fight(CK: [Gain a crew(Slug)[]])(HK: [Gain a crew(Slug)[]])], [Gain a weapon(Random)[]], [Fight(CK: [Gain a weapon(Random)[]])(HK: [Gain a weapon(Random)[]])]]"
 
 #: src-en/data/events_sector_knight.xml:1056
 msgid ""
@@ -1843,7 +1829,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_CHOICE\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "The Knights!\n"
-"[[]]"
+"[Fight(CK: [Gain a crew(Slug)[]])(HK: [Gain a crew(Slug)[]])]"
 
 #: src-en/data/events_sector_knight.xml:1060
 msgid ""
@@ -1855,7 +1841,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_CHOICE\"]/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a crew(Slug)[]])(HK: [Gain a crew(Slug)[]])"
 
 #: src-en/data/events_sector_knight.xml:1069
 msgid ""
@@ -1888,7 +1874,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_CHOICE\"]/choice[1]/event/choice[3]/text"
 msgstr ""
 "The Clairvoyants!\n"
-"[[]]"
+"[Fight(CK: [Gain a weapon(Random)[]])(HK: [Gain a weapon(Random)[]])]"
 
 #: src-en/data/events_sector_knight.xml:1085
 msgid ""
@@ -1900,14 +1886,14 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_CHOICE\"]/choice[1]/event/choice[3]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a weapon(Random)[]])(HK: [Gain a weapon(Random)[]])"
 
 #: src-en/data/events_sector_knight.xml:1096
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_CHOICE\"]/choice[2]/text"
 msgstr ""
 "Don't get involved.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_knight.xml:1098
 msgid ""
@@ -1919,9 +1905,7 @@ msgstr ""
 #: src-en/data/events_sector_knight.xml:1100
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_CHOICE\"]/choice[2]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_knight.xml:1104
 msgid ""
@@ -1946,7 +1930,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_PROTESTERS\"]/choice[1]/text"
 msgstr ""
 "Accept.\n"
-"[[[]], Reward Standard(H)[]]"
+"[[Fight(CK: [[Reward Standard(M)[], System Upgrade(Shields 1™)[], Gain a crew(Slug Saboteur)[]]])(HK: [[Reward Standard(M)[], System Upgrade(Shields 1™)[], Gain a crew(Slug Saboteur)[]]])], Reward Standard(H)[]]"
 
 #: src-en/data/events_sector_knight.xml:1117
 msgid ""
@@ -1961,7 +1945,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_PROTESTERS\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Attack!\n"
-"[[]]"
+"[Fight(CK: [[Reward Standard(M)[], System Upgrade(Shields 1™)[], Gain a crew(Slug Saboteur)[]]])(HK: [[Reward Standard(M)[], System Upgrade(Shields 1™)[], Gain a crew(Slug Saboteur)[]]])]"
 
 #: src-en/data/events_sector_knight.xml:1122
 msgid ""
@@ -1973,7 +1957,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_PROTESTERS\"]/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [[Reward Standard(M)[], System Upgrade(Shields 1™)[], Gain a crew(Slug Saboteur)[]]])(HK: [[Reward Standard(M)[], System Upgrade(Shields 1™)[], Gain a crew(Slug Saboteur)[]]])"
 
 #: src-en/data/events_sector_knight.xml:1131
 msgid ""
@@ -1997,7 +1981,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_PROTESTERS\"]/choice[2]/text"
 msgstr ""
 "Refuse.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_knight.xml:1143
 msgid ""
@@ -2009,9 +1993,7 @@ msgstr ""
 #: src-en/data/events_sector_knight.xml:1145
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_PROTESTERS\"]/choice[2]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_knight.xml:1149
 msgid ""
@@ -2092,7 +2074,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_SHAKESPEARE\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[], Reward ~ Only(H)[]] or Reward Stuff(M)[], Gain a weapon(Random)[], Reward { Only(M)[], Reward { Only(M)[]]"
+"[[, Reward ~ Only(H)[]] or Reward Stuff(M)[], Gain a weapon(Random)[], Reward { Only(M)[], Reward { Only(M)[]]"
 
 #: src-en/data/events_sector_knight.xml:1188
 msgid ""
@@ -2106,7 +2088,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_SHAKESPEARE\"]/choice/event/choice[1]/text"
 msgstr ""
 "Try to speak back in whatever language that was.\n"
-"[[], Reward ~ Only(H)[]] \n"
+"[, Reward ~ Only(H)[]] \n"
 "or Reward Stuff(M)[]"
 
 #: src-en/data/events_sector_knight.xml:1194
@@ -2166,9 +2148,7 @@ msgstr ""
 #: src-en/data/events_sector_knight.xml:1222
 msgid ""
 "data/events_sector_knight.xml$//eventList[@name=\"KNIGHT_SHAKESPEARE_GUESS\"]/event[1]/choice[1]/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_sector_knight.xml:1226
 msgid ""
@@ -2197,7 +2177,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_JAILER\"]/choice[1]/text"
 msgstr ""
 "Attack the Jailer.\n"
-"[[]]"
+"[Fight(CK: [Gain a crew(Slug Saboteur)[]])(HK: [])]"
 
 #: src-en/data/events_sector_knight.xml:1244
 msgid ""
@@ -2209,14 +2189,14 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_JAILER\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a crew(Slug Saboteur)[]])(HK: [])"
 
 #: src-en/data/events_sector_knight.xml:1253
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_JAILER\"]/choice[@req=\"FIREARMS_AND_TELEPORT\"]/text"
 msgstr ""
 "(Armories + Teleporter) Storm the Jailer.\n"
-"Gain a crew(List Crew Federation)[]"
+"Gain a crew(Federation)[]"
 
 #: src-en/data/events_sector_knight.xml:1255
 msgid ""
@@ -2238,7 +2218,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_JAILER\"]/choice[4]/text"
 msgstr ""
 "Ignore the Jailer.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_knight.xml:1266
 msgid ""
@@ -2250,9 +2230,7 @@ msgstr ""
 #: src-en/data/events_sector_knight.xml:1268
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_JAILER\"]/choice[4]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_knight.xml:1272
 msgid ""
@@ -2347,7 +2325,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_DISTRESS_KNIGHT_TAXES\"]/choice[1]/text"
 msgstr ""
 "Help the colony.\n"
-"[[]]"
+"[Fight(CK: [Reward Weapon(H)[]])(HK: [Reward Weapon(H)[]])]"
 
 #: src-en/data/events_sector_knight.xml:1339
 msgid ""
@@ -2360,14 +2338,14 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_DISTRESS_KNIGHT_TAXES\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Reward Weapon(H)[]])(HK: [Reward Weapon(H)[]])"
 
 #: src-en/data/events_sector_knight.xml:1348
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_DISTRESS_KNIGHT_TAXES\"]/choice[2]/text"
 msgstr ""
 "Help the Knights.\n"
-"[[]]"
+"[Fight(CK: [Gain a crew(Slug)[]])(HK: [Gain a crew(Slug)[]])]"
 
 #: src-en/data/events_sector_knight.xml:1350
 msgid ""
@@ -2381,14 +2359,14 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_DISTRESS_KNIGHT_TAXES\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a crew(Slug)[]])(HK: [Gain a crew(Slug)[]])"
 
 #: src-en/data/events_sector_knight.xml:1359
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_DISTRESS_KNIGHT_TAXES\"]/choice[3]/text"
 msgstr ""
 "Don't get involved.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_knight.xml:1361
 msgid ""
@@ -2398,9 +2376,7 @@ msgstr "You have better things to do than help Slugs commit tax evasion."
 #: src-en/data/events_sector_knight.xml:1363
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_DISTRESS_KNIGHT_TAXES\"]/choice[3]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_knight.xml:1367
 msgid ""
@@ -2443,7 +2419,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_DISTRESS_KNIGHT_SHELLSPY\"]/choice[1]/text"
 msgstr ""
 "Receive their request.\n"
-"[[[], [Gain a crew(Shell Radiant)[]]], []]"
+"[[Fight(CK: [Gain a crew(Shell Radiant)[]])(HK: [[]]), [Gain a crew(Shell Radiant)[]]], []]"
 
 #: src-en/data/events_sector_knight.xml:1389
 msgid ""
@@ -2459,7 +2435,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_DISTRESS_KNIGHT_SHELLSPY\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Agree.\n"
-"[[], [Gain a crew(Shell Radiant)[]]]"
+"[Fight(CK: [Gain a crew(Shell Radiant)[]])(HK: [[]]), [Gain a crew(Shell Radiant)[]]]"
 
 #: src-en/data/events_sector_knight.xml:1393
 msgid ""
@@ -2474,7 +2450,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_DISTRESS_KNIGHT_SHELLSPY\"]/choice[1]/event/choice[1]/event/choice[1]/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a crew(Shell Radiant)[]])(HK: [[]])"
 
 #: src-en/data/events_sector_knight.xml:1400
 msgid ""
@@ -2495,7 +2471,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_DISTRESS_KNIGHT_SHELLSPY\"]/choice[2]/text"
 msgstr ""
 "Screw helping people, let's murder!\n"
-"[[[]]]"
+"[[]]"
 
 #: src-en/data/events_sector_knight.xml:1414
 msgid ""
@@ -2509,14 +2485,14 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_DISTRESS_KNIGHT_SHELLSPY\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[]]"
+"[]"
 
 #: src-en/data/events_sector_knight.xml:1423
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_DISTRESS_KNIGHT_SHELLSPY\"]/choice[3]/text"
 msgstr ""
 "Ignore the Shells.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_knight.xml:1425
 msgid ""
@@ -2526,9 +2502,7 @@ msgstr "You aren't here to participate in random side quests."
 #: src-en/data/events_sector_knight.xml:1427
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_DISTRESS_KNIGHT_SHELLSPY\"]/choice[3]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_knight.xml:1431
 msgid ""
@@ -2570,7 +2544,7 @@ msgid ""
 "data/events_sector_knight.xml$/FTL/event[@name=\"NEBULA_ENCOUNTER_KNIGHT_REGULAR\"]/choice[1]/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [])(HK: [])"
 
 #: src-en/data/events_sector_knight.xml:1489
 msgid ""
@@ -2637,7 +2611,7 @@ msgid ""
 "data/events_sector_knight.xml$/FTL/event[@name=\"NEBULA_ENCOUNTER_KNIGHT_STORM\"]/choice[1]/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [])(HK: [])"
 
 #: src-en/data/events_sector_knight.xml:1510
 msgid ""
@@ -2651,7 +2625,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_ENCOUNTER_KNIGHT_CLAIRVOYANT\"]/choice[1]/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a weapon(Giftlist Slug)[]])(HK: [Gain a weapon(Giftlist Slug)[]])"
 
 #: src-en/data/events_sector_knight.xml:1524
 msgid ""
@@ -2703,7 +2677,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_ENGINES\"]/choice[1]/text"
 msgstr ""
 "Refuse.\n"
-"[[]]"
+"[Fight(CK: [])(HK: [])]"
 
 #: src-en/data/events_sector_knight.xml:1543
 msgid ""
@@ -2717,14 +2691,14 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_ENGINES\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [])(HK: [])"
 
 #: src-en/data/events_sector_knight.xml:1552
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_ENGINES\"]/choice[@req=\"ANTI_VIRUS\"]/text"
 msgstr ""
 "(Anti-Virus) Correct the issue yourself.\n"
-"[[]]"
+"[Fight(CK: [])(HK: [])]"
 
 #: src-en/data/events_sector_knight.xml:1554
 msgid ""
@@ -2738,7 +2712,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"NEBULA_KNIGHT_ENGINES\"]/choice[@req=\"ANTI_VIRUS\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [])(HK: [])"
 
 #: src-en/data/events_sector_knight.xml:1564
 msgid ""
@@ -2772,7 +2746,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_CLAN\"]/choice[1]/text"
 msgstr ""
 "Hail them.\n"
-"[[-35≤~≤-20, Map Reveal[], [[], [[]]], [[]]]]"
+"[[-35≤~≤-20Map Reveal[], [Fight(CK: [Gain a crew(Slug Ranger)[], []])(HK: []), [Fight(CK: [Gain a crew(Slug Ranger)[], []])(HK: [])]], [Fight(CK: [Gain a crew(Slug Ranger)[], []])(HK: [])]]]"
 
 #: src-en/data/events_sector_knight.xml:1592
 msgid ""
@@ -2788,7 +2762,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_CLAN\"]/choice[1]/event/choice/text"
 msgstr ""
 "Why are you here?\n"
-"[-35≤~≤-20, Map Reveal[], [[], [[]]], [[]]]"
+"[-35≤~≤-20Map Reveal[], [Fight(CK: [Gain a crew(Slug Ranger)[], []])(HK: []), [Fight(CK: [Gain a crew(Slug Ranger)[], []])(HK: [])]], [Fight(CK: [Gain a crew(Slug Ranger)[], []])(HK: [])]]"
 
 #: src-en/data/events_sector_knight.xml:1597
 msgid ""
@@ -2804,7 +2778,8 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_CLAN\"]/choice[1]/event/choice/event/choice[1]/text"
 msgstr ""
 "Offer to buy any map data they have.\n"
-"-35≤~≤-20, Map Reveal[]"
+"-35≤~≤-20\n"
+"Map Reveal[]"
 
 #: src-en/data/events_sector_knight.xml:1601
 msgid ""
@@ -2819,7 +2794,7 @@ msgid ""
 " and @lvl=\"2\"]/text"
 msgstr ""
 "Offer to take them with you.\n"
-"[[], [[]]]"
+"[Fight(CK: [Gain a crew(Slug Ranger)[], []])(HK: []), [Fight(CK: [Gain a crew(Slug Ranger)[], []])(HK: [])]]"
 
 #: src-en/data/events_sector_knight.xml:1611
 msgid ""
@@ -2840,7 +2815,7 @@ msgid ""
 " and @lvl=\"2\"]/event/choice[1]/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a crew(Slug Ranger)[], []])(HK: [])"
 
 #: src-en/data/events_sector_knight.xml:1619
 msgid ""
@@ -2848,7 +2823,7 @@ msgid ""
 " and @lvl=\"2\"]/event/choice[@req=\"ANTI_VIRUS\"]/text"
 msgstr ""
 "(Anti-Virus) Restore your shields.\n"
-"[[]]"
+"[Fight(CK: [Gain a crew(Slug Ranger)[], []])(HK: [])]"
 
 #: src-en/data/events_sector_knight.xml:1621
 msgid ""
@@ -2864,7 +2839,7 @@ msgid ""
 " and @lvl=\"2\"]/event/choice[@req=\"ANTI_VIRUS\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a crew(Slug Ranger)[], []])(HK: [])"
 
 #: src-en/data/events_sector_knight.xml:1633
 msgid ""
@@ -2872,7 +2847,7 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "Offer to take them with you.\n"
-"[[]]"
+"[Fight(CK: [Gain a crew(Slug Ranger)[], []])(HK: [])]"
 
 #: src-en/data/events_sector_knight.xml:1635
 msgid ""
@@ -2892,14 +2867,14 @@ msgid ""
 " and @lvl=\"0\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a crew(Slug Ranger)[], []])(HK: [])"
 
 #: src-en/data/events_sector_knight.xml:1648
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_CLAN\"]/choice[2]/text"
 msgstr ""
 "Attack!\n"
-"[[]]"
+"[Fight(CK: [Gain a crew(Slug Ranger)[], []])(HK: [])]"
 
 #: src-en/data/events_sector_knight.xml:1650
 msgid ""
@@ -2911,14 +2886,14 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_CLAN\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [Gain a crew(Slug Ranger)[], []])(HK: [])"
 
 #: src-en/data/events_sector_knight.xml:1659
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_CLAN\"]/choice[3]/text"
 msgstr ""
 "Ignore the Clansmen.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_knight.xml:1661
 msgid ""
@@ -2930,9 +2905,7 @@ msgstr ""
 #: src-en/data/events_sector_knight.xml:1663
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_CLAN\"]/choice[3]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_knight.xml:1667
 msgid ""
@@ -2959,7 +2932,7 @@ msgstr ""
 msgid "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[[[]], [[]], []]]], [Storage Check[], []]]"
+"[[[[[Fight(CK: [[[[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]], [[[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]]])(HK: [[[[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]], [[[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]]])], [Fight(CK: [[[[[[Gain a crew(Slug Knight)Reward ~ Only(H)<#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]], [Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]])(HK: [[[[[[Gain a crew(Slug Knight)Reward ~ Only(H)<#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]], [Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]])], []]]], [, []]]"
 
 #: src-en/data/events_sector_knight.xml:1702
 msgid ""
@@ -2974,7 +2947,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE\"]/choice/event/choice[1]/text"
 msgstr ""
 "Stick around and watch.\n"
-"[[[[[]], [[]], []]]]"
+"[[[[Fight(CK: [[[[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]], [[[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]]])(HK: [[[[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]], [[[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]]])], [Fight(CK: [[[[[[Gain a crew(Slug Knight)Reward ~ Only(H)<#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]], [Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]])(HK: [[[[[[Gain a crew(Slug Knight)Reward ~ Only(H)<#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]], [Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]])], []]]]"
 
 #: src-en/data/events_sector_knight.xml:1706
 msgid ""
@@ -2993,7 +2966,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE\"]/choice/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[]], [[]], []]]"
+"[[[Fight(CK: [[[[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]], [[[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]]])(HK: [[[[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]], [[[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]]])], [Fight(CK: [[[[[[Gain a crew(Slug Knight)Reward ~ Only(H)<#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]], [Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]])(HK: [[[[[[Gain a crew(Slug Knight)Reward ~ Only(H)<#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]], [Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]])], []]]"
 
 #: src-en/data/events_sector_knight.xml:1710
 msgid ""
@@ -3011,7 +2984,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE\"]/choice/event/choice[1]/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[]], [[]], []]"
+"[[Fight(CK: [[[[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]], [[[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]]])(HK: [[[[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]], [[[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]]])], [Fight(CK: [[[[[[Gain a crew(Slug Knight)Reward ~ Only(H)<#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]], [Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]])(HK: [[[[[[Gain a crew(Slug Knight)Reward ~ Only(H)<#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]], [Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]])], []]"
 
 #: src-en/data/events_sector_knight.xml:1714
 msgid ""
@@ -3026,7 +2999,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE\"]/choice/event/choice[1]/event/choice/event/choice/event/choice[1]/text"
 msgstr ""
 "Aid Slocknog - he seems reasonable enough, and might be able to bring the Slugs to a glory age.\n"
-"[[]]"
+"[Fight(CK: [[[[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]], [[[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]]])(HK: [[[[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]], [[[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]]])]"
 
 #: src-en/data/events_sector_knight.xml:1718
 msgid ""
@@ -3041,14 +3014,14 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE\"]/choice/event/choice[1]/event/choice/event/choice/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [[[[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]], [[[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]]])(HK: [[[[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]], [[[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]]])"
 
 #: src-en/data/events_sector_knight.xml:1727
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE\"]/choice/event/choice[1]/event/choice/event/choice/event/choice[2]/text"
 msgstr ""
 "Aid Nights - he seems like the king the Slugs you know would want.\n"
-"[[]]"
+"[Fight(CK: [[[[[[Gain a crew(Slug Knight)Reward ~ Only(H)<#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]], [Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]])(HK: [[[[[[Gain a crew(Slug Knight)Reward ~ Only(H)<#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]], [Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]])]"
 
 #: src-en/data/events_sector_knight.xml:1729
 msgid ""
@@ -3064,7 +3037,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE\"]/choice/event/choice[1]/event/choice/event/choice/event/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[]"
+"Fight(CK: [[[[[[Gain a crew(Slug Knight)Reward ~ Only(H)<#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]], [Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]])(HK: [[[[[[Gain a crew(Slug Knight)Reward ~ Only(H)<#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]], [Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]])"
 
 #: src-en/data/events_sector_knight.xml:1738
 msgid ""
@@ -3078,7 +3051,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE\"]/choice/event/choice[2]/text"
 msgstr ""
 "Things might get hectic, let's leave while we can.\n"
-"[Storage Check[], []]"
+"[, []]"
 
 #: src-en/data/events_sector_knight.xml:1750
 msgid ""
@@ -3088,9 +3061,7 @@ msgstr "Better not to risk it. You pull away from the planet."
 #: src-en/data/events_sector_knight.xml:1752
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE\"]/choice/event/choice[2]/event/choice[1]/text"
-msgstr ""
-"Do something onboard the ship.\n"
-"Storage Check[]"
+msgstr "Do something onboard the ship.\n"
 
 #: src-en/data/events_sector_knight.xml:1756
 msgid ""
@@ -3115,14 +3086,14 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_SLOCKNOG\"]/choice[1]/text"
 msgstr ""
 "Continue...\n"
-"[[[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]]"
+"[[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]"
 
 #: src-en/data/events_sector_knight.xml:1772
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_SLOCKNOG\"]/choice[@req=\"loc_got_clancrown\"]/text"
 msgstr ""
 "Go after the crown yourself.\n"
-"[[[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]]], [[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]]]"
+"[[[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]"
 
 #: src-en/data/events_sector_knight.xml:1774
 msgid ""
@@ -3137,7 +3108,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_SLOCKNOG\"]/choice[@req=\"loc_got_clancrown\"]/event/choice[@req=\"slug_ranger\"]/text"
 msgstr ""
 "Your Clansman is alive, let's go for it.\n"
-"[[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]]]"
+"[[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]"
 
 #: src-en/data/events_sector_knight.xml:1778
 msgid ""
@@ -3151,7 +3122,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_SLOCKNOG\"]/choice[@req=\"loc_got_clancrown\"]/event/choice[@req=\"slug_ranger\"]/event/choice[@req=\"cloaking\"]/text"
 msgstr ""
 "(Upg. Cloaking) Cloak and approach.\n"
-"[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]]]"
+"[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]"
 
 #: src-en/data/events_sector_knight.xml:1782
 msgid ""
@@ -3223,21 +3194,21 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_SLOCKNOG\"]/choice[@req=\"loc_got_clancrown\"]/event/choice[@req=\"slug_ranger\"]/event/choice[@req=\"cloaking\"]/event/choice[3]/text"
 msgstr ""
 "Nevermind.\n"
-"[[[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]]"
+"[[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]"
 
 #: src-en/data/events_sector_knight.xml:1819
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_SLOCKNOG\"]/choice[@req=\"loc_got_clancrown\"]/event/choice[@req=\"slug_ranger\"]/event/choice[2]/text"
 msgstr ""
 "Nevermind.\n"
-"[[[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]]"
+"[[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]"
 
 #: src-en/data/events_sector_knight.xml:1825
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_SLOCKNOG\"]/choice[@req=\"loc_got_clancrown\"]/event/choice[@req=\"beans\"]/text"
 msgstr ""
 "Bean Sylvan is alive, let's go for it.\n"
-"[[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]]]"
+"[[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]"
 
 #: src-en/data/events_sector_knight.xml:1827
 msgid ""
@@ -3251,7 +3222,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_SLOCKNOG\"]/choice[@req=\"loc_got_clancrown\"]/event/choice[@req=\"beans\"]/event/choice[@req=\"cloaking\"]/text"
 msgstr ""
 "(Upg. Cloaking) Cloak and approach.\n"
-"[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]]]"
+"[[[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[]]], [[[]]], <!>Lose your crew(clonable)[]], [[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]]"
 
 #: src-en/data/events_sector_knight.xml:1831
 msgid ""
@@ -3323,21 +3294,21 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_SLOCKNOG\"]/choice[@req=\"loc_got_clancrown\"]/event/choice[@req=\"beans\"]/event/choice[@req=\"cloaking\"]/event/choice[3]/text"
 msgstr ""
 "Nevermind.\n"
-"[[[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]]"
+"[[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]"
 
 #: src-en/data/events_sector_knight.xml:1868
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_SLOCKNOG\"]/choice[@req=\"loc_got_clancrown\"]/event/choice[@req=\"beans\"]/event/choice[2]/text"
 msgstr ""
 "Nevermind.\n"
-"[[[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]]"
+"[[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]"
 
 #: src-en/data/events_sector_knight.xml:1874
 msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_SLOCKNOG\"]/choice[@req=\"loc_got_clancrown\"]/event/choice[3]/text"
 msgstr ""
 "Nevermind.\n"
-"[[[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]]"
+"[[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]"
 
 #: src-en/data/events_sector_knight.xml:1881
 msgid "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_THEFT\"]/text"
@@ -3426,7 +3397,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]"
+"[[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]"
 
 #: src-en/data/events_sector_knight.xml:1915
 msgid ""
@@ -3444,7 +3415,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL\"]/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]"
+"[[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]], [Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]"
 
 #: src-en/data/events_sector_knight.xml:1919
 msgid ""
@@ -3460,7 +3431,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL\"]/choice/event/choice/event/choice[1]/text"
 msgstr ""
 "These people need further influence - use a show of force to put Slocknog back in power.\n"
-"[<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]]"
+"[<#>Unlock Ship(Knight)Gain a weapon(Random)Gain an augment(Ex Auto Cooldown)Reward ~ Only(H)[]]"
 
 #: src-en/data/events_sector_knight.xml:1923
 msgid ""
@@ -3477,7 +3448,10 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL\"]/choice/event/choice/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"<#>Unlock Ship(Knight), Gain a weapon(Random), Gain an augment(Ex Auto Cooldown), Reward ~ Only(H)[]"
+"<#>Unlock Ship(Knight)\n"
+"Gain a weapon(Random)\n"
+"Gain an augment(Ex Auto Cooldown)\n"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_knight.xml:1927
 msgid ""
@@ -3492,7 +3466,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL\"]/choice/event/choice/event/choice[2]/text"
 msgstr ""
 "Suggest that the Slugs hold an election the proper way - through a vote.\n"
-"[Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]"
+"[Gain a crew(Unique Slocknog)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]"
 
 #: src-en/data/events_sector_knight.xml:1939
 msgid ""
@@ -3530,7 +3504,8 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL\"]/choice/event/choice/event/choice[2]/event/choice[2]/text"
 msgstr ""
 "Execute him.\n"
-"System Upgrade(Reactor 1™), Reward ~ Only(H)[]"
+"System Upgrade(Reactor 1™)\n"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_knight.xml:1952
 msgid ""
@@ -3556,7 +3531,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_NIGHTS\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[Gain a crew(Slug Knight), Reward ~ Only(H), <#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]], [Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]]"
+"[[[[Gain a crew(Slug Knight)Reward ~ Only(H)<#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]], [Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]]"
 
 #: src-en/data/events_sector_knight.xml:1970
 msgid ""
@@ -3572,7 +3547,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_NIGHTS\"]/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[Gain a crew(Slug Knight), Reward ~ Only(H), <#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]], [Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]]"
+"[[[Gain a crew(Slug Knight)Reward ~ Only(H)<#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]], [Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]]"
 
 #: src-en/data/events_sector_knight.xml:1974
 msgid ""
@@ -3590,7 +3565,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_NIGHTS\"]/choice/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[Gain a crew(Slug Knight), Reward ~ Only(H), <#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]], [Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]]"
+"[[Gain a crew(Slug Knight)Reward ~ Only(H)<#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]], [Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]]"
 
 #: src-en/data/events_sector_knight.xml:1978
 msgid ""
@@ -3606,7 +3581,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_NIGHTS\"]/choice/event/choice/event/choice/event/choice[1]/text"
 msgstr ""
 "These people need further influence - use a show of force to put Nights back in power.\n"
-"[Gain a crew(Slug Knight), Reward ~ Only(H), <#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]]"
+"[Gain a crew(Slug Knight)Reward ~ Only(H)<#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]]"
 
 #: src-en/data/events_sector_knight.xml:1982
 msgid ""
@@ -3625,7 +3600,9 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_NIGHTS\"]/choice/event/choice/event/choice/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a crew(Slug Knight), Reward ~ Only(H), <#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]"
+"Gain a crew(Slug Knight)\n"
+"Reward ~ Only(H)\n"
+"<#>Unlock Ship(Knight)[Gain a crew(Slug Knight)[]]"
 
 #: src-en/data/events_sector_knight.xml:1986
 msgid ""
@@ -3649,7 +3626,7 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_NIGHTS\"]/choice/event/choice/event/choice/event/choice[2]/text"
 msgstr ""
 "Suggest that the Slugs hold an election the proper way - through a vote.\n"
-"[Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™), Reward ~ Only(H)[]]"
+"[Gain a crew(Unique Nights)[], System Upgrade(Reactor 1™)Reward ~ Only(H)[]]"
 
 #: src-en/data/events_sector_knight.xml:2003
 msgid ""
@@ -3686,7 +3663,8 @@ msgid ""
 "data/events_sector_knight.xml$//event[@name=\"KNIGHT_PALACE_RESOLUTION_NIGHTS\"]/choice/event/choice/event/choice/event/choice[2]/event/choice[2]/text"
 msgstr ""
 "Execute him.\n"
-"System Upgrade(Reactor 1™), Reward ~ Only(H)[]"
+"System Upgrade(Reactor 1™)\n"
+"Reward ~ Only(H)[]"
 
 #: src-en/data/events_sector_knight.xml:2016
 msgid ""
