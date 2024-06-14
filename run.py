@@ -6,6 +6,10 @@ from json5 import load
 import re
 from pprint import pprint
 
+FIXED_EVENT = {
+    'STORAGE_CHECK': 'Storage Check'
+}
+
 CUSTOM_FONT = {
     'fuel': '{',
     'drones': '|',
@@ -34,13 +38,16 @@ class Choice(ElementBaseClass):
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
         self._childEvents = []
-        self._ancestorEventNames = set(event.attrib.get('name') for event in element.iterancestors('event'))
         self._additional_info = None
 
     def _ensure_childEvents(self):
         new_events = []
         is_changed = False
         for event in self._childEvents:
+            if isinstance(event, FixedEvent):
+                new_events.append(event)
+                continue
+            
             load_event_name = event._element.attrib.get('load')
             if not load_event_name:
                 new_events.append(event)
@@ -55,6 +62,9 @@ class Choice(ElementBaseClass):
                 new_events.append(load_event)
             elif isinstance(load_event, EventList):
                 new_events.extend(load_event._childEvents)
+            elif isinstance(load_event, FixedEvent):
+                new_events.append(load_event)
+                continue
             is_changed = True
         
         self._childEvents = new_events
@@ -75,6 +85,10 @@ class Choice(ElementBaseClass):
         return self._uniqueXPathGenerator.getpath(texttags[0])
     
     def _event_analize(self, event):
+        if isinstance(event, FixedEvent):
+            print(event._event)
+            return [event._event]
+        
         info = []
         for tag in event._element.iterchildren('unlockCustomShip', 'removeCrew', 'crewMember', 'reveal_map', 'autoReward', 'item_modify', 'modifyPursuit', 'weapon', 'drone', 'augment', 'damage', 'upgrade'):
             if tag.tag == 'unlockCustomShip':
@@ -122,9 +136,9 @@ class Choice(ElementBaseClass):
                         continue
                     
                     if amount_min == amount_max:
-                        itemlist.append(f'{amount_min}{item}')
+                        itemlist.append(f'{item}{amount_min}')
                     else:
-                        itemlist.append(f'{amount_min}<{item}<{amount_max}')
+                        itemlist.append(f'{amount_min}≤{item}≤{amount_max}')
                 info.append(' '.join(itemlist))
             
             elif tag.tag == 'modifyPursuit':
@@ -202,6 +216,15 @@ class EventList(ElementBaseClass):
     def init_childChoiceTags(self):
         return
 
+class FixedEvent(ElementBaseClass):
+    def __init__(self, eventText, element=None, xmlpath='', uniqueXPathGenerator=None):
+        super().__init__(element, xmlpath, uniqueXPathGenerator)
+        self._event = eventText
+        self._childChoices = None
+        
+    def init_childChoiceTags(self):
+        return
+
 def textAjust(text, use_custom_font = True):
     if text is None:
         return None
@@ -230,6 +253,7 @@ for xmlpath in glob_posix('src-en/data/*'):
     eventlists = xpath(tree, '//eventList')
     global_event_map.update({element.attrib.get('name'): EventList(element, xmlpath, uniqueXPathGenerator) for element in eventlists})
 
+global_event_map.update({key: FixedEvent(value) for key, value in FIXED_EVENT.items()})
 
 with open('mvloc.config.jsonc', 'tr', encoding='utf8') as f:
     config = load(f)

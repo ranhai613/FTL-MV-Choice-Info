@@ -17,7 +17,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"FINISH_BEACON_DUSKBRINGER\"]/choice[2]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:36
 msgid ""
@@ -162,7 +162,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_PLANNERS\"]/choice[3]/text"
 msgstr ""
 "Ignore the architects.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:117
 msgid ""
@@ -176,7 +176,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_PLANNERS\"]/choice[3]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:123
 msgid ""
@@ -198,7 +198,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_MILITIA_ESCORT\"]/choice[1]/text"
 msgstr ""
 "Approach.\n"
-"[-25<~<-15[Reward } Only(L), Gain a weapon(Random)[]], [[[]]], -1|[Reward } Only(L), Gain a weapon(Random)[]], -1}[Reward } Only(L), Gain a weapon(Random)[]], [Reward } Only(L), Gain a weapon(Random)[]], -5~[Reward } Only(L), Gain a weapon(Random)[]], [[], []]]"
+"[-25≤~≤-15[Reward } Only(L), Gain a weapon(Random)[]], [[[]]], |-1[Reward } Only(L), Gain a weapon(Random)[]], }-1[Reward } Only(L), Gain a weapon(Random)[]], [Reward } Only(L), Gain a weapon(Random)[]], ~-5[Reward } Only(L), Gain a weapon(Random)[]], [Storage Check[], []]]"
 
 #: src-en/data/events_sector_duskbringer.xml:136
 msgid ""
@@ -213,7 +213,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_MILITIA_ESCORT\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Offer some scrap to help repair.\n"
-"-25<~<-15[Reward } Only(L), Gain a weapon(Random)[]]"
+"-25≤~≤-15[Reward } Only(L), Gain a weapon(Random)[]]"
 
 #: src-en/data/events_sector_duskbringer.xml:140
 msgid ""
@@ -259,7 +259,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_MILITIA_ESCORT\"]/choice[1]/event/choice[@req=\"DRONE_CONTROL_REPAIR_ALL\"]/text"
 msgstr ""
 "(Repair Drone) Offer to use the drone to fix up their ship.\n"
-"-1|[Reward } Only(L), Gain a weapon(Random)[]]"
+"|-1[Reward } Only(L), Gain a weapon(Random)[]]"
 
 #: src-en/data/events_sector_duskbringer.xml:168
 msgid ""
@@ -284,7 +284,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_MILITIA_ESCORT\"]/choice[1]/event/choice[@req=\"BLUELIST_BOMB_REPAIR\"]/text"
 msgstr ""
 "(Repair Cluster) Offer to use the bomb to fix up their ship.\n"
-"-1}[Reward } Only(L), Gain a weapon(Random)[]]"
+"}-1[Reward } Only(L), Gain a weapon(Random)[]]"
 
 #: src-en/data/events_sector_duskbringer.xml:185
 msgid ""
@@ -334,7 +334,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_MILITIA_ESCORT\"]/choice[1]/event/choice[@req=\"REPAIR_ARM\"]/text"
 msgstr ""
 "(Repair Arm) Offer to use the arm to fix up their hull.\n"
-"-5~[Reward } Only(L), Gain a weapon(Random)[]]"
+"~-5[Reward } Only(L), Gain a weapon(Random)[]]"
 
 #: src-en/data/events_sector_duskbringer.xml:216
 msgid ""
@@ -359,7 +359,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_MILITIA_ESCORT\"]/choice[1]/event/choice[7]/text"
 msgstr ""
 "Ignore them.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:233
 msgid ""
@@ -371,7 +371,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_MILITIA_ESCORT\"]/choice[1]/event/choice[7]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:239
 msgid ""
@@ -385,7 +385,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_MILITIA_ESCORT\"]/choice[2]/text"
 msgstr ""
 "Ignore them.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:249
 msgid ""
@@ -397,7 +397,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_MILITIA_ESCORT\"]/choice[2]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:255
 msgid ""
@@ -491,7 +491,7 @@ msgid ""
 msgstr ""
 "Ask to see their slaves.\n"
 "[[]] \n"
-"or [[Gain a crew(Engi), -45~[], Gain a crew(Rock), -35~[], Gain a crew(Orchid Vampweed), -40~[], []]]"
+"or [[Gain a crew(Engi), ~-45[], Gain a crew(Rock), ~-35[], Gain a crew(Orchid Vampweed), ~-40[], []]]"
 
 #: src-en/data/events_sector_duskbringer.xml:305
 msgid ""
@@ -561,7 +561,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//eventList[@name=\"DUSK_SLAVER_TRADE_BUY\"]/event[2]/choice/text"
 msgstr ""
 "Come aboard.\n"
-"[Gain a crew(Engi), -45~[], Gain a crew(Rock), -35~[], Gain a crew(Orchid Vampweed), -40~[], []]"
+"[Gain a crew(Engi), ~-45[], Gain a crew(Rock), ~-35[], Gain a crew(Orchid Vampweed), ~-40[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:345
 msgid ""
@@ -577,7 +577,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_SLAVER_TRADE_BUY_2\"]/choice[1]/text"
 msgstr ""
 "Buy an Engi.\n"
-"Gain a crew(Engi), -45~[]"
+"Gain a crew(Engi), ~-45[]"
 
 #: src-en/data/events_sector_duskbringer.xml:349
 msgid ""
@@ -593,7 +593,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_SLAVER_TRADE_BUY_2\"]/choice[2]/text"
 msgstr ""
 "Buy a Rockman.\n"
-"Gain a crew(Rock), -35~[]"
+"Gain a crew(Rock), ~-35[]"
 
 #: src-en/data/events_sector_duskbringer.xml:359
 msgid ""
@@ -609,7 +609,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_SLAVER_TRADE_BUY_2\"]/choice[3]/text"
 msgstr ""
 "Buy a Vampweed.\n"
-"Gain a crew(Orchid Vampweed), -40~[]"
+"Gain a crew(Orchid Vampweed), ~-40[]"
 
 #: src-en/data/events_sector_duskbringer.xml:369
 msgid ""
@@ -989,7 +989,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_MFKHELP\"]/choice[3]/text"
 msgstr ""
 "Ignore the city and the ship.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:560
 msgid ""
@@ -1001,7 +1001,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_MFKHELP\"]/choice[3]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:566
 msgid ""
@@ -1110,7 +1110,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_DNA\"]/choice[3]/text"
 msgstr ""
 "Ignore the facility.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:628
 msgid ""
@@ -1124,7 +1124,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_DNA\"]/choice[3]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:634
 msgid ""
@@ -1606,7 +1606,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"NEBULA_DUSK_PRISONERS\"]/choice[5]/text"
 msgstr ""
 "We can't risk it.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:875
 msgid ""
@@ -1620,7 +1620,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"NEBULA_DUSK_PRISONERS\"]/choice[5]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:881
 msgid ""
@@ -2068,7 +2068,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_SNEAKYREBEL\"]/choice[5]/text"
 msgstr ""
 "Ignore the Rebel ship.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:1116
 msgid ""
@@ -2080,7 +2080,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_SNEAKYREBEL\"]/choice[5]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:1122
 msgid ""
@@ -2206,7 +2206,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_HARASS\"]/choice[4]/text"
 msgstr ""
 "Ignore the convoy.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:1185
 msgid ""
@@ -2218,7 +2218,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_HARASS\"]/choice[4]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:1191
 msgid ""
@@ -2449,7 +2449,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_PIRATES_HIDING\"]/choice[2]/text"
 msgstr ""
 "Ignore them.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:1326
 msgid ""
@@ -2463,7 +2463,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_PIRATES_HIDING\"]/choice[2]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:1332
 msgid ""
@@ -2569,7 +2569,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_IDIOT\"]/choice[2]/text"
 msgstr ""
 "No.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:1387
 msgid ""
@@ -2584,7 +2584,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_IDIOT\"]/choice[2]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:1394
 msgid ""
@@ -2662,7 +2662,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_JAILER_CHOICE\"]/choice[3]/text"
 msgstr ""
 "Avoid the Jailer.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:1449
 msgid ""
@@ -2674,7 +2674,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_JAILER_CHOICE\"]/choice[3]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:1455
 msgid ""
@@ -2756,7 +2756,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DISTRESS_DUSK_MONASTERY\"]/choice[3]/text"
 msgstr ""
 "Don't get involved.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:1511
 msgid ""
@@ -2770,7 +2770,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DISTRESS_DUSK_MONASTERY\"]/choice[3]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:1517
 msgid ""
@@ -2977,7 +2977,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DISTRESS_DUSK_DAMAGEDFLEET\"]/choice[2]/text"
 msgstr ""
 "Ignore the fleet ship.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:1608
 msgid ""
@@ -2992,7 +2992,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DISTRESS_DUSK_DAMAGEDFLEET\"]/choice[2]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:1614
 msgid ""
@@ -3040,7 +3040,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DISTRESS_DUSK_FEDERATION\"]/choice[1]/text"
 msgstr ""
 "Give them some fuel.\n"
-"-3<{<-2[Gain an augment(Random)[]]"
+"-3≤{≤-2[Gain an augment(Random)[]]"
 
 #: src-en/data/events_sector_duskbringer.xml:1641
 msgid ""
@@ -3067,7 +3067,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DISTRESS_DUSK_FEDERATION\"]/choice[@req=\"DRONE_CONTROL_REPAIR_ALL\"]/text"
 msgstr ""
 "(Repair Drone) Use the drone to repair their engines.\n"
-"-1|[Gain an augment(Random)[]]"
+"|-1[Gain an augment(Random)[]]"
 
 #: src-en/data/events_sector_duskbringer.xml:1657
 msgid ""
@@ -3093,7 +3093,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DISTRESS_DUSK_FEDERATION\"]/choice[@req=\"BLUELIST_BOMB_REPAIR\"]/text"
 msgstr ""
 "(Repair Cluster) Use the bomb to repair their engines.\n"
-"-1}[Gain an augment(Random)[]]"
+"}-1[Gain an augment(Random)[]]"
 
 #: src-en/data/events_sector_duskbringer.xml:1673
 msgid ""
@@ -3175,7 +3175,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DISTRESS_DUSK_FEDERATION\"]/choice[6]/text"
 msgstr ""
 "We cannot help.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:1715
 msgid ""
@@ -3190,7 +3190,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DISTRESS_DUSK_FEDERATION\"]/choice[6]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:1721
 msgid ""
@@ -3392,7 +3392,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DISTRESS_DUSK_ABOUT_DUSK\"]/choice[6]/text"
 msgstr ""
 "That's a stupid question.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:1824
 msgid ""
@@ -3404,7 +3404,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DISTRESS_DUSK_ABOUT_DUSK\"]/choice[6]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:1830
 msgid ""
@@ -3464,7 +3464,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"QUEST_DUSK_HIJACK\"]/choice[3]/text"
 msgstr ""
 "Decline.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:1874
 msgid ""
@@ -3476,7 +3476,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"QUEST_DUSK_HIJACK\"]/choice[3]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:1880
 msgid ""
@@ -3527,7 +3527,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"QUEST_DUSK_HIJACK_AUTO\"]/choice[2]/text"
 msgstr ""
 "Change your mind and leave.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:1907
 msgid ""
@@ -3541,7 +3541,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"QUEST_DUSK_HIJACK_AUTO\"]/choice[2]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:1913
 msgid ""
@@ -4035,7 +4035,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_ZOLTAN_UNSURE\"]/choice[2]/text"
 msgstr ""
 "Donate some scrap to help the Zoltans.\n"
-"-25~[]"
+"~-25[]"
 
 #: src-en/data/events_sector_duskbringer.xml:2138
 msgid ""
@@ -4189,7 +4189,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_CLONECANNON\"]/choice[2]/text"
 msgstr ""
 "We can't risk it.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:2224
 msgid ""
@@ -4203,7 +4203,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DUSK_CLONECANNON\"]/choice[2]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:2230
 msgid ""
@@ -4326,7 +4326,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"NEBULA_ANURAK\"]/choice[3]/text"
 msgstr ""
 "Leave.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:2291
 msgid ""
@@ -4340,7 +4340,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"NEBULA_ANURAK\"]/choice[3]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:2297
 msgid ""
@@ -4827,7 +4827,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DEVORAK_HIDEOUT\"]/choice[2]/text"
 msgstr ""
 "Leave.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:2538
 msgid ""
@@ -4841,7 +4841,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DEVORAK_HIDEOUT\"]/choice[2]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:2544
 msgid ""
@@ -5018,7 +5018,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DEVORAK_FINALE\"]/choice[3]/text"
 msgstr ""
 "Change your mind and leave.\n"
-"[[], []]"
+"[Storage Check[], []]"
 
 #: src-en/data/events_sector_duskbringer.xml:2647
 msgid ""
@@ -5032,7 +5032,7 @@ msgid ""
 "data/events_sector_duskbringer.xml$//event[@name=\"DEVORAK_FINALE\"]/choice[3]/event/choice[1]/text"
 msgstr ""
 "Do something onboard the ship.\n"
-"[]"
+"Storage Check[]"
 
 #: src-en/data/events_sector_duskbringer.xml:2653
 msgid ""
