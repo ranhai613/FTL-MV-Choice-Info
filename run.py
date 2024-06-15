@@ -46,6 +46,13 @@ class ElementBaseClass():
                 
                 load_event_name = event._element.get('load')
                 if not load_event_name:
+                    loadEventTags = xpath(event._element, './loadEvent')
+                    if len(loadEventTags) == 1:
+                        loadEvent = global_event_map.get(loadEventTags[0].text)
+                        if loadEvent:
+                            new_events.append(loadEvent)
+                            continue
+                    
                     new_events.append(event)
                     continue
                 
@@ -77,7 +84,7 @@ class ElementBaseClass():
     def init_childChoiceTags(self):
         return
         
-#not done: 'environment', 'recallBoarders', '', 'choiceRequiresCrew', 'instantEscape', '', 'ship'
+#not done(or not planned to inplement): 'environment', 'recallBoarders', '', 'choiceRequiresCrew', 'instantEscape', '', ''
 class Choice(ElementBaseClass):
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
@@ -113,9 +120,6 @@ class Choice(ElementBaseClass):
         return self._uniqueXPathGenerator.getpath(texttags[0])
     
     def _event_analize(self, event):
-        if isinstance(event, FixedEvent):
-            return [event._event]
-        
         info = []
         for tag in event._element.iterchildren():
             if tag.tag == 'unlockCustomShip':
@@ -238,18 +242,23 @@ class Choice(ElementBaseClass):
                 HK_child_info = []
                 try:
                     if len(childEvent._hullKillEvents[0]._childChoices) > 0:
-                        HK_child_info = [childChoice._get_recursive_info() for childChoice in childEvent._hullKillEvents[0]._childChoices]
+                        HK_child_info = [childEvent._hullKillChoice._get_recursive_info()]
                     HK_format = re.sub(r'[\\\'"]+', '', str(HK_child_info).replace('\\n', ''))
                 except Exception:
                     HK_format = ''
                 CK_child_info = []
                 try:
                     if len(childEvent._crewKillEvents[0]._childChoices) > 0:
-                        CK_child_info = [childChoice._get_recursive_info() for childChoice in childEvent._crewKillEvents[0]._childChoices]
+                        CK_child_info = [childEvent._crewKillChoice._get_recursive_info()]
                     CK_format = re.sub(r'[\\\'"]+', '', str(CK_child_info).replace('\\n', ''))
                 except Exception:
                     CK_format = ''
-                all_info.append(f'Fight(CK: {CK_format})(HK: {HK_format})')
+                if HK_format == CK_format:
+                    all_info.append(f'Fight(CK=HK: {CK_format})')
+                else:
+                    all_info.append(f'Fight(CK: {CK_format})(HK: {HK_format})')
+            elif isinstance(childEvent, FixedEvent):
+                all_info.append(childEvent._event)
         return ' \nor '.join(all_info)
     
     def set_additional_info(self):
@@ -285,13 +294,14 @@ class Ship(ElementBaseClass):
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
         
-
 class FightEvent(ElementBaseClass):
     def __init__(self, ship: Ship, element=None, xmlpath='', uniqueXPathGenerator=None):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
         self._ship = ship
         self._hullKillEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './destroyed')]
         self._crewKillEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './deadCrew')]
+        self._hullKillChoice = Choice(element, xmlpath, uniqueXPathGenerator)
+        self._crewKillChoice = Choice(element, xmlpath, uniqueXPathGenerator)
         
     def init_childEventTags(self):
         self._hullKillEvents = self._ensure_childEvents(self._hullKillEvents)
@@ -300,6 +310,9 @@ class FightEvent(ElementBaseClass):
             event.init_childChoiceTags()
         for event in self._crewKillEvents:
             event.init_childChoiceTags()
+        
+        self._hullKillChoice._childEvents = self._hullKillEvents
+        self._crewKillChoice._childEvents = self._crewKillEvents
         
 
 def textAjust(text, use_custom_font = True):
@@ -331,7 +344,7 @@ for xmlpath in glob_posix('src-en/data/*'):
 
 global_event_map.update({key: FixedEvent(value) for key, value in FIXED_EVENT_MAP.items()})
 
-print(global_event_map['MORALITY_UPDATE_ZOLTAN_FIGHT']._xmlpath)
+print(global_event_map['FEDERATION_BROKEN_DRONE']._xmlpath)
 
 with open('mvloc.config.jsonc', 'tr', encoding='utf8') as f:
     config = load(f)
@@ -353,7 +366,6 @@ for tag in global_choice_map.values():
 
 textTag_map = {f'{choice._xmlpath}${choice.get_textTag_uniqueXPath()}': choice for choice in global_choice_map.values()}
 
-count = 0
 for xmlpath in config['filePatterns']:
     dict_original, _, _ = readpo(f'locale/{xmlpath}/en.po')
     new_entries = []
@@ -362,7 +374,6 @@ for xmlpath in config['filePatterns']:
         target_choice = textTag_map.get(key)
         if target_choice is not None:
             value += '\n' + target_choice.get_formatted_additional_info()
-            count += 1
         else:
             pass
         
