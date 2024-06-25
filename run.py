@@ -332,55 +332,59 @@ global_event_map = {}
 global_choice_map = {}
 global_ship_map = {}
 
-for xmlpath in glob_posix('src-en/data/*'):
-    if not re.match(r'.+\.(xml|xml.append)$', xmlpath):
-        continue
-    tree = parse_ftlxml(xmlpath)
-    root = tree.getroot()
-    if root.tag != 'FTL':
-        tree = parse_ftlxml(xmlpath, True)
-    
-    uniqueXPathGenerator = UniqueXPathGenerator(tree, ftl_xpath_matchers())
-    global_event_map.update({element.get('name'): Event(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//event')})
-    global_event_map.update({element.get('name'): EventList(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//eventList')})
-    global_ship_map.update({element.get('name'): Ship(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//ship')})
-
-global_event_map.update({name: FixedEvent(value) for name, value in FIXED_EVENT_MAP.items()})
-
-with open('mvloc.config.jsonc', 'tr', encoding='utf8') as f:
-    config = load(f)
-
-for xmlpath in config['filePatterns']:
-    tree = parse_ftlxml('src-en/' + xmlpath)
-    uniqueXPathGenerator = UniqueXPathGenerator(tree, ftl_xpath_matchers())
-    elements = xpath(tree, '//choice')
-
-    global_choice_map.update({f'{xmlpath}${uniqueXPathGenerator.getpath(element)}': Choice(element, xmlpath, uniqueXPathGenerator) for element in elements})
-
-print('initializing choices...')
-for tag in global_choice_map.values():
-    tag.init_ShipTag()
-    tag.init_childEventTags()
-print('initializing events...')
-for tag in global_event_map.values():
-    tag.init_childChoiceTags()
-print('setting additional info...')
-for tag in global_choice_map.values():
-    tag.set_additional_info()
-
-textTag_map = {f'{choice._xmlpath}${choice.get_textTag_uniqueXPath()}': choice for choice in global_choice_map.values()}
-
-for xmlpath in config['filePatterns']:
-    dict_original, _, _ = readpo(f'locale/{xmlpath}/en.po')
-    new_entries = []
-    for key, entry in dict_original.items():
-        value = entry.value
-        target_choice = textTag_map.get(key)
-        if target_choice is not None:
-            value += '\n' + target_choice.get_formatted_additional_info()
-        else:
-            pass
+def main():
+    for xmlpath in glob_posix('src-en/data/*'):
+        if not re.match(r'.+\.(xml|xml.append)$', xmlpath):
+            continue
+        tree = parse_ftlxml(xmlpath)
+        root = tree.getroot()
+        if root.tag != 'FTL':
+            tree = parse_ftlxml(xmlpath, True)
         
-        new_entries.append(StringEntry(key, value, entry.lineno, False, False))
-    writepo(f'locale/{xmlpath}/choice-info-en.po', new_entries, f'src-en/{xmlpath}')
-#print(len(loadEvent_stat))
+        uniqueXPathGenerator = UniqueXPathGenerator(tree, ftl_xpath_matchers())
+        global_event_map.update({element.get('name'): Event(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//event')})
+        global_event_map.update({element.get('name'): EventList(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//eventList')})
+        global_ship_map.update({element.get('name'): Ship(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//ship')})
+
+    global_event_map.update({name: FixedEvent(value) for name, value in FIXED_EVENT_MAP.items()})
+
+    with open('mvloc.config.jsonc', 'tr', encoding='utf8') as f:
+        config = load(f)
+
+    for xmlpath in config['filePatterns']:
+        tree = parse_ftlxml('src-en/' + xmlpath)
+        uniqueXPathGenerator = UniqueXPathGenerator(tree, ftl_xpath_matchers())
+        elements = xpath(tree, '//choice')
+
+        global_choice_map.update({f'{xmlpath}${uniqueXPathGenerator.getpath(element)}': Choice(element, xmlpath, uniqueXPathGenerator) for element in elements})
+
+    print('initializing choices...')
+    for tag in global_choice_map.values():
+        tag.init_ShipTag()
+        tag.init_childEventTags()
+    print('initializing events...')
+    for tag in global_event_map.values():
+        tag.init_childChoiceTags()
+    print('setting additional info...')
+    for tag in global_choice_map.values():
+        tag.set_additional_info()
+
+    textTag_map = {f'{choice._xmlpath}${choice.get_textTag_uniqueXPath()}': choice for choice in global_choice_map.values()}
+
+    for xmlpath in config['filePatterns']:
+        dict_original, _, _ = readpo(f'locale/{xmlpath}/en.po')
+        new_entries = []
+        for key, entry in dict_original.items():
+            value = entry.value
+            target_choice = textTag_map.get(key)
+            if target_choice is not None:
+                value += '\n' + target_choice.get_formatted_additional_info()
+            else:
+                pass
+            
+            new_entries.append(StringEntry(key, value, entry.lineno, False, False))
+        writepo(f'locale/{xmlpath}/choice-info-en.po', new_entries, f'src-en/{xmlpath}')
+    #print(len(loadEvent_stat))
+
+if __name__ == '__main__':
+    main()
