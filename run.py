@@ -1,6 +1,6 @@
 from mvlocscript.ftl import parse_ftlxml, ftl_xpath_matchers
 from mvlocscript.xmltools import xpath, UniqueXPathGenerator
-from mvlocscript.potools import readpo, writepo, StringEntry, parsekey
+from mvlocscript.potools import readpo, writepo, StringEntry
 from mvlocscript.fstools import glob_posix
 from json5 import load
 import re
@@ -8,7 +8,9 @@ from pprint import pprint
 
 FIXED_EVENT_MAP = {
     'STORAGE_CHECK': 'Storage Check',
-    'COMBAT_CHECK': 'Fight'
+    'COMBAT_CHECK': 'Fight',
+    'ATLAS_MENU': 'HyperSpeed Menu',
+    'ATLAS_MENU_NOEQUIPMENT': 'HyperSpeed Menu',
 }
 
 CUSTOM_FONT = {
@@ -40,7 +42,7 @@ class ElementBaseClass():
             new_events = []
             is_changed = False
             for event in childEvents:
-                if isinstance(event, FixedEvent) or isinstance(event, FightEvent):
+                if isinstance(event, (FixedEvent, FightEvent)):
                     new_events.append(event)
                     continue
                 
@@ -48,10 +50,9 @@ class ElementBaseClass():
                 if not load_event_name:
                     loadEventTags = xpath(event._element, './loadEvent')
                     if len(loadEventTags) == 1:
-                        loadEvent = global_event_map.get(loadEventTags[0].text)
+                        loadEvent = loadEventTags[0].text
                         if loadEvent:
-                            new_events.append(loadEvent)
-                            continue
+                            loadEvent_stat.add(loadEvent)
                     
                     new_events.append(event)
                     continue
@@ -83,8 +84,8 @@ class ElementBaseClass():
     
     def init_childChoiceTags(self):
         return
-        
-#not done(or not planned to inplement): 'environment', 'recallBoarders', '', 'choiceRequiresCrew', 'instantEscape', '', ''
+    
+#not done(or not planned to inplement): 'environment', 'recallBoarders', 'achievement', 'choiceRequiresCrew', 'instantEscape', '', ''
 class Choice(ElementBaseClass):
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
@@ -123,7 +124,7 @@ class Choice(ElementBaseClass):
         info = []
         for tag in event._element.iterchildren():
             if tag.tag == 'unlockCustomShip':
-                text = textAjust(tag.text.replace('PLAYER_SHIP_', ''), False)
+                text = ajustText(tag.text.replace('PLAYER_SHIP_', ''), False)
                 info.append(f'<#>Unlock Ship({text})')
             
             elif tag.tag == 'removeCrew':
@@ -139,7 +140,7 @@ class Choice(ElementBaseClass):
                     info.append('<!>Lose your crew(?)')
             
             elif tag.tag == 'crewMember':
-                race = textAjust(tag.get('class', '?').replace('LIST_CREW_', ''), False)
+                race = ajustText(tag.get('class', '?').replace('LIST_CREW_', ''), False)
                 info.append(f'Gain a crew({race})')
                 
             elif tag.tag == 'reveal_map':
@@ -147,7 +148,7 @@ class Choice(ElementBaseClass):
             
             elif tag.tag == 'autoReward':
                 level = tag.get('level', '?')[0]
-                stuff_type = textAjust(tag.text)
+                stuff_type = ajustText(tag.text)
                 info.append(f'Reward {stuff_type}({level})')
             
             elif tag.tag == 'item_modify':
@@ -157,7 +158,7 @@ class Choice(ElementBaseClass):
                 
                 itemlist = []
                 for itemtag in itemtags:
-                    item = textAjust(itemtag.get('type'))
+                    item = ajustText(itemtag.get('type'))
                     amount_min = itemtag.get('min')
                     amount_max = itemtag.get('max')
                     try:
@@ -184,11 +185,11 @@ class Choice(ElementBaseClass):
                     info.append(f'<!>Fleet Advance({str(amount)})')
             
             elif tag.tag == 'weapon' or tag.tag == 'drone':
-                name = textAjust(tag.get('name', '?'), False)
+                name = ajustText(tag.get('name', '?'), False)
                 info.append(f'Gain a {tag.tag}({name})')
             
             elif tag.tag == 'augment':
-                name = textAjust(tag.get('name', '?'), False)
+                name = ajustText(tag.get('name', '?'), False)
                 info.append(f'Gain an augment({name})')
             
             elif tag.tag == 'damage':
@@ -203,7 +204,7 @@ class Choice(ElementBaseClass):
                     info.append(f'<!>Damage Hull({str(amount)})')
             
             elif tag.tag == 'upgrade':
-                system = textAjust(tag.get('system'))
+                system = ajustText(tag.get('system'))
                 amount = tag.get('amount')
                 if system is None or amount is None:
                     continue
@@ -211,7 +212,7 @@ class Choice(ElementBaseClass):
                 info.append(f'System Upgrade({system} {amount}™)')
             
             elif tag.tag == 'boarders':
-                race = textAjust(tag.get('class', '?').replace('LIST_CREW_', ''), False)
+                race = ajustText(tag.get('class', '?').replace('LIST_CREW_', ''), False)
                 amount_min = tag.get('min')
                 amount_max = tag.get('max')
                 try:
@@ -315,7 +316,7 @@ class FightEvent(ElementBaseClass):
         self._crewKillChoice._childEvents = self._crewKillEvents
         
 
-def textAjust(text, use_custom_font = True):
+def ajustText(text, use_custom_font = True):
     if text is None:
         return None
     
@@ -324,6 +325,8 @@ def textAjust(text, use_custom_font = True):
         for key, custom_font in CUSTOM_FONT.items():
             text = text.replace(key, custom_font)
     return text.replace('_', ' ').title()
+
+loadEvent_stat = set()
 
 global_event_map = {}
 global_choice_map = {}
@@ -335,16 +338,14 @@ for xmlpath in glob_posix('src-en/data/*'):
     tree = parse_ftlxml(xmlpath)
     root = tree.getroot()
     if root.tag != 'FTL':
-        continue
+        tree = parse_ftlxml(xmlpath, True)
     
     uniqueXPathGenerator = UniqueXPathGenerator(tree, ftl_xpath_matchers())
     global_event_map.update({element.get('name'): Event(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//event')})
     global_event_map.update({element.get('name'): EventList(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//eventList')})
     global_ship_map.update({element.get('name'): Ship(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//ship')})
 
-global_event_map.update({key: FixedEvent(value) for key, value in FIXED_EVENT_MAP.items()})
-
-print(global_event_map['FEDERATION_BROKEN_DRONE']._xmlpath)
+global_event_map.update({name: FixedEvent(value) for name, value in FIXED_EVENT_MAP.items()})
 
 with open('mvloc.config.jsonc', 'tr', encoding='utf8') as f:
     config = load(f)
@@ -356,11 +357,14 @@ for xmlpath in config['filePatterns']:
 
     global_choice_map.update({f'{xmlpath}${uniqueXPathGenerator.getpath(element)}': Choice(element, xmlpath, uniqueXPathGenerator) for element in elements})
 
+print('initializing choices...')
 for tag in global_choice_map.values():
     tag.init_ShipTag()
     tag.init_childEventTags()
+print('initializing events...')
 for tag in global_event_map.values():
     tag.init_childChoiceTags()
+print('setting additional info...')
 for tag in global_choice_map.values():
     tag.set_additional_info()
 
@@ -379,3 +383,4 @@ for xmlpath in config['filePatterns']:
         
         new_entries.append(StringEntry(key, value, entry.lineno, False, False))
     writepo(f'locale/{xmlpath}/choice-info-en.po', new_entries, f'src-en/{xmlpath}')
+#print(len(loadEvent_stat))
