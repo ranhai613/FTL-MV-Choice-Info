@@ -43,7 +43,7 @@ def ajustText(text, use_custom_font = True):
 
 
 class UnlockCustomShip(EventBaseClass):
-    def __init__(self, element, priority=3) -> None:
+    def __init__(self, element, priority=999) -> None:
         super().__init__(element, priority)
     
     def setInfo(self):
@@ -51,7 +51,7 @@ class UnlockCustomShip(EventBaseClass):
         self._infoText = f'<#>Unlock Ship({text})'
 
 class RemoveCrew(EventBaseClass):
-    def __init__(self, element, priority=2) -> None:
+    def __init__(self, element, priority=1) -> None:
         super().__init__(element, priority)
     
     def setInfo(self):

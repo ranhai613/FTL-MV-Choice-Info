@@ -5,6 +5,7 @@ from mvlocscript.fstools import glob_posix
 from events import EventClasses
 from json5 import load
 import re
+from treelib import Tree
 from pprint import pprint
 
 FIXED_EVENT_MAP = {
@@ -106,6 +107,48 @@ class Choice(ElementBaseClass):
         
         return self._uniqueXPathGenerator.getpath(texttags[0])
     
+    def _makeEventTree(self):
+        def iterChildren(parent_node, parent_events):
+            for event in parent_events:
+                if isinstance(event, FightEvent):
+                    continue
+                if event._childChoices is None:
+                    continue
+                for choice in event._childChoices:
+                    new_node = tree.create_node(parent=parent_node, data=choice._childEvents)
+                    iterChildren(new_node, choice._childEvents)
+            
+        tree = Tree()
+        root = tree.create_node(data=self._childEvents)
+        iterChildren(root, self._childEvents)
+        
+        ness_info = []
+        for node in tree.all_nodes_itr():
+            info = []
+            for event in node.data:
+                if event is None or event._element is None:
+                    continue
+                info.extend(self._event_analize2(event))
+            depth = tree.depth(node)
+            for eventclass in info:
+                if eventclass._priority > depth:
+                    textInfo = eventclass.getInfo()
+                    if textInfo:
+                        ness_info.append(f'{textInfo}{eventclass._priority}/{depth}')
+        
+        return ness_info
+
+    def _event_analize2(self, event):
+        info = []
+        for tag in event._element.iterchildren():
+            try:
+                eventclass = EventClasses[tag.tag].value(tag)
+            except KeyError:
+                continue
+            info.append(eventclass)
+        return info
+            
+    
     def _event_analize(self, event):
         info = []
         for tag in event._element.iterchildren():
@@ -153,7 +196,8 @@ class Choice(ElementBaseClass):
         return ' \nor '.join(all_info)
     
     def set_additional_info(self):
-        self._additional_info = self._get_recursive_info()
+        #self._additional_info = self._get_recursive_info()
+        self._additional_info = ' '.join(self._makeEventTree())
     
     def get_formatted_additional_info(self):
         return self._additional_info
