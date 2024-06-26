@@ -2,6 +2,7 @@ from mvlocscript.ftl import parse_ftlxml, ftl_xpath_matchers
 from mvlocscript.xmltools import xpath, UniqueXPathGenerator
 from mvlocscript.potools import readpo, writepo, StringEntry
 from mvlocscript.fstools import glob_posix
+from events import EventClasses
 from json5 import load
 import re
 from pprint import pprint
@@ -85,7 +86,6 @@ class ElementBaseClass():
     def init_childChoiceTags(self):
         return
     
-#not done(or not planned to inplement): 'environment', 'recallBoarders', 'achievement', 'choiceRequiresCrew', 'instantEscape', '', ''
 class Choice(ElementBaseClass):
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
@@ -123,110 +123,14 @@ class Choice(ElementBaseClass):
     def _event_analize(self, event):
         info = []
         for tag in event._element.iterchildren():
-            if tag.tag == 'unlockCustomShip':
-                text = ajustText(tag.text.replace('PLAYER_SHIP_', ''), False)
-                info.append(f'<#>Unlock Ship({text})')
+            try:
+                eventclass = EventClasses[tag.tag].value(tag)
+            except KeyError:
+                continue
+            infoText = eventclass.getInfo()
+            if infoText:
+                info.append(infoText)
             
-            elif tag.tag == 'removeCrew':
-                clonetag = xpath(tag, './clone')
-                if len(clonetag) != 1:
-                    info.append('<!>Lose your crew(?)')
-                    continue
-                if clonetag[0].text == 'true':
-                    info.append('<!>Lose your crew(clonable)')
-                elif clonetag[0].text == 'false':
-                    info.append('<!>Lose your crew(UNCLONABLE)')
-                else:
-                    info.append('<!>Lose your crew(?)')
-            
-            elif tag.tag == 'crewMember':
-                race = ajustText(tag.get('class', '?').replace('LIST_CREW_', ''), False)
-                info.append(f'Gain a crew({race})')
-                
-            elif tag.tag == 'reveal_map':
-                info.append('Map Reveal')
-            
-            elif tag.tag == 'autoReward':
-                level = tag.get('level', '?')[0]
-                stuff_type = ajustText(tag.text)
-                info.append(f'Reward {stuff_type}({level})')
-            
-            elif tag.tag == 'item_modify':
-                itemtags = xpath(tag, './item')
-                if len(itemtags) == 0:
-                    continue
-                
-                itemlist = []
-                for itemtag in itemtags:
-                    item = ajustText(itemtag.get('type'))
-                    amount_min = itemtag.get('min')
-                    amount_max = itemtag.get('max')
-                    try:
-                        amount_min = int(amount_min)
-                        amount_max = int(amount_max)
-                    except TypeError:
-                        continue
-                    
-                    if amount_min == amount_max:
-                        itemlist.append(f'{item}{amount_min}')
-                    else:
-                        itemlist.append(f'{amount_min}≤{item}≤{amount_max}')
-                info.append(' '.join(itemlist))
-            
-            elif tag.tag == 'modifyPursuit':
-                amount = tag.get('amount')
-                if amount is None:
-                    continue
-                amount = int(amount)
-                
-                if amount < 0:
-                    info.append(f'Fleet Delay({str(amount * -1)})')
-                elif amount > 0:
-                    info.append(f'<!>Fleet Advance({str(amount)})')
-            
-            elif tag.tag == 'weapon' or tag.tag == 'drone':
-                name = ajustText(tag.get('name', '?'), False)
-                info.append(f'Gain a {tag.tag}({name})')
-            
-            elif tag.tag == 'augment':
-                name = ajustText(tag.get('name', '?'), False)
-                info.append(f'Gain an augment({name})')
-            
-            elif tag.tag == 'damage':
-                amount = tag.get('damage')
-                if amount is None:
-                    continue
-                amount = int(amount)
-                
-                if amount < 0:
-                    info.append(f'Repair Hull({str(amount * -1)}$)')
-                elif amount > 0:
-                    info.append(f'<!>Damage Hull({str(amount)})')
-            
-            elif tag.tag == 'upgrade':
-                system = ajustText(tag.get('system'))
-                amount = tag.get('amount')
-                if system is None or amount is None:
-                    continue
-                
-                info.append(f'System Upgrade({system} {amount}™)')
-            
-            elif tag.tag == 'boarders':
-                race = ajustText(tag.get('class', '?').replace('LIST_CREW_', ''), False)
-                amount_min = tag.get('min')
-                amount_max = tag.get('max')
-                try:
-                    amount_min = int(amount_min)
-                    amount_max = int(amount_max)
-                except TypeError:
-                    info.append(f'<!>Enemy Boarding({race})')
-                    continue
-                
-                if amount_min == amount_max:
-                    info.append(f'<!>Enemy Boarding(x{str(amount_min)} {race})')
-                else:
-                    info.append(f'<!>Enemy Boarding(x{str(amount_min)}-x{str(amount_max)} {race})')
-
         return info
                 
     
