@@ -3,8 +3,8 @@ from enum import Enum
 
 CUSTOM_FONT = {
     'fuel': '{',
-    'drones': '|',
     'droneparts': '|',
+    'drones': '|',
     'missiles': '}',
     'scrap': '~',
     'repair': '$',
@@ -40,7 +40,6 @@ def ajustText(text, use_custom_font = True):
 
 
 #----------------Evnets--------------------------
-#not done(or not planned to inplement): 'environment', 'recallBoarders', 'achievement', 'choiceRequiresCrew', 'instantEscape', '', ''
 
 
 class UnlockCustomShip(EventBaseClass):
@@ -141,7 +140,7 @@ class Reward(EventBaseClass):
     
     def setInfo(self):
         name = ajustText(self._element.get('name', '?'), False)
-        if self._element.tag[0] == 'a':
+        if self._element.tag[0] in ('a', 'e', 'i', 'o', 'u'):
             self._infoText = f'Gain an {self._element.tag}({name})'
         else:
             self._infoText = f'Gain a {self._element.tag}({name})'
@@ -197,6 +196,7 @@ class Boarders(EventBaseClass):
             self._infoText = f'<!>Enemy Boarding(x{str(amount_min)}-x{str(amount_max)} {race})'
 
 
+#not done(or not planned to inplement): 'environment', 'recallBoarders', 'achievement', 'choiceRequiresCrew', 'instantEscape'
 class EventClasses(Enum):
     unlockCustomShip = UnlockCustomShip
     removeCrew = RemoveCrew

@@ -14,20 +14,6 @@ FIXED_EVENT_MAP = {
     'ATLAS_MENU_NOEQUIPMENT': 'HyperSpeed Menu',
 }
 
-CUSTOM_FONT = {
-    'fuel': '{',
-    'drones': '|',
-    'droneparts': '|',
-    'missiles': '}',
-    'scrap': '~',
-    'repair': '$',
-    'elite': '€',
-    'fire': '‰',
-    'power': '†',
-    'cooldown': '‡',
-    'upgraded': '™'
-}
-
 class ElementBaseClass():
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
         self._element = element
@@ -219,16 +205,6 @@ class FightEvent(ElementBaseClass):
         self._hullKillChoice._childEvents = self._hullKillEvents
         self._crewKillChoice._childEvents = self._crewKillEvents
         
-
-def ajustText(text, use_custom_font = True):
-    if text is None:
-        return None
-    
-    if use_custom_font:
-        text = text.lower()
-        for key, custom_font in CUSTOM_FONT.items():
-            text = text.replace(key, custom_font)
-    return text.replace('_', ' ').title()
 
 loadEvent_stat = set()
 
