@@ -108,21 +108,19 @@ class Choice(ElementBaseClass):
         return self._uniqueXPathGenerator.getpath(texttags[0])
     
     def _makeEventTree(self):
-        def iterChildren(parent_node, parent_events: EventNode):
+        def growTree(parent_node, parent_events: EventNode):
             for event in parent_events._events:
-                if isinstance(event._event, FightEvent):
-                    continue
                 if event._event._childChoices is None:
                     continue
                 for choice in event._event._childChoices:
                     new_eventNode = EventNode(choice._childEvents, event._prob)
                     new_node = tree.create_node(parent=parent_node, data=new_eventNode)
-                    iterChildren(new_node, new_eventNode)
+                    growTree(new_node, new_eventNode)
             
         tree = Tree()
         rootEventNode = EventNode(self._childEvents, 1)
         root = tree.create_node(data=rootEventNode)
-        iterChildren(root, rootEventNode)
+        growTree(root, rootEventNode)
         
         ness_info = []
         for node in tree.all_nodes_itr():
@@ -137,7 +135,7 @@ class Choice(ElementBaseClass):
                     if eventclass._priority > depth:
                         textInfo = eventclass.getInfo()
                         if textInfo:
-                            ness_info.append('{:.0%} {}'.format(prob, textInfo) if prob < 1 else textInfo)
+                            ness_info.append(f'{prob:.0%} {textInfo}' if prob < 1 else textInfo)
         
         return ness_info
 
@@ -240,6 +238,7 @@ class FightEvent(ElementBaseClass):
         self._crewKillEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './deadCrew')]
         self._hullKillChoice = Choice(element, xmlpath, uniqueXPathGenerator)
         self._crewKillChoice = Choice(element, xmlpath, uniqueXPathGenerator)
+        self._childChoices = None
         
     def init_childEventTags(self):
         self._hullKillEvents = self._ensure_childEvents(self._hullKillEvents)
@@ -251,6 +250,7 @@ class FightEvent(ElementBaseClass):
         
         self._hullKillChoice._childEvents = self._hullKillEvents
         self._crewKillChoice._childEvents = self._crewKillEvents
+        self._childChoices = [self._hullKillChoice, self._crewKillChoice]
 
 class EventNodeElement():
     def __init__(self, event, prob) -> None:
