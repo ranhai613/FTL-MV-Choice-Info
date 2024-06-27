@@ -42,6 +42,14 @@ def ajustText(text, use_custom_font = True):
 #----------------Evnets--------------------------
 
 
+class NameReturn(EventBaseClass):
+    def __init__(self, name, element=None, priority=1) -> None:
+        super().__init__(element, priority)
+        self._infoText = name
+    
+    def setInfo(self):
+        return
+
 class UnlockCustomShip(EventBaseClass):
     def __init__(self, element, priority=999) -> None:
         super().__init__(element, priority)

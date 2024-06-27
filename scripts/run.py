@@ -2,7 +2,7 @@ from mvlocscript.ftl import parse_ftlxml, ftl_xpath_matchers
 from mvlocscript.xmltools import xpath, UniqueXPathGenerator
 from mvlocscript.potools import readpo, writepo, StringEntry
 from mvlocscript.fstools import glob_posix
-from events import EventClasses
+from events import EventClasses, NameReturn
 from json5 import load
 import re
 from treelib import Tree
@@ -107,98 +107,86 @@ class Choice(ElementBaseClass):
         
         return self._uniqueXPathGenerator.getpath(texttags[0])
     
-    def _makeEventTree(self):
+    def _getInfoList(self):
         def growTree(parent_node, parent_events: EventNode):
-            for event in parent_events._events:
-                if event._event._childChoices is None:
+            for eventNodeElement in parent_events._events:
+                if eventNodeElement._event._childChoices is None:
                     continue
-                for choice in event._event._childChoices:
-                    new_eventNode = EventNode(choice._childEvents, event._prob)
+                for i, choice in enumerate(eventNodeElement._event._childChoices):
+                    new_eventNode = EventNode(choice._childEvents, eventNodeElement._prob)
                     new_node = tree.create_node(parent=parent_node, data=new_eventNode)
+                    if isinstance(eventNodeElement._event, FightEvent):
+                        if i == 0:
+                            eventNodeElement._event._hullKillNode = new_node
+                        elif i == 1:
+                            eventNodeElement._event._crewKillNode = new_node
                     growTree(new_node, new_eventNode)
+        
+        def treeAnalize(tree):
+            nece_info = []
+            for node in tree.all_nodes_itr():
+                info = []
+                for eventNodeElement in node.data._events:
+                    if eventNodeElement._event is None:
+                        continue
+                    info.append(eventAnalize(eventNodeElement))
+                depth = tree.depth(node)
+                for eventlist, hkInfo, ckInfo, prob in info:
+                    if eventlist is not None:
+                        for eventclass in eventlist:
+                            if eventclass._priority > depth:
+                                textInfo = eventclass.getInfo()
+                                if textInfo:
+                                    nece_info.append(f'{prob:.0%} {textInfo}' if prob < 1 else textInfo)
+                    
+                    if hkInfo is not None and ckInfo is not None:
+                        hkText = ' '.join(hkInfo)
+                        ckText = ' '.join(hkInfo)
+                        if hkText == ckText:
+                            nece_info.append(f'Fight(CK=HK: {hkText})')
+                        else:
+                            nece_info.append(f'Fight(CK: {ckText})(HK: {hkText})')
+                    elif hkInfo is not None and ckInfo is None:
+                        hkText = ' '.join(hkInfo)
+                        nece_info.append(f'Fight(HK: {hkText})')
+                    elif hkInfo is None and ckInfo is not None:
+                        ckText = ' '.join(ckInfo)
+                        nece_info.append(f'Fight(CK: {ckText})')
             
+            return nece_info
+            
+        def eventAnalize(eventNodeElement):
+            if isinstance(eventNodeElement._event, FixedEvent):
+                return [NameReturn(eventNodeElement._event._event)], None, None, eventNodeElement._prob
+            
+            elif isinstance(eventNodeElement._event, FightEvent):
+                hkInfo = None
+                ckInfo = None
+                if eventNodeElement._event._hullKillNode is not None:
+                    hkInfo = treeAnalize(tree.subtree(eventNodeElement._event._hullKillNode.identifier))
+                if eventNodeElement._event._crewKillNode is not None:
+                    ckInfo = treeAnalize(tree.subtree(eventNodeElement._event._crewKillNode.identifier))
+                
+                return None, hkInfo, ckInfo, eventNodeElement._prob
+            
+            eventlist = []
+            for element in eventNodeElement._event._element.iterchildren():
+                try:
+                    eventclass = EventClasses[element.tag].value(element)
+                except KeyError:
+                    continue
+                eventlist.append(eventclass)
+            return eventlist, None, None, eventNodeElement._prob
+        
         tree = Tree()
         rootEventNode = EventNode(self._childEvents, 1)
         root = tree.create_node(data=rootEventNode)
         growTree(root, rootEventNode)
         
-        ness_info = []
-        for node in tree.all_nodes_itr():
-            info = []
-            for event in node.data._events:
-                if event._event is None or event._event._element is None:
-                    continue
-                info.append(self._event_analize2(event))
-            depth = tree.depth(node)
-            for eventset, prob in info:
-                for eventclass in eventset:
-                    if eventclass._priority > depth:
-                        textInfo = eventclass.getInfo()
-                        if textInfo:
-                            ness_info.append(f'{prob:.0%} {textInfo}' if prob < 1 else textInfo)
-        
-        return ness_info
-
-    def _event_analize2(self, event):
-        info = []
-        for tag in event._event._element.iterchildren():
-            try:
-                eventclass = EventClasses[tag.tag].value(tag)
-            except KeyError:
-                continue
-            info.append(eventclass)
-        return info, event._prob
-            
-    
-    def _event_analize(self, event):
-        info = []
-        for tag in event._element.iterchildren():
-            try:
-                eventclass = EventClasses[tag.tag].value(tag)
-            except KeyError:
-                continue
-            infoText = eventclass.getInfo()
-            if infoText:
-                info.append(infoText)
-            
-        return info
-                
-    
-    def _get_recursive_info(self):
-        all_info = []
-        for childEvent in self._childEvents:
-            if isinstance(childEvent, Event):
-                child_info = []
-                if childEvent._childChoices is not None and len(childEvent._childChoices) > 0:
-                    child_info = [childChoice._get_recursive_info() for childChoice in childEvent._childChoices]
-                
-                all_info.append('\n'.join(self._event_analize(childEvent)) + re.sub(r'[\\\'"]+', '', str(child_info).replace('\\n', '')))
-            elif isinstance(childEvent, FightEvent):
-                HK_child_info = []
-                try:
-                    if len(childEvent._hullKillEvents[0]._childChoices) > 0:
-                        HK_child_info = [childEvent._hullKillChoice._get_recursive_info()]
-                    HK_format = re.sub(r'[\\\'"]+', '', str(HK_child_info).replace('\\n', ''))
-                except Exception:
-                    HK_format = ''
-                CK_child_info = []
-                try:
-                    if len(childEvent._crewKillEvents[0]._childChoices) > 0:
-                        CK_child_info = [childEvent._crewKillChoice._get_recursive_info()]
-                    CK_format = re.sub(r'[\\\'"]+', '', str(CK_child_info).replace('\\n', ''))
-                except Exception:
-                    CK_format = ''
-                if HK_format == CK_format:
-                    all_info.append(f'Fight(CK=HK: {CK_format})')
-                else:
-                    all_info.append(f'Fight(CK: {CK_format})(HK: {HK_format})')
-            elif isinstance(childEvent, FixedEvent):
-                all_info.append(childEvent._event)
-        return ' \nor '.join(all_info)
+        return treeAnalize(tree)
     
     def set_additional_info(self):
-        #self._additional_info = self._get_recursive_info()
-        self._additional_info = '\n'.join(self._makeEventTree())
+        self._additional_info = '\n'.join(self._getInfoList())
     
     def get_formatted_additional_info(self):
         return self._additional_info
@@ -239,6 +227,8 @@ class FightEvent(ElementBaseClass):
         self._hullKillChoice = Choice(element, xmlpath, uniqueXPathGenerator)
         self._crewKillChoice = Choice(element, xmlpath, uniqueXPathGenerator)
         self._childChoices = None
+        self._hullKillNode = None
+        self._crewKillNode = None
         
     def init_childEventTags(self):
         self._hullKillEvents = self._ensure_childEvents(self._hullKillEvents)
