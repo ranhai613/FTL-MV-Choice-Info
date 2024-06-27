@@ -108,45 +108,48 @@ class Choice(ElementBaseClass):
         return self._uniqueXPathGenerator.getpath(texttags[0])
     
     def _makeEventTree(self):
-        def iterChildren(parent_node, parent_events):
-            for event in parent_events:
-                if isinstance(event, FightEvent):
+        def iterChildren(parent_node, parent_events: EventNode):
+            for event in parent_events._events:
+                if isinstance(event._event, FightEvent):
                     continue
-                if event._childChoices is None:
+                if event._event._childChoices is None:
                     continue
-                for choice in event._childChoices:
-                    new_node = tree.create_node(parent=parent_node, data=choice._childEvents)
-                    iterChildren(new_node, choice._childEvents)
+                for choice in event._event._childChoices:
+                    new_eventNode = EventNode(choice._childEvents, event._prob)
+                    new_node = tree.create_node(parent=parent_node, data=new_eventNode)
+                    iterChildren(new_node, new_eventNode)
             
         tree = Tree()
-        root = tree.create_node(data=self._childEvents)
-        iterChildren(root, self._childEvents)
+        rootEventNode = EventNode(self._childEvents, 1)
+        root = tree.create_node(data=rootEventNode)
+        iterChildren(root, rootEventNode)
         
         ness_info = []
         for node in tree.all_nodes_itr():
             info = []
-            for event in node.data:
-                if event is None or event._element is None:
+            for event in node.data._events:
+                if event._event is None or event._event._element is None:
                     continue
-                info.extend(self._event_analize2(event))
+                info.append(self._event_analize2(event))
             depth = tree.depth(node)
-            for eventclass in info:
-                if eventclass._priority > depth:
-                    textInfo = eventclass.getInfo()
-                    if textInfo:
-                        ness_info.append(f'{textInfo}{eventclass._priority}/{depth}')
+            for eventset, prob in info:
+                for eventclass in eventset:
+                    if eventclass._priority > depth:
+                        textInfo = eventclass.getInfo()
+                        if textInfo:
+                            ness_info.append('{:.0%} {}'.format(prob, textInfo) if prob < 1 else textInfo)
         
         return ness_info
 
     def _event_analize2(self, event):
         info = []
-        for tag in event._element.iterchildren():
+        for tag in event._event._element.iterchildren():
             try:
                 eventclass = EventClasses[tag.tag].value(tag)
             except KeyError:
                 continue
             info.append(eventclass)
-        return info
+        return info, event._prob
             
     
     def _event_analize(self, event):
@@ -197,7 +200,7 @@ class Choice(ElementBaseClass):
     
     def set_additional_info(self):
         #self._additional_info = self._get_recursive_info()
-        self._additional_info = ' '.join(self._makeEventTree())
+        self._additional_info = '\n'.join(self._makeEventTree())
     
     def get_formatted_additional_info(self):
         return self._additional_info
@@ -248,7 +251,16 @@ class FightEvent(ElementBaseClass):
         
         self._hullKillChoice._childEvents = self._hullKillEvents
         self._crewKillChoice._childEvents = self._crewKillEvents
-        
+
+class EventNodeElement():
+    def __init__(self, event, prob) -> None:
+        self._event = event
+        self._prob = prob
+
+class EventNode():
+    def __init__(self, events, prob) -> None:
+        self._events = [EventNodeElement(event, ((1 / len(events)) * prob)) for event in events]
+        self._prob = prob
 
 loadEvent_stat = set()
 
