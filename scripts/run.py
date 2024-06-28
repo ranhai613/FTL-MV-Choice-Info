@@ -25,7 +25,14 @@ class ElementBaseClass():
     def get_uniqueXPath(self):
         return self._uniqueXPathGenerator.getpath(self._element)
     
-    def _ensure_childEvents(self, childEvents):
+    def init_childChoiceTags(self):
+        return
+
+class EventAnalizer():
+    def __init__(self) -> None:
+        pass
+    
+    def ensureChildEvents(self, childEvents, ship):
         while True:
             new_events = []
             is_changed = False
@@ -45,11 +52,10 @@ class ElementBaseClass():
                     new_events.append(event)
                     continue
                 
-                if load_event_name == 'COMBAT_CHECK' and self._ship is not None:
-                    fightEvent = FightEvent(self._ship)
+                if load_event_name == 'COMBAT_CHECK' and ship is not None:
+                    fightEvent = FightEvent(ship)
                     fightEvent.init_childEventTags()
                     new_events.append(fightEvent)
-                    is_changed = True
                     continue
                 
                 load_event = global_event_map.get(load_event_name)
@@ -70,20 +76,18 @@ class ElementBaseClass():
             if not is_changed:
                 return childEvents
     
-    def init_childChoiceTags(self):
-        return
-    
 class Choice(ElementBaseClass):
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
         self._childEvents = []
         self._ship = None
         self._additional_info = None
+        self._evetnAnalizer = EventAnalizer()
 
 
     def init_childEventTags(self):
         self._childEvents = [Event(element, self._xmlpath, self._uniqueXPathGenerator) for element in xpath(self._element, './event')]
-        self._childEvents = self._ensure_childEvents(self._childEvents)
+        self._childEvents = self._evetnAnalizer.ensureChildEvents(self._childEvents, self._ship)
         for event in self._childEvents:
             event.init_childChoiceTags()
     
@@ -120,6 +124,10 @@ class Choice(ElementBaseClass):
                             eventNodeElement._event._hullKillNode = new_node
                         elif i == 1:
                             eventNodeElement._event._crewKillNode = new_node
+                        elif i == 2:
+                            eventNodeElement._event._surrenderNode = new_node
+                        else:
+                            raise IndexError
                     growTree(new_node, new_eventNode)
         
         def treeAnalize(tree):
@@ -129,9 +137,9 @@ class Choice(ElementBaseClass):
                 for eventNodeElement in node.data._events:
                     if eventNodeElement._event is None:
                         continue
-                    info.append(eventAnalize(eventNodeElement))
+                    info.append(eventAnalize(tree, eventNodeElement))
                 depth = tree.depth(node)
-                for eventlist, hkInfo, ckInfo, prob in info:
+                for eventlist, fightDict, prob in info:
                     if eventlist is not None:
                         for eventclass in eventlist:
                             if eventclass._priority > depth:
@@ -139,35 +147,43 @@ class Choice(ElementBaseClass):
                                 if textInfo:
                                     nece_info.append(f'{prob:.0%} {textInfo}' if prob < 1 else textInfo)
                     
-                    if hkInfo is not None and ckInfo is not None:
-                        hkText = ' '.join(hkInfo)
-                        ckText = ' '.join(hkInfo)
-                        if hkText == ckText:
-                            nece_info.append(f'Fight(CK=HK: {hkText})')
-                        else:
-                            nece_info.append(f'Fight(CK: {ckText})(HK: {hkText})')
-                    elif hkInfo is not None and ckInfo is None:
-                        hkText = ' '.join(hkInfo)
-                        nece_info.append(f'Fight(HK: {hkText})')
-                    elif hkInfo is None and ckInfo is not None:
-                        ckText = ' '.join(ckInfo)
-                        nece_info.append(f'Fight(CK: {ckText})')
+                    if fightDict is not None:
+                        fightDict = {key: ' '.join(value) for key, value in fightDict.items() if value is not None}
+                        
+                    # if hkInfo is not None and ckInfo is not None and srInfo is not None:
+                    #     hkText = ' '.join(hkInfo)
+                    #     ckText = ' '.join(ckInfo)
+                    #     srText = ' '.join(srInfo)
+                    #     if hkText == ckText and ckText == srText:
+                    #         nece_info.append(f'Fight(CK=HK=SR: {hkText})')
+                        
+                    #     else:
+                    #         nece_info.append(f'Fight(CK: {ckText})(HK: {hkText})(SR: {srText})')
+                    # elif hkInfo is not None and ckInfo is None:
+                    #     hkText = ' '.join(hkInfo)
+                    #     nece_info.append(f'Fight(HK: {hkText})')
+                    # elif hkInfo is None and ckInfo is not None:
+                    #     ckText = ' '.join(ckInfo)
+                    #     nece_info.append(f'Fight(CK: {ckText})')
             
             return nece_info
             
-        def eventAnalize(eventNodeElement):
+        def eventAnalize(tree, eventNodeElement):
             if isinstance(eventNodeElement._event, FixedEvent):
-                return [NameReturn(eventNodeElement._event._event)], None, None, eventNodeElement._prob
+                return [NameReturn(eventNodeElement._event._event)], None, eventNodeElement._prob
             
             elif isinstance(eventNodeElement._event, FightEvent):
                 hkInfo = None
                 ckInfo = None
-                if eventNodeElement._event._hullKillNode is not None:
+                srInfo = None
+                if eventNodeElement._event._hullKillNode is not None and eventNodeElement._event.is_HKexist:
                     hkInfo = treeAnalize(tree.subtree(eventNodeElement._event._hullKillNode.identifier))
-                if eventNodeElement._event._crewKillNode is not None:
+                if eventNodeElement._event._crewKillNode is not None and eventNodeElement._event.is_CKexist:
                     ckInfo = treeAnalize(tree.subtree(eventNodeElement._event._crewKillNode.identifier))
+                if eventNodeElement._event._surrenderNode is not None and eventNodeElement._event.is_SRexist:
+                    ckInfo = treeAnalize(tree.subtree(eventNodeElement._event._surrenderNode.identifier))
                 
-                return None, hkInfo, ckInfo, eventNodeElement._prob
+                return None, {'HK': hkInfo, 'CK': ckInfo, 'SR': srInfo}, eventNodeElement._prob
             
             eventlist = []
             for element in eventNodeElement._event._element.iterchildren():
@@ -176,7 +192,7 @@ class Choice(ElementBaseClass):
                 except KeyError:
                     continue
                 eventlist.append(eventclass)
-            return eventlist, None, None, eventNodeElement._prob
+            return eventlist, None, eventNodeElement._prob
         
         tree = Tree()
         rootEventNode = EventNode(self._childEvents, 1)
@@ -199,10 +215,7 @@ class Event(ElementBaseClass):
     
     def init_childChoiceTags(self):
         self._childChoices = [global_choice_map.get(f'{self._xmlpath}${self._uniqueXPathGenerator.getpath(element)}') for element in xpath(self._element, './choice')]
-    
-    def init_childShipTags(self):
-        self._childShips = [global_ship_map.get(element.get('name')) for element in xpath(self._element, './ship')]
-    
+        
 class EventList(ElementBaseClass):
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
@@ -222,25 +235,36 @@ class FightEvent(ElementBaseClass):
     def __init__(self, ship: Ship, element=None, xmlpath='', uniqueXPathGenerator=None):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
         self._ship = ship
+        self._eventAnalizer = EventAnalizer()
         self._hullKillEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './destroyed')]
         self._crewKillEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './deadCrew')]
+        self._surrenderEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './surrender')]
         self._hullKillChoice = Choice(element, xmlpath, uniqueXPathGenerator)
         self._crewKillChoice = Choice(element, xmlpath, uniqueXPathGenerator)
+        self._surrenderChoice = Choice(element, xmlpath, uniqueXPathGenerator)
         self._childChoices = None
         self._hullKillNode = None
         self._crewKillNode = None
+        self._surrenderNode = None
+        self.is_HKexist = True if len(xpath(ship._element, './destroyed')) > 0 else False
+        self.is_CKexist = True if len(xpath(ship._element, './deadCrew')) > 0 else False
+        self.is_SRexist = True if len(xpath(ship._element, './surrender')) > 0 else False
         
     def init_childEventTags(self):
-        self._hullKillEvents = self._ensure_childEvents(self._hullKillEvents)
-        self._crewKillEvents = self._ensure_childEvents(self._crewKillEvents)
+        self._hullKillEvents = self._eventAnalizer.ensureChildEvents(self._hullKillEvents, self._ship)
+        self._crewKillEvents = self._eventAnalizer.ensureChildEvents(self._crewKillEvents, self._ship)
+        self._surrenderEvents = self._eventAnalizer.ensureChildEvents(self._surrenderEvents, self._ship)
         for event in self._hullKillEvents:
             event.init_childChoiceTags()
         for event in self._crewKillEvents:
             event.init_childChoiceTags()
+        for event in self._surrenderEvents:
+            event.init_childChoiceTags()
         
         self._hullKillChoice._childEvents = self._hullKillEvents
         self._crewKillChoice._childEvents = self._crewKillEvents
-        self._childChoices = [self._hullKillChoice, self._crewKillChoice]
+        self._surrenderChoice._childEvents = self._surrenderEvents
+        self._childChoices = [self._hullKillChoice, self._crewKillChoice, self._surrenderChoice]
 
 class EventNodeElement():
     def __init__(self, event, prob) -> None:
