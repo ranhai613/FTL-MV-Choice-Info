@@ -58,25 +58,23 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Take the risk.\n"
-"Reward }(H)[] \n"
-"or Reward }(M)\n"
-"<!>Lose your crew(clonable)[] \n"
-"or Reward }(M)[Gain a weapon(Giftlist Minelaunchers Trapper)[], []]"
+"33% Reward }(H)\n"
+"33% Reward }(M)\n"
+"33% <!>Lose your crew(clonable)\n"
+"33% Reward }(M)"
 
 #: src-en/data/events_special_salvaging.xml:67
 msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_MINEFIELD\"]/choice[@req=\"LIST_CHECK_ANY_CREW\""
 " and @lvl=\"0\"]/text"
-msgstr ""
-"You have no sacrificial crew to send in the minefield.\n"
-"[]"
+msgstr "You have no sacrificial crew to send in the minefield.\n"
 
 #: src-en/data/events_special_salvaging.xml:71
 msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_MINEFIELD\"]/choice[@req=\"rock_crusader\"]/text"
 msgstr ""
 "(Crusader Crew) Your Crusader knows a lot about explosives, and can also take a hit.\n"
-"Reward }(M)[]"
+"Reward }(M)"
 
 #: src-en/data/events_special_salvaging.xml:73
 msgid ""
@@ -92,7 +90,7 @@ msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_MINEFIELD\"]/choice[@req=\"rock_paladin\"]/text"
 msgstr ""
 "(Paladin Crew) Your Paladin knows a lot about explosives, and can also take a hit.\n"
-"Reward }(M)[]"
+"Reward }(M)"
 
 #: src-en/data/events_special_salvaging.xml:80
 msgid ""
@@ -109,7 +107,7 @@ msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_MINEFIELD\"]/choice[@req=\"LIST_CREW_LANIUS\"]/text"
 msgstr ""
 "(Lanius Crew) Your Lanius can melt down some mines for scrap.\n"
-"Reward ~ Only(L)[]"
+"Reward ~ Only(L)"
 
 #: src-en/data/events_special_salvaging.xml:87
 msgid ""
@@ -123,7 +121,7 @@ msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_MINEFIELD\"]/choice[6]/text"
 msgstr ""
 "Don't risk it, just bring back a few of the outliers.\n"
-"Reward } Only(L)[]"
+"Reward } Only(L)"
 
 #: src-en/data/events_special_salvaging.xml:100
 msgid ""
@@ -164,7 +162,7 @@ msgid ""
 "data/events_special_salvaging.xml$//eventList[@name=\"SALVAGE_DEFAULT_MINEFIELD_RISK\"]/event[3]/choice[1]/text"
 msgstr ""
 "Get the Mine Launcher!\n"
-"Gain a weapon(Giftlist Minelaunchers Trapper)[]"
+"Gain a weapon(Giftlist Minelaunchers Trapper)"
 
 #: src-en/data/events_special_salvaging.xml:117
 msgid ""
@@ -177,9 +175,7 @@ msgstr ""
 #: src-en/data/events_special_salvaging.xml:123
 msgid ""
 "data/events_special_salvaging.xml$//eventList[@name=\"SALVAGE_DEFAULT_MINEFIELD_RISK\"]/event[3]/choice[2]/text"
-msgstr ""
-"Leave it.\n"
-"[]"
+msgstr "Leave it.\n"
 
 #: src-en/data/events_special_salvaging.xml:130
 msgid ""
@@ -194,7 +190,7 @@ msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_DRONE\"]/choice[1]/text"
 msgstr ""
 "Break them down for parts.\n"
-"Reward | Only(L)[]"
+"Reward | Only(L)"
 
 #: src-en/data/events_special_salvaging.xml:135
 msgid ""
@@ -207,7 +203,7 @@ msgid ""
 msgstr ""
 "Scan them.\n"
 "<!>Enemy Boarding(x2 Drone Battle)\n"
-"Gain a drone(Battletog Defend)[]"
+"Gain a drone(Battletog Defend)"
 
 #: src-en/data/events_special_salvaging.xml:142
 msgid ""
@@ -223,7 +219,7 @@ msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_DRONE\"]/choice[@req=\"LIST_CHECK_ENERGY_SHIELD\"]/text"
 msgstr ""
 "(Energy Shield) Approach without any fear of intruders.\n"
-"Gain a drone(Battletog Defend)[]"
+"Gain a drone(Battletog Defend)"
 
 #: src-en/data/events_special_salvaging.xml:152
 msgid ""
@@ -237,7 +233,7 @@ msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_DRONE\"]/choice[@req=\"LIST_CREW_ENGI\"]/text"
 msgstr ""
 "(Engi Crew) Disable the drones first.\n"
-"Gain a drone(Battletog Defend)[]"
+"Gain a drone(Battletog Defend)"
 
 #: src-en/data/events_special_salvaging.xml:159
 msgid ""
@@ -250,7 +246,7 @@ msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_DRONE\"]/choice[@req=\"LIST_CREW_ENGINEER\"]/text"
 msgstr ""
 "(Engineer Crew) Disable the drones first.\n"
-"Gain a drone(Battletog Defend)[]"
+"Gain a drone(Battletog Defend)"
 
 #: src-en/data/events_special_salvaging.xml:166
 msgid ""
@@ -273,33 +269,28 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Send a team to see what loot might be inside.\n"
-"Reward Standard(L)[] \n"
-"or Gain a crew(?)[] \n"
-"or Gain a weapon(Random)[] \n"
-"or [Reward Standard(H)<!>Lose your crew(clonable)[], Reward Standard(H)[], Reward Standard(H)[], []] \n"
-"or <!>Enemy Boarding(x1-x2 Spider)[]"
+"20% Reward Standard(L)\n"
+"20% Gain a crew(?)\n"
+"20% Gain a weapon(Random)\n"
+"20% <!>Enemy Boarding(x1-x2 Spider)"
 
 #: src-en/data/events_special_salvaging.xml:180
 msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_PIRATES\"]/choice[@req=\"LIST_CHECK_ANY_CREW\""
 " and @lvl=\"0\"]/text"
-msgstr ""
-"You cannot send a team, since you lack one.\n"
-"[]"
+msgstr "You cannot send a team, since you lack one.\n"
 
 #: src-en/data/events_special_salvaging.xml:184
 msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_PIRATES\"]/choice[3]/text"
 msgstr ""
 "Scrap the hull.\n"
-"Reward Standard(L)[]"
+"Reward Standard(L)"
 
 #: src-en/data/events_special_salvaging.xml:188
 msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_PIRATES\"]/choice[4]/text"
-msgstr ""
-"Ignore the ship.\n"
-"[]"
+msgstr "Ignore the ship.\n"
 
 #: src-en/data/events_special_salvaging.xml:194
 msgid ""
@@ -336,7 +327,7 @@ msgid ""
 msgstr ""
 "Open their cargo.\n"
 "Reward Standard(H)\n"
-"<!>Lose your crew(clonable)[]"
+"<!>Lose your crew(clonable)"
 
 #: src-en/data/events_special_salvaging.xml:210
 msgid ""
@@ -359,7 +350,7 @@ msgid ""
 "data/events_special_salvaging.xml$//eventList[@name=\"SALVAGE_DEFAULT_PIRATES_LOOT\"]/event[4]/choice[@req=\"BLUELIST_CREW_NODOORS\"]/text"
 msgstr ""
 "(Phasing Crew) Sneak inside.\n"
-"Reward Standard(H)[]"
+"Reward Standard(H)"
 
 #: src-en/data/events_special_salvaging.xml:221
 msgid ""
@@ -374,7 +365,7 @@ msgid ""
 "data/events_special_salvaging.xml$//eventList[@name=\"SALVAGE_DEFAULT_PIRATES_LOOT\"]/event[4]/choice[@req=\"LIST_CREW_ROCK\"]/text"
 msgstr ""
 "(Rock Crew) Send in your Rock first.\n"
-"Reward Standard(H)[]"
+"Reward Standard(H)"
 
 #: src-en/data/events_special_salvaging.xml:228
 msgid ""
@@ -389,9 +380,7 @@ msgstr ""
 #: src-en/data/events_special_salvaging.xml:233
 msgid ""
 "data/events_special_salvaging.xml$//eventList[@name=\"SALVAGE_DEFAULT_PIRATES_LOOT\"]/event[4]/choice[4]/text"
-msgstr ""
-"Leave it.\n"
-"[]"
+msgstr "Leave it.\n"
 
 #: src-en/data/events_special_salvaging.xml:238
 msgid ""
@@ -421,39 +410,35 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Attempt to open the cache.\n"
-"Reward { And }(M)[] \n"
-"or Reward Stuff(L)[] \n"
-"or Gain a weapon(Random)[] \n"
-"or Map Reveal[] \n"
-"or Gain a crew(?)[] \n"
-"or <!>Lose your crew(clonable)[]"
+"17% Reward { And }(M)\n"
+"17% Reward Stuff(L)\n"
+"17% Gain a weapon(Random)\n"
+"17% Map Reveal\n"
+"17% Gain a crew(?)\n"
+"17% <!>Lose your crew(clonable)"
 
 #: src-en/data/events_special_salvaging.xml:258
 msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_CACHE\"]/choice[@req=\"LIST_CHECK_ANY_CREW\""
 " and @lvl=\"0\"]/text"
-msgstr ""
-"There's no available crew to send.\n"
-"[]"
+msgstr "There's no available crew to send.\n"
 
 #: src-en/data/events_special_salvaging.xml:262
 msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_CACHE\"]/choice[@req=\"DRONE_CONTROL_BOARDING_DAMAGE\"]/text"
 msgstr ""
 "(Boarding Drone) Attempt to open the cache.\n"
-"Reward { And }(M)[] \n"
-"or Reward Stuff(L)[] \n"
-"or Gain a weapon(Random)[] \n"
-"or Map Reveal[] \n"
-"or Gain a crew(?)[] \n"
-"or |-1[]"
+"17% Reward { And }(M)\n"
+"17% Reward Stuff(L)\n"
+"17% Gain a weapon(Random)\n"
+"17% Map Reveal\n"
+"17% Gain a crew(?)\n"
+"17% |-1"
 
 #: src-en/data/events_special_salvaging.xml:266
 msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_CACHE\"]/choice[4]/text"
-msgstr ""
-"Ignore the cache.\n"
-"[]"
+msgstr "Ignore the cache.\n"
 
 #: src-en/data/events_special_salvaging.xml:272
 msgid ""
@@ -583,26 +568,20 @@ msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_SHRINE\"]/choice[1]/text"
 msgstr ""
 "Raid the shrine for any valuables.\n"
-"Reward Standard(M)[[]] \n"
-"or [] \n"
-"or Reward Standard(M)[] \n"
-"or [Reward { Only(M)[], Reward { Only(H)[[]]]"
+"25% Reward Standard(M)\n"
+"25% Reward Standard(M)"
 
 #: src-en/data/events_special_salvaging.xml:338
 msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_SHRINE\"]/choice[@req=\"LIST_CREW_ZOLTAN\"]/text"
 msgstr ""
 "(Zoltan Crew) Pray to the shrine.\n"
-"[] \n"
-"or Gain a crew(Zoltan Monk)[] \n"
-"or []"
+"33% Gain a crew(Zoltan Monk)"
 
 #: src-en/data/events_special_salvaging.xml:342
 msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_SHRINE\"]/choice[3]/text"
-msgstr ""
-"Ignore the shrine.\n"
-"[]"
+msgstr "Ignore the shrine.\n"
 
 #: src-en/data/events_special_salvaging.xml:348
 msgid ""
@@ -616,9 +595,7 @@ msgstr ""
 #: src-en/data/events_special_salvaging.xml:351
 msgid ""
 "data/events_special_salvaging.xml$//eventList[@name=\"SALVAGE_DEFAULT_SHRINE_ROB\"]/event[1]/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_special_salvaging.xml:356
 msgid ""
@@ -649,7 +626,7 @@ msgid ""
 "data/events_special_salvaging.xml$//eventList[@name=\"SALVAGE_DEFAULT_SHRINE_ROB\"]/event[4]/choice[1]/text"
 msgstr ""
 "Take only a few.\n"
-"Reward { Only(M)[]"
+"Reward { Only(M)"
 
 #: src-en/data/events_special_salvaging.xml:367
 msgid ""
@@ -663,7 +640,7 @@ msgid ""
 "data/events_special_salvaging.xml$//eventList[@name=\"SALVAGE_DEFAULT_SHRINE_ROB\"]/event[4]/choice[2]/text"
 msgstr ""
 "Take as many as you can.\n"
-"Reward { Only(H)[[]]"
+"Reward { Only(H)"
 
 #: src-en/data/events_special_salvaging.xml:374
 msgid ""
@@ -678,9 +655,7 @@ msgstr ""
 #: src-en/data/events_special_salvaging.xml:377
 msgid ""
 "data/events_special_salvaging.xml$//eventList[@name=\"SALVAGE_DEFAULT_SHRINE_ROB\"]/event[4]/choice[2]/event/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_special_salvaging.xml:386
 msgid ""
@@ -722,18 +697,15 @@ msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_COLONY\"]/choice[1]/text"
 msgstr ""
 "Visit the colony.\n"
-"Reward Standard(H)[] \n"
-"or [] \n"
-"or Gain a drone(Doctor Defense)[] \n"
-"or Gain a crew(Rock Outcast)[] \n"
-"or <!>Enemy Boarding(x2-x4 Rebel Random)[]"
+"20% Reward Standard(H)\n"
+"20% Gain a drone(Doctor Defense)\n"
+"20% Gain a crew(Rock Outcast)\n"
+"20% <!>Enemy Boarding(x2-x4 Rebel Random)"
 
 #: src-en/data/events_special_salvaging.xml:406
 msgid ""
 "data/events_special_salvaging.xml$//event[@name=\"SALVAGE_DEFAULT_COLONY\"]/choice[2]/text"
-msgstr ""
-"Avoid the ruins.\n"
-"[]"
+msgstr "Avoid the ruins.\n"
 
 #: src-en/data/events_special_salvaging.xml:412
 msgid ""

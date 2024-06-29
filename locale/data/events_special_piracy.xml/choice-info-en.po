@@ -59,7 +59,7 @@ msgid ""
 "data/events_special_piracy.xml$/FTL/event[@name=\"ENCOUNTER_PIRATE_REGULAR\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK: Reward Standard(M))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_special_piracy.xml:135
 msgid ""
@@ -103,7 +103,7 @@ msgid ""
 "data/events_special_piracy.xml$/FTL/event[@name=\"ENCOUNTER_PIRATE_SUN\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK: Reward Standard(M))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_special_piracy.xml:153
 msgid ""
@@ -117,15 +117,14 @@ msgid ""
 "data/events_special_piracy.xml$/FTL/event[@name=\"ENCOUNTER_PIRATE_ASTEROID\"]/choice[1]/text"
 msgstr ""
 "Turn and fight.\n"
-"Fight(CK=HK: [])"
+"Fight(HK: Reward Standard(M))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_special_piracy.xml:160
 msgid ""
 "data/events_special_piracy.xml$/FTL/event[@name=\"ENCOUNTER_PIRATE_ASTEROID\"]/choice[@req=\"pilot\"]/text"
 msgstr ""
 "(Upg. Piloting) Attempt to escape from the pirate.\n"
-"[] \n"
-"or [Fight]"
+"50% Fight"
 
 #: src-en/data/events_special_piracy.xml:166
 msgid ""
@@ -161,7 +160,8 @@ msgid ""
 "data/events_special_piracy.xml$/FTL/event[@name=\"ENCOUNTER_PIRATE_NO_ESCAPE_MV\"]/choice[1]/text"
 msgstr ""
 "Continue...\n"
-"[Fight(CK=HK: []), [Fight(CK=HK: [])]]"
+"Fight(HK: Reward {(M))(CK: Reward {(H))\n"
+"Fight(HK: Reward {(M))(CK: Reward {(H))"
 
 #: src-en/data/events_special_piracy.xml:184
 msgid ""
@@ -173,14 +173,14 @@ msgid ""
 "data/events_special_piracy.xml$/FTL/event[@name=\"ENCOUNTER_PIRATE_NO_ESCAPE_MV\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK: Reward {(M))(CK: Reward {(H))"
 
 #: src-en/data/events_special_piracy.xml:191
 msgid ""
 "data/events_special_piracy.xml$/FTL/event[@name=\"ENCOUNTER_PIRATE_NO_ESCAPE_MV\"]/choice[1]/event/choice[@req=\"ANTI_VIRUS\"]/text"
 msgstr ""
 "(Anti-Virus) Restore your engines.\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK: Reward {(M))(CK: Reward {(H))"
 
 #: src-en/data/events_special_piracy.xml:193
 msgid ""
@@ -192,14 +192,14 @@ msgid ""
 "data/events_special_piracy.xml$/FTL/event[@name=\"ENCOUNTER_PIRATE_NO_ESCAPE_MV\"]/choice[1]/event/choice[@req=\"ANTI_VIRUS\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK: Reward {(M))(CK: Reward {(H))"
 
 #: src-en/data/events_special_piracy.xml:204
 msgid ""
 "data/events_special_piracy.xml$/FTL/event[@name=\"ENCOUNTER_PIRATE_NO_ESCAPE_MV\"]/choice[@req=\"hacking\"]/text"
 msgstr ""
 "(Hacking System) Counter the remote hacking.\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK: Reward {(M))(CK: Reward {(H))"
 
 #: src-en/data/events_special_piracy.xml:206
 msgid ""
@@ -213,14 +213,14 @@ msgid ""
 "data/events_special_piracy.xml$/FTL/event[@name=\"ENCOUNTER_PIRATE_NO_ESCAPE_MV\"]/choice[@req=\"hacking\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK: Reward {(M))(CK: Reward {(H))"
 
 #: src-en/data/events_special_piracy.xml:220
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"ENCOUNTER_MERCENARY\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK: Reward Standard(M))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_special_piracy.xml:225
 msgid ""
@@ -261,7 +261,7 @@ msgid ""
 "data/events_special_piracy.xml$//event[@name=\"ENCOUNTER_SMUGGLER\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK: Reward Standard(M))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_special_piracy.xml:240
 msgid ""
@@ -299,9 +299,7 @@ msgstr ""
 #: src-en/data/events_special_piracy.xml:256
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_DATABASE\"]/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_special_piracy.xml:264
 msgid "data/events_special_piracy.xml$//event[@name=\"SLAVER_OFFERS\"]/text"
@@ -313,7 +311,7 @@ msgid ""
 msgstr ""
 "Buy a slave.\n"
 "-35≤~≤-25\n"
-"Gain a crew(List Slaves Generic)[[]]"
+"Gain a crew(List Slaves Generic)"
 
 #: src-en/data/events_special_piracy.xml:268
 msgid ""
@@ -323,9 +321,7 @@ msgstr "\"A great purchase. May they serve you well, captain...\""
 #: src-en/data/events_special_piracy.xml:274
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_OFFERS\"]/choice[1]/event/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_special_piracy.xml:280
 msgid ""
@@ -334,7 +330,7 @@ msgid ""
 msgstr ""
 "[Reputation: 1+] Buy a 'high value' slave.\n"
 "-50≤~≤-40\n"
-"Gain a crew(List Slaves Good)[[]]"
+"Gain a crew(List Slaves Good)"
 
 #: src-en/data/events_special_piracy.xml:282
 msgid ""
@@ -346,9 +342,7 @@ msgstr "\"A great purchase. May they serve you well, captain...\""
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_OFFERS\"]/choice[@req=\"rep_comb_slaver\""
 " and @lvl=\"1\"]/event/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_special_piracy.xml:294
 msgid ""
@@ -357,7 +351,7 @@ msgid ""
 msgstr ""
 "[Reputation: 3+] Buy an exotic slave.\n"
 "-70≤~≤-60\n"
-"Gain a crew(List Slaves Great)[[]]"
+"Gain a crew(List Slaves Great)"
 
 #: src-en/data/events_special_piracy.xml:296
 msgid ""
@@ -369,16 +363,14 @@ msgstr "\"A great purchase. May they serve you well, captain...\""
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_OFFERS\"]/choice[@req=\"rep_comb_slaver\""
 " and @lvl=\"3\"]/event/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_special_piracy.xml:308
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_OFFERS\"]/choice[4]/text"
 msgstr ""
 "Nevermind.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_special_piracy.xml:310
 msgid ""
@@ -395,9 +387,7 @@ msgstr ""
 #: src-en/data/events_special_piracy.xml:316
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_OFFERS\"]/choice[4]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_special_piracy.xml:324
 msgid ""
@@ -449,14 +439,19 @@ msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_FRIENDLY\"]/choice[1]/text"
 msgstr ""
 "See what they're offering.\n"
-"[-35≤~≤-25Gain a crew(List Slaves Generic)[[]], -50≤~≤-40Gain a crew(List Slaves Good)[[]], -70≤~≤-60Gain a crew(List Slaves Great)[[]], [Storage Check, []]]"
+"-35≤~≤-25\n"
+"Gain a crew(List Slaves Generic)\n"
+"-50≤~≤-40\n"
+"Gain a crew(List Slaves Good)\n"
+"-70≤~≤-60\n"
+"Gain a crew(List Slaves Great)"
 
 #: src-en/data/events_special_piracy.xml:339
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_FRIENDLY\"]/choice[2]/text"
 msgstr ""
 "Attack the slaver.\n"
-"[[Fight]]"
+"Fight"
 
 #: src-en/data/events_special_piracy.xml:341
 msgid ""
@@ -470,23 +465,22 @@ msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_FRIENDLY\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[Fight]"
+"Fight"
 
 #: src-en/data/events_special_piracy.xml:350
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_FRIENDLY\"]/choice[@req=\"teleporter\"]/text"
 msgstr ""
 "(Upg. Teleporter) Use your teleporter to attempt to board the ship and release some of the slaves.\n"
-"Gain a crew(?)[[Fight]] \n"
-"or Gain a crew(?)[[Fight]] \n"
-"or [[Fight]]"
+"33% Gain a crew(?)\n"
+"33% Gain a crew(?)"
 
 #: src-en/data/events_special_piracy.xml:354
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_FRIENDLY\"]/choice[4]/text"
 msgstr ""
 "Ignore the slaver and continue on your way.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_special_piracy.xml:356
 msgid ""
@@ -503,16 +497,12 @@ msgstr ""
 #: src-en/data/events_special_piracy.xml:362
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_FRIENDLY\"]/choice[4]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_special_piracy.xml:368
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_FRIENDLY\"]/choice[@req=\"FEDERATION_DATABASE\"]/text"
-msgstr ""
-"[Federation Database] What is Tiiikaka?\n"
-"[[]]"
+msgstr "[Federation Database] What is Tiiikaka?\n"
 
 #: src-en/data/events_special_piracy.xml:374
 msgid ""
@@ -527,7 +517,7 @@ msgid ""
 "data/events_special_piracy.xml$//eventList[@name=\"SLAVER_FRIENDLY_TELEPORTER\"]/event[1]/choice/text"
 msgstr ""
 "Continue...\n"
-"[Fight]"
+"Fight"
 
 #: src-en/data/events_special_piracy.xml:383
 msgid ""
@@ -543,7 +533,7 @@ msgid ""
 "data/events_special_piracy.xml$//eventList[@name=\"SLAVER_FRIENDLY_TELEPORTER\"]/event[2]/choice/text"
 msgstr ""
 "Continue...\n"
-"[Fight]"
+"Fight"
 
 #: src-en/data/events_special_piracy.xml:392
 msgid ""
@@ -558,7 +548,7 @@ msgid ""
 "data/events_special_piracy.xml$//eventList[@name=\"SLAVER_FRIENDLY_TELEPORTER\"]/event[3]/choice/text"
 msgstr ""
 "Continue...\n"
-"[Fight]"
+"Fight"
 
 #: src-en/data/events_special_piracy.xml:402
 msgid ""
@@ -573,7 +563,7 @@ msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_CHOICE\"]/choice[1]/text"
 msgstr ""
 "Draw straws and send a crew-member over to the slavers.\n"
-"<!>Lose your crew(UNCLONABLE)[]"
+"<!>Lose your crew(UNCLONABLE)"
 
 #: src-en/data/events_special_piracy.xml:410
 msgid ""
@@ -594,7 +584,7 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "\"Logic error: request cannot be met. This is an automated vessel. Demand: refused.\"\n"
-"[Fight(CK: [Reward Standard(M)[Gain a crew(Mantis)[[]], Gain a crew(Rock)[[]], Gain a crew(Engi)[[]], Reward Standard(L)[[]]] or Reward Standard(M)[Gain a crew(Orchid)[[]], Gain a crew(Shell)[[]], Gain a crew(Slug)[[]], Reward Standard(L)[[]]] or Gain a crew(?)Reward Standard(H)[] or Reward Standard(H)[]])(HK: [])]"
+"Fight(HK: Reward Standard(M))(CK: Gain a crew(?))"
 
 #: src-en/data/events_special_piracy.xml:420
 msgid ""
@@ -611,14 +601,14 @@ msgid ""
 " and @lvl=\"0\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK: [Reward Standard(M)[Gain a crew(Mantis)[[]], Gain a crew(Rock)[[]], Gain a crew(Engi)[[]], Reward Standard(L)[[]]] or Reward Standard(M)[Gain a crew(Orchid)[[]], Gain a crew(Shell)[[]], Gain a crew(Slug)[[]], Reward Standard(L)[[]]] or Gain a crew(?)Reward Standard(H)[] or Reward Standard(H)[]])(HK: [])"
+"Fight(HK: Reward Standard(M))(CK: Gain a crew(?))"
 
 #: src-en/data/events_special_piracy.xml:429
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_CHOICE\"]/choice[3]/text"
 msgstr ""
 "We will never surrender one of our crew to slavers!\n"
-"[Fight(CK: [Reward Standard(M)[Gain a crew(Mantis)[[]], Gain a crew(Rock)[[]], Gain a crew(Engi)[[]], Reward Standard(L)[[]]] or Reward Standard(M)[Gain a crew(Orchid)[[]], Gain a crew(Shell)[[]], Gain a crew(Slug)[[]], Reward Standard(L)[[]]] or Gain a crew(?)Reward Standard(H)[] or Reward Standard(H)[]])(HK: [])]"
+"Fight(HK: Reward Standard(M))(CK: Gain a crew(?))"
 
 #: src-en/data/events_special_piracy.xml:431
 msgid ""
@@ -630,14 +620,14 @@ msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_CHOICE\"]/choice[3]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK: [Reward Standard(M)[Gain a crew(Mantis)[[]], Gain a crew(Rock)[[]], Gain a crew(Engi)[[]], Reward Standard(L)[[]]] or Reward Standard(M)[Gain a crew(Orchid)[[]], Gain a crew(Shell)[[]], Gain a crew(Slug)[[]], Reward Standard(L)[[]]] or Gain a crew(?)Reward Standard(H)[] or Reward Standard(H)[]])(HK: [])"
+"Fight(HK: Reward Standard(M))(CK: Gain a crew(?))"
 
 #: src-en/data/events_special_piracy.xml:440
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_CHOICE\"]/choice[@req=\"LIST_CREW_SPIDER\"]/text"
 msgstr ""
 "(Spider Crew) \"Give\" them your spider and let them cause havoc.\n"
-"Reward Standard(H)[]"
+"Reward Standard(H)"
 
 #: src-en/data/events_special_piracy.xml:442
 msgid ""
@@ -653,24 +643,19 @@ msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_CHOICE\"]/choice[@req=\"engines\"]/text"
 msgstr ""
 "(Upg. Engines) Attempt to out-run the pirates.\n"
-"[Fight] \n"
-"or [] \n"
-"or []"
+"33% Fight"
 
 #: src-en/data/events_special_piracy.xml:451
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SLAVER_CHOICE\"]/choice[@req=\"weapons\"]/text"
 msgstr ""
 "(Upg. Weapons) Threaten the pirates.\n"
-"[Fight] \n"
-"or []"
+"50% Fight"
 
 #: src-en/data/events_special_piracy.xml:466
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_DATABASE\"]/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_special_piracy.xml:474
 msgid "data/events_special_piracy.xml$//event[@name=\"MERCENARY_OFFERS\"]/text"
@@ -680,8 +665,8 @@ msgstr "The mercenary grins and names off the various services he can offer."
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_OFFERS\"]/choice[1]/text"
 msgstr ""
-"[Reputation: 1+] \"You're such a good customer, all services are cheaper!\"\n"
-"[]"
+"[Reputation: 1+] \"You're such a good customer, all services are "
+"cheaper!\"\n"
 
 #: src-en/data/events_special_piracy.xml:481
 msgid ""
@@ -689,7 +674,7 @@ msgid ""
 msgstr ""
 "Hire the mercenary to delay the Rebels.\n"
 "-40≤~≤-25\n"
-"Fleet Delay(2)[[]]"
+"Fleet Delay(2)"
 
 #: src-en/data/events_special_piracy.xml:483
 msgid ""
@@ -701,9 +686,7 @@ msgstr ""
 #: src-en/data/events_special_piracy.xml:489
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_OFFERS\"]/choice[2]/event/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_special_piracy.xml:495
 msgid ""
@@ -711,7 +694,7 @@ msgid ""
 msgstr ""
 "Hire the mercenary to scout the sector.\n"
 "-30≤~≤-20\n"
-"Map Reveal[[]]"
+"Map Reveal"
 
 #: src-en/data/events_special_piracy.xml:497
 msgid ""
@@ -723,9 +706,7 @@ msgstr ""
 #: src-en/data/events_special_piracy.xml:503
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_OFFERS\"]/choice[3]/event/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_special_piracy.xml:510
 msgid ""
@@ -733,7 +714,7 @@ msgid ""
 msgstr ""
 "Hire the mercenary to delay the Rebels.\n"
 "-25≤~≤-10\n"
-"Fleet Delay(2)[[]]"
+"Fleet Delay(2)"
 
 #: src-en/data/events_special_piracy.xml:512
 msgid ""
@@ -745,9 +726,7 @@ msgstr ""
 #: src-en/data/events_special_piracy.xml:518
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_OFFERS\"]/choice[4]/event/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_special_piracy.xml:524
 msgid ""
@@ -755,7 +734,7 @@ msgid ""
 msgstr ""
 "Hire the mercenary to scout the sector.\n"
 "-20≤~≤-10\n"
-"Map Reveal[[]]"
+"Map Reveal"
 
 #: src-en/data/events_special_piracy.xml:526
 msgid ""
@@ -767,9 +746,7 @@ msgstr ""
 #: src-en/data/events_special_piracy.xml:532
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_OFFERS\"]/choice[5]/event/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_special_piracy.xml:539
 msgid ""
@@ -779,7 +756,7 @@ msgstr ""
 "[Reputation: 3+] Hire the mercenary to both scout and delay the fleet.\n"
 "-30≤~≤-20\n"
 "Map Reveal\n"
-"Fleet Delay(2)[[]]"
+"Fleet Delay(2)"
 
 #: src-en/data/events_special_piracy.xml:541
 msgid ""
@@ -793,16 +770,14 @@ msgstr ""
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_OFFERS\"]/choice[@req=\"rep_comb_merc\""
 " and @lvl=\"3\"]/event/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_special_piracy.xml:554
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_OFFERS\"]/choice[7]/text"
 msgstr ""
 "Nevermind.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_special_piracy.xml:556
 msgid ""
@@ -819,9 +794,7 @@ msgstr ""
 #: src-en/data/events_special_piracy.xml:562
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_OFFERS\"]/choice[7]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_special_piracy.xml:570
 msgid ""
@@ -873,14 +846,24 @@ msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_FRIENDLY\"]/choice[1]/text"
 msgstr ""
 "See what they're offering.\n"
-"[[], -40≤~≤-25Fleet Delay(2)[[]], -30≤~≤-20Map Reveal[[]], -25≤~≤-10Fleet Delay(2)[[]], -20≤~≤-10Map Reveal[[]], -30≤~≤-20Map RevealFleet Delay(2)[[]], [Storage Check, []]]"
+"-40≤~≤-25\n"
+"Fleet Delay(2)\n"
+"-30≤~≤-20\n"
+"Map Reveal\n"
+"-25≤~≤-10\n"
+"Fleet Delay(2)\n"
+"-20≤~≤-10\n"
+"Map Reveal\n"
+"-30≤~≤-20\n"
+"Map Reveal\n"
+"Fleet Delay(2)"
 
 #: src-en/data/events_special_piracy.xml:585
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_FRIENDLY\"]/choice[2]/text"
 msgstr ""
 "Attack the mercenaries.\n"
-"[[Fight]]"
+"Fight"
 
 #: src-en/data/events_special_piracy.xml:587
 msgid ""
@@ -895,14 +878,14 @@ msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_FRIENDLY\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[Fight]"
+"Fight"
 
 #: src-en/data/events_special_piracy.xml:596
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_FRIENDLY\"]/choice[3]/text"
 msgstr ""
 "Ignore the mercenary and continue on your way.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_special_piracy.xml:598
 msgid ""
@@ -919,16 +902,12 @@ msgstr ""
 #: src-en/data/events_special_piracy.xml:604
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_FRIENDLY\"]/choice[3]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_special_piracy.xml:610
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_FRIENDLY\"]/choice[@req=\"FEDERATION_DATABASE\"]/text"
-msgstr ""
-"[Federation Database] What is the Syndicate?\n"
-"[[]]"
+msgstr "[Federation Database] What is the Syndicate?\n"
 
 #: src-en/data/events_special_piracy.xml:616
 msgid ""
@@ -967,7 +946,7 @@ msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_CHOICE\"]/choice[1]/text"
 msgstr ""
 "Pay their toll.\n"
-"-30≤~≤-20[]"
+"-30≤~≤-20"
 
 #: src-en/data/events_special_piracy.xml:627
 msgid ""
@@ -979,7 +958,7 @@ msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_CHOICE\"]/choice[2]/text"
 msgstr ""
 "Reject their 'offer'.\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK: Reward Standard(M))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_special_piracy.xml:636
 msgid ""
@@ -991,31 +970,26 @@ msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_CHOICE\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK: Reward Standard(M))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_special_piracy.xml:645
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_CHOICE\"]/choice[@req=\"engines\"]/text"
 msgstr ""
 "(Upg. Engines) Attempt to out-run the pirates.\n"
-"[Fight] \n"
-"or [] \n"
-"or []"
+"33% Fight"
 
 #: src-en/data/events_special_piracy.xml:649
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"MERCENARY_CHOICE\"]/choice[@req=\"weapons\"]/text"
 msgstr ""
 "(Upg. Weapons) Threaten the pirates.\n"
-"[Fight] \n"
-"or []"
+"50% Fight"
 
 #: src-en/data/events_special_piracy.xml:664
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_DATABASE\"]/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_special_piracy.xml:672
 msgid "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_OFFERS\"]/text"
@@ -1028,7 +1002,7 @@ msgid ""
 msgstr ""
 "Purchase a weapon.\n"
 "-60≤~≤-45\n"
-"Gain a weapon(List Contraband Wep Smuggler)[[]]"
+"Gain a weapon(List Contraband Wep Smuggler)"
 
 #: src-en/data/events_special_piracy.xml:676
 msgid ""
@@ -1040,9 +1014,7 @@ msgstr ""
 #: src-en/data/events_special_piracy.xml:682
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_OFFERS\"]/choice[1]/event/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_special_piracy.xml:688
 msgid ""
@@ -1051,7 +1023,7 @@ msgid ""
 msgstr ""
 "[Reputation: 1+] Inquire on another weapon offer.\n"
 "-60≤~≤-45\n"
-"Gain a weapon(List Contraband Wep Smuggler)[[]]"
+"Gain a weapon(List Contraband Wep Smuggler)"
 
 #: src-en/data/events_special_piracy.xml:690
 msgid ""
@@ -1065,9 +1037,7 @@ msgstr ""
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_OFFERS\"]/choice[@req=\"rep_comb_smuggler\""
 " and @lvl=\"1\"]/event/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_special_piracy.xml:702
 msgid ""
@@ -1075,7 +1045,7 @@ msgid ""
 msgstr ""
 "Purchase a drone.\n"
 "-55≤~≤-40\n"
-"Gain a drone(List Contraband Drone Smuggler)[[]]"
+"Gain a drone(List Contraband Drone Smuggler)"
 
 #: src-en/data/events_special_piracy.xml:704
 msgid ""
@@ -1087,9 +1057,7 @@ msgstr ""
 #: src-en/data/events_special_piracy.xml:710
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_OFFERS\"]/choice[3]/event/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_special_piracy.xml:716
 msgid ""
@@ -1098,7 +1066,7 @@ msgid ""
 msgstr ""
 "[Reputation: 3+] Purchase an augment.\n"
 "-65≤~≤-50\n"
-"Gain an augment(List Contraband Augment Smuggler)[[]]"
+"Gain an augment(List Contraband Augment Smuggler)"
 
 #: src-en/data/events_special_piracy.xml:718
 msgid ""
@@ -1112,16 +1080,14 @@ msgstr ""
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_OFFERS\"]/choice[@req=\"rep_comb_smuggler\""
 " and @lvl=\"3\"]/event/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_special_piracy.xml:730
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_OFFERS\"]/choice[5]/text"
 msgstr ""
 "Nevermind.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_special_piracy.xml:732
 msgid ""
@@ -1138,9 +1104,7 @@ msgstr ""
 #: src-en/data/events_special_piracy.xml:738
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_OFFERS\"]/choice[5]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_special_piracy.xml:746
 msgid ""
@@ -1193,14 +1157,21 @@ msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_FRIENDLY\"]/choice[1]/text"
 msgstr ""
 "See what they're offering.\n"
-"[-60≤~≤-45Gain a weapon(List Contraband Wep Smuggler)[[]], -60≤~≤-45Gain a weapon(List Contraband Wep Smuggler)[[]], -55≤~≤-40Gain a drone(List Contraband Drone Smuggler)[[]], -65≤~≤-50Gain an augment(List Contraband Augment Smuggler)[[]], [Storage Check, []]]"
+"-60≤~≤-45\n"
+"Gain a weapon(List Contraband Wep Smuggler)\n"
+"-60≤~≤-45\n"
+"Gain a weapon(List Contraband Wep Smuggler)\n"
+"-55≤~≤-40\n"
+"Gain a drone(List Contraband Drone Smuggler)\n"
+"-65≤~≤-50\n"
+"Gain an augment(List Contraband Augment Smuggler)"
 
 #: src-en/data/events_special_piracy.xml:761
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_FRIENDLY\"]/choice[2]/text"
 msgstr ""
 "Attack the smuggler.\n"
-"[[Fight]]"
+"Fight"
 
 #: src-en/data/events_special_piracy.xml:763
 msgid ""
@@ -1216,14 +1187,14 @@ msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_FRIENDLY\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[Fight]"
+"Fight"
 
 #: src-en/data/events_special_piracy.xml:772
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_FRIENDLY\"]/choice[3]/text"
 msgstr ""
 "Ignore the smuggler and continue on your way.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_special_piracy.xml:774
 msgid ""
@@ -1240,16 +1211,12 @@ msgstr ""
 #: src-en/data/events_special_piracy.xml:780
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_FRIENDLY\"]/choice[3]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_special_piracy.xml:786
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_FRIENDLY\"]/choice[@req=\"FEDERATION_DATABASE\"]/text"
-msgstr ""
-"[Federation Database] What is Argeonn?\n"
-"[[]]"
+msgstr "[Federation Database] What is Argeonn?\n"
 
 #: src-en/data/events_special_piracy.xml:792
 msgid ""
@@ -1265,7 +1232,7 @@ msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_CHOICE\"]/choice[1]/text"
 msgstr ""
 "Pay the tribute.\n"
-"-6≤{≤-3[]"
+"-6≤{≤-3"
 
 #: src-en/data/events_special_piracy.xml:800
 msgid ""
@@ -1277,7 +1244,7 @@ msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_CHOICE\"]/choice[2]/text"
 msgstr ""
 "Refuse to pay tribute.\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK: Reward Standard(M))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_special_piracy.xml:809
 msgid ""
@@ -1289,21 +1256,18 @@ msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_CHOICE\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK: Reward Standard(M))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_special_piracy.xml:818
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_CHOICE\"]/choice[@req=\"engines\"]/text"
 msgstr ""
 "(Upg. Engines) Attempt to out-run the pirates.\n"
-"[Fight] \n"
-"or [] \n"
-"or []"
+"33% Fight"
 
 #: src-en/data/events_special_piracy.xml:822
 msgid ""
 "data/events_special_piracy.xml$//event[@name=\"SMUGGLER_CHOICE\"]/choice[@req=\"weapons\"]/text"
 msgstr ""
 "(Upg. Weapons) Threaten the pirates.\n"
-"[Fight] \n"
-"or []"
+"50% Fight"

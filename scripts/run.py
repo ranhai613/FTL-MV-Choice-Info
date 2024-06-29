@@ -112,8 +112,8 @@ class Choice(ElementBaseClass):
         return self._uniqueXPathGenerator.getpath(texttags[0])
     
     def _getInfoList(self):
-        def growTree(parent_node, parent_events: EventNode):
-            for eventNodeElement in parent_events._events:
+        def growTree(parent_node, parent_eventNode: EventNode):
+            for eventNodeElement in parent_eventNode._events:
                 if eventNodeElement._event._childChoices is None:
                     continue
                 for i, choice in enumerate(eventNodeElement._event._childChoices):
@@ -130,43 +130,53 @@ class Choice(ElementBaseClass):
                             raise IndexError
                     growTree(new_node, new_eventNode)
         
-        def treeAnalize(tree):
-            nece_info = []
-            for node in tree.all_nodes_itr():
-                info = []
-                for eventNodeElement in node.data._events:
-                    if eventNodeElement._event is None:
-                        continue
-                    info.append(eventAnalize(tree, eventNodeElement))
-                depth = tree.depth(node)
-                for eventlist, fightDict, prob in info:
-                    if eventlist is not None:
-                        for eventclass in eventlist:
-                            if eventclass._priority > depth:
-                                textInfo = eventclass.getInfo()
-                                if textInfo:
-                                    nece_info.append(f'{prob:.0%} {textInfo}' if prob < 1 else textInfo)
-                    
-                    if fightDict is not None:
-                        fightDict = {key: ' '.join(value) for key, value in fightDict.items() if value is not None}
+        def treeAnalize(tree, tune=0):
+            for  i in range(10):
+                nece_info = []
+                for node in tree.all_nodes_itr():
+                    info = []
+                    for eventNodeElement in node.data._events:
+                        if eventNodeElement._event is None:
+                            continue
+                        info.append(eventAnalize(tree, eventNodeElement))
+                    depth = tree.depth(node) + tune + (i * -1)
+                    for eventlist, fightDict, prob in info:
+                        if eventlist is not None:
+                            for eventclass in eventlist:
+                                if eventclass._priority > depth:
+                                    textInfo = eventclass.getInfo()
+                                    if textInfo:
+                                        nece_info.append(f'{prob:.0%} {textInfo}' if prob < 1 else textInfo)
                         
-                    # if hkInfo is not None and ckInfo is not None and srInfo is not None:
-                    #     hkText = ' '.join(hkInfo)
-                    #     ckText = ' '.join(ckInfo)
-                    #     srText = ' '.join(srInfo)
-                    #     if hkText == ckText and ckText == srText:
-                    #         nece_info.append(f'Fight(CK=HK=SR: {hkText})')
-                        
-                    #     else:
-                    #         nece_info.append(f'Fight(CK: {ckText})(HK: {hkText})(SR: {srText})')
-                    # elif hkInfo is not None and ckInfo is None:
-                    #     hkText = ' '.join(hkInfo)
-                    #     nece_info.append(f'Fight(HK: {hkText})')
-                    # elif hkInfo is None and ckInfo is not None:
-                    #     ckText = ' '.join(ckInfo)
-                    #     nece_info.append(f'Fight(CK: {ckText})')
-            
-            return nece_info
+                        if fightDict is not None:
+                            fightDict = {key: ' '.join(value) for key, value in fightDict.items() if value is not None}
+                            length = len(fightDict)
+                            if length == 3:
+                                if fightDict['HK'] == fightDict['CK'] and fightDict['CK'] == fightDict['SR']:
+                                    nece_info.append(f'Fight(CK=HK=SR: {fightDict["HK"]})')
+                                elif fightDict['HK'] == fightDict['CK']:
+                                    nece_info.append(f'Fight(CK=HK: {fightDict["HK"]})(SR: {fightDict["SR"]})')
+                                elif fightDict['HK'] == fightDict['SR']:
+                                    nece_info.append(f'Fight(CK: {fightDict["CK"]})(HK=SR: {fightDict["HK"]})')
+                                elif fightDict['CK'] == fightDict['SR']:
+                                    nece_info.append(f'Fight(CK=SR: {fightDict["CK"]})(HK: {fightDict["HK"]})')
+                                else:
+                                    nece_info.append(f'Fight(CK: {fightDict["CK"]})(HK: {fightDict["HK"]})(SR: {fightDict["SR"]})')
+                            elif length == 2:
+                                keyList = list(fightDict.keys())
+                                infoList = list(fightDict.values())
+                                if infoList[0] == infoList[1]:
+                                    nece_info.append(f'Fight({keyList[0]}={keyList[1]}: {infoList[0]})')
+                                else:
+                                    nece_info.append(f'Fight({keyList[0]}: {infoList[0]})({keyList[1]}: {infoList[1]})')
+                            elif length == 1:
+                                for key, value in fightDict.items():
+                                    nece_info.append(f'Fight({key}: {value})')
+                
+                if len(nece_info) > 0:
+                    return nece_info
+            else:
+                return []
             
         def eventAnalize(tree, eventNodeElement):
             if isinstance(eventNodeElement._event, FixedEvent):

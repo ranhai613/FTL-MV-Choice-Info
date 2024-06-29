@@ -23,7 +23,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"START_BEACON_ANCIENT\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[Fight(CK=HK: [])]]"
+"Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a weapon(Giftlist Ancient))"
 
 #: src-en/data/events_sector_obelisk.xml:29
 msgid ""
@@ -37,7 +37,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"START_BEACON_ANCIENT\"]/choice/event/choice/text"
 msgstr ""
 "Hail them, maybe you can get through this without conflict?\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a weapon(Giftlist Ancient))"
 
 #: src-en/data/events_sector_obelisk.xml:33
 msgid ""
@@ -53,7 +53,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"START_BEACON_ANCIENT\"]/choice/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a weapon(Giftlist Ancient))"
 
 #: src-en/data/events_sector_obelisk.xml:45
 msgid ""
@@ -82,16 +82,15 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"FLEET_ROYAL_SELITE\"]/choice[1]/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [{3 }1 |1Fleet Delay(1)[Reward Standard(H)[], []]])"
+"Fight(HK=CK: {3 }1 |1 Fleet Delay(1))"
 
 #: src-en/data/events_sector_obelisk.xml:65
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"FLEET_ROYAL_SELITE\"]/choice[@req=\"engines\"]/text"
 msgstr ""
 "(Adv. Engines) Try to escape the elite.\n"
-"[Fight] \n"
-"or [Fight] \n"
-"or []"
+"33% Fight\n"
+"33% Fight"
 
 #: src-en/data/events_sector_obelisk.xml:71
 msgid "data/events_sector_obelisk.xml$//event[@name=\"START_BEACON_ROYAL\"]/text"
@@ -106,7 +105,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"START_BEACON_ROYAL\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[[Fight(CK=HK: [Reward Standard(H)[[]]])]]]]]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:79
 msgid ""
@@ -123,7 +122,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"START_BEACON_ROYAL\"]/choice/event/choice/text"
 msgstr ""
 "Is something wrong?\n"
-"[[[[Fight(CK=HK: [Reward Standard(H)[[]]])]]]]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:83
 msgid ""
@@ -139,7 +138,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"START_BEACON_ROYAL\"]/choice/event/choice/event/choice/text"
 msgstr ""
 "Who is E? And there's a second Dreadnaught?\n"
-"[[[Fight(CK=HK: [Reward Standard(H)[[]]])]]]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:94
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_MFK_ARRIVAL\"]/text"
@@ -157,7 +156,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_MFK_ARRIVAL\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[Fight(CK=HK: [Reward Standard(H)[[]]])]]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:101
 msgid ""
@@ -174,7 +173,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_MFK_ARRIVAL\"]/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[Fight(CK=HK: [Reward Standard(H)[[]]])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:105
 msgid ""
@@ -188,7 +187,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_MFK_ARRIVAL\"]/choice/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [Reward Standard(H)[[]]])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:117
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_MFK_DEFEAT\"]/text"
@@ -201,9 +200,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:120
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_MFK_DEFEAT\"]/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_sector_obelisk.xml:122
 msgid ""
@@ -239,7 +236,8 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "Continue...\n"
-"[[Fight(CK: [[[]]])(HK: [Reward Standard(H)[<#>Unlock Ship(Ancient){20 ~125 }20 |15Gain a weapon(Ancient Beam 3)[[]]]])]]"
+"Fight(HK: Reward Standard(H) <#>Unlock Ship(Ancient))(CK: )\n"
+"<#>Unlock Ship(Ancient)"
 
 #: src-en/data/events_sector_obelisk.xml:167
 msgid ""
@@ -257,7 +255,8 @@ msgid ""
 " and @lvl=\"0\"]/event/choice/text"
 msgstr ""
 "Fight the Dreadnaught!\n"
-"[Fight(CK: [[[]]])(HK: [Reward Standard(H)[<#>Unlock Ship(Ancient){20 ~125 }20 |15Gain a weapon(Ancient Beam 3)[[]]]])]"
+"Fight(HK: Reward Standard(H) <#>Unlock Ship(Ancient))(CK: )\n"
+"<#>Unlock Ship(Ancient)"
 
 #: src-en/data/events_sector_obelisk.xml:172
 msgid ""
@@ -274,7 +273,8 @@ msgid ""
 " and @lvl=\"0\"]/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK: [[[]]])(HK: [Reward Standard(H)[<#>Unlock Ship(Ancient){20 ~125 }20 |15Gain a weapon(Ancient Beam 3)[[]]]])"
+"Fight(HK: Reward Standard(H) <#>Unlock Ship(Ancient))(CK: )\n"
+"<#>Unlock Ship(Ancient)"
 
 #: src-en/data/events_sector_obelisk.xml:183
 msgid ""
@@ -282,7 +282,8 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Continue...\n"
-"[[Fight(CK: [[[]]])(HK: [Reward Standard(H)[<#>Unlock Ship(Ancient){20 ~125 }20 |15Gain a weapon(Ancient Beam 3)[[]]]])]]"
+"Fight(HK: Reward Standard(H) <#>Unlock Ship(Ancient))(CK: )\n"
+"<#>Unlock Ship(Ancient)"
 
 #: src-en/data/events_sector_obelisk.xml:185
 msgid ""
@@ -300,7 +301,8 @@ msgid ""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr ""
 "Fight the Dreadnaught!\n"
-"[Fight(CK: [[[]]])(HK: [Reward Standard(H)[<#>Unlock Ship(Ancient){20 ~125 }20 |15Gain a weapon(Ancient Beam 3)[[]]]])]"
+"Fight(HK: Reward Standard(H) <#>Unlock Ship(Ancient))(CK: )\n"
+"<#>Unlock Ship(Ancient)"
 
 #: src-en/data/events_sector_obelisk.xml:190
 msgid ""
@@ -317,7 +319,8 @@ msgid ""
 " and @lvl=\"1\"]/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK: [[[]]])(HK: [Reward Standard(H)[<#>Unlock Ship(Ancient){20 ~125 }20 |15Gain a weapon(Ancient Beam 3)[[]]]])"
+"Fight(HK: Reward Standard(H) <#>Unlock Ship(Ancient))(CK: )\n"
+"<#>Unlock Ship(Ancient)"
 
 #: src-en/data/events_sector_obelisk.xml:201
 msgid ""
@@ -325,7 +328,8 @@ msgid ""
 " and @lvl=\"2\"]/text"
 msgstr ""
 "Continue...\n"
-"[[Fight(CK: [[[]]])(HK: [Reward Standard(H)[<#>Unlock Ship(Ancient){20 ~125 }20 |15Gain a weapon(Ancient Beam 3)[[]]]])]]"
+"Fight(HK: Reward Standard(H) <#>Unlock Ship(Ancient))(CK: )\n"
+"<#>Unlock Ship(Ancient)"
 
 #: src-en/data/events_sector_obelisk.xml:203
 msgid ""
@@ -343,7 +347,8 @@ msgid ""
 " and @lvl=\"2\"]/event/choice/text"
 msgstr ""
 "Fight the Dreadnaught!\n"
-"[Fight(CK: [[[]]])(HK: [Reward Standard(H)[<#>Unlock Ship(Ancient){20 ~125 }20 |15Gain a weapon(Ancient Beam 3)[[]]]])]"
+"Fight(HK: Reward Standard(H) <#>Unlock Ship(Ancient))(CK: )\n"
+"<#>Unlock Ship(Ancient)"
 
 #: src-en/data/events_sector_obelisk.xml:208
 msgid ""
@@ -360,7 +365,8 @@ msgid ""
 " and @lvl=\"2\"]/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK: [[[]]])(HK: [Reward Standard(H)[<#>Unlock Ship(Ancient){20 ~125 }20 |15Gain a weapon(Ancient Beam 3)[[]]]])"
+"Fight(HK: Reward Standard(H) <#>Unlock Ship(Ancient))(CK: )\n"
+"<#>Unlock Ship(Ancient)"
 
 #: src-en/data/events_sector_obelisk.xml:219
 msgid ""
@@ -368,7 +374,8 @@ msgid ""
 " and @lvl=\"3\"]/text"
 msgstr ""
 "Continue...\n"
-"[[Fight(CK: [[[]]])(HK: [Reward Standard(H)[<#>Unlock Ship(Ancient){20 ~125 }20 |15Gain a weapon(Ancient Beam 3)[[]]]])]]"
+"Fight(HK: Reward Standard(H) <#>Unlock Ship(Ancient))(CK: )\n"
+"<#>Unlock Ship(Ancient)"
 
 #: src-en/data/events_sector_obelisk.xml:221
 msgid ""
@@ -386,7 +393,8 @@ msgid ""
 " and @lvl=\"3\"]/event/choice/text"
 msgstr ""
 "Fight the Dreadnaught!\n"
-"[Fight(CK: [[[]]])(HK: [Reward Standard(H)[<#>Unlock Ship(Ancient){20 ~125 }20 |15Gain a weapon(Ancient Beam 3)[[]]]])]"
+"Fight(HK: Reward Standard(H) <#>Unlock Ship(Ancient))(CK: )\n"
+"<#>Unlock Ship(Ancient)"
 
 #: src-en/data/events_sector_obelisk.xml:226
 msgid ""
@@ -403,7 +411,8 @@ msgid ""
 " and @lvl=\"3\"]/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK: [[[]]])(HK: [Reward Standard(H)[<#>Unlock Ship(Ancient){20 ~125 }20 |15Gain a weapon(Ancient Beam 3)[[]]]])"
+"Fight(HK: Reward Standard(H) <#>Unlock Ship(Ancient))(CK: )\n"
+"<#>Unlock Ship(Ancient)"
 
 #: src-en/data/events_sector_obelisk.xml:238
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ANCSECTOR_DREAD_AI\"]/text"
@@ -414,9 +423,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:241
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCSECTOR_DREAD_AI\"]/choice/text"
-msgstr ""
-"We have to keep fighting!\n"
-"[]"
+msgstr "We have to keep fighting!\n"
 
 #: src-en/data/events_sector_obelisk.xml:246
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ANCSECTOR_PART_4\"]/text"
@@ -433,7 +440,7 @@ msgstr ""
 "Loot the Cache.\n"
 "<#>Unlock Ship(Ancient)\n"
 "{20 ~125 }20 |15\n"
-"Gain a weapon(Ancient Beam 3)[[]]"
+"Gain a weapon(Ancient Beam 3)"
 
 #: src-en/data/events_sector_obelisk.xml:254
 msgid ""
@@ -448,9 +455,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:265
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCSECTOR_PART_4\"]/choice/event/choice/text"
-msgstr ""
-"Destroy the Cache.\n"
-"[]"
+msgstr "Destroy the Cache.\n"
 
 #: src-en/data/events_sector_obelisk.xml:267
 msgid ""
@@ -475,9 +480,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:278
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"VAULT_DESTROYED\"]/choice/text"
-msgstr ""
-"Continue...\n"
-"[[]]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_sector_obelisk.xml:280
 msgid ""
@@ -491,9 +494,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:282
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"VAULT_DESTROYED\"]/choice/event/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_sector_obelisk.xml:317
 msgid ""
@@ -518,7 +519,7 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "Continue...\n"
-"[Fight(CK: [[[]]])(HK: [[Reward Item(H)[]]])]"
+"Fight(HK: Reward Item(H))(CK: )"
 
 #: src-en/data/events_sector_obelisk.xml:326
 msgid ""
@@ -538,7 +539,7 @@ msgid ""
 " and @lvl=\"0\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK: [[[]]])(HK: [[Reward Item(H)[]]])"
+"Fight(HK: Reward Item(H))(CK: )"
 
 #: src-en/data/events_sector_obelisk.xml:335
 msgid ""
@@ -546,7 +547,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Continue...\n"
-"[Fight(CK: [[[]]])(HK: [[Reward Item(H)[]]])]"
+"Fight(HK: Reward Item(H))(CK: )"
 
 #: src-en/data/events_sector_obelisk.xml:337
 msgid ""
@@ -566,7 +567,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK: [[[]]])(HK: [[Reward Item(H)[]]])"
+"Fight(HK: Reward Item(H))(CK: )"
 
 #: src-en/data/events_sector_obelisk.xml:346
 msgid ""
@@ -574,7 +575,7 @@ msgid ""
 " and @lvl=\"2\"]/text"
 msgstr ""
 "Continue...\n"
-"[Fight(CK: [[[]]])(HK: [[Reward Item(H)[]]])]"
+"Fight(HK: Reward Item(H))(CK: )"
 
 #: src-en/data/events_sector_obelisk.xml:348
 msgid ""
@@ -594,7 +595,7 @@ msgid ""
 " and @lvl=\"2\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK: [[[]]])(HK: [[Reward Item(H)[]]])"
+"Fight(HK: Reward Item(H))(CK: )"
 
 #: src-en/data/events_sector_obelisk.xml:357
 msgid ""
@@ -602,7 +603,7 @@ msgid ""
 " and @lvl=\"3\"]/text"
 msgstr ""
 "Continue...\n"
-"[Fight(CK: [[[]]])(HK: [[Reward Item(H)[]]])]"
+"Fight(HK: Reward Item(H))(CK: )"
 
 #: src-en/data/events_sector_obelisk.xml:359
 msgid ""
@@ -622,7 +623,7 @@ msgid ""
 " and @lvl=\"3\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK: [[[]]])(HK: [[Reward Item(H)[]]])"
+"Fight(HK: Reward Item(H))(CK: )"
 
 #: src-en/data/events_sector_obelisk.xml:369
 msgid ""
@@ -640,7 +641,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PALACE_SUCCESS\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward Item(H)[]"
+"Reward Item(H)"
 
 #: src-en/data/events_sector_obelisk.xml:374
 msgid ""
@@ -664,7 +665,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PALACE_ENTER\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[[[Gain a crew(Obelisk Royal)[{3[[]]]]]]]]]"
+"Gain a crew(Obelisk Royal)"
 
 #: src-en/data/events_sector_obelisk.xml:386
 msgid ""
@@ -681,7 +682,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PALACE_ENTER\"]/choice/event/choice/text"
 msgstr ""
 "Wait, what?\n"
-"[[[[[Gain a crew(Obelisk Royal)[{3[[]]]]]]]]"
+"Gain a crew(Obelisk Royal)"
 
 #: src-en/data/events_sector_obelisk.xml:390
 msgid ""
@@ -698,7 +699,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PALACE_ENTER\"]/choice/event/choice/event/choice/text"
 msgstr ""
 "Threaten to detonate the Paragon right now.\n"
-"[[[[Gain a crew(Obelisk Royal)[{3[[]]]]]]]"
+"Gain a crew(Obelisk Royal)"
 
 #: src-en/data/events_sector_obelisk.xml:394
 msgid ""
@@ -716,7 +717,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PALACE_ENTER\"]/choice/event/choice/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[Gain a crew(Obelisk Royal)[{3[[]]]]]]"
+"Gain a crew(Obelisk Royal)"
 
 #: src-en/data/events_sector_obelisk.xml:398
 msgid ""
@@ -735,7 +736,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PALACE_ENTER\"]/choice/event/choice/event/choice/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[Gain a crew(Obelisk Royal)[{3[[]]]]]"
+"Gain a crew(Obelisk Royal)"
 
 #: src-en/data/events_sector_obelisk.xml:402
 msgid ""
@@ -754,7 +755,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PALACE_ENTER\"]/choice/event/choice/event/choice/event/choice/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[Gain a crew(Obelisk Royal)[{3[[]]]]"
+"Gain a crew(Obelisk Royal)"
 
 #: src-en/data/events_sector_obelisk.xml:406
 msgid ""
@@ -772,7 +773,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PALACE_ENTER\"]/choice/event/choice/event/choice/event/choice/event/choice/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a crew(Obelisk Royal)[{3[[]]]"
+"Gain a crew(Obelisk Royal)"
 
 #: src-en/data/events_sector_obelisk.xml:410
 msgid ""
@@ -798,7 +799,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PALACE_ENTER\"]/choice/event/choice/event/choice/event/choice/event/choice/event/choice/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"{3[[]]"
+"{3"
 
 #: src-en/data/events_sector_obelisk.xml:415
 msgid ""
@@ -811,9 +812,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:420
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PALACE_ENTER\"]/choice/event/choice/event/choice/event/choice/event/choice/event/choice/event/choice/event/choice/event/choice/text"
-msgstr ""
-"Continue...\n"
-"[]"
+msgstr "Continue...\n"
 
 #: src-en/data/events_sector_obelisk.xml:459
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/text"
@@ -827,7 +826,9 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[1]/text"
 msgstr ""
 "Dock.\n"
-"[[{-5[{10[] or {10[] or {10[] or []], }-5[}10[] or }10[] or }10[] or []], |-5[|10[] or |10[] or |10[] or []], [Gain a crew(Phantom Alpha)[]], [Gain a crew(Phantom Goul Alpha)[]], [Gain a crew(Phantom Mare Alpha)[]], [Gain a crew(Phantom Wraith Alpha)[]], [Storage Check, []]]]"
+"{-5\n"
+"}-5\n"
+"|-5"
 
 #: src-en/data/events_sector_obelisk.xml:463
 msgid ""
@@ -843,7 +844,9 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[{-5[{10[] or {10[] or {10[] or []], }-5[}10[] or }10[] or }10[] or []], |-5[|10[] or |10[] or |10[] or []], [Gain a crew(Phantom Alpha)[]], [Gain a crew(Phantom Goul Alpha)[]], [Gain a crew(Phantom Mare Alpha)[]], [Gain a crew(Phantom Wraith Alpha)[]], [Storage Check, []]]"
+"{-5\n"
+"}-5\n"
+"|-5"
 
 #: src-en/data/events_sector_obelisk.xml:467
 msgid ""
@@ -858,7 +861,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[1]/event/choice/event/choice[1]/text"
 msgstr ""
 "Insert Fuel.\n"
-"{-5[{10[] or {10[] or {10[] or []]"
+"{-5"
 
 #: src-en/data/events_sector_obelisk.xml:471
 msgid ""
@@ -870,17 +873,16 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[1]/event/choice/event/choice[1]/event/choice/text"
 msgstr ""
 "Wait.\n"
-"{10[] \n"
-"or {10[] \n"
-"or {10[] \n"
-"or []"
+"25% {10\n"
+"25% {10\n"
+"25% {10"
 
 #: src-en/data/events_sector_obelisk.xml:482
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[1]/event/choice/event/choice[2]/text"
 msgstr ""
 "Insert Missiles.\n"
-"}-5[}10[] or }10[] or }10[] or []]"
+"}-5"
 
 #: src-en/data/events_sector_obelisk.xml:484
 msgid ""
@@ -892,17 +894,16 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[1]/event/choice/event/choice[2]/event/choice/text"
 msgstr ""
 "Wait.\n"
-"}10[] \n"
-"or }10[] \n"
-"or }10[] \n"
-"or []"
+"25% }10\n"
+"25% }10\n"
+"25% }10"
 
 #: src-en/data/events_sector_obelisk.xml:495
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[1]/event/choice/event/choice[3]/text"
 msgstr ""
 "Insert Droneparts.\n"
-"|-5[|10[] or |10[] or |10[] or []]"
+"|-5"
 
 #: src-en/data/events_sector_obelisk.xml:497
 msgid ""
@@ -914,17 +915,16 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[1]/event/choice/event/choice[3]/event/choice/text"
 msgstr ""
 "Wait.\n"
-"|10[] \n"
-"or |10[] \n"
-"or |10[] \n"
-"or []"
+"25% |10\n"
+"25% |10\n"
+"25% |10"
 
 #: src-en/data/events_sector_obelisk.xml:508
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[1]/event/choice/event/choice[@req=\"LIST_CREW_PHANTOM\"]/text"
 msgstr ""
 "(Phantom Crew) Your Ghost eagerly begs to be put into the machine.\n"
-"[Gain a crew(Phantom Alpha)[]]"
+"Gain a crew(Phantom Alpha)"
 
 #: src-en/data/events_sector_obelisk.xml:510
 msgid ""
@@ -939,7 +939,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[1]/event/choice/event/choice[@req=\"LIST_CREW_PHANTOM\"]/event/choice/text"
 msgstr ""
 "Wait.\n"
-"Gain a crew(Phantom Alpha)[]"
+"Gain a crew(Phantom Alpha)"
 
 #: src-en/data/events_sector_obelisk.xml:514
 msgid ""
@@ -955,7 +955,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[1]/event/choice/event/choice[@req=\"LIST_CREW_GOUL\"]/text"
 msgstr ""
 "(Goul Crew) Your Goul eagerly begs to be put into the machine.\n"
-"[Gain a crew(Phantom Goul Alpha)[]]"
+"Gain a crew(Phantom Goul Alpha)"
 
 #: src-en/data/events_sector_obelisk.xml:524
 msgid ""
@@ -970,7 +970,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[1]/event/choice/event/choice[@req=\"LIST_CREW_GOUL\"]/event/choice/text"
 msgstr ""
 "Wait.\n"
-"Gain a crew(Phantom Goul Alpha)[]"
+"Gain a crew(Phantom Goul Alpha)"
 
 #: src-en/data/events_sector_obelisk.xml:528
 msgid ""
@@ -986,7 +986,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[1]/event/choice/event/choice[@req=\"LIST_CREW_MARE\"]/text"
 msgstr ""
 "(Mare Crew) Your Mare eagerly begs to be put into the machine.\n"
-"[Gain a crew(Phantom Mare Alpha)[]]"
+"Gain a crew(Phantom Mare Alpha)"
 
 #: src-en/data/events_sector_obelisk.xml:538
 msgid ""
@@ -1001,7 +1001,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[1]/event/choice/event/choice[@req=\"LIST_CREW_MARE\"]/event/choice/text"
 msgstr ""
 "Wait.\n"
-"Gain a crew(Phantom Mare Alpha)[]"
+"Gain a crew(Phantom Mare Alpha)"
 
 #: src-en/data/events_sector_obelisk.xml:542
 msgid ""
@@ -1017,7 +1017,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[1]/event/choice/event/choice[@req=\"LIST_CREW_WRAITH\"]/text"
 msgstr ""
 "(Wraith Crew) Your Wraith eagerly begs to be put into the machine.\n"
-"[Gain a crew(Phantom Wraith Alpha)[]]"
+"Gain a crew(Phantom Wraith Alpha)"
 
 #: src-en/data/events_sector_obelisk.xml:552
 msgid ""
@@ -1032,7 +1032,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[1]/event/choice/event/choice[@req=\"LIST_CREW_WRAITH\"]/event/choice/text"
 msgstr ""
 "Wait.\n"
-"Gain a crew(Phantom Wraith Alpha)[]"
+"Gain a crew(Phantom Wraith Alpha)"
 
 #: src-en/data/events_sector_obelisk.xml:556
 msgid ""
@@ -1048,7 +1048,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[1]/event/choice/event/choice[8]/text"
 msgstr ""
 "Leave.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:566
 msgid ""
@@ -1065,16 +1065,14 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:572
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[1]/event/choice/event/choice[8]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:582
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[2]/text"
 msgstr ""
 "Ignore the machine.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:584
 msgid ""
@@ -1092,9 +1090,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:590
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DUPLICATOR\"]/choice[2]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:598
 msgid ""
@@ -1210,7 +1206,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_USELESS_WEAPON\"]/choice[1]/text"
 msgstr ""
 "Help them.\n"
-"Gain a weapon(Giftlist Weapons Ancients Useless)[]"
+"Gain a weapon(Giftlist Weapons Ancients Useless)"
 
 #: src-en/data/events_sector_obelisk.xml:673
 msgid ""
@@ -1225,7 +1221,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_USELESS_WEAPON\"]/choice[2]/text"
 msgstr ""
 "We can't help.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:680
 msgid ""
@@ -1242,9 +1238,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:686
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_USELESS_WEAPON\"]/choice[2]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:695
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_LOST_DUDE\"]/text"
@@ -1255,15 +1249,14 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_LOST_DUDE\"]/choice[1]/text"
 msgstr ""
 "Rescue the Obelisk.\n"
-"Gain a crew(Obelisk)[] \n"
-"or [Gain a crew(Obelisk)[]]"
+"50% Gain a crew(Obelisk)"
 
 #: src-en/data/events_sector_obelisk.xml:701
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_LOST_DUDE\"]/choice[2]/text"
 msgstr ""
 "Leave it to drift.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:703
 msgid ""
@@ -1282,9 +1275,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:709
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_LOST_DUDE\"]/choice[2]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:717
 msgid ""
@@ -1311,7 +1302,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//eventList[@name=\"ANCIENT_LOST_DUDE_RESCUE\"]/event[2]/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a crew(Obelisk)[]"
+"Gain a crew(Obelisk)"
 
 #: src-en/data/events_sector_obelisk.xml:734
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DESIRE\"]/text"
@@ -1325,7 +1316,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DESIRE\"]/choice[1]/text"
 msgstr ""
 "Wealth.\n"
-"50≤~≤75[]"
+"50≤~≤75"
 
 #: src-en/data/events_sector_obelisk.xml:739
 msgid ""
@@ -1339,7 +1330,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DESIRE\"]/choice[2]/text"
 msgstr ""
 "Beauty.\n"
-"Gain a crew(Obelisk)[]"
+"Gain a crew(Obelisk)"
 
 #: src-en/data/events_sector_obelisk.xml:748
 msgid ""
@@ -1360,7 +1351,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DESIRE\"]/choice[3]/text"
 msgstr ""
 "Power.\n"
-"System Upgrade(Reactor 2™)[]"
+"System Upgrade(Reactor 2™)"
 
 #: src-en/data/events_sector_obelisk.xml:755
 msgid ""
@@ -1375,7 +1366,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DESIRE\"]/choice[4]/text"
 msgstr ""
 "Galactic Peace.\n"
-"Gain a weapon(Ancient Stun)[]"
+"Gain a weapon(Ancient Stun)"
 
 #: src-en/data/events_sector_obelisk.xml:762
 msgid ""
@@ -1390,7 +1381,8 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DESIRE\"]/choice[5]/text"
 msgstr ""
 "Try to break free.\n"
-"[50≤~≤75[], Gain a crew(Obelisk)[], System Upgrade(Reactor 2™)[], Gain a weapon(Ancient Stun)[], [Fight(CK=HK: [])], [Fight(CK=HK: [])]]"
+"Fight(HK=CK: Reward Standard(H))\n"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:769
 msgid ""
@@ -1405,7 +1397,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DESIRE\"]/choice[5]/event/choice[1]/text"
 msgstr ""
 "Wealth.\n"
-"50≤~≤75[]"
+"50≤~≤75"
 
 #: src-en/data/events_sector_obelisk.xml:790
 msgid ""
@@ -1419,7 +1411,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DESIRE\"]/choice[5]/event/choice[2]/text"
 msgstr ""
 "Beauty.\n"
-"Gain a crew(Obelisk)[]"
+"Gain a crew(Obelisk)"
 
 #: src-en/data/events_sector_obelisk.xml:799
 msgid ""
@@ -1440,7 +1432,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DESIRE\"]/choice[5]/event/choice[3]/text"
 msgstr ""
 "Power.\n"
-"System Upgrade(Reactor 2™)[]"
+"System Upgrade(Reactor 2™)"
 
 #: src-en/data/events_sector_obelisk.xml:806
 msgid ""
@@ -1455,7 +1447,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DESIRE\"]/choice[5]/event/choice[4]/text"
 msgstr ""
 "Galactic Peace.\n"
-"Gain a weapon(Ancient Stun)[]"
+"Gain a weapon(Ancient Stun)"
 
 #: src-en/data/events_sector_obelisk.xml:813
 msgid ""
@@ -1470,7 +1462,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DESIRE\"]/choice[5]/event/choice[5]/text"
 msgstr ""
 "Resist again and suffer the consequences.\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:820
 msgid ""
@@ -1482,14 +1474,14 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DESIRE\"]/choice[5]/event/choice[5]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:830
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DESIRE\"]/choice[5]/event/choice[@req=\"ANTI_VIRUS\"]/text"
 msgstr ""
 "(Anti-Virus) Restore your systems and fight back.\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:832
 msgid ""
@@ -1503,7 +1495,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_DESIRE\"]/choice[5]/event/choice[@req=\"ANTI_VIRUS\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:859
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ZOO\"]/text"
@@ -1519,7 +1511,7 @@ msgstr ""
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ZOO\"]/choice[1]/text"
 msgstr ""
 "Agree and go aboard.\n"
-"[[Gain a crew(Gold)~-90[], Gain a crew(Shell Radiant)~-90[], Gain a crew(Lanius Welder)~-100[], Gain a crew(Pony Tamed)~-30[], [Fight] or [Storage Check, []] or [Storage Check, []]], [<!>Lose your crew(UNCLONABLE)~70[], <!>Lose your crew(UNCLONABLE)~120[], <!>Lose your crew(UNCLONABLE)~30[], <!>Lose your crew(UNCLONABLE)~45[], <!>Lose your crew(UNCLONABLE)~100[], <!>Lose your crew(UNCLONABLE)~45[], <!>Lose your crew(UNCLONABLE)~125[], <!>Lose your crew(UNCLONABLE)~130[], <!>Lose your crew(UNCLONABLE)~100[], <!>Lose your crew(UNCLONABLE)~100[], [Fight(CK=HK: [])], [Gain a crew(Gold)~-90[], Gain a crew(Shell Radiant)~-90[], Gain a crew(Lanius Welder)~-100[], Gain a crew(Pony Tamed)~-30[], [Fight] or [Storage Check, []] or [Storage Check, []]], [Fight] or [Storage Check, []] or [Storage Check, []]], [Fight] or [Storage Check, []] or [Storage Check, []]]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:864
 msgid ""
@@ -1533,14 +1525,21 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ZOO\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Offer to buy one of his collections.\n"
-"[Gain a crew(Gold)~-90[], Gain a crew(Shell Radiant)~-90[], Gain a crew(Lanius Welder)~-100[], Gain a crew(Pony Tamed)~-30[], [Fight] or [Storage Check, []] or [Storage Check, []]]"
+"Gain a crew(Gold)\n"
+"~-90\n"
+"Gain a crew(Shell Radiant)\n"
+"~-90\n"
+"Gain a crew(Lanius Welder)\n"
+"~-100\n"
+"Gain a crew(Pony Tamed)\n"
+"~-30"
 
 #: src-en/data/events_sector_obelisk.xml:870
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ZOO\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Offer to sell one of your more exotic crew.\n"
-"[<!>Lose your crew(UNCLONABLE)~70[], <!>Lose your crew(UNCLONABLE)~120[], <!>Lose your crew(UNCLONABLE)~30[], <!>Lose your crew(UNCLONABLE)~45[], <!>Lose your crew(UNCLONABLE)~100[], <!>Lose your crew(UNCLONABLE)~45[], <!>Lose your crew(UNCLONABLE)~125[], <!>Lose your crew(UNCLONABLE)~130[], <!>Lose your crew(UNCLONABLE)~100[], <!>Lose your crew(UNCLONABLE)~100[], [Fight(CK=HK: [])], [Gain a crew(Gold)~-90[], Gain a crew(Shell Radiant)~-90[], Gain a crew(Lanius Welder)~-100[], Gain a crew(Pony Tamed)~-30[], [Fight] or [Storage Check, []] or [Storage Check, []]], [Fight] or [Storage Check, []] or [Storage Check, []]]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:872
 msgid ""
@@ -1553,7 +1552,7 @@ msgid ""
 msgstr ""
 "Sell your Augmented Lanius.\n"
 "<!>Lose your crew(UNCLONABLE)\n"
-"~70[]"
+"~70"
 
 #: src-en/data/events_sector_obelisk.xml:879
 msgid ""
@@ -1566,7 +1565,7 @@ msgid ""
 msgstr ""
 "Sell The Anointed.\n"
 "<!>Lose your crew(UNCLONABLE)\n"
-"~120[]"
+"~120"
 
 #: src-en/data/events_sector_obelisk.xml:892
 msgid ""
@@ -1579,7 +1578,7 @@ msgid ""
 msgstr ""
 "Sell your Spider.\n"
 "<!>Lose your crew(UNCLONABLE)\n"
-"~30[]"
+"~30"
 
 #: src-en/data/events_sector_obelisk.xml:905
 msgid ""
@@ -1592,7 +1591,7 @@ msgid ""
 msgstr ""
 "Sell your Weaver.\n"
 "<!>Lose your crew(UNCLONABLE)\n"
-"~45[]"
+"~45"
 
 #: src-en/data/events_sector_obelisk.xml:918
 msgid ""
@@ -1605,7 +1604,7 @@ msgid ""
 msgstr ""
 "Sell your Spider Queen.\n"
 "<!>Lose your crew(UNCLONABLE)\n"
-"~100[]"
+"~100"
 
 #: src-en/data/events_sector_obelisk.xml:931
 msgid ""
@@ -1618,7 +1617,7 @@ msgid ""
 msgstr ""
 "Sell your Equinoid.\n"
 "<!>Lose your crew(UNCLONABLE)\n"
-"~45[]"
+"~45"
 
 #: src-en/data/events_sector_obelisk.xml:944
 msgid ""
@@ -1631,7 +1630,7 @@ msgid ""
 msgstr ""
 "Sell Tintan and Rig.\n"
 "<!>Lose your crew(UNCLONABLE)\n"
-"~125[]"
+"~125"
 
 #: src-en/data/events_sector_obelisk.xml:957
 msgid ""
@@ -1644,7 +1643,7 @@ msgid ""
 msgstr ""
 "Sell your Mantis Bishop.\n"
 "<!>Lose your crew(UNCLONABLE)\n"
-"~130[]"
+"~130"
 
 #: src-en/data/events_sector_obelisk.xml:970
 msgid ""
@@ -1657,7 +1656,7 @@ msgid ""
 msgstr ""
 "Sell your Radiant.\n"
 "<!>Lose your crew(UNCLONABLE)\n"
-"~100[]"
+"~100"
 
 #: src-en/data/events_sector_obelisk.xml:983
 msgid ""
@@ -1670,7 +1669,7 @@ msgid ""
 msgstr ""
 "Sell your Welder.\n"
 "<!>Lose your crew(UNCLONABLE)\n"
-"~100[]"
+"~100"
 
 #: src-en/data/events_sector_obelisk.xml:996
 msgid ""
@@ -1682,7 +1681,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ZOO\"]/choice[1]/event/choice[2]/event/choice[@req=\"LIST_CREW_ANCIENT_ALL\"]/text"
 msgstr ""
 "Sell your Obelisk Crew.\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1006
 msgid ""
@@ -1697,38 +1696,45 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ZOO\"]/choice[1]/event/choice[2]/event/choice[@req=\"LIST_CREW_ANCIENT_ALL\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1015
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ZOO\"]/choice[1]/event/choice[2]/event/choice[12]/text"
 msgstr ""
 "Nevermind, I'd rather buy some crew.\n"
-"[Gain a crew(Gold)~-90[], Gain a crew(Shell Radiant)~-90[], Gain a crew(Lanius Welder)~-100[], Gain a crew(Pony Tamed)~-30[], [Fight] or [Storage Check, []] or [Storage Check, []]]"
+"Gain a crew(Gold)\n"
+"~-90\n"
+"Gain a crew(Shell Radiant)\n"
+"~-90\n"
+"Gain a crew(Lanius Welder)\n"
+"~-100\n"
+"Gain a crew(Pony Tamed)\n"
+"~-30"
 
 #: src-en/data/events_sector_obelisk.xml:1019
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ZOO\"]/choice[1]/event/choice[2]/event/choice[13]/text"
 msgstr ""
 "I think we'll be leaving now.\n"
-"[Fight] \n"
-"or [Storage Check, []] \n"
-"or [Storage Check, []]"
+"33% Fight\n"
+"33% Storage Check\n"
+"33% Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:1025
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ZOO\"]/choice[1]/event/choice[3]/text"
 msgstr ""
 "I think we'll be leaving now.\n"
-"[Fight] \n"
-"or [Storage Check, []] \n"
-"or [Storage Check, []]"
+"33% Fight\n"
+"33% Storage Check\n"
+"33% Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:1031
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ZOO\"]/choice[2]/text"
 msgstr ""
 "This is shady, attack now while you can!\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1033
 msgid ""
@@ -1742,15 +1748,15 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ZOO\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1042
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ZOO\"]/choice[3]/text"
 msgstr ""
 "Decline.\n"
-"[Fight] \n"
-"or [Storage Check, []] \n"
-"or [Storage Check, []]"
+"33% Fight\n"
+"33% Storage Check\n"
+"33% Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:1047
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ZOO_PURCHASE\"]/text"
@@ -1762,7 +1768,7 @@ msgid ""
 msgstr ""
 "Purchase a Malform. [90~]\n"
 "Gain a crew(Gold)\n"
-"~-90[]"
+"~-90"
 
 #: src-en/data/events_sector_obelisk.xml:1059
 msgid ""
@@ -1770,7 +1776,7 @@ msgid ""
 msgstr ""
 "Purchase a Shell Radiant. [90~]\n"
 "Gain a crew(Shell Radiant)\n"
-"~-90[]"
+"~-90"
 
 #: src-en/data/events_sector_obelisk.xml:1069
 msgid ""
@@ -1778,7 +1784,7 @@ msgid ""
 msgstr ""
 "Purchase a Lanius Welder. [100~]\n"
 "Gain a crew(Lanius Welder)\n"
-"~-100[]"
+"~-100"
 
 #: src-en/data/events_sector_obelisk.xml:1079
 msgid ""
@@ -1786,16 +1792,16 @@ msgid ""
 msgstr ""
 "Purchase a Tamed Equinoid. [30~]\n"
 "Gain a crew(Pony Tamed)\n"
-"~-30[]"
+"~-30"
 
 #: src-en/data/events_sector_obelisk.xml:1089
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ZOO_PURCHASE\"]/choice[@req=\"\"]/text"
 msgstr ""
 "I think we'll be leaving now.\n"
-"[Fight] \n"
-"or [Storage Check, []] \n"
-"or [Storage Check, []]"
+"33% Fight\n"
+"33% Storage Check\n"
+"33% Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:1095
 msgid ""
@@ -1826,9 +1832,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1109
 msgid ""
 "data/events_sector_obelisk.xml$//eventList[@name=\"ROYAL_ZOO_LEAVE\"]/event[2]/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1114
 msgid ""
@@ -1845,9 +1849,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1120
 msgid ""
 "data/events_sector_obelisk.xml$//eventList[@name=\"ROYAL_ZOO_LEAVE\"]/event[3]/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1127
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_AUGMENTED_JOY\"]/text"
@@ -1860,7 +1862,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_AUGMENTED_JOY\"]/choice[1]/text"
 msgstr ""
 "Hail them.\n"
-"[~-20[10≤~≤15[] or Gain a drone(Random)[] or Gain a crew(Lanius Augmented)[] or Reward { Only(H)[]], []]"
+"~-20"
 
 #: src-en/data/events_sector_obelisk.xml:1131
 msgid ""
@@ -1875,7 +1877,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_AUGMENTED_JOY\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Pay them to access the wrecks.\n"
-"~-20[10≤~≤15[] or Gain a drone(Random)[] or Gain a crew(Lanius Augmented)[] or Reward { Only(H)[]]"
+"~-20"
 
 #: src-en/data/events_sector_obelisk.xml:1135
 msgid ""
@@ -1887,17 +1889,16 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_AUGMENTED_JOY\"]/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"10≤~≤15[] \n"
-"or Gain a drone(Random)[] \n"
-"or Gain a crew(Lanius Augmented)[] \n"
-"or Reward { Only(H)[]"
+"25% 10≤~≤15\n"
+"25% Gain a drone(Random)\n"
+"25% Gain a crew(Lanius Augmented)\n"
+"25% Reward { Only(H)"
 
 #: src-en/data/events_sector_obelisk.xml:1146
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_AUGMENTED_JOY\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "We don't need anything in the wrecks, but we are open to trading normally.\n"
-"[]"
 
 #: src-en/data/events_sector_obelisk.xml:1148
 msgid ""
@@ -1909,7 +1910,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_AUGMENTED_JOY\"]/choice[2]/text"
 msgstr ""
 "Attack the Lanius!\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M))(CK: Reward Item(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1157
 msgid ""
@@ -1921,22 +1922,23 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_AUGMENTED_JOY\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M))(CK: Reward Item(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1166
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_AUGMENTED_JOY\"]/choice[3]/text"
 msgstr ""
 "Scoop up some scrap for yourself.\n"
-"Reward Stuff(M)[] \n"
-"or Reward Stuff(L)[Fight(CK=HK: [])]"
+"50% Reward Stuff(M)\n"
+"50% Reward Stuff(L)\n"
+"Fight(HK: 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M))(CK: 50% Reward Item(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1170
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_AUGMENTED_JOY\"]/choice[4]/text"
 msgstr ""
 "Ignore the swarm.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:1172
 msgid ""
@@ -1953,9 +1955,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1178
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_AUGMENTED_JOY\"]/choice[4]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1186
 msgid ""
@@ -1974,7 +1974,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//eventList[@name=\"ROYAL_AUGMENTED_JOY_SALVAGE\"]/event[2]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M))(CK: Reward Item(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1201
 msgid ""
@@ -2022,7 +2022,8 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PANDORA_FACTORY\"]/choice[1]/text"
 msgstr ""
 "Investigate it.\n"
-"[[[[[[Gain an augment(Pandora Box Ancient)~-20[], Gain a crew(Cognitive)~-40[], []]], []]], <!>Enemy Boarding(x2 Cognitive)<!>Lose your crew(clonable)[], []]]"
+"<!>Enemy Boarding(x2 Cognitive)\n"
+"<!>Lose your crew(clonable)"
 
 #: src-en/data/events_sector_obelisk.xml:1225
 msgid ""
@@ -2038,7 +2039,8 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PANDORA_FACTORY\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[[[[[Gain an augment(Pandora Box Ancient)~-20[], Gain a crew(Cognitive)~-40[], []]], []]], <!>Enemy Boarding(x2 Cognitive)<!>Lose your crew(clonable)[], []]"
+"<!>Enemy Boarding(x2 Cognitive)\n"
+"<!>Lose your crew(clonable)"
 
 #: src-en/data/events_sector_obelisk.xml:1229
 msgid ""
@@ -2055,7 +2057,10 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PANDORA_FACTORY\"]/choice[1]/event/choice/event/choice[1]/text"
 msgstr ""
 "Report to whatever location the voice mentioned.\n"
-"[[[[Gain an augment(Pandora Box Ancient)~-20[], Gain a crew(Cognitive)~-40[], []]], []]]"
+"Gain an augment(Pandora Box Ancient)\n"
+"~-20\n"
+"Gain a crew(Cognitive)\n"
+"~-40"
 
 #: src-en/data/events_sector_obelisk.xml:1233
 msgid ""
@@ -2071,7 +2076,10 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PANDORA_FACTORY\"]/choice[1]/event/choice/event/choice[1]/event/choice/text"
 msgstr ""
 "Uh, hello?\n"
-"[[[Gain an augment(Pandora Box Ancient)~-20[], Gain a crew(Cognitive)~-40[], []]], []]"
+"Gain an augment(Pandora Box Ancient)\n"
+"~-20\n"
+"Gain a crew(Cognitive)\n"
+"~-40"
 
 #: src-en/data/events_sector_obelisk.xml:1237
 msgid ""
@@ -2087,7 +2095,10 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PANDORA_FACTORY\"]/choice[1]/event/choice/event/choice[1]/event/choice/event/choice[1]/text"
 msgstr ""
 "Sign the tablet.\n"
-"[[Gain an augment(Pandora Box Ancient)~-20[], Gain a crew(Cognitive)~-40[], []]]"
+"Gain an augment(Pandora Box Ancient)\n"
+"~-20\n"
+"Gain a crew(Cognitive)\n"
+"~-40"
 
 #: src-en/data/events_sector_obelisk.xml:1241
 msgid ""
@@ -2103,7 +2114,10 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PANDORA_FACTORY\"]/choice[1]/event/choice/event/choice[1]/event/choice/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"[Gain an augment(Pandora Box Ancient)~-20[], Gain a crew(Cognitive)~-40[], []]"
+"Gain an augment(Pandora Box Ancient)\n"
+"~-20\n"
+"Gain a crew(Cognitive)\n"
+"~-40"
 
 #: src-en/data/events_sector_obelisk.xml:1245
 msgid ""
@@ -2125,7 +2139,7 @@ msgid ""
 msgstr ""
 "Offer to buy a box. [-20~]\n"
 "Gain an augment(Pandora Box Ancient)\n"
-"~-20[]"
+"~-20"
 
 #: src-en/data/events_sector_obelisk.xml:1249
 msgid ""
@@ -2138,7 +2152,7 @@ msgid ""
 msgstr ""
 "Hire the Cognitive for yourself. [-40~]\n"
 "Gain a crew(Cognitive)\n"
-"~-40[]"
+"~-40"
 
 #: src-en/data/events_sector_obelisk.xml:1259
 msgid ""
@@ -2150,16 +2164,12 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1267
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PANDORA_FACTORY\"]/choice[1]/event/choice/event/choice[1]/event/choice/event/choice[1]/event/choice/event/choice[3]/text"
-msgstr ""
-"Leave.\n"
-"[]"
+msgstr "Leave.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1275
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PANDORA_FACTORY\"]/choice[1]/event/choice/event/choice[1]/event/choice/event/choice[2]/text"
-msgstr ""
-"Refuse and leave.\n"
-"[]"
+msgstr "Refuse and leave.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1283
 msgid ""
@@ -2168,7 +2178,7 @@ msgid ""
 msgstr ""
 "Keep going on your own.\n"
 "<!>Enemy Boarding(x2 Cognitive)\n"
-"<!>Lose your crew(clonable)[]"
+"<!>Lose your crew(clonable)"
 
 #: src-en/data/events_sector_obelisk.xml:1285
 msgid ""
@@ -2193,16 +2203,14 @@ msgstr ""
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PANDORA_FACTORY\"]/choice[1]/event/choice/event/choice[@req=\"LIST_CHECK_ANY_CREW\""
 " and @lvl=\"0\"]/text"
-msgstr ""
-"You really should listen to what the voice just said.\n"
-"[]"
+msgstr "You really should listen to what the voice just said.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1302
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PANDORA_FACTORY\"]/choice[2]/text"
 msgstr ""
 "Ignore the factory.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:1304
 msgid ""
@@ -2221,9 +2229,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1310
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_PANDORA_FACTORY\"]/choice[2]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1318
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_FREEMANTIS\"]/text"
@@ -2237,7 +2243,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_FREEMANTIS\"]/choice[1]/text"
 msgstr ""
 "Attack them now before they can!\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1323
 msgid ""
@@ -2254,14 +2260,14 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_FREEMANTIS\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1332
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_FREEMANTIS\"]/choice[2]/text"
 msgstr ""
 "Hail them to see if they're ok.\n"
-"Gain a crew(Mantis Warlord)[]"
+"Gain a crew(Mantis Warlord)"
 
 #: src-en/data/events_sector_obelisk.xml:1334
 msgid ""
@@ -2284,7 +2290,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_FREEMANTIS\"]/choice[@req=\"LIST_CREW_MANTIS\"]/text"
 msgstr ""
 "(Mantis Crew) That's Free Mantis dialect.\n"
-"Gain a crew(Mantis Warlord)[]"
+"Gain a crew(Mantis Warlord)"
 
 #: src-en/data/events_sector_obelisk.xml:1341
 msgid ""
@@ -2316,7 +2322,8 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_INSULTS\"]/choice[1]/text"
 msgstr ""
 "Offer some insults.\n"
-"[Reward Standard(H)[], Reward Standard(H)[], Reward Standard(H)[], Reward Standard(H)[], [Fight(CK=HK: [])], [Fight(CK=HK: [])]]"
+"Fight(HK=CK: Reward Standard(H))\n"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1353
 msgid ""
@@ -2328,7 +2335,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_INSULTS\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "\"Walking Nutrient Paste\"\n"
-"Reward Standard(H)[]"
+"Reward Standard(H)"
 
 #: src-en/data/events_sector_obelisk.xml:1357
 msgid ""
@@ -2342,7 +2349,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_INSULTS\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "\"Amorphous Skin-Sack\"\n"
-"Reward Standard(H)[]"
+"Reward Standard(H)"
 
 #: src-en/data/events_sector_obelisk.xml:1364
 msgid ""
@@ -2356,7 +2363,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_INSULTS\"]/choice[1]/event/choice[3]/text"
 msgstr ""
 "\"Deformed Ape Creature\"\n"
-"Reward Standard(H)[]"
+"Reward Standard(H)"
 
 #: src-en/data/events_sector_obelisk.xml:1371
 msgid ""
@@ -2370,7 +2377,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_INSULTS\"]/choice[1]/event/choice[4]/text"
 msgstr ""
 "\"Regrettably Sentient Space Meat\"\n"
-"Reward Standard(H)[]"
+"Reward Standard(H)"
 
 #: src-en/data/events_sector_obelisk.xml:1378
 msgid ""
@@ -2384,7 +2391,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_INSULTS\"]/choice[1]/event/choice[5]/text"
 msgstr ""
 "\"Stupid Thing\"\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1385
 msgid ""
@@ -2398,14 +2405,14 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_INSULTS\"]/choice[1]/event/choice[5]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1394
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_INSULTS\"]/choice[1]/event/choice[6]/text"
 msgstr ""
 "\"Zoomer\"\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1396
 msgid ""
@@ -2419,14 +2426,14 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_INSULTS\"]/choice[1]/event/choice[6]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1407
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_INSULTS\"]/choice[2]/text"
 msgstr ""
 "Ignore their request - attack!\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1409
 msgid ""
@@ -2440,14 +2447,14 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_INSULTS\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1418
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_INSULTS\"]/choice[3]/text"
 msgstr ""
 "Decline.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:1420
 msgid ""
@@ -2464,9 +2471,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1426
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_INSULTS\"]/choice[3]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1434
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_DATA\"]/text"
@@ -2482,25 +2487,24 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_DATA\"]/choice[1]/text"
 msgstr ""
 "Offer your data.\n"
-"{3 ~40[] \n"
-"or {3 ~40\n"
-"<!>Fleet Advance(1)[]"
+"50% {3 ~40\n"
+"50% {3 ~40\n"
+"50% <!>Fleet Advance(1)"
 
 #: src-en/data/events_sector_obelisk.xml:1441
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_DATA\"]/choice[2]/text"
 msgstr ""
 "Give them fake data.\n"
-"{3 ~40\n"
-"Fleet Delay(1)[] \n"
-"or [Fight]"
+"50% {3 ~40\n"
+"50% Fleet Delay(1)"
 
 #: src-en/data/events_sector_obelisk.xml:1445
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_DATA\"]/choice[3]/text"
 msgstr ""
 "Decline.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:1447
 msgid ""
@@ -2517,9 +2521,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1453
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_DATA\"]/choice[3]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1461
 msgid ""
@@ -2560,7 +2562,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_CHOICE\"]/choice[1]/text"
 msgstr ""
 "Fight the Obelisks.\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1519
 msgid ""
@@ -2572,14 +2574,14 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_CHOICE\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1528
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_CHOICE\"]/choice[2]/text"
 msgstr ""
 "Avoid them.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:1530
 msgid ""
@@ -2596,9 +2598,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1536
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_CHOICE\"]/choice[2]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1543
 msgid ""
@@ -2638,30 +2638,28 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_ENGI_HIDE\"]/choice[1]/text"
 msgstr ""
 "Chase after them.\n"
-"[] \n"
-"or [Fight(CK=HK: [Reward Standard No Item(H)[Gain a drone(Giftlist Engi)[]]])]"
+"Fight(HK: 50% Reward Standard No Item(H))(CK: 50% Reward |(R) 50% Reward |(H) 50% Reward Stuff(R))"
 
 #: src-en/data/events_sector_obelisk.xml:1557
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_ENGI_HIDE\"]/choice[@req=\"LIST_CREW_ENGI\"]/text"
 msgstr ""
 "(Engi Crew) Hail the ship.\n"
-"[Gain a crew(Engi Defender)[], []]"
+"Gain a crew(Engi Defender)"
 
 #: src-en/data/events_sector_obelisk.xml:1561
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_ENGI_HIDE\"]/choice[3]/text"
 msgstr ""
 "Hail the ship.\n"
-"[Storage Check, []] \n"
-"or [~25[{-5[], }-3[], |-3[], [Fight(CK=HK: [Reward Standard No Item(H)[Gain a drone(Giftlist Engi)[]]])]], []]"
+"Fight(HK: 50% Reward Standard No Item(H))(CK: 50% Reward |(R) 50% Reward |(H) 50% Reward Stuff(R))"
 
 #: src-en/data/events_sector_obelisk.xml:1565
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_ENGI_HIDE\"]/choice[4]/text"
 msgstr ""
 "Ignore it.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:1567
 msgid ""
@@ -2680,9 +2678,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1573
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_ENGI_HIDE\"]/choice[4]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1581
 msgid ""
@@ -2701,7 +2697,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//eventList[@name=\"ANCIENT_ENGI_HIDE_CHASE\"]/event[2]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [Reward Standard No Item(H)[Gain a drone(Giftlist Engi)[]]])"
+"Fight(HK: Reward Standard No Item(H))(CK: Reward |(R) Reward |(H) Reward Stuff(R))"
 
 #: src-en/data/events_sector_obelisk.xml:1594
 msgid ""
@@ -2718,9 +2714,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1600
 msgid ""
 "data/events_sector_obelisk.xml$//eventList[@name=\"ANCIENT_ENGI_HIDE_HAIL\"]/event[1]/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1605
 msgid ""
@@ -2736,7 +2730,8 @@ msgid ""
 "data/events_sector_obelisk.xml$//eventList[@name=\"ANCIENT_ENGI_HIDE_HAIL\"]/event[2]/choice[1]/text"
 msgstr ""
 "We have similar objectives. Maybe we could help each other?\n"
-"~25[{-5[], }-3[], |-3[], [Fight(CK=HK: [Reward Standard No Item(H)[Gain a drone(Giftlist Engi)[]]])]]"
+"~25\n"
+"Fight(HK: Reward Standard No Item(H))(CK: Reward |(R) Reward |(H) Reward Stuff(R))"
 
 #: src-en/data/events_sector_obelisk.xml:1610
 msgid ""
@@ -2750,7 +2745,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//eventList[@name=\"ANCIENT_ENGI_HIDE_HAIL\"]/event[2]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Pay them back in fuel.\n"
-"{-5[]"
+"{-5"
 
 #: src-en/data/events_sector_obelisk.xml:1617
 msgid ""
@@ -2764,7 +2759,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//eventList[@name=\"ANCIENT_ENGI_HIDE_HAIL\"]/event[2]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Pay them back in missiles.\n"
-"}-3[]"
+"}-3"
 
 #: src-en/data/events_sector_obelisk.xml:1626
 msgid ""
@@ -2778,7 +2773,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//eventList[@name=\"ANCIENT_ENGI_HIDE_HAIL\"]/event[2]/choice[1]/event/choice[3]/text"
 msgstr ""
 "Pay them back in drones.\n"
-"|-3[]"
+"|-3"
 
 #: src-en/data/events_sector_obelisk.xml:1635
 msgid ""
@@ -2792,7 +2787,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//eventList[@name=\"ANCIENT_ENGI_HIDE_HAIL\"]/event[2]/choice[1]/event/choice[4]/text"
 msgstr ""
 "We cannot repay, take the scrap and run!\n"
-"[Fight(CK=HK: [Reward Standard No Item(H)[Gain a drone(Giftlist Engi)[]]])]"
+"Fight(HK: Reward Standard No Item(H))(CK: Reward |(R) Reward |(H) Reward Stuff(R))"
 
 #: src-en/data/events_sector_obelisk.xml:1644
 msgid ""
@@ -2806,14 +2801,12 @@ msgid ""
 "data/events_sector_obelisk.xml$//eventList[@name=\"ANCIENT_ENGI_HIDE_HAIL\"]/event[2]/choice[1]/event/choice[4]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [Reward Standard No Item(H)[Gain a drone(Giftlist Engi)[]]])"
+"Fight(HK: Reward Standard No Item(H))(CK: Reward |(R) Reward |(H) Reward Stuff(R))"
 
 #: src-en/data/events_sector_obelisk.xml:1655
 msgid ""
 "data/events_sector_obelisk.xml$//eventList[@name=\"ANCIENT_ENGI_HIDE_HAIL\"]/event[2]/choice[2]/text"
-msgstr ""
-"Leave the Engi alone.\n"
-"[]"
+msgstr "Leave the Engi alone.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1661
 msgid ""
@@ -2829,7 +2822,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_ENGI_HIDE_HAIL_ENGI\"]/choice[1]/text"
 msgstr ""
 "We have similar objectives. Maybe we could help each other?\n"
-"Gain a crew(Engi Defender)[]"
+"Gain a crew(Engi Defender)"
 
 #: src-en/data/events_sector_obelisk.xml:1666
 msgid ""
@@ -2841,9 +2834,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1671
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_ENGI_HIDE_HAIL_ENGI\"]/choice[2]/text"
-msgstr ""
-"Leave the Engi alone.\n"
-"[]"
+msgstr "Leave the Engi alone.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1678
 msgid ""
@@ -2859,7 +2850,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_CRYSTAL_CHASE\"]/choice[1]/text"
 msgstr ""
 "Chase the Obelisk Ship.\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1682
 msgid ""
@@ -2873,14 +2864,14 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_CRYSTAL_CHASE\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1691
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_CRYSTAL_CHASE\"]/choice[2]/text"
 msgstr ""
 "Chase the Crystal Ship.\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK: Reward Standard(M))(CK: 20% Reward Stuff(R) 20% Reward Standard(H) 20% Reward Stuff(R) 20% Reward Standard(H) 20% Reward Stuff(R) 20% Reward Standard(H) 20% Reward Stuff(R) 20% Reward Standard(H) 20% Reward Standard(M))"
 
 #: src-en/data/events_sector_obelisk.xml:1693
 msgid ""
@@ -2895,14 +2886,14 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_CRYSTAL_CHASE\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK: Reward Standard(M))(CK: 20% Reward Stuff(R) 20% Reward Standard(H) 20% Reward Stuff(R) 20% Reward Standard(H) 20% Reward Stuff(R) 20% Reward Standard(H) 20% Reward Stuff(R) 20% Reward Standard(H) 20% Reward Standard(M))"
 
 #: src-en/data/events_sector_obelisk.xml:1702
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_CRYSTAL_CHASE\"]/choice[3]/text"
 msgstr ""
 "Leave both ships alone.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:1704
 msgid ""
@@ -2920,9 +2911,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1710
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_CRYSTAL_CHASE\"]/choice[3]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1719
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_LOOTERS\"]/text"
@@ -2936,7 +2925,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_LOOTERS\"]/choice[1]/text"
 msgstr ""
 "Attack the Crystal ship, then we can scrap both ships!\n"
-"[Fight(CK=HK: [Reward Standard(M)[Reward Standard(H)Gain a drone(Giftlist Ancient Drone)[]]])]"
+"Fight(HK=CK: Reward Standard(M))"
 
 #: src-en/data/events_sector_obelisk.xml:1724
 msgid ""
@@ -2950,14 +2939,14 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_LOOTERS\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [Reward Standard(M)[Reward Standard(H)Gain a drone(Giftlist Ancient Drone)[]]])"
+"Fight(HK=CK: Reward Standard(M))"
 
 #: src-en/data/events_sector_obelisk.xml:1733
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_LOOTERS\"]/choice[2]/text"
 msgstr ""
 "Ignore both ships.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:1735
 msgid ""
@@ -2976,9 +2965,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1741
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_LOOTERS\"]/choice[2]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1748
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_LOOTERS_WIN\"]/text"
@@ -2993,7 +2980,7 @@ msgid ""
 msgstr ""
 "Scrap the Obelisk ship.\n"
 "Reward Standard(H)\n"
-"Gain a drone(Giftlist Ancient Drone)[]"
+"Gain a drone(Giftlist Ancient Drone)"
 
 #: src-en/data/events_sector_obelisk.xml:1753
 msgid ""
@@ -3010,9 +2997,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1765
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_WORTHY\"]/choice[1]/text"
-msgstr ""
-"We are not worthy.\n"
-"[]"
+msgstr "We are not worthy.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1767
 msgid ""
@@ -3024,7 +3009,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_WORTHY\"]/choice[@req=\"COMBAT_WEAPON_JAMMER\"]/text"
 msgstr ""
 "(Targeting Jammer) Disable their weapons.\n"
-"Reward Standard(M)[]"
+"Reward Standard(M)"
 
 #: src-en/data/events_sector_obelisk.xml:1773
 msgid ""
@@ -3041,7 +3026,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_WORTHY\"]/choice[@req=\"COMBAT_SHIELDS_JAMMER\"]/text"
 msgstr ""
 "(Shield Jammer) Disable their shields.\n"
-"Reward Standard(M)[]"
+"Reward Standard(M)"
 
 #: src-en/data/events_sector_obelisk.xml:1780
 msgid ""
@@ -3057,7 +3042,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_WORTHY\"]/choice[4]/text"
 msgstr ""
 "You are not worthy.\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1787
 msgid ""
@@ -3070,7 +3055,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_WORTHY\"]/choice[4]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1799
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_SCULPTER\"]/text"
@@ -3084,7 +3069,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_SCULPTER\"]/choice[1]/text"
 msgstr ""
 "Fight the ship.\n"
-"[Fight(CK=HK: [Reward Standard(H)[Reward { Only(M)[], []]])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1805
 msgid ""
@@ -3096,14 +3081,14 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_SCULPTER\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [Reward Standard(H)[Reward { Only(M)[], []]])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1814
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_SCULPTER\"]/choice[2]/text"
 msgstr ""
 "Admire the rocks in detail.\n"
-"Reward { Only(H)[]"
+"Reward { Only(H)"
 
 #: src-en/data/events_sector_obelisk.xml:1816
 msgid ""
@@ -3121,7 +3106,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_SCULPTER\"]/choice[3]/text"
 msgstr ""
 "Just nod and smile.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:1823
 msgid ""
@@ -3139,9 +3124,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1829
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_SCULPTER\"]/choice[3]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1836
 msgid ""
@@ -3155,7 +3138,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_SCULPTER_WIN\"]/choice[1]/text"
 msgstr ""
 "Harvest the asteroids.\n"
-"Reward { Only(M)[]"
+"Reward { Only(M)"
 
 #: src-en/data/events_sector_obelisk.xml:1841
 msgid ""
@@ -3167,9 +3150,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1846
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_SCULPTER_WIN\"]/choice[2]/text"
-msgstr ""
-"You've done enough, leave.\n"
-"[]"
+msgstr "You've done enough, leave.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1853
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_REBEL_DRONE\"]/text"
@@ -3183,15 +3164,15 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_REBEL_DRONE\"]/choice[1]/text"
 msgstr ""
 "Attempt to scrap the ship.\n"
-"Reward Standard(L)[] \n"
-"or [Fight(CK=HK: [])]"
+"50% Reward Standard(L)\n"
+"Fight(HK: 50% Reward Standard(M))(CK: )"
 
 #: src-en/data/events_sector_obelisk.xml:1859
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_REBEL_DRONE\"]/choice[2]/text"
 msgstr ""
 "Abide the message and leave the drone alone.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:1861
 msgid ""
@@ -3210,9 +3191,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1867
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ANCIENT_REBEL_DRONE\"]/choice[2]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1875
 msgid ""
@@ -3231,7 +3210,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//eventList[@name=\"ANCIENT_REBEL_DRONE_SCRAP_BAD\"]/event[2]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK: Reward Standard(M))(CK: )"
 
 #: src-en/data/events_sector_obelisk.xml:1898
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SOLARHARVEST\"]/text"
@@ -3246,7 +3225,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SOLARHARVEST\"]/choice[1]/text"
 msgstr ""
 "Hail the Obelisks in charge.\n"
-"[[[[Fight(CK=HK: [Reward Standard(H)[Gain a crew(Obelisk)[]]])], []]], []]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1903
 msgid ""
@@ -3262,7 +3241,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SOLARHARVEST\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "What are you even doing?\n"
-"[[[Fight(CK=HK: [Reward Standard(H)[Gain a crew(Obelisk)[]]])], []]]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1907
 msgid ""
@@ -3277,7 +3256,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SOLARHARVEST\"]/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Wouldn't that destroy the solar systems?\n"
-"[[Fight(CK=HK: [Reward Standard(H)[Gain a crew(Obelisk)[]]])], []]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1911
 msgid ""
@@ -3294,7 +3273,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SOLARHARVEST\"]/choice[1]/event/choice[1]/event/choice/event/choice[1]/text"
 msgstr ""
 "Assist the Obelisks and fight the MFK Ace.\n"
-"[Fight(CK=HK: [Reward Standard(H)[Gain a crew(Obelisk)[]]])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1915
 msgid ""
@@ -3306,28 +3285,22 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SOLARHARVEST\"]/choice[1]/event/choice[1]/event/choice/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [Reward Standard(H)[Gain a crew(Obelisk)[]]])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1924
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SOLARHARVEST\"]/choice[1]/event/choice[1]/event/choice/event/choice[2]/text"
-msgstr ""
-"Seems like a good time to leave.\n"
-"[]"
+msgstr "Seems like a good time to leave.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1932
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SOLARHARVEST\"]/choice[1]/event/choice[2]/text"
-msgstr ""
-"Abide his warning and leave.\n"
-"[]"
+msgstr "Abide his warning and leave.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1938
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SOLARHARVEST\"]/choice[2]/text"
-msgstr ""
-"We shouldn't stick around. Leave quickly.\n"
-"[]"
+msgstr "We shouldn't stick around. Leave quickly.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1944
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_CRYSTALS\"]/text"
@@ -3341,7 +3314,8 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_CRYSTALS\"]/choice[1]/text"
 msgstr ""
 "Attack the settlement head on, we might be able to get a good surrender out of these guys!\n"
-"<!>Enemy Boarding(x2 Crystal Sentinel)[Fight(CK=HK: [Reward Standard(H)[[Gain a weapon(Giftlist Crystal Elite)[], Gain a crew(Crystal Sentinel)[]]]])]"
+"<!>Enemy Boarding(x2 Crystal Sentinel)\n"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1948
 msgid ""
@@ -3357,14 +3331,17 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_CRYSTALS\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [Reward Standard(H)[[Gain a weapon(Giftlist Crystal Elite)[], Gain a crew(Crystal Sentinel)[]]]])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:1959
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_CRYSTALS\"]/choice[2]/text"
 msgstr ""
 "Hail the settlement.\n"
-"[Gain a weapon(Random)-80≤~≤-70[], Gain a weapon(Giftlist Crystal Elite)-60≤~≤-50[], []]"
+"Gain a weapon(Random)\n"
+"-80≤~≤-70\n"
+"Gain a weapon(Giftlist Crystal Elite)\n"
+"-60≤~≤-50"
 
 #: src-en/data/events_sector_obelisk.xml:1961
 msgid ""
@@ -3380,7 +3357,7 @@ msgid ""
 msgstr ""
 "Offer to buy an Obelisk Weapon from them.\n"
 "Gain a weapon(Random)\n"
-"-80≤~≤-70[]"
+"-80≤~≤-70"
 
 #: src-en/data/events_sector_obelisk.xml:1965
 msgid ""
@@ -3395,7 +3372,7 @@ msgid ""
 msgstr ""
 "Offer to buy a Crystal Weapon from them.\n"
 "Gain a weapon(Giftlist Crystal Elite)\n"
-"-60≤~≤-50[]"
+"-60≤~≤-50"
 
 #: src-en/data/events_sector_obelisk.xml:1975
 msgid ""
@@ -3407,16 +3384,14 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1983
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_CRYSTALS\"]/choice[2]/event/choice[3]/text"
-msgstr ""
-"Nevermind, let's leave.\n"
-"[]"
+msgstr "Nevermind, let's leave.\n"
 
 #: src-en/data/events_sector_obelisk.xml:1989
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_CRYSTALS\"]/choice[3]/text"
 msgstr ""
 "Ignore the outpost.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:1991
 msgid ""
@@ -3435,9 +3410,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:1997
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_CRYSTALS\"]/choice[3]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:2005
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SPY\"]/text"
@@ -3452,7 +3425,7 @@ msgstr ""
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SPY\"]/choice[1]/text"
 msgstr ""
 "There's no time for mediation, help the Feds!\n"
-"[Fight(CK=HK: [Reward Standard(H)[Gain a crew(Human Soldier)[]]])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2009
 msgid ""
@@ -3466,13 +3439,13 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SPY\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [Reward Standard(H)[Gain a crew(Human Soldier)[]]])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2018
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SPY\"]/choice[2]/text"
 msgstr ""
 "There's no time for mediation, help the Obelisks!\n"
-"[Fight(CK=HK: [Reward Standard(M)[Gain a crew(Obelisk)[]]])]"
+"Fight(HK=CK: Reward Standard(M))"
 
 #: src-en/data/events_sector_obelisk.xml:2020
 msgid ""
@@ -3486,20 +3459,20 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SPY\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [Reward Standard(M)[Gain a crew(Obelisk)[]]])"
+"Fight(HK=CK: Reward Standard(M))"
 
 #: src-en/data/events_sector_obelisk.xml:2029
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SPY\"]/choice[3]/text"
 msgstr ""
 "Try to stop the conflict.\n"
-"Reward ~ Only(M)[] \n"
-"or [Fight(CK=HK: [Reward Standard(M)[Gain a crew(Obelisk)[]]])]"
+"50% Reward ~ Only(M)\n"
+"Fight(HK=CK: 50% Reward Standard(M))"
 
 #: src-en/data/events_sector_obelisk.xml:2033
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SPY\"]/choice[4]/text"
 msgstr ""
 "Ignore the conflict.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:2035
 msgid ""
@@ -3518,9 +3491,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:2041
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SPY\"]/choice[4]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:2049
 msgid ""
@@ -3545,7 +3516,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//eventList[@name=\"ROYAL_SPY_RESOLVE\"]/event[2]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [Reward Standard(M)[Gain a crew(Obelisk)[]]])"
+"Fight(HK=CK: Reward Standard(M))"
 
 #: src-en/data/events_sector_obelisk.xml:2064
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_MFK_OUTPOST\"]/text"
@@ -3559,7 +3530,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_MFK_OUTPOST\"]/choice[1]/text"
 msgstr ""
 "Attack the station, maybe they have backup supplies!\n"
-"[Fight(CK: [Reward Standard(H)[Reward Stuff(H)[]]])(HK: [])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2069
 msgid ""
@@ -3571,22 +3542,21 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_MFK_OUTPOST\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK: [Reward Standard(H)[Reward Stuff(H)[]]])(HK: [])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2078
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_MFK_OUTPOST\"]/choice[@req=\"LIST_CREW_HUMAN\"]/text"
 msgstr ""
 "(Human Crew) Pretend to be a Rebel vessel.\n"
-"[Fight] \n"
-"or Reward Stuff(M)[]"
+"50% Reward Stuff(M)"
 
 #: src-en/data/events_sector_obelisk.xml:2082
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_MFK_OUTPOST\"]/choice[3]/text"
 msgstr ""
 "Ignore the outpost.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:2084
 msgid ""
@@ -3605,9 +3575,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:2090
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_MFK_OUTPOST\"]/choice[3]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:2098
 msgid ""
@@ -3645,7 +3613,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_TRANSPORT_RAID\"]/choice[1]/text"
 msgstr ""
 "Attack the Rebels!\n"
-"[Fight(CK=HK: [Reward Standard(H)[Reward Stuff(H)[] or [] or Gain a weapon(Random)[]]])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2117
 msgid ""
@@ -3657,14 +3625,14 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_TRANSPORT_RAID\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [Reward Standard(H)[Reward Stuff(H)[] or [] or Gain a weapon(Random)[]]])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2126
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_TRANSPORT_RAID\"]/choice[2]/text"
 msgstr ""
 "Avoid the ships.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:2128
 msgid ""
@@ -3683,9 +3651,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:2134
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_TRANSPORT_RAID\"]/choice[2]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:2142
 msgid ""
@@ -3725,7 +3691,8 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_UPRISING\"]/choice[1]/text"
 msgstr ""
 "Dock with the ship and investigate.\n"
-"[[[[[Fight(CK=HK: [Reward Standard(H)[Gain a weapon(Random)[]]])], []]], [[[Fight(CK=HK: [Reward Item(H)[Gain a crew(Cognitive)[]]])], []]]]]"
+"Fight(HK=CK: Reward Standard(H))\n"
+"Fight(HK=CK: Reward Item(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2161
 msgid ""
@@ -3740,7 +3707,8 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_UPRISING\"]/choice[1]/event/choice/text"
 msgstr ""
 "Keep looking.\n"
-"[[[[Fight(CK=HK: [Reward Standard(H)[Gain a weapon(Random)[]]])], []]], [[[Fight(CK=HK: [Reward Item(H)[Gain a crew(Cognitive)[]]])], []]]]"
+"Fight(HK=CK: Reward Standard(H))\n"
+"Fight(HK=CK: Reward Item(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2165
 msgid ""
@@ -3757,7 +3725,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_UPRISING\"]/choice[1]/event/choice/event/choice[1]/text"
 msgstr ""
 "Shoot the Cognitive.\n"
-"[[[Fight(CK=HK: [Reward Standard(H)[Gain a weapon(Random)[]]])], []]]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2169
 msgid ""
@@ -3773,7 +3741,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_UPRISING\"]/choice[1]/event/choice/event/choice[1]/event/choice/text"
 msgstr ""
 "Don't worry about it.\n"
-"[[Fight(CK=HK: [Reward Standard(H)[Gain a weapon(Random)[]]])], []]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2173
 msgid ""
@@ -3789,7 +3757,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_UPRISING\"]/choice[1]/event/choice/event/choice[1]/event/choice/event/choice[1]/text"
 msgstr ""
 "Accept.\n"
-"[Fight(CK=HK: [Reward Standard(H)[Gain a weapon(Random)[]]])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2177
 msgid ""
@@ -3805,14 +3773,12 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_UPRISING\"]/choice[1]/event/choice/event/choice[1]/event/choice/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [Reward Standard(H)[Gain a weapon(Random)[]]])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2186
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_UPRISING\"]/choice[1]/event/choice/event/choice[1]/event/choice/event/choice[2]/text"
-msgstr ""
-"Decline.\n"
-"[]"
+msgstr "Decline.\n"
 
 #: src-en/data/events_sector_obelisk.xml:2188
 msgid ""
@@ -3826,7 +3792,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_UPRISING\"]/choice[1]/event/choice/event/choice[2]/text"
 msgstr ""
 "Shoot the Royal.\n"
-"[[[Fight(CK=HK: [Reward Item(H)[Gain a crew(Cognitive)[]]])], []]]"
+"Fight(HK=CK: Reward Item(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2198
 msgid ""
@@ -3842,7 +3808,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_UPRISING\"]/choice[1]/event/choice/event/choice[2]/event/choice/text"
 msgstr ""
 "I dunno, I just clicked the second option.\n"
-"[[Fight(CK=HK: [Reward Item(H)[Gain a crew(Cognitive)[]]])], []]"
+"Fight(HK=CK: Reward Item(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2202
 msgid ""
@@ -3859,7 +3825,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_UPRISING\"]/choice[1]/event/choice/event/choice[2]/event/choice/event/choice[1]/text"
 msgstr ""
 "Accept.\n"
-"[Fight(CK=HK: [Reward Item(H)[Gain a crew(Cognitive)[]]])]"
+"Fight(HK=CK: Reward Item(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2206
 msgid ""
@@ -3873,14 +3839,12 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_UPRISING\"]/choice[1]/event/choice/event/choice[2]/event/choice/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [Reward Item(H)[Gain a crew(Cognitive)[]]])"
+"Fight(HK=CK: Reward Item(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2215
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_UPRISING\"]/choice[1]/event/choice/event/choice[2]/event/choice/event/choice[2]/text"
-msgstr ""
-"Decline.\n"
-"[]"
+msgstr "Decline.\n"
 
 #: src-en/data/events_sector_obelisk.xml:2217
 msgid ""
@@ -3894,7 +3858,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_UPRISING\"]/choice[2]/text"
 msgstr ""
 "Ignore the ship.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:2231
 msgid ""
@@ -3913,9 +3877,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:2237
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_UPRISING\"]/choice[2]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:2244
 msgid ""
@@ -3929,7 +3891,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"UPRISING_COGNITIVE_DEFEAT\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a weapon(Random)[]"
+"Gain a weapon(Random)"
 
 #: src-en/data/events_sector_obelisk.xml:2249
 msgid ""
@@ -3951,7 +3913,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"UPRISING_ROYAL_DEFEAT\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a crew(Cognitive)[]"
+"Gain a crew(Cognitive)"
 
 #: src-en/data/events_sector_obelisk.xml:2260
 msgid ""
@@ -3965,7 +3927,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ENCOUNTER_ANCIENT\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2309
 msgid ""
@@ -4054,7 +4016,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ENCOUNTER_ANCIENT_AUTO\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK: )(HK: [])"
+"Fight(HK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2331
 msgid ""
@@ -4097,7 +4059,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ENCOUNTER_ANCIENT_SURRENDER\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK: Reward Standard(H))(CK: )"
 
 #: src-en/data/events_sector_obelisk.xml:2349
 msgid ""
@@ -4109,16 +4071,12 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:2352
 msgid ""
 "data/events_sector_obelisk.xml$//eventList[@name=\"ANCIENT_SURRENDER_LIST\"]/event/choice[1]/text"
-msgstr ""
-"Let them go.\n"
-"[]"
+msgstr "Let them go.\n"
 
 #: src-en/data/events_sector_obelisk.xml:2356
 msgid ""
 "data/events_sector_obelisk.xml$//eventList[@name=\"ANCIENT_SURRENDER_LIST\"]/event/choice[2]/text"
-msgstr ""
-"Finish these bastards off.\n"
-"[]"
+msgstr "Finish these bastards off.\n"
 
 #: src-en/data/events_sector_obelisk.xml:2358
 msgid ""
@@ -4138,7 +4096,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ENCOUNTER_ENGI_ELITE_ANCIENT\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [Reward Standard No Item(H)[Gain a drone(Giftlist Engi)[]]])"
+"Fight(HK=CK: Reward Standard No Item(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2386
 msgid ""
@@ -4152,7 +4110,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ENCOUNTER_ANCIENT_PULSAR\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2397
 msgid ""
@@ -4167,14 +4125,14 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ENCOUNTER_ANCIENT_SUN\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2422
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ENCOUNTER_ROYAL\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2427
 msgid ""
@@ -4227,7 +4185,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ENCOUNTER_ROYAL_MFK\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [Reward Standard No Item(H)[Gain a weapon(Giftlist Rebel)[]]])"
+"Fight(HK=CK: Reward Standard No Item(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2444
 msgid ""
@@ -4286,7 +4244,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ENCOUNTER_ROYAL_PIRATE\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK: Reward Standard(M))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_sector_obelisk.xml:2462
 msgid ""
@@ -4302,7 +4260,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ENCOUNTER_ROYAL_AUGMENTED\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M))(CK: Reward Item(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2477
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SUPERFISH\"]/text"
@@ -4317,7 +4275,7 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "Continue...\n"
-"[[Fight(CK=HK: [])], Gain a crew(Human Mfk)[], [Storage Check, []]]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2482
 msgid ""
@@ -4335,7 +4293,7 @@ msgid ""
 " and @lvl=\"0\"]/event/choice[1]/text"
 msgstr ""
 "Your logo looks like it was drawn by a toddler.\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2486
 msgid ""
@@ -4351,7 +4309,7 @@ msgid ""
 " and @lvl=\"0\"]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2495
 msgid ""
@@ -4359,7 +4317,7 @@ msgid ""
 " and @lvl=\"0\"]/event/choice[@req=\"LIST_CREW_JERRY\"]/text"
 msgstr ""
 "(Jerry) Compliment the logo.\n"
-"Gain a crew(Human Mfk)[]"
+"Gain a crew(Human Mfk)"
 
 #: src-en/data/events_sector_obelisk.xml:2497
 msgid ""
@@ -4385,7 +4343,7 @@ msgid ""
 " and @lvl=\"0\"]/event/choice[3]/text"
 msgstr ""
 "Agree not to fight.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:2504
 msgid ""
@@ -4405,9 +4363,7 @@ msgstr ""
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_SUPERFISH\"]/choice[@req=\"loc_superfish\""
 " and @lvl=\"0\"]/event/choice[3]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:2518
 msgid ""
@@ -4415,7 +4371,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "That logo is familiar...\n"
-"[Fight(CK=HK: [])]"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2520
 msgid ""
@@ -4431,7 +4387,7 @@ msgid ""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK=HK: [])"
+"Fight(HK=CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_obelisk.xml:2530
 msgid ""
@@ -4450,7 +4406,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ROOMBA\"]/choice[1]/text"
 msgstr ""
 "Destroy the Auto-ship, and take whatever the outpost has!\n"
-"[Fight(CK: )(HK: [Reward Standard(M)[[Gain a drone(Roomba Boarder)[], Reward |(H)[]]]])]"
+"Fight(HK: Reward Standard(M))"
 
 #: src-en/data/events_sector_obelisk.xml:2541
 msgid ""
@@ -4462,14 +4418,14 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ROOMBA\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(CK: )(HK: [Reward Standard(M)[[Gain a drone(Roomba Boarder)[], Reward |(H)[]]]])"
+"Fight(HK: Reward Standard(M))"
 
 #: src-en/data/events_sector_obelisk.xml:2550
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ROOMBA\"]/choice[2]/text"
 msgstr ""
 "Ignore the outpost.\n"
-"[Storage Check, []]"
+"Storage Check"
 
 #: src-en/data/events_sector_obelisk.xml:2552
 msgid ""
@@ -4486,9 +4442,7 @@ msgstr ""
 #: src-en/data/events_sector_obelisk.xml:2558
 msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ROOMBA\"]/choice[2]/event/choice[2]/text"
-msgstr ""
-"Do nothing.\n"
-"[]"
+msgstr "Do nothing.\n"
 
 #: src-en/data/events_sector_obelisk.xml:2565
 msgid "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ROOMBA_RAID\"]/text"
@@ -4502,7 +4456,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ROOMBA_RAID\"]/choice[1]/text"
 msgstr ""
 "Interrogate them.\n"
-"Gain a drone(Roomba Boarder)[]"
+"Gain a drone(Roomba Boarder)"
 
 #: src-en/data/events_sector_obelisk.xml:2569
 msgid ""
@@ -4518,7 +4472,7 @@ msgid ""
 "data/events_sector_obelisk.xml$//event[@name=\"ROYAL_ROOMBA_RAID\"]/choice[2]/text"
 msgstr ""
 "Kill the lot of them and grab whatever parts are lying around.\n"
-"Reward |(H)[]"
+"Reward |(H)"
 
 #: src-en/data/events_sector_obelisk.xml:2576
 msgid ""
