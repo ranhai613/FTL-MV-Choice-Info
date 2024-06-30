@@ -176,61 +176,8 @@ class EventAnalizer():
                     return nece_info
             else:
                 return []
-            
-            
-        def eventAnalize(tree, eventNodeElement):
-            if isinstance(eventNodeElement._event, FixedEvent):
-                return [NameReturn(eventNodeElement._event._event)], None, eventNodeElement._prob
-            
-            elif isinstance(eventNodeElement._event, FightEvent):
-                hkInfo = None
-                ckInfo = None
-                srInfo = None
-                if eventNodeElement._event._hullKillNode is not None and eventNodeElement._event.is_HKexist:
-                    hkInfo = treeAnalize(tree.subtree(eventNodeElement._event._hullKillNode.identifier))
-                if eventNodeElement._event._crewKillNode is not None and eventNodeElement._event.is_CKexist:
-                    ckInfo = treeAnalize(tree.subtree(eventNodeElement._event._crewKillNode.identifier))
-                if eventNodeElement._event._surrenderNode is not None and eventNodeElement._event.is_SRexist:
-                    ckInfo = treeAnalize(tree.subtree(eventNodeElement._event._surrenderNode.identifier))
-                
-                return None, {'HK': hkInfo, 'CK': ckInfo, 'SR': srInfo}, eventNodeElement._prob
-            
-            eventlist = []
-            for element in eventNodeElement._event._element.iterchildren():
-                try:
-                    eventclass = EventClasses[element.tag].value(element)
-                except KeyError:
-                    continue
-                eventlist.append(eventclass)
-            return eventlist, None, eventNodeElement._prob
-        
                     
-        def eventAnalize(tree, eventNodeElement):
-            if isinstance(eventNodeElement._event, FixedEvent):
-                return [NameReturn(eventNodeElement._event._event)], None, eventNodeElement._prob
-            
-            elif isinstance(eventNodeElement._event, FightEvent):
-                hkInfo = None
-                ckInfo = None
-                srInfo = None
-                if eventNodeElement._event._hullKillNode is not None and eventNodeElement._event.is_HKexist:
-                    hkInfo = treeAnalize(tree.subtree(eventNodeElement._event._hullKillNode.identifier))
-                if eventNodeElement._event._crewKillNode is not None and eventNodeElement._event.is_CKexist:
-                    ckInfo = treeAnalize(tree.subtree(eventNodeElement._event._crewKillNode.identifier))
-                if eventNodeElement._event._surrenderNode is not None and eventNodeElement._event.is_SRexist:
-                    ckInfo = treeAnalize(tree.subtree(eventNodeElement._event._surrenderNode.identifier))
                 
-                return None, {'HK': hkInfo, 'CK': ckInfo, 'SR': srInfo}, eventNodeElement._prob
-            
-            eventlist = []
-            for element in eventNodeElement._event._element.iterchildren():
-                try:
-                    eventclass = EventClasses[element.tag].value(element)
-                except KeyError:
-                    continue
-                eventlist.append(eventclass)
-            return eventlist, None, eventNodeElement._prob
-        
         tree = Tree()
         rootEventNode = EventNode(self._childEvents, 1)
         root = tree.create_node(data=rootEventNode)
@@ -243,8 +190,8 @@ class Choice(ElementBaseClass):
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
         self._ship = None
-        self._additional_info = None
         self._evetnAnalizer = None
+        self._additional_info = None
     
     @property
     def childEvents(self):
@@ -259,7 +206,7 @@ class Choice(ElementBaseClass):
         self._evetnAnalizer = EventAnalizer([Event(element, self._xmlpath, self._uniqueXPathGenerator) for element in xpath(self._element, './event')])
         self._evetnAnalizer.ensureChildEvents(self._ship)
     
-    def init_ShipTag(self):
+    def init_shipTag(self):
         for parent in self._element.iterancestors():
             ships = [ship.get('load') for ship in xpath(parent, './ship') if ship.get('load')]
             if len(ships) > 0:
@@ -383,7 +330,7 @@ def main():
 
     print('initializing choices...')
     for tag in global_choice_map.values():
-        tag.init_ShipTag()
+        tag.init_shipTag()
         tag.init_childEventTags()
     print('initializing events...')
     for tag in global_event_map.values():
