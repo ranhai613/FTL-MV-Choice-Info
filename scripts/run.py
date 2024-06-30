@@ -16,7 +16,7 @@ FIXED_EVENT_MAP = {
 }
 
 class ElementBaseClass():
-    def __init__(self, element, xmlpath, uniqueXPathGenerator):
+    def __init__(self, element=None, xmlpath='', uniqueXPathGenerator=None):
         self._element = element
         self._xmlpath = xmlpath.replace('src-en/', '')
         self._uniqueXPathGenerator = uniqueXPathGenerator
@@ -69,7 +69,7 @@ class EventAnalizer():
                 if isinstance(load_event, Event):
                     new_events.append(load_event)
                 elif isinstance(load_event, EventList):
-                    new_events.extend(load_event._childEvents)
+                    new_events.extend(load_event.childEvents)
                 elif isinstance(load_event, FixedEvent):
                     new_events.append(load_event)
                     continue
@@ -84,6 +84,17 @@ class EventAnalizer():
     
     def getInfoList(self):
         assert self.is_ensured
+        
+        class EventNodeElement():
+            def __init__(self, event, prob) -> None:
+                self._event = event
+                self._prob = prob
+
+        class EventNode():
+            def __init__(self, events, prob) -> None:
+                self._events = [EventNodeElement(event, ((1 / len(events)) * prob)) for event in events]
+                self._prob = prob
+
         
         def growTree(parent_node, parent_eventNode: EventNode):
             for eventNodeElement in parent_eventNode._events:
@@ -105,7 +116,7 @@ class EventAnalizer():
         
         def eventAnalize(tree, eventNodeElement):
             if isinstance(eventNodeElement._event, FixedEvent):
-                return [NameReturn(eventNodeElement._event._event)], None, eventNodeElement._prob
+                return [NameReturn(eventNodeElement._event.eventText)], None, eventNodeElement._prob
             
             elif isinstance(eventNodeElement._event, FightEvent):
                 hkInfo = None
@@ -187,7 +198,7 @@ class EventAnalizer():
 
     
 class Choice(ElementBaseClass):
-    def __init__(self, element, xmlpath, uniqueXPathGenerator):
+    def __init__(self, element=None, xmlpath='', uniqueXPathGenerator=None):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
         self._ship = None
         self._evetnAnalizer = None
@@ -236,23 +247,20 @@ class Event(ElementBaseClass):
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
         self._childChoices = None
-        self._childShips = None
     
     def init_childChoiceTags(self):
         self._childChoices = [global_choice_map.get(f'{self._xmlpath}${self._uniqueXPathGenerator.getpath(element)}') for element in xpath(self._element, './choice')]
         
-class EventList(ElementBaseClass):
+class EventList():
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
-        super().__init__(element, xmlpath, uniqueXPathGenerator)
-        self._childEvents = [Event(element, xmlpath, uniqueXPathGenerator) for element in xpath(self._element, './event')]
+        self.childEvents = [Event(eventElement, xmlpath, uniqueXPathGenerator) for eventElement in xpath(element, './event')]
     
     def init_childChoiceTags(self):
         return
     
-class FixedEvent(ElementBaseClass):
-    def __init__(self, eventText, element=None, xmlpath='', uniqueXPathGenerator=None):
-        super().__init__(element, xmlpath, uniqueXPathGenerator)
-        self._event = eventText
+class FixedEvent():
+    def __init__(self, eventText):
+        self.eventText = eventText
         self._childChoices = None
     
     def init_childChoiceTags(self):
@@ -262,16 +270,15 @@ class Ship(ElementBaseClass):
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
         
-class FightEvent(ElementBaseClass):
-    def __init__(self, ship: Ship, element=None, xmlpath='', uniqueXPathGenerator=None):
-        super().__init__(element, xmlpath, uniqueXPathGenerator)
+class FightEvent():
+    def __init__(self, ship: Ship):
         self._ship = ship
         self._hullKillEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './destroyed')]
         self._crewKillEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './deadCrew')]
         self._surrenderEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './surrender')]
-        self._hullKillChoice = Choice(element, xmlpath, uniqueXPathGenerator)
-        self._crewKillChoice = Choice(element, xmlpath, uniqueXPathGenerator)
-        self._surrenderChoice = Choice(element, xmlpath, uniqueXPathGenerator)
+        self._hullKillChoice = Choice()
+        self._crewKillChoice = Choice()
+        self._surrenderChoice = Choice()
         self._childChoices = None
         self._hullKillNode = None
         self._crewKillNode = None
@@ -286,15 +293,6 @@ class FightEvent(ElementBaseClass):
         self._surrenderChoice.childEvents = self._surrenderEvents
         self._childChoices = [self._hullKillChoice, self._crewKillChoice, self._surrenderChoice]
 
-class EventNodeElement():
-    def __init__(self, event, prob) -> None:
-        self._event = event
-        self._prob = prob
-
-class EventNode():
-    def __init__(self, events, prob) -> None:
-        self._events = [EventNodeElement(event, ((1 / len(events)) * prob)) for event in events]
-        self._prob = prob
 
 loadEvent_stat = set()
 
