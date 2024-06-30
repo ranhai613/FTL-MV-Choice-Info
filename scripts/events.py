@@ -1,5 +1,6 @@
 from mvlocscript.xmltools import xpath
 from enum import Enum
+from abc import ABCMeta, abstractmethod
 
 CUSTOM_FONT = {
     'fuel': '{',
@@ -15,14 +16,15 @@ CUSTOM_FONT = {
     'upgraded': '™'
 }
 
-class EventBaseClass():
+class EventBaseClass(metaclass=ABCMeta):
     def __init__(self, element, priority) -> None:
         self._element = element
         self._priority = priority
         self._infoText = None
     
+    @abstractmethod
     def setInfo(self):
-        self._infoText = None
+        return
     
     def getInfo(self):
         self.setInfo()
