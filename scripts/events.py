@@ -39,16 +39,15 @@ def ajustText(text, use_custom_font = True):
     return text.replace('_', ' ').title()
 
 
-#----------------Evnets--------------------------
+#----------------------Evnets----------------------
 
-
-class NameReturn(EventBaseClass):
-    def __init__(self, name, element=None, priority=1) -> None:
-        super().__init__(element, priority)
+class NameReturn():
+    def __init__(self, name, priority=1) -> None:
+        self._priority = priority
         self._infoText = name
     
-    def setInfo(self):
-        return
+    def getInfo(self):
+        return self._infoText
 
 class UnlockCustomShip(EventBaseClass):
     def __init__(self, element, priority=999) -> None:
@@ -204,7 +203,7 @@ class Boarders(EventBaseClass):
             self._infoText = f'<!>Enemy Boarding(x{str(amount_min)}-x{str(amount_max)} {race})'
 
 
-#not done(or not planned to inplement): 'environment', 'recallBoarders', 'achievement', 'choiceRequiresCrew', 'instantEscape'
+#not done(or not planned to implement): 'environment', 'recallBoarders', 'achievement', 'choiceRequiresCrew', 'instantEscape'
 class EventClasses(Enum):
     unlockCustomShip = UnlockCustomShip
     removeCrew = RemoveCrew
