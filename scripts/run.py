@@ -26,8 +26,8 @@ class ElementBaseClass():
         return self._uniqueXPathGenerator.getpath(self._element)
     
 
-class EventAnalizer():
-    '''A component of Choice class, containing child events of Choice and analizing them.
+class EventAnalyzer():
+    '''A component of Choice class, containing child events of Choice and analyzing them.
     '''
     def __init__(self, childEvents) -> None:
         self._childEvents = childEvents
@@ -117,28 +117,28 @@ class EventAnalizer():
                     growTree(new_node, new_eventNode)
                 
         @singledispatch
-        def eventAnalize(event, tree):
+        def eventAnalyze(event, tree):
             raise TypeError
         
-        @eventAnalize.register
+        @eventAnalyze.register
         def _(event: FixedEvent, tree):
             return [NameReturn(event.eventText)], None
         
-        @eventAnalize.register
+        @eventAnalyze.register
         def _(event: FightEvent, tree):
             hkInfo = None
             ckInfo = None
             srInfo = None
             if event._hullKillNode is not None and event.is_HKexist:
-                hkInfo = treeAnalize(tree.subtree(event._hullKillNode.identifier))
+                hkInfo = treeAnalyze(tree.subtree(event._hullKillNode.identifier))
             if event._crewKillNode is not None and event.is_CKexist:
-                ckInfo = treeAnalize(tree.subtree(event._crewKillNode.identifier))
+                ckInfo = treeAnalyze(tree.subtree(event._crewKillNode.identifier))
             if event._surrenderNode is not None and event.is_SRexist:
-                ckInfo = treeAnalize(tree.subtree(event._surrenderNode.identifier))
+                ckInfo = treeAnalyze(tree.subtree(event._surrenderNode.identifier))
             
             return None, {'HK': hkInfo, 'CK': ckInfo, 'SR': srInfo}
         
-        @eventAnalize.register
+        @eventAnalyze.register
         def _(event: Event, tree):
             eventlist = []
             for element in event._element.iterchildren():
@@ -149,7 +149,7 @@ class EventAnalizer():
                 eventlist.append(eventclass)
             return eventlist, None
 
-        def treeAnalize(tree, tune=0):
+        def treeAnalyze(tree, tune=0):
             for  i in range(10):
                 nece_info = []
                 for node in tree.all_nodes_itr():
@@ -157,7 +157,7 @@ class EventAnalizer():
                     for eventNodeElement in node.data._events:
                         if eventNodeElement._event is None:
                             continue
-                        info.append(eventAnalize(eventNodeElement._event, tree) + (eventNodeElement._prob,))
+                        info.append(eventAnalyze(eventNodeElement._event, tree) + (eventNodeElement._prob,))
                     depth = tree.depth(node) + tune + (i * -1)
                     for eventlist, fightDict, prob in info:
                         if eventlist is not None:
@@ -202,7 +202,7 @@ class EventAnalizer():
         root = tree.create_node(data=rootEventNode)
         growTree(root, rootEventNode)
         
-        return treeAnalize(tree)
+        return treeAnalyze(tree)
 
 
 #-------------------XML Tag Wrapper Classes-------------------
@@ -211,21 +211,21 @@ class Choice(ElementBaseClass):
     def __init__(self, element=None, xmlpath='', uniqueXPathGenerator=None):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
         self._ship = None
-        self._evetnAnalizer = None
+        self._evetnAnalyzer = None
         self._additional_info = None
     
     @property
     def childEvents(self):
-        return self._evetnAnalizer.childEvents
+        return self._evetnAnalyzer.childEvents
 
     @childEvents.setter
     def childEvents(self, value):
-        self._evetnAnalizer = EventAnalizer(value)
-        self._evetnAnalizer.ensureChildEvents(self._ship)
+        self._evetnAnalyzer = EventAnalyzer(value)
+        self._evetnAnalyzer.ensureChildEvents(self._ship)
 
     def init_childEventTags(self):
-        self._evetnAnalizer = EventAnalizer([Event(element, self._xmlpath, self._uniqueXPathGenerator) for element in xpath(self._element, './event')])
-        self._evetnAnalizer.ensureChildEvents(self._ship)
+        self._evetnAnalyzer = EventAnalyzer([Event(element, self._xmlpath, self._uniqueXPathGenerator) for element in xpath(self._element, './event')])
+        self._evetnAnalyzer.ensureChildEvents(self._ship)
     
     def init_shipTag(self):
         for parent in self._element.iterancestors():
@@ -248,7 +248,7 @@ class Choice(ElementBaseClass):
         return self._uniqueXPathGenerator.getpath(texttags[0])
         
     def set_additional_info(self):
-        self._additional_info = '\n'.join(self._evetnAnalizer.getInfoList())
+        self._additional_info = '\n'.join(self._evetnAnalyzer.getInfoList())
     
     def get_formatted_additional_info(self):
         return self._additional_info
@@ -308,13 +308,17 @@ global_event_map = {}
 global_choice_map = {}
 global_ship_map = {}
 
+with open('mvloc.config.jsonc', 'tr', encoding='utf8') as f:
+    config = load(f)
+
 def main():
     for xmlpath in glob_posix('src-en/data/*'):
         if not re.match(r'.+\.(xml|xml.append)$', xmlpath):
             continue
-        tree = parse_ftlxml(xmlpath)
-        root = tree.getroot()
-        if root.tag != 'FTL':
+        
+        if xmlpath.replace('src-en/', '') in config['filePatterns']:
+            tree = parse_ftlxml(xmlpath)
+        else:
             tree = parse_ftlxml(xmlpath, True)
         
         uniqueXPathGenerator = UniqueXPathGenerator(tree, ftl_xpath_matchers())
@@ -323,9 +327,6 @@ def main():
         global_ship_map.update({element.get('name'): Ship(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//ship')})
 
     global_event_map.update({name: FixedEvent(value) for name, value in FIXED_EVENT_MAP.items()})
-
-    with open('mvloc.config.jsonc', 'tr', encoding='utf8') as f:
-        config = load(f)
 
     for xmlpath in config['filePatterns']:
         tree = parse_ftlxml('src-en/' + xmlpath)
