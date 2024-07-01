@@ -5,6 +5,7 @@ from mvlocscript.fstools import glob_posix
 from events import EventClasses, NameReturn
 from json5 import load
 import re
+from functools import singledispatch
 from treelib import Tree
 from pprint import pprint
 
@@ -26,6 +27,8 @@ class ElementBaseClass():
     
 
 class EventAnalizer():
+    '''A component of Choice class, containing child events of Choice and analizing them.
+    '''
     def __init__(self, childEvents) -> None:
         self._childEvents = childEvents
         self.is_ensured = False
@@ -57,7 +60,6 @@ class EventAnalizer():
                 
                 if load_event_name == 'COMBAT_CHECK' and ship is not None:
                     fightEvent = FightEvent(ship)
-                    fightEvent.init_childChoiceTags()
                     new_events.append(fightEvent)
                     continue
                 
@@ -113,32 +115,39 @@ class EventAnalizer():
                         else:
                             raise IndexError
                     growTree(new_node, new_eventNode)
-        
-        def eventAnalize(tree, eventNodeElement):
-            if isinstance(eventNodeElement._event, FixedEvent):
-                return [NameReturn(eventNodeElement._event.eventText)], None, eventNodeElement._prob
-            
-            elif isinstance(eventNodeElement._event, FightEvent):
-                hkInfo = None
-                ckInfo = None
-                srInfo = None
-                if eventNodeElement._event._hullKillNode is not None and eventNodeElement._event.is_HKexist:
-                    hkInfo = treeAnalize(tree.subtree(eventNodeElement._event._hullKillNode.identifier))
-                if eventNodeElement._event._crewKillNode is not None and eventNodeElement._event.is_CKexist:
-                    ckInfo = treeAnalize(tree.subtree(eventNodeElement._event._crewKillNode.identifier))
-                if eventNodeElement._event._surrenderNode is not None and eventNodeElement._event.is_SRexist:
-                    ckInfo = treeAnalize(tree.subtree(eventNodeElement._event._surrenderNode.identifier))
                 
-                return None, {'HK': hkInfo, 'CK': ckInfo, 'SR': srInfo}, eventNodeElement._prob
+        @singledispatch
+        def eventAnalize(event, tree):
+            raise TypeError
+        
+        @eventAnalize.register
+        def _(event: FixedEvent, tree):
+            return [NameReturn(event.eventText)], None
+        
+        @eventAnalize.register
+        def _(event: FightEvent, tree):
+            hkInfo = None
+            ckInfo = None
+            srInfo = None
+            if event._hullKillNode is not None and event.is_HKexist:
+                hkInfo = treeAnalize(tree.subtree(event._hullKillNode.identifier))
+            if event._crewKillNode is not None and event.is_CKexist:
+                ckInfo = treeAnalize(tree.subtree(event._crewKillNode.identifier))
+            if event._surrenderNode is not None and event.is_SRexist:
+                ckInfo = treeAnalize(tree.subtree(event._surrenderNode.identifier))
             
+            return None, {'HK': hkInfo, 'CK': ckInfo, 'SR': srInfo}
+        
+        @eventAnalize.register
+        def _(event: Event, tree):
             eventlist = []
-            for element in eventNodeElement._event._element.iterchildren():
+            for element in event._element.iterchildren():
                 try:
                     eventclass = EventClasses[element.tag].value(element)
                 except KeyError:
                     continue
                 eventlist.append(eventclass)
-            return eventlist, None, eventNodeElement._prob
+            return eventlist, None
 
         def treeAnalize(tree, tune=0):
             for  i in range(10):
@@ -148,7 +157,7 @@ class EventAnalizer():
                     for eventNodeElement in node.data._events:
                         if eventNodeElement._event is None:
                             continue
-                        info.append(eventAnalize(tree, eventNodeElement))
+                        info.append(eventAnalize(eventNodeElement._event, tree) + (eventNodeElement._prob,))
                     depth = tree.depth(node) + tune + (i * -1)
                     for eventlist, fightDict, prob in info:
                         if eventlist is not None:
@@ -188,7 +197,6 @@ class EventAnalizer():
             else:
                 return []
                     
-                
         tree = Tree()
         rootEventNode = EventNode(self._childEvents, 1)
         root = tree.create_node(data=rootEventNode)
@@ -196,7 +204,9 @@ class EventAnalizer():
         
         return treeAnalize(tree)
 
-    
+
+#-------------------XML Tag Wrapper Classes-------------------
+
 class Choice(ElementBaseClass):
     def __init__(self, element=None, xmlpath='', uniqueXPathGenerator=None):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
@@ -273,26 +283,24 @@ class Ship(ElementBaseClass):
 class FightEvent():
     def __init__(self, ship: Ship):
         self._ship = ship
-        self._hullKillEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './destroyed')]
-        self._crewKillEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './deadCrew')]
-        self._surrenderEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './surrender')]
         self._hullKillChoice = Choice()
+        self._hullKillChoice.childEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './destroyed')]
         self._crewKillChoice = Choice()
+        self._crewKillChoice.childEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './deadCrew')]
         self._surrenderChoice = Choice()
-        self._childChoices = None
+        self._surrenderChoice.childEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './surrender')]
+        self._childChoices = [self._hullKillChoice, self._crewKillChoice, self._surrenderChoice]
         self._hullKillNode = None
         self._crewKillNode = None
         self._surrenderNode = None
         self.is_HKexist = True if len(xpath(ship._element, './destroyed')) > 0 else False
         self.is_CKexist = True if len(xpath(ship._element, './deadCrew')) > 0 else False
         self.is_SRexist = True if len(xpath(ship._element, './surrender')) > 0 else False
-            
-    def init_childChoiceTags(self):
-        self._hullKillChoice.childEvents = self._hullKillEvents
-        self._crewKillChoice.childEvents = self._crewKillEvents
-        self._surrenderChoice.childEvents = self._surrenderEvents
-        self._childChoices = [self._hullKillChoice, self._crewKillChoice, self._surrenderChoice]
 
+    def init_childChoiceTags(self):
+        return
+            
+#------------------------main------------------------
 
 loadEvent_stat = set()
 
