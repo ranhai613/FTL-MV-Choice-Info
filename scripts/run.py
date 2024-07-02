@@ -6,6 +6,7 @@ from events import EventClasses, NameReturn
 from json5 import load
 import re
 from functools import singledispatch
+from collections import defaultdict
 from treelib import Tree
 from pprint import pprint
 
@@ -163,11 +164,14 @@ class EventAnalyzer():
                     depth = tree.depth(node) + tune + (i * -1)
                     for eventlist, fightDict, prob, increment in info:
                         if eventlist is not None:
+                            diagram = defaultdict(float)
                             for eventclass in eventlist:
                                 if eventclass._priority + increment > depth:
                                     textInfo = eventclass.getInfo()
                                     if textInfo:
-                                        nece_info.append(f'{prob:.0%} {textInfo}' if prob < 1 else textInfo)
+                                        diagram[textInfo] += prob
+                            for textInfo, prob in diagram.items():
+                                nece_info.append(f'{prob:.0%} {textInfo}' if prob < 1 else textInfo)
                         
                         if fightDict is not None:
                             fightDict = {key: ' '.join(value) for key, value in fightDict.items() if value is not None}
