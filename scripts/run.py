@@ -88,22 +88,24 @@ class EventAnalyzer():
         assert self.is_ensured
         
         class EventNodeElement():
-            def __init__(self, event, prob) -> None:
+            def __init__(self, event, prob, increment) -> None:
                 self._event = event
                 self._prob = prob
+                self._increment = increment
 
         class EventNode():
-            def __init__(self, events, prob) -> None:
-                self._events = [EventNodeElement(event, ((1 / len(events)) * prob)) for event in events]
+            def __init__(self, events, prob, increment) -> None:
+                self._events = [EventNodeElement(event, ((1 / len(events)) * prob), increment) for event in events]
                 self._prob = prob
-
+                self._increment = increment
         
         def growTree(parent_node, parent_eventNode: EventNode):
             for eventNodeElement in parent_eventNode._events:
                 if eventNodeElement._event._childChoices is None:
                     continue
+                length = len(eventNodeElement._event._childChoices)
                 for i, choice in enumerate(eventNodeElement._event._childChoices):
-                    new_eventNode = EventNode(choice.childEvents, eventNodeElement._prob)
+                    new_eventNode = EventNode(choice.childEvents, eventNodeElement._prob, (eventNodeElement._increment + 1) if length == 1 else eventNodeElement._increment)
                     new_node = tree.create_node(parent=parent_node, data=new_eventNode)
                     if isinstance(eventNodeElement._event, FightEvent):
                         if i == 0:
@@ -157,12 +159,12 @@ class EventAnalyzer():
                     for eventNodeElement in node.data._events:
                         if eventNodeElement._event is None:
                             continue
-                        info.append(eventAnalyze(eventNodeElement._event, tree) + (eventNodeElement._prob,))
+                        info.append(eventAnalyze(eventNodeElement._event, tree) + (eventNodeElement._prob, eventNodeElement._increment))
                     depth = tree.depth(node) + tune + (i * -1)
-                    for eventlist, fightDict, prob in info:
+                    for eventlist, fightDict, prob, increment in info:
                         if eventlist is not None:
                             for eventclass in eventlist:
-                                if eventclass._priority > depth:
+                                if eventclass._priority + increment > depth:
                                     textInfo = eventclass.getInfo()
                                     if textInfo:
                                         nece_info.append(f'{prob:.0%} {textInfo}' if prob < 1 else textInfo)
@@ -198,7 +200,7 @@ class EventAnalyzer():
                 return []
                     
         tree = Tree()
-        rootEventNode = EventNode(self._childEvents, 1)
+        rootEventNode = EventNode(self._childEvents, 1, 0)
         root = tree.create_node(data=rootEventNode)
         growTree(root, rootEventNode)
         

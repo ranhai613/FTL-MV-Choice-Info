@@ -107,6 +107,7 @@ msgid ""
 msgstr ""
 "(Lanius Crew) Assure the Lanius that you mean them no harm when you bring them on board.\n"
 "-35≤~≤-25\n"
+"Gain a crew(Lanius)\n"
 "Gain a crew(Lanius)"
 
 #: src-en/data/events_sector_lanius.xml:108
@@ -122,7 +123,8 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_INJURED\"]/choice[@req=\"LIST_CREW_LANIUS\"]/event/choice[1]/text"
 msgstr ""
 "Heal them with scrap.\n"
-"-35≤~≤-25"
+"-35≤~≤-25\n"
+"Gain a crew(Lanius)"
 
 #: src-en/data/events_sector_lanius.xml:112
 msgid ""
@@ -201,7 +203,8 @@ msgid ""
 "data/events_sector_lanius.xml$//eventList[@name=\"LANIUS_INJURED_RESCUE\"]/event[1]/choice[1]/text"
 msgstr ""
 "Heal them with scrap.\n"
-"-35≤~≤-25"
+"-35≤~≤-25\n"
+"Gain a crew(Lanius)"
 
 #: src-en/data/events_sector_lanius.xml:159
 msgid ""
@@ -371,7 +374,8 @@ msgid ""
 msgstr ""
 "Let them scan your Soldier.\n"
 "50% <!>Enemy Boarding(x2 Lanius)\n"
-"50% Reward ~ Only(M)"
+"50% Reward ~ Only(M)\n"
+"50% Fight"
 
 #: src-en/data/events_sector_lanius.xml:244
 msgid ""
@@ -387,7 +391,8 @@ msgid ""
 msgstr ""
 "Continue...\n"
 "50% <!>Enemy Boarding(x2 Lanius)\n"
-"50% Reward ~ Only(M)"
+"50% Reward ~ Only(M)\n"
+"50% Fight"
 
 #: src-en/data/events_sector_lanius.xml:252
 msgid ""
@@ -1277,7 +1282,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_ASTEROID_COLONY\"]/choice[1]/text"
 msgstr ""
 "Contact the colony.\n"
-"Fight(HK: 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M))(CK: 50% Reward Standard(H))"
+"Fight(HK: 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% Reward Standard(M) 6% <!>Enemy Boarding(x1 Lanius))(CK: 50% Reward Standard(H))"
 
 #: src-en/data/events_sector_lanius.xml:781
 msgid ""
@@ -1296,7 +1301,7 @@ msgid ""
 "data/events_sector_lanius.xml$//eventList[@name=\"LANIUS_ASTEROID_COLONY_CONTACT\"]/event[1]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M))(CK: Reward Standard(H))"
+"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% <!>Enemy Boarding(x1 Lanius))(CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_lanius.xml:795
 msgid ""
@@ -1316,7 +1321,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_MUTUAL_FEAST\"]/choice[1]/text"
 msgstr ""
 "Fight the Elite.\n"
-"Fight(HK=CK: Reward Standard(H))"
+"Fight(HK=CK: Reward Standard(H) Gain a weapon(Giftlist Flak))"
 
 #: src-en/data/events_sector_lanius.xml:806
 msgid ""
@@ -1329,14 +1334,14 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_MUTUAL_FEAST\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(H))"
+"Fight(HK=CK: Reward Standard(H) Gain a weapon(Giftlist Flak))"
 
 #: src-en/data/events_sector_lanius.xml:815
 msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_MUTUAL_FEAST\"]/choice[2]/text"
 msgstr ""
 "Fight the regular Lanius.\n"
-"Fight(HK=CK: Reward Standard(H))"
+"Fight(HK=CK: Reward Standard(H) Gain a crew(Lanius))"
 
 #: src-en/data/events_sector_lanius.xml:817
 msgid ""
@@ -1348,7 +1353,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_MUTUAL_FEAST\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(H))"
+"Fight(HK=CK: Reward Standard(H) Gain a crew(Lanius))"
 
 #: src-en/data/events_sector_lanius.xml:826
 msgid ""
@@ -1434,7 +1439,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_SOLO_SALVAGE_MV\"]/choice[1]/text"
 msgstr ""
 "Attack the ship.\n"
-"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M))(CK: Reward Stuff(R))"
+"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% <!>Enemy Boarding(x1 Lanius))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_sector_lanius.xml:872
 msgid ""
@@ -1448,7 +1453,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_SOLO_SALVAGE_MV\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M))(CK: Reward Stuff(R))"
+"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% <!>Enemy Boarding(x1 Lanius))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_sector_lanius.xml:881
 msgid ""
@@ -1588,7 +1593,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_SCARED_CIVILIAN_MV\"]/choice[1]/text"
 msgstr ""
 "Attack the Lanius ship.\n"
-"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M))(CK: Reward Stuff(R))"
+"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% <!>Enemy Boarding(x1 Lanius))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_sector_lanius.xml:942
 msgid ""
@@ -1602,7 +1607,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_SCARED_CIVILIAN_MV\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M))(CK: Reward Stuff(R))"
+"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% <!>Enemy Boarding(x1 Lanius))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_sector_lanius.xml:951
 msgid ""
@@ -1713,7 +1718,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_DORMANT_EVENT_MV\"]/choice[1]/text"
 msgstr ""
 "Scan the ship for lifeforms.\n"
-"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M))(CK: Reward Stuff(R))"
+"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% <!>Enemy Boarding(x1 Lanius))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_sector_lanius.xml:1006
 msgid ""
@@ -1727,7 +1732,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_DORMANT_EVENT_MV\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M))(CK: Reward Stuff(R))"
+"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% <!>Enemy Boarding(x1 Lanius))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_sector_lanius.xml:1015
 msgid ""
@@ -1743,6 +1748,7 @@ msgstr ""
 "Investigate the vessel.\n"
 "Reward Stuff(M)\n"
 "50% Reward ~ Only(L)\n"
+"50% Fight\n"
 "Reward Standard(M)"
 
 #: src-en/data/events_sector_lanius.xml:1025
@@ -1771,6 +1777,7 @@ msgstr ""
 "Investigate the vessel.\n"
 "Reward Stuff(M)\n"
 "50% Reward ~ Only(L)\n"
+"50% Fight\n"
 "Reward Standard(M)"
 
 #: src-en/data/events_sector_lanius.xml:1039
@@ -1845,7 +1852,8 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_DORMANT_INVESTIGATE_MV\"]/choice[3]/text"
 msgstr ""
 "Navigate carefully around the ship and strip what materials from the hull you can.\n"
-"50% Reward ~ Only(L)"
+"50% Reward ~ Only(L)\n"
+"50% Fight"
 
 #: src-en/data/events_sector_lanius.xml:1079
 msgid ""
@@ -1898,7 +1906,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"DISTRESS_LANIUS_FEEDING\"]/choice[1]/text"
 msgstr ""
 "Chase off the Lanius ship.\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
+"Fight(HK: Reward Standard(M) Gain a weapon(Random))(CK: Reward Standard(H) Gain a weapon(Random))"
 
 #: src-en/data/events_sector_lanius.xml:1124
 msgid ""
@@ -1914,14 +1922,14 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"DISTRESS_LANIUS_FEEDING\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
+"Fight(HK: Reward Standard(M) Gain a weapon(Random))(CK: Reward Standard(H) Gain a weapon(Random))"
 
 #: src-en/data/events_sector_lanius.xml:1133
 msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"DISTRESS_LANIUS_FEEDING\"]/choice[@req=\"LIST_CREW_LANIUS\"]/text"
 msgstr ""
 "(Lanius Crew) Have your Lanius convince them to let the Slugs go.\n"
-"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M))(CK: Reward Stuff(R))"
+"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% <!>Enemy Boarding(x1 Lanius))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_sector_lanius.xml:1135
 msgid ""
@@ -1935,7 +1943,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"DISTRESS_LANIUS_FEEDING\"]/choice[@req=\"LIST_CREW_LANIUS\"]/event/choice/text"
 msgstr ""
 "Contact the Slug ship.\n"
-"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M))(CK: Reward Stuff(R))"
+"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% <!>Enemy Boarding(x1 Lanius))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_sector_lanius.xml:1139
 msgid ""
@@ -1949,7 +1957,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"DISTRESS_LANIUS_FEEDING\"]/choice[@req=\"LIST_CREW_LANIUS\"]/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M))(CK: Reward Stuff(R))"
+"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% <!>Enemy Boarding(x1 Lanius))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_sector_lanius.xml:1150
 msgid ""
@@ -2119,7 +2127,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"DISTRESS_LANIUS_TRAP\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M))(CK: Reward Stuff(R))"
+"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% <!>Enemy Boarding(x1 Lanius))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_sector_lanius.xml:1250
 msgid "data/events_sector_lanius.xml$//event[@name=\"DISTRESS_LANIUS_SLUG\"]/text"
@@ -2133,7 +2141,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"DISTRESS_LANIUS_SLUG\"]/choice[1]/text"
 msgstr ""
 "Attack the Lanius ship.\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 50% Reward Standard(M))"
 
 #: src-en/data/events_sector_lanius.xml:1254
 msgid ""
@@ -2145,7 +2153,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"DISTRESS_LANIUS_SLUG\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 50% Reward Standard(M))"
 
 #: src-en/data/events_sector_lanius.xml:1263
 msgid ""
@@ -2200,7 +2208,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"DISTRESS_LANIUS_MANTIS\"]/choice[1]/text"
 msgstr ""
 "Attack the Lanius ship.\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 50% Reward }(M) 50% Reward Standard(M))"
 
 #: src-en/data/events_sector_lanius.xml:1293
 msgid ""
@@ -2214,7 +2222,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"DISTRESS_LANIUS_MANTIS\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 50% Reward }(M) 50% Reward Standard(M))"
 
 #: src-en/data/events_sector_lanius.xml:1302
 msgid ""
@@ -2269,7 +2277,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"DISTRESS_LANIUS_ROCK\"]/choice[1]/text"
 msgstr ""
 "Attack the Lanius ship.\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 50% Reward Standard(M))"
 
 #: src-en/data/events_sector_lanius.xml:1333
 msgid ""
@@ -2283,7 +2291,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"DISTRESS_LANIUS_ROCK\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 50% Reward Standard(M))"
 
 #: src-en/data/events_sector_lanius.xml:1342
 msgid ""
@@ -2353,7 +2361,8 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_ZOLTAN_PEACE\"]/choice[2]/text"
 msgstr ""
 "Only if we are paid.\n"
-"50% Reward ~ Only(L)"
+"50% Reward ~ Only(L)\n"
+"50% Fight"
 
 #: src-en/data/events_sector_lanius.xml:1392
 msgid ""
@@ -2453,7 +2462,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"QUEST_LANIUS_ZOLTAN_PEACE\"]/choice[2]/text"
 msgstr ""
 "You were given a job. Protect the Zoltans.\n"
-"Fight(HK=CK: Reward Standard(H))"
+"Fight(HK=CK: Reward Standard(H) Reward Standard(H))"
 
 #: src-en/data/events_sector_lanius.xml:1444
 msgid ""
@@ -2467,7 +2476,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"QUEST_LANIUS_ZOLTAN_PEACE\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(H))"
+"Fight(HK=CK: Reward Standard(H) Reward Standard(H))"
 
 #: src-en/data/events_sector_lanius.xml:1453
 msgid ""
@@ -2527,8 +2536,6 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_BEACON_EATER\"]/choice[1]/text"
 msgstr ""
 "Ask if they require assistance.\n"
-"50% ~-30\n"
-"50% Gain an augment(Random)\n"
 "50% Fight"
 
 #: src-en/data/events_sector_lanius.xml:1482
@@ -2538,7 +2545,8 @@ msgstr ""
 "Send them 30 scrap.\n"
 "50% ~-30\n"
 "50% Gain an augment(Random)\n"
-"50% ~-30"
+"50% ~-30\n"
+"50% Fight"
 
 #: src-en/data/events_sector_lanius.xml:1486
 msgid ""
@@ -2745,7 +2753,7 @@ msgid ""
 "data/events_sector_lanius.xml$/FTL/event[@name=\"ENCOUNTER_LANIUS_SWARM\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M))(CK: Reward Stuff(R))"
+"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% <!>Enemy Boarding(x1 Lanius))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_sector_lanius.xml:1638
 msgid ""
@@ -2828,7 +2836,7 @@ msgid ""
 "data/events_sector_lanius.xml$/FTL/event[@name=\"ENCOUNTER_LANIUS_ASTEROID\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M))(CK: Reward Stuff(R))"
+"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% <!>Enemy Boarding(x1 Lanius))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_sector_lanius.xml:1657
 msgid ""
@@ -2844,7 +2852,7 @@ msgid ""
 "data/events_sector_lanius.xml$/FTL/event[@name=\"ENCOUNTER_LANIUS_PULSAR\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M))(CK: Reward Stuff(R))"
+"Fight(HK: 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% Reward Standard(M) 11% <!>Enemy Boarding(x1 Lanius))(CK: Reward Stuff(R))"
 
 #: src-en/data/events_sector_lanius.xml:1666
 msgid ""
@@ -2860,7 +2868,7 @@ msgid ""
 "data/events_sector_lanius.xml$/FTL/event[@name=\"ENCOUNTER_LANIUS_PDS\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
+"Fight(HK: Reward Standard(M) 50% Repair Hull(8$))(CK: Reward Standard(H) 50% Repair Hull(8$))"
 
 #: src-en/data/events_sector_lanius.xml:1676
 msgid ""
@@ -3034,7 +3042,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_HARVESTER_MV\"]/choice[1]/text"
 msgstr ""
 "Attempt to harvest some for yourself.\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 33% Reward Standard(L) 33% Reward Standard(M) 33% Reward Standard(H))"
 
 #: src-en/data/events_sector_lanius.xml:1737
 msgid ""
@@ -3048,7 +3056,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_HARVESTER_MV\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 33% Reward Standard(L) 33% Reward Standard(M) 33% Reward Standard(H))"
 
 #: src-en/data/events_sector_lanius.xml:1746
 msgid ""
@@ -3089,7 +3097,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_HARVESTER_MV\"]/choice[4]/text"
 msgstr ""
 "Attack the vessel.\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 33% Reward Standard(L) 33% Reward Standard(M) 33% Reward Standard(H))"
 
 #: src-en/data/events_sector_lanius.xml:1762
 msgid ""
@@ -3103,7 +3111,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_HARVESTER_MV\"]/choice[4]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 33% Reward Standard(L) 33% Reward Standard(M) 33% Reward Standard(H))"
 
 #: src-en/data/events_sector_lanius.xml:1771
 msgid ""
@@ -3309,7 +3317,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"ENCOUNTER_LANIUS_ELITE\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard No Item(H))"
+"Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Lanius))"
 
 #: src-en/data/events_sector_lanius.xml:1904
 msgid "data/events_sector_lanius.xml$//event[@name=\"LANIUS_GOLD\"]/text"
@@ -3324,7 +3332,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_GOLD\"]/choice[1]/text"
 msgstr ""
 "Attack them.\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(M) Gain a weapon(Shotgun Gold))"
+"Fight(HK: Reward Standard(M) 50% Gain a weapon(Shotgun Gold))(CK: Reward Standard(M) Gain a weapon(Shotgun Gold))"
 
 #: src-en/data/events_sector_lanius.xml:1910
 msgid ""
@@ -3338,7 +3346,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"LANIUS_GOLD\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(M) Gain a weapon(Shotgun Gold))"
+"Fight(HK: Reward Standard(M) 50% Gain a weapon(Shotgun Gold))(CK: Reward Standard(M) Gain a weapon(Shotgun Gold))"
 
 #: src-en/data/events_sector_lanius.xml:1919
 msgid ""
@@ -3390,8 +3398,8 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_START\"]/choice[1]/text"
 msgstr ""
 "Promise to assist.\n"
-"Fight(HK=CK: Reward Standard No Item(H))\n"
-"Fight(HK=CK: Reward Standard(H))"
+"Fight(HK=CK: Reward Standard No Item(H) Reward Standard(M) Gain an augment(Beacon Parts) <!>Fleet Advance(1))\n"
+"Fight(HK=CK: Reward Standard(H) Reward Standard(M))"
 
 #: src-en/data/events_sector_lanius.xml:1957
 msgid ""
@@ -3407,7 +3415,8 @@ msgid ""
 msgstr ""
 "(Anointed) Ask them to stop and give you the parts.\n"
 "Reward Standard No Item(H)\n"
-"Gain an augment(Beacon Parts)"
+"Gain an augment(Beacon Parts)\n"
+"Reward Standard(M)"
 
 #: src-en/data/events_sector_lanius.xml:1961
 msgid ""
@@ -3429,7 +3438,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_START\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Contact the Lanius.\n"
-"Fight(HK=CK: Reward Standard No Item(H))"
+"Fight(HK=CK: Reward Standard No Item(H) Reward Standard(M) Gain an augment(Beacon Parts) <!>Fleet Advance(1))"
 
 #: src-en/data/events_sector_lanius.xml:1975
 msgid ""
@@ -3444,14 +3453,14 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_START\"]/choice[1]/event/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard No Item(H))"
+"Fight(HK=CK: Reward Standard No Item(H) Reward Standard(M))"
 
 #: src-en/data/events_sector_lanius.xml:1984
 msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_START\"]/choice[1]/event/choice[3]/text"
 msgstr ""
 "Fight the ship.\n"
-"Fight(HK=CK: Reward Standard(H))"
+"Fight(HK=CK: Reward Standard(H) Reward Standard(M))"
 
 #: src-en/data/events_sector_lanius.xml:1986
 msgid ""
@@ -3465,7 +3474,7 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_START\"]/choice[1]/event/choice[3]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(H))"
+"Fight(HK=CK: Reward Standard(H) Reward Standard(M))"
 
 #: src-en/data/events_sector_lanius.xml:1997
 msgid ""
@@ -3903,7 +3912,9 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_WIN\"]/choice[2]/text"
 msgstr ""
 "He won't last long, just put him out of his misery.\n"
-"<#>Unlock Ship(Lanius)"
+"<#>Unlock Ship(Lanius)\n"
+"Reward Standard(H)\n"
+"Gain a weapon(Random)"
 
 #: src-en/data/events_sector_lanius.xml:2174
 msgid ""
@@ -4042,7 +4053,9 @@ msgid ""
 "data/events_sector_lanius.xml$//event[@name=\"BEACON_EATER_WIN_ANOINTED\"]/choice[2]/text"
 msgstr ""
 "He won't last long, just put him out of his misery.\n"
-"<#>Unlock Ship(Lanius)"
+"<#>Unlock Ship(Lanius)\n"
+"Reward Standard(H)\n"
+"Gain a weapon(Random)"
 
 #: src-en/data/events_sector_lanius.xml:2239
 msgid ""

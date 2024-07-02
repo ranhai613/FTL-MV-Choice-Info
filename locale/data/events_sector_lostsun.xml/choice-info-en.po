@@ -68,7 +68,8 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_SHRINE\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Let them keep the missiles.\n"
-"Reward {(M)"
+"Reward {(M)\n"
+"Repair Hull(5$)"
 
 #: src-en/data/events_sector_lostsun.xml:80
 msgid ""
@@ -196,7 +197,11 @@ msgid ""
 msgstr ""
 "Contact them.\n"
 "}-5\n"
-"}-15"
+"Reward ~ Only(L)\n"
+"}-15\n"
+"Reward ~ Only(H)\n"
+"Reward ~ Only(L)\n"
+"Gain a weapon(Giftlist Fire)"
 
 #: src-en/data/events_sector_lostsun.xml:157
 msgid ""
@@ -212,7 +217,8 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_DONATION\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Give them some missiles.\n"
-"}-5"
+"}-5\n"
+"Reward ~ Only(L)"
 
 #: src-en/data/events_sector_lostsun.xml:161
 msgid ""
@@ -238,7 +244,8 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_DONATION\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Give them many missiles.\n"
-"}-15"
+"}-15\n"
+"Reward ~ Only(H)"
 
 #: src-en/data/events_sector_lostsun.xml:177
 msgid ""
@@ -353,7 +360,10 @@ msgstr ""
 "Explore the asteroid field.\n"
 "20% Reward { Only(H)\n"
 "20% Reward }(M)\n"
-"20% Reward |(M)"
+"20% Reward |(M)\n"
+"20% <!>Damage Hull(3)\n"
+"20% <!>Damage Hull(1)\n"
+"20% <!>Damage Hull(1)"
 
 #: src-en/data/events_sector_lostsun.xml:262
 msgid ""
@@ -542,7 +552,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_CHALLENGERS\"]/choice[2]/text"
 msgstr ""
 "Fight them without life support or medical systems.\n"
-"Fight(HK: Reward ~ Only(L))(CK: Reward Standard(M) System Upgrade(Oxygen 1™))"
+"Fight(HK: Reward ~ Only(L))(CK: Reward Standard(M) System Upgrade(Oxygen x1))"
 
 #: src-en/data/events_sector_lostsun.xml:378
 msgid ""
@@ -554,14 +564,14 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_CHALLENGERS\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward ~ Only(L))(CK: Reward Standard(M) System Upgrade(Oxygen 1™))"
+"Fight(HK: Reward ~ Only(L))(CK: Reward Standard(M) System Upgrade(Oxygen x1))"
 
 #: src-en/data/events_sector_lostsun.xml:390
 msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_CHALLENGERS\"]/choice[3]/text"
 msgstr ""
 "Fight them with a weakened reactor.\n"
-"Fight(HK: Reward ~ Only(L))(CK: Reward Standard(M) System Upgrade(Reactor 1™))"
+"Fight(HK: Reward ~ Only(L))(CK: Reward Standard(M) System Upgrade(Reactor x1))"
 
 #: src-en/data/events_sector_lostsun.xml:392
 msgid ""
@@ -573,7 +583,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_CHALLENGERS\"]/choice[3]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward ~ Only(L))(CK: Reward Standard(M) System Upgrade(Reactor 1™))"
+"Fight(HK: Reward ~ Only(L))(CK: Reward Standard(M) System Upgrade(Reactor x1))"
 
 #: src-en/data/events_sector_lostsun.xml:402
 msgid ""
@@ -599,7 +609,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_CHALLENGERS\"]/choice[5]/text"
 msgstr ""
 "Fight them with severely weakened systems.\n"
-"Fight(HK: Reward ~ Only(L))(CK: Reward Item(H) System Upgrade(Reactor 1™))"
+"Fight(HK: Reward ~ Only(L))(CK: Reward Item(H) System Upgrade(Reactor x1) Repair Hull(10$))"
 
 #: src-en/data/events_sector_lostsun.xml:428
 msgid ""
@@ -611,7 +621,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_CHALLENGERS\"]/choice[5]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward ~ Only(L))(CK: Reward Item(H) System Upgrade(Reactor 1™))"
+"Fight(HK: Reward ~ Only(L))(CK: Reward Item(H) System Upgrade(Reactor x1) Repair Hull(10$))"
 
 #: src-en/data/events_sector_lostsun.xml:451
 msgid ""
@@ -649,6 +659,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_PRISONERS\"]/choice[1]/text"
 msgstr ""
 "Attack the barricade and free the civilians.\n"
+"<!>Damage Hull(3)\n"
 "Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_lostsun.xml:471
@@ -704,7 +715,8 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_PRISONERS\"]/choice[@req=\"cloaking\"]/text"
 msgstr ""
 "(Cloaking) Wait for the patrol ship to pass by, then sabotage their defenses.\n"
-"}-3"
+"}-3\n"
+"Reward ~ Only(M)"
 
 #: src-en/data/events_sector_lostsun.xml:500
 msgid ""
@@ -817,7 +829,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_MANTIS_LOST\"]/choice[1]/text"
 msgstr ""
 "Attack the Mantis.\n"
-"Fight(HK: Reward Standard(M))(CK: 20% Reward Standard(H) 20% Reward Standard(H) 20% Reward Standard(H) 20% Reward Standard(H) 20% Reward Standard(H))"
+"Fight(HK: Reward Standard(M))(CK: 20% Reward Standard(H) 20% Reward Standard(H) 20% Reward Standard(H) 20% Reward Standard(H) 20% Reward Standard(H) 10% Gain a crew(Engi))"
 
 #: src-en/data/events_sector_lostsun.xml:563
 msgid ""
@@ -839,7 +851,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_MANTIS_LOST\"]/choice[2]/text"
 msgstr ""
 "Hail them.\n"
-"Fight(HK: Reward Standard(L))(CK: Reward Standard(M))"
+"Fight(HK: Reward Standard(L) 33% Reward ~ Only(L) 33% Gain a crew(Mantis) 33% 2≤{≤3)(CK: Reward Standard(M) 33% Reward ~ Only(L) 33% Gain a crew(Mantis) 33% 2≤{≤3)"
 
 #: src-en/data/events_sector_lostsun.xml:574
 msgid ""
@@ -855,7 +867,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_MANTIS_LOST\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(L))(CK: Reward Standard(M))"
+"Fight(HK: Reward Standard(L) 33% Reward ~ Only(L) 33% Gain a crew(Mantis) 33% 2≤{≤3)(CK: Reward Standard(M) 33% Reward ~ Only(L) 33% Gain a crew(Mantis) 33% 2≤{≤3)"
 
 #: src-en/data/events_sector_lostsun.xml:583
 msgid ""
@@ -1258,7 +1270,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_ROCK_SETTLEMENT\"]/choice[1]/text"
 msgstr ""
 "Help the Rockmen and destroy the Lost Suns.\n"
-"Fight(HK: Reward Standard(L))(CK: Reward Standard(M))"
+"Fight(HK: Reward Standard(L) 50% Repair Hull(7$) 50% Gain a crew(Rock))(CK: Reward Standard(M) 50% Repair Hull(7$) 50% Gain a crew(Rock))"
 
 #: src-en/data/events_sector_lostsun.xml:766
 msgid ""
@@ -1272,7 +1284,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_ROCK_SETTLEMENT\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(L))(CK: Reward Standard(M))"
+"Fight(HK: Reward Standard(L) 50% Repair Hull(7$) 50% Gain a crew(Rock))(CK: Reward Standard(M) 50% Repair Hull(7$) 50% Gain a crew(Rock))"
 
 #: src-en/data/events_sector_lostsun.xml:775
 msgid ""
@@ -1362,7 +1374,9 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"DISTRESS_LOSTSUN_CIVILIAN\"]/choice[1]/text"
 msgstr ""
 "Lend some fuel.\n"
-"{-3"
+"{-3\n"
+"Reward } Only(L)\n"
+"Repair Hull(3$)"
 
 #: src-en/data/events_sector_lostsun.xml:834
 msgid ""
@@ -1374,7 +1388,8 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"DISTRESS_LOSTSUN_CIVILIAN\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Reward } Only(L)"
+"Reward } Only(L)\n"
+"Repair Hull(3$)"
 
 #: src-en/data/events_sector_lostsun.xml:841
 msgid ""
@@ -1531,7 +1546,9 @@ msgstr ""
 #: src-en/data/events_sector_lostsun.xml:937
 msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"QUEST_LOSTSUN_DISRUPTION_QUEST\"]/choice[1]/text"
-msgstr "Attempt to fire on the station from a distance.\n"
+msgstr ""
+"Attempt to fire on the station from a distance.\n"
+"<!>Damage Hull(3)"
 
 #: src-en/data/events_sector_lostsun.xml:939
 msgid ""
@@ -1976,7 +1993,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_ROCK_CHOICE\"]/choice[1]/text"
 msgstr ""
 "Attack the Rock.\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) Reward Standard(L))"
 
 #: src-en/data/events_sector_lostsun.xml:1191
 msgid ""
@@ -1991,14 +2008,14 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_ROCK_CHOICE\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) Reward Standard(L))"
 
 #: src-en/data/events_sector_lostsun.xml:1202
 msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_ROCK_CHOICE\"]/choice[2]/text"
 msgstr ""
 "Attack the Lost Sun.\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) Reward Standard(L))"
 
 #: src-en/data/events_sector_lostsun.xml:1204
 msgid ""
@@ -2013,7 +2030,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_ROCK_CHOICE\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) Reward Standard(L))"
 
 #: src-en/data/events_sector_lostsun.xml:1216
 msgid ""
@@ -2160,7 +2177,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_FLEET_UNLOCK2\"]/choice[2]/text"
 msgstr ""
 "The Inquisition has failed before.\n"
-"Fight(HK: Reward ~ Only(H))(CK: <#>Unlock Ship(Lostsun) <#>Unlock Ship(Lostsun))\n"
+"Fight(HK: Reward ~ Only(H))(CK: <#>Unlock Ship(Lostsun) Gain a crew(Unique Ariadne) Reward Standard(H) Gain a weapon(Random) <#>Unlock Ship(Lostsun) Gain a crew(Unique Ariadne) Reward Standard(H) System Upgrade(Weapons x2) Map Reveal Repair Hull(30$) Gain a weapon(Random))\n"
 "<#>Unlock Ship(Lostsun)\n"
 "<#>Unlock Ship(Lostsun)\n"
 "<#>Unlock Ship(Lostsun)\n"
@@ -2179,7 +2196,7 @@ msgid ""
 "data/events_sector_lostsun.xml$//event[@name=\"LOSTSUN_FLEET_UNLOCK2\"]/choice[2]/event/choice[1]/text"
 msgstr ""
 "Spoken like a true Lost Sun.\n"
-"Fight(HK: Reward ~ Only(H))(CK: <#>Unlock Ship(Lostsun) <#>Unlock Ship(Lostsun))\n"
+"Fight(HK: Reward ~ Only(H))(CK: <#>Unlock Ship(Lostsun) Gain a crew(Unique Ariadne) Reward Standard(H) Gain a weapon(Random) <#>Unlock Ship(Lostsun) Gain a crew(Unique Ariadne) Reward Standard(H) System Upgrade(Weapons x2) Map Reveal Repair Hull(30$) Gain a weapon(Random))\n"
 "<#>Unlock Ship(Lostsun)\n"
 "<#>Unlock Ship(Lostsun)\n"
 "<#>Unlock Ship(Lostsun)\n"
@@ -2254,8 +2271,9 @@ msgstr ""
 "<#>Unlock Ship(Lostsun)\n"
 "Gain a crew(Unique Ariadne)\n"
 "Reward Standard(H)\n"
-"System Upgrade(Weapons 2™)\n"
+"System Upgrade(Weapons x2)\n"
 "Map Reveal\n"
+"Repair Hull(30$)\n"
 "Gain a weapon(Random)"
 
 #: src-en/data/events_sector_lostsun.xml:1353

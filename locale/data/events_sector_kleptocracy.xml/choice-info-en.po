@@ -126,7 +126,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"DISTRESS_REFUGEE_SLUG_MV\"]/choice[1]/text"
 msgstr ""
 "Hail them.\n"
-"Fight(HK: 50% Reward Standard(M))(CK: 50% Reward Standard(H))"
+"Fight(HK: 50% Reward Standard(M) 50% Reward Standard(L))(CK: 50% Reward Standard(H) 50% Reward Standard(L))"
 
 #: src-en/data/events_sector_kleptocracy.xml:120
 msgid ""
@@ -166,7 +166,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//eventList[@name=\"REFUGEE_HAIL_LIST_SLUG_MV\"]/event[2]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
+"Fight(HK: Reward Standard(M) Reward Standard(L))(CK: Reward Standard(H) Reward Standard(L))"
 
 #: src-en/data/events_sector_kleptocracy.xml:147
 msgid ""
@@ -181,7 +181,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"DISTRESS_SLUG_MANTIS_MV\"]/choice[1]/text"
 msgstr ""
 "Attack the Mantis ship.\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 50% Reward Standard(R) 50% Reward Augment(L))"
 
 #: src-en/data/events_sector_kleptocracy.xml:151
 msgid ""
@@ -435,8 +435,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_HIGH_PRICE\"]/choice[2]/event/choice[2]/event/choice[2]/event/choice[2]/event/choice[2]/text"
 msgstr ""
 "Negotiate further.\n"
-"50% Fight\n"
-"50% {1 ~-1"
+"50% Fight"
 
 #: src-en/data/events_sector_kleptocracy.xml:322
 msgid ""
@@ -633,8 +632,6 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Dock with the station.\n"
-"17% Gain a crew(Slug)\n"
-"17% Gain an augment(Combat Oxygen Unstable)\n"
 "33% Fight"
 
 #: src-en/data/events_sector_kleptocracy.xml:455
@@ -841,7 +838,7 @@ msgstr ""
 "Purchase their tech for 15 scrap.\n"
 "50% Gain an augment(Combat Panic Button)\n"
 "50% ~-15\n"
-"50% System Upgrade(Reactor 1™)\n"
+"50% System Upgrade(Reactor x1)\n"
 "50% ~-15"
 
 #: src-en/data/events_sector_kleptocracy.xml:567
@@ -1126,8 +1123,11 @@ msgid ""
 msgstr ""
 "Continue...\n"
 "~-24\n"
+"25% {8\n"
 "~-30\n"
+"25% }5\n"
 "~-40\n"
+"25% |5\n"
 "Storage Check"
 
 #: src-en/data/events_sector_kleptocracy.xml:803
@@ -1143,8 +1143,11 @@ msgid ""
 msgstr ""
 "Stop by and check it out.\n"
 "~-24\n"
+"25% {8\n"
 "~-30\n"
-"~-40"
+"25% }5\n"
+"~-40\n"
+"25% |5"
 
 #: src-en/data/events_sector_kleptocracy.xml:807
 msgid ""
@@ -1160,7 +1163,8 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_CASINO\"]/choice/event/choice[1]/event/choice[1]/text"
 msgstr ""
 "Gamble for some fuel.\n"
-"~-24"
+"~-24\n"
+"25% {8"
 
 #: src-en/data/events_sector_kleptocracy.xml:811
 msgid ""
@@ -1179,7 +1183,8 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_CASINO\"]/choice/event/choice[1]/event/choice[2]/text"
 msgstr ""
 "Gamble for some missiles.\n"
-"~-30"
+"~-30\n"
+"25% }5"
 
 #: src-en/data/events_sector_kleptocracy.xml:824
 msgid ""
@@ -1198,7 +1203,8 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_CASINO\"]/choice/event/choice[1]/event/choice[3]/text"
 msgstr ""
 "Gamble for some droneparts.\n"
-"~-40"
+"~-40\n"
+"25% |5"
 
 #: src-en/data/events_sector_kleptocracy.xml:837
 msgid ""
@@ -1630,7 +1636,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_STORM_SLUG_POWER\"]/choice[1]/text"
 msgstr ""
 "Attack them!\n"
-"Fight(HK=CK: Reward Standard(L))"
+"Fight(HK=CK: Reward Standard(L) System Upgrade(Reactor x1))"
 
 #: src-en/data/events_sector_kleptocracy.xml:1163
 msgid ""
@@ -1644,14 +1650,14 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_STORM_SLUG_POWER\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(L))"
+"Fight(HK=CK: Reward Standard(L) System Upgrade(Reactor x1))"
 
 #: src-en/data/events_sector_kleptocracy.xml:1172
 msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_STORM_SLUG_POWER\"]/choice[2]/text"
 msgstr ""
 "Pay them to do some work on your reactor.\n"
-"System Upgrade(Reactor 1™)\n"
+"System Upgrade(Reactor x1)\n"
 "~-20"
 
 #: src-en/data/events_sector_kleptocracy.xml:1174
@@ -1794,8 +1800,10 @@ msgid ""
 msgstr ""
 "Continue...\n"
 "33% Gain a crew(Slug)\n"
+"33% Repair Hull(20$)\n"
 "33% Reward ~ Only(M)\n"
 "33% Gain a crew(Slug Saboteur)\n"
+"33% Repair Hull(20$)\n"
 "33% Reward ~ Only(M)"
 
 #: src-en/data/events_sector_kleptocracy.xml:1274
@@ -1833,7 +1841,9 @@ msgstr ""
 #: src-en/data/events_sector_kleptocracy.xml:1286
 msgid ""
 "data/events_sector_kleptocracy.xml$//eventList[@name=\"NEBULA_SLUG_DRUGS_WIN\"]/event[2]/choice[2]/text"
-msgstr "Repair the damage caused by the asteroids.\n"
+msgstr ""
+"Repair the damage caused by the asteroids.\n"
+"Repair Hull(20$)"
 
 #: src-en/data/events_sector_kleptocracy.xml:1288
 msgid ""
@@ -1890,7 +1900,9 @@ msgstr ""
 #: src-en/data/events_sector_kleptocracy.xml:1316
 msgid ""
 "data/events_sector_kleptocracy.xml$//eventList[@name=\"NEBULA_SLUG_DRUGS_WIN\"]/event[3]/choice[2]/text"
-msgstr "Repair the damage caused by the asteroids.\n"
+msgstr ""
+"Repair the damage caused by the asteroids.\n"
+"Repair Hull(20$)"
 
 #: src-en/data/events_sector_kleptocracy.xml:1318
 msgid ""
@@ -2109,7 +2121,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_REFUGEE_SLUG_MV\"]/choice[1]/text"
 msgstr ""
 "Hail them.\n"
-"Fight(HK: 50% Reward Standard(M))(CK: 50% Reward Standard(H))"
+"Fight(HK: 50% Reward Standard(M) 50% Reward Standard(L))(CK: 50% Reward Standard(H) 50% Reward Standard(L))"
 
 #: src-en/data/events_sector_kleptocracy.xml:1456
 msgid ""
@@ -2150,6 +2162,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_DRINK_MV\"]/choice[1]/text"
 msgstr ""
 "Drink.\n"
+"50% Repair Hull(10$)\n"
 "50% -35≤~≤-25"
 
 #: src-en/data/events_sector_kleptocracy.xml:1480
@@ -2179,6 +2192,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_DRINK_MV\"]/choice[@req=\"LIST_CREW_ROCK\"]/text"
 msgstr ""
 "(Rock Crew) Have your Rockman pose as captain.\n"
+"50% Repair Hull(10$)\n"
 "50% Fight"
 
 #: src-en/data/events_sector_kleptocracy.xml:1495
@@ -2186,6 +2200,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_DRINK_MV\"]/choice[@req=\"LIST_CREW_SHELL\"]/text"
 msgstr ""
 "(Shell Crew) Have your Shell pose as captain.\n"
+"50% Repair Hull(10$)\n"
 "50% Fight"
 
 #: src-en/data/events_sector_kleptocracy.xml:1499
@@ -2193,6 +2208,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_DRINK_MV\"]/choice[@req=\"LIST_CREW_GHOST\"]/text"
 msgstr ""
 "(Ghost Crew) Have your Ghost pose as captain.\n"
+"50% Repair Hull(10$)\n"
 "50% Fight"
 
 #: src-en/data/events_sector_kleptocracy.xml:1505
@@ -2522,7 +2538,9 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_HULLFIX_MV\"]/choice[2]/text"
 msgstr ""
 "Sure.\n"
+"33% Repair Hull(10$)\n"
 "33% <!>Fleet Advance(1)\n"
+"33% Repair Hull(1$)\n"
 "Fight(HK: 17% Reward Standard(M))(CK: 3% Reward Stuff(R) 3% Reward Stuff(R) 3% Reward Stuff(R) 3% Reward Stuff(R) 3% Reward Stuff(R) 3% Reward Standard(M))\n"
 "Fight(HK=CK: 17% Reward Standard(H))\n"
 "Fight(HK: 17% Reward Standard(M))(CK: 3% Reward Stuff(R) 3% Reward Stuff(R) 3% Reward Stuff(R) 3% Reward Stuff(R) 3% Reward Stuff(R) 3% Reward Standard(M))\n"
@@ -2609,6 +2627,8 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//eventList[@name=\"NEBULA_SLUG_HULLFIX_MV_RESULT2\"]/event[1]/choice[2]/text"
 msgstr ""
 "That's ridiculous!\n"
+"<!>Damage Hull(4)\n"
+"<!>Damage Hull(1)\n"
 "Fight(HK: Reward Standard(M))(CK: 17% Reward Stuff(R) 17% Reward Stuff(R) 17% Reward Stuff(R) 17% Reward Stuff(R) 17% Reward Stuff(R) 17% Reward Standard(M))"
 
 #: src-en/data/events_sector_kleptocracy.xml:1740
@@ -2680,6 +2700,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//eventList[@name=\"NEBULA_SLUG_HULLFIX_MV_REQUEST\"]/event[1]/choice[1]/text"
 msgstr ""
 "Accept.\n"
+"Repair Hull(10$)\n"
 "~-40"
 
 #: src-en/data/events_sector_kleptocracy.xml:1782
@@ -2744,7 +2765,7 @@ msgid ""
 msgstr ""
 "Get closer.\n"
 "Fight(HK: 33% Reward Standard(L))(CK: 33% Reward Standard(M))\n"
-"Fight(HK: 33% Reward Standard(L))(CK: 33% Reward Standard(M))"
+"Fight(HK: 33% Reward Standard(L) 17% ~-25 17% Gain a weapon(Random) 17% Reward Standard(L))(CK: 33% Reward Standard(M) 17% ~-25 17% Gain a weapon(Random) 17% Reward Standard(L))"
 
 #: src-en/data/events_sector_kleptocracy.xml:1822
 msgid ""
@@ -2782,7 +2803,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_IMPORTANT_PRISONER\"]/choice[1]/text"
 msgstr ""
 "Attack the elite to get to the Jailer.\n"
-"Fight(HK=CK: Reward Item(H))"
+"Fight(HK=CK: Reward Item(H) Gain a crew(Slug Saboteur))"
 
 #: src-en/data/events_sector_kleptocracy.xml:1856
 msgid ""
@@ -2796,7 +2817,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_IMPORTANT_PRISONER\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Item(H))"
+"Fight(HK=CK: Reward Item(H) Gain a crew(Slug Saboteur))"
 
 #: src-en/data/events_sector_kleptocracy.xml:1865
 msgid ""
@@ -2836,7 +2857,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_GRAVE\"]/choice[1]/text"
 msgstr ""
 "Attempt to rob the tombs.\n"
-"Fight(HK=CK: Reward Standard(H))"
+"Fight(HK=CK: Reward Standard(H) 25% Gain a weapon(Random) 25% Reward { Only(H) 25% Map Reveal 25% Gain a crew(Slug) 25% Gain a weapon(Random) 25% Reward { Only(H) 25% Map Reveal 25% Gain a crew(Slug) 25% Gain a weapon(Random) 25% Reward { Only(H) 25% Map Reveal 25% Gain a crew(Slug))"
 
 #: src-en/data/events_sector_kleptocracy.xml:1887
 msgid ""
@@ -3013,7 +3034,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_MINDSLAVES\"]/choice[1]/text"
 msgstr ""
 "Land on the planet and see if they have a market.\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 50% Gain a crew(?))"
 
 #: src-en/data/events_sector_kleptocracy.xml:1970
 msgid ""
@@ -3029,7 +3050,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_MINDSLAVES\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Liberate them, destroy the station!\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 50% Gain a crew(?))"
 
 #: src-en/data/events_sector_kleptocracy.xml:1974
 msgid ""
@@ -3043,7 +3064,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_MINDSLAVES\"]/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 50% Gain a crew(?))"
 
 #: src-en/data/events_sector_kleptocracy.xml:1983
 msgid ""
@@ -3205,7 +3226,9 @@ msgstr ""
 "Send some crew to help.\n"
 "33% <!>Enemy Boarding(x1-x3 Slug)\n"
 "33% <!>Lose your crew(clonable)\n"
-"33% Reward ~ Only(H)"
+"33% Reward ~ Only(H)\n"
+"33% Fight\n"
+"33% Fight"
 
 #: src-en/data/events_sector_kleptocracy.xml:2086
 msgid ""
@@ -3327,7 +3350,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_DISTRESS_ROCK\"]/choice[1]/text"
 msgstr ""
 "Engage the Slug ship.\n"
-"Fight(HK=CK: 50% Reward Standard(M))"
+"Fight(HK=CK: 50% Reward Standard(M) 17% Reward Standard(M))"
 
 #: src-en/data/events_sector_kleptocracy.xml:2155
 msgid ""
@@ -3355,7 +3378,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//eventList[@name=\"SLUG_DISTRESS_ROCK_FIGHT_MV\"]/event[2]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 33% Reward Standard(M))"
 
 #: src-en/data/events_sector_kleptocracy.xml:2174
 msgid ""
@@ -3754,7 +3777,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_ROCK_SALTY\"]/choice[2]/text"
 msgstr ""
 "Fight the ship.\n"
-"Fight(HK=CK: Reward Standard No Item(H))"
+"Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Rock))"
 
 #: src-en/data/events_sector_kleptocracy.xml:2387
 msgid ""
@@ -3768,7 +3791,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_ROCK_SALTY\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard No Item(H))"
+"Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Rock))"
 
 #: src-en/data/events_sector_kleptocracy.xml:2396
 msgid ""
@@ -3813,7 +3836,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_ROCK_SALTY_HUNT\"]/choice[1]/text"
 msgstr ""
 "Follow them.\n"
-"Fight(HK: Reward Standard(L))(CK: Reward Standard(M))"
+"Fight(HK: Reward Standard(L) Reward Standard(M) Gain a weapon(Random))(CK: Reward Standard(M) Reward Standard(M) Gain a weapon(Random))"
 
 #: src-en/data/events_sector_kleptocracy.xml:2420
 msgid ""
@@ -3828,7 +3851,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_ROCK_SALTY_HUNT\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Ignore their pleas and attack.\n"
-"Fight(HK: Reward Standard(L))(CK: Reward Standard(M))"
+"Fight(HK: Reward Standard(L) Reward Standard(M) Gain a weapon(Random))(CK: Reward Standard(M) Reward Standard(M) Gain a weapon(Random))"
 
 #: src-en/data/events_sector_kleptocracy.xml:2425
 msgid ""
@@ -3840,7 +3863,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_SLUG_ROCK_SALTY_HUNT\"]/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(L))(CK: Reward Standard(M))"
+"Fight(HK: Reward Standard(L) Reward Standard(M) Gain a weapon(Random))(CK: Reward Standard(M) Reward Standard(M) Gain a weapon(Random))"
 
 #: src-en/data/events_sector_kleptocracy.xml:2434
 msgid ""
@@ -4485,7 +4508,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"NEBULA_ENCOUNTER_SLUG_ELITE\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard No Item(H))(CK: 17% Reward Stuff(R) 17% Reward Stuff(R) 17% Reward Stuff(R) 17% Reward Stuff(R) 17% Reward Stuff(R) 17% Reward Standard(M))"
+"Fight(HK: Reward Standard No Item(H) Gain a weapon(Giftlist Slug))(CK: 17% Reward Stuff(R) 17% Reward Stuff(R) 17% Reward Stuff(R) 17% Reward Stuff(R) 17% Reward Stuff(R) 17% Reward Standard(M))"
 
 #: src-en/data/events_sector_kleptocracy.xml:2865
 msgid ""
@@ -4550,8 +4573,11 @@ msgid ""
 msgstr ""
 "Speak with the Slug.\n"
 "~-50\n"
+"Gain an augment(Random)\n"
 "~-25\n"
-"|-3"
+"Gain a weapon(Random)\n"
+"|-3\n"
+"Gain an augment(Random)"
 
 #: src-en/data/events_sector_kleptocracy.xml:2897
 msgid ""
@@ -4567,7 +4593,8 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"DISTRESS_SLOCKNOG_INVESTIGATE\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Give him the \"little bit of scrap\" he asks for.\n"
-"~-50"
+"~-50\n"
+"Gain an augment(Random)"
 
 #: src-en/data/events_sector_kleptocracy.xml:2901
 msgid ""
@@ -4590,7 +4617,8 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"DISTRESS_SLOCKNOG_INVESTIGATE\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "That's way too much, give him half.\n"
-"~-25"
+"~-25\n"
+"Gain a weapon(Random)"
 
 #: src-en/data/events_sector_kleptocracy.xml:2914
 msgid ""
@@ -4616,7 +4644,8 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"DISTRESS_SLOCKNOG_INVESTIGATE\"]/choice[1]/event/choice[@req=\"DRONE_CONTROL_REPAIR_ALL\"]/text"
 msgstr ""
 "(Repair Drone) Use the drone and a few drone parts to fix his ship completely.\n"
-"|-3"
+"|-3\n"
+"Gain an augment(Random)"
 
 #: src-en/data/events_sector_kleptocracy.xml:2930
 msgid ""
@@ -4797,7 +4826,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"SLUG_UNLOCK_2_MV\"]/choice[1]/text"
 msgstr ""
 "Take out the station.\n"
-"Fight(HK=CK: <#>Unlock Ship(Slug))\n"
+"Fight(HK=CK: <#>Unlock Ship(Slug) Gain a weapon(Loot Slug 1) Reward Standard(H))\n"
 "<#>Unlock Ship(Slug)\n"
 "<#>Unlock Ship(Slug)"
 
@@ -4813,7 +4842,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"SLUG_UNLOCK_2_MV\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: <#>Unlock Ship(Slug))\n"
+"Fight(HK=CK: <#>Unlock Ship(Slug) Gain a weapon(Loot Slug 1) Reward Standard(H))\n"
 "<#>Unlock Ship(Slug)\n"
 "<#>Unlock Ship(Slug)"
 
@@ -4985,7 +5014,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"SLUG_PLEASURE_2_NOQUEST\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward ~ Only(H))(CK: <#>Unlock Ship(Pleasure))\n"
+"Fight(HK: Reward ~ Only(H) Gain a crew(?))(CK: Reward Standard(H) <#>Unlock Ship(Pleasure))\n"
 "<#>Unlock Ship(Pleasure)\n"
 "<#>Unlock Ship(Pleasure)"
 
@@ -5005,7 +5034,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"SLUG_PLEASURE_2\"]/choice[1]/text"
 msgstr ""
 "Attack, and finish them off!\n"
-"Fight(HK: Reward ~ Only(H))(CK: <#>Unlock Ship(Pleasure))\n"
+"Fight(HK: Reward ~ Only(H) Gain a crew(?))(CK: Reward Standard(H) <#>Unlock Ship(Pleasure))\n"
 "<#>Unlock Ship(Pleasure)\n"
 "<#>Unlock Ship(Pleasure)"
 
@@ -5019,7 +5048,7 @@ msgid ""
 "data/events_sector_kleptocracy.xml$//event[@name=\"SLUG_PLEASURE_2\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward ~ Only(H))(CK: <#>Unlock Ship(Pleasure))\n"
+"Fight(HK: Reward ~ Only(H) Gain a crew(?))(CK: <#>Unlock Ship(Pleasure))\n"
 "<#>Unlock Ship(Pleasure)\n"
 "<#>Unlock Ship(Pleasure)"
 

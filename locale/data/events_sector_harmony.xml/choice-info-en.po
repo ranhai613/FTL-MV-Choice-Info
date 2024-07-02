@@ -113,7 +113,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_SALVAGER\"]/choice[1]/text"
 msgstr ""
 "Hail the Lanius.\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
+"Fight(HK: Reward Standard(M) 33% Reward |(M) 33% Gain a drone(Random) 33% Gain a crew(Engi) 33% Reward Standard(M))(CK: Reward Standard(H) 33% Reward |(M) 33% Gain a drone(Random) 33% Gain a crew(Engi) 33% Reward Standard(M))"
 
 #: src-en/data/events_sector_harmony.xml:107
 msgid ""
@@ -136,7 +136,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_SALVAGER\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Fight them off.\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
+"Fight(HK: Reward Standard(M) 33% Reward |(M) 33% Gain a drone(Random) 33% Gain a crew(Engi) 33% Reward Standard(M))(CK: Reward Standard(H) 33% Reward |(M) 33% Gain a drone(Random) 33% Gain a crew(Engi) 33% Reward Standard(M))"
 
 #: src-en/data/events_sector_harmony.xml:115
 msgid ""
@@ -150,7 +150,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_SALVAGER\"]/choice[1]/event/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
+"Fight(HK: Reward Standard(M) 33% Reward |(M) 33% Gain a drone(Random))(CK: Reward Standard(H) 33% Reward |(M) 33% Gain a drone(Random))"
 
 #: src-en/data/events_sector_harmony.xml:126
 msgid ""
@@ -266,7 +266,9 @@ msgstr ""
 
 #: src-en/data/events_sector_harmony.xml:188
 msgid "data/events_sector_harmony.xml$//event[@name=\"ENGI_AID\"]/choice[1]/text"
-msgstr "Repairs.\n"
+msgstr ""
+"Repairs.\n"
+"Repair Hull(7$)"
 
 #: src-en/data/events_sector_harmony.xml:190
 msgid ""
@@ -660,24 +662,24 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_ADVISORY\"]/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr ""
 "(Long-Ranged Scanners) Locate the Mantis with your scanners.\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))\n"
-"Fight(HK=CK: Reward Standard No Item(H))"
+"Fight(HK: Reward Standard(M) Reward |(L))(CK: Reward Standard(H) Reward |(L))\n"
+"Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Mantis) Reward |(L))"
 
 #: src-en/data/events_sector_harmony.xml:439
 msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_ADVISORY\"]/choice[@req=\"sensors\"]/text"
 msgstr ""
 "(Adv. Sensors) Locate the Mantis with your sensors.\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))\n"
-"Fight(HK=CK: Reward Standard No Item(H))"
+"Fight(HK: Reward Standard(M) Reward |(L))(CK: Reward Standard(H) Reward |(L))\n"
+"Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Mantis) Reward |(L))"
 
 #: src-en/data/events_sector_harmony.xml:443
 msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_ADVISORY\"]/choice[3]/text"
 msgstr ""
 "Go looking for the Mantis.\n"
-"Fight(HK: 33% Reward Standard(M))(CK: 7% Reward Standard(H) 7% Reward Standard(H) 7% Reward Standard(H) 7% Reward Standard(H) 7% Reward Standard(H))\n"
-"Fight(HK=CK: 33% Reward Standard No Item(H))"
+"Fight(HK: 33% Reward Standard(M))(CK: 7% Reward Standard(H) 7% Reward Standard(H) 7% Reward Standard(H) 7% Reward Standard(H) 7% Reward Standard(H) 3% Gain a crew(Engi))\n"
+"Fight(HK=CK: 33% Reward Standard No Item(H) 33% Gain a weapon(Giftlist Mantis))"
 
 #: src-en/data/events_sector_harmony.xml:447
 msgid ""
@@ -739,7 +741,7 @@ msgid ""
 "data/events_sector_harmony.xml$//eventList[@name=\"ENGI_LOOKING_FOR_MANTIS\"]/event[3]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard No Item(H))"
+"Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Mantis))"
 
 #: src-en/data/events_sector_harmony.xml:483
 msgid ""
@@ -764,7 +766,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_LOCATE_MANTIS_AMBUSH\"]/choice[1]/text"
 msgstr ""
 "Fight the regular Mantis.\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
+"Fight(HK: Reward Standard(M) Reward |(L))(CK: Reward Standard(H) Reward |(L))"
 
 #: src-en/data/events_sector_harmony.xml:491
 msgid ""
@@ -778,14 +780,14 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_LOCATE_MANTIS_AMBUSH\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
+"Fight(HK: Reward Standard(M) Reward |(L))(CK: Reward Standard(H) Reward |(L))"
 
 #: src-en/data/events_sector_harmony.xml:500
 msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_LOCATE_MANTIS_AMBUSH\"]/choice[2]/text"
 msgstr ""
 "Fight the Suzerain.\n"
-"Fight(HK=CK: Reward Standard No Item(H))"
+"Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Mantis) Reward |(L))"
 
 #: src-en/data/events_sector_harmony.xml:502
 msgid ""
@@ -799,7 +801,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_LOCATE_MANTIS_AMBUSH\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard No Item(H))"
+"Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Mantis) Reward |(L))"
 
 #: src-en/data/events_sector_harmony.xml:511
 msgid ""
@@ -820,7 +822,8 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DEFEAT_SUZERAIN_ELITE_ADVISORY\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a weapon(Giftlist Mantis)"
+"Gain a weapon(Giftlist Mantis)\n"
+"Reward |(L)"
 
 #: src-en/data/events_sector_harmony.xml:521
 msgid ""
@@ -848,7 +851,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_IMPLANT_UNION\"]/choice/text"
 msgstr ""
 "Investigate.\n"
-"Storage Check"
+"Fight"
 
 #: src-en/data/events_sector_harmony.xml:537
 msgid ""
@@ -1142,7 +1145,8 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_DECONSTRUCTOR_JUNKYARD\"]/choice[2]/text"
 msgstr ""
 "Explore the mass between the fields.\n"
-"Reward Standard No Item(M)"
+"Reward Standard No Item(M)\n"
+"Fight"
 
 #: src-en/data/events_sector_harmony.xml:694
 msgid ""
@@ -1554,7 +1558,7 @@ msgid "data/events_sector_harmony.xml$//event[@name=\"ENGI_VIRUS\"]/choice/text"
 msgstr ""
 "Continue...\n"
 "Fight(HK=CK: Reward Standard(M))\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) Gain a crew(Engi Defender))"
 
 #: src-en/data/events_sector_harmony.xml:911
 msgid ""
@@ -1609,7 +1613,9 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_VIRUS\"]/choice/event/choice[@req=\"unique_turzil\"]/text"
 msgstr ""
 "(Turzil) Negotiate with the virus.\n"
-"System Upgrade(Reactor 1™)"
+"Repair Hull(15$)\n"
+"System Upgrade(Reactor x1)\n"
+"Gain an augment(Random)"
 
 #: src-en/data/events_sector_harmony.xml:939
 msgid ""
@@ -1623,7 +1629,9 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_VIRUS\"]/choice/event/choice[@req=\"unique_turzil\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"System Upgrade(Reactor 1™)"
+"Repair Hull(15$)\n"
+"System Upgrade(Reactor x1)\n"
+"Gain an augment(Random)"
 
 #: src-en/data/events_sector_harmony.xml:943
 msgid ""
@@ -1702,7 +1710,9 @@ msgid ""
 " and @lvl=\"2\"]/text"
 msgstr ""
 "(Upg. Hacking) Reprogram the virus.\n"
-"System Upgrade(Reactor 1™)"
+"Repair Hull(15$)\n"
+"System Upgrade(Reactor x1)\n"
+"Gain an augment(Random)"
 
 #: src-en/data/events_sector_harmony.xml:982
 msgid ""
@@ -1718,7 +1728,9 @@ msgid ""
 " and @lvl=\"2\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"System Upgrade(Reactor 1™)"
+"Repair Hull(15$)\n"
+"System Upgrade(Reactor x1)\n"
+"Gain an augment(Random)"
 
 #: src-en/data/events_sector_harmony.xml:986
 msgid ""
@@ -1757,7 +1769,9 @@ msgid ""
 " and @lvl=\"3\"]/text"
 msgstr ""
 "(Adv. Hacking) Reprogram the virus.\n"
-"System Upgrade(Reactor 1™)"
+"Repair Hull(30$)\n"
+"System Upgrade(Reactor x1)\n"
+"Gain an augment(Random)"
 
 #: src-en/data/events_sector_harmony.xml:1007
 msgid ""
@@ -1773,7 +1787,9 @@ msgid ""
 " and @lvl=\"3\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"System Upgrade(Reactor 1™)"
+"Repair Hull(30$)\n"
+"System Upgrade(Reactor x1)\n"
+"Gain an augment(Random)"
 
 #: src-en/data/events_sector_harmony.xml:1011
 msgid ""
@@ -1868,7 +1884,7 @@ msgid ""
 msgstr ""
 "(Engi Crew) Have your Engi crewmember negotiate with the Engi ship.\n"
 "<!>Lose your crew(UNCLONABLE)\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) Gain a crew(Engi Defender))"
 
 #: src-en/data/events_sector_harmony.xml:1061
 msgid ""
@@ -1890,7 +1906,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_VIRUS\"]/choice/event/choice[@req=\"engi\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) Gain a crew(Engi Defender))"
 
 #: src-en/data/events_sector_harmony.xml:1074
 msgid ""
@@ -1986,7 +2002,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENGI_COMPLEX\"]/choice[@req=\"sensors\"]/text"
 msgstr ""
 "(Upg. Sensors) Scan the station.\n"
-"Storage Check"
+"Fight"
 
 #: src-en/data/events_sector_harmony.xml:1122
 msgid ""
@@ -2248,6 +2264,7 @@ msgid ""
 msgstr ""
 "Continue...\n"
 "{-4 ~-50 }-5 |-3\n"
+"Fight\n"
 "{-2 ~-25 }-2 |-2"
 
 #: src-en/data/events_sector_harmony.xml:1263
@@ -2367,6 +2384,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_SALVAGE\"]/choice[1]/event/choice[1]/event/choice/event/choice[@req=\"cloaking\"]/text"
 msgstr ""
 "(Cloaking) Cloak and leave.\n"
+"50% Fight\n"
 "50% Fight"
 
 #: src-en/data/events_sector_harmony.xml:1339
@@ -2401,7 +2419,7 @@ msgid ""
 msgstr ""
 "Salvage some of the wreckage.\n"
 "Reward Standard(L)\n"
-"Fight(HK: Reward Standard No Item(H))(CK: Reward |(R) Reward |(H) Reward Stuff(R))"
+"Fight(HK: Reward Standard No Item(H) Gain a drone(Giftlist Engi))(CK: Reward |(R) Reward |(H) Reward Stuff(R))"
 
 #: src-en/data/events_sector_harmony.xml:1357
 msgid ""
@@ -2416,7 +2434,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_SALVAGE\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard No Item(H))(CK: Reward |(R) Reward |(H) Reward Stuff(R))"
+"Fight(HK: Reward Standard No Item(H) Gain a drone(Giftlist Engi))(CK: Reward |(R) Reward |(H) Reward Stuff(R))"
 
 #: src-en/data/events_sector_harmony.xml:1367
 msgid ""
@@ -2526,7 +2544,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"DISTRESS_ENGI_HACKER\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(M))"
+"Fight(HK: Reward Standard(M) Reward | Only(M))"
 
 #: src-en/data/events_sector_harmony.xml:1437
 msgid ""
@@ -2562,6 +2580,8 @@ msgid ""
 msgstr ""
 "Board the station.\n"
 "25% <!>Lose your crew(clonable)\n"
+"25% Gain a crew(Engi)\n"
+"25% Reward ~ Only(L)\n"
 "25% Gain a crew(Engi)\n"
 "25% Reward ~ Only(L)\n"
 "25% <!>Lose your crew(clonable)\n"
@@ -2658,6 +2678,8 @@ msgid ""
 msgstr ""
 "Save the Engi!\n"
 "50% <!>Lose your crew(clonable)\n"
+"50% Gain a crew(Engi)\n"
+"50% Reward ~ Only(L)\n"
 "50% Gain a crew(Engi)\n"
 "50% Reward ~ Only(L)"
 
@@ -2923,7 +2945,8 @@ msgstr ""
 "Reward Stuff(M)\n"
 "Reward ~ Only(M)\n"
 "Reward ~ Only(M)\n"
-"Reward Stuff(H)"
+"Reward Stuff(H)\n"
+"50% Fight"
 
 #: src-en/data/events_sector_harmony.xml:1653
 msgid ""
@@ -3060,7 +3083,7 @@ msgstr ""
 "Respond to the call and move in to assist.\n"
 "50% <!>Enemy Boarding(x1-x2 Mantis)\n"
 "Fight(HK=CK: )\n"
-"Fight(HK: 50% Reward Standard(M))(CK: 50% Reward Standard(H))"
+"Fight(HK: 50% Reward Standard(M) 12% Reward { Only(M) 12% Gain a crew(Engi) 12% Reward Standard(L) 12% Reward {(H) 12% Reward Weapon(L) 12% Reward Drone(L) 12% Reward Weapon(L) 12% Repair Hull(10$))(CK: 50% Reward Standard(H) 12% Reward { Only(M) 12% Gain a crew(Engi) 12% Reward Standard(L) 12% Reward {(H) 12% Reward Weapon(L) 12% Reward Drone(L) 12% Reward Weapon(L) 12% Repair Hull(10$))"
 
 #: src-en/data/events_sector_harmony.xml:1722
 msgid ""
@@ -3094,7 +3117,7 @@ msgid ""
 "data/events_sector_harmony.xml$//eventList[@name=\"DISTRESS_ENGI_DANGER_LIST\"]/event[2]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
+"Fight(HK: Reward Standard(M) 25% Reward { Only(M) 25% Gain a crew(Engi) 25% Reward Standard(L))(CK: Reward Standard(H) 25% Reward { Only(M) 25% Gain a crew(Engi) 25% Reward Standard(L))"
 
 #: src-en/data/events_sector_harmony.xml:1747
 msgid ""
@@ -3180,7 +3203,8 @@ msgid ""
 "data/events_sector_harmony.xml$//eventList[@name=\"DISTRESS_ENGI_DANGER_SAVE\"]/event[3]/choice[@req=\"LIST_CREW_HARMONY\"]/text"
 msgstr ""
 "(Harmony Crew) \"Threat unresolved. Current mission imperative: Protocol 52.34.\"\n"
-"Reward Weapon(L)"
+"Reward Weapon(L)\n"
+"Repair Hull(10$)"
 
 #: src-en/data/events_sector_harmony.xml:1796
 msgid ""
@@ -3515,7 +3539,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"QUEST_ENGI_CRIME\"]/choice[2]/text"
 msgstr ""
 "Who cares about who's responsible? Kill the Rebels!\n"
-"Fight(HK: 20% Reward Standard(M) 20% Reward Standard(M) 20% Reward Standard(M) 20% Reward Standard(M) 20% Reward Standard(L))(CK: Reward Standard(H))"
+"Fight(HK: 20% Reward Standard(M) 20% Reward Standard(M) 20% Reward Standard(M) 20% Reward Standard(M) 20% Reward Standard(L) 20% Gain a crew(Human) 10% Gain a crew(Human) 10% <!>Lose your crew(clonable) 10% Gain a crew(Human) 7% Reward Standard(L) 7% Reward Standard(L) 7% <!>Fleet Advance(1))(CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_harmony.xml:1993
 msgid ""
@@ -4421,7 +4445,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"ENCOUNTER_ENGI_ELITE\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard No Item(H))"
+"Fight(HK=CK: Reward Standard No Item(H) Gain a drone(Giftlist Engi))"
 
 #: src-en/data/events_sector_harmony.xml:2536
 msgid ""
@@ -4447,7 +4471,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: 33% Reward Standard No Item(H))\n"
+"Fight(HK=CK: 33% Reward Standard No Item(H) 33% Gain a weapon(Giftlist Mantis))\n"
 "Fight(HK: 33% Reward Standard(H))(CK: )\n"
 "Fight(HK: 33% Reward Standard(H))(CK: )"
 
@@ -4457,7 +4481,7 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: 50% Reward Standard No Item(H))"
+"Fight(HK=CK: 50% Reward Standard No Item(H) 50% Gain a weapon(Giftlist Mantis))"
 
 #: src-en/data/events_sector_harmony.xml:2554
 msgid ""
@@ -4491,7 +4515,7 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: 50% Reward Standard No Item(H))"
+"Fight(HK=CK: 50% Reward Standard No Item(H) 50% Gain a weapon(Giftlist Mantis))"
 
 #: src-en/data/events_sector_harmony.xml:2581
 msgid ""
@@ -4527,6 +4551,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"HARMONY_LINK_FIGHTENGI\"]/choice[2]/text"
 msgstr ""
 "Request supplies.\n"
+"Fight\n"
 "Storage Check"
 
 #: src-en/data/events_sector_harmony.xml:2597
@@ -4574,7 +4599,8 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"HARMONY_LINK_FIGHTENGI\"]/choice[@req=\"LIST_CREW_HARMONY\"]/text"
 msgstr ""
 "(Harmony Crew) Request supplies.\n"
-"Reward | Only(M)"
+"Reward | Only(M)\n"
+"Repair Hull(3$)"
 
 #: src-en/data/events_sector_harmony.xml:2622
 msgid ""
@@ -4618,7 +4644,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"HARMONY_LINK_FIGHTMANTIS\"]/choice[1]/text"
 msgstr ""
 "Attack them!\n"
-"Fight(HK=CK: Reward Standard No Item(H))"
+"Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Mantis))"
 
 #: src-en/data/events_sector_harmony.xml:2648
 msgid ""
@@ -4630,7 +4656,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"HARMONY_LINK_FIGHTMANTIS\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard No Item(H))"
+"Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Mantis))"
 
 #: src-en/data/events_sector_harmony.xml:2657
 msgid ""
@@ -4768,6 +4794,7 @@ msgid ""
 msgstr ""
 "Attempt to salvage without alerting the ship.\n"
 "Reward Standard(M)\n"
+"<!>Damage Hull(3)\n"
 "Fight(HK: Reward Standard(H))(CK: )"
 
 #: src-en/data/events_sector_harmony.xml:2749
@@ -5214,7 +5241,7 @@ msgid ""
 "data/events_sector_harmony.xml$//event[@name=\"TURZIL_REINFORCEMENTS\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard No Item(H))(CK: Reward |(R) Reward |(H) Reward Stuff(R))"
+"Fight(HK: Reward Standard No Item(H) Gain a drone(Giftlist Engi))(CK: Reward |(R) Reward |(H) Reward Stuff(R))"
 
 #: src-en/data/events_sector_harmony.xml:3022
 msgid ""

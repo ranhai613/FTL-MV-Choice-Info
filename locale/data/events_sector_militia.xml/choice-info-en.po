@@ -549,9 +549,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"MILITIA_TEXTWALL_TEXT\"]/choice/event/choice/event/choice/event/choice/event/choice/event/choice/event/choice/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a crew(Zoltan Peacekeeper)\n"
-"Fight\n"
-"Gain a crew(Zoltan Peacekeeper)"
+"Fight"
 
 #: src-en/data/events_sector_militia.xml:264
 msgid ""
@@ -569,9 +567,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"MILITIA_TEXTWALL_TEXT\"]/choice/event/choice/event/choice/event/choice/event/choice/event/choice/event/choice/event/choice/event/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Gain a crew(Zoltan Peacekeeper)\n"
-"Fight\n"
-"Gain a crew(Zoltan Peacekeeper)"
+"Fight"
 
 #: src-en/data/events_sector_militia.xml:268
 msgid ""
@@ -676,8 +672,7 @@ msgid ""
 " and @lvl=\"4\"]/text"
 msgstr ""
 "Continue...\n"
-"Fight\n"
-"Gain a crew(Zoltan Peacekeeper)"
+"Fight"
 
 #: src-en/data/events_sector_militia.xml:307
 msgid ""
@@ -913,7 +908,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"MILITIA_TRAINIES\"]/choice[1]/text"
 msgstr ""
 "Hail and see if you can get involved.\n"
-"Fight(HK=CK: )"
+"Fight(HK=CK: <!>Damage Hull(5))"
 
 #: src-en/data/events_sector_militia.xml:471
 msgid ""
@@ -930,7 +925,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"MILITIA_TRAINIES\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Engage!\n"
-"Fight(HK=CK: )"
+"Fight(HK=CK: <!>Damage Hull(5))"
 
 #: src-en/data/events_sector_militia.xml:480
 msgid ""
@@ -1005,7 +1000,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"MILITIA_RECRUITMENT\"]/choice[1]/text"
 msgstr ""
 "Rescue the Militiamen!\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
+"Fight(HK: Reward Standard(M) Gain a crew(Human))(CK: Reward Standard(H) Gain a crew(Human))"
 
 #: src-en/data/events_sector_militia.xml:526
 msgid ""
@@ -1017,7 +1012,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"MILITIA_RECRUITMENT\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
+"Fight(HK: Reward Standard(M) Gain a crew(Human))(CK: Reward Standard(H) Gain a crew(Human))"
 
 #: src-en/data/events_sector_militia.xml:535
 msgid ""
@@ -1025,7 +1020,8 @@ msgid ""
 msgstr ""
 "Contact the Rebels; try to talk them out of it.\n"
 "50% <!>Enemy Boarding(x2-x3 Human Rebel)\n"
-"50% Reward Standard(M)"
+"50% Reward Standard(M)\n"
+"50% Fight"
 
 #: src-en/data/events_sector_militia.xml:539
 msgid ""
@@ -1257,7 +1253,8 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"MILITIA_COCKY_ZOLTAN\"]/choice/event/choice[@req=\"BYPASS_AND_TELEPORT\"]/text"
 msgstr ""
 "(Shield Bypass + Teleport) Overtake his crew before they can respond.\n"
-"Reward Standard(L)"
+"Reward Standard(L)\n"
+"Fight"
 
 #: src-en/data/events_sector_militia.xml:650
 msgid ""
@@ -1311,7 +1308,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"DISTRESS_MILITIA_KERNELS\"]/choice[1]/text"
 msgstr ""
 "Save the Orchids.\n"
-"Fight(HK: Reward Standard(L))(CK: Reward Standard(M))"
+"Fight(HK: Reward Standard(L) Gain a weapon(Giftlist Kernel))(CK: Reward Standard(M) Gain a weapon(Giftlist Kernel))"
 
 #: src-en/data/events_sector_militia.xml:696
 msgid ""
@@ -1323,7 +1320,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"DISTRESS_MILITIA_KERNELS\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(L))(CK: Reward Standard(M))"
+"Fight(HK: Reward Standard(L) Gain a weapon(Giftlist Kernel))(CK: Reward Standard(M) Gain a weapon(Giftlist Kernel))"
 
 #: src-en/data/events_sector_militia.xml:705
 msgid ""
@@ -1371,7 +1368,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"DISTRESS_MILITIA_OUTPOST\"]/choice[1]/text"
 msgstr ""
 "Protect the outpost.\n"
-"Fight(HK: Reward Standard(L))(CK: Reward Standard(M))"
+"Fight(HK: Reward Standard(L) Reward Stuff(M))(CK: Reward Standard(M) Reward Stuff(M))"
 
 #: src-en/data/events_sector_militia.xml:731
 msgid ""
@@ -1383,7 +1380,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"DISTRESS_MILITIA_OUTPOST\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(L))(CK: Reward Standard(M))"
+"Fight(HK: Reward Standard(L) Reward Stuff(M))(CK: Reward Standard(M) Reward Stuff(M))"
 
 #: src-en/data/events_sector_militia.xml:740
 msgid ""
@@ -1609,7 +1606,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"MILITIA_AUTOSEARCH_QUEST\"]/choice[@req=\"PDS_DISABLE\"]/text"
 msgstr ""
 "(Signal Diluter) Disable the satellite's targeting systems.\n"
-"Fight(HK: Reward ~ Only(L))"
+"Fight(HK: Reward ~ Only(L) Reward Stuff(L))"
 
 #: src-en/data/events_sector_militia.xml:870
 msgid ""
@@ -1631,7 +1628,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"MILITIA_AUTOSEARCH_QUEST\"]/choice[@req=\"FLARE_DISTRACTION\"]/text"
 msgstr ""
 "(Flares) Confuse the ASB system.\n"
-"Fight(HK: Reward ~ Only(L))"
+"Fight(HK: Reward ~ Only(L) Reward Stuff(L))"
 
 #: src-en/data/events_sector_militia.xml:880
 msgid ""
@@ -1653,7 +1650,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"MILITIA_AUTOSEARCH_QUEST\"]/choice[3]/text"
 msgstr ""
 "Get ready to fight.\n"
-"Fight(HK: Reward ~ Only(L))"
+"Fight(HK: Reward ~ Only(L) Reward Stuff(L))"
 
 #: src-en/data/events_sector_militia.xml:890
 msgid ""
@@ -1845,7 +1842,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"ENCOUNTER_MILITIA_ESCORT\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(L))(CK: Reward Standard(M))"
+"Fight(HK: Reward Standard(L) Reward Item(L))(CK: Reward Standard(M) Reward Item(L))"
 
 #: src-en/data/events_sector_militia.xml:1017
 msgid ""
@@ -1977,7 +1974,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"ENCOUNTER_MILITIA_ELITE\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard No Item(H))"
+"Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Union))"
 
 #: src-en/data/events_sector_militia.xml:1083
 msgid "data/events_sector_militia.xml$//event[@name=\"MILITIA_DETECTIVE\"]/text"
@@ -2210,8 +2207,6 @@ msgid ""
 msgstr ""
 "Accuse a suspect.\n"
 "<!>Fleet Advance(2)\n"
-"<!>Fleet Advance(2)\n"
-"<!>Fleet Advance(2)\n"
 "<!>Fleet Advance(2)"
 
 #: src-en/data/events_sector_militia.xml:1217
@@ -2396,6 +2391,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"DETECTIVE_ACCUSE_DRONE\"]/choice[4]/text"
 msgstr ""
 "It was Thom!\n"
+"Gain a crew(Unique Haynes)\n"
 "<!>Fleet Advance(2)"
 
 #: src-en/data/events_sector_militia.xml:1307
@@ -2485,6 +2481,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"DETECTIVE_ACCUSE_THOM\"]/choice[@req=\"loc_evidence_dronekiller\"]/text"
 msgstr ""
 "Indeed, the drone was instrumental for the murder. And who ordered it to kill Henry? Thom!\n"
+"Gain a crew(Unique Haynes)\n"
 "<!>Fleet Advance(2)"
 
 #: src-en/data/events_sector_militia.xml:1346
@@ -3679,6 +3676,8 @@ msgid ""
 "data/events_sector_militia.xml$//ship[@name=\"SHIP_MILITIA_BOSS\"]/destroyed/choice/text"
 msgstr ""
 "Continue...\n"
+"Reward Standard(M)\n"
+"Gain a weapon(Laser Burst 8)\n"
 "<#>Unlock Ship(Militia)"
 
 #: src-en/data/events_sector_militia.xml:1940
@@ -3694,6 +3693,8 @@ msgid ""
 "data/events_sector_militia.xml$//ship[@name=\"SHIP_MILITIA_BOSS\"]/deadCrew/choice/text"
 msgstr ""
 "Continue...\n"
+"Reward Standard(H)\n"
+"Gain a weapon(Laser Burst 8)\n"
 "<#>Unlock Ship(Militia)"
 
 #: src-en/data/events_sector_militia.xml:1962
@@ -3720,7 +3721,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"DETECTIVE_HANGARATTACK\"]/choice[1]/text"
 msgstr ""
 "Hail the Militiamen and ask if you can assist.\n"
-"Fight(HK=CK: Reward Standard(H) <#>Unlock Ship(Militia))\n"
+"Fight(HK: Reward Standard(H) Reward Standard(M) Gain a weapon(Laser Burst 8) <#>Unlock Ship(Militia))(CK: Reward Standard(H) Reward Standard(H) Gain a weapon(Laser Burst 8) <#>Unlock Ship(Militia))\n"
 "<#>Unlock Ship(Militia)\n"
 "<#>Unlock Ship(Militia)"
 
@@ -3741,7 +3742,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"DETECTIVE_HANGARATTACK\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Fight the Dreadnaught.\n"
-"Fight(HK=CK: Reward Standard(H) <#>Unlock Ship(Militia))\n"
+"Fight(HK: Reward Standard(H) Reward Standard(M) Gain a weapon(Laser Burst 8) <#>Unlock Ship(Militia))(CK: Reward Standard(H) Reward Standard(H) Gain a weapon(Laser Burst 8) <#>Unlock Ship(Militia))\n"
 "<#>Unlock Ship(Militia)\n"
 "<#>Unlock Ship(Militia)"
 
@@ -3757,7 +3758,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"DETECTIVE_HANGARATTACK\"]/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(H) <#>Unlock Ship(Militia))\n"
+"Fight(HK: Reward Standard(H) Reward Standard(M) Gain a weapon(Laser Burst 8) <#>Unlock Ship(Militia))(CK: Reward Standard(H) Reward Standard(H) Gain a weapon(Laser Burst 8) <#>Unlock Ship(Militia))\n"
 "<#>Unlock Ship(Militia)\n"
 "<#>Unlock Ship(Militia)"
 
@@ -3813,6 +3814,7 @@ msgid ""
 "data/events_sector_militia.xml$//event[@name=\"DETECTIVE_HANGARATTACK_FAILURE\"]/choice/text"
 msgstr ""
 "Run!\n"
+"<!>Damage Hull(7)\n"
 "<!>Enemy Boarding(x2-x3 Human Soldier)"
 
 #: src-en/data/events_sector_militia.xml:2012

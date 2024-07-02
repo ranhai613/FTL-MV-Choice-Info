@@ -165,8 +165,9 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CIVILIAN_STATION\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
+"Repair Hull(10$)\n"
 "Fleet Delay(2)\n"
-"System Upgrade(Reactor 1™)"
+"System Upgrade(Reactor x1)"
 
 #: src-en/data/events_sector_hacker.xml:155
 msgid ""
@@ -185,8 +186,9 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CIVILIAN_STATION\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
+"Repair Hull(10$)\n"
 "Fleet Delay(2)\n"
-"System Upgrade(Reactor 1™)"
+"System Upgrade(Reactor x1)"
 
 #: src-en/data/events_sector_hacker.xml:168
 msgid ""
@@ -205,8 +207,9 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CIVILIAN_STATION\"]/choice[3]/event/choice/text"
 msgstr ""
 "Continue...\n"
+"Repair Hull(10$)\n"
 "Fleet Delay(2)\n"
-"System Upgrade(Reactor 1™)"
+"System Upgrade(Reactor x1)"
 
 #: src-en/data/events_sector_hacker.xml:181
 msgid ""
@@ -242,7 +245,9 @@ msgstr ""
 #: src-en/data/events_sector_hacker.xml:198
 msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CIVILIAN_STATION_THANK\"]/choice[1]/text"
-msgstr "We need repairs.\n"
+msgstr ""
+"We need repairs.\n"
+"Repair Hull(10$)"
 
 #: src-en/data/events_sector_hacker.xml:200
 msgid ""
@@ -269,7 +274,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CIVILIAN_STATION_THANK\"]/choice[3]/text"
 msgstr ""
 "We could use a reactor upgrade.\n"
-"System Upgrade(Reactor 1™)"
+"System Upgrade(Reactor x1)"
 
 #: src-en/data/events_sector_hacker.xml:214
 msgid ""
@@ -290,7 +295,8 @@ msgid ""
 msgstr ""
 "Inspect the ship.\n"
 "50% Gain a crew(Human)\n"
-"Reward Standard(L)"
+"Reward Standard(L)\n"
+"Fight"
 
 #: src-en/data/events_sector_hacker.xml:225
 msgid ""
@@ -536,7 +542,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_PDS\"]/choice[@req=\"PDS_DISABLE\"]/text"
 msgstr ""
 "(Signal Diluter) Prevent them from interfering with the defense grid.\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
+"Fight(HK: Reward Standard(M) Reward Stuff(H) Gain a weapon(Giftlist Union))(CK: Reward Standard(H) Reward Stuff(H) Gain a weapon(Giftlist Union))"
 
 #: src-en/data/events_sector_hacker.xml:381
 msgid ""
@@ -551,13 +557,13 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_PDS\"]/choice[@req=\"PDS_DISABLE\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
+"Fight(HK: Reward Standard(M) Reward Stuff(H) Gain a weapon(Giftlist Union))(CK: Reward Standard(H) Reward Stuff(H) Gain a weapon(Giftlist Union))"
 
 #: src-en/data/events_sector_hacker.xml:391
 msgid "data/events_sector_hacker.xml$//event[@name=\"HACKED_PDS\"]/choice[2]/text"
 msgstr ""
 "Attack the hacker.\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
+"Fight(HK: Reward Standard(M) Reward Stuff(H) Gain a weapon(Giftlist Union))(CK: Reward Standard(H) Reward Stuff(H) Gain a weapon(Giftlist Union))"
 
 #: src-en/data/events_sector_hacker.xml:393
 msgid ""
@@ -573,13 +579,15 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_PDS\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
+"Fight(HK: Reward Standard(M) Reward Stuff(H) Gain a weapon(Giftlist Union))(CK: Reward Standard(H) Reward Stuff(H) Gain a weapon(Giftlist Union))"
 
 #: src-en/data/events_sector_hacker.xml:403
 msgid "data/events_sector_hacker.xml$//event[@name=\"HACKED_PDS\"]/choice[3]/text"
 msgstr ""
 "Offer the hacker some scrap to scram.\n"
-"-35≤~≤-25"
+"-35≤~≤-25\n"
+"Reward Stuff(H)\n"
+"Gain a weapon(Giftlist Union)"
 
 #: src-en/data/events_sector_hacker.xml:405
 msgid ""
@@ -627,7 +635,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_HOSTAGES\"]/choice[1]/text"
 msgstr ""
 "Attack the hacker bastards.\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 50% Reward { Only(H) 50% Gain a weapon(Random))"
 
 #: src-en/data/events_sector_hacker.xml:435
 msgid ""
@@ -641,14 +649,16 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_HOSTAGES\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 50% Reward { Only(H) 50% Gain a weapon(Random))"
 
 #: src-en/data/events_sector_hacker.xml:444
 msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_HOSTAGES\"]/choice[2]/text"
 msgstr ""
 "Pay the hackers to release the civilians.\n"
-"-30≤~≤-20"
+"-30≤~≤-20\n"
+"50% Reward { Only(H)\n"
+"50% Gain a weapon(Random)"
 
 #: src-en/data/events_sector_hacker.xml:446
 msgid ""
@@ -921,7 +931,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_FLEET_SPY\"]/choice[2]/text"
 msgstr ""
 "We can't let this information get out! We have to kill the hackers.\n"
-"Fight(HK: Reward Standard(M))(CK: 25% Reward Standard(H) 25% Reward Standard(H) 25% Reward Standard(H) 25% Reward Standard(R))"
+"Fight(HK: Reward Standard(M))(CK: 25% Reward Standard(H) 25% Reward Standard(H) 25% Reward Standard(H) 25% Reward Standard(R) 25% Fleet Delay(1))"
 
 #: src-en/data/events_sector_hacker.xml:603
 msgid ""
@@ -935,7 +945,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_FLEET_SPY\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(M))(CK: 25% Reward Standard(H) 25% Reward Standard(H) 25% Reward Standard(H) 25% Reward Standard(R))"
+"Fight(HK: Reward Standard(M))(CK: 25% Reward Standard(H) 25% Reward Standard(H) 25% Reward Standard(H) 25% Reward Standard(R) 25% Fleet Delay(1))"
 
 #: src-en/data/events_sector_hacker.xml:612
 msgid ""
@@ -975,8 +985,8 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_FANCY_CLASS\"]/choice[1]/text"
 msgstr ""
 "Inquire about their argument.\n"
-"Fight(HK=CK: Reward Standard(M))\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) Reward ~ Only(H))\n"
+"Fight(HK=CK: Reward Standard(M) Fleet Delay(2))"
 
 #: src-en/data/events_sector_hacker.xml:633
 msgid ""
@@ -992,7 +1002,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_FANCY_CLASS\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Side with the Slugs.\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) Reward ~ Only(H))"
 
 #: src-en/data/events_sector_hacker.xml:637
 msgid ""
@@ -1006,14 +1016,14 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_FANCY_CLASS\"]/choice[1]/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) Reward ~ Only(H))"
 
 #: src-en/data/events_sector_hacker.xml:646
 msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_FANCY_CLASS\"]/choice[1]/event/choice[2]/text"
 msgstr ""
 "Side with the Hackers.\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) Fleet Delay(2))"
 
 #: src-en/data/events_sector_hacker.xml:648
 msgid ""
@@ -1027,7 +1037,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKED_FANCY_CLASS\"]/choice[1]/event/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) Fleet Delay(2))"
 
 #: src-en/data/events_sector_hacker.xml:657
 msgid ""
@@ -1257,7 +1267,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"DISTRESS_HACKER_MILITIA\"]/choice[1]/text"
 msgstr ""
 "Rescue the Militiamen.\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) Gain a crew(Human))"
 
 #: src-en/data/events_sector_hacker.xml:802
 msgid ""
@@ -1271,7 +1281,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"DISTRESS_HACKER_MILITIA\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) Gain a crew(Human))"
 
 #: src-en/data/events_sector_hacker.xml:811
 msgid ""
@@ -1380,7 +1390,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"QUEST_HACKER_HOSPITAL_DESTINATION\"]/choice[1]/text"
 msgstr ""
 "Attack the hackers holding the hospital hostage.\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
+"Fight(HK: Reward Standard(M) System Upgrade(Clonebay x1) System Upgrade(Medbay x1) Gain a crew(Human Medic) Fleet Delay(1))(CK: Reward Standard(H) System Upgrade(Clonebay x1) System Upgrade(Medbay x1) Gain a crew(Human Medic) Fleet Delay(1))"
 
 #: src-en/data/events_sector_hacker.xml:882
 msgid ""
@@ -1414,8 +1424,8 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"QUEST_HACKER_HOSPITAL_DESTINATION\"]/choice[2]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"System Upgrade(Clonebay 1™)\n"
-"System Upgrade(Medbay 1™)\n"
+"System Upgrade(Clonebay x1)\n"
+"System Upgrade(Medbay x1)\n"
 "Gain a crew(Human Medic)\n"
 "Fleet Delay(1)"
 
@@ -1455,7 +1465,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HOSPITAL_SAVED\"]/choice[@req=\"clonebay\"]/text"
 msgstr ""
 "Have them upgrade your Clone Bay.\n"
-"System Upgrade(Clonebay 1™)"
+"System Upgrade(Clonebay x1)"
 
 #: src-en/data/events_sector_hacker.xml:924
 msgid ""
@@ -1469,7 +1479,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HOSPITAL_SAVED\"]/choice[@req=\"medbay\"]/text"
 msgstr ""
 "Have them upgrade your Medbay.\n"
-"System Upgrade(Medbay 1™)"
+"System Upgrade(Medbay x1)"
 
 #: src-en/data/events_sector_hacker.xml:931
 msgid ""
@@ -1720,9 +1730,9 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CACHE\"]/choice[1]/text"
 msgstr ""
 "Attack the station.\n"
-"Fight(HK=CK: Reward Standard(M))\n"
-"Fight(HK=CK: Reward Standard(M))\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 17% Reward | Only(L) 17% Gain a weapon(Giftlist Ion) 17% Reward Stuff(M) 17% Gain a crew(Engi) 17% Repair Hull(7$) 17% Fleet Delay(1))\n"
+"Fight(HK=CK: Reward Standard(M) 17% Reward | Only(L) 17% Gain a weapon(Giftlist Ion) 17% Reward Stuff(M) 17% Gain a crew(Engi) 17% Repair Hull(7$) 17% Fleet Delay(1))\n"
+"Fight(HK=CK: Reward Standard(M) 17% Reward | Only(L) 17% Gain a weapon(Giftlist Ion) 17% Reward Stuff(M) 17% Gain a crew(Engi) 17% Repair Hull(7$) 17% Fleet Delay(1))"
 
 #: src-en/data/events_sector_hacker.xml:1106
 msgid ""
@@ -1737,14 +1747,14 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CACHE\"]/choice[1]/event/choice[1]/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 17% Reward | Only(L) 17% Gain a weapon(Giftlist Ion) 17% Reward Stuff(M) 17% Gain a crew(Engi) 17% Repair Hull(7$) 17% Fleet Delay(1))"
 
 #: src-en/data/events_sector_hacker.xml:1116
 msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CACHE\"]/choice[1]/event/choice[@req=\"ANTI_VIRUS\"]/text"
 msgstr ""
 "(Anti-Virus) Prevent their hacking.\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 17% Reward | Only(L) 17% Gain a weapon(Giftlist Ion) 17% Reward Stuff(M) 17% Gain a crew(Engi) 17% Repair Hull(7$) 17% Fleet Delay(1))"
 
 #: src-en/data/events_sector_hacker.xml:1118
 msgid ""
@@ -1758,14 +1768,14 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CACHE\"]/choice[1]/event/choice[@req=\"ANTI_VIRUS\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 17% Reward | Only(L) 17% Gain a weapon(Giftlist Ion) 17% Reward Stuff(M) 17% Gain a crew(Engi) 17% Repair Hull(7$) 17% Fleet Delay(1))"
 
 #: src-en/data/events_sector_hacker.xml:1129
 msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CACHE\"]/choice[1]/event/choice[@req=\"hacking\"]/text"
 msgstr ""
 "(Hacking) Prevent their hacking.\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 17% Reward | Only(L) 17% Gain a weapon(Giftlist Ion) 17% Reward Stuff(M) 17% Gain a crew(Engi) 17% Repair Hull(7$) 17% Fleet Delay(1))"
 
 #: src-en/data/events_sector_hacker.xml:1131
 msgid ""
@@ -1780,7 +1790,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_CACHE\"]/choice[1]/event/choice[@req=\"hacking\"]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: Reward Standard(M))"
+"Fight(HK=CK: Reward Standard(M) 17% Reward | Only(L) 17% Gain a weapon(Giftlist Ion) 17% Reward Stuff(M) 17% Gain a crew(Engi) 17% Repair Hull(7$) 17% Fleet Delay(1))"
 
 #: src-en/data/events_sector_hacker.xml:1145
 msgid ""
@@ -1821,6 +1831,7 @@ msgstr ""
 "17% Gain a weapon(Giftlist Ion)\n"
 "17% Reward Stuff(M)\n"
 "17% Gain a crew(Engi)\n"
+"17% Repair Hull(7$)\n"
 "17% Fleet Delay(1)"
 
 #: src-en/data/events_sector_hacker.xml:1169
@@ -1839,6 +1850,7 @@ msgstr ""
 "17% Gain a weapon(Giftlist Ion)\n"
 "17% Reward Stuff(M)\n"
 "17% Gain a crew(Engi)\n"
+"17% Repair Hull(7$)\n"
 "17% Fleet Delay(1)"
 
 #: src-en/data/events_sector_hacker.xml:1179
@@ -1984,7 +1996,7 @@ msgid ""
 "data/events_sector_hacker.xml$//event[@name=\"HACKER_FED_DISTRESS\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK=CK: <#>Unlock Ship(Hacker))\n"
+"Fight(HK=CK: <#>Unlock Ship(Hacker) Reward Standard(H) Gain a crew(Slug Saboteur) Fleet Delay(2) Map Reveal)\n"
 "<#>Unlock Ship(Hacker)\n"
 "<#>Unlock Ship(Hacker)"
 

@@ -13,7 +13,7 @@ CUSTOM_FONT = {
     'fire': '‰',
     'power': '†',
     'cooldown': '‡',
-    'upgraded': '™'
+    #'upgraded': '™'
 }
 
 class EventBaseClass(metaclass=ABCMeta):
@@ -159,7 +159,7 @@ class Damage(EventBaseClass):
         super().__init__(element, priority)
     
     def setInfo(self):
-        amount = self._element.get('damage')
+        amount = self._element.get('amount')
         if amount is None:
             return
         try:
@@ -182,7 +182,7 @@ class Upgrade(EventBaseClass):
         if system is None or amount is None:
             return
         
-        self._infoText = f'System Upgrade({system} {amount}™)'
+        self._infoText = f'System Upgrade({system} x{amount})'
 
 class Boarders(EventBaseClass):
     def __init__(self, element, priority=1) -> None:
