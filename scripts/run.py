@@ -170,8 +170,7 @@ class EventAnalyzer():
                                     textInfo = eventclass.getInfo()
                                     if textInfo:
                                         diagram[textInfo] += prob
-                            for textInfo, prob in diagram.items():
-                                nece_info.append(f'{prob:.0%} {textInfo}' if prob < 1 else textInfo)
+                            nece_info.extend([f'{prob:.0%} {textInfo}' if prob < 1 else textInfo for textInfo, prob in diagram.items()])
                         
                         if fightDict is not None:
                             fightDict = {key: ' '.join(value) for key, value in fightDict.items() if value is not None}
@@ -267,8 +266,9 @@ class Event(ElementBaseClass):
     def init_childChoiceTags(self):
         self._childChoices = [global_choice_map.get(f'{self._xmlpath}${self._uniqueXPathGenerator.getpath(element)}') for element in xpath(self._element, './choice')]
         
-class EventList():
+class EventList(ElementBaseClass):
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
+        super().__init__(element, xmlpath, uniqueXPathGenerator)
         self.childEvents = [Event(eventElement, xmlpath, uniqueXPathGenerator) for eventElement in xpath(element, './event')]
     
     def init_childChoiceTags(self):
@@ -317,7 +317,7 @@ global_ship_map = {}
 with open('mvloc.config.jsonc', 'tr', encoding='utf8') as f:
     config = load(f)
 
-def main():
+def main(stat=False):
     for xmlpath in glob_posix('src-en/data/*'):
         if not re.match(r'.+\.(xml|xml.append)$', xmlpath):
             continue
@@ -332,7 +332,8 @@ def main():
         global_event_map.update({element.get('name'): EventList(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//eventList')})
         global_ship_map.update({element.get('name'): Ship(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//ship')})
 
-    global_event_map.update({name: FixedEvent(value) for name, value in FIXED_EVENT_MAP.items()})
+    if not stat:
+        global_event_map.update({name: FixedEvent(value) for name, value in FIXED_EVENT_MAP.items()})
 
     for xmlpath in config['filePatterns']:
         tree = parse_ftlxml('src-en/' + xmlpath)
@@ -351,23 +352,25 @@ def main():
     print('setting additional info...')
     for tag in global_choice_map.values():
         tag.set_additional_info()
+    
+    if not stat:
+        textTag_map = {f'{choice._xmlpath}${choice.get_textTag_uniqueXPath()}': choice for choice in global_choice_map.values()}
 
-    textTag_map = {f'{choice._xmlpath}${choice.get_textTag_uniqueXPath()}': choice for choice in global_choice_map.values()}
-
-    for xmlpath in config['filePatterns']:
-        dict_original, _, _ = readpo(f'locale/{xmlpath}/en.po')
-        new_entries = []
-        for key, entry in dict_original.items():
-            value = entry.value
-            target_choice = textTag_map.get(key)
-            if target_choice is not None:
-                value += '\n' + target_choice.get_formatted_additional_info()
-            else:
-                pass
-            
-            new_entries.append(StringEntry(key, value, entry.lineno, False, False))
-        writepo(f'locale/{xmlpath}/choice-info-en.po', new_entries, f'src-en/{xmlpath}')
-    #print(len(loadEvent_stat))
+        for xmlpath in config['filePatterns']:
+            dict_original, _, _ = readpo(f'locale/{xmlpath}/en.po')
+            new_entries = []
+            for key, entry in dict_original.items():
+                value = entry.value
+                target_choice = textTag_map.get(key)
+                if target_choice is not None:
+                    value += '\n' + target_choice.get_formatted_additional_info()
+                else:
+                    pass
+                
+                new_entries.append(StringEntry(key, value, entry.lineno, False, False))
+            writepo(f'locale/{xmlpath}/choice-info-en.po', new_entries, f'src-en/{xmlpath}')
+    else:
+        return {name: global_event_map[name] for name in loadEvent_stat}
 
 if __name__ == '__main__':
     main()
