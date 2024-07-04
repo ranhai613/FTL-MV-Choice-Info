@@ -2,7 +2,7 @@ from mvlocscript.ftl import parse_ftlxml, ftl_xpath_matchers
 from mvlocscript.xmltools import xpath, UniqueXPathGenerator
 from mvlocscript.potools import readpo, writepo, StringEntry
 from mvlocscript.fstools import glob_posix
-from events import EventClasses, NameReturn
+from events import EVENTCLASSMAP, NameReturn
 from json5 import load
 import re
 from functools import singledispatch
@@ -143,10 +143,13 @@ class EventAnalyzer():
         
         @eventAnalyze.register
         def _(event: Event, tree):
+            global EventTypes
             eventlist = []
-            for element in event._element.iterchildren():
+            if EventTypes is None:
+                EventTypes = EVENTCLASSMAP.keys()
+            for element in event._element.iterchildren(*EventTypes):
                 try:
-                    eventclass = EventClasses[element.tag].value(element)
+                    eventclass = EVENTCLASSMAP[element.tag](element)
                 except KeyError:
                     continue
                 eventlist.append(eventclass)
@@ -314,10 +317,14 @@ global_event_map = {}
 global_choice_map = {}
 global_ship_map = {}
 
+EventTypes = None
+
 with open('mvloc.config.jsonc', 'tr', encoding='utf8') as f:
     config = load(f)
 
-def main(stat=False):
+def main(stat=False, eventTypes: list=None):
+    global EventTypes
+    EventTypes = eventTypes
     for xmlpath in glob_posix('src-en/data/*'):
         if not re.match(r'.+\.(xml|xml.append)$', xmlpath):
             continue

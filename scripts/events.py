@@ -1,5 +1,4 @@
 from mvlocscript.xmltools import xpath
-from enum import Enum
 from abc import ABCMeta, abstractmethod
 
 CUSTOM_FONT = {
@@ -206,17 +205,18 @@ class Boarders(EventBaseClass):
 
 
 #not done(or not planned to implement): 'environment', 'recallBoarders', 'achievement', 'choiceRequiresCrew', 'instantEscape'
-class EventClasses(Enum):
-    unlockCustomShip = UnlockCustomShip
-    removeCrew = RemoveCrew
-    crewMember = CrewMember
-    reveal_map = RevealMap
-    autoReward = AutoReward
-    item_modify = ItemModify
-    modifyPursuit = ModifyPursuit
-    weapon = Reward
-    drone = Reward
-    augment = Reward
-    damage = Damage
-    upgrade = Upgrade
-    boarders = Boarders
+EVENTCLASSMAP = {
+    "unlockCustomShip": UnlockCustomShip,
+    "removeCrew": RemoveCrew,
+    "crewMember": CrewMember,
+    "reveal_map": RevealMap,
+    "autoReward": AutoReward,
+    "item_modify": ItemModify,
+    "modifyPursuit": ModifyPursuit,
+    "weapon": Reward,
+    "drone": Reward,
+    "augment": Reward,
+    "damage": Damage,
+    "upgrade": Upgrade,
+    "boarders": Boarders
+}
