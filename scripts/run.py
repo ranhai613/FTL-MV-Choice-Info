@@ -370,7 +370,9 @@ def main(stat=False, eventTypes: list=None):
                 value = entry.value
                 target_choice = textTag_map.get(key)
                 if target_choice is not None:
-                    value += '\n' + target_choice.get_formatted_additional_info()
+                    additional_info = target_choice.get_formatted_additional_info()
+                    if additional_info:
+                        value += '\n' + target_choice.get_formatted_additional_info()
                 else:
                     pass
                 
