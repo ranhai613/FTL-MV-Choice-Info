@@ -176,7 +176,7 @@ class EventAnalyzer():
                             nece_info.extend([f'{prob:.0%} {textInfo}' if prob < 1 else textInfo for textInfo, prob in diagram.items()])
                         
                         if fightDict is not None:
-                            fightDict = {key: ' '.join(value) for key, value in fightDict.items() if value is not None}
+                            fightDict = {key: ' '.join(value) for key, value in fightDict.items() if value}
                             length = len(fightDict)
                             if length == 3:
                                 if fightDict['HK'] == fightDict['CK'] and fightDict['CK'] == fightDict['SR']:
