@@ -2,17 +2,21 @@ from run import main
 import subprocess
 from shutil import make_archive
 
-def package(name, eventTypes):
-    main(eventTypes=eventTypes)
+def package(name, config):
+    main(packageConfig=config)
     subprocess.run('poetry run mvloc batch-apply choice-info-en', shell=True)
     make_archive(f'packages/{name}', 'zip', 'output-choice-info-en')
 
-version = 'beta0.1.1'
+mvversion = '5.4.6'
+version = 'beta0.1.2'
 
 packagedict = {
-    f'ChoiceInfo-ShipUnlock+CrewLoss-{version}': ['unlockCustomShip', 'removeCrew'],
-    f'ChoiceInfo-Full-{version}': None
+    f'[MV{mvversion}]ChoiceInfo-ShipUnlock+CrewLoss-{version}':
+        {'events': ['unlockCustomShip', 'removeCrew'],
+         'ignoreFixedEvent' : True
+        },
+    f'[MV{mvversion}]ChoiceInfo-Full-{version}': {}
 }
 
-for name, eventTypes in packagedict.items():
-    package(name, eventTypes)
+for name, config in packagedict.items():
+    package(name, config)

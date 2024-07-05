@@ -125,6 +125,9 @@ class EventAnalyzer():
         
         @eventAnalyze.register
         def _(event: FixedEvent, tree):
+            global PackageConfig
+            if PackageConfig.get('ignoreFixedEvent'):
+                return None, None
             return [NameReturn(event.eventText)], None
         
         @eventAnalyze.register
@@ -143,11 +146,10 @@ class EventAnalyzer():
         
         @eventAnalyze.register
         def _(event: Event, tree):
-            global EventTypes
+            global PackageConfig
             eventlist = []
-            if EventTypes is None:
-                EventTypes = EVENTCLASSMAP.keys()
-            for element in event._element.iterchildren(*EventTypes):
+            eventTypes = PackageConfig.get('events', EVENTCLASSMAP.keys())
+            for element in event._element.iterchildren(*eventTypes):
                 try:
                     eventclass = EVENTCLASSMAP[element.tag](element)
                 except KeyError:
@@ -317,14 +319,14 @@ global_event_map = {}
 global_choice_map = {}
 global_ship_map = {}
 
-EventTypes = None
+PackageConfig = None
 
 with open('mvloc.config.jsonc', 'tr', encoding='utf8') as f:
     config = load(f)
 
-def main(stat=False, eventTypes: list=None):
-    global EventTypes
-    EventTypes = eventTypes
+def main(stat=False, packageConfig: list={}):
+    global PackageConfig
+    PackageConfig = packageConfig
     for xmlpath in glob_posix('src-en/data/*'):
         if not re.match(r'.+\.(xml|xml.append)$', xmlpath):
             continue
