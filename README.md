@@ -5,9 +5,10 @@ This mod shows you event info for each choice in events and fight(crew kill, hul
 
 ## Running the script
 
-You can find it in `scripts/`
-The script is written in Python3.11 and managed by poetry. To install poetry, just enter `pip install poetry`. And you can install dependencies by entering `poetry install`.
+You can find it in `scripts/`.
+
+The script is written in Python3.11 and managed by poetry. To install poetry, just enter `pip install poetry`. And you can install dependencies by `poetry install`.
 
 To make packages, run `python scripts/package.py`. After the packaging process, you will see the mod in `packages/`.
 
-If you want to tune params for each event, edit value of class field `priority` in `scripts/event.py`.
+If you want to tune params for each event, edit value of class field `priority` in `scripts/events.py`.
