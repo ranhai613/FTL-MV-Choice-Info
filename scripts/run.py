@@ -223,7 +223,8 @@ class EventAnalyzer():
                                     nece_info.append(f'Fight({key}: {value})')
                 
                 if len(nece_info) > 0:
-                    return nece_info
+                    #remove duplicated info before return list. I don't like to use set() to remove them because it doesn't care the order, that makes hard to see diff under dev.
+                    return list(dict.fromkeys(nece_info))
             else:
                 return []
                     

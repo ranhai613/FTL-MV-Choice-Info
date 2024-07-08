@@ -10,7 +10,7 @@ def package(name, config):
     make_archive(f'packages/{name}', 'zip', 'output-choice-info-en')
 
 mvversion = '5.4.6'
-version = 'beta0.1.2'
+version = 'beta0.1.3'
 
 #{package name: config} the config defaults to the full version, so each setting is for restricting info.
 packagedict = {
