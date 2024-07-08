@@ -106,7 +106,7 @@ class EventAnalyzer():
                     continue
                 length = len(eventNodeElement._event._childChoices)
                 for i, choice in enumerate(eventNodeElement._event._childChoices):
-                    new_eventNode = EventNode(choice.childEvents, eventNodeElement._prob, (eventNodeElement._increment + 1) if length == 1 else eventNodeElement._increment)
+                    new_eventNode = EventNode(choice.childEvents, eventNodeElement._prob, (eventNodeElement._increment + 1) if length == 1 else 0)
                     new_node = tree.create_node(parent=parent_node, data=new_eventNode)
                     if isinstance(eventNodeElement._event, FightEvent):
                         if i == 0:
@@ -158,7 +158,8 @@ class EventAnalyzer():
             return eventlist, None
 
         def treeAnalyze(tree, tune=0):
-            for  i in range(10):
+            global PackageConfig
+            for  i in range(PackageConfig.get('maxDeeperRetry') or 10):
                 nece_info = []
                 for node in tree.all_nodes_itr():
                     info = []
