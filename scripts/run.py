@@ -40,6 +40,11 @@ class EventAnalyzer():
         return self._childEvents
     
     def ensureChildEvents(self, ship=None):
+        '''Loop until following processes done.
+        1. If an event has load attribute, find the loaded event and add it to child events list.
+        2. If an event is <EventList>, add events in it to child evnets list.
+        3. If loaded event name is 'COMBAT_CHECK' and ship is given, add fight event to child evetns list.
+        '''
         while True:
             new_events = []
             is_changed = False
@@ -86,6 +91,7 @@ class EventAnalyzer():
                 return
     
     def getInfoList(self):
+        '''find the target info by making an event tree data structure and analyzing it. Beforehand, The child evnets must be ensured.'''
         assert self.is_ensured
         
         class EventNodeElement():
@@ -101,6 +107,7 @@ class EventAnalyzer():
                 self._increment = increment
         
         def growTree(parent_node, parent_eventNode: EventNode):
+            '''first given a root, this find child events and wrap them into EventNode, and link it to the parent. This does the process recursively unitl the whole tree is completed.'''
             for eventNodeElement in parent_eventNode._events:
                 if eventNodeElement._event._childChoices is None:
                     continue
@@ -158,8 +165,19 @@ class EventAnalyzer():
             return eventlist, None
 
         def treeAnalyze(tree, tune=0):
+            '''iterate all nodes in a given tree, picking up necessary info. an info is picked up when following formula is true.
+            
+            - eventclass._priority + increment > tree.depth(node) + tune + (i * -1)
+            
+            params:
+            - eventclass._priority: param for each event. Important event should be bigger on this param. You can edit it in events.py
+            - increment: default to 0. If a parent node has only one child, the child node's increment += 1. If a parent node has multiple children, the value reset to 0.
+            - tree.depth(node): how deep the node locates from the root.
+            - tune: default to 0. You can change the base value by editing this. For now it isn't used.
+            - (i * -1): default to range(10). If treeAnalyze cannot find any info, increment i and retry. You can change max retry value by PackageConfig['maxDeeperRetry'].
+            '''
             global PackageConfig
-            for  i in range(PackageConfig.get('maxDeeperRetry') or 10):
+            for i in range(PackageConfig.get('maxDeeperRetry') or 10):
                 nece_info = []
                 for node in tree.all_nodes_itr():
                     info = []
@@ -170,6 +188,7 @@ class EventAnalyzer():
                     depth = tree.depth(node) + tune + (i * -1)
                     for eventlist, fightDict, prob, increment in info:
                         if eventlist is not None:
+                            #diagram is used for unifying the same info and summing the prob.
                             diagram = defaultdict(float)
                             for eventclass in eventlist:
                                 if eventclass._priority + increment > depth:
@@ -325,10 +344,15 @@ PackageConfig = None
 with open('mvloc.config.jsonc', 'tr', encoding='utf8') as f:
     config = load(f)
 
-def main(stat=False, packageConfig: list={}):
+def main(stat=False, packageConfig: dict={}):
+    '''analyze events in xml and write info to .po files in locale/. po file is used for MV translation, and you need one more step to generate xml from po files.
+    
+    stat: if true, the script does not generate po files. Instead it returns stat of events that are invoked by <loadEvent>, that the script cannot handle with by default. The stat is used for additional process to sanitize <loadEvent>
+    '''
     global PackageConfig
     PackageConfig = packageConfig
     for xmlpath in glob_posix('src-en/data/*'):
+        #find xml
         if not re.match(r'.+\.(xml|xml.append)$', xmlpath):
             continue
         
@@ -337,6 +361,7 @@ def main(stat=False, packageConfig: list={}):
         else:
             tree = parse_ftlxml(xmlpath, True)
         
+        #UniqueXPathGenerator can generate unique xpath of an element within the xml. I use the unique xpath as an id.
         uniqueXPathGenerator = UniqueXPathGenerator(tree, ftl_xpath_matchers())
         global_event_map.update({element.get('name'): Event(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//event')})
         global_event_map.update({element.get('name'): EventList(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//eventList')})
@@ -367,6 +392,7 @@ def main(stat=False, packageConfig: list={}):
         textTag_map = {f'{choice._xmlpath}${choice.get_textTag_uniqueXPath()}': choice for choice in global_choice_map.values()}
 
         for xmlpath in config['filePatterns']:
+            #dict_original = {id(the form of {xml path}${unique xpath}): StrignEntry('id', 'value', 'lineno', 'fuzzy', 'obsolete')} taken from MV translation.
             dict_original, _, _ = readpo(f'locale/{xmlpath}/en.po')
             new_entries = []
             for key, entry in dict_original.items():
