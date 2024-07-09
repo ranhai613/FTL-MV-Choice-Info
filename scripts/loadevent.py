@@ -9,21 +9,26 @@ TEXT_RETURN_MAP = {
 }
 
 def sanitize_loadEvent(element):
-    baseName = element.get('name')
-    assert baseName
-    
+    '''replace <loadEvent> tag with other things that the script can hadle with.'''
+    baseName = element.get('name')    
     loadEvents = xpath(element, '//loadEvent')
     for loadEvent in loadEvents:
-        if loadEvent.text == baseName:     
-            loadEvent.tag = 'textReturn'
+        fixedText = TEXT_RETURN_MAP.get(loadEvent.text, None)
+        if baseName and loadEvent.text == baseName: 
+            loadEvent.tag = 'textReturn'    
             loadEvent.text = '<='
+        elif fixedText is not None:
+            loadEvent.tag = 'textReturn'
+            loadEvent.text = fixedText
         else:
-            fixedText = TEXT_RETURN_MAP.get(loadEvent.text, None)
-            if fixedText is not None:
-                loadEvent.tag = 'textReturn'
-                loadEvent.text = fixedText
-    
+            continue
     return element
+
+def getLoadEventList():
+    from run import main
+
+    stat = main(stat=True)
+    print(list(stat))
 
 def makeLoadEventXML():
     from run import main
@@ -31,7 +36,7 @@ def makeLoadEventXML():
     XML_PATH = 'scripts/loadEvent/5.4.6.xml'
     #assert not Path(XML_PATH).exists()
     
-    stat = main(True)
+    stat = main(stat=True)
     root = Element('FTL')
     root.extend([sanitize_loadEvent(event._element) for event in stat.values()])
     tree = ElementTree(root)
@@ -39,5 +44,5 @@ def makeLoadEventXML():
     #tree.write(XML_PATH, encoding='utf8', pretty_print=True)
 
 if __name__ == '__main__':
-    makeLoadEventXML()
+    getLoadEventList()
     

@@ -43,12 +43,21 @@ def ajustText(text, use_custom_font = True):
 #----------------------Evnets----------------------
 
 class NameReturn():
+    '''contain fixed event'''
     def __init__(self, name, priority=1) -> None:
         self._priority = priority
         self._infoText = name
     
     def getInfo(self):
         return self._infoText
+    
+class TextReturn(EventBaseClass):
+    '''a proxy of loadEvent'''
+    def __init__(self, element, priority=1) -> None:
+        super().__init__(element, priority)
+    
+    def setInfo(self):
+        self._infoText = self._element.text or None
 
 class UnlockCustomShip(EventBaseClass):
     def __init__(self, element, priority=999) -> None:
@@ -206,6 +215,7 @@ class Boarders(EventBaseClass):
 
 #not done(or not planned to implement): 'environment', 'recallBoarders', 'achievement', 'choiceRequiresCrew', 'instantEscape'
 EVENTCLASSMAP = {
+    "textReturn": TextReturn,
     "unlockCustomShip": UnlockCustomShip,
     "removeCrew": RemoveCrew,
     "crewMember": CrewMember,

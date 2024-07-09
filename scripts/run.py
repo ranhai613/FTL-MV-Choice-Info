@@ -3,6 +3,7 @@ from mvlocscript.xmltools import xpath, UniqueXPathGenerator
 from mvlocscript.potools import readpo, writepo, StringEntry
 from mvlocscript.fstools import glob_posix
 from events import EVENTCLASSMAP, NameReturn
+from loadevent import sanitize_loadEvent
 from json5 import load
 import re
 from functools import singledispatch
@@ -57,11 +58,15 @@ class EventAnalyzer():
                 if not load_event_name:
                     loadEventTags = xpath(event._element, './loadEvent')
                     if len(loadEventTags) == 1:
-                        loadEvent = loadEventTags[0].text
-                        if loadEvent:
-                            loadEvent_stat.add(loadEvent)
-                    
-                    new_events.append(event)
+                        loadEventName = loadEventTags[0].text
+                        if loadEventName:
+                            loadEvent_stat.add(loadEventName)
+                            # loadEvent = global_event_map.get(loadEventName)
+                            # if loadEvent is not None:
+                            #     new_events.append(loadEvent)
+                            #     is_changed = True
+                    else:
+                        new_events.append(event)
                     continue
                 
                 if load_event_name == 'COMBAT_CHECK' and ship is not None:
@@ -364,8 +369,8 @@ def main(stat=False, packageConfig: dict={}):
         
         #UniqueXPathGenerator can generate unique xpath of an element within the xml. I use the unique xpath as an id.
         uniqueXPathGenerator = UniqueXPathGenerator(tree, ftl_xpath_matchers())
-        global_event_map.update({element.get('name'): Event(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//event')})
-        global_event_map.update({element.get('name'): EventList(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//eventList')})
+        global_event_map.update({element.get('name'): Event(sanitize_loadEvent(element), xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//event')})
+        global_event_map.update({element.get('name'): EventList(sanitize_loadEvent(element), xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//eventList')})
         global_ship_map.update({element.get('name'): Ship(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//ship')})
 
     if not stat:
