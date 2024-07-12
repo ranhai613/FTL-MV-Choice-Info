@@ -18,7 +18,7 @@ version = 'beta0.1.3'
 
 #{package name: config} the config defaults to the full version, so each setting is for restricting info.
 packagedict = {
-    Ship Unlock + Crew Loss only version
+    #Ship Unlock + Crew Loss only version
     f'[MV{mvversion}]ChoiceInfo-ShipUnlock+CrewLoss-{version}':
         {
          #default: all events in events.py. You can restrict to specific events by list event tag name.
