@@ -5,6 +5,7 @@ from mvlocscript.fstools import glob_posix
 from events import EVENTCLASSMAP, NameReturn
 from loadevent import sanitize_loadEvent
 from json5 import load
+from pathlib import Path
 import re
 from functools import singledispatch
 from collections import defaultdict
@@ -396,23 +397,25 @@ def main(stat=False, packageConfig: dict={}):
     
     if not stat:
         textTag_map = {f'{choice._xmlpath}${choice.get_textTag_uniqueXPath()}': choice for choice in global_choice_map.values()}
+        lang = PackageConfig.get('lang', 'en')
 
         for xmlpath in config['filePatterns']:
-            #dict_original = {id(the form of {xml path}${unique xpath}): StrignEntry('id', 'value', 'lineno', 'fuzzy', 'obsolete')} taken from MV translation.
-            dict_original, _, _ = readpo(f'locale/{xmlpath}/en.po')
-            new_entries = []
-            for key, entry in dict_original.items():
-                value = entry.value
-                target_choice = textTag_map.get(key)
-                if target_choice is not None:
-                    additional_info = target_choice.get_formatted_additional_info()
-                    if additional_info:
-                        value += '\n' + target_choice.get_formatted_additional_info()
-                else:
-                    pass
-                
-                new_entries.append(StringEntry(key, value, entry.lineno, False, False))
-            writepo(f'locale/{xmlpath}/choice-info-en.po', new_entries, f'src-en/{xmlpath}')
+            for popath in {f'locale/{xmlpath}/en.po', f'locale/{xmlpath}/{lang}.po', f'locale-machine/{xmlpath}/{lang}.po'}:
+                #dict_original = {id(the form of {xml path}${unique xpath}): StrignEntry('id', 'value', 'lineno', 'fuzzy', 'obsolete')} taken from MV translation.
+                dict_original, _, _ = readpo(popath)
+                new_entries = []
+                for key, entry in dict_original.items():
+                    value = entry.value
+                    target_choice = textTag_map.get(key)
+                    if target_choice is not None:
+                        additional_info = target_choice.get_formatted_additional_info()
+                        if additional_info:
+                            value += '\n' + target_choice.get_formatted_additional_info()
+                    else:
+                        pass
+                    
+                    new_entries.append(StringEntry(key, value, entry.lineno, False, False))
+                writepo(str(Path(popath).with_name(f'choice-info-{Path(popath).name}')), new_entries, f'src-en/{xmlpath}')
     else:
         return {name: global_event_map[name] for name in loadEvent_stat}
 
