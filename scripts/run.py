@@ -407,7 +407,7 @@ def main(stat=False, packageConfig: dict={}):
                 for key, entry in dict_original.items():
                     value = entry.value
                     target_choice = textTag_map.get(key)
-                    if target_choice is not None:
+                    if (target_choice is not None) and (value):
                         additional_info = target_choice.get_formatted_additional_info()
                         if additional_info:
                             value += '\n' + target_choice.get_formatted_additional_info()
