@@ -1,6 +1,7 @@
 from run import main
 import subprocess
 from shutil import make_archive
+from events import EVENTCLASSMAPS
 
 def package(name, config):
     lang = config.get('lang', 'en')
@@ -14,7 +15,7 @@ def package(name, config):
     make_archive(f'packages/{name}', 'zip', f'output-choice-info-{lang}')
 
 mvversion = '5.4.6'
-version = 'beta0.1.3'
+version = 'beta0.1.4'
 
 #{package name: config} the config defaults to the full version, so each setting is for restricting info.
 packagedict = {
@@ -22,7 +23,7 @@ packagedict = {
     f'[MV{mvversion}]ChoiceInfo-ShipUnlock+CrewLoss-{version}':
         {
          #default: all events in events.py. You can restrict to specific events by list event tag name.
-         'events': ['unlockCustomShip', 'removeCrew'],
+         'eventMap': EVENTCLASSMAPS['ShipUnlock+CrewLoss'],
          #default: False. Wether ignore fixed events(i.g. Storage Check) or not.
          'ignoreFixedEvent' : True,
          #default: 10. How many times Event Analyzer searches info one step deeply if it cannot find any info.
@@ -34,11 +35,10 @@ packagedict = {
         {
          'lang': 'ja',
          'machine': True,
-         'events': ['unlockCustomShip', 'removeCrew'],
+         'eventMap': EVENTCLASSMAPS['ShipUnlock+CrewLoss'],
          'ignoreFixedEvent' : True,
          'maxDeeperRetry': 1,
         },
-
 }
 
 for name, config in packagedict.items():

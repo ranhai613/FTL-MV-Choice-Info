@@ -2,12 +2,13 @@ from mvlocscript.ftl import parse_ftlxml, ftl_xpath_matchers
 from mvlocscript.xmltools import xpath, UniqueXPathGenerator
 from mvlocscript.potools import readpo, writepo, StringEntry
 from mvlocscript.fstools import glob_posix
-from events import EVENTCLASSMAP, NameReturn
+from events import EVENTCLASSMAPS, NameReturn
 from loadevent import sanitize_loadEvent
 from json5 import load
 from pathlib import Path
 import re
-from functools import singledispatch
+from functools import singledispatch, wraps
+from time import time
 from collections import defaultdict
 from treelib import Tree
 from pprint import pprint
@@ -19,26 +20,45 @@ FIXED_EVENT_MAP = {
     'ATLAS_MENU_NOEQUIPMENT': 'HyperSpeed Menu',
 }
 
+def stop_watch(func):
+    @wraps(func)
+    def _wrapper(*args, **kargs):
+        start = time()
+        rusult = func(*args, **kargs)
+        print('Processing time: ', time() - start)
+        return rusult
+    return _wrapper
+
 class ElementBaseClass():
-    def __init__(self, element=None, xmlpath='', uniqueXPathGenerator=None):
+    def __init__(self, element, xmlpath, uniqueXPathGenerator):
         self._element = element
         self._xmlpath = xmlpath.replace('src-en/', '')
         self._uniqueXPathGenerator = uniqueXPathGenerator
     
+    @property
+    def element(self):
+        return self._element
+    
+    @property
+    def xmlpath(self):
+        return self._xmlpath
+    
+    @property
+    def uniqueXPathGenerator(self):
+        return self._uniqueXPathGenerator
+    
     def get_uniqueXPath(self):
         return self._uniqueXPathGenerator.getpath(self._element)
-    
 
 class EventAnalyzer():
-    '''A component of Choice class, containing child events of Choice and analyzing them.
-    '''
+    '''A component of Choice class, containing child events of Choice and analyzing them.'''
     def __init__(self, childEvents) -> None:
         self._childEvents = childEvents
-        self.is_ensured = False
+        self._is_ensured = False
     
     @property
     def childEvents(self):
-        assert self.is_ensured
+        assert self._is_ensured
         return self._childEvents
     
     def ensureChildEvents(self, ship=None):
@@ -93,24 +113,40 @@ class EventAnalyzer():
             if not is_changed:
                 for event in self._childEvents:
                     event.init_childChoiceTags()
-                self.is_ensured = True
+                self._is_ensured = True
                 return
     
     def getInfoList(self):
         '''find the target info by making an event tree data structure and analyzing it. Beforehand, The child evnets must be ensured.'''
-        assert self.is_ensured
+        assert self._is_ensured
         
         class EventNodeElement():
             def __init__(self, event, prob, increment) -> None:
                 self._event = event
                 self._prob = prob
                 self._increment = increment
+            
+            @property
+            def event(self):
+                return self._event
+            
+            @property
+            def prob(self):
+                return self._prob
+            
+            @property
+            def increment(self):
+                return self._increment
 
         class EventNode():
             def __init__(self, events, prob, increment) -> None:
                 self._events = [EventNodeElement(event, ((1 / len(events)) * prob), increment) for event in events]
                 self._prob = prob
                 self._increment = increment
+                
+            @property
+            def events(self):
+                return self._events
         
         def growTree(parent_node, parent_eventNode: EventNode):
             '''first given a root, this find child events and wrap them into EventNode, and link it to the parent. This does the process recursively unitl the whole tree is completed.'''
@@ -161,10 +197,10 @@ class EventAnalyzer():
         def _(event: Event, tree):
             global PackageConfig
             eventlist = []
-            eventTypes = PackageConfig.get('events', EVENTCLASSMAP.keys())
-            for element in event._element.iterchildren(*eventTypes):
+            eventMap = PackageConfig.get('eventMap', EVENTCLASSMAPS['Full'])
+            for element in event._element.iterchildren(*eventMap.keys()):
                 try:
-                    eventclass = EVENTCLASSMAP[element.tag](element)
+                    eventclass = eventMap[element.tag](element)
                 except KeyError:
                     continue
                 eventlist.append(eventclass)
@@ -173,14 +209,14 @@ class EventAnalyzer():
         def treeAnalyze(tree, tune=0):
             '''iterate all nodes in a given tree, picking up necessary info. an info is picked up when following formula is true.
             
-            - eventclass._priority + increment > tree.depth(node) + tune + (i * -1)
+            - eventclass._priority + increment + i > tree.depth(node) + tune
             
             params:
             - eventclass._priority: param for each event. Important event should be bigger on this param. You can edit it in events.py
             - increment: default to 0. If a parent node has only one child, the child node's increment += 1. If a parent node has multiple children, the value reset to 0.
+            - i: default to range(10). If treeAnalyze cannot find any info, increment i and retry. You can change max retry value by PackageConfig['maxDeeperRetry'].
             - tree.depth(node): how deep the node locates from the root.
             - tune: default to 0. You can change the base value by editing this. For now it isn't used.
-            - (i * -1): default to range(10). If treeAnalyze cannot find any info, increment i and retry. You can change max retry value by PackageConfig['maxDeeperRetry'].
             '''
             global PackageConfig
             for i in range(PackageConfig.get('maxDeeperRetry') or 10):
@@ -270,17 +306,16 @@ class Choice(ElementBaseClass):
             if len(ships) > 0:
                 break
         else:
-            return None
+            return
         if len(ships) > 1:
-            return None
+            return
         
-        self._ship = global_ship_map.get(ships[0])
-        
+        self._ship = global_ship_map.get(ships[0])    
     
     def get_textTag_uniqueXPath(self):
         texttags = xpath(self._element, './text')
         if len(texttags) != 1:
-            return None
+            return
         
         return self._uniqueXPathGenerator.getpath(texttags[0])
         
@@ -351,6 +386,7 @@ PackageConfig = None
 with open('mvloc.config.jsonc', 'tr', encoding='utf8') as f:
     config = load(f)
 
+@stop_watch
 def main(stat=False, packageConfig: dict={}):
     '''analyze events in xml and write info to .po files in locale/. po file is used for MV translation, and you need one more step to generate xml from po files.
     

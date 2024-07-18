@@ -88,8 +88,29 @@ class CrewMember(EventBaseClass):
         super().__init__(element, priority)
     
     def setInfo(self):
-        race = ajustText(self._element.get('class', '?').replace('LIST_CREW_', ''), False)
-        self._infoText = f'Gain a crew({race})'
+        try:
+            amount = int(self._element.get('amount'))
+        except ValueError:
+            return
+        
+        if amount > 0:
+            race = ajustText(self._element.get('class', '?').replace('LIST_CREW_', ''), False)
+            self._infoText = f'Gain a crew({race})'
+        elif amount < 0:
+            self._infoText = '<!>Lose your crew(UNCLONABLE)'
+
+class CrewMember_OnlyTraitor(EventBaseClass):
+    def __init__(self, element, priority=1) -> None:
+        super().__init__(element, priority)
+    
+    def setInfo(self):
+        try:
+            amount = int(self._element.get('amount'))
+        except ValueError:
+            return
+        
+        if amount < 0:
+            self._infoText = '<!>Lose your crew(UNCLONABLE)'
 
 class RevealMap(EventBaseClass):
     def __init__(self, element, priority=1) -> None:
@@ -124,7 +145,7 @@ class ItemModify(EventBaseClass):
             try:
                 amount_min = int(amount_min)
                 amount_max = int(amount_max)
-            except TypeError:
+            except ValueError:
                 continue
             
             if amount_min == amount_max:
@@ -143,7 +164,7 @@ class ModifyPursuit(EventBaseClass):
             return
         try:
             amount = int(amount)
-        except TypeError:
+        except ValueError:
             return
         
         if amount < 0:
@@ -172,7 +193,7 @@ class Damage(EventBaseClass):
             return
         try:
             amount = int(amount)
-        except TypeError:
+        except ValueError:
             return
         
         if amount < 0:
@@ -203,7 +224,7 @@ class Boarders(EventBaseClass):
         try:
             amount_min = int(amount_min)
             amount_max = int(amount_max)
-        except TypeError:
+        except ValueError:
             self._infoText = f'<!>Enemy Boarding({race})'
             return
         
@@ -214,19 +235,26 @@ class Boarders(EventBaseClass):
 
 
 #not done(or not planned to implement): 'environment', 'recallBoarders', 'achievement', 'choiceRequiresCrew', 'instantEscape'
-EVENTCLASSMAP = {
-    "textReturn": TextReturn,
-    "unlockCustomShip": UnlockCustomShip,
-    "removeCrew": RemoveCrew,
-    "crewMember": CrewMember,
-    "reveal_map": RevealMap,
-    "autoReward": AutoReward,
-    "item_modify": ItemModify,
-    "modifyPursuit": ModifyPursuit,
-    "weapon": Reward,
-    "drone": Reward,
-    "augment": Reward,
-    "damage": Damage,
-    "upgrade": Upgrade,
-    "boarders": Boarders
+EVENTCLASSMAPS = {
+    "Full": {
+        "textReturn": TextReturn,
+        "unlockCustomShip": UnlockCustomShip,
+        "removeCrew": RemoveCrew,
+        "crewMember": CrewMember,
+        "reveal_map": RevealMap,
+        "autoReward": AutoReward,
+        "item_modify": ItemModify,
+        "modifyPursuit": ModifyPursuit,
+        "weapon": Reward,
+        "drone": Reward,
+        "augment": Reward,
+        "damage": Damage,
+        "upgrade": Upgrade,
+        "boarders": Boarders
+    },
+    "ShipUnlock+CrewLoss": {
+        "unlockCustomShip": UnlockCustomShip,
+        "removeCrew": RemoveCrew,
+        "crewMember": CrewMember_OnlyTraitor
+    }
 }
