@@ -118,7 +118,7 @@ msgstr ""
 "Welcome aboard.\n"
 "50% Gain a crew(Human)\n"
 "50% <!>Enemy Boarding(x1 Human)\n"
-"Fight(HK: 10% Reward Standard(M) 10% Reward Standard(L))(CK: 8% Reward Stuff(R) 8% Fleet Delay(2))"
+"Fight(CK: 50% Reward Standard(H))(HK: 10% Reward Standard(M) 10% Reward Standard(L))(SR: 8% Reward Stuff(R) 8% Fleet Delay(2))"
 
 #: src-en/data/events_sector_federation.xml:124
 msgid ""
@@ -164,7 +164,7 @@ msgid ""
 "data/events_sector_federation.xml$//eventList[@name=\"FEDERATION_FREECREW_WELCOME\"]/event[2]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: 20% Reward Standard(M) 20% Reward Standard(L))(CK: 17% Reward Stuff(R) 17% Fleet Delay(2))"
+"Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))(SR: 17% Reward Stuff(R) 17% Fleet Delay(2))"
 
 #: src-en/data/events_sector_federation.xml:155
 msgid "data/events_sector_federation.xml$//event[@name=\"FEDERATION_RANT\"]/text"
@@ -219,7 +219,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_RANT\"]/choice[3]/text"
 msgstr ""
 "We don't have time for a lecture.\n"
-"Fight(HK: Reward Standard(M))(CK: 25% Reward Stuff(R) 25% -4≤{≤-1 25≤~≤45 -2≤}≤-1 -2≤|≤0)"
+"Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 25% Reward Stuff(R) 25% -4≤{≤-1 25≤~≤45 -2≤}≤-1 -2≤|≤0)"
 
 #: src-en/data/events_sector_federation.xml:182
 msgid ""
@@ -233,7 +233,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_RANT\"]/choice[3]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(M))(CK: 25% Reward Stuff(R) 25% -4≤{≤-1 25≤~≤45 -2≤}≤-1 -2≤|≤0)"
+"Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 25% Reward Stuff(R) 25% -4≤{≤-1 25≤~≤45 -2≤}≤-1 -2≤|≤0)"
 
 #: src-en/data/events_sector_federation.xml:193
 msgid "data/events_sector_federation.xml$//event[@name=\"FEDERATION_AMMO\"]/text"
@@ -292,7 +292,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_REBEL_CHOICE\"]/choice[1]/text"
 msgstr ""
 "Fight the ship.\n"
-"Fight(HK: 20% Reward Standard(M) 20% Reward Standard(L))(CK: 17% Reward Stuff(R) 17% Fleet Delay(2))"
+"Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))(SR: 17% Reward Stuff(R) 17% Fleet Delay(2))"
 
 #: src-en/data/events_sector_federation.xml:261
 msgid ""
@@ -304,7 +304,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FEDERATION_REBEL_CHOICE\"]/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: 20% Reward Standard(M) 20% Reward Standard(L))(CK: 17% Reward Stuff(R) 17% Fleet Delay(2))"
+"Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))(SR: 17% Reward Stuff(R) 17% Fleet Delay(2))"
 
 #: src-en/data/events_sector_federation.xml:270
 msgid ""
@@ -1861,7 +1861,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"ENCOUNTER_FED_SALVAGE\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(M))(CK: Reward Stuff(R))"
+"Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))"
 
 #: src-en/data/events_sector_federation.xml:1175
 msgid ""
@@ -1876,7 +1876,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"ENCOUNTER_FED_REBELTAKEOVER\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(M))(CK: Gain a crew(Human))"
+"Fight(CK: Reward Standard(H) Gain a crew(Human))(HK: Reward Standard(M))(SR: Gain a crew(Human))"
 
 #: src-en/data/events_sector_federation.xml:1183
 msgid ""
@@ -2051,7 +2051,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"STEALTH_UNLOCK_2FAKE\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(M))(CK: <!>Fleet Advance(1))"
+"Fight(CK=HK: Reward Standard(M))(SR: <!>Fleet Advance(1))"
 
 #: src-en/data/events_sector_federation.xml:1292
 msgid ""
@@ -2145,7 +2145,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"STEALTH_UNLOCK_2REAL\"]/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: Reward Standard(M))"
+"Fight(HK: Reward Standard(M))(CK: Reward Standard(H))"
 
 #: src-en/data/events_sector_federation.xml:1348
 msgid ""
@@ -2273,7 +2273,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FED_MEMORIAL\"]/choice/text"
 msgstr ""
 "Inspect closer.\n"
-"Fight(HK: <#>Unlock Ship(Federation) Repair Hull(10$) Reward Standard(H) Gain a weapon(List Loot Federation) Gain an augment(Tully Present))\n"
+"Fight(HK=CK: <#>Unlock Ship(Federation) Repair Hull(10$) Reward Standard(H) Gain a weapon(List Loot Federation) Gain an augment(Tully Present))\n"
 "<#>Unlock Ship(Federation)"
 
 #: src-en/data/events_sector_federation.xml:1419
@@ -2292,7 +2292,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FED_MEMORIAL\"]/choice/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: <#>Unlock Ship(Federation) Repair Hull(10$) Reward Standard(H) Gain a weapon(List Loot Federation) Gain an augment(Tully Present))\n"
+"Fight(HK=CK: <#>Unlock Ship(Federation) Repair Hull(10$) Reward Standard(H) Gain a weapon(List Loot Federation) Gain an augment(Tully Present))\n"
 "<#>Unlock Ship(Federation)"
 
 #: src-en/data/events_sector_federation.xml:1423
@@ -2311,7 +2311,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FED_MEMORIAL\"]/choice/event/choice/event/choice[1]/text"
 msgstr ""
 "You won't stand for this. Do all you can to help!\n"
-"Fight(HK: <#>Unlock Ship(Federation) Repair Hull(10$) Reward Standard(H) Gain a weapon(List Loot Federation) Gain an augment(Tully Present))\n"
+"Fight(HK=CK: <#>Unlock Ship(Federation) Repair Hull(10$) Reward Standard(H) Gain a weapon(List Loot Federation) Gain an augment(Tully Present))\n"
 "<#>Unlock Ship(Federation)"
 
 #: src-en/data/events_sector_federation.xml:1428
@@ -2327,7 +2327,7 @@ msgid ""
 "data/events_sector_federation.xml$//event[@name=\"FED_MEMORIAL\"]/choice/event/choice/event/choice[1]/event/choice/text"
 msgstr ""
 "Continue...\n"
-"Fight(HK: <#>Unlock Ship(Federation) Repair Hull(10$) Reward Standard(H) Gain a weapon(List Loot Federation) Gain an augment(Tully Present))\n"
+"Fight(HK=CK: <#>Unlock Ship(Federation) Repair Hull(10$) Reward Standard(H) Gain a weapon(List Loot Federation) Gain an augment(Tully Present))\n"
 "<#>Unlock Ship(Federation)"
 
 #: src-en/data/events_sector_federation.xml:1437
