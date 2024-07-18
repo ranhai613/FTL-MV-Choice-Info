@@ -181,17 +181,15 @@ class EventAnalyzer():
         
         @eventAnalyze.register
         def _(event: FightEvent, tree):
-            hkInfo = None
-            ckInfo = None
-            srInfo = None
+            fightInfoMap = {'HK': None, 'CK': None, 'SR': None}
             if event._hullKillNode is not None and event.is_HKexist:
-                hkInfo = treeAnalyze(tree.subtree(event._hullKillNode.identifier))
+                fightInfoMap['HK'] = treeAnalyze(tree.subtree(event._hullKillNode.identifier))
             if event._crewKillNode is not None and event.is_CKexist:
-                ckInfo = treeAnalyze(tree.subtree(event._crewKillNode.identifier))
+                fightInfoMap['CK'] = treeAnalyze(tree.subtree(event._crewKillNode.identifier))
             if event._surrenderNode is not None and event.is_SRexist:
-                ckInfo = treeAnalyze(tree.subtree(event._surrenderNode.identifier))
+                fightInfoMap['SR'] = treeAnalyze(tree.subtree(event._surrenderNode.identifier))
             
-            return None, {'HK': hkInfo, 'CK': ckInfo, 'SR': srInfo}
+            return None, fightInfoMap
         
         @eventAnalyze.register
         def _(event: Event, tree):
