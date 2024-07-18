@@ -29,6 +29,12 @@ def stop_watch(func):
         return rusult
     return _wrapper
 
+def deleteNoneKey(targetDict: dict):
+    try:
+        del targetDict[None]
+    except KeyError:
+        pass
+
 class ElementBaseClass():
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
         self._element = element
@@ -75,9 +81,9 @@ class EventAnalyzer():
                     new_events.append(event)
                     continue
                 
-                load_event_name = event._element.get('load')
+                load_event_name = event.element.get('load')
                 if not load_event_name:
-                    loadEventTags = xpath(event._element, './loadEvent')
+                    loadEventTags = xpath(event.element, './loadEvent')
                     if len(loadEventTags) == 1:
                         loadEventName = loadEventTags[0].text
                         if loadEventName:
@@ -150,22 +156,15 @@ class EventAnalyzer():
         
         def growTree(parent_node, parent_eventNode: EventNode):
             '''first given a root, this find child events and wrap them into EventNode, and link it to the parent. This does the process recursively unitl the whole tree is completed.'''
-            for eventNodeElement in parent_eventNode._events:
-                if eventNodeElement._event._childChoices is None:
+            for eventNodeElement in parent_eventNode.events:
+                if eventNodeElement.event.childChoices is None:
                     continue
-                length = len(eventNodeElement._event._childChoices)
-                for i, choice in enumerate(eventNodeElement._event._childChoices):
-                    new_eventNode = EventNode(choice.childEvents, eventNodeElement._prob, (eventNodeElement._increment + 1) if length == 1 else 0)
+                length = len(eventNodeElement.event.childChoices)
+                for i, choice in enumerate(eventNodeElement.event.childChoices):
+                    new_eventNode = EventNode(choice.childEvents, eventNodeElement.prob, (eventNodeElement.increment + 1) if length == 1 else 0)
                     new_node = tree.create_node(parent=parent_node, data=new_eventNode)
-                    if isinstance(eventNodeElement._event, FightEvent):
-                        if i == 0:
-                            eventNodeElement._event._hullKillNode = new_node
-                        elif i == 1:
-                            eventNodeElement._event._crewKillNode = new_node
-                        elif i == 2:
-                            eventNodeElement._event._surrenderNode = new_node
-                        else:
-                            raise IndexError
+                    if isinstance(eventNodeElement.event, FightEvent):
+                        eventNodeElement.event.nodes[i] = new_node
                     growTree(new_node, new_eventNode)
                 
         @singledispatch
@@ -182,12 +181,12 @@ class EventAnalyzer():
         @eventAnalyze.register
         def _(event: FightEvent, tree):
             fightInfoMap = {'HK': None, 'CK': None, 'SR': None}
-            if event._hullKillNode is not None and event.is_HKexist:
-                fightInfoMap['HK'] = treeAnalyze(tree.subtree(event._hullKillNode.identifier))
-            if event._crewKillNode is not None and event.is_CKexist:
-                fightInfoMap['CK'] = treeAnalyze(tree.subtree(event._crewKillNode.identifier))
-            if event._surrenderNode is not None and event.is_SRexist:
-                fightInfoMap['SR'] = treeAnalyze(tree.subtree(event._surrenderNode.identifier))
+            if event.nodes[0] is not None and event.is_HKexist:
+                fightInfoMap['HK'] = treeAnalyze(tree.subtree(event.nodes[0].identifier))
+            if event.nodes[1] is not None and event.is_CKexist:
+                fightInfoMap['CK'] = treeAnalyze(tree.subtree(event.nodes[1].identifier))
+            if event.nodes[2] is not None and event.is_SRexist:
+                fightInfoMap['SR'] = treeAnalyze(tree.subtree(event.nodes[2].identifier))
             
             return None, fightInfoMap
         
@@ -207,10 +206,10 @@ class EventAnalyzer():
         def treeAnalyze(tree, tune=0):
             '''iterate all nodes in a given tree, picking up necessary info. an info is picked up when following formula is true.
             
-            - eventclass._priority + increment + i > tree.depth(node) + tune
+            - eventclass.priority + increment + i > tree.depth(node) + tune
             
             params:
-            - eventclass._priority: param for each event. Important event should be bigger on this param. You can edit it in events.py
+            - eventclass.priority: param for each event. Important event should be bigger on this param. You can edit it in events.py
             - increment: default to 0. If a parent node has only one child, the child node's increment += 1. If a parent node has multiple children, the value reset to 0.
             - i: default to range(10). If treeAnalyze cannot find any info, increment i and retry. You can change max retry value by PackageConfig['maxDeeperRetry'].
             - tree.depth(node): how deep the node locates from the root.
@@ -221,20 +220,21 @@ class EventAnalyzer():
                 nece_info = []
                 for node in tree.all_nodes_itr():
                     info = []
-                    for eventNodeElement in node.data._events:
-                        if eventNodeElement._event is None:
+                    for eventNodeElement in node.data.events:
+                        if eventNodeElement.event is None:
                             continue
-                        info.append(eventAnalyze(eventNodeElement._event, tree) + (eventNodeElement._prob, eventNodeElement._increment))
+                        info.append(eventAnalyze(eventNodeElement.event, tree) + (eventNodeElement.prob, eventNodeElement.increment))
                     depth = tree.depth(node) + tune + (i * -1)
                     for eventlist, fightDict, prob, increment in info:
                         if eventlist is not None:
                             #diagram is used for unifying the same info and summing the prob.
                             diagram = defaultdict(float)
                             for eventclass in eventlist:
-                                if eventclass._priority + increment > depth:
-                                    textInfo = eventclass.getInfo()
-                                    if textInfo:
-                                        diagram[textInfo] += prob
+                                if eventclass.priority + increment <= depth:
+                                    continue
+                                textInfo = eventclass.getInfo()
+                                if textInfo:
+                                    diagram[textInfo] += prob
                             nece_info.extend([f'{prob:.0%} {textInfo}' if prob < 1 else textInfo for textInfo, prob in diagram.items()])
                         
                         if fightDict is not None:
@@ -328,13 +328,21 @@ class Event(ElementBaseClass):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
         self._childChoices = None
     
+    @property
+    def childChoices(self):
+        return self._childChoices
+    
     def init_childChoiceTags(self):
         self._childChoices = [global_choice_map.get(f'{self._xmlpath}${self._uniqueXPathGenerator.getpath(element)}') for element in xpath(self._element, './choice')]
         
 class EventList(ElementBaseClass):
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
         super().__init__(element, xmlpath, uniqueXPathGenerator)
-        self.childEvents = [Event(eventElement, xmlpath, uniqueXPathGenerator) for eventElement in xpath(element, './event')]
+        self._childEvents = [Event(eventElement, xmlpath, uniqueXPathGenerator) for eventElement in xpath(element, './event')]
+    
+    @property
+    def childEvents(self):
+        return self._childEvents
     
     def init_childChoiceTags(self):
         return
@@ -342,7 +350,10 @@ class EventList(ElementBaseClass):
 class FixedEvent():
     def __init__(self, eventText):
         self.eventText = eventText
-        self._childChoices = None
+    
+    @property
+    def childChoices(self):
+        return None
     
     def init_childChoiceTags(self):
         return
@@ -361,12 +372,26 @@ class FightEvent():
         self._surrenderChoice = Choice()
         self._surrenderChoice.childEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './surrender')]
         self._childChoices = [self._hullKillChoice, self._crewKillChoice, self._surrenderChoice]
-        self._hullKillNode = None
-        self._crewKillNode = None
-        self._surrenderNode = None
-        self.is_HKexist = True if len(xpath(ship._element, './destroyed')) > 0 else False
-        self.is_CKexist = True if len(xpath(ship._element, './deadCrew')) > 0 else False
-        self.is_SRexist = True if len(xpath(ship._element, './surrender')) > 0 else False
+        self.nodes = [None, None, None] #[HK, CK, SR]
+        self._is_HKexist = True if len(xpath(ship._element, './destroyed')) > 0 else False
+        self._is_CKexist = True if len(xpath(ship._element, './deadCrew')) > 0 else False
+        self._is_SRexist = True if len(xpath(ship._element, './surrender')) > 0 else False
+    
+    @property
+    def childChoices(self):
+        return self._childChoices
+    
+    @property
+    def is_HKexist(self):
+        return self._is_HKexist
+    
+    @property
+    def is_CKexist(self):
+        return self._is_CKexist
+    
+    @property
+    def is_SRexist(self):
+        return self._is_SRexist
 
     def init_childChoiceTags(self):
         return
@@ -407,6 +432,9 @@ def main(stat=False, packageConfig: dict={}):
         global_event_map.update({element.get('name'): Event(sanitize_loadEvent(element), xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//event')})
         global_event_map.update({element.get('name'): EventList(sanitize_loadEvent(element), xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//eventList')})
         global_ship_map.update({element.get('name'): Ship(element, xmlpath, uniqueXPathGenerator) for element in xpath(tree, '//ship')})
+    
+    deleteNoneKey(global_event_map)
+    deleteNoneKey(global_ship_map)
 
     if not stat:
         global_event_map.update({name: FixedEvent(value) for name, value in FIXED_EVENT_MAP.items()})
@@ -418,6 +446,8 @@ def main(stat=False, packageConfig: dict={}):
 
         global_choice_map.update({f'{xmlpath}${uniqueXPathGenerator.getpath(element)}': Choice(element, xmlpath, uniqueXPathGenerator) for element in elements})
 
+    deleteNoneKey(global_choice_map)
+    
     print('initializing choices...')
     for tag in global_choice_map.values():
         tag.init_shipTag()
@@ -441,7 +471,7 @@ def main(stat=False, packageConfig: dict={}):
                 for key, entry in dict_original.items():
                     value = entry.value
                     target_choice = textTag_map.get(key)
-                    if (target_choice is not None) and (value):
+                    if (target_choice is not None) and value:
                         additional_info = target_choice.get_formatted_additional_info()
                         if additional_info:
                             value += '\n' + target_choice.get_formatted_additional_info()

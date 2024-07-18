@@ -21,6 +21,10 @@ class EventBaseClass(metaclass=ABCMeta):
         self._priority = priority
         self._infoText = None
     
+    @property
+    def priority(self):
+        return self._priority
+    
     @abstractmethod
     def setInfo(self):
         return
@@ -43,16 +47,20 @@ def ajustText(text, use_custom_font = True):
 #----------------------Evnets----------------------
 
 class NameReturn():
-    '''contain fixed event'''
+    '''Contain fixed event'''
     def __init__(self, name, priority=1) -> None:
         self._priority = priority
         self._infoText = name
+    
+    @property
+    def priority(self):
+        return self._priority
     
     def getInfo(self):
         return self._infoText
     
 class TextReturn(EventBaseClass):
-    '''a proxy of loadEvent'''
+    '''A proxy of loadEvent and this deals with <textReturn>.'''
     def __init__(self, element, priority=1) -> None:
         super().__init__(element, priority)
     
@@ -60,6 +68,7 @@ class TextReturn(EventBaseClass):
         self._infoText = self._element.text or None
 
 class UnlockCustomShip(EventBaseClass):
+    '''Deal with <unlockCustomShip>.'''
     def __init__(self, element, priority=999) -> None:
         super().__init__(element, priority)
     
@@ -68,6 +77,7 @@ class UnlockCustomShip(EventBaseClass):
         self._infoText = f'<#>Unlock Ship({text})'
 
 class RemoveCrew(EventBaseClass):
+    '''Deal with <removeCrew>.'''
     def __init__(self, element, priority=1) -> None:
         super().__init__(element, priority)
     
@@ -84,6 +94,7 @@ class RemoveCrew(EventBaseClass):
             self._infoText = '<!>Lose your crew(?)'
 
 class CrewMember(EventBaseClass):
+    '''Deal with <crewMember>. This shows crew gain info if "amount" is plus, otherwise crew loss(unclonable) info if "amount" is minus.'''
     def __init__(self, element, priority=1) -> None:
         super().__init__(element, priority)
     
@@ -100,6 +111,7 @@ class CrewMember(EventBaseClass):
             self._infoText = '<!>Lose your crew(UNCLONABLE)'
 
 class CrewMember_OnlyTraitor(EventBaseClass):
+    '''Deal with <crewMember> only when "amount" is minus and show crew loss(unclonable) info.'''
     def __init__(self, element, priority=1) -> None:
         super().__init__(element, priority)
     
@@ -113,6 +125,7 @@ class CrewMember_OnlyTraitor(EventBaseClass):
             self._infoText = '<!>Lose your crew(UNCLONABLE)'
 
 class RevealMap(EventBaseClass):
+    '''Deal with <revealMap>.'''
     def __init__(self, element, priority=1) -> None:
         super().__init__(element, priority)
     
@@ -120,6 +133,7 @@ class RevealMap(EventBaseClass):
         self._infoText = 'Map Reveal'
 
 class AutoReward(EventBaseClass):
+    '''Deal with <autoReward>.'''
     def __init__(self, element, priority=1) -> None:
         super().__init__(element, priority)
     
@@ -129,6 +143,7 @@ class AutoReward(EventBaseClass):
         self._infoText = f'Reward {stuff_type}({level})'
 
 class ItemModify(EventBaseClass):
+    '''Deal with <itemModify>.'''
     def __init__(self, element, priority=1) -> None:
         super().__init__(element, priority)
     
@@ -155,6 +170,7 @@ class ItemModify(EventBaseClass):
         self._infoText = ' '.join(itemlist)
 
 class ModifyPursuit(EventBaseClass):
+    '''Deal with <modifyPursuit>.'''
     def __init__(self, element, priority=1) -> None:
         super().__init__(element, priority)
     
@@ -173,6 +189,7 @@ class ModifyPursuit(EventBaseClass):
             self._infoText = f'<!>Fleet Advance({str(amount)})'
 
 class Reward(EventBaseClass):
+    '''Deal with <weapon>, <drone>, and <augment>.'''
     def __init__(self, element, priority=1) -> None:
         super().__init__(element, priority)
     
@@ -184,6 +201,7 @@ class Reward(EventBaseClass):
             self._infoText = f'Gain a {self._element.tag}({name})'
 
 class Damage(EventBaseClass):
+    '''Deal with <damage>.'''
     def __init__(self, element, priority=1) -> None:
         super().__init__(element, priority)
     
@@ -202,6 +220,7 @@ class Damage(EventBaseClass):
             self._infoText = f'<!>Damage Hull({str(amount)})'
 
 class Upgrade(EventBaseClass):
+    '''Deal with <upgrade>.'''
     def __init__(self, element, priority=1) -> None:
         super().__init__(element, priority)
     
@@ -214,6 +233,7 @@ class Upgrade(EventBaseClass):
         self._infoText = f'System Upgrade({system} x{amount})'
 
 class Boarders(EventBaseClass):
+    '''Deal with <boarders>.'''
     def __init__(self, element, priority=1) -> None:
         super().__init__(element, priority)
     
