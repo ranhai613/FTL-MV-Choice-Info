@@ -1,16 +1,16 @@
-from mvlocscript.ftl import parse_ftlxml, ftl_xpath_matchers
+from mvlocscript.ftl import parse_ftlxml, ftl_xpath_matchers, write_ftlxml
 from mvlocscript.xmltools import xpath, UniqueXPathGenerator
-from mvlocscript.potools import readpo, writepo, StringEntry
+from mvlocscript.potools import readpo
 from mvlocscript.fstools import glob_posix
 from events import EVENTCLASSMAPS, NameReturn
 from loadevent import sanitize_loadEvent
 from json5 import load
-from pathlib import Path
 import re
 from functools import singledispatch, wraps
 from time import time
 from collections import defaultdict
 from treelib import Tree
+from lxml.etree import Element, register_namespace
 from pprint import pprint
 
 FIXED_EVENT_MAP = {
@@ -35,6 +35,11 @@ def deleteNoneKey(targetDict: dict):
     except KeyError:
         pass
 
+def ModElement(tag, *args, **kargs):
+    '''return Element with Qname "mod:tag."'''
+    tag = r'{http://dummy/mod}' + tag
+    return Element(tag, *args, **kargs)
+    
 class ElementBaseClass():
     def __init__(self, element, xmlpath, uniqueXPathGenerator):
         self._element = element
@@ -100,6 +105,9 @@ class EventAnalyzer():
                     fightEvent = FightEvent(ship)
                     new_events.append(fightEvent)
                     continue
+                elif load_event_name == 'COMBAT_CHECK' and ship is None:
+                    # print('found fight event ship is not given to: ', event.xmlpath, '#L', event.element.sourceline)
+                    pass
                 
                 load_event = global_event_map.get(load_event_name)
                 if not load_event:
@@ -122,7 +130,7 @@ class EventAnalyzer():
                 self._is_ensured = True
                 return
     
-    def getInfoList(self):
+    def getInfoList(self) -> list[str]:
         '''find the target info by making an event tree data structure and analyzing it. Beforehand, The child evnets must be ensured.'''
         assert self._is_ensured
         
@@ -293,11 +301,15 @@ class Choice(ElementBaseClass):
     def childEvents(self, value):
         self._evetnAnalyzer = EventAnalyzer(value)
         self._evetnAnalyzer.ensureChildEvents(self._ship)
-
-    def init_childEventTags(self):
-        self._evetnAnalyzer = EventAnalyzer([Event(element, self._xmlpath, self._uniqueXPathGenerator) for element in xpath(self._element, './event')])
-        self._evetnAnalyzer.ensureChildEvents(self._ship)
     
+    @property
+    def textElement(self):
+        texttags = xpath(self._element, './text')
+        if len(texttags) > 1:
+            return None
+
+        return texttags[0]
+
     def init_shipTag(self):
         for parent in self._element.iterancestors():
             ships = [ship.get('load') for ship in xpath(parent, './ship') if ship.get('load')]
@@ -307,13 +319,17 @@ class Choice(ElementBaseClass):
             return
         if len(ships) > 1:
             return
-        
-        self._ship = global_ship_map.get(ships[0])    
     
-    def get_textTag_uniqueXPath(self):
+        self._ship = global_ship_map.get(ships[0])
+
+    def init_childEventTags(self):
+        self._evetnAnalyzer = EventAnalyzer([Event(element, self._xmlpath, self._uniqueXPathGenerator) for element in xpath(self._element, './event')])
+        self._evetnAnalyzer.ensureChildEvents(self._ship)
+                
+    def get_textTag_uniqueXPath(self) -> str|None:
         texttags = xpath(self._element, './text')
-        if len(texttags) != 1:
-            return
+        if len(texttags) > 1:
+            return None
         
         return self._uniqueXPathGenerator.getpath(texttags[0])
         
@@ -373,9 +389,9 @@ class FightEvent():
         self._surrenderChoice.childEvents = [Event(element, ship._xmlpath, ship._uniqueXPathGenerator) for element in xpath(ship._element, './surrender')]
         self._childChoices = [self._hullKillChoice, self._crewKillChoice, self._surrenderChoice]
         self.nodes = [None, None, None] #[HK, CK, SR]
-        self._is_HKexist = True if len(xpath(ship._element, './destroyed')) > 0 else False
-        self._is_CKexist = True if len(xpath(ship._element, './deadCrew')) > 0 else False
-        self._is_SRexist = True if len(xpath(ship._element, './surrender')) > 0 else False
+        self._is_HKexist = len(xpath(ship._element, './destroyed')) > 0
+        self._is_CKexist = len(xpath(ship._element, './deadCrew')) > 0
+        self._is_SRexist = len(xpath(ship._element, './surrender')) > 0
     
     @property
     def childChoices(self):
@@ -398,6 +414,8 @@ class FightEvent():
             
 #------------------------main------------------------
 
+register_namespace('mod', 'http://dummy/mod')
+
 loadEvent_stat = set()
 
 global_event_map = {}
@@ -419,7 +437,7 @@ def main(stat=False, packageConfig: dict={}):
     PackageConfig = packageConfig
     for xmlpath in glob_posix('src-en/data/*'):
         #find xml
-        if not re.match(r'.+\.(xml|xml.append)$', xmlpath):
+        if not re.match(r'.+\.(xml|xml\.append)$', xmlpath):
             continue
         
         if xmlpath.replace('src-en/', '') in config['filePatterns']:
@@ -460,26 +478,53 @@ def main(stat=False, packageConfig: dict={}):
         tag.set_additional_info()
     
     if not stat:
+        print('creating xmls...')
         textTag_map = {f'{choice._xmlpath}${choice.get_textTag_uniqueXPath()}': choice for choice in global_choice_map.values()}
-        lang = PackageConfig.get('lang', 'en')
+        deleteNoneKey(textTag_map)
 
         for xmlpath in config['filePatterns']:
-            for popath in {f'locale/{xmlpath}/en.po', f'locale/{xmlpath}/{lang}.po', f'locale-machine/{xmlpath}/{lang}.po'}:
-                #dict_original = {id(the form of {xml path}${unique xpath}): StrignEntry('id', 'value', 'lineno', 'fuzzy', 'obsolete')} taken from MV translation.
-                dict_original, _, _ = readpo(popath)
-                new_entries = []
-                for key, entry in dict_original.items():
-                    value = entry.value
-                    target_choice = textTag_map.get(key)
-                    if (target_choice is not None) and value:
-                        additional_info = target_choice.get_formatted_additional_info()
-                        if additional_info:
-                            value += '\n' + target_choice.get_formatted_additional_info()
+            dict_original, _, _ = readpo(f'locale/{xmlpath}/en.po')
+            root = Element('FTL')
+            is_changed = False
+            for key in dict_original.keys():
+                target_choice = textTag_map.get(key)
+                if (not target_choice) or (target_choice.textElement is None):
+                    continue
+                
+                info = target_choice.get_formatted_additional_info()
+                if not info:
+                    continue
+                
+                original_element = target_choice.element
+                assert original_element is not None
+                
+                parent_element = root
+                #iterate over parents to children.
+                reversed_ancestors_list = list(reversed(list(original_element.iterancestors())))[1:]#exclude [0] that is root element.
+                reversed_ancestors_list.extend([original_element, target_choice.textElement])
+                for original_child in reversed_ancestors_list:
+                    name = original_child.get('name')
+                    if name:
+                        new_element = ModElement('findName', attrib={'name': name})
                     else:
-                        pass
-                    
-                    new_entries.append(StringEntry(key, value, entry.lineno, False, False))
-                writepo(str(Path(popath).with_name(f'choice-info-{Path(popath).name}')), new_entries, f'src-en/{xmlpath}')
+                        new_element = ModElement('findLike', attrib={'type': original_child.tag})
+                    parent_element.append(new_element)
+                    parent_element = new_element
+                
+                selector = ModElement('selector')
+                selector.text = target_choice.textElement.text
+                setValue = ModElement('setValue')
+                setValue.text = f'{target_choice.textElement.text}\n{info}'
+                parent_element.extend((selector, setValue))
+                is_changed = True
+
+            if is_changed:
+                path = f'output-en/{xmlpath}' if re.match(r'.+\.xml\.append$', xmlpath) else f'output-en/{xmlpath}.append'
+                write_ftlxml(path, root)
+                with open(path, encoding='utf8') as f:
+                    text = f.read()
+                with open(path, 'w', encoding='utf8') as f:
+                    f.write(text.replace('</FTL>', '').replace('<FTL>', ''))
     else:
         return {name: global_event_map[name] for name in loadEvent_stat}
 

@@ -1,45 +1,32 @@
 from run import main
-import subprocess
-from shutil import make_archive
+from shutil import make_archive, rmtree
+from os import mkdir
 from events import EVENTCLASSMAPS
 
 def package(name, config):
-    lang = config.get('lang', 'en')
-    command = ['poetry', 'run', 'mvloc', 'batch-apply', f'choice-info-{lang}']
-    if config.get('machine', False):
-        command.append('-m')
-    #analyze info and write it to .po file.
+    #analyze info and write it to xml.append.
     main(packageConfig=config)
-    #generate xml files from .po files. I reuse the workflow of MV translation. If you want to learn more, visit MV translation project Github.
-    subprocess.run(command)
-    make_archive(f'packages/{name}', 'zip', f'output-choice-info-{lang}')
+    #make zip file.
+    make_archive(f'packages/{name}', 'zip', 'output-en')
 
-mvversion = '5.4.6'
-version = 'beta0.1.4'
+MV_VERSION = '5.4.6'
+CHOICE_INFO_VERSION = 'beta0.1.5'
 
 #{package name: config} the config defaults to the full version, so each setting is for restricting info.
 packagedict = {
     #Ship Unlock + Crew Loss only version
-    f'[MV{mvversion}]ChoiceInfo-ShipUnlock+CrewLoss-{version}':
+    f'[MV{MV_VERSION}]ChoiceInfo-ShipUnlock+CrewLoss-{CHOICE_INFO_VERSION}':
         {
-         #default: all events in events.py. You can restrict to specific events by list event tag name.
-         'eventMap': EVENTCLASSMAPS['ShipUnlock+CrewLoss'],
-         #default: False. Wether ignore fixed events(i.g. Storage Check) or not.
-         'ignoreFixedEvent' : True,
-         #default: 10. How many times Event Analyzer searches info one step deeply if it cannot find any info.
-         'maxDeeperRetry': 1,
+         'eventMap': EVENTCLASSMAPS['ShipUnlock+CrewLoss'], #default: all events in events.py. You can restrict to specific events by set an event class map.
+         'ignoreFixedEvent' : True, #default: False. Wether ignore fixed events(i.g. Storage Check) or not.
+         'maxDeeperRetry': 1, #default: 10. How many times Event Analyzer searches info one step deeply if it cannot find any info.
         },
     #Full version
-    f'[MV{mvversion}]ChoiceInfo-Full-{version}': {},
-    f'[MV{mvversion}]ChoiceInfo_Ja-ShipUnlock+CrewLoss-{version}':
-        {
-         'lang': 'ja',
-         'machine': True,
-         'eventMap': EVENTCLASSMAPS['ShipUnlock+CrewLoss'],
-         'ignoreFixedEvent' : True,
-         'maxDeeperRetry': 1,
-        },
+    f'[MV{MV_VERSION}]ChoiceInfo-Full-{CHOICE_INFO_VERSION}': {},
 }
 
-for name, config in packagedict.items():
-    package(name, config)
+if __name__ == '__main__':
+    for name, config in packagedict.items():
+        rmtree('output-en/data')
+        mkdir('output-en/data')
+        package(name, config)

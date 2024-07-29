@@ -1,5 +1,4 @@
 from mvlocscript.xmltools import xpath
-from abc import ABCMeta, abstractmethod
 
 CUSTOM_FONT = {
     'fuel': '{',
@@ -15,7 +14,7 @@ CUSTOM_FONT = {
     #'upgraded': '™'
 }
 
-class EventBaseClass(metaclass=ABCMeta):
+class EventBaseClass():
     def __init__(self, element, priority) -> None:
         self._element = element
         self._priority = priority
@@ -25,9 +24,8 @@ class EventBaseClass(metaclass=ABCMeta):
     def priority(self):
         return self._priority
     
-    @abstractmethod
     def setInfo(self):
-        return
+        raise NotImplementedError
     
     def getInfo(self):
         self.setInfo()
@@ -84,6 +82,7 @@ class RemoveCrew(EventBaseClass):
     def setInfo(self):
         clonetags = xpath(self._element, './clone')
         if len(clonetags) != 1:
+            print('Warning in RemoveCrew: There are multiple <clone> tags or no such tags.')
             self._infoText = '<!>Lose your crew(?)'
             return
         if clonetags[0].text == 'true':
@@ -91,6 +90,7 @@ class RemoveCrew(EventBaseClass):
         elif clonetags[0].text == 'false':
             self._infoText = '<!>Lose your crew(UNCLONABLE)'
         else:
+            print('Warning in RemoveCrew: <clone>.text was expected as "true" or "false", but an unknown word came: ', clonetags[0].text) 
             self._infoText = '<!>Lose your crew(?)'
 
 class CrewMember(EventBaseClass):
@@ -101,16 +101,17 @@ class CrewMember(EventBaseClass):
     def setInfo(self):
         try:
             amount = int(self._element.get('amount'))
-        except ValueError:
+        except ValueError as e:
+            print(e)
             return
         
         if amount > 0:
-            race = ajustText(self._element.get('class', '?').replace('LIST_CREW_', ''), False)
+            race = ajustText(self._element.get('class', 'Random').replace('LIST_CREW_', ''), False)
             self._infoText = f'Gain a crew({race})'
         elif amount < 0:
             self._infoText = '<!>Lose your crew(UNCLONABLE)'
 
-class CrewMember_OnlyTraitor(EventBaseClass):
+class CrewMember_CrewLossOnly(EventBaseClass):
     '''Deal with <crewMember> only when "amount" is minus and show crew loss(unclonable) info.'''
     def __init__(self, element, priority=1) -> None:
         super().__init__(element, priority)
@@ -118,7 +119,8 @@ class CrewMember_OnlyTraitor(EventBaseClass):
     def setInfo(self):
         try:
             amount = int(self._element.get('amount'))
-        except ValueError:
+        except ValueError as e:
+            print(e)
             return
         
         if amount < 0:
@@ -160,7 +162,8 @@ class ItemModify(EventBaseClass):
             try:
                 amount_min = int(amount_min)
                 amount_max = int(amount_max)
-            except ValueError:
+            except ValueError as e:
+                print(e)
                 continue
             
             if amount_min == amount_max:
@@ -180,7 +183,8 @@ class ModifyPursuit(EventBaseClass):
             return
         try:
             amount = int(amount)
-        except ValueError:
+        except ValueError as e:
+            print(e)
             return
         
         if amount < 0:
@@ -211,7 +215,8 @@ class Damage(EventBaseClass):
             return
         try:
             amount = int(amount)
-        except ValueError:
+        except ValueError as e:
+            print(e)
             return
         
         if amount < 0:
@@ -244,7 +249,8 @@ class Boarders(EventBaseClass):
         try:
             amount_min = int(amount_min)
             amount_max = int(amount_max)
-        except ValueError:
+        except ValueError as e:
+            print(e)
             self._infoText = f'<!>Enemy Boarding({race})'
             return
         
@@ -253,8 +259,12 @@ class Boarders(EventBaseClass):
         else:
             self._infoText = f'<!>Enemy Boarding(x{str(amount_min)}-x{str(amount_max)} {race})'
 
+class Test(EventBaseClass):
+    def __init__(self, element, priority) -> None:
+        super().__init__(element, priority)
 
-#not done(or not planned to implement): 'environment', 'recallBoarders', 'achievement', 'choiceRequiresCrew', 'instantEscape'
+
+#not done(or not planned to implement): 'environment', 'recallBoarders', 'achievement', 'choiceRequiresCrew', 'instantEscape', 'win', 'lose'
 EVENTCLASSMAPS = {
     "Full": {
         "textReturn": TextReturn,
@@ -275,6 +285,6 @@ EVENTCLASSMAPS = {
     "ShipUnlock+CrewLoss": {
         "unlockCustomShip": UnlockCustomShip,
         "removeCrew": RemoveCrew,
-        "crewMember": CrewMember_OnlyTraitor
+        "crewMember": CrewMember_CrewLossOnly
     }
 }
