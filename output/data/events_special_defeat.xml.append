@@ -1,0 +1,889 @@
+<FTL>
+  <mod:findName name="DESTROYED_REINFORCEMENTS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Magnet Arm) Salvage the wreck further.</mod:selector>
+        <mod:setValue>(Magnet Arm) Salvage the wreck further.
+Reward Standard(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEADCREW_REINFORCEMENTS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Magnet Arm) Salvage the wreck further.</mod:selector>
+        <mod:setValue>(Magnet Arm) Salvage the wreck further.
+Reward Standard(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_UNION">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_MILITIA">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_FEDERATION">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DESTROYED_REBEL_POD">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Jerry) Welcome them aboard.</mod:selector>
+        <mod:setValue>(Jerry) Welcome them aboard.
+Gain a crew(Human)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DESTROYED_REBEL_POD">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept them onto your ship.</mod:selector>
+        <mod:setValue>Accept them onto your ship.
+50% Gain a crew(Human)
+50% &lt;!&gt;Lose your crew(clonable)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DESTROYED_REBEL_POD">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Mind Control) Keep the mind control online in-case they do anything bad.</mod:selector>
+        <mod:setValue>(Mind Control) Keep the mind control online in-case they do anything bad.
+50% Gain a crew(Human)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DESTROYED_REBEL_POD">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Free the Rebel and let them go.</mod:selector>
+        <mod:setValue>Free the Rebel and let them go.
+33% Reward Standard(L)
+33% &lt;!&gt;Fleet Advance(1)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_REBEL_GENERIC">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_REBEL_FLEET">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender. [Delays the fleet 2 jumps]</mod:selector>
+        <mod:setValue>Accept their surrender. [Delays the fleet 2 jumps]
+Fleet Delay(2)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_REBEL_STATION_GENERIC">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DESTROYED_AUTO_FUEL">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Salvage the extra fuel cells.</mod:selector>
+        <mod:setValue>Salvage the extra fuel cells.
+Reward { Only(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DESTROYED_AUTO_MISSILES">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Salvage the extra ammunition.</mod:selector>
+        <mod:setValue>Salvage the extra ammunition.
+Reward } Only(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DESTROYED_AUTO_DRONES">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Salvage the extra drone parts.</mod:selector>
+        <mod:setValue>Salvage the extra drone parts.
+Reward | Only(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_AUTO_GENERIC">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_AUTO_FUEL">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept the surrender.</mod:selector>
+        <mod:setValue>Accept the surrender.
+Reward { Only(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DESTROYED_ESTATE_FUEL">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Salvage the extra fuel cells.</mod:selector>
+        <mod:setValue>Salvage the extra fuel cells.
+Reward { Only(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DESTROYED_ESTATE_MISSILES">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Salvage the extra ammunition.</mod:selector>
+        <mod:setValue>Salvage the extra ammunition.
+Reward } Only(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DESTROYED_ESTATE_DRONES">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Salvage the extra drone parts.</mod:selector>
+        <mod:setValue>Salvage the extra drone parts.
+Reward | Only(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_ENGI">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward |(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_ENGI">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Engi Defender) Negotiate a great deal.</mod:selector>
+        <mod:setValue>(Engi Defender) Negotiate a great deal.
+Reward |(H)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_ENGI">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Engi Crew) Negotiate a different deal.</mod:selector>
+        <mod:setValue>(Engi Crew) Negotiate a different deal.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_SEPARATIST">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward |(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_ZOLTAN_GENERIC">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_ZOLTAN_FAIR">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their "trade".</mod:selector>
+        <mod:setValue>Accept their "trade".
+-4≤{≤-1 25≤~≤45 -2≤}≤-1 -2≤|≤0</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_ORCHID">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_VAMPWEED">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_CRYSTAL_GENERIC">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_CRYSTAL_GENERIC">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Crystalline Crew) Negotiate a better surrender.</mod:selector>
+        <mod:setValue>(Crystalline Crew) Negotiate a better surrender.
+Reward Standard(H)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_CRYSTAL_NOREWARD">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Crystalline Crew) Have your Crystal demand payment from them.</mod:selector>
+        <mod:setValue>(Crystalline Crew) Have your Crystal demand payment from them.
+Reward Standard(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DESTROYED_PIRATE_FUEL">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Salvage the extra fuel cells.</mod:selector>
+        <mod:setValue>Salvage the extra fuel cells.
+Reward { Only(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DESTROYED_PIRATE_MISSILES">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Salvage the extra ammunition.</mod:selector>
+        <mod:setValue>Salvage the extra ammunition.
+Reward } Only(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEAD_CREW_PIRATE_FUEL">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Salvage the extra fuel cells.</mod:selector>
+        <mod:setValue>Salvage the extra fuel cells.
+Reward { Only(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEAD_CREW_PIRATE_MISSILES">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Salvage the extra missiles.</mod:selector>
+        <mod:setValue>Salvage the extra missiles.
+Reward } Only(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_PIRATE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SLAVER_CHOICE_1">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Demand the Mantis joins your crew but release the rest.</mod:selector>
+        <mod:setValue>Demand the Mantis joins your crew but release the rest.
+Gain a crew(Mantis)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SLAVER_CHOICE_1">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Demand the Rockman joins your crew but release the rest.</mod:selector>
+        <mod:setValue>Demand the Rockman joins your crew but release the rest.
+Gain a crew(Rock)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SLAVER_CHOICE_1">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Demand the Engi joins your crew but release the rest.</mod:selector>
+        <mod:setValue>Demand the Engi joins your crew but release the rest.
+Gain a crew(Engi)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SLAVER_CHOICE_1">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>We aren't slavers. Free them all.</mod:selector>
+        <mod:setValue>We aren't slavers. Free them all.
+Reward Standard(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SLAVER_CHOICE_2">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Demand the Orchid joins your crew but release the rest.</mod:selector>
+        <mod:setValue>Demand the Orchid joins your crew but release the rest.
+Gain a crew(Orchid)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SLAVER_CHOICE_2">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Demand the Shell joins your crew but release the rest.</mod:selector>
+        <mod:setValue>Demand the Shell joins your crew but release the rest.
+Gain a crew(Shell)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SLAVER_CHOICE_2">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Demand the Slug joins your crew but release the rest.</mod:selector>
+        <mod:setValue>Demand the Slug joins your crew but release the rest.
+Gain a crew(Slug)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SLAVER_CHOICE_2">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>We aren't slavers. Free them all.</mod:selector>
+        <mod:setValue>We aren't slavers. Free them all.
+Reward Standard(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DESTROYED_BROOD_FUEL">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Salvage the extra fuel cells.</mod:selector>
+        <mod:setValue>Salvage the extra fuel cells.
+Reward { Only(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DESTROYED_BROOD_MISSILES">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Salvage the extra ammunition.</mod:selector>
+        <mod:setValue>Salvage the extra ammunition.
+Reward } Only(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEAD_CREW_BROOD_FUEL">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Salvage the extra fuel cells.</mod:selector>
+        <mod:setValue>Salvage the extra fuel cells.
+Reward { Only(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEAD_CREW_BROOD_MISSILES">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Salvage the extra missiles.</mod:selector>
+        <mod:setValue>Salvage the extra missiles.
+Reward } Only(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEAD_CREW_HACKER_FLEET">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Fleet Delay(1)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_HACKER_GENERIC">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Standard(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_HACKER_TRAP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Standard(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEAD_CREW_MANTIS_SLAVE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Open the cargo.</mod:selector>
+        <mod:setValue>Open the cargo.
+50% Gain a crew(Engi)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_FREEMANTIS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_ROCK_GENERIC">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_ROCK_MISSILES">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward } Only(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_ROCK_STATION_GENERIC">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_OUTCAST_GENERIC">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_OUTCAST_MISSILES">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward } Only(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_OUTCAST_CREW">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept the slave.</mod:selector>
+        <mod:setValue>Accept the slave.
+Gain a crew(Rock Outcast)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_SLUG_GENERIC">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_SLUG_SWAP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_SLUG_BETRAY">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Standard(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEAD_CREW_CLAN_TROPHY">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a crew(Random)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_CLAN_GENERIC">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_CLAN_BETRAY">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Standard(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_HEKTAR_GENERIC">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_HEKTAR_SWAP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_LEECH_GENERIC">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_LEECH_GIVEUP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Spare them and stop firing.</mod:selector>
+        <mod:setValue>Spare them and stop firing.
+25% Reward Standard(L)
+25% Gain a crew(Leech)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_SHELL">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DESTROYED_MORPH_EXTRA">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Collect the salvage.</mod:selector>
+        <mod:setValue>Collect the salvage.
+50% Reward Standard(L)
+50% &lt;!&gt;Enemy Boarding(x3-x4 Blob)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_MORPH">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their "surrender".</mod:selector>
+        <mod:setValue>Accept their "surrender".
+50% Gain a crew(Blob)
+50% &lt;!&gt;Enemy Boarding(x2-x3 Blob)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_COALITION">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DESTROYED_LANIUS_BOARDER">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;!&gt;Enemy Boarding(x1 Lanius)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SURRENDER_LANIUS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accept their surrender.</mod:selector>
+        <mod:setValue>Accept their surrender.
+Reward Stuff(R)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEADCREW_SIREN_UNKNOWN">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a crew(Random)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DESTROYED_AUGMENTED_BOARDER">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;!&gt;Enemy Boarding(x1 Lanius Augmented)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_REBEL_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Rebel)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_AUTO_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Estate)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_ENGINEER_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Rebel)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_FED_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Federation)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_ENGI_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a drone(Giftlist Engi)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_ZOLTAN_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Zoltan)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_MILITIA_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Union)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_ORCHID_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Kernel Elite)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_VAMPWEED_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Spore Elite)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_CRYSTAL_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Crystal Elite)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_ROCK_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Rock)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEADCREW_FREEMAN_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a crew(Mantis Warlord)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_SUZERAIN_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Mantis)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_DUSK_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Dusk)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_SLUG_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Slug)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_SHELL_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Shell)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_LEECH_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Leech)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_COALITION_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Coalition)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_LANIUS_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Lanius)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_VAGABOND_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Rusty)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DEFEAT_DYNASTY_ELITE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Gain a weapon(Giftlist Dynasty)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+</FTL>

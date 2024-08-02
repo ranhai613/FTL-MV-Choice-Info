@@ -1,0 +1,3184 @@
+<FTL>
+  <mod:findName name="ATLAS_EQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Decoy Buoys) Deploy the Buoys.</mod:selector>
+        <mod:setValue>(Decoy Buoys) Deploy the Buoys.
+Fleet Delay(1)
+&lt;=
+Fleet Delay(2)
+|-4
+Fleet Delay(3)
+|-8</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_EQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>1 [Free, gives 1 delay]</mod:selector>
+            <mod:setValue>1 [Free, gives 1 delay]
+Fleet Delay(1)
+&lt;=</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_EQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+&lt;=</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_EQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>2 [Costs 4|, gives 2 delay]</mod:selector>
+            <mod:setValue>2 [Costs 4|, gives 2 delay]
+Fleet Delay(2)
+|-4
+&lt;=</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_EQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+&lt;=</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_EQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>3 [Costs 8|, gives 3 delay]</mod:selector>
+            <mod:setValue>3 [Costs 8|, gives 3 delay]
+Fleet Delay(3)
+|-8
+&lt;=</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_EQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+&lt;=</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_EQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Slip-Scanner) Run some scans. [Costs 3{, reveals next sector]</mod:selector>
+        <mod:setValue>(Slip-Scanner) Run some scans. [Costs 3{, reveals next sector]
+{-3
+Map Reveal
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_EQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+&lt;=</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_EQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Fuel Conserver) Recycle the fuel. [Gives back 2{]</mod:selector>
+        <mod:setValue>(Fuel Conserver) Recycle the fuel. [Gives back 2{]
+{2
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_EQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+&lt;=</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_EQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Greenhouse) Recycle the fuel. [Gives back 1{]</mod:selector>
+        <mod:setValue>(Greenhouse) Recycle the fuel. [Gives back 1{]
+{1
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_EQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+&lt;=</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_EQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Greenhouse) Recycle the fuel. [Gives back 1{]</mod:selector>
+        <mod:setValue>(Greenhouse) Recycle the fuel. [Gives back 1{]
+{1
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_EQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+&lt;=</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_EQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Engine Overdrive) Activate the Capacitor. [Delays Fleet 3 jumps, will cause 6 damage to Engines and Hull. Removes Augment]</mod:selector>
+        <mod:setValue>(Engine Overdrive) Activate the Capacitor. [Delays Fleet 3 jumps, will cause 6 damage to Engines and Hull. Removes Augment]
+&lt;!&gt;Damage Hull(6)
+Fleet Delay(3)
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_EQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+&lt;=</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_EQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Nevermind.</mod:selector>
+        <mod:setValue>Nevermind.
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_LEARN">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>What are locations of interest?</mod:selector>
+        <mod:setValue>What are locations of interest?
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_LEARN">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Return.</mod:selector>
+            <mod:setValue>Return.
+&lt;=</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_LEARN">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>What does [!] represent?</mod:selector>
+        <mod:setValue>What does [!] represent?
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_LEARN">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Return.</mod:selector>
+            <mod:setValue>Return.
+&lt;=</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_LEARN">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>How do I reroute locations?</mod:selector>
+        <mod:setValue>How do I reroute locations?
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_LEARN">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Return.</mod:selector>
+            <mod:setValue>Return.
+&lt;=</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_LEARN">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>What is the Rebel threat level?</mod:selector>
+        <mod:setValue>What is the Rebel threat level?
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_LEARN">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Return.</mod:selector>
+            <mod:setValue>Return.
+&lt;=</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_LEARN">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>What are fleet types?</mod:selector>
+        <mod:setValue>What are fleet types?
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_LEARN">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Return.</mod:selector>
+            <mod:setValue>Return.
+&lt;=</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_LEARN">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Return.</mod:selector>
+        <mod:setValue>Return.
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>View available tasks from C.U.R.A. and use a jumpspeed augment.</mod:selector>
+        <mod:setValue>View available tasks from C.U.R.A. and use a jumpspeed augment.
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>View available tasks from C.U.R.A.</mod:selector>
+        <mod:setValue>View available tasks from C.U.R.A.
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Use a jumpspeed augment.</mod:selector>
+        <mod:setValue>Use a jumpspeed augment.
+{-3
+Map Reveal
+&lt;=
+{2
+{1
+&lt;!&gt;Damage Hull(6)
+Fleet Delay(3)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>[Federation Database] Learn about the Atlas.</mod:selector>
+        <mod:setValue>[Federation Database] Learn about the Atlas.
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Mining Sector.</mod:selector>
+        <mod:setValue>Proceed to the Mining Sector.
+Fight(HK: 17% Reward Standard(M))(CK: 17% Reward Standard(M) 17% Gain a weapon(Giftlist Leech))
+Fight(HK: 17% Reward Standard(M))(CK: 17% Reward Standard(H) 17% Gain a weapon(Giftlist Rock))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Union Sector.</mod:selector>
+        <mod:setValue>Proceed to the Union Sector.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Union Coreworlds.</mod:selector>
+        <mod:setValue>Proceed to the Union Coreworlds.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Union Sector.</mod:selector>
+        <mod:setValue>Proceed to the Union Sector.
+Fight(HK=CK: 50% Reward Standard(M) 50% Gain a crew(Union Random))
+Fight(HK=CK: Reward Standard(M) Gain a crew(Union Random))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Militia Encampment.</mod:selector>
+        <mod:setValue>Proceed to the Militia Encampment.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Engi Sector.</mod:selector>
+        <mod:setValue>Proceed to the Engi Sector.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Engi Harmony.</mod:selector>
+        <mod:setValue>Proceed to the Engi Harmony.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Zoltan Sector.</mod:selector>
+        <mod:setValue>Proceed to the Zoltan Sector.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Zoltan Capital.</mod:selector>
+        <mod:setValue>Proceed to the Zoltan Capital.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Orchid Sector.</mod:selector>
+        <mod:setValue>Proceed to the Orchid Sector.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Orchid Gardenworlds.</mod:selector>
+        <mod:setValue>Proceed to the Orchid Gardenworlds.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Confederate Sector.</mod:selector>
+        <mod:setValue>Proceed to the Confederate Sector.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Confederate Coreworlds.</mod:selector>
+        <mod:setValue>Proceed to the Confederate Coreworlds.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Free Mantis Sector.</mod:selector>
+        <mod:setValue>Proceed to the Free Mantis Sector.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Hunting Grounds.</mod:selector>
+        <mod:setValue>Proceed to the Hunting Grounds.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Separatist Sector.</mod:selector>
+        <mod:setValue>Proceed to the Separatist Sector.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Separatist Sector.</mod:selector>
+        <mod:setValue>Proceed to the Separatist Sector.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Crystalline Sector.</mod:selector>
+        <mod:setValue>Proceed to the Crystalline Sector.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Crystalline New-Homelands.</mod:selector>
+        <mod:setValue>Proceed to the Crystalline New-Homelands.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Outcast Sector.</mod:selector>
+        <mod:setValue>Proceed to the Outcast Sector.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Theocracy Badlands.</mod:selector>
+        <mod:setValue>Proceed to the Theocracy Badlands.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Federation Sector.</mod:selector>
+        <mod:setValue>Proceed to the Federation Sector.
+Fleet Delay(2)
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Federation Sector.</mod:selector>
+        <mod:setValue>Proceed to the Federation Sector.
+Fleet Delay(2)
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Rebel Sector.</mod:selector>
+        <mod:setValue>Proceed to the Rebel Sector.
+&lt;!&gt;Fleet Advance(1)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Rebel Stronghold.</mod:selector>
+        <mod:setValue>Proceed to the Rebel Stronghold.
+&lt;!&gt;Fleet Advance(1)
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Pirate Sector.</mod:selector>
+        <mod:setValue>Proceed to the Pirate Sector.
+Fight
+-40≤~≤-25
+50% Fight
+Reward ~ Only(H)
+Reward ~ Only(M)
+Reward Stuff(M)
+Reward Standard(M)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Black Market.</mod:selector>
+        <mod:setValue>Proceed to the Black Market.
+25% &lt;!&gt;Enemy Boarding(x2 Random)
+25% Fight
+Fight
+-35≤~≤-20
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Mantis Sector.</mod:selector>
+        <mod:setValue>Proceed to the Mantis Sector.
+Fight
+-25≤~≤-20
+50% Fight
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Mantis Hive.</mod:selector>
+        <mod:setValue>Proceed to the Mantis Hive.
+Fight
+50% Fight
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Rock Sector.</mod:selector>
+        <mod:setValue>Proceed to the Rock Sector.
+Fight
+-25≤~≤-20
+50% Fight
+Reward Standard(H)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Rock Homeworlds.</mod:selector>
+        <mod:setValue>Proceed to the Rock Homeworlds.
+Fight
+Reward Standard(H)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Lost Sun Stronghold.</mod:selector>
+        <mod:setValue>Proceed to the Lost Sun Stronghold.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Duskbringer Sector.</mod:selector>
+        <mod:setValue>Proceed to the Duskbringer Sector.
+Fight
+-25≤~≤-20
+50% Fight
+Reward Stuff(H)
+Reward Weapon(H)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Duskbringer Stronghold.</mod:selector>
+        <mod:setValue>Proceed to the Duskbringer Stronghold.
+Fight
+50% Reward Stuff(L)
+Reward Stuff(L)
+Reward Stuff(H)
+Reward Weapon(H)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Coalition Sector.</mod:selector>
+        <mod:setValue>Proceed to the Coalition Sector.
+Fight
+-25≤~≤-20
+33% Fight
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Coalition Stronghold.</mod:selector>
+        <mod:setValue>Proceed to the Coalition Stronghold.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Automated Shipyards.</mod:selector>
+        <mod:setValue>Proceed to the Automated Shipyards.
+Fight
+50% |-1
+50% Fight
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Central Shipyards.</mod:selector>
+        <mod:setValue>Proceed to the Central Shipyards.
+Fight
+50% |-1
+50% Fight
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Abandoned Sector.</mod:selector>
+        <mod:setValue>Proceed to the Abandoned Sector.
+50% Storage Check
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Lanius Swarmlands.</mod:selector>
+        <mod:setValue>Proceed to the Lanius Swarmlands.
+Fight
+33% Reward Stuff(L)
+33% Fight
+Reward Stuff(M)
+-35≤~≤-20
+Gain a weapon(Giftlist Lanius)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Nebula Sector.</mod:selector>
+        <mod:setValue>Proceed to the Nebula Sector.
+Fleet Delay(1)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Slug Sector.</mod:selector>
+        <mod:setValue>Proceed to the Slug Sector.
+Fight
+-40≤~≤-25
+Reward Stuff(H)
+Reward Standard(L)
+Gain a weapon(Giftlist Slug)
+33% Fight
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Slug Homeworlds.</mod:selector>
+        <mod:setValue>Proceed to the Slug Homeworlds.
+~-150
+Fight
+Reward Stuff(H)
+50% Fight
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Guild Territory.</mod:selector>
+        <mod:setValue>Proceed to the Guild Territory.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Leech Sector.</mod:selector>
+        <mod:setValue>Proceed to the Leech Sector.
+33% Fight
+33% -25≤~≤-20
+11% Fight
+17% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Leech Capital.</mod:selector>
+        <mod:setValue>Proceed to the Leech Capital.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Shell Sector.</mod:selector>
+        <mod:setValue>Proceed to the Shell Sector.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Geniocracy Coreworlds.</mod:selector>
+        <mod:setValue>Proceed to the Geniocracy Coreworlds.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Geniocracy Science District.</mod:selector>
+        <mod:setValue>Proceed to the Geniocracy Science District.
+Fight
+Reward Standard(M)
+33% Fight
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Vagabond Nebula.</mod:selector>
+        <mod:setValue>Proceed to the Vagabond Nebula.
+Fight(HK: 50% Reward Standard(M))(CK: 50% Reward Standard(M) 50% Gain a weapon(Giftlist Rusty))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Spectral Wastelands.</mod:selector>
+        <mod:setValue>Proceed to the Spectral Wastelands.
+Fight
+-25≤~≤-20
+50% Fight
+Reward Standard(H)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Spectral Nebula.</mod:selector>
+        <mod:setValue>Proceed to the Spectral Nebula.
+Fight
+-25≤~≤-20
+50% Fight
+Reward Standard(H)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Spectral Capital.</mod:selector>
+        <mod:setValue>Proceed to the Spectral Capital.
+Fight
+Reward Standard(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Illesctrian Oasis.</mod:selector>
+        <mod:setValue>Proceed to the Illesctrian Oasis.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Ancient Recovery Site.</mod:selector>
+        <mod:setValue>Proceed to the Ancient Recovery Site.
+~-60
+Gain a crew(Lanius Augmented)
+~-50
+Gain an augment(Ancient Dna)
+~-70
+Gain a weapon(Ancient Bomb)
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Obelisk Sector.</mod:selector>
+        <mod:setValue>Proceed to the Obelisk Sector.
+Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a weapon(Giftlist Ancient))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Obelisk Homeworlds.</mod:selector>
+        <mod:setValue>Proceed to the Obelisk Homeworlds.
+Fight(HK=CK: Reward Standard(H))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Crystalline Origins.</mod:selector>
+        <mod:setValue>Proceed to the Crystalline Origins.
+Fight
+Reward Item(H)
+Gain a crew(Rock Cultist)
+50% Fight
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Crystalline Origins.</mod:selector>
+        <mod:setValue>Proceed to the Crystalline Origins.
+Fleet Delay(2)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Slug Sector.</mod:selector>
+        <mod:setValue>Proceed to the Slug Sector.
+Fight
+-40≤~≤-25
+Reward Stuff(H)
+Reward Standard(L)
+Gain a weapon(Giftlist Slug)
+33% Fight
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Pirate Sector.</mod:selector>
+        <mod:setValue>Proceed to the Pirate Sector.
+Fight
+-40≤~≤-25
+50% Fight
+Reward ~ Only(H)
+Reward ~ Only(M)
+Reward Stuff(M)
+Reward Standard(M)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Abandoned Sector.</mod:selector>
+        <mod:setValue>Proceed to the Abandoned Sector.
+50% Storage Check
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Leech Sector.</mod:selector>
+        <mod:setValue>Proceed to the Leech Sector.
+33% Fight
+33% -25≤~≤-20
+11% Fight
+17% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to ???.</mod:selector>
+        <mod:setValue>Proceed to ???.
+Fight(HK: Gain a weapon(Prime Laser) Reward Standard No Item(H))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Mining Sector.</mod:selector>
+        <mod:setValue>Proceed to the Mining Sector.
+Fight(HK: 17% Reward Standard(M))(CK: 17% Reward Standard(M) 17% Gain a weapon(Giftlist Leech))
+Fight(HK: 17% Reward Standard(M))(CK: 17% Reward Standard(H) 17% Gain a weapon(Giftlist Rock))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Union Sector.</mod:selector>
+        <mod:setValue>Proceed to the Union Sector.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Union Coreworlds.</mod:selector>
+        <mod:setValue>Proceed to the Union Coreworlds.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Union Sector.</mod:selector>
+        <mod:setValue>Proceed to the Union Sector.
+Fight(HK=CK: 50% Reward Standard(M) 50% Gain a crew(Union Random))
+Fight(HK=CK: Reward Standard(M) Gain a crew(Union Random))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Militia Encampment.</mod:selector>
+        <mod:setValue>Proceed to the Militia Encampment.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Engi Sector.</mod:selector>
+        <mod:setValue>Proceed to the Engi Sector.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Engi Harmony.</mod:selector>
+        <mod:setValue>Proceed to the Engi Harmony.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Zoltan Sector.</mod:selector>
+        <mod:setValue>Proceed to the Zoltan Sector.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Zoltan Capital.</mod:selector>
+        <mod:setValue>Proceed to the Zoltan Capital.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Orchid Sector.</mod:selector>
+        <mod:setValue>Proceed to the Orchid Sector.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Orchid Gardenworlds.</mod:selector>
+        <mod:setValue>Proceed to the Orchid Gardenworlds.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Confederate Sector.</mod:selector>
+        <mod:setValue>Proceed to the Confederate Sector.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Confederate Coreworlds.</mod:selector>
+        <mod:setValue>Proceed to the Confederate Coreworlds.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Free Mantis Sector.</mod:selector>
+        <mod:setValue>Proceed to the Free Mantis Sector.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Hunting Grounds.</mod:selector>
+        <mod:setValue>Proceed to the Hunting Grounds.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Separatist Sector.</mod:selector>
+        <mod:setValue>Proceed to the Separatist Sector.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Separatist Sector.</mod:selector>
+        <mod:setValue>Proceed to the Separatist Sector.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Crystalline Sector.</mod:selector>
+        <mod:setValue>Proceed to the Crystalline Sector.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Crystalline New-Homelands.</mod:selector>
+        <mod:setValue>Proceed to the Crystalline New-Homelands.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Outcast Sector.</mod:selector>
+        <mod:setValue>Proceed to the Outcast Sector.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Theocracy Badlands.</mod:selector>
+        <mod:setValue>Proceed to the Theocracy Badlands.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Federation Sector.</mod:selector>
+        <mod:setValue>Proceed to the Federation Sector.
+Fleet Delay(2)
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Federation Sector.</mod:selector>
+        <mod:setValue>Proceed to the Federation Sector.
+Fleet Delay(2)
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Rebel Sector.</mod:selector>
+        <mod:setValue>Proceed to the Rebel Sector.
+&lt;!&gt;Fleet Advance(1)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Rebel Stronghold.</mod:selector>
+        <mod:setValue>Proceed to the Rebel Stronghold.
+&lt;!&gt;Fleet Advance(1)
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Pirate Sector.</mod:selector>
+        <mod:setValue>Proceed to the Pirate Sector.
+Fight
+-40≤~≤-25
+50% Fight
+Reward ~ Only(H)
+Reward ~ Only(M)
+Reward Stuff(M)
+Reward Standard(M)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Black Market.</mod:selector>
+        <mod:setValue>Proceed to the Black Market.
+25% &lt;!&gt;Enemy Boarding(x2 Random)
+25% Fight
+Fight
+-35≤~≤-20
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Mantis Sector.</mod:selector>
+        <mod:setValue>Proceed to the Mantis Sector.
+Fight
+-25≤~≤-20
+50% Fight
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Mantis Hive.</mod:selector>
+        <mod:setValue>Proceed to the Mantis Hive.
+Fight
+50% Fight
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Rock Sector.</mod:selector>
+        <mod:setValue>Proceed to the Rock Sector.
+Fight
+-25≤~≤-20
+50% Fight
+Reward Standard(H)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Rock Homeworlds.</mod:selector>
+        <mod:setValue>Proceed to the Rock Homeworlds.
+Fight
+Reward Standard(H)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Lost Sun Stronghold.</mod:selector>
+        <mod:setValue>Proceed to the Lost Sun Stronghold.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Duskbringer Sector.</mod:selector>
+        <mod:setValue>Proceed to the Duskbringer Sector.
+Fight
+-25≤~≤-20
+50% Fight
+Reward Stuff(H)
+Reward Weapon(H)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Duskbringer Stronghold.</mod:selector>
+        <mod:setValue>Proceed to the Duskbringer Stronghold.
+Fight
+50% Reward Stuff(L)
+Reward Stuff(L)
+Reward Stuff(H)
+Reward Weapon(H)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Coalition Sector.</mod:selector>
+        <mod:setValue>Proceed to the Coalition Sector.
+Fight
+-25≤~≤-20
+33% Fight
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Coalition Stronghold.</mod:selector>
+        <mod:setValue>Proceed to the Coalition Stronghold.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Automated Shipyards.</mod:selector>
+        <mod:setValue>Proceed to the Automated Shipyards.
+Fight
+50% |-1
+50% Fight
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Central Shipyards.</mod:selector>
+        <mod:setValue>Proceed to the Central Shipyards.
+Fight
+50% |-1
+50% Fight
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Abandoned Sector.</mod:selector>
+        <mod:setValue>Proceed to the Abandoned Sector.
+50% Storage Check
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Lanius Swarmlands.</mod:selector>
+        <mod:setValue>Proceed to the Lanius Swarmlands.
+Fight
+33% Reward Stuff(L)
+33% Fight
+Reward Stuff(M)
+-35≤~≤-20
+Gain a weapon(Giftlist Lanius)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Nebula Sector.</mod:selector>
+        <mod:setValue>Proceed to the Nebula Sector.
+Fleet Delay(1)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Slug Sector.</mod:selector>
+        <mod:setValue>Proceed to the Slug Sector.
+Fight
+-40≤~≤-25
+Reward Stuff(H)
+Reward Standard(L)
+Gain a weapon(Giftlist Slug)
+33% Fight
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Slug Homeworlds.</mod:selector>
+        <mod:setValue>Proceed to the Slug Homeworlds.
+~-150
+Fight
+Reward Stuff(H)
+50% Fight
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Guild Territory.</mod:selector>
+        <mod:setValue>Proceed to the Guild Territory.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Leech Sector.</mod:selector>
+        <mod:setValue>Proceed to the Leech Sector.
+33% Fight
+33% -25≤~≤-20
+11% Fight
+17% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Leech Capital.</mod:selector>
+        <mod:setValue>Proceed to the Leech Capital.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Shell Sector.</mod:selector>
+        <mod:setValue>Proceed to the Shell Sector.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Geniocracy Coreworlds.</mod:selector>
+        <mod:setValue>Proceed to the Geniocracy Coreworlds.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Geniocracy Science District.</mod:selector>
+        <mod:setValue>Proceed to the Geniocracy Science District.
+Fight
+Reward Standard(M)
+33% Fight
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Vagabond Nebula.</mod:selector>
+        <mod:setValue>Proceed to the Vagabond Nebula.
+Fight(HK: 50% Reward Standard(M))(CK: 50% Reward Standard(M) 50% Gain a weapon(Giftlist Rusty))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Spectral Wastelands.</mod:selector>
+        <mod:setValue>Proceed to the Spectral Wastelands.
+Fight
+-25≤~≤-20
+50% Fight
+Reward Standard(H)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Spectral Nebula.</mod:selector>
+        <mod:setValue>Proceed to the Spectral Nebula.
+Fight
+-25≤~≤-20
+50% Fight
+Reward Standard(H)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Spectral Capital.</mod:selector>
+        <mod:setValue>Proceed to the Spectral Capital.
+Fight
+Reward Standard(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Illesctrian Oasis.</mod:selector>
+        <mod:setValue>Proceed to the Illesctrian Oasis.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Ancient Recovery Site.</mod:selector>
+        <mod:setValue>Proceed to the Ancient Recovery Site.
+~-60
+Gain a crew(Lanius Augmented)
+~-50
+Gain an augment(Ancient Dna)
+~-70
+Gain a weapon(Ancient Bomb)
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Obelisk Sector.</mod:selector>
+        <mod:setValue>Proceed to the Obelisk Sector.
+Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a weapon(Giftlist Ancient))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Obelisk Homeworlds.</mod:selector>
+        <mod:setValue>Proceed to the Obelisk Homeworlds.
+Fight(HK=CK: Reward Standard(H))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Crystalline Origins.</mod:selector>
+        <mod:setValue>Proceed to the Crystalline Origins.
+Fight
+Reward Item(H)
+Gain a crew(Rock Cultist)
+50% Fight
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Crystalline Origins.</mod:selector>
+        <mod:setValue>Proceed to the Crystalline Origins.
+Fleet Delay(2)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Slug Sector.</mod:selector>
+        <mod:setValue>Proceed to the Slug Sector.
+Fight
+-40≤~≤-25
+Reward Stuff(H)
+Reward Standard(L)
+Gain a weapon(Giftlist Slug)
+33% Fight
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Pirate Sector.</mod:selector>
+        <mod:setValue>Proceed to the Pirate Sector.
+Fight
+-40≤~≤-25
+50% Fight
+Reward ~ Only(H)
+Reward ~ Only(M)
+Reward Stuff(M)
+Reward Standard(M)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Abandoned Sector.</mod:selector>
+        <mod:setValue>Proceed to the Abandoned Sector.
+50% Storage Check
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to the Leech Sector.</mod:selector>
+        <mod:setValue>Proceed to the Leech Sector.
+33% Fight
+33% -25≤~≤-20
+11% Fight
+17% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ATLAS_MENU_NOEQUIPMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Proceed to ???.</mod:selector>
+        <mod:setValue>Proceed to ???.
+Fight(HK: Gain a weapon(Prime Laser) Reward Standard No Item(H))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_ASTEROID">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ASTEROID_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+17% Fleet Delay(1)
+Fight(HK: 17% Reward Standard(M))(CK: 17% Reward Standard(M) 17% Gain a weapon(Giftlist Leech))
+Fight(HK: 17% Reward Standard(M))(CK: 17% Reward Standard(H) 17% Gain a weapon(Giftlist Rock))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_UNION">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_UNION_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_UNION_HACKED">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_HACKED_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight(HK=CK: 50% Reward Standard(M) 50% Gain a crew(Union Random))
+Fight(HK=CK: Reward Standard(M) Gain a crew(Union Random))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_MILITIA">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="MILITIA_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_ENGI">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENGI_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_ENGI_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENGI_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_ZOLTAN">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ZOLTAN_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_ZOLTAN_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ZOLTAN_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_ORCHID">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ORCHID_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_ORCHID_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ORCHID_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_VAMPWEED">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="VAMPWEED_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_VAMPWEED_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="VAMPWEED_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_FREEMANTIS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FREEMANTIS_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_FREEMANTIS_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FREEMANTIS_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_SEPARATIST">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SEPARATIST_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_CRYSTAL">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="CRYSTAL_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_CRYSTAL_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="CRYSTAL_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_OUTCAST">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="OUTCAST_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_OUTCAST_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="OUTCAST_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_FEDERATION">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FEDERATION_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fleet Delay(2)
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_FEDERATION_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FEDERATION_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fleet Delay(2)
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_REBEL">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="REBEL_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+&lt;!&gt;Fleet Advance(1)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_REBEL_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="REBEL_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+&lt;!&gt;Fleet Advance(1)
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_PIRATE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="PIRATE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+-40≤~≤-25
+50% Fight
+Reward ~ Only(H)
+Reward ~ Only(M)
+Reward Stuff(M)
+Reward Standard(M)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_PIRATE_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="PIRATE_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+25% &lt;!&gt;Enemy Boarding(x2 Random)
+25% Fight
+Fight
+-35≤~≤-20
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_MANTIS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="MANTIS_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+-25≤~≤-20
+50% Fight
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_MANTIS_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="MANTIS_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+50% Fight
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_ROCK">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ROCK_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+-25≤~≤-20
+50% Fight
+Reward Standard(H)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_ROCK_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ROCK_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+Reward Standard(H)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_LOSTSUN">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="LOSTSUN_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_DUSKBRINGER">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DUSKBRINGER_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+-25≤~≤-20
+50% Fight
+Reward Stuff(H)
+Reward Weapon(H)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_DUSKBRINGER_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DUSKBRINGER_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+50% Reward Stuff(L)
+Reward Stuff(L)
+Reward Stuff(H)
+Reward Weapon(H)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_COALITION">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="COALITION_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+-25≤~≤-20
+33% Fight
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_COALITION_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="COALITION_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_AUTO">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="AUTO_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+50% |-1
+50% Fight
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_AUTO_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="AUTO_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+50% |-1
+50% Fight
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_ABANDONED">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ABANDONED_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+50% Storage Check
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_LANIUS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="LANIUS_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+33% Reward Stuff(L)
+33% Fight
+Reward Stuff(M)
+-35≤~≤-20
+Gain a weapon(Giftlist Lanius)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_NEBULA">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="NEBULA_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fleet Delay(1)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_SLUG">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SLUG_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+-40≤~≤-25
+Reward Stuff(H)
+Reward Standard(L)
+Gain a weapon(Giftlist Slug)
+33% Fight
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_SLUG_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SLUG_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+~-150
+Fight
+Reward Stuff(H)
+50% Fight
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_CLAN">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="CLAN_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_SHELL">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SHELL_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_SHELL_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SHELL_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_MORPH">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="MORPH_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+Reward Standard(M)
+33% Fight
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_LEECH">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="LEECH_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+33% Fight
+33% -25≤~≤-20
+11% Fight
+17% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_LEECH_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="LEECH_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_GHOST">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="GHOST_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight(HK: 50% Reward Standard(M))(CK: 50% Reward Standard(M) 50% Gain a weapon(Giftlist Rusty))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_GHOST_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="GHOST_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+-25≤~≤-20
+50% Fight
+Reward Standard(H)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_DYNASTY">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DYNASTY_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+-25≤~≤-20
+50% Fight
+Reward Standard(H)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_DYNASTY_UNIQUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DYNASTY_UNIQUE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+Reward Standard(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_MONK">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="MONK_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_SALE_SLUG">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SALE_SLUG_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+-40≤~≤-25
+Reward Stuff(H)
+Reward Standard(L)
+Gain a weapon(Giftlist Slug)
+33% Fight
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SALE_SLUG_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight
+-40≤~≤-25
+Reward Stuff(H)
+Reward Standard(L)
+Gain a weapon(Giftlist Slug)
+33% Fight
+50% Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SALE_SLUG_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+-40≤~≤-25
+Reward Stuff(H)
+Reward Standard(L)
+Gain a weapon(Giftlist Slug)
+33% Fight
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SALE_SLUG_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight
+-40≤~≤-25
+Reward Stuff(H)
+Reward Standard(L)
+Gain a weapon(Giftlist Slug)
+33% Fight
+50% Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_SALE_PIRATE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SALE_PIRATE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+-40≤~≤-25
+50% Fight
+Reward ~ Only(H)
+Reward ~ Only(M)
+Reward Stuff(M)
+Reward Standard(M)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SALE_PIRATE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight
+-40≤~≤-25
+50% Fight
+Reward ~ Only(H)
+Reward ~ Only(M)
+Reward Stuff(M)
+Reward Standard(M)
+33% Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SALE_PIRATE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+-40≤~≤-25
+50% Fight
+Reward ~ Only(H)
+Reward ~ Only(M)
+Reward Stuff(M)
+Reward Standard(M)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SALE_PIRATE_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight
+-40≤~≤-25
+50% Fight
+Reward ~ Only(H)
+Reward ~ Only(M)
+Reward Stuff(M)
+Reward Standard(M)
+33% Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_SALE_ABANDONED">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SALE_ABANDONED_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+50% Storage Check
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SALE_ABANDONED_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+50% Storage Check
+50% Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SALE_ABANDONED_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+50% Storage Check
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SALE_ABANDONED_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+50% Storage Check
+50% Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_SALE_LEECH">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SALE_LEECH_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+33% Fight
+33% -25≤~≤-20
+11% Fight
+17% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SALE_LEECH_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+33% Fight
+33% -25≤~≤-20
+11% Fight
+17% Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SALE_LEECH_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+33% Fight
+33% -25≤~≤-20
+11% Fight
+17% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SALE_LEECH_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+33% Fight
+33% -25≤~≤-20
+11% Fight
+17% Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_AUGMENTED">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="AUGMENTED_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+~-60
+Gain a crew(Lanius Augmented)
+~-50
+Gain an augment(Ancient Dna)
+~-70
+Gain a weapon(Ancient Bomb)
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_ANCIENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ANCIENT_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fleet Delay(10)
+Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a weapon(Giftlist Ancient))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_ROYAL">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ROYAL_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight(HK=CK: Reward Standard(H))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_ORIGINS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ORIGINS_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fight
+Reward Item(H)
+Gain a crew(Rock Cultist)
+50% Fight
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_ORIGINS_RUWEN">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ORIGINS_RUWEN_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fleet Delay(2)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENTER_NEXUS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;=</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="NEXUS_WARP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Exit hyperspeed.</mod:selector>
+        <mod:setValue>Exit hyperspeed.
+Fleet Delay(45)
+Fight(HK: Gain a weapon(Prime Laser) Reward Standard No Item(H))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+</FTL>

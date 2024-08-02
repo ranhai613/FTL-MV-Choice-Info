@@ -7,7 +7,7 @@ def package(name, config):
     #analyze info and write it to xml.append.
     main(packageConfig=config)
     #make zip file.
-    make_archive(f'packages/{name}', 'zip', 'output-en')
+    make_archive(f'packages/{name}', 'zip', 'output')
 
 MV_VERSION = '5.4.6'
 CHOICE_INFO_VERSION = 'beta0.1.5'
@@ -27,6 +27,6 @@ packagedict = {
 
 if __name__ == '__main__':
     for name, config in packagedict.items():
-        rmtree('output-en/data')
-        mkdir('output-en/data')
+        rmtree('output/data')
+        mkdir('output/data')
         package(name, config)

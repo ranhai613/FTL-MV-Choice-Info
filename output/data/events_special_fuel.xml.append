@@ -1,0 +1,1197 @@
+<FTL>
+  <mod:findName name="NO_FUEL_FLEET">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Fight(HK=CK: 2≤{≤4)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="NO_FUEL_FLEET_DLC">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Fight(HK=CK: 2≤{≤4)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_NOTHING">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Do something onboard the ship.</mod:selector>
+        <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_TRADER_MV">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Gladly trade.</mod:selector>
+        <mod:setValue>Gladly trade.
+33% 2≤{≤4 -2≤|≤-1
+33% 2≤{≤5 -4≤}≤-2
+33% 2≤{≤5 -25≤~≤-15</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_EXPLORE_MV">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Explore the nearby area.</mod:selector>
+        <mod:setValue>Explore the nearby area.
+Fight(CK: 4% Reward Standard(H))(HK: 4% Reward Standard(M))(SR: 4% Reward Stuff(R))
+Fight(HK: 25% Reward {(M))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_EXPLORE_MV">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Stay near the beacon.</mod:selector>
+        <mod:setValue>Stay near the beacon.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_EXPLORE_MV">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_EXPLORE_MV_LIST">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Approach the asteroid field to scan it.</mod:selector>
+          <mod:setValue>Approach the asteroid field to scan it.
+17% Reward { Only(H)
+17% Reward }(M)
+17% Reward |(M)
+17% &lt;!&gt;Damage Hull(3)
+33% &lt;!&gt;Damage Hull(1)
+Fight(CK: 17% Reward Standard(H))(HK: 17% Reward Standard(M))(SR: 17% Reward Stuff(R))</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_EXPLORE_MV_LIST">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Trade 20 scrap for 5 fuel.</mod:selector>
+          <mod:setValue>Trade 20 scrap for 5 fuel.
+{5 ~-20</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_EXPLORE_MV_LIST">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Trade 10 scrap for 2 fuel.</mod:selector>
+          <mod:setValue>Trade 10 scrap for 2 fuel.
+{2 ~-10</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_EXPLORE_MV_LIST">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Trade 5 scrap for 1 fuel.</mod:selector>
+          <mod:setValue>Trade 5 scrap for 1 fuel.
+{1 ~-5</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_EXPLORE_MV_LIST">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+Fight(HK: Reward {(M))</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_APPROACH_MV">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Graciously accept their offer.</mod:selector>
+        <mod:setValue>Graciously accept their offer.
+25% 2≤{≤6
+25% &lt;!&gt;Enemy Boarding(x2-x3 Human)
+Fight(CK: 25% Reward Standard(H))(HK: 25% Reward Standard(M))(SR: 25% Reward Stuff(R))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_APPROACH_MV">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Request that they keep their distance.</mod:selector>
+        <mod:setValue>Request that they keep their distance.
+33% 1≤{≤4
+Fight(CK: 33% Reward Standard(H))(HK: 33% Reward Standard(M))(SR: 33% Reward Stuff(R))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_APPROACH_MV">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Adv. Sensors) Run a detailed scan with your sensors before responding.</mod:selector>
+        <mod:setValue>(Adv. Sensors) Run a detailed scan with your sensors before responding.
+50% 3≤{≤7
+Fight(CK: 50% Reward Standard(H))(HK: 50% Reward Standard(M))(SR: 50% Reward Stuff(R))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_APPROACH_MV">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Long-Ranged Scanners) Run a detailed scan before responding.</mod:selector>
+        <mod:setValue>(Long-Ranged Scanners) Run a detailed scan before responding.
+50% 3≤{≤7
+Fight(CK: 50% Reward Standard(H))(HK: 50% Reward Standard(M))(SR: 50% Reward Stuff(R))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_APPROACH_MV_ACCEPT_LIST">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Gladly trade.</mod:selector>
+          <mod:setValue>Gladly trade.
+33% 2≤{≤4 -2≤|≤-1
+33% 2≤{≤5 -4≤}≤-2
+33% 2≤{≤5 -25≤~≤-15</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_APPROACH_MV_ACCEPT_LIST">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_APPROACH_MV_ACCEPT_LIST">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_APPROACH_MV_DECLINE_LIST">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Do something onboard the ship.</mod:selector>
+          <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_APPROACH_MV_DECLINE_LIST">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_APPROACH_MV_SCAN_LIST">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Power up weapons and prepare for a fight.</mod:selector>
+          <mod:setValue>Power up weapons and prepare for a fight.
+Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_APPROACH_MV_SCAN_LIST">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="event">
+          <mod:findLike type="choice">
+            <mod:findLike type="text">
+              <mod:selector>Continue...</mod:selector>
+              <mod:setValue>Continue...
+Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:setValue>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_FREEMANTIS_CONFUSED">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Buy some missiles.</mod:selector>
+        <mod:setValue>Buy some missiles.
+{-5 }10</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_FREEMANTIS_CONFUSED">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Buy some droneparts.</mod:selector>
+        <mod:setValue>Buy some droneparts.
+{-5 |10</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_FREEMANTIS_CONFUSED">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>But... we need fuel.</mod:selector>
+        <mod:setValue>But... we need fuel.
+{-1 }10
+{-1 |10</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_FREEMANTIS_CONFUSED">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Buy some missiles.</mod:selector>
+            <mod:setValue>Buy some missiles.
+{-1 }10</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_FREEMANTIS_CONFUSED">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Buy some droneparts.</mod:selector>
+            <mod:setValue>Buy some droneparts.
+{-1 |10</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_FREEMANTIS_CONFUSED">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>We don't have any fuel!</mod:selector>
+            <mod:setValue>We don't have any fuel!
+}3
+|3</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_FREEMANTIS_CONFUSED">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Take the free missiles.</mod:selector>
+                <mod:setValue>Take the free missiles.
+}3</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_FREEMANTIS_CONFUSED">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Take the free droneparts.</mod:selector>
+                <mod:setValue>Take the free droneparts.
+|3</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_FREEMANTIS_CONFUSED">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Do you have any fuel to spare?</mod:selector>
+                <mod:setValue>Do you have any fuel to spare?
+|2 }2
+{3</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_FREEMANTIS_CONFUSED">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="event">
+                <mod:findLike type="choice">
+                  <mod:findLike type="text">
+                    <mod:selector>No, we'll take some.</mod:selector>
+                    <mod:setValue>No, we'll take some.
+|2 }2
+{3</mod:setValue>
+                  </mod:findLike>
+                </mod:findLike>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_FREEMANTIS_CONFUSED">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="event">
+                <mod:findLike type="choice">
+                  <mod:findLike type="event">
+                    <mod:findLike type="choice">
+                      <mod:findLike type="text">
+                        <mod:selector>Continue...</mod:selector>
+                        <mod:setValue>Continue...
+{3</mod:setValue>
+                      </mod:findLike>
+                    </mod:findLike>
+                  </mod:findLike>
+                </mod:findLike>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_NOTHING_DISTRESS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Do something onboard the ship.</mod:selector>
+        <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_SELLER_DISTRESS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Request emergency fuel reserves.</mod:selector>
+        <mod:setValue>Request emergency fuel reserves.
+Reward { Only(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_SELLER_DISTRESS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Buy 5 fuel for 20 scrap.</mod:selector>
+        <mod:setValue>Buy 5 fuel for 20 scrap.
+{5 ~-20</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_SELLER_DISTRESS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Buy 2 fuel for 8 scrap.</mod:selector>
+        <mod:setValue>Buy 2 fuel for 8 scrap.
+{2 ~-8</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_SELLER_DISTRESS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Attack the automated ship.</mod:selector>
+        <mod:setValue>Attack the automated ship.
+Fight(HK: Reward {(M))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_SELLER_DISTRESS">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight(HK: Reward {(M))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_TRADER_DISTRESS_MV">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Gladly trade.</mod:selector>
+        <mod:setValue>Gladly trade.
+33% 2≤{≤4 -2≤|≤-1
+33% 2≤{≤5 -4≤}≤-2
+33% 2≤{≤5 -25≤~≤-15</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_TRADER_DISTRESS_MV">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Respectfully decline.</mod:selector>
+        <mod:setValue>Respectfully decline.
+11% 4≤{≤7 -2≤|≤-1
+11% 4≤{≤7 -2≤}≤-1
+11% 3≤{≤7 -12≤~≤-5
+17% 1≤{≤6
+11% 2≤{≤4 -2≤|≤-1
+11% 2≤{≤5 -4≤}≤-2
+11% 2≤{≤5 -25≤~≤-15</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_TRADER_PT2_MV">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Accept the offer.</mod:selector>
+          <mod:setValue>Accept the offer.
+33% 4≤{≤7 -2≤|≤-1
+33% 4≤{≤7 -2≤}≤-1
+33% 3≤{≤7 -12≤~≤-5</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_TRADER_PT2_MV">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Decline again.</mod:selector>
+          <mod:setValue>Decline again.
+50% 1≤{≤6</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_TRADER_PT2_MV">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Accept the offer.</mod:selector>
+          <mod:setValue>Accept the offer.
+33% 2≤{≤4 -2≤|≤-1
+33% 2≤{≤5 -4≤}≤-2
+33% 2≤{≤5 -25≤~≤-15</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="NO_FUEL_REFUGEE_DAMAGED">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Trade some scrap for fuel.</mod:selector>
+        <mod:setValue>Trade some scrap for fuel.
+{3 ~-10</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="NO_FUEL_REFUGEE_DAMAGED">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Engi Crew) Negotiate a better trade.</mod:selector>
+        <mod:setValue>(Engi Crew) Negotiate a better trade.
+{6 ~-10</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="NO_FUEL_REFUGEE_DAMAGED">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Accept it.</mod:selector>
+            <mod:setValue>Accept it.
+{6 ~-10</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="NO_FUEL_REFUGEE_DAMAGED">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Refuse their offer.</mod:selector>
+        <mod:setValue>Refuse their offer.
+50% {6 ~-10</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="NO_FUEL_REFUGEE_DAMAGED">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>The helpless refugees make easy targets. Attack them.</mod:selector>
+        <mod:setValue>The helpless refugees make easy targets. Attack them.
+Reward {(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="NO_FUEL_REFUGEE_REFUSE">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Accept it.</mod:selector>
+          <mod:setValue>Accept it.
+{6 ~-10</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="NO_FUEL_REFUGEE_PIRATE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Offer some missiles for fuel.</mod:selector>
+        <mod:setValue>Offer some missiles for fuel.
+50% 5≤{≤7 }-1
+Fight(CK: 50% Reward Standard(H))(HK: 50% Reward Standard(M))(SR: 50% Reward Stuff(R))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="NO_FUEL_REFUGEE_PIRATE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Refuse their offer.</mod:selector>
+        <mod:setValue>Refuse their offer.
+25% Reward { Only(L)
+Fight(CK: 25% Reward Standard(H))(HK: 25% Reward Standard(M))(SR: 25% Reward Stuff(R))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="NO_FUEL_REFUGEE_PIRATE_ACCEPT_MV">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="NO_FUEL_REFUGEE_PIRATE_REJECT_MV">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="NO_FUEL_REFUGEE_PIRATE_REJECT_MV">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_REBEL_ATTACK">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Fight(HK: Reward {(M))(CK: Reward {(H))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_REBEL_WARNING">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Fight(HK: Reward Standard(L))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_ENGI_DUBIOUS_MV">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Hail them.</mod:selector>
+        <mod:setValue>Hail them.
+25% 2≤{≤6
+25% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_ENGI_DUBIOUS_MV">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Ignore them.</mod:selector>
+        <mod:setValue>Ignore them.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_ENGI_DUBIOUS_MV">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_ENGI_DUBIOUS_MV">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Hull Repair Drone) Offer to help repair their hull.</mod:selector>
+        <mod:setValue>(Hull Repair Drone) Offer to help repair their hull.
+|-1 4≤{≤6</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_ENGI_DUBIOUS_LIST_MV">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+Fight</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_ENGI_DUBIOUS_LIST_MV">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Make the trade.</mod:selector>
+          <mod:setValue>Make the trade.
+-20≤~≤-10 4≤{≤6</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_MANTIS_ATTACK">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Fight(HK: Reward {(M))(CK: Reward {(H))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_ROCK_WRECK">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Send an away team.</mod:selector>
+        <mod:setValue>Send an away team.
+25% Reward }(M)
+25% Map Reveal
+25% Reward { Only(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_ROCK_WRECK">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Report!</mod:selector>
+            <mod:setValue>Report!
+25% Reward }(M)
+25% Map Reveal
+25% Reward { Only(M)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_ROCK_WRECK">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Let it drift by.</mod:selector>
+        <mod:setValue>Let it drift by.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_ROCK_WRECK">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_ROCK_WRECK">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Life Scanner) Run additional scans.</mod:selector>
+        <mod:setValue>(Life Scanner) Run additional scans.
+Reward { Only(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_ROCK_WRECK_LIST">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Pay.</mod:selector>
+          <mod:setValue>Pay.
+-40≤~≤-25</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_ROCK_WRECK_LIST">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Refuse.</mod:selector>
+          <mod:setValue>Refuse.
+&lt;!&gt;Lose your crew(UNCLONABLE)</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_ROCK_CURIOUS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Attack.</mod:selector>
+        <mod:setValue>Attack.
+Fight(HK: Reward {(M))(CK: Reward {(H))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_ROCK_CURIOUS">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight(HK: Reward {(M))(CK: Reward {(H))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_ROCK_CURIOUS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Wait and see.</mod:selector>
+        <mod:setValue>Wait and see.
+50% 3≤{≤8
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_ROCK_CURIOUS_LIST">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+Fight</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_SHELL_SCANS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Agree to the scans.</mod:selector>
+        <mod:setValue>Agree to the scans.
+Reward { Only(H)
+&lt;!&gt;Fleet Advance(1)
+Reward { Only(L)
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_SHELL_SCANS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Shell Crew) Your Shell wishes to explain something.</mod:selector>
+        <mod:setValue>(Shell Crew) Your Shell wishes to explain something.
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_SHELL_SCANS">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Agree to the scans.</mod:selector>
+            <mod:setValue>Agree to the scans.
+Reward { Only(H)
+&lt;!&gt;Fleet Advance(1)
+Reward { Only(L)
+Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_SHELL_SCANS">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Still decline.</mod:selector>
+            <mod:setValue>Still decline.
+50% Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_SHELL_SCANS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>This seems suspicious, decline.</mod:selector>
+        <mod:setValue>This seems suspicious, decline.
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_SHELL_SCANS_QUEUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Just wait and finish the scans.</mod:selector>
+        <mod:setValue>Just wait and finish the scans.
+Reward { Only(H)
+&lt;!&gt;Fleet Advance(1)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_SHELL_SCANS_QUEUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Mind Control) 'Convince' the Shells to stop early and give over the fuel.</mod:selector>
+        <mod:setValue>(Mind Control) 'Convince' the Shells to stop early and give over the fuel.
+Reward { Only(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_SHELL_SCANS_QUEUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Demand they stop.</mod:selector>
+        <mod:setValue>Demand they stop.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_SHELL_SCANS_QUEUE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_OFF_SHELL_SCANS_LEAVE">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+Fight</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_SLUG_CHUCKLE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Pay 15 scrap for 5 fuel.</mod:selector>
+        <mod:setValue>Pay 15 scrap for 5 fuel.
+50% ~-15 {5
+50% -35≤~≤-20 -4≤}≤-2</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_SLUG_CHUCKLE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Ignore the offer.</mod:selector>
+        <mod:setValue>Ignore the offer.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_SLUG_CHUCKLE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_SLUG_CHUCKLE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Slug Crew) Have your Slug make the purchase.</mod:selector>
+        <mod:setValue>(Slug Crew) Have your Slug make the purchase.
+~-15 {5</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_SLUG_CHUCKLE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Telepathic Shell) Have your Shell make the purchase.</mod:selector>
+        <mod:setValue>(Telepathic Shell) Have your Shell make the purchase.
+~-15 {5</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_SLUG_CHUCKLE_LIST">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+-35≤~≤-20 -4≤}≤-2</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_SLUG_OVERPRICED">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Buy 5 fuel for 50 scrap.</mod:selector>
+        <mod:setValue>Buy 5 fuel for 50 scrap.
+~-50 {5</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_SLUG_OVERPRICED">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Buy 10 fuel for 95 scrap. (BEST DEAL!)</mod:selector>
+        <mod:setValue>Buy 10 fuel for 95 scrap. (BEST DEAL!)
+~-95 {10</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_SLUG_OVERPRICED">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Negotiate.</mod:selector>
+        <mod:setValue>Negotiate.
+Fight(HK: Reward {(M))(CK: Reward {(H))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_SLUG_OVERPRICED">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight(HK: Reward {(M))(CK: Reward {(H))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_SLUG_OVERPRICED">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>You aren't interested.</mod:selector>
+        <mod:setValue>You aren't interested.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_SLUG_OVERPRICED">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_DYNASTY">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Yes.</mod:selector>
+        <mod:setValue>Yes.
+50% Reward { Only(M)
+50% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_DYNASTY">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Ghost Crew) "Yes."</mod:selector>
+        <mod:setValue>(Ghost Crew) "Yes."
+Reward { Only(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_DYNASTY">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>No.</mod:selector>
+        <mod:setValue>No.
+Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_DYNASTY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Ok...</mod:selector>
+            <mod:setValue>Ok...
+50% Reward { Only(M)
+50% Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_DYNASTY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>These Ghosts are insane. Attack them before they can do the same!</mod:selector>
+            <mod:setValue>These Ghosts are insane. Attack them before they can do the same!
+Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_DYNASTY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_DYNASTY_NOTHING">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+Fight</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="FUEL_ON_DYNASTY_LIE">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+Fight</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+</FTL>

@@ -519,12 +519,8 @@ def main(stat=False, packageConfig: dict={}):
                 is_changed = True
 
             if is_changed:
-                path = f'output-en/{xmlpath}' if re.match(r'.+\.xml\.append$', xmlpath) else f'output-en/{xmlpath}.append'
+                path = f'output/{xmlpath}' if re.match(r'.+\.xml\.append$', xmlpath) else f'output/{xmlpath}.append'
                 write_ftlxml(path, root)
-                with open(path, encoding='utf8') as f:
-                    text = f.read()
-                with open(path, 'w', encoding='utf8') as f:
-                    f.write(text.replace('</FTL>', '').replace('<FTL>', ''))
     else:
         return {name: global_event_map[name] for name in loadEvent_stat}
 

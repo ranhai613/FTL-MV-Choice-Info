@@ -1,0 +1,3234 @@
+<FTL>
+  <mod:findName name="FINISH_BEACON_UNION">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Do something onboard the ship.</mod:selector>
+        <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_TRAFFIC">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Do something onboard the ship.</mod:selector>
+        <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_BREACH">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Help them onboard.</mod:selector>
+        <mod:setValue>Help them onboard.
+33% Reward Standard(L)
+33% Gain a crew(Random)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_BREACH">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Rock Crew) Let them aboard but station your Rock as extra security.</mod:selector>
+        <mod:setValue>(Rock Crew) Let them aboard but station your Rock as extra security.
+33% Reward Standard(L)
+33% Gain a crew(Random)
+33% Reward Item(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_BREACH">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Soldier Crew) Let them aboard but station your Soldier as extra security.</mod:selector>
+        <mod:setValue>(Soldier Crew) Let them aboard but station your Soldier as extra security.
+33% Reward Standard(L)
+33% Gain a crew(Random)
+33% Reward Item(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_BREACH">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Hive Elite) Let them aboard but station your Mantis as extra security.</mod:selector>
+        <mod:setValue>(Hive Elite) Let them aboard but station your Mantis as extra security.
+33% Reward Standard(L)
+33% Gain a crew(Random)
+33% Reward Item(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_BREACH">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Boarding Drone) Let them aboard but station your drone as extra security.</mod:selector>
+        <mod:setValue>(Boarding Drone) Let them aboard but station your drone as extra security.
+33% Reward Standard(L)
+33% Gain a crew(Random)
+33% Reward Item(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_BREACH">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Adv. Sensors) Let them aboard but keep constant scans running on them.</mod:selector>
+        <mod:setValue>(Adv. Sensors) Let them aboard but keep constant scans running on them.
+33% Reward Standard(L)
+33% Gain a crew(Random)
+33% Reward Item(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_BREACH">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>We can't help.</mod:selector>
+        <mod:setValue>We can't help.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_BREACH">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_BREACH_BOARD">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Call them out.</mod:selector>
+          <mod:setValue>Call them out.
+50% &lt;!&gt;Enemy Boarding(x2-x4 Random)</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_BREACH_BOARD">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Ignore the weapon.</mod:selector>
+          <mod:setValue>Ignore the weapon.
+50% Reward Standard(H)
+50% &lt;!&gt;Enemy Boarding(x2-x3 Random)
+50% {-3 ~-25 }-2</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Agree to track down the Militia ship hunting them.</mod:selector>
+        <mod:setValue>Agree to track down the Militia ship hunting them.
+Fight(CK=HK: Reward Standard(M))(SR: Repair Hull(10$) Reward { Only(M) Reward ~ Only(M))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Contact the ship.</mod:selector>
+            <mod:setValue>Contact the ship.
+Fight(CK=HK: Reward Standard(M))(SR: Repair Hull(10$) Reward { Only(M) Reward ~ Only(M))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Force them to surrender.</mod:selector>
+                <mod:setValue>Force them to surrender.
+Fight(CK=HK: Reward Standard(M))(SR: Repair Hull(10$) Reward { Only(M) Reward ~ Only(M))</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="event">
+                <mod:findLike type="choice">
+                  <mod:findLike type="text">
+                    <mod:selector>Continue...</mod:selector>
+                    <mod:setValue>Continue...
+Fight(CK=HK: Reward Standard(M))(SR: Repair Hull(10$) Reward { Only(M) Reward ~ Only(M))</mod:setValue>
+                  </mod:findLike>
+                </mod:findLike>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>(Free Mantis Crew) Talk to the Militiamen.</mod:selector>
+                <mod:setValue>(Free Mantis Crew) Talk to the Militiamen.
+Fight(CK=HK: Reward Standard(M))(SR: Repair Hull(10$) Reward { Only(M) Reward ~ Only(M))</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="event">
+                <mod:findLike type="choice">
+                  <mod:findLike type="text">
+                    <mod:selector>Continue...</mod:selector>
+                    <mod:setValue>Continue...
+Fight(CK=HK: Reward Standard(M))(SR: Repair Hull(10$) Reward { Only(M) Reward ~ Only(M))</mod:setValue>
+                  </mod:findLike>
+                </mod:findLike>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Bribe them.</mod:selector>
+                <mod:setValue>Bribe them.
+~-20</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="event">
+                <mod:findLike type="choice">
+                  <mod:findLike type="text">
+                    <mod:selector>Go back to the Free Mantis.</mod:selector>
+                    <mod:setValue>Go back to the Free Mantis.
+Repair Hull(10$)
+Reward { Only(M)
+Reward ~ Only(M)</mod:setValue>
+                  </mod:findLike>
+                </mod:findLike>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="event">
+                <mod:findLike type="choice">
+                  <mod:findLike type="event">
+                    <mod:findLike type="choice">
+                      <mod:findLike type="text">
+                        <mod:selector>Repairs.</mod:selector>
+                        <mod:setValue>Repairs.
+Repair Hull(10$)</mod:setValue>
+                      </mod:findLike>
+                    </mod:findLike>
+                  </mod:findLike>
+                </mod:findLike>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="event">
+                <mod:findLike type="choice">
+                  <mod:findLike type="event">
+                    <mod:findLike type="choice">
+                      <mod:findLike type="text">
+                        <mod:selector>Fuel.</mod:selector>
+                        <mod:setValue>Fuel.
+Reward { Only(M)</mod:setValue>
+                      </mod:findLike>
+                    </mod:findLike>
+                  </mod:findLike>
+                </mod:findLike>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="event">
+                <mod:findLike type="choice">
+                  <mod:findLike type="event">
+                    <mod:findLike type="choice">
+                      <mod:findLike type="text">
+                        <mod:selector>Scrap.</mod:selector>
+                        <mod:setValue>Scrap.
+Reward ~ Only(M)</mod:setValue>
+                      </mod:findLike>
+                    </mod:findLike>
+                  </mod:findLike>
+                </mod:findLike>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Destroy the ship.</mod:selector>
+            <mod:setValue>Destroy the ship.
+Fight(CK=HK: Reward Standard(M))(SR: Repair Hull(10$) Reward { Only(M) Reward ~ Only(M))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Fight(CK=HK: Reward Standard(M))(SR: Repair Hull(10$) Reward { Only(M) Reward ~ Only(M))</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Refuse.</mod:selector>
+        <mod:setValue>Refuse.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS_WIN">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Go back to the Free Mantis.</mod:selector>
+        <mod:setValue>Go back to the Free Mantis.
+Reward Standard(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS_SURRENDER">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Let the Free Mantis go and we'll spare you.</mod:selector>
+        <mod:setValue>Let the Free Mantis go and we'll spare you.
+Repair Hull(10$)
+Reward { Only(M)
+Reward ~ Only(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS_SURRENDER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Go back to the Free Mantis.</mod:selector>
+            <mod:setValue>Go back to the Free Mantis.
+Repair Hull(10$)
+Reward { Only(M)
+Reward ~ Only(M)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS_SURRENDER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Repairs.</mod:selector>
+                <mod:setValue>Repairs.
+Repair Hull(10$)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS_SURRENDER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Fuel.</mod:selector>
+                <mod:setValue>Fuel.
+Reward { Only(M)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FREEMANTIS_SURRENDER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Scrap.</mod:selector>
+                <mod:setValue>Scrap.
+Reward ~ Only(M)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Inquire on the process.</mod:selector>
+        <mod:setValue>Inquire on the process.
+-45≤~≤-35
+Gain a weapon(Laser Frost 2 Player)
+-40≤~≤-30
+Gain a weapon(Missiles Particle Player)
+-35≤~≤-25
+Gain a weapon(Ion Stun Chargegun Player)
+Gain a weapon(Missiles Burst 2 Player)
+Gain a weapon(Missiles Cloak Player)
+Gain a weapon(Missiles Fire Player)
+Gain a weapon(Beam 2 Player)
+Gain a weapon(Beam Long Player)
+Gain a weapon(Beam Fire Player)
+Gain a weapon(Beam Guillotine Player)
+Gain a weapon(Energy 2 Player)
+Gain a weapon(Energy Stun Player)
+Gain a weapon(Energy Chargegun Player)
+Gain a weapon(Shotgun 2 Player)
+Gain a weapon(Shotgun Toxic Player)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Upgrade your Frost Laser Mk II.</mod:selector>
+            <mod:setValue>Upgrade your Frost Laser Mk II.
+-45≤~≤-35
+Gain a weapon(Laser Frost 2 Player)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Gain a weapon(Laser Frost 2 Player)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Upgrade your Particle Missiles Launcher.</mod:selector>
+            <mod:setValue>Upgrade your Particle Missiles Launcher.
+-40≤~≤-30
+Gain a weapon(Missiles Particle Player)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Gain a weapon(Missiles Particle Player)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Upgrade your Ion Charge Stunner.</mod:selector>
+            <mod:setValue>Upgrade your Ion Charge Stunner.
+-35≤~≤-25
+Gain a weapon(Ion Stun Chargegun Player)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Gain a weapon(Ion Stun Chargegun Player)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Upgrade your Hydra Launcher.</mod:selector>
+            <mod:setValue>Upgrade your Hydra Launcher.
+-40≤~≤-30
+Gain a weapon(Missiles Burst 2 Player)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Gain a weapon(Missiles Burst 2 Player)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Upgrade your Nyx Launcher.</mod:selector>
+            <mod:setValue>Upgrade your Nyx Launcher.
+-35≤~≤-25
+Gain a weapon(Missiles Cloak Player)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Gain a weapon(Missiles Cloak Player)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Upgrade your Hades Launcher.</mod:selector>
+            <mod:setValue>Upgrade your Hades Launcher.
+-40≤~≤-30
+Gain a weapon(Missiles Fire Player)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Gain a weapon(Missiles Fire Player)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Upgrade your Halberd Beam.</mod:selector>
+            <mod:setValue>Upgrade your Halberd Beam.
+-45≤~≤-35
+Gain a weapon(Beam 2 Player)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Gain a weapon(Beam 2 Player)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Upgrade your Pike Beam.</mod:selector>
+            <mod:setValue>Upgrade your Pike Beam.
+-35≤~≤-25
+Gain a weapon(Beam Long Player)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Gain a weapon(Beam Long Player)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Upgrade your Torch Beam.</mod:selector>
+            <mod:setValue>Upgrade your Torch Beam.
+-35≤~≤-25
+Gain a weapon(Beam Fire Player)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Gain a weapon(Beam Fire Player)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Upgrade your Fauchard Beam.</mod:selector>
+            <mod:setValue>Upgrade your Fauchard Beam.
+-40≤~≤-30
+Gain a weapon(Beam Guillotine Player)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Gain a weapon(Beam Guillotine Player)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Upgrade your Energy Cannon Mk II.</mod:selector>
+            <mod:setValue>Upgrade your Energy Cannon Mk II.
+-40≤~≤-30
+Gain a weapon(Energy 2 Player)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Gain a weapon(Energy 2 Player)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Upgrade your Energy Stunner.</mod:selector>
+            <mod:setValue>Upgrade your Energy Stunner.
+-40≤~≤-30
+Gain a weapon(Energy Stun Player)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Gain a weapon(Energy Stun Player)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Upgrade your Energy Charger.</mod:selector>
+            <mod:setValue>Upgrade your Energy Charger.
+-35≤~≤-25
+Gain a weapon(Energy Chargegun Player)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Gain a weapon(Energy Chargegun Player)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Upgrade your Flak Cannon Mk II.</mod:selector>
+            <mod:setValue>Upgrade your Flak Cannon Mk II.
+-45≤~≤-35
+Gain a weapon(Shotgun 2 Player)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Gain a weapon(Shotgun 2 Player)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Upgrade your Irradiated Flak Cannon.</mod:selector>
+            <mod:setValue>Upgrade your Irradiated Flak Cannon.
+-45≤~≤-35
+Gain a weapon(Shotgun Toxic Player)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Gain a weapon(Shotgun Toxic Player)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Change your mind.</mod:selector>
+            <mod:setValue>Change your mind.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Do something onboard the ship.</mod:selector>
+                <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Inquire on the process.</mod:selector>
+        <mod:setValue>Inquire on the process.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Attack them!</mod:selector>
+        <mod:setValue>Attack them!
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Ignore the offer.</mod:selector>
+        <mod:setValue>Ignore the offer.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_EFFICIENCY_ENGINEER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_OUTCAST_REFUGEES">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Tuco) Threaten the Militia patrol.</mod:selector>
+        <mod:setValue>(Tuco) Threaten the Militia patrol.
+Reward Standard(H)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_OUTCAST_REFUGEES">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Reward Standard(H)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_OUTCAST_REFUGEES">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Outcast Crew) Recommend that the outcasts continue along.</mod:selector>
+        <mod:setValue>(Outcast Crew) Recommend that the outcasts continue along.
+Reward Standard(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_OUTCAST_REFUGEES">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Reward Standard(L)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_OUTCAST_REFUGEES">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Recommend that the outcasts continue along.</mod:selector>
+        <mod:setValue>Recommend that the outcasts continue along.
+50% Reward Standard(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_OUTCAST_REFUGEES">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Accuse the patrol of being prejudiced.</mod:selector>
+        <mod:setValue>Accuse the patrol of being prejudiced.
+33% Reward Standard(M)
+Fight(CK: 33% Reward Standard(H) 33% Reward Standard(L))(HK: 33% Reward Standard(M) 33% Reward Standard(L))(SR: 33% Reward Stuff(L) 33% Reward Standard(M))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_OUTCAST_REFUGEES">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Attack the Outcast escort.</mod:selector>
+        <mod:setValue>Attack the Outcast escort.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_OUTCAST_REFUGEES">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_OUTCAST_REFUGEES">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Attack the Militia patrol.</mod:selector>
+        <mod:setValue>Attack the Militia patrol.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_OUTCAST_REFUGEES">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_OUTCAST_REFUGEES">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Ignore the conflict.</mod:selector>
+        <mod:setValue>Ignore the conflict.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_OUTCAST_REFUGEES">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="MILITIA_OUTCAST_REFUGEES_PERSUADE">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+Reward Standard(L)</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="MILITIA_OUTCAST_REFUGEES_PERSUADE">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Attack.</mod:selector>
+          <mod:setValue>Attack.
+Fight</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="MILITIA_OUTCAST_REFUGEES_PERSUADE">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="event">
+          <mod:findLike type="choice">
+            <mod:findLike type="text">
+              <mod:selector>Continue...</mod:selector>
+              <mod:setValue>Continue...
+Fight</mod:setValue>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="MILITIA_OUTCAST_REFUGEES_ACCUSE">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Talk to the refugees.</mod:selector>
+          <mod:setValue>Talk to the refugees.
+Reward Standard(M)</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="MILITIA_OUTCAST_REFUGEES_ACCUSE">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Attack them.</mod:selector>
+          <mod:setValue>Attack them.
+Fight</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="MILITIA_OUTCAST_REFUGEES_ACCUSE">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="event">
+          <mod:findLike type="choice">
+            <mod:findLike type="text">
+              <mod:selector>Continue...</mod:selector>
+              <mod:setValue>Continue...
+Fight</mod:setValue>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="MILITIA_OUTCAST_REFUGEES_ACCUSE">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+Fight(CK: Reward Standard(H) Reward Standard(L))(HK: Reward Standard(M) Reward Standard(L))(SR: Reward Stuff(L) Reward Standard(M))</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_DRUNK">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Nights) "Your businesssss isss failing becausssse you SSSSUCK."</mod:selector>
+        <mod:setValue>(Nights) "Your businesssss isss failing becausssse you SSSSUCK."
+Gain a weapon(Giftlist Union)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_DRUNK">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Hurl insults at him.</mod:selector>
+        <mod:setValue>Hurl insults at him.
+Fight(CK: Reward Standard(M))(HK: Reward Standard(L))(SR: Reward Stuff(R))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_DRUNK">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight(CK: Reward Standard(M))(HK: Reward Standard(L))(SR: Reward Stuff(R))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_DRUNK">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Threaten to blow his ship to pieces.</mod:selector>
+        <mod:setValue>Threaten to blow his ship to pieces.
+33% Gain a weapon(Giftlist Union)
+33% Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_DRUNK">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Actually blow his ship to pieces.</mod:selector>
+        <mod:setValue>Actually blow his ship to pieces.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_DRUNK">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_DRUNK">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Completely ignore him.</mod:selector>
+        <mod:setValue>Completely ignore him.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_DRUNK">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_DRUNK_THREATEN">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+Fight</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_DRUNK_THREATEN">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Do something onboard the ship.</mod:selector>
+          <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_MINING">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Inspect closer.</mod:selector>
+        <mod:setValue>Inspect closer.
+Fight
+Reward {(M)
+|-1</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_MINING">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Attack them.</mod:selector>
+            <mod:setValue>Attack them.
+Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_MINING">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Fight</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_MINING">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>(Mining Equipment) Mine some of the asteroids on the outskirts.</mod:selector>
+            <mod:setValue>(Mining Equipment) Mine some of the asteroids on the outskirts.
+Reward {(M)
+Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_MINING">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Fight</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_MINING">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>(Beam Drone) Mine some of the asteroids on the outskirts. [-1|]</mod:selector>
+            <mod:setValue>(Beam Drone) Mine some of the asteroids on the outskirts. [-1|]
+Reward {(M)
+|-1
+Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_MINING">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Fight</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_MINING">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>(Scrap Arm) Mine some of the asteroids on the outskirts.</mod:selector>
+            <mod:setValue>(Scrap Arm) Mine some of the asteroids on the outskirts.
+Reward {(M)
+Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_MINING">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Fight</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_MINING">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Ignore them.</mod:selector>
+        <mod:setValue>Ignore them.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_MINING">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FACTORY">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Attack the guard to get to the factory.</mod:selector>
+        <mod:setValue>Attack the guard to get to the factory.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FACTORY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FACTORY">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Ignore the factory.</mod:selector>
+        <mod:setValue>Ignore the factory.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FACTORY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FACTORY_CHOICE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Grab a weapon.</mod:selector>
+        <mod:setValue>Grab a weapon.
+Gain a weapon(Random)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_FACTORY_CHOICE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Grab some ammunition.</mod:selector>
+        <mod:setValue>Grab some ammunition.
+}10</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_CARAVAN">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Protect the Militiamen.</mod:selector>
+        <mod:setValue>Protect the Militiamen.
+Fight(HK: Reward Standard(L) Reward Item(H))(CK: Reward Standard(M) Reward Item(H))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_CARAVAN">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight(HK: Reward Standard(L) Reward Item(H))(CK: Reward Standard(M) Reward Item(H))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_CARAVAN">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Cloaking) Cloak and rob the Transport while they're distracted.</mod:selector>
+        <mod:setValue>(Cloaking) Cloak and rob the Transport while they're distracted.
+Reward Standard(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_CARAVAN">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Hive Elite) Demand the Suzerain ship stand down.</mod:selector>
+        <mod:setValue>(Hive Elite) Demand the Suzerain ship stand down.
+Gain a crew(Random)
+Reward Standard(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_CARAVAN">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Flares) Use the flares to lure the Suzerain away from the caravan.</mod:selector>
+        <mod:setValue>(Flares) Use the flares to lure the Suzerain away from the caravan.
+Gain a crew(Random)
+Reward Standard(M)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_CARAVAN">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Ignore the ships.</mod:selector>
+        <mod:setValue>Ignore the ships.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_CARAVAN">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Demand an explanation.</mod:selector>
+        <mod:setValue>Demand an explanation.
+Gain a crew(Human Medic)
+Fight
+Reward Stuff(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>(Zoltan Crew) "You are in violation of Federation Statutes 105.2, 105.5 and 105.9!"</mod:selector>
+            <mod:setValue>(Zoltan Crew) "You are in violation of Federation Statutes 105.2, 105.5 and 105.9!"
+Gain a crew(Human Medic)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Gain a crew(Human Medic)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>(Separatist Crew) Admonish the attackers.</mod:selector>
+            <mod:setValue>(Separatist Crew) Admonish the attackers.
+Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Fight</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>(Turzil) Admonish the attackers.</mod:selector>
+            <mod:setValue>(Turzil) Admonish the attackers.
+Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Fight</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>(Engi Crew) Have your Engi find a compromise.</mod:selector>
+            <mod:setValue>(Engi Crew) Have your Engi find a compromise.
+Reward Stuff(L)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Reward Stuff(L)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>(Defender Crew) Convince your Defender to talk them out of it.</mod:selector>
+            <mod:setValue>(Defender Crew) Convince your Defender to talk them out of it.
+Gain a crew(Human Medic)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Gain a crew(Human Medic)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>(Positive Harmony Reputation) Use your good standing with the Harmony to convince them to stand down.</mod:selector>
+            <mod:setValue>(Positive Harmony Reputation) Use your good standing with the Harmony to convince them to stand down.
+Gain a crew(Human Medic)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Gain a crew(Human Medic)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Try to talk them out of it.</mod:selector>
+            <mod:setValue>Try to talk them out of it.
+Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Fight</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Acquiesce to the Engi's demands.</mod:selector>
+            <mod:setValue>Acquiesce to the Engi's demands.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Do something onboard the ship.</mod:selector>
+                <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Protect the clinic.</mod:selector>
+        <mod:setValue>Protect the clinic.
+Fight</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Acquiesce to the Engi's demands.</mod:selector>
+        <mod:setValue>Acquiesce to the Engi's demands.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_CLINIC_HARMONY">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_LANIUS_MISTAKE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Damaging Beam) Cut the ship off the station.</mod:selector>
+        <mod:setValue>(Damaging Beam) Cut the ship off the station.
+Reward Standard(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_LANIUS_MISTAKE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Reward Standard(L)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_LANIUS_MISTAKE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Beam Drone) Cut the ship off the station.</mod:selector>
+        <mod:setValue>(Beam Drone) Cut the ship off the station.
+|-1
+Reward Standard(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_LANIUS_MISTAKE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Reward Standard(L)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_LANIUS_MISTAKE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Lanius Crew) "Lanius ship stuck. Doesn't mean harm. Wants to trade for scrap. Has goods. Broken translator."</mod:selector>
+        <mod:setValue>(Lanius Crew) "Lanius ship stuck. Doesn't mean harm. Wants to trade for scrap. Has goods. Broken translator."
+Reward Standard(M)
+Gain a weapon(Giftlist Lanius)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_LANIUS_MISTAKE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Gain a weapon(Giftlist Lanius)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_LANIUS_MISTAKE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Attack the offending Lanius vessel.</mod:selector>
+        <mod:setValue>Attack the offending Lanius vessel.
+Fight(HK: Reward Standard(M))(CK: Reward Standard(H) Reward Standard(L))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_LANIUS_MISTAKE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight(HK: Reward Standard(M))(CK: Reward Standard(H) Reward Standard(L))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_LANIUS_MISTAKE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Try to communicate with the Lanius.</mod:selector>
+        <mod:setValue>Try to communicate with the Lanius.
+33% Reward Standard(L)
+Fight(HK: 33% Reward Standard(M))(CK: 33% Reward Standard(H) 33% Reward Standard(L))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_LANIUS_MISTAKE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Leave the scene alone.</mod:selector>
+        <mod:setValue>Leave the scene alone.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_LANIUS_MISTAKE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_LANIUS_SOLVED_NO_TRANSLATOR">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Give it some scrap.</mod:selector>
+        <mod:setValue>Give it some scrap.
+-45≤~≤-35
+Gain a weapon(Shotgun 2)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_LANIUS_SOLVED_NO_TRANSLATOR">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Pick up the gift the Lanius left behind.</mod:selector>
+            <mod:setValue>Pick up the gift the Lanius left behind.
+Gain a weapon(Shotgun 2)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_LANIUS_SOLVED_NO_TRANSLATOR">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Give it some missiles.</mod:selector>
+        <mod:setValue>Give it some missiles.
+-6≤}≤-4
+Gain a weapon(Bomb Breach 1)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_LANIUS_SOLVED_NO_TRANSLATOR">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Pick up the gift the Lanius left behind.</mod:selector>
+            <mod:setValue>Pick up the gift the Lanius left behind.
+Gain a weapon(Bomb Breach 1)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_LANIUS_SOLVED_NO_TRANSLATOR">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Give it some drones.</mod:selector>
+        <mod:setValue>Give it some drones.
+-5≤|≤-3
+Gain a drone(Flak 1 Amp3)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="UNION_LANIUS_SOLVED_NO_TRANSLATOR">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Pick up the gift the Lanius left behind.</mod:selector>
+            <mod:setValue>Pick up the gift the Lanius left behind.
+Gain a drone(Flak 1 Amp3)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_LANIUS_CONTACT">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Inform the station.</mod:selector>
+          <mod:setValue>Inform the station.
+Reward Standard(L)</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_LANIUS_CONTACT">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="event">
+          <mod:findLike type="choice">
+            <mod:findLike type="text">
+              <mod:selector>Continue...</mod:selector>
+              <mod:setValue>Continue...
+Reward Standard(L)</mod:setValue>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_UNION_LANIUS_CONTACT">
+    <mod:findLike type="event">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+Fight(HK: Reward Standard(M))(CK: Reward Standard(H) Reward Standard(L))</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_UNION_HOTHEADED_CIV">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Agree to help.</mod:selector>
+        <mod:setValue>Agree to help.
+Reward ~ Only(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_UNION_HOTHEADED_CIV">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>We don't have time for this.</mod:selector>
+        <mod:setValue>We don't have time for this.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_UNION_HOTHEADED_CIV">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_UNION_HOTHEADED_CIV_SPOT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>(Upg. Hacking) Hack their mainframe before they notice you.</mod:selector>
+        <mod:setValue>(Upg. Hacking) Hack their mainframe before they notice you.
+Fight(CK: Reward Standard(H) Reward ~ Only(M))(HK: Reward Standard(M) Reward ~ Only(M))(SR: Reward ~ Only(M))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_UNION_HOTHEADED_CIV_SPOT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight(CK: Reward Standard(H) Reward ~ Only(M))(HK: Reward Standard(M) Reward ~ Only(M))(SR: Reward ~ Only(M))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_UNION_HOTHEADED_CIV_SPOT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Attack the Slug ship.</mod:selector>
+        <mod:setValue>Attack the Slug ship.
+Fight(CK: Reward Standard(H) Reward ~ Only(M))(HK: Reward Standard(M))(SR: Reward ~ Only(M))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_UNION_HOTHEADED_CIV_SPOT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight(CK: Reward Standard(H) Reward ~ Only(M))(HK: Reward Standard(M))(SR: Reward ~ Only(M))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENCOUNTER_PIRATE_STATION_UNION">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ENCOUNTER_COALITION_UNION">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="RST_START">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>We don't know anything, sorry.</mod:selector>
+        <mod:setValue>We don't know anything, sorry.
+Reward Standard(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="RST_START">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Sure thing!</mod:selector>
+            <mod:setValue>Sure thing!
+Reward Standard(L)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="RST_START">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Remind me who Dr. Renfield is?</mod:selector>
+            <mod:setValue>Remind me who Dr. Renfield is?
+Reward Standard(L)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="RST_START">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Agree to the task.</mod:selector>
+                <mod:setValue>Agree to the task.
+Reward Standard(L)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="RST_START">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Oh yeah I know all about Renfield. I think he was my brother or something?</mod:selector>
+        <mod:setValue>Oh yeah I know all about Renfield. I think he was my brother or something?
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="RST_START">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SPIDER_QUEST_START">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>We're no civilian ship, what is the issue?</mod:selector>
+        <mod:setValue>We're no civilian ship, what is the issue?
+Fight(CK: Reward Standard(H))(SR: Reward Standard(L))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SPIDER_QUEST_START">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Agree.</mod:selector>
+            <mod:setValue>Agree.
+Fight(CK: Reward Standard(H))(SR: Reward Standard(L))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SPIDER_QUEST_START">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Fight(CK: Reward Standard(H))(SR: Reward Standard(L))</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SPIDER_QUEST_START">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>(Haynes) "Excuse me... did you say... spiders?"</mod:selector>
+            <mod:setValue>(Haynes) "Excuse me... did you say... spiders?"
+Fight(CK: Reward Standard(H))(SR: Reward Standard(L))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SPIDER_QUEST_START">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Agree to help.</mod:selector>
+                <mod:setValue>Agree to help.
+Fight(CK: Reward Standard(H))(SR: Reward Standard(L))</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SPIDER_QUEST_START">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="event">
+                <mod:findLike type="choice">
+                  <mod:findLike type="text">
+                    <mod:selector>Continue...</mod:selector>
+                    <mod:setValue>Continue...
+Fight(CK: Reward Standard(H))(SR: Reward Standard(L))</mod:setValue>
+                  </mod:findLike>
+                </mod:findLike>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SPIDER_QUEST_START">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>We're no civilian ship, what is the issue?</mod:selector>
+        <mod:setValue>We're no civilian ship, what is the issue?
+Fight(CK: Reward Standard(H))(SR: Reward Standard(L))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SPIDER_QUEST_START">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Agree.</mod:selector>
+            <mod:setValue>Agree.
+Fight(CK: Reward Standard(H))(SR: Reward Standard(L))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SPIDER_QUEST_START">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Fight(CK: Reward Standard(H))(SR: Reward Standard(L))</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SPIDER_QUEST_START">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Agree to leave.</mod:selector>
+        <mod:setValue>Agree to leave.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SPIDER_QUEST_START">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="INFESTED_STATION_SURRENDER">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Stop firing.</mod:selector>
+        <mod:setValue>Stop firing.
+Reward Standard(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="KESTREL_UNLOCK">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Inquire about the offer.</mod:selector>
+        <mod:setValue>Inquire about the offer.
+Gain a drone(Gana Battle)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="KESTREL_UNLOCK">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Ignore the offer.</mod:selector>
+        <mod:setValue>Ignore the offer.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="KESTREL_UNLOCK">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="KESTREL_UNLOCK_OFFER">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>We do.</mod:selector>
+        <mod:setValue>We do.
+Gain a drone(Gana Battle)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="KESTREL_UNLOCK_OFFER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>To sell it?</mod:selector>
+            <mod:setValue>To sell it?
+Gain a drone(Gana Battle)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="KESTREL_UNLOCK_OFFER">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>What about that old Kestrel?</mod:selector>
+                <mod:setValue>What about that old Kestrel?
+Gain a drone(Gana Battle)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="KESTREL_UNLOCK_PIRATE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>We can take them.</mod:selector>
+        <mod:setValue>We can take them.
+Fight(HK=CK: Reward Standard(M))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="KESTREL_UNLOCK_PIRATE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Continue...</mod:selector>
+            <mod:setValue>Continue...
+Fight(HK=CK: Reward Standard(M))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="KESTREL_UNLOCK_PIRATE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>We aren't picking a fight with the Brood.</mod:selector>
+        <mod:setValue>We aren't picking a fight with the Brood.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="KESTREL_UNLOCK_PIRATE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SHIP_HEPHAESTUS_KESTREL">
+    <mod:findLike type="destroyed">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+&lt;#&gt;Unlock Ship(Kestrel)
+Reward Stuff(L)</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="SHIP_HEPHAESTUS_KESTREL">
+    <mod:findLike type="deadCrew">
+      <mod:findLike type="choice">
+        <mod:findLike type="text">
+          <mod:selector>Continue...</mod:selector>
+          <mod:setValue>Continue...
+&lt;#&gt;Unlock Ship(Kestrel)
+Reward Stuff(L)</mod:setValue>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="KESTREL_UNLOCK_RINGSHIP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Demand they give back the Kasparov.</mod:selector>
+        <mod:setValue>Demand they give back the Kasparov.
+Fight(HK: Reward Standard(M) &lt;#&gt;Unlock Ship(Kestrel) Reward Stuff(L))(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Kestrel) Reward Stuff(L))
+&lt;#&gt;Unlock Ship(Kestrel)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="KESTREL_UNLOCK_RINGSHIP">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>It's the Kasparov.</mod:selector>
+            <mod:setValue>It's the Kasparov.
+Fight(HK: Reward Standard(M) &lt;#&gt;Unlock Ship(Kestrel) Reward Stuff(L))(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Kestrel) Reward Stuff(L))
+&lt;#&gt;Unlock Ship(Kestrel)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="KESTREL_UNLOCK_RINGSHIP">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Well, if it's a fight you want...</mod:selector>
+                <mod:setValue>Well, if it's a fight you want...
+Fight(HK: Reward Standard(M) &lt;#&gt;Unlock Ship(Kestrel) Reward Stuff(L))(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Kestrel) Reward Stuff(L))
+&lt;#&gt;Unlock Ship(Kestrel)</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="KESTREL_UNLOCK_RINGSHIP">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="event">
+                <mod:findLike type="choice">
+                  <mod:findLike type="text">
+                    <mod:selector>Continue...</mod:selector>
+                    <mod:setValue>Continue...
+Fight(HK: Reward Standard(M) &lt;#&gt;Unlock Ship(Kestrel) Reward Stuff(L))(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Kestrel) Reward Stuff(L))
+&lt;#&gt;Unlock Ship(Kestrel)</mod:setValue>
+                  </mod:findLike>
+                </mod:findLike>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="KESTREL_UNLOCK_RINGSHIP">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Ignore the depot.</mod:selector>
+        <mod:setValue>Ignore the depot.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="KESTREL_UNLOCK_RINGSHIP">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="KESTREL_UNLOCK_QUEST_3">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;#&gt;Unlock Ship(Kestrel)
+Reward Stuff(L)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="KESTREL_UNLOCK_QUEST_3">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Hideo Tanaka hired pirates to steal your ship for his collection.</mod:selector>
+            <mod:setValue>Hideo Tanaka hired pirates to steal your ship for his collection.
+Reward Stuff(L)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="COREWORLDS_EARTH">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+&lt;!&gt;Fleet Advance(1)</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="COREWORLDS_EARTH">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Land and explore the park.</mod:selector>
+            <mod:setValue>Land and explore the park.
+&lt;!&gt;Fleet Advance(1)</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="COREWORLDS_EARTH">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Ignore the park.</mod:selector>
+            <mod:setValue>Ignore the park.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="COREWORLDS_EARTH">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Do something onboard the ship.</mod:selector>
+                <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BARREL">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Hail them and try to negotiate.</mod:selector>
+        <mod:setValue>Hail them and try to negotiate.
+Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(H) Gain a weapon(Part Gatling Barrel))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BARREL">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>We've come for the Gatling Barrel.</mod:selector>
+            <mod:setValue>We've come for the Gatling Barrel.
+Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(H) Gain a weapon(Part Gatling Barrel))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BARREL">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Then we'll have to take it!</mod:selector>
+                <mod:setValue>Then we'll have to take it!
+Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(H) Gain a weapon(Part Gatling Barrel))</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BARREL">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="event">
+                <mod:findLike type="choice">
+                  <mod:findLike type="text">
+                    <mod:selector>Continue...</mod:selector>
+                    <mod:setValue>Continue...
+Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(H) Gain a weapon(Part Gatling Barrel))</mod:setValue>
+                  </mod:findLike>
+                </mod:findLike>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BARREL">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>(Mantis Crew) Negotiate for the Barrel.</mod:selector>
+            <mod:setValue>(Mantis Crew) Negotiate for the Barrel.
+Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(H) Gain a weapon(Part Gatling Barrel))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BARREL">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Attack!</mod:selector>
+                <mod:setValue>Attack!
+Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(H) Gain a weapon(Part Gatling Barrel))</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BARREL">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="event">
+                <mod:findLike type="choice">
+                  <mod:findLike type="text">
+                    <mod:selector>Continue...</mod:selector>
+                    <mod:setValue>Continue...
+Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(H) Gain a weapon(Part Gatling Barrel))</mod:setValue>
+                  </mod:findLike>
+                </mod:findLike>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BARREL">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>This is risky, we should leave.</mod:selector>
+        <mod:setValue>This is risky, we should leave.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BARREL">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BASE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>We have a war of our own to fight. If these people were alive, they'd understand.</mod:selector>
+        <mod:setValue>We have a war of our own to fight. If these people were alive, they'd understand.
+Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Federation))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BASE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Dig up Adam Miller.</mod:selector>
+            <mod:setValue>Dig up Adam Miller.
+Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Federation))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BASE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Federation))</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BASE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Dig up Jackson Newman.</mod:selector>
+            <mod:setValue>Dig up Jackson Newman.
+Gain a weapon(Part Gatling Base)
+Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Federation))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BASE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Federation))</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BASE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="event">
+                <mod:findLike type="choice">
+                  <mod:findLike type="text">
+                    <mod:selector>Continue...</mod:selector>
+                    <mod:setValue>Continue...
+Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Federation))</mod:setValue>
+                  </mod:findLike>
+                </mod:findLike>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BASE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Dig up Alaster Williams.</mod:selector>
+            <mod:setValue>Dig up Alaster Williams.
+Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Federation))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BASE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Federation))</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BASE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Dig up Jake Willson.</mod:selector>
+            <mod:setValue>Dig up Jake Willson.
+Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Federation))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BASE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Federation))</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BASE">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>We have better things to do than dishonouring the dead.</mod:selector>
+        <mod:setValue>We have better things to do than dishonouring the dead.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_BASE">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Do something onboard the ship.</mod:selector>
+            <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_AUGMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="text">
+        <mod:selector>Hail them.</mod:selector>
+        <mod:setValue>Hail them.
+Fight(CK: Reward Standard No Item(H) Gain an augment(Part Gatling Augment))(HK: Reward Standard(M))(SR: Gain an augment(Part Gatling Augment))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_AUGMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Buy the Pre-Igniter.</mod:selector>
+            <mod:setValue>Buy the Pre-Igniter.
+Gain an augment(Part Gatling Augment)
+~-30</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_AUGMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Buy the "Jumbo Deal" along with the Pre-Igniter.</mod:selector>
+            <mod:setValue>Buy the "Jumbo Deal" along with the Pre-Igniter.
+Gain an augment(Part Gatling Augment)
+~-50 {3 }3 |3</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_AUGMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Take it through force!</mod:selector>
+            <mod:setValue>Take it through force!
+Fight(CK: Reward Standard No Item(H) Gain an augment(Part Gatling Augment))(HK: Reward Standard(M))(SR: Gain an augment(Part Gatling Augment))</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_AUGMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Continue...</mod:selector>
+                <mod:setValue>Continue...
+Fight(CK: Reward Standard No Item(H) Gain an augment(Part Gatling Augment))(HK: Reward Standard(M))(SR: Gain an augment(Part Gatling Augment))</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_AUGMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="text">
+            <mod:selector>Whatever, let's go.</mod:selector>
+            <mod:setValue>Whatever, let's go.
+Storage Check</mod:setValue>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="QUEST_GATLING_AUGMENT">
+    <mod:findLike type="choice">
+      <mod:findLike type="event">
+        <mod:findLike type="choice">
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="text">
+                <mod:selector>Do something onboard the ship.</mod:selector>
+                <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findLike>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+</FTL>
