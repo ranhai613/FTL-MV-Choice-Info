@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="RUINS_TRANSLATE">
+  <mod:findName name="RUINS_TRANSLATE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="SEC SECTOR_VAGABOND_UNIQUE" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -14,8 +15,9 @@
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_TRANSLATE">
+  <mod:findName name="RUINS_TRANSLATE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="SEC SECRET_AUGMENTED" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -27,8 +29,9 @@
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_TRANSLATE">
+  <mod:findName name="RUINS_TRANSLATE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="pilot" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -43,8 +46,9 @@
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_TRANSLATE_FULL">
+  <mod:findName name="RUINS_TRANSLATE_FULL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="SEC SECTOR_VAGABOND_UNIQUE" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -58,8 +62,9 @@
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_TRANSLATE_FULL">
+  <mod:findName name="RUINS_TRANSLATE_FULL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="SEC SECRET_AUGMENTED" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -71,8 +76,9 @@
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_TRANSLATE_FULL">
+  <mod:findName name="RUINS_TRANSLATE_FULL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="pilot" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -87,8 +93,9 @@
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE">
+  <mod:findName name="RUINS_SALVAGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -103,8 +110,9 @@
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE">
+  <mod:findName name="RUINS_SALVAGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_anointed" blue="true"/>
       <mod:findLike type="text">
         <mod:selector>(Anointed) Translate the words on the ruins.</mod:selector>
         <mod:setValue>(Anointed) Translate the words on the ruins.
@@ -112,10 +120,12 @@
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE">
+  <mod:findName name="RUINS_SALVAGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_anointed" blue="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -125,8 +135,9 @@
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE">
+  <mod:findName name="RUINS_SALVAGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="UPG_AETHER_TRANSLATOR" blue="true"/>
       <mod:findLike type="text">
         <mod:selector>(Runic Translator) Translate the words on the ruins.</mod:selector>
         <mod:setValue>(Runic Translator) Translate the words on the ruins.
@@ -134,10 +145,12 @@
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE">
+  <mod:findName name="RUINS_SALVAGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="UPG_AETHER_TRANSLATOR" blue="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -147,8 +160,9 @@
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE">
+  <mod:findName name="RUINS_SALVAGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ANCIENT" blue="true"/>
       <mod:findLike type="text">
         <mod:selector>(Obelisk Crew) Translate the words on the ruins.</mod:selector>
         <mod:setValue>(Obelisk Crew) Translate the words on the ruins.
@@ -156,8 +170,9 @@
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE">
+  <mod:findName name="RUINS_SALVAGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_COGNITIVE_ALL" blue="true"/>
       <mod:findLike type="text">
         <mod:selector>(Cognitive Crew) Translate the words on the ruins.</mod:selector>
         <mod:setValue>(Cognitive Crew) Translate the words on the ruins.
@@ -165,9 +180,10 @@
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_RUINS_REBEL_AUTO">
+  <mod:findName name="SHIP_RUINS_REBEL_AUTO" type="ship">
     <mod:findLike type="destroyed">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Salvage the ruins.</mod:selector>
           <mod:setValue>Salvage the ruins.
@@ -176,8 +192,9 @@
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_REBEL_AUTO">
+  <mod:findName name="RUINS_REBEL_AUTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -186,10 +203,12 @@ Fight(HK: Reward Standard(M) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_REBEL_AUTO">
+  <mod:findName name="RUINS_REBEL_AUTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attack!</mod:selector>
             <mod:setValue>Attack!
@@ -200,12 +219,15 @@ Fight(HK: Reward Standard(M) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_REBEL_AUTO">
+  <mod:findName name="RUINS_REBEL_AUTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -218,10 +240,12 @@ Fight(HK: Reward Standard(M) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_REBEL_AUTO">
+  <mod:findName name="RUINS_REBEL_AUTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_ENGINEER"/>
           <mod:findLike type="text">
             <mod:selector>(Engineer Crew) Shut down the Auto.</mod:selector>
             <mod:setValue>(Engineer Crew) Shut down the Auto.
@@ -231,12 +255,15 @@ Fight(HK: Reward Standard(M) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_REBEL_AUTO">
+  <mod:findName name="RUINS_REBEL_AUTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_ENGINEER"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Salvage the ruins.</mod:selector>
                 <mod:setValue>Salvage the ruins.
@@ -248,10 +275,12 @@ Fight(HK: Reward Standard(M) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_REBEL_AUTO">
+  <mod:findName name="RUINS_REBEL_AUTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Ignore the ruins.</mod:selector>
             <mod:setValue>Ignore the ruins.
@@ -261,12 +290,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_REBEL_AUTO">
+  <mod:findName name="RUINS_REBEL_AUTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -278,9 +310,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_RUINS_GHOST">
+  <mod:findName name="SHIP_RUINS_GHOST" type="ship">
     <mod:findLike type="destroyed">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Salvage the ruins.</mod:selector>
           <mod:setValue>Salvage the ruins.
@@ -289,9 +322,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_RUINS_GHOST">
+  <mod:findName name="SHIP_RUINS_GHOST" type="ship">
     <mod:findLike type="deadCrew">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Salvage the ruins.</mod:selector>
           <mod:setValue>Salvage the ruins.
@@ -300,8 +334,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_GHOST">
+  <mod:findName name="RUINS_GHOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -310,10 +345,12 @@ Fight(HK=CK: Reward Standard(L) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_GHOST">
+  <mod:findName name="RUINS_GHOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attack!</mod:selector>
             <mod:setValue>Attack!
@@ -324,12 +361,15 @@ Fight(HK=CK: Reward Standard(L) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_GHOST">
+  <mod:findName name="RUINS_GHOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -342,10 +382,12 @@ Fight(HK=CK: Reward Standard(L) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_GHOST">
+  <mod:findName name="RUINS_GHOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Ignore the ruins.</mod:selector>
             <mod:setValue>Ignore the ruins.
@@ -355,12 +397,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_GHOST">
+  <mod:findName name="RUINS_GHOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -372,9 +417,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_RUINS_CRYSTAL">
+  <mod:findName name="SHIP_RUINS_CRYSTAL" type="ship">
     <mod:findLike type="destroyed">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Salvage the ruins.</mod:selector>
           <mod:setValue>Salvage the ruins.
@@ -383,9 +429,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_RUINS_CRYSTAL">
+  <mod:findName name="SHIP_RUINS_CRYSTAL" type="ship">
     <mod:findLike type="deadCrew">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Salvage the ruins.</mod:selector>
           <mod:setValue>Salvage the ruins.
@@ -394,8 +441,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_CRYSTAL">
+  <mod:findName name="RUINS_CRYSTAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -404,10 +452,12 @@ Fight(HK=CK: Reward Standard(L) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_CRYSTAL">
+  <mod:findName name="RUINS_CRYSTAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attack!</mod:selector>
             <mod:setValue>Attack!
@@ -418,12 +468,15 @@ Fight(HK=CK: Reward Standard(L) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_CRYSTAL">
+  <mod:findName name="RUINS_CRYSTAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -436,10 +489,12 @@ Fight(HK=CK: Reward Standard(L) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_CRYSTAL">
+  <mod:findName name="RUINS_CRYSTAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Ignore the ruins.</mod:selector>
             <mod:setValue>Ignore the ruins.
@@ -449,12 +504,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_CRYSTAL">
+  <mod:findName name="RUINS_CRYSTAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -466,9 +524,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_RUINS_CLANSMAN">
+  <mod:findName name="SHIP_RUINS_CLANSMAN" type="ship">
     <mod:findLike type="destroyed">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Salvage the ruins.</mod:selector>
           <mod:setValue>Salvage the ruins.
@@ -477,9 +536,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_RUINS_CLANSMAN">
+  <mod:findName name="SHIP_RUINS_CLANSMAN" type="ship">
     <mod:findLike type="deadCrew">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Salvage the ruins.</mod:selector>
           <mod:setValue>Salvage the ruins.
@@ -488,8 +548,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_CLANSMAN">
+  <mod:findName name="RUINS_CLANSMAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -498,10 +559,12 @@ Fight(HK=CK: Reward Standard(L) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_CLANSMAN">
+  <mod:findName name="RUINS_CLANSMAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attack!</mod:selector>
             <mod:setValue>Attack!
@@ -512,12 +575,15 @@ Fight(HK=CK: Reward Standard(L) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_CLANSMAN">
+  <mod:findName name="RUINS_CLANSMAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -530,10 +596,12 @@ Fight(HK=CK: Reward Standard(L) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_CLANSMAN">
+  <mod:findName name="RUINS_CLANSMAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Ignore the ruins.</mod:selector>
             <mod:setValue>Ignore the ruins.
@@ -543,12 +611,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_CLANSMAN">
+  <mod:findName name="RUINS_CLANSMAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -560,8 +631,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_TRAP">
+  <mod:findName name="RUINS_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -569,10 +641,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_TRAP">
+  <mod:findName name="RUINS_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Board the ship.</mod:selector>
             <mod:setValue>Board the ship.
@@ -584,12 +658,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_TRAP">
+  <mod:findName name="RUINS_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="BLUELIST_CREW_NO2"/>
               <mod:findLike type="text">
                 <mod:selector>(Anaerobic Crew) Send in the anaerobic crew.</mod:selector>
                 <mod:setValue>(Anaerobic Crew) Send in the anaerobic crew.
@@ -602,12 +679,15 @@ Gain a drone(Ancient Combat Laser)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_TRAP">
+  <mod:findName name="RUINS_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="O2_MASKS"/>
               <mod:findLike type="text">
                 <mod:selector>(Emergency Respirators) Use the respirators.</mod:selector>
                 <mod:setValue>(Emergency Respirators) Use the respirators.
@@ -620,12 +700,15 @@ Gain a drone(Ancient Combat Laser)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_TRAP">
+  <mod:findName name="RUINS_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_ORCHID"/>
               <mod:findLike type="text">
                 <mod:selector>(Orchid Crew) No breaches detected, the Orchid should be able to provide oxygen.</mod:selector>
                 <mod:setValue>(Orchid Crew) No breaches detected, the Orchid should be able to provide oxygen.
@@ -638,12 +721,15 @@ Gain a drone(Ancient Combat Laser)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_TRAP">
+  <mod:findName name="RUINS_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>We have nothing to proceed with.</mod:selector>
                 <mod:setValue>We have nothing to proceed with.
@@ -655,14 +741,18 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_TRAP">
+  <mod:findName name="RUINS_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Do something onboard the ship.</mod:selector>
                     <mod:setValue>Do something onboard the ship.
@@ -676,10 +766,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_TRAP">
+  <mod:findName name="RUINS_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Ignore the ruins.</mod:selector>
             <mod:setValue>Ignore the ruins.
@@ -689,12 +781,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_TRAP">
+  <mod:findName name="RUINS_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -706,8 +801,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_TRAP_CONTINUE">
+  <mod:findName name="RUINS_TRAP_CONTINUE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>There's a weapon here, grab it!</mod:selector>
         <mod:setValue>There's a weapon here, grab it!
@@ -715,10 +811,12 @@ Gain a weapon(Ancient Beam)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_TRAP_CONTINUE">
+  <mod:findName name="RUINS_TRAP_CONTINUE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Hurry back to the ship!</mod:selector>
             <mod:setValue>Hurry back to the ship!
@@ -728,8 +826,9 @@ Gain a weapon(Ancient Beam)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_TRAP_CONTINUE">
+  <mod:findName name="RUINS_TRAP_CONTINUE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>There's a drone here, grab it!</mod:selector>
         <mod:setValue>There's a drone here, grab it!
@@ -737,10 +836,12 @@ Gain a drone(Ancient Combat Laser)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_TRAP_CONTINUE">
+  <mod:findName name="RUINS_TRAP_CONTINUE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Hurry back to the ship!</mod:selector>
             <mod:setValue>Hurry back to the ship!
@@ -750,8 +851,9 @@ Gain a drone(Ancient Combat Laser)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_STAR">
+  <mod:findName name="RUINS_STAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Move in closer.</mod:selector>
         <mod:setValue>Move in closer.
@@ -760,10 +862,12 @@ Gain a drone(Ancient Combat Laser)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_STAR">
+  <mod:findName name="RUINS_STAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue, we can take a hit.</mod:selector>
             <mod:setValue>Continue, we can take a hit.
@@ -774,10 +878,12 @@ Gain a drone(Ancient Combat Laser)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_STAR">
+  <mod:findName name="RUINS_STAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="shields" lvl="6"/>
           <mod:findLike type="text">
             <mod:selector>(Adv. Shields) Our shields will protect us.</mod:selector>
             <mod:setValue>(Adv. Shields) Our shields will protect us.
@@ -789,10 +895,12 @@ Gain a drone(Director)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_STAR">
+  <mod:findName name="RUINS_STAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Too risky.</mod:selector>
             <mod:setValue>Too risky.
@@ -802,12 +910,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_STAR">
+  <mod:findName name="RUINS_STAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -819,8 +930,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_STAR">
+  <mod:findName name="RUINS_STAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="0" max_lvl="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>"WARNING: hazardous conditions detected. Investigating without further preparations: unadvised."</mod:selector>
         <mod:setValue>"WARNING: hazardous conditions detected. Investigating without further preparations: unadvised."
@@ -828,10 +940,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_STAR">
+  <mod:findName name="RUINS_STAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="0" max_lvl="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -841,8 +955,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_STAR_PROCEED">
+  <mod:findName name="RUINS_STAR_PROCEED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Grab the drone and get out!</mod:selector>
         <mod:setValue>Grab the drone and get out!
@@ -850,10 +965,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_STAR_PROCEED">
+  <mod:findName name="RUINS_STAR_PROCEED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Save the drone!</mod:selector>
             <mod:setValue>Save the drone!
@@ -864,10 +981,12 @@ Gain a drone(Director)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_STAR_PROCEED">
+  <mod:findName name="RUINS_STAR_PROCEED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Save both but risk some more damage.</mod:selector>
             <mod:setValue>Save both but risk some more damage.
@@ -878,10 +997,12 @@ Gain a drone(Director)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_STAR_PROCEED">
+  <mod:findName name="RUINS_STAR_PROCEED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="teleporter" lvl="2"/>
           <mod:findLike type="text">
             <mod:selector>(Upg. Teleporter) Save both quickly.</mod:selector>
             <mod:setValue>(Upg. Teleporter) Save both quickly.
@@ -891,8 +1012,9 @@ Gain a drone(Director)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_STAR_PROCEED_SHIELDS">
+  <mod:findName name="RUINS_STAR_PROCEED_SHIELDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Grab the drone and get out!</mod:selector>
         <mod:setValue>Grab the drone and get out!
@@ -902,10 +1024,12 @@ Gain a drone(Director)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_STAR_PROCEED_SHIELDS">
+  <mod:findName name="RUINS_STAR_PROCEED_SHIELDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Save the drone!</mod:selector>
             <mod:setValue>Save the drone!
@@ -916,10 +1040,12 @@ Gain a drone(Director)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_STAR_PROCEED_SHIELDS">
+  <mod:findName name="RUINS_STAR_PROCEED_SHIELDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Save both but risk some more damage.</mod:selector>
             <mod:setValue>Save both but risk some more damage.
@@ -930,10 +1056,12 @@ Gain a drone(Director)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_STAR_PROCEED_SHIELDS">
+  <mod:findName name="RUINS_STAR_PROCEED_SHIELDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="teleporter" lvl="2"/>
           <mod:findLike type="text">
             <mod:selector>(Upg. Teleporter) Save both quickly.</mod:selector>
             <mod:setValue>(Upg. Teleporter) Save both quickly.
@@ -943,9 +1071,10 @@ Gain a drone(Director)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_RUINS_DYNASTY_ELITE">
+  <mod:findName name="SHIP_RUINS_DYNASTY_ELITE" type="ship">
     <mod:findLike type="destroyed">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Salvage the ruins.</mod:selector>
           <mod:setValue>Salvage the ruins.
@@ -954,9 +1083,10 @@ Gain a drone(Director)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_RUINS_DYNASTY_ELITE">
+  <mod:findName name="SHIP_RUINS_DYNASTY_ELITE" type="ship">
     <mod:findLike type="deadCrew">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Salvage the ruins.</mod:selector>
           <mod:setValue>Salvage the ruins.
@@ -965,8 +1095,9 @@ Gain a drone(Director)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_DYNASTY_GHOSTWASTE">
+  <mod:findName name="RUINS_DYNASTY_GHOSTWASTE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -975,10 +1106,12 @@ Fight(HK: Reward Standard(L) 25% &lt;#&gt;Unlock Ship(Augmented))(CK: Reward Sta
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_DYNASTY_GHOSTWASTE">
+  <mod:findName name="RUINS_DYNASTY_GHOSTWASTE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attack!</mod:selector>
             <mod:setValue>Attack!
@@ -989,12 +1122,15 @@ Fight(HK: Reward Standard(L) 25% &lt;#&gt;Unlock Ship(Augmented))(CK: Reward Sta
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_DYNASTY_GHOSTWASTE">
+  <mod:findName name="RUINS_DYNASTY_GHOSTWASTE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1007,10 +1143,12 @@ Fight(HK: Reward Standard(L) 25% &lt;#&gt;Unlock Ship(Augmented))(CK: Reward Sta
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_DYNASTY_GHOSTWASTE">
+  <mod:findName name="RUINS_DYNASTY_GHOSTWASTE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Ignore the ruins.</mod:selector>
             <mod:setValue>Ignore the ruins.
@@ -1020,12 +1158,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_DYNASTY_GHOSTWASTE">
+  <mod:findName name="RUINS_DYNASTY_GHOSTWASTE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -1037,9 +1178,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_RUINS_VAGABOND_GHOSTWASTE">
+  <mod:findName name="SHIP_RUINS_VAGABOND_GHOSTWASTE" type="ship">
     <mod:findLike type="destroyed">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Salvage the ruins.</mod:selector>
           <mod:setValue>Salvage the ruins.
@@ -1048,9 +1190,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_RUINS_VAGABOND_GHOSTWASTE">
+  <mod:findName name="SHIP_RUINS_VAGABOND_GHOSTWASTE" type="ship">
     <mod:findLike type="deadCrew">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Salvage the ruins.</mod:selector>
           <mod:setValue>Salvage the ruins.
@@ -1059,8 +1202,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_VAGABOND_GHOSTWASTE">
+  <mod:findName name="RUINS_VAGABOND_GHOSTWASTE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1069,10 +1213,12 @@ Fight(HK: Reward Stuff(L) 25% &lt;#&gt;Unlock Ship(Augmented))(CK: Reward Stuff(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_VAGABOND_GHOSTWASTE">
+  <mod:findName name="RUINS_VAGABOND_GHOSTWASTE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attack!</mod:selector>
             <mod:setValue>Attack!
@@ -1083,12 +1229,15 @@ Fight(HK: Reward Stuff(L) 25% &lt;#&gt;Unlock Ship(Augmented))(CK: Reward Stuff(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_VAGABOND_GHOSTWASTE">
+  <mod:findName name="RUINS_VAGABOND_GHOSTWASTE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1101,10 +1250,12 @@ Fight(HK: Reward Stuff(L) 25% &lt;#&gt;Unlock Ship(Augmented))(CK: Reward Stuff(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_VAGABOND_GHOSTWASTE">
+  <mod:findName name="RUINS_VAGABOND_GHOSTWASTE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Ignore the ruins.</mod:selector>
             <mod:setValue>Ignore the ruins.
@@ -1114,12 +1265,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_VAGABOND_GHOSTWASTE">
+  <mod:findName name="RUINS_VAGABOND_GHOSTWASTE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -1131,8 +1285,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE_GHOSTWASTE">
+  <mod:findName name="RUINS_SALVAGE_GHOSTWASTE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1146,8 +1301,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE_GHOSTWASTE">
+  <mod:findName name="RUINS_SALVAGE_GHOSTWASTE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_anointed"/>
       <mod:findLike type="text">
         <mod:selector>(Anointed) Attempt to translate the words on the ruins.</mod:selector>
         <mod:setValue>(Anointed) Attempt to translate the words on the ruins.
@@ -1155,10 +1311,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE_GHOSTWASTE">
+  <mod:findName name="RUINS_SALVAGE_GHOSTWASTE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_anointed"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1168,8 +1326,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE_GHOSTWASTE">
+  <mod:findName name="RUINS_SALVAGE_GHOSTWASTE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="UPG_AETHER_TRANSLATOR"/>
       <mod:findLike type="text">
         <mod:selector>(Runic Translator) Translate the words on the ruins.</mod:selector>
         <mod:setValue>(Runic Translator) Translate the words on the ruins.
@@ -1177,10 +1336,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE_GHOSTWASTE">
+  <mod:findName name="RUINS_SALVAGE_GHOSTWASTE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="UPG_AETHER_TRANSLATOR"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1190,8 +1351,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE_GHOSTWASTE">
+  <mod:findName name="RUINS_SALVAGE_GHOSTWASTE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ANCIENT"/>
       <mod:findLike type="text">
         <mod:selector>(Obelisk Crew) Translate the words on the ruins.</mod:selector>
         <mod:setValue>(Obelisk Crew) Translate the words on the ruins.
@@ -1199,8 +1361,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE_GHOSTWASTE">
+  <mod:findName name="RUINS_SALVAGE_GHOSTWASTE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_COGNITIVE_ALL"/>
       <mod:findLike type="text">
         <mod:selector>(Cognitive Crew) Translate the words on the ruins.</mod:selector>
         <mod:setValue>(Cognitive Crew) Translate the words on the ruins.
@@ -1208,8 +1371,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_RUINS_AUGMENTED">
+  <mod:findName name="DEFEAT_RUINS_AUGMENTED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Salvage the ruins.</mod:selector>
         <mod:setValue>Salvage the ruins.
@@ -1221,8 +1385,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_RUINS_AUGMENTED">
+  <mod:findName name="DEFEAT_RUINS_AUGMENTED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="UPG_AETHER_TRANSLATOR"/>
       <mod:findLike type="text">
         <mod:selector>(Runic Translator) Translate the words on the ruins.</mod:selector>
         <mod:setValue>(Runic Translator) Translate the words on the ruins.
@@ -1230,10 +1395,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_RUINS_AUGMENTED">
+  <mod:findName name="DEFEAT_RUINS_AUGMENTED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="UPG_AETHER_TRANSLATOR"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1243,8 +1410,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_RUINS_AUGMENTED">
+  <mod:findName name="DEFEAT_RUINS_AUGMENTED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ANCIENT"/>
       <mod:findLike type="text">
         <mod:selector>(Obelisk Crew) Translate the words on the ruins.</mod:selector>
         <mod:setValue>(Obelisk Crew) Translate the words on the ruins.
@@ -1252,8 +1420,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_RUINS_AUGMENTED">
+  <mod:findName name="DEFEAT_RUINS_AUGMENTED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_COGNITIVE_ALL"/>
       <mod:findLike type="text">
         <mod:selector>(Cognitive Crew) Translate the words on the ruins.</mod:selector>
         <mod:setValue>(Cognitive Crew) Translate the words on the ruins.
@@ -1261,8 +1430,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_AUGMENTED">
+  <mod:findName name="RUINS_AUGMENTED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1271,10 +1441,12 @@ Fight(HK=CK: Reward Standard(H) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_AUGMENTED">
+  <mod:findName name="RUINS_AUGMENTED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attack!</mod:selector>
             <mod:setValue>Attack!
@@ -1285,12 +1457,15 @@ Fight(HK=CK: Reward Standard(H) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_AUGMENTED">
+  <mod:findName name="RUINS_AUGMENTED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1303,10 +1478,12 @@ Fight(HK=CK: Reward Standard(H) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_AUGMENTED">
+  <mod:findName name="RUINS_AUGMENTED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Ignore the ruins.</mod:selector>
             <mod:setValue>Ignore the ruins.
@@ -1316,12 +1493,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_AUGMENTED">
+  <mod:findName name="RUINS_AUGMENTED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -1333,8 +1513,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_AUGMENTED_BOON">
+  <mod:findName name="RUINS_AUGMENTED_BOON" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1343,10 +1524,12 @@ Fight(HK=CK: Reward Standard(H) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_AUGMENTED_BOON">
+  <mod:findName name="RUINS_AUGMENTED_BOON" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attack!</mod:selector>
             <mod:setValue>Attack!
@@ -1357,12 +1540,15 @@ Fight(HK=CK: Reward Standard(H) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_AUGMENTED_BOON">
+  <mod:findName name="RUINS_AUGMENTED_BOON" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1375,10 +1561,12 @@ Fight(HK=CK: Reward Standard(H) 25% &lt;#&gt;Unlock Ship(Augmented))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_AUGMENTED_BOON">
+  <mod:findName name="RUINS_AUGMENTED_BOON" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Ignore the ruins.</mod:selector>
             <mod:setValue>Ignore the ruins.
@@ -1388,12 +1576,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_AUGMENTED_BOON">
+  <mod:findName name="RUINS_AUGMENTED_BOON" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -1405,9 +1596,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE_AUGMENTED">
+  <mod:findName name="RUINS_SALVAGE_AUGMENTED" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" req="loc_augmented_ruins" lvl="0" max_lvl="2" max_group="0" blue="false"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1416,9 +1608,10 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE_AUGMENTED">
+  <mod:findName name="RUINS_SALVAGE_AUGMENTED" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" req="loc_augmented_ruins" lvl="2" max_group="0" blue="false"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1428,9 +1621,10 @@ Reward Standard(H)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE_AUGMENTED">
+  <mod:findName name="RUINS_SALVAGE_AUGMENTED" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" req="loc_augmented_ruins" lvl="0" max_lvl="2" max_group="0" blue="false"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1439,9 +1633,10 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE_AUGMENTED">
+  <mod:findName name="RUINS_SALVAGE_AUGMENTED" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" req="loc_augmented_ruins" lvl="2" max_group="0" blue="false"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1451,9 +1646,10 @@ Reward Standard(H)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE_AUGMENTED">
+  <mod:findName name="RUINS_SALVAGE_AUGMENTED" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" req="loc_augmented_ruins" lvl="0" max_lvl="2" max_group="0" blue="false"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1462,9 +1658,10 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE_AUGMENTED">
+  <mod:findName name="RUINS_SALVAGE_AUGMENTED" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" req="loc_augmented_ruins" lvl="2" max_group="0" blue="false"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1474,9 +1671,10 @@ Reward Standard(H)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE_AUGMENTED">
+  <mod:findName name="RUINS_SALVAGE_AUGMENTED" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" req="loc_augmented_ruins" lvl="0" max_lvl="2" max_group="0" blue="false"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1485,9 +1683,10 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="RUINS_SALVAGE_AUGMENTED">
+  <mod:findName name="RUINS_SALVAGE_AUGMENTED" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" req="loc_augmented_ruins" lvl="2" max_group="0" blue="false"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...

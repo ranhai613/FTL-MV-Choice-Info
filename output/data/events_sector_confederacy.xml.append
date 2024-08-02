@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="FINISH_BEACON_VAMPWEED">
+  <mod:findName name="FINISH_BEACON_VAMPWEED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Do something onboard the ship.</mod:selector>
         <mod:setValue>Do something onboard the ship.
@@ -8,8 +9,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SLAVES">
+  <mod:findName name="VAMPWEED_SLAVES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Yes, of course!</mod:selector>
         <mod:setValue>Yes, of course!
@@ -21,10 +23,12 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SLAVES">
+  <mod:findName name="VAMPWEED_SLAVES" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="VAMPWEED_SLAVES_2">
+      <mod:selector hidden="true"/>
+      <mod:findName name="VAMPWEED_SLAVES_2" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attack the slaver.</mod:selector>
             <mod:setValue>Attack the slaver.
@@ -34,12 +38,15 @@ Fight</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SLAVES">
+  <mod:findName name="VAMPWEED_SLAVES" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="VAMPWEED_SLAVES_2">
+      <mod:selector hidden="true"/>
+      <mod:findName name="VAMPWEED_SLAVES_2" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -51,9 +58,10 @@ Fight</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SLAVES">
+  <mod:findName name="VAMPWEED_SLAVES" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="VAMPWEED_SLAVES_2">
+      <mod:selector hidden="true"/>
+      <mod:findName name="VAMPWEED_SLAVES_2" type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
             <mod:selector>Buy a slave.</mod:selector>
@@ -65,9 +73,10 @@ Gain a crew(Orchid Vampweed)</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SLAVES">
+  <mod:findName name="VAMPWEED_SLAVES" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="VAMPWEED_SLAVES_2">
+      <mod:selector hidden="true"/>
+      <mod:findName name="VAMPWEED_SLAVES_2" type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
             <mod:selector>Buy a slave.</mod:selector>
@@ -79,10 +88,12 @@ Gain a crew(List Slaves Generic)</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SLAVES">
+  <mod:findName name="VAMPWEED_SLAVES" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="VAMPWEED_SLAVES_2">
+      <mod:selector hidden="true"/>
+      <mod:findName name="VAMPWEED_SLAVES_2" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_VAMPWEED"/>
           <mod:findLike type="text">
             <mod:selector>(Vampweed Crew) "We do not need your 'workers'. The Confederacy is strong thanks to the hardwork of us greenbloods."</mod:selector>
             <mod:setValue>(Vampweed Crew) "We do not need your 'workers'. The Confederacy is strong thanks to the hardwork of us greenbloods."
@@ -92,9 +103,10 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SLAVES">
+  <mod:findName name="VAMPWEED_SLAVES" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="VAMPWEED_SLAVES_2">
+      <mod:selector hidden="true"/>
+      <mod:findName name="VAMPWEED_SLAVES_2" type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
             <mod:selector>Ignore the slaver and continue on your way.</mod:selector>
@@ -105,9 +117,10 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SLAVES">
+  <mod:findName name="VAMPWEED_SLAVES" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="VAMPWEED_SLAVES_2">
+      <mod:selector hidden="true"/>
+      <mod:findName name="VAMPWEED_SLAVES_2" type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
@@ -122,8 +135,9 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SLAVES">
+  <mod:findName name="VAMPWEED_SLAVES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>No, not really...</mod:selector>
         <mod:setValue>No, not really...
@@ -135,8 +149,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SLAVES">
+  <mod:findName name="VAMPWEED_SLAVES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>I don't feel comfortable answering that.</mod:selector>
         <mod:setValue>I don't feel comfortable answering that.
@@ -148,8 +163,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_GARDEN">
+  <mod:findName name="VAMPWEED_GARDEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Make up some advice.</mod:selector>
         <mod:setValue>Make up some advice.
@@ -157,8 +173,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_GARDEN">
+  <mod:findName name="VAMPWEED_GARDEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_MEDICAL"/>
       <mod:findLike type="text">
         <mod:selector>(Medical Crew) Offer advice.</mod:selector>
         <mod:setValue>(Medical Crew) Offer advice.
@@ -168,8 +185,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_GARDEN">
+  <mod:findName name="VAMPWEED_GARDEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_tyerel"/>
       <mod:findLike type="text">
         <mod:selector>(Ty E'Rel) Lecture the incompetent plants.</mod:selector>
         <mod:setValue>(Ty E'Rel) Lecture the incompetent plants.
@@ -177,8 +195,9 @@ Gain a weapon(Giftlist Spore)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_GARDEN">
+  <mod:findName name="VAMPWEED_GARDEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_CARETAKER"/>
       <mod:findLike type="text">
         <mod:selector>(Orchid Caretaker) Offer advice.</mod:selector>
         <mod:setValue>(Orchid Caretaker) Offer advice.
@@ -188,8 +207,9 @@ Gain a weapon(Giftlist Spore)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_GARDEN">
+  <mod:findName name="VAMPWEED_GARDEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Take this opportunity to attack them!</mod:selector>
         <mod:setValue>Take this opportunity to attack them!
@@ -197,10 +217,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_GARDEN">
+  <mod:findName name="VAMPWEED_GARDEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -210,8 +232,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_GARDEN">
+  <mod:findName name="VAMPWEED_GARDEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>We don't have anything, sorry.</mod:selector>
         <mod:setValue>We don't have anything, sorry.
@@ -219,8 +242,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_GARDEN">
+  <mod:findName name="VAMPWEED_GARDEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -232,8 +256,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SCRAPYARD">
+  <mod:findName name="VAMPWEED_SCRAPYARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ask to enter the scrapyard.</mod:selector>
         <mod:setValue>Ask to enter the scrapyard.
@@ -241,10 +266,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SCRAPYARD">
+  <mod:findName name="VAMPWEED_SCRAPYARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>There's a Vagabond in the scrapyard? We can take care of it.</mod:selector>
             <mod:setValue>There's a Vagabond in the scrapyard? We can take care of it.
@@ -255,12 +282,15 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SCRAPYARD">
+  <mod:findName name="VAMPWEED_SCRAPYARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -273,14 +303,18 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SCRAPYARD">
+  <mod:findName name="VAMPWEED_SCRAPYARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Bring the blob with you.</mod:selector>
                     <mod:setValue>Bring the blob with you.
@@ -294,12 +328,15 @@ Gain a crew(Blob)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SCRAPYARD">
+  <mod:findName name="VAMPWEED_SCRAPYARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
                   <mod:findLike type="text">
@@ -315,14 +352,18 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SCRAPYARD">
+  <mod:findName name="VAMPWEED_SCRAPYARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector req="unique_ooj" hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>(OOJ) "POO ROO PAKOOJ!"</mod:selector>
                     <mod:setValue>(OOJ) "POO ROO PAKOOJ!"
@@ -337,14 +378,18 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SCRAPYARD">
+  <mod:findName name="VAMPWEED_SCRAPYARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector req="LIST_CREW_SHELL_SCIENTIST" hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>(Shell Scientist) Your Shell knows what this is.</mod:selector>
                     <mod:setValue>(Shell Scientist) Your Shell knows what this is.
@@ -359,10 +404,12 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SCRAPYARD">
+  <mod:findName name="VAMPWEED_SCRAPYARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>That does sound spooky! We'll leave.</mod:selector>
             <mod:setValue>That does sound spooky! We'll leave.
@@ -372,10 +419,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SCRAPYARD">
+  <mod:findName name="VAMPWEED_SCRAPYARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -389,8 +438,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SCRAPYARD">
+  <mod:findName name="VAMPWEED_SCRAPYARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Leave.</mod:selector>
         <mod:setValue>Leave.
@@ -398,8 +448,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SCRAPYARD">
+  <mod:findName name="VAMPWEED_SCRAPYARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -411,8 +462,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_TERRAFORMING">
+  <mod:findName name="VAMPWEED_TERRAFORMING" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Approach the group.</mod:selector>
         <mod:setValue>Approach the group.
@@ -420,10 +472,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_TERRAFORMING">
+  <mod:findName name="VAMPWEED_TERRAFORMING" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Agree.</mod:selector>
             <mod:setValue>Agree.
@@ -433,10 +487,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_TERRAFORMING">
+  <mod:findName name="VAMPWEED_TERRAFORMING" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_CARETAKER"/>
           <mod:findLike type="text">
             <mod:selector>(Caretaker Crew) Offer to send your own monk down to bless the grounds.</mod:selector>
             <mod:setValue>(Caretaker Crew) Offer to send your own monk down to bless the grounds.
@@ -446,12 +502,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_TERRAFORMING">
+  <mod:findName name="VAMPWEED_TERRAFORMING" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_CARETAKER"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Agree to look for them.</mod:selector>
                 <mod:setValue>Agree to look for them.
@@ -463,8 +522,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_TERRAFORMING">
+  <mod:findName name="VAMPWEED_TERRAFORMING" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the terraformers.</mod:selector>
         <mod:setValue>Ignore the terraformers.
@@ -472,8 +532,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_TERRAFORMING">
+  <mod:findName name="VAMPWEED_TERRAFORMING" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -485,9 +546,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_TERRAFORMING_INSPECT">
+  <mod:findName name="VAMPWEED_TERRAFORMING_INSPECT" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Leave quickly and report this to the terraformers.</mod:selector>
           <mod:setValue>Leave quickly and report this to the terraformers.
@@ -496,9 +558,10 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_TERRAFORMING_INSPECT">
+  <mod:findName name="VAMPWEED_TERRAFORMING_INSPECT" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" blue="false" req="LIST_CHECK_ANY_CREW" lvl="1"/>
         <mod:findLike type="text">
           <mod:selector>Try to take down the Vampweed on your own.</mod:selector>
           <mod:setValue>Try to take down the Vampweed on your own.
@@ -507,8 +570,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION">
+  <mod:findName name="VAMPWEED_INJECTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector blue="false" req="LIST_CHECK_ANY_CREW" lvl="1"/>
       <mod:findLike type="text">
         <mod:selector>Submit one of your crew to testing.</mod:selector>
         <mod:setValue>Submit one of your crew to testing.
@@ -517,10 +581,12 @@ Reward Item(H)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION">
+  <mod:findName name="VAMPWEED_INJECTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector blue="false" req="LIST_CHECK_ANY_CREW" lvl="1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -530,8 +596,9 @@ Reward Item(H)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION">
+  <mod:findName name="VAMPWEED_INJECTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="siren"/>
       <mod:findLike type="text">
         <mod:selector>(Siren) Submit your Siren for testing.</mod:selector>
         <mod:setValue>(Siren) Submit your Siren for testing.
@@ -541,10 +608,12 @@ Gain a weapon(Giftlist Spore Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION">
+  <mod:findName name="VAMPWEED_INJECTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="siren"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -554,8 +623,9 @@ Gain a weapon(Giftlist Spore Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION">
+  <mod:findName name="VAMPWEED_INJECTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="siren_harpy"/>
       <mod:findLike type="text">
         <mod:selector>(Harpy) Submit your Harpy for testing.</mod:selector>
         <mod:setValue>(Harpy) Submit your Harpy for testing.
@@ -565,10 +635,12 @@ Gain a weapon(Giftlist Spore Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION">
+  <mod:findName name="VAMPWEED_INJECTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="siren_harpy"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -578,8 +650,9 @@ Gain a weapon(Giftlist Spore Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION">
+  <mod:findName name="VAMPWEED_INJECTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_obyn"/>
       <mod:findLike type="text">
         <mod:selector>(Obyn) Submit the Saltman for testing.</mod:selector>
         <mod:setValue>(Obyn) Submit the Saltman for testing.
@@ -589,10 +662,12 @@ Gain a weapon(Giftlist Spore Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION">
+  <mod:findName name="VAMPWEED_INJECTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_obyn"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -602,8 +677,9 @@ Gain a weapon(Giftlist Spore Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION">
+  <mod:findName name="VAMPWEED_INJECTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="spider_weaver"/>
       <mod:findLike type="text">
         <mod:selector>(Weaver) Submit your Weaver for testing.</mod:selector>
         <mod:setValue>(Weaver) Submit your Weaver for testing.
@@ -613,10 +689,12 @@ Gain a weapon(Giftlist Spore Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION">
+  <mod:findName name="VAMPWEED_INJECTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="spider_weaver"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -626,8 +704,9 @@ Gain a weapon(Giftlist Spore Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION">
+  <mod:findName name="VAMPWEED_INJECTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="spider"/>
       <mod:findLike type="text">
         <mod:selector>(Spider) Submit your Spider for testing.</mod:selector>
         <mod:setValue>(Spider) Submit your Spider for testing.
@@ -637,10 +716,12 @@ Gain a weapon(Giftlist Spore Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION">
+  <mod:findName name="VAMPWEED_INJECTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="spider"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -650,8 +731,9 @@ Gain a weapon(Giftlist Spore Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION">
+  <mod:findName name="VAMPWEED_INJECTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Refuse.</mod:selector>
         <mod:setValue>Refuse.
@@ -659,8 +741,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION">
+  <mod:findName name="VAMPWEED_INJECTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -672,9 +755,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION_TEST">
+  <mod:findName name="VAMPWEED_INJECTION_TEST" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Attack the Shells to get revenge!</mod:selector>
           <mod:setValue>Attack the Shells to get revenge!
@@ -683,11 +767,13 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION_TEST">
+  <mod:findName name="VAMPWEED_INJECTION_TEST" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
-        <mod:findName name="VAMPWEED_INJECTION_TEST_FIGHT">
+        <mod:selector hidden="true"/>
+        <mod:findName name="VAMPWEED_INJECTION_TEST_FIGHT" type="event">
           <mod:findLike type="choice">
+            <mod:selector hidden="true"/>
             <mod:findLike type="text">
               <mod:selector>Continue...</mod:selector>
               <mod:setValue>Continue...
@@ -698,9 +784,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION_TEST_SIREN">
+  <mod:findName name="VAMPWEED_INJECTION_TEST_SIREN" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Attack the Shells to get revenge!</mod:selector>
           <mod:setValue>Attack the Shells to get revenge!
@@ -709,9 +796,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION_TEST_HARPY">
+  <mod:findName name="VAMPWEED_INJECTION_TEST_HARPY" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Attack the Shells to get revenge!</mod:selector>
           <mod:setValue>Attack the Shells to get revenge!
@@ -720,9 +808,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION_TEST_OBYN">
+  <mod:findName name="VAMPWEED_INJECTION_TEST_OBYN" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Attack the Shells to get revenge!</mod:selector>
           <mod:setValue>Attack the Shells to get revenge!
@@ -731,9 +820,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION_TEST_SPIDER">
+  <mod:findName name="VAMPWEED_INJECTION_TEST_SPIDER" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Attack the Shells to get revenge!</mod:selector>
           <mod:setValue>Attack the Shells to get revenge!
@@ -742,9 +832,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_INJECTION_TEST_WEAVER">
+  <mod:findName name="VAMPWEED_INJECTION_TEST_WEAVER" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Attack the Shells to get revenge!</mod:selector>
           <mod:setValue>Attack the Shells to get revenge!
@@ -753,8 +844,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_RIOT">
+  <mod:findName name="VAMPWEED_RIOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ask the city officials what is happening.</mod:selector>
         <mod:setValue>Ask the city officials what is happening.
@@ -769,10 +861,12 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_RIOT">
+  <mod:findName name="VAMPWEED_RIOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Try to calm the crowds.</mod:selector>
             <mod:setValue>Try to calm the crowds.
@@ -786,10 +880,12 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_RIOT">
+  <mod:findName name="VAMPWEED_RIOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Fire on the crowd to make them disperse.</mod:selector>
             <mod:setValue>Fire on the crowd to make them disperse.
@@ -799,10 +895,12 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_RIOT">
+  <mod:findName name="VAMPWEED_RIOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Join the rioters.</mod:selector>
             <mod:setValue>Join the rioters.
@@ -813,8 +911,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_RIOT">
+  <mod:findName name="VAMPWEED_RIOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Avoid the riot.</mod:selector>
         <mod:setValue>Avoid the riot.
@@ -822,8 +921,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_RIOT">
+  <mod:findName name="VAMPWEED_RIOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -835,8 +935,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_FIRE">
+  <mod:findName name="VAMPWEED_FIRE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Rescue any survivors you can!</mod:selector>
         <mod:setValue>Rescue any survivors you can!
@@ -846,10 +947,12 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_FIRE">
+  <mod:findName name="VAMPWEED_FIRE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Agree to track down the Floral.</mod:selector>
             <mod:setValue>Agree to track down the Floral.
@@ -861,12 +964,15 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_FIRE">
+  <mod:findName name="VAMPWEED_FIRE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Accuse them and enact justice.</mod:selector>
                 <mod:setValue>Accuse them and enact justice.
@@ -878,14 +984,18 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_FIRE">
+  <mod:findName name="VAMPWEED_FIRE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -899,12 +1009,15 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_FIRE">
+  <mod:findName name="VAMPWEED_FIRE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Return to the Vampweeds and tell them the Florals aren't responsible.</mod:selector>
                 <mod:setValue>Return to the Vampweeds and tell them the Florals aren't responsible.
@@ -917,8 +1030,9 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_FIRE">
+  <mod:findName name="VAMPWEED_FIRE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>We can't risk the mission, we shouldn't get involved.</mod:selector>
         <mod:setValue>We can't risk the mission, we shouldn't get involved.
@@ -926,8 +1040,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_FIRE">
+  <mod:findName name="VAMPWEED_FIRE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -939,8 +1054,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_THEFT">
+  <mod:findName name="VAMPWEED_THEFT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Go after the Union ship!</mod:selector>
         <mod:setValue>Go after the Union ship!
@@ -948,10 +1064,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_THEFT">
+  <mod:findName name="VAMPWEED_THEFT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -961,8 +1079,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_THEFT">
+  <mod:findName name="VAMPWEED_THEFT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Go after the Confederate ship!</mod:selector>
         <mod:setValue>Go after the Confederate ship!
@@ -970,10 +1089,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_THEFT">
+  <mod:findName name="VAMPWEED_THEFT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -983,8 +1104,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_THEFT">
+  <mod:findName name="VAMPWEED_THEFT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the two ships.</mod:selector>
         <mod:setValue>Ignore the two ships.
@@ -992,8 +1114,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_THEFT">
+  <mod:findName name="VAMPWEED_THEFT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1005,8 +1128,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_BADREBEL">
+  <mod:findName name="VAMPWEED_BADREBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1014,10 +1138,12 @@ Fight(HK: 14% Reward Standard(M) 14% Reward Weapon(H) 14% Reward Augment(H) 14% 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_BADREBEL">
+  <mod:findName name="VAMPWEED_BADREBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>This is unjustified slaughter!</mod:selector>
             <mod:setValue>This is unjustified slaughter!
@@ -1027,12 +1153,15 @@ Fight(HK: 14% Reward Standard(M) 14% Reward Weapon(H) 14% Reward Augment(H) 14% 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_BADREBEL">
+  <mod:findName name="VAMPWEED_BADREBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1044,10 +1173,12 @@ Fight(HK: 14% Reward Standard(M) 14% Reward Weapon(H) 14% Reward Augment(H) 14% 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_BADREBEL">
+  <mod:findName name="VAMPWEED_BADREBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_jerry" hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>(Jerry) Admonish them.</mod:selector>
             <mod:setValue>(Jerry) Admonish them.
@@ -1057,10 +1188,12 @@ Fleet Delay(2)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_BADREBEL">
+  <mod:findName name="VAMPWEED_BADREBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_mayeb" hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>(Mayeb) Tell them off.</mod:selector>
             <mod:setValue>(Mayeb) Tell them off.
@@ -1070,12 +1203,15 @@ Fight(HK: 14% Reward Standard(M) 14% Reward Weapon(H) 14% Reward Augment(H) 14% 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_BADREBEL">
+  <mod:findName name="VAMPWEED_BADREBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_mayeb" hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1087,10 +1223,12 @@ Fight(HK: 14% Reward Standard(M) 14% Reward Weapon(H) 14% Reward Augment(H) 14% 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_BADREBEL">
+  <mod:findName name="VAMPWEED_BADREBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_tyerel" hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>(Ty E'Rel) Rebuke them.</mod:selector>
             <mod:setValue>(Ty E'Rel) Rebuke them.
@@ -1100,12 +1238,15 @@ Fight(HK: 14% Reward Standard(M) 14% Reward Weapon(H) 14% Reward Augment(H) 14% 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_BADREBEL">
+  <mod:findName name="VAMPWEED_BADREBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_tyerel" hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1117,10 +1258,12 @@ Fight(HK: 14% Reward Standard(M) 14% Reward Weapon(H) 14% Reward Augment(H) 14% 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_BADREBEL">
+  <mod:findName name="VAMPWEED_BADREBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_ivar" hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>(Ivar) Inform them of their downfall.</mod:selector>
             <mod:setValue>(Ivar) Inform them of their downfall.
@@ -1130,12 +1273,15 @@ Fight(HK: 14% Reward Standard(M) 14% Reward Weapon(H) 14% Reward Augment(H) 14% 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_BADREBEL">
+  <mod:findName name="VAMPWEED_BADREBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_ivar" hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1147,10 +1293,12 @@ Fight(HK: 14% Reward Standard(M) 14% Reward Weapon(H) 14% Reward Augment(H) 14% 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_BADREBEL">
+  <mod:findName name="VAMPWEED_BADREBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_FLORAL"/>
           <mod:findLike type="text">
             <mod:selector>(Floral Crew) "You slaughter my kind! You deserve swift retribution. May the tree of life have mercy on your soul."</mod:selector>
             <mod:setValue>(Floral Crew) "You slaughter my kind! You deserve swift retribution. May the tree of life have mercy on your soul."
@@ -1160,12 +1308,15 @@ Fight(HK: 14% Reward Standard(M) 14% Reward Weapon(H) 14% Reward Augment(H) 14% 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_BADREBEL">
+  <mod:findName name="VAMPWEED_BADREBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_FLORAL"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1177,10 +1328,12 @@ Fight(HK: 14% Reward Standard(M) 14% Reward Weapon(H) 14% Reward Augment(H) 14% 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_BADREBEL">
+  <mod:findName name="VAMPWEED_BADREBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_VAMPWEED"/>
           <mod:findLike type="text">
             <mod:selector>(Vampweed Crew) "Uncivilized monsters! That colony posed no threat to you!"</mod:selector>
             <mod:setValue>(Vampweed Crew) "Uncivilized monsters! That colony posed no threat to you!"
@@ -1190,12 +1343,15 @@ Fight(HK: 14% Reward Standard(M) 14% Reward Weapon(H) 14% Reward Augment(H) 14% 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_BADREBEL">
+  <mod:findName name="VAMPWEED_BADREBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_VAMPWEED"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1207,10 +1363,12 @@ Fight(HK: 14% Reward Standard(M) 14% Reward Weapon(H) 14% Reward Augment(H) 14% 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_BADREBEL">
+  <mod:findName name="VAMPWEED_BADREBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>I literally do not care, please just stop talking.</mod:selector>
             <mod:setValue>I literally do not care, please just stop talking.
@@ -1220,10 +1378,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_BADREBEL">
+  <mod:findName name="VAMPWEED_BADREBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -1237,8 +1397,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_CAMPAIGN">
+  <mod:findName name="VAMPWEED_CAMPAIGN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>What's the matter?</mod:selector>
         <mod:setValue>What's the matter?
@@ -1246,10 +1407,12 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Standard(L) Gai
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_CAMPAIGN">
+  <mod:findName name="VAMPWEED_CAMPAIGN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Agree.</mod:selector>
             <mod:setValue>Agree.
@@ -1259,12 +1422,15 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Standard(L) Gai
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_CAMPAIGN">
+  <mod:findName name="VAMPWEED_CAMPAIGN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Attack them to force them into compliance!</mod:selector>
                 <mod:setValue>Attack them to force them into compliance!
@@ -1276,14 +1442,18 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Standard(L) Gai
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_CAMPAIGN">
+  <mod:findName name="VAMPWEED_CAMPAIGN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1297,8 +1467,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Standard(L) Gai
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_CAMPAIGN">
+  <mod:findName name="VAMPWEED_CAMPAIGN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>We can't help, sorry.</mod:selector>
         <mod:setValue>We can't help, sorry.
@@ -1306,8 +1477,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_CAMPAIGN">
+  <mod:findName name="VAMPWEED_CAMPAIGN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1319,8 +1491,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_CAMPAIGN">
+  <mod:findName name="VAMPWEED_CAMPAIGN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>What is a 'gun'?</mod:selector>
         <mod:setValue>What is a 'gun'?
@@ -1328,8 +1501,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_CAMPAIGN">
+  <mod:findName name="VAMPWEED_CAMPAIGN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1341,8 +1515,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_CAMPAIGN_SURRENDER">
+  <mod:findName name="VAMPWEED_CAMPAIGN_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>We're not here to harass you - your friends are concerned about you.</mod:selector>
         <mod:setValue>We're not here to harass you - your friends are concerned about you.
@@ -1351,10 +1526,12 @@ Gain a weapon(Giftlist Spore)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_CAMPAIGN_SURRENDER">
+  <mod:findName name="VAMPWEED_CAMPAIGN_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Return to the Shells.</mod:selector>
             <mod:setValue>Return to the Shells.
@@ -1365,8 +1542,9 @@ Gain a weapon(Giftlist Spore)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_ALKRAM">
+  <mod:findName name="VAMPWEED_ALKRAM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Why are you talking like a Phantom?</mod:selector>
         <mod:setValue>Why are you talking like a Phantom?
@@ -1374,10 +1552,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_ALKRAM">
+  <mod:findName name="VAMPWEED_ALKRAM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Come up with some random ideas.</mod:selector>
             <mod:setValue>Come up with some random ideas.
@@ -1388,8 +1568,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_ALKRAM">
+  <mod:findName name="VAMPWEED_ALKRAM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1404,12 +1585,14 @@ Gain an augment(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_ALKRAM">
+  <mod:findName name="VAMPWEED_ALKRAM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1423,10 +1606,12 @@ Gain an augment(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_ALKRAM">
+  <mod:findName name="VAMPWEED_ALKRAM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="ORCHID_KIDS"/>
           <mod:findLike type="text">
             <mod:selector>(Orchid Children) Offer some corpses as a gift.</mod:selector>
             <mod:setValue>(Orchid Children) Offer some corpses as a gift.
@@ -1436,12 +1621,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_ALKRAM">
+  <mod:findName name="VAMPWEED_ALKRAM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="ORCHID_KIDS"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1453,10 +1641,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_ALKRAM">
+  <mod:findName name="VAMPWEED_ALKRAM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>We can't help.</mod:selector>
             <mod:setValue>We can't help.
@@ -1466,10 +1656,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_ALKRAM">
+  <mod:findName name="VAMPWEED_ALKRAM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -1483,8 +1675,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_ALKRAM">
+  <mod:findName name="VAMPWEED_ALKRAM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the revolutionaries!</mod:selector>
         <mod:setValue>Attack the revolutionaries!
@@ -1492,10 +1685,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_ALKRAM">
+  <mod:findName name="VAMPWEED_ALKRAM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1505,8 +1700,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_ALKRAM">
+  <mod:findName name="VAMPWEED_ALKRAM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the rambling Leech and leave.</mod:selector>
         <mod:setValue>Ignore the rambling Leech and leave.
@@ -1514,8 +1710,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_ALKRAM">
+  <mod:findName name="VAMPWEED_ALKRAM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1527,8 +1724,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_CARGO">
+  <mod:findName name="VAMPWEED_CARGO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the ship to access the cargo!</mod:selector>
         <mod:setValue>Attack the ship to access the cargo!
@@ -1536,10 +1734,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_CARGO">
+  <mod:findName name="VAMPWEED_CARGO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1549,8 +1749,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_CARGO">
+  <mod:findName name="VAMPWEED_CARGO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="cloaking" lvl="2"/>
       <mod:findLike type="text">
         <mod:selector>(Upg. Cloaking) Sneak up on the platform and steal the cargo stealthily.</mod:selector>
         <mod:setValue>(Upg. Cloaking) Sneak up on the platform and steal the cargo stealthily.
@@ -1561,8 +1762,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_CARGO">
+  <mod:findName name="VAMPWEED_CARGO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Leave the platform unharmed.</mod:selector>
         <mod:setValue>Leave the platform unharmed.
@@ -1570,8 +1772,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_CARGO">
+  <mod:findName name="VAMPWEED_CARGO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1583,7 +1786,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_NOFUEL">
+  <mod:findName name="DISTRESS_VAMPWEED_NOFUEL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Sell them 4 fuel.</mod:selector>
@@ -1592,7 +1795,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_NOFUEL">
+  <mod:findName name="DISTRESS_VAMPWEED_NOFUEL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Sell them 8 fuel.</mod:selector>
@@ -1601,7 +1804,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_NOFUEL">
+  <mod:findName name="DISTRESS_VAMPWEED_NOFUEL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Sell them 15 fuel.</mod:selector>
@@ -1610,8 +1813,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_NOFUEL">
+  <mod:findName name="DISTRESS_VAMPWEED_NOFUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the ship!</mod:selector>
         <mod:setValue>Attack the ship!
@@ -1619,10 +1823,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_NOFUEL">
+  <mod:findName name="DISTRESS_VAMPWEED_NOFUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1632,8 +1838,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_NOFUEL">
+  <mod:findName name="DISTRESS_VAMPWEED_NOFUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Apologize but decline to help.</mod:selector>
         <mod:setValue>Apologize but decline to help.
@@ -1641,8 +1848,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_NOFUEL">
+  <mod:findName name="DISTRESS_VAMPWEED_NOFUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1654,8 +1862,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_DELUSION">
+  <mod:findName name="DISTRESS_VAMPWEED_DELUSION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" blue="false" req="LIST_CHECK_ANY_CREW" lvl="1"/>
       <mod:findLike type="text">
         <mod:selector>Try to send some crew in there to defuse the situation.</mod:selector>
         <mod:setValue>Try to send some crew in there to defuse the situation.
@@ -1665,8 +1874,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_DELUSION">
+  <mod:findName name="DISTRESS_VAMPWEED_DELUSION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_tyerel"/>
       <mod:findLike type="text">
         <mod:selector>(Ty E'Rel) "I am the one who presided over those negotiations."</mod:selector>
         <mod:setValue>(Ty E'Rel) "I am the one who presided over those negotiations."
@@ -1674,8 +1884,9 @@ Gain a weapon(Giftlist Spore)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_DELUSION">
+  <mod:findName name="DISTRESS_VAMPWEED_DELUSION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_HUMAN"/>
       <mod:findLike type="text">
         <mod:selector>(Human Crew) Send in your human as a 'Federation Ambassador'.</mod:selector>
         <mod:setValue>(Human Crew) Send in your human as a 'Federation Ambassador'.
@@ -1683,8 +1894,9 @@ Gain a weapon(Giftlist Spore)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_DELUSION">
+  <mod:findName name="DISTRESS_VAMPWEED_DELUSION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_LEECH"/>
       <mod:findLike type="text">
         <mod:selector>(Leech Crew) Send in your Leech as a 'fellow soldier'.</mod:selector>
         <mod:setValue>(Leech Crew) Send in your Leech as a 'fellow soldier'.
@@ -1692,8 +1904,9 @@ Gain a crew(Orchid Vampweed)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_DELUSION">
+  <mod:findName name="DISTRESS_VAMPWEED_DELUSION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_HIVE"/>
       <mod:findLike type="text">
         <mod:selector>(Hive Mantis Crew) Send in your Mantis as a 'fellow soldier'.</mod:selector>
         <mod:setValue>(Hive Mantis Crew) Send in your Mantis as a 'fellow soldier'.
@@ -1701,8 +1914,9 @@ Gain a crew(Orchid Vampweed)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_DELUSION">
+  <mod:findName name="DISTRESS_VAMPWEED_DELUSION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the situation.</mod:selector>
         <mod:setValue>Ignore the situation.
@@ -1710,8 +1924,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_DELUSION">
+  <mod:findName name="DISTRESS_VAMPWEED_DELUSION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1723,8 +1938,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_LOST">
+  <mod:findName name="DISTRESS_VAMPWEED_LOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1734,10 +1950,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_LOST">
+  <mod:findName name="DISTRESS_VAMPWEED_LOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>You both sound like Separatists. Are you lost?</mod:selector>
             <mod:setValue>You both sound like Separatists. Are you lost?
@@ -1748,10 +1966,12 @@ Reward Drone(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_LOST">
+  <mod:findName name="DISTRESS_VAMPWEED_LOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_VARIANT_SEPARATIST"/>
           <mod:findLike type="text">
             <mod:selector>(Separatist Crew) "Separatist quirks detected. Offer assistance?"</mod:selector>
             <mod:setValue>(Separatist Crew) "Separatist quirks detected. Offer assistance?"
@@ -1762,10 +1982,12 @@ Reward Drone(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_LOST">
+  <mod:findName name="DISTRESS_VAMPWEED_LOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Just nod and leave them alone.</mod:selector>
             <mod:setValue>Just nod and leave them alone.
@@ -1775,10 +1997,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_LOST">
+  <mod:findName name="DISTRESS_VAMPWEED_LOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -1792,8 +2016,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_LOST_HELP">
+  <mod:findName name="DISTRESS_VAMPWEED_LOST_HELP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Make up directions.</mod:selector>
         <mod:setValue>Make up directions.
@@ -1801,8 +2026,9 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_LOST_HELP">
+  <mod:findName name="DISTRESS_VAMPWEED_LOST_HELP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_VARIANT_SEPARATIST"/>
       <mod:findLike type="text">
         <mod:selector>(Separatist Crew) Offer directions to the nearest Separatist sector.</mod:selector>
         <mod:setValue>(Separatist Crew) Offer directions to the nearest Separatist sector.
@@ -1810,8 +2036,9 @@ Reward Drone(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_LOST_HELP">
+  <mod:findName name="DISTRESS_VAMPWEED_LOST_HELP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_FLORAL"/>
       <mod:findLike type="text">
         <mod:selector>(Floral Crew) Offer directions to the nearest Gathering sector.</mod:selector>
         <mod:setValue>(Floral Crew) Offer directions to the nearest Gathering sector.
@@ -1819,8 +2046,9 @@ Reward Drone(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_VAMPWEED_LOST_HELP">
+  <mod:findName name="DISTRESS_VAMPWEED_LOST_HELP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="sensors" lvl="3"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Sensors) Offer directions to the nearest Gathering sector.</mod:selector>
         <mod:setValue>(Adv. Sensors) Offer directions to the nearest Gathering sector.
@@ -1828,8 +2056,9 @@ Reward Drone(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_AUTO">
+  <mod:findName name="VAMPWEED_AUTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ask about the job.</mod:selector>
         <mod:setValue>Ask about the job.
@@ -1837,10 +2066,12 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_AUTO">
+  <mod:findName name="VAMPWEED_AUTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Accept the job.</mod:selector>
             <mod:setValue>Accept the job.
@@ -1850,8 +2081,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_AUTO">
+  <mod:findName name="VAMPWEED_AUTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the factory.</mod:selector>
         <mod:setValue>Ignore the factory.
@@ -1859,8 +2091,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_AUTO">
+  <mod:findName name="VAMPWEED_AUTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1872,8 +2105,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_AUTO_QUEST">
+  <mod:findName name="VAMPWEED_AUTO_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the security drone.</mod:selector>
         <mod:setValue>Attack the security drone.
@@ -1881,10 +2115,12 @@ Fight(HK: Reward Standard(M) 50% Gain a drone(Giftlist Vampdrone) 50% System Upg
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_AUTO_QUEST">
+  <mod:findName name="VAMPWEED_AUTO_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1894,8 +2130,9 @@ Fight(HK: Reward Standard(M) 50% Gain a drone(Giftlist Vampdrone) 50% System Upg
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_AUTO_QUEST">
+  <mod:findName name="VAMPWEED_AUTO_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Avoid the hangar.</mod:selector>
         <mod:setValue>Avoid the hangar.
@@ -1903,8 +2140,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_AUTO_QUEST">
+  <mod:findName name="VAMPWEED_AUTO_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1916,8 +2154,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_AMBASSADOR">
+  <mod:findName name="VAMPWEED_AMBASSADOR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Board and see if anyone needs help.</mod:selector>
         <mod:setValue>Board and see if anyone needs help.
@@ -1925,8 +2164,9 @@ Gain a crew(Federation Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_AMBASSADOR">
+  <mod:findName name="VAMPWEED_AMBASSADOR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Scrap the vessel.</mod:selector>
         <mod:setValue>Scrap the vessel.
@@ -1934,8 +2174,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_AMBASSADOR">
+  <mod:findName name="VAMPWEED_AMBASSADOR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the vessel.</mod:selector>
         <mod:setValue>Ignore the vessel.
@@ -1943,8 +2184,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_AMBASSADOR">
+  <mod:findName name="VAMPWEED_AMBASSADOR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1956,8 +2198,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_AMBASSADOR_QUEST">
+  <mod:findName name="VAMPWEED_AMBASSADOR_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Engage the station and force them to give up the ambassador.</mod:selector>
         <mod:setValue>Engage the station and force them to give up the ambassador.
@@ -1965,10 +2208,12 @@ Fight(CK: Reward Standard(H) Fleet Delay(2))(HK: Reward Standard(M))(SR: Fleet D
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_AMBASSADOR_QUEST">
+  <mod:findName name="VAMPWEED_AMBASSADOR_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1978,8 +2223,9 @@ Fight(CK: Reward Standard(H) Fleet Delay(2))(HK: Reward Standard(M))(SR: Fleet D
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_AMBASSADOR_QUEST">
+  <mod:findName name="VAMPWEED_AMBASSADOR_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Give up and leave.</mod:selector>
         <mod:setValue>Give up and leave.
@@ -1987,8 +2233,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_AMBASSADOR_QUEST">
+  <mod:findName name="VAMPWEED_AMBASSADOR_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -2000,8 +2247,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_VAMPWEED">
+  <mod:findName name="ENCOUNTER_VAMPWEED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2009,8 +2257,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_VAMPWEED_STATION">
+  <mod:findName name="ENCOUNTER_VAMPWEED_STATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2018,8 +2267,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_COALITION_VAMPWEED">
+  <mod:findName name="ENCOUNTER_COALITION_VAMPWEED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2027,8 +2277,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_LEECH_VAMPWEED">
+  <mod:findName name="ENCOUNTER_LEECH_VAMPWEED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2036,8 +2287,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 5%
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_MANTIS_VAMPWEED">
+  <mod:findName name="ENCOUNTER_MANTIS_VAMPWEED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2045,8 +2297,9 @@ Fight(HK: Reward Standard(M))(CK: 20% Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_REBEL_VAMPWEED">
+  <mod:findName name="ENCOUNTER_REBEL_VAMPWEED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2054,8 +2307,9 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_VAMPWEED_ELITE">
+  <mod:findName name="ENCOUNTER_VAMPWEED_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2063,7 +2317,7 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Spore Elite))</mo
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_STORE_RESTAURANT">
+  <mod:findName name="VAMPWEED_STORE_RESTAURANT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Visit the diner.</mod:selector>
@@ -2072,7 +2326,7 @@ Gain a crew(Orchid Vampweed)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_STORE_RESTAURANT">
+  <mod:findName name="VAMPWEED_STORE_RESTAURANT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2086,7 +2340,7 @@ Gain a crew(Orchid Vampweed)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_STORE_RESTAURANT">
+  <mod:findName name="VAMPWEED_STORE_RESTAURANT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2104,10 +2358,11 @@ Gain a crew(Orchid Vampweed)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_STORE_RESTAURANT">
+  <mod:findName name="VAMPWEED_STORE_RESTAURANT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_tyerel" hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>(Ty E'Rel) Address the officers directly.</mod:selector>
             <mod:setValue>(Ty E'Rel) Address the officers directly.
@@ -2117,10 +2372,11 @@ Gain a crew(Orchid Vampweed)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_STORE_RESTAURANT">
+  <mod:findName name="VAMPWEED_STORE_RESTAURANT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_ivar" hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>(Ivar) Be direct.</mod:selector>
             <mod:setValue>(Ivar) Be direct.
@@ -2130,7 +2386,7 @@ Gain a crew(Orchid Vampweed)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_STORE_RESTAURANT">
+  <mod:findName name="VAMPWEED_STORE_RESTAURANT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2144,7 +2400,7 @@ Gain a crew(Orchid Vampweed)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_STORE_RESTAURANT">
+  <mod:findName name="VAMPWEED_STORE_RESTAURANT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the restaurant.</mod:selector>
@@ -2153,7 +2409,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_STORE_RESTAURANT">
+  <mod:findName name="VAMPWEED_STORE_RESTAURANT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2166,8 +2422,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DINE_WITH_VAMPWEEDS">
+  <mod:findName name="DINE_WITH_VAMPWEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Buy a round of drinks. [-10~]</mod:selector>
         <mod:setValue>Buy a round of drinks. [-10~]
@@ -2176,8 +2433,9 @@ Gain a crew(Orchid Vampweed)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DINE_WITH_VAMPWEEDS">
+  <mod:findName name="DINE_WITH_VAMPWEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_tuco" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Tuco) Intimidate the restaurant owner into giving a round to the crew.</mod:selector>
         <mod:setValue>(Tuco) Intimidate the restaurant owner into giving a round to the crew.
@@ -2185,7 +2443,7 @@ Gain a crew(Orchid Vampweed)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SECURITY_CRUISER_QUEST">
+  <mod:findName name="VAMPWEED_SECURITY_CRUISER_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
@@ -2195,7 +2453,7 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Vampweed))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SECURITY_RESCUE">
+  <mod:findName name="VAMPWEED_SECURITY_RESCUE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Respond to the Vampweeds.</mod:selector>
@@ -2204,10 +2462,11 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Vampweed))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SECURITY_RESCUE">
+  <mod:findName name="VAMPWEED_SECURITY_RESCUE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="loc_tyerel_met" lvl="0" max_lvl="0" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>Why did we get boarded by Vampweeds?</mod:selector>
             <mod:setValue>Why did we get boarded by Vampweeds?
@@ -2221,10 +2480,11 @@ Gain a crew(Orchid Cultivator)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SECURITY_RESCUE">
+  <mod:findName name="VAMPWEED_SECURITY_RESCUE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="loc_tyerel_met" lvl="1" max_lvl="1" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>Why did we get boarded by Vampweeds?</mod:selector>
             <mod:setValue>Why did we get boarded by Vampweeds?
@@ -2238,7 +2498,7 @@ Gain a crew(Orchid Cultivator)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_OFFER_IVAR_PLUS_TYEREL">
+  <mod:findName name="QUEST_OFFER_IVAR_PLUS_TYEREL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Tell me about them.</mod:selector>
@@ -2251,7 +2511,7 @@ Gain a crew(Orchid Cultivator)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_OFFER_IVAR_PLUS_TYEREL">
+  <mod:findName name="QUEST_OFFER_IVAR_PLUS_TYEREL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2268,7 +2528,7 @@ Gain a crew(Orchid Cultivator)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_OFFER_IVAR_PLUS_TYEREL">
+  <mod:findName name="QUEST_OFFER_IVAR_PLUS_TYEREL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>How can we help?</mod:selector>
@@ -2281,7 +2541,7 @@ Gain a crew(Orchid Cultivator)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SECURITY_OFFER_ASSISTANCE">
+  <mod:findName name="VAMPWEED_SECURITY_OFFER_ASSISTANCE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
@@ -2294,7 +2554,7 @@ Gain a crew(Orchid Cultivator)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SECURITY_OFFER_ASSISTANCE">
+  <mod:findName name="VAMPWEED_SECURITY_OFFER_ASSISTANCE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2311,11 +2571,11 @@ Gain a crew(Orchid Cultivator)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SECURITY_OFFER_ASSISTANCE">
+  <mod:findName name="VAMPWEED_SECURITY_OFFER_ASSISTANCE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
-          <mod:findName name="VAMPWEED_SECURITY_REQUISITION">
+          <mod:findName name="VAMPWEED_SECURITY_REQUISITION" type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
                 <mod:selector>Vampweed ballistics</mod:selector>
@@ -2329,11 +2589,11 @@ Reward } Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SECURITY_OFFER_ASSISTANCE">
+  <mod:findName name="VAMPWEED_SECURITY_OFFER_ASSISTANCE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
-          <mod:findName name="VAMPWEED_SECURITY_REQUISITION">
+          <mod:findName name="VAMPWEED_SECURITY_REQUISITION" type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
                 <mod:selector>Vampweed drones</mod:selector>
@@ -2347,11 +2607,11 @@ Reward | Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SECURITY_OFFER_ASSISTANCE">
+  <mod:findName name="VAMPWEED_SECURITY_OFFER_ASSISTANCE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
-          <mod:findName name="VAMPWEED_SECURITY_REQUISITION">
+          <mod:findName name="VAMPWEED_SECURITY_REQUISITION" type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
                 <mod:selector>An extra pair of hands</mod:selector>
@@ -2364,7 +2624,7 @@ Gain a crew(Orchid Cultivator)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_OFFER_IVAR_ONLY">
+  <mod:findName name="QUEST_OFFER_IVAR_ONLY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Tell me about them.</mod:selector>
@@ -2377,7 +2637,7 @@ Gain a crew(Orchid Cultivator)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_OFFER_IVAR_ONLY">
+  <mod:findName name="QUEST_OFFER_IVAR_ONLY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2394,7 +2654,7 @@ Gain a crew(Orchid Cultivator)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_OFFER_IVAR_ONLY">
+  <mod:findName name="QUEST_OFFER_IVAR_ONLY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>How can we help?</mod:selector>
@@ -2407,7 +2667,7 @@ Gain a crew(Orchid Cultivator)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_SECURITY_OFFER_ASSISTANCE_IVAR_ONLY">
+  <mod:findName name="VAMPWEED_SECURITY_OFFER_ASSISTANCE_IVAR_ONLY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
@@ -2420,7 +2680,7 @@ Gain a crew(Orchid Cultivator)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_QUEST">
+  <mod:findName name="VAMPWEED_HOMEWORLD_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Respond to the hail.</mod:selector>
@@ -2430,10 +2690,11 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Cultivator))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_QUEST">
+  <mod:findName name="VAMPWEED_HOMEWORLD_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_alkali" max_group="0" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>Alkali pushes you aside.</mod:selector>
             <mod:setValue>Alkali pushes you aside.
@@ -2445,10 +2706,11 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Cultivator))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_QUEST">
+  <mod:findName name="VAMPWEED_HOMEWORLD_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_alkali" max_group="0" blue="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -2464,14 +2726,16 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Cultivator))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_QUEST">
+  <mod:findName name="VAMPWEED_HOMEWORLD_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_alkali" max_group="0" blue="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Alkali turns to his personal communicator.</mod:selector>
                     <mod:setValue>Alkali turns to his personal communicator.
@@ -2487,14 +2751,16 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Cultivator))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_QUEST">
+  <mod:findName name="VAMPWEED_HOMEWORLD_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_alkali" max_group="0" blue="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
                       <mod:findLike type="text">
@@ -2513,10 +2779,11 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Cultivator))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_QUEST">
+  <mod:findName name="VAMPWEED_HOMEWORLD_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="pilot" max_group="0" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>Who are you?</mod:selector>
             <mod:setValue>Who are you?
@@ -2527,10 +2794,11 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Cultivator))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_QUEST">
+  <mod:findName name="VAMPWEED_HOMEWORLD_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="pilot" max_group="0" blue="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -2545,10 +2813,11 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Cultivator))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_QUEST">
+  <mod:findName name="VAMPWEED_HOMEWORLD_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="pilot" max_group="0" blue="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
@@ -2567,8 +2836,9 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Cultivator))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT">
+  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="sensors" lvl="2"/>
       <mod:findLike type="text">
         <mod:selector>(Upg. Sensors) Locate Ivar quickly.</mod:selector>
         <mod:setValue>(Upg. Sensors) Locate Ivar quickly.
@@ -2576,8 +2846,9 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Cultivator))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT">
+  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIFE_SCANNER"/>
       <mod:findLike type="text">
         <mod:selector>(Life Scanner) Locate Ivar quickly.</mod:selector>
         <mod:setValue>(Life Scanner) Locate Ivar quickly.
@@ -2585,8 +2856,9 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Cultivator))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT">
+  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_SLUG"/>
       <mod:findLike type="text">
         <mod:selector>(Slug Crew) Locate Ivar quickly.</mod:selector>
         <mod:setValue>(Slug Crew) Locate Ivar quickly.
@@ -2594,8 +2866,9 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Cultivator))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT">
+  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="BLUELIST_CREW_SNAIL"/>
       <mod:findLike type="text">
         <mod:selector>(Telepathic Shell) Locate Ivar quickly.</mod:selector>
         <mod:setValue>(Telepathic Shell) Locate Ivar quickly.
@@ -2603,7 +2876,7 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Cultivator))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT">
+  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Find out what he did.</mod:selector>
@@ -2612,10 +2885,11 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Cultivator))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT">
+  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_alkali"/>
           <mod:findLike type="text">
             <mod:selector>(Alkali) Call the local Shell garrison.</mod:selector>
             <mod:setValue>(Alkali) Call the local Shell garrison.
@@ -2625,10 +2899,11 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Cultivator))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT">
+  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="BLUELIST_CREW_NOFIRE"/>
           <mod:findLike type="text">
             <mod:selector>(Fireproof Crew) Send in your crew to find Ivar.</mod:selector>
             <mod:setValue>(Fireproof Crew) Send in your crew to find Ivar.
@@ -2638,10 +2913,11 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Cultivator))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT">
+  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="BLUELIST_DRONES_REPAIR_CREW"/>
           <mod:findLike type="text">
             <mod:selector>(Repair Drone) Send a repair drone into the fire.</mod:selector>
             <mod:setValue>(Repair Drone) Send a repair drone into the fire.
@@ -2651,10 +2927,11 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Cultivator))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT">
+  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="FIRE_EXTINGUISHERS"/>
           <mod:findLike type="text">
             <mod:selector>(Fire Extinguishers) Use your ship's fire suppression on the party hall.</mod:selector>
             <mod:setValue>(Fire Extinguishers) Use your ship's fire suppression on the party hall.
@@ -2664,10 +2941,11 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Cultivator))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT">
+  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" blue="false" req="LIST_CHECK_ANY_CREW" lvl="1"/>
           <mod:findLike type="text">
             <mod:selector>Send crew to help.</mod:selector>
             <mod:setValue>Send crew to help.
@@ -2677,10 +2955,11 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT">
+  <mod:findName name="VAMPWEED_HOMEWORLD_AYR_DEFEAT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>We can't help. Scrap the ship while you can.</mod:selector>
             <mod:setValue>We can't help. Scrap the ship while you can.
@@ -2691,8 +2970,9 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOCATE_IVAR_QUICKLY_SCAN">
+  <mod:findName name="LOCATE_IVAR_QUICKLY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_alkali"/>
       <mod:findLike type="text">
         <mod:selector>(Alkali) Call the local Shell garrison.</mod:selector>
         <mod:setValue>(Alkali) Call the local Shell garrison.
@@ -2700,8 +2980,9 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOCATE_IVAR_QUICKLY_SCAN">
+  <mod:findName name="LOCATE_IVAR_QUICKLY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="teleporter"/>
       <mod:findLike type="text">
         <mod:selector>(Teleporter) Lock on to Ivar and teleport him onto your ship.</mod:selector>
         <mod:setValue>(Teleporter) Lock on to Ivar and teleport him onto your ship.
@@ -2709,8 +2990,9 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOCATE_IVAR_QUICKLY_SCAN">
+  <mod:findName name="LOCATE_IVAR_QUICKLY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="BLUELIST_CREW_NOFIRE"/>
       <mod:findLike type="text">
         <mod:selector>(Fireproof Crew) Send in your crew to find Ivar.</mod:selector>
         <mod:setValue>(Fireproof Crew) Send in your crew to find Ivar.
@@ -2718,8 +3000,9 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOCATE_IVAR_QUICKLY_SCAN">
+  <mod:findName name="LOCATE_IVAR_QUICKLY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="BLUELIST_DRONES_REPAIR_CREW"/>
       <mod:findLike type="text">
         <mod:selector>(Repair Drone) Send a repair drone into the fire.</mod:selector>
         <mod:setValue>(Repair Drone) Send a repair drone into the fire.
@@ -2727,8 +3010,9 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOCATE_IVAR_QUICKLY_SCAN">
+  <mod:findName name="LOCATE_IVAR_QUICKLY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="FIRE_EXTINGUISHERS"/>
       <mod:findLike type="text">
         <mod:selector>(Fire Extinguishers) Use your ship's fire suppression on the party hall.</mod:selector>
         <mod:setValue>(Fire Extinguishers) Use your ship's fire suppression on the party hall.
@@ -2736,8 +3020,9 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOCATE_IVAR_QUICKLY_SCAN">
+  <mod:findName name="LOCATE_IVAR_QUICKLY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Send crew to help.</mod:selector>
         <mod:setValue>Send crew to help.
@@ -2745,8 +3030,9 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOCATE_IVAR_QUICKLY_SCAN">
+  <mod:findName name="LOCATE_IVAR_QUICKLY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Can't help. Scrap the ship while you can.</mod:selector>
         <mod:setValue>Can't help. Scrap the ship while you can.
@@ -2755,7 +3041,7 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SAVE_IVAR_GARRISON">
+  <mod:findName name="SAVE_IVAR_GARRISON" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
@@ -2764,7 +3050,7 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TELEPORT_IVAR">
+  <mod:findName name="TELEPORT_IVAR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
@@ -2773,7 +3059,7 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEND_CREW_TO_IVAR_FIREPROOF">
+  <mod:findName name="SEND_CREW_TO_IVAR_FIREPROOF" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
@@ -2782,7 +3068,7 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SAVE_IVAR_REPAIR_DRONE">
+  <mod:findName name="SAVE_IVAR_REPAIR_DRONE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
@@ -2791,7 +3077,7 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SAVE_IVAR_FIRE_EXTINGUISHERS">
+  <mod:findName name="SAVE_IVAR_FIRE_EXTINGUISHERS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
@@ -2800,7 +3086,7 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="IVAR_SAVED">
+  <mod:findName name="IVAR_SAVED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Let Ivar use your communications.</mod:selector>
@@ -2809,7 +3095,7 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="IVAR_SAVED">
+  <mod:findName name="IVAR_SAVED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2822,12 +3108,13 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="IVAR_SAVED">
+  <mod:findName name="IVAR_SAVED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector req="unique_alkali" max_group="0" blue="false"/>
               <mod:findLike type="text">
                 <mod:selector>Alkali wants to talk to his friend.</mod:selector>
                 <mod:setValue>Alkali wants to talk to his friend.
@@ -2839,14 +3126,16 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="IVAR_SAVED">
+  <mod:findName name="IVAR_SAVED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector req="unique_alkali" max_group="0" blue="false"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Yes.</mod:selector>
                     <mod:setValue>Yes.
@@ -2863,14 +3152,16 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="IVAR_SAVED">
+  <mod:findName name="IVAR_SAVED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector req="unique_alkali" max_group="0" blue="false"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
                       <mod:findLike type="text">
@@ -2889,14 +3180,16 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="IVAR_SAVED">
+  <mod:findName name="IVAR_SAVED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector req="unique_alkali" max_group="0" blue="false"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>No.</mod:selector>
                     <mod:setValue>No.
@@ -2912,14 +3205,16 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="IVAR_SAVED">
+  <mod:findName name="IVAR_SAVED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector req="unique_alkali" max_group="0" blue="false"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
                       <mod:findLike type="text">
@@ -2938,12 +3233,13 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="IVAR_SAVED">
+  <mod:findName name="IVAR_SAVED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector req="pilot" max_group="0" blue="false"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -2955,14 +3251,16 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="IVAR_SAVED">
+  <mod:findName name="IVAR_SAVED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector req="pilot" max_group="0" blue="false"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Yes.</mod:selector>
                     <mod:setValue>Yes.
@@ -2979,14 +3277,16 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="IVAR_SAVED">
+  <mod:findName name="IVAR_SAVED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector req="pilot" max_group="0" blue="false"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
                       <mod:findLike type="text">
@@ -3005,14 +3305,16 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="IVAR_SAVED">
+  <mod:findName name="IVAR_SAVED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector req="pilot" max_group="0" blue="false"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>No.</mod:selector>
                     <mod:setValue>No.
@@ -3028,14 +3330,16 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="IVAR_SAVED">
+  <mod:findName name="IVAR_SAVED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector req="pilot" max_group="0" blue="false"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
                       <mod:findLike type="text">
@@ -3054,7 +3358,7 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TYEREL_QUEST">
+  <mod:findName name="TYEREL_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Contact Ty E'Rel's ship.</mod:selector>
@@ -3063,7 +3367,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TYEREL_QUEST">
+  <mod:findName name="TYEREL_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3076,7 +3380,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TYEREL_QUEST">
+  <mod:findName name="TYEREL_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3093,7 +3397,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TYEREL_QUEST">
+  <mod:findName name="TYEREL_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Move on.</mod:selector>
@@ -3102,7 +3406,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TYEREL_QUEST">
+  <mod:findName name="TYEREL_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3115,7 +3419,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TY_EREL_COALITION_HAIL">
+  <mod:findName name="TY_EREL_COALITION_HAIL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Ask them why they hate Ty E'Rel.</mod:selector>
@@ -3124,7 +3428,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TY_EREL_COALITION_HAIL">
+  <mod:findName name="TY_EREL_COALITION_HAIL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3137,7 +3441,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TY_EREL_COALITION_HAIL">
+  <mod:findName name="TY_EREL_COALITION_HAIL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3154,7 +3458,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TY_EREL_COALITION_HAIL">
+  <mod:findName name="TY_EREL_COALITION_HAIL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3167,7 +3471,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TY_EREL_COALITION_HAIL">
+  <mod:findName name="TY_EREL_COALITION_HAIL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3184,7 +3488,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TY_EREL_COALITION_HAIL">
+  <mod:findName name="TY_EREL_COALITION_HAIL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Attack the ship.</mod:selector>
@@ -3193,7 +3497,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TY_EREL_COALITION_HAIL">
+  <mod:findName name="TY_EREL_COALITION_HAIL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3206,7 +3510,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TY_EREL_RESCUE_CONFEDERACY">
+  <mod:findName name="TY_EREL_RESCUE_CONFEDERACY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
@@ -3216,10 +3520,11 @@ Reward Standard No Item(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TY_EREL_RESCUE_CONFEDERACY">
+  <mod:findName name="TY_EREL_RESCUE_CONFEDERACY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>What's next for you?</mod:selector>
             <mod:setValue>What's next for you?
@@ -3229,7 +3534,7 @@ Reward Standard No Item(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TY_EREL_RECRUITMENT_CHOICE">
+  <mod:findName name="TY_EREL_RECRUITMENT_CHOICE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept Ty E'erel.</mod:selector>

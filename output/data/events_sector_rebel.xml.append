@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="FINISH_BEACON_REBEL">
+  <mod:findName name="FINISH_BEACON_REBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Do something onboard the ship.</mod:selector>
         <mod:setValue>Do something onboard the ship.
@@ -8,8 +9,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_TURNCOAT">
+  <mod:findName name="REBEL_TURNCOAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" blue="false" req="LIST_CHECK_ANY_CREW" lvl="1"/>
       <mod:findLike type="text">
         <mod:selector>Accept him on your ship.</mod:selector>
         <mod:setValue>Accept him on your ship.
@@ -17,10 +19,12 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_TURNCOAT">
+  <mod:findName name="REBEL_TURNCOAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" blue="false" req="LIST_CHECK_ANY_CREW" lvl="1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -33,8 +37,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_TURNCOAT">
+  <mod:findName name="REBEL_TURNCOAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" blue="false" req="LIST_CHECK_ANY_CREW" lvl="1"/>
       <mod:findLike type="text">
         <mod:selector>Cautiously accept him on your ship, but have him thrown into the brig.</mod:selector>
         <mod:setValue>Cautiously accept him on your ship, but have him thrown into the brig.
@@ -42,10 +47,12 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_TURNCOAT">
+  <mod:findName name="REBEL_TURNCOAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" blue="false" req="LIST_CHECK_ANY_CREW" lvl="1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -58,8 +65,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_TURNCOAT">
+  <mod:findName name="REBEL_TURNCOAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="DRONE_CONTROL_BOARDING_DAMAGE" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Boarding Drone) Have your drone escort him to the brig.</mod:selector>
         <mod:setValue>(Boarding Drone) Have your drone escort him to the brig.
@@ -67,10 +75,12 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_TURNCOAT">
+  <mod:findName name="REBEL_TURNCOAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="DRONE_CONTROL_BOARDING_DAMAGE" hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -83,7 +93,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_TURNCOAT">
+  <mod:findName name="REBEL_TURNCOAT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>This must be a trick. Keep your distance from the shuttle.</mod:selector>
@@ -92,7 +102,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_TURNCOAT">
+  <mod:findName name="REBEL_TURNCOAT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -105,8 +115,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="MERCENARY_CHASING_REBEL_TURNCOAT">
+  <mod:findName name="MERCENARY_CHASING_REBEL_TURNCOAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Turn the Rebel over to the Syndicate.</mod:selector>
         <mod:setValue>Turn the Rebel over to the Syndicate.
@@ -114,8 +125,9 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="MERCENARY_CHASING_REBEL_TURNCOAT">
+  <mod:findName name="MERCENARY_CHASING_REBEL_TURNCOAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="rep_comb_merc" lvl="1"/>
       <mod:findLike type="text">
         <mod:selector>(Positive Syndicate Reputation) Use your good standing with the Syndicate to make a trade.</mod:selector>
         <mod:setValue>(Positive Syndicate Reputation) Use your good standing with the Syndicate to make a trade.
@@ -124,8 +136,9 @@ Gain an augment(Giftlist Augment Combat)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="MERCENARY_CHASING_REBEL_TURNCOAT">
+  <mod:findName name="MERCENARY_CHASING_REBEL_TURNCOAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="human_angel"/>
       <mod:findLike type="text">
         <mod:selector>(Angel Crew) Have your mercenary handle the trade.</mod:selector>
         <mod:setValue>(Angel Crew) Have your mercenary handle the trade.
@@ -134,8 +147,9 @@ Gain an augment(Giftlist Augment Combat)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="MERCENARY_CHASING_REBEL_TURNCOAT">
+  <mod:findName name="MERCENARY_CHASING_REBEL_TURNCOAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the message.</mod:selector>
         <mod:setValue>Ignore the message.
@@ -143,10 +157,12 @@ Gain a crew(Human)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="MERCENARY_CHASING_REBEL_TURNCOAT">
+  <mod:findName name="MERCENARY_CHASING_REBEL_TURNCOAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -156,8 +172,9 @@ Gain a crew(Human)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="MERCENARY_CHASING_REBEL_TURNCOAT">
+  <mod:findName name="MERCENARY_CHASING_REBEL_TURNCOAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the Syndicate ship.</mod:selector>
         <mod:setValue>Attack the Syndicate ship.
@@ -165,10 +182,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="MERCENARY_CHASING_REBEL_TURNCOAT">
+  <mod:findName name="MERCENARY_CHASING_REBEL_TURNCOAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -178,7 +197,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_TURNCOAT_AFTERMATH">
+  <mod:findName name="REBEL_TURNCOAT_AFTERMATH" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept the turncoat.</mod:selector>
@@ -187,8 +206,9 @@ Gain a crew(Human)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COWARD">
+  <mod:findName name="REBEL_COWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="JUDGELIST_ROCK_RENEGADE_LOOT" max_group="0"/>
       <mod:findLike type="text">
         <mod:selector>(Renegade Loot) "Encourage" them to surrender generously.</mod:selector>
         <mod:setValue>(Renegade Loot) "Encourage" them to surrender generously.
@@ -198,8 +218,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COWARD">
+  <mod:findName name="REBEL_COWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="JUDGELIST_ROCK_RENEGADE_LOOT" max_group="0"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -212,8 +233,9 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COWARD">
+  <mod:findName name="REBEL_COWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="JUDGELIST_ROCK_RENEGADE_LOOT" max_group="0"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -225,8 +247,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COWARD">
+  <mod:findName name="REBEL_COWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="weapons" lvl="7" max_group="1"/>
       <mod:findLike type="text">
         <mod:selector>(Highly Adv. Weapons) "Encourage" them to surrender generously.</mod:selector>
         <mod:setValue>(Highly Adv. Weapons) "Encourage" them to surrender generously.
@@ -235,8 +258,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COWARD">
+  <mod:findName name="REBEL_COWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="weapons" lvl="7" max_group="1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -248,8 +272,9 @@ Reward Augment(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COWARD">
+  <mod:findName name="REBEL_COWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="weapons" lvl="7" max_group="1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -261,8 +286,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COWARD">
+  <mod:findName name="REBEL_COWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="weapons" lvl="5" max_lvl="6" max_group="1"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Weapons) "Encourage" them to surrender generously.</mod:selector>
         <mod:setValue>(Adv. Weapons) "Encourage" them to surrender generously.
@@ -271,8 +297,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COWARD">
+  <mod:findName name="REBEL_COWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="weapons" lvl="5" max_lvl="6" max_group="1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -284,8 +311,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COWARD">
+  <mod:findName name="REBEL_COWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="weapons" lvl="5" max_lvl="6" max_group="1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -297,8 +325,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COWARD">
+  <mod:findName name="REBEL_COWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="weapons" lvl="3" max_lvl="4" max_group="1"/>
       <mod:findLike type="text">
         <mod:selector>(Upg. Weapons) "Encourage" them to surrender generously.</mod:selector>
         <mod:setValue>(Upg. Weapons) "Encourage" them to surrender generously.
@@ -307,8 +336,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COWARD">
+  <mod:findName name="REBEL_COWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="weapons" lvl="3" max_lvl="4" max_group="1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -320,8 +350,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COWARD">
+  <mod:findName name="REBEL_COWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="weapons" lvl="3" max_lvl="4" max_group="1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -333,8 +364,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COWARD">
+  <mod:findName name="REBEL_COWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="weapons" lvl="1" max_lvl="2" max_group="1"/>
       <mod:findLike type="text">
         <mod:selector>(Weapons) "Encourage" them to surrender generously.</mod:selector>
         <mod:setValue>(Weapons) "Encourage" them to surrender generously.
@@ -343,8 +375,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COWARD">
+  <mod:findName name="REBEL_COWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="weapons" lvl="1" max_lvl="2" max_group="1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -356,8 +389,9 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COWARD">
+  <mod:findName name="REBEL_COWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="weapons" lvl="1" max_lvl="2" max_group="1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -369,7 +403,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COWARD">
+  <mod:findName name="REBEL_COWARD" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Attack them. They're Rebels.</mod:selector>
@@ -378,7 +412,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COWARD">
+  <mod:findName name="REBEL_COWARD" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Leave them alone.</mod:selector>
@@ -387,7 +421,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COWARD">
+  <mod:findName name="REBEL_COWARD" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -400,8 +434,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ATTACK_REBEL_COWARD">
+  <mod:findName name="ATTACK_REBEL_COWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -409,8 +444,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_BOOTCAMP">
+  <mod:findName name="REBEL_BOOTCAMP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_JERRY"/>
       <mod:findLike type="text">
         <mod:selector>(Jerry) Greet the bootcamp.</mod:selector>
         <mod:setValue>(Jerry) Greet the bootcamp.
@@ -419,8 +455,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_BOOTCAMP">
+  <mod:findName name="REBEL_BOOTCAMP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="human_mfk"/>
       <mod:findLike type="text">
         <mod:selector>(MFK Ace Crew) Make a case against the Rebellion.</mod:selector>
         <mod:setValue>(MFK Ace Crew) Make a case against the Rebellion.
@@ -428,8 +465,9 @@ Gain a crew(Human Soldier)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_BOOTCAMP">
+  <mod:findName name="REBEL_BOOTCAMP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ENGINEER"/>
       <mod:findLike type="text">
         <mod:selector>(Engineer Crew) Make a case against the Rebellion.</mod:selector>
         <mod:setValue>(Engineer Crew) Make a case against the Rebellion.
@@ -439,8 +477,9 @@ Gain a crew(Human Soldier)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_BOOTCAMP">
+  <mod:findName name="REBEL_BOOTCAMP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_HUMAN"/>
       <mod:findLike type="text">
         <mod:selector>(Human Crew) Make a case against the Rebellion.</mod:selector>
         <mod:setValue>(Human Crew) Make a case against the Rebellion.
@@ -453,8 +492,9 @@ Gain a crew(Human Soldier)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_BOOTCAMP">
+  <mod:findName name="REBEL_BOOTCAMP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Make a case against the Rebellion.</mod:selector>
         <mod:setValue>Make a case against the Rebellion.
@@ -467,7 +507,7 @@ Gain a crew(Human Soldier)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_BOOTCAMP">
+  <mod:findName name="REBEL_BOOTCAMP" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Keep away from the Rebel bootcamp.</mod:selector>
@@ -476,7 +516,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_BOOTCAMP">
+  <mod:findName name="REBEL_BOOTCAMP" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -489,8 +529,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CIRCUS">
+  <mod:findName name="REBEL_CIRCUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Check out the circus.</mod:selector>
         <mod:setValue>Check out the circus.
@@ -503,10 +544,12 @@ Gain a crew(Engi)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CIRCUS">
+  <mod:findName name="REBEL_CIRCUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Inspect the Slug.</mod:selector>
             <mod:setValue>Inspect the Slug.
@@ -517,12 +560,15 @@ Gain a crew(Slug)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CIRCUS">
+  <mod:findName name="REBEL_CIRCUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Offer to purchase Sazalaraz.</mod:selector>
                 <mod:setValue>Offer to purchase Sazalaraz.
@@ -535,12 +581,15 @@ Gain a crew(Slug)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CIRCUS">
+  <mod:findName name="REBEL_CIRCUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
                   <mod:findLike type="text">
@@ -557,10 +606,12 @@ Gain a crew(Slug)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CIRCUS">
+  <mod:findName name="REBEL_CIRCUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Inspect the Rockman.</mod:selector>
             <mod:setValue>Inspect the Rockman.
@@ -571,12 +622,15 @@ Gain a crew(Rock)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CIRCUS">
+  <mod:findName name="REBEL_CIRCUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Offer to purchase Boulder.</mod:selector>
                 <mod:setValue>Offer to purchase Boulder.
@@ -589,12 +643,15 @@ Gain a crew(Rock)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CIRCUS">
+  <mod:findName name="REBEL_CIRCUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
                   <mod:findLike type="text">
@@ -611,10 +668,12 @@ Gain a crew(Rock)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CIRCUS">
+  <mod:findName name="REBEL_CIRCUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Inspect the Orchid.</mod:selector>
             <mod:setValue>Inspect the Orchid.
@@ -625,12 +684,15 @@ Gain a crew(Orchid)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CIRCUS">
+  <mod:findName name="REBEL_CIRCUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Offer to purchase Sapling.</mod:selector>
                 <mod:setValue>Offer to purchase Sapling.
@@ -643,12 +705,15 @@ Gain a crew(Orchid)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CIRCUS">
+  <mod:findName name="REBEL_CIRCUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
                   <mod:findLike type="text">
@@ -665,10 +730,12 @@ Gain a crew(Orchid)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CIRCUS">
+  <mod:findName name="REBEL_CIRCUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Inspect the Zoltan.</mod:selector>
             <mod:setValue>Inspect the Zoltan.
@@ -679,12 +746,15 @@ Gain a crew(Zoltan)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CIRCUS">
+  <mod:findName name="REBEL_CIRCUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Offer to purchase Namast.</mod:selector>
                 <mod:setValue>Offer to purchase Namast.
@@ -697,12 +767,15 @@ Gain a crew(Zoltan)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CIRCUS">
+  <mod:findName name="REBEL_CIRCUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
                   <mod:findLike type="text">
@@ -719,10 +792,12 @@ Gain a crew(Zoltan)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CIRCUS">
+  <mod:findName name="REBEL_CIRCUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Inspect the Engi.</mod:selector>
             <mod:setValue>Inspect the Engi.
@@ -733,12 +808,15 @@ Gain a crew(Engi)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CIRCUS">
+  <mod:findName name="REBEL_CIRCUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Offer to purchase Q-32.</mod:selector>
                 <mod:setValue>Offer to purchase Q-32.
@@ -751,12 +829,15 @@ Gain a crew(Engi)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CIRCUS">
+  <mod:findName name="REBEL_CIRCUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
                   <mod:findLike type="text">
@@ -773,7 +854,7 @@ Gain a crew(Engi)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CIRCUS">
+  <mod:findName name="REBEL_CIRCUS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Ignore the circus.</mod:selector>
@@ -782,7 +863,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CIRCUS">
+  <mod:findName name="REBEL_CIRCUS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -795,7 +876,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_REMOTE_COLONY">
+  <mod:findName name="REBELHOLD_REMOTE_COLONY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Ignore the colony.</mod:selector>
@@ -804,7 +885,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_REMOTE_COLONY">
+  <mod:findName name="REBELHOLD_REMOTE_COLONY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -817,7 +898,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REMOTE_COLONY_MENU">
+  <mod:findName name="REMOTE_COLONY_MENU" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Visit the general store.</mod:selector>
@@ -826,7 +907,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REMOTE_COLONY_MENU">
+  <mod:findName name="REMOTE_COLONY_MENU" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -839,7 +920,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REMOTE_COLONY_MENU">
+  <mod:findName name="REMOTE_COLONY_MENU" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Visit the gunsmith.</mod:selector>
@@ -849,7 +930,7 @@ Gain an augment(Crew Firearms)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REMOTE_COLONY_MENU">
+  <mod:findName name="REMOTE_COLONY_MENU" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -863,7 +944,7 @@ Gain an augment(Crew Firearms)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REMOTE_COLONY_MENU">
+  <mod:findName name="REMOTE_COLONY_MENU" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Visit the appliance outlet.</mod:selector>
@@ -875,7 +956,7 @@ Gain a drone(Doctor Defense)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REMOTE_COLONY_MENU">
+  <mod:findName name="REMOTE_COLONY_MENU" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -889,7 +970,7 @@ Gain a drone(Repair)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REMOTE_COLONY_MENU">
+  <mod:findName name="REMOTE_COLONY_MENU" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -903,7 +984,7 @@ Gain a drone(Doctor Defense)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REMOTE_COLONY_CARPENTER_DISCOVERY">
+  <mod:findName name="REMOTE_COLONY_CARPENTER_DISCOVERY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
@@ -912,7 +993,7 @@ Gain a drone(Doctor Defense)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REMOTE_COLONY_CARPENTER_DISCOVERY">
+  <mod:findName name="REMOTE_COLONY_CARPENTER_DISCOVERY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -925,7 +1006,7 @@ Gain a drone(Doctor Defense)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REMOTE_COLONY_CARPENTER_DISCOVERY">
+  <mod:findName name="REMOTE_COLONY_CARPENTER_DISCOVERY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -942,7 +1023,7 @@ Gain a crew(Human Mfk)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REMOTE_COLONY_CARPENTER_DISCOVERY">
+  <mod:findName name="REMOTE_COLONY_CARPENTER_DISCOVERY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -963,7 +1044,7 @@ Gain a crew(Human Mfk)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REMOTE_COLONY_CARPENTER_DISCOVERY">
+  <mod:findName name="REMOTE_COLONY_CARPENTER_DISCOVERY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -988,7 +1069,7 @@ Gain a crew(Human Mfk)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REMOTE_COLONY_CARPENTER_DISCOVERY">
+  <mod:findName name="REMOTE_COLONY_CARPENTER_DISCOVERY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1017,7 +1098,7 @@ Gain a crew(Human Mfk)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REMOTE_COLONY_CARPENTER_DISCOVERY">
+  <mod:findName name="REMOTE_COLONY_CARPENTER_DISCOVERY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1042,7 +1123,7 @@ Gain a crew(Human Mfk)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REMOTE_COLONY_CARPENTER_DISCOVERY">
+  <mod:findName name="REMOTE_COLONY_CARPENTER_DISCOVERY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1071,7 +1152,7 @@ Gain a crew(Human Mfk)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REMOTE_COLONY_CARPENTER_DISCOVERY">
+  <mod:findName name="REMOTE_COLONY_CARPENTER_DISCOVERY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1088,7 +1169,7 @@ Gain a crew(Human Mfk)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Answer the call.</mod:selector>
@@ -1100,7 +1181,7 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1116,12 +1197,13 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="unique_anurak"/>
               <mod:findLike type="text">
                 <mod:selector>(Anurak) Talk about something.</mod:selector>
                 <mod:setValue>(Anurak) Talk about something.
@@ -1133,12 +1215,13 @@ Reward Weapon(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="zoltan_monk"/>
               <mod:findLike type="text">
                 <mod:selector>(Monk Crew) Set the lady's mind at ease.</mod:selector>
                 <mod:setValue>(Monk Crew) Set the lady's mind at ease.
@@ -1150,12 +1233,13 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="unique_devorak"/>
               <mod:findLike type="text">
                 <mod:selector>(Devorak) Have Devorak talk to the lady.</mod:selector>
                 <mod:setValue>(Devorak) Have Devorak talk to the lady.
@@ -1167,12 +1251,13 @@ Reward Weapon(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_DUSKBRINGER_RANDOM"/>
               <mod:findLike type="text">
                 <mod:selector>(Duskbringer Crew) Have your Duskbringer talk to the lady.</mod:selector>
                 <mod:setValue>(Duskbringer Crew) Have your Duskbringer talk to the lady.
@@ -1184,12 +1269,13 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="unique_symbiote"/>
               <mod:findLike type="text">
                 <mod:selector>(Tintan and Rig) "Your name wouldn't happen to be Eleanor, would it?"</mod:selector>
                 <mod:setValue>(Tintan and Rig) "Your name wouldn't happen to be Eleanor, would it?"
@@ -1201,12 +1287,13 @@ Reward Weapon(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_ZOLTAN_CAPITAL"/>
               <mod:findLike type="text">
                 <mod:selector>(Zoltan Crew) Let her talk to another Zoltan.</mod:selector>
                 <mod:setValue>(Zoltan Crew) Let her talk to another Zoltan.
@@ -1218,12 +1305,13 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="zoltan_osmian"/>
               <mod:findLike type="text">
                 <mod:selector>(Osmian Crew) Introduce her to your Osmian.</mod:selector>
                 <mod:setValue>(Osmian Crew) Introduce her to your Osmian.
@@ -1235,12 +1323,13 @@ Reward Weapon(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>We're doing our best to change things.</mod:selector>
                 <mod:setValue>We're doing our best to change things.
@@ -1252,7 +1341,7 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1267,12 +1356,13 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="unique_turzil"/>
               <mod:findLike type="text">
                 <mod:selector>(Turzil) What we stand for is more important than what we are.</mod:selector>
                 <mod:setValue>(Turzil) What we stand for is more important than what we are.
@@ -1284,12 +1374,13 @@ Reward Weapon(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_VARIANT_SEPARATIST"/>
               <mod:findLike type="text">
                 <mod:selector>(Separatist Crew) Disunity isn't a bad thing.</mod:selector>
                 <mod:setValue>(Separatist Crew) Disunity isn't a bad thing.
@@ -1301,12 +1392,13 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="unique_freddy"/>
               <mod:findLike type="text">
                 <mod:selector>(Freddy) Reassure her.</mod:selector>
                 <mod:setValue>(Freddy) Reassure her.
@@ -1318,12 +1410,13 @@ Reward Weapon(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_FREEMAN"/>
               <mod:findLike type="text">
                 <mod:selector>(Free Mantis) Disunity isn't a bad thing.</mod:selector>
                 <mod:setValue>(Free Mantis) Disunity isn't a bad thing.
@@ -1335,12 +1428,13 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="unique_tuco"/>
               <mod:findLike type="text">
                 <mod:selector>(Tuco) Dismiss her concerns.</mod:selector>
                 <mod:setValue>(Tuco) Dismiss her concerns.
@@ -1352,12 +1446,13 @@ Reward Weapon(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="rock_outcast"/>
               <mod:findLike type="text">
                 <mod:selector>(Outcast Crew) Disunity isn't a bad thing.</mod:selector>
                 <mod:setValue>(Outcast Crew) Disunity isn't a bad thing.
@@ -1369,12 +1464,13 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="unique_ariadne"/>
               <mod:findLike type="text">
                 <mod:selector>(Ariadne) Speak of the Lost Suns.</mod:selector>
                 <mod:setValue>(Ariadne) Speak of the Lost Suns.
@@ -1386,12 +1482,13 @@ Reward Weapon(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="rock_commando"/>
               <mod:findLike type="text">
                 <mod:selector>(Lost Sun Crew) Disunity isn't a bad thing.</mod:selector>
                 <mod:setValue>(Lost Sun Crew) Disunity isn't a bad thing.
@@ -1403,12 +1500,13 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Nod sadly.</mod:selector>
                 <mod:setValue>Nod sadly.
@@ -1420,7 +1518,7 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Don't answer the call.</mod:selector>
@@ -1429,7 +1527,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN">
+  <mod:findName name="REBELHOLD_WISTFUL_CITIZEN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1442,8 +1540,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER">
+  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Listen to their "history".</mod:selector>
         <mod:setValue>Listen to their "history".
@@ -1451,10 +1550,12 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER">
+  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Keep listening.</mod:selector>
             <mod:setValue>Keep listening.
@@ -1465,12 +1566,15 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER">
+  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1484,14 +1588,18 @@ Gain an augment(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER">
+  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1506,12 +1614,15 @@ Gain an augment(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER">
+  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Stop listening.</mod:selector>
                 <mod:setValue>Stop listening.
@@ -1523,14 +1634,18 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER">
+  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1544,10 +1659,12 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER">
+  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Stop listening.</mod:selector>
             <mod:setValue>Stop listening.
@@ -1557,12 +1674,15 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER">
+  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1574,8 +1694,9 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER">
+  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the ship.</mod:selector>
         <mod:setValue>Ignore the ship.
@@ -1583,8 +1704,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER">
+  <mod:findName name="REBELHOLD_AUTO_LOREKEEPER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1596,7 +1718,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_CIVILIAN">
+  <mod:findName name="AUTO_CIVILIAN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Aid the civilian ship.</mod:selector>
@@ -1605,10 +1727,11 @@ Fight(HK: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_CIVILIAN">
+  <mod:findName name="AUTO_CIVILIAN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1618,7 +1741,7 @@ Fight(HK: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_CIVILIAN">
+  <mod:findName name="AUTO_CIVILIAN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Stay out of it.</mod:selector>
@@ -1627,7 +1750,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_CIVILIAN">
+  <mod:findName name="AUTO_CIVILIAN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1640,7 +1763,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_REFUEL_STATION">
+  <mod:findName name="REBEL_REFUEL_STATION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Intervene to defend the outpost.</mod:selector>
@@ -1649,10 +1772,11 @@ Fight(HK: Reward Standard(M) Reward {(M))(CK: Reward Standard(H) Reward {(M))</m
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_REFUEL_STATION">
+  <mod:findName name="REBEL_REFUEL_STATION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1662,7 +1786,7 @@ Fight(HK: Reward Standard(M) Reward {(M))(CK: Reward Standard(H) Reward {(M))</m
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_REFUEL_STATION">
+  <mod:findName name="REBEL_REFUEL_STATION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the conflict.</mod:selector>
@@ -1671,7 +1795,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_REFUEL_STATION">
+  <mod:findName name="REBEL_REFUEL_STATION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1684,7 +1808,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_REFUEL_STATION">
+  <mod:findName name="AUTO_REFUEL_STATION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Intervene to defend the outpost.</mod:selector>
@@ -1693,10 +1817,11 @@ Fight(HK: Reward Standard(L) Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_REFUEL_STATION">
+  <mod:findName name="AUTO_REFUEL_STATION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1706,7 +1831,7 @@ Fight(HK: Reward Standard(L) Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_REFUEL_STATION">
+  <mod:findName name="AUTO_REFUEL_STATION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the conflict.</mod:selector>
@@ -1715,7 +1840,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_REFUEL_STATION">
+  <mod:findName name="AUTO_REFUEL_STATION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1728,7 +1853,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_MAP">
+  <mod:findName name="AUTO_DEFENSE_MAP" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Attack the automated ship to get to the sensor station.</mod:selector>
@@ -1737,10 +1862,11 @@ Fight(HK: Map Reveal Reward ~ Only(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_MAP">
+  <mod:findName name="AUTO_DEFENSE_MAP" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1750,7 +1876,7 @@ Fight(HK: Map Reveal Reward ~ Only(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_MAP">
+  <mod:findName name="AUTO_DEFENSE_MAP" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid provoking the ship.</mod:selector>
@@ -1759,7 +1885,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_MAP">
+  <mod:findName name="AUTO_DEFENSE_MAP" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1772,8 +1898,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_MAP">
+  <mod:findName name="AUTO_DEFENSE_MAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="sensors" lvl="3" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Sensors) Use your sensors to attempt to access the data.</mod:selector>
         <mod:setValue>(Adv. Sensors) Use your sensors to attempt to access the data.
@@ -1782,8 +1909,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_MAP">
+  <mod:findName name="AUTO_DEFENSE_MAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="teleporter" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Teleporter) Beam directly onto the station to try to avoid detection.</mod:selector>
         <mod:setValue>(Teleporter) Beam directly onto the station to try to avoid detection.
@@ -1791,8 +1919,9 @@ Map Reveal</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_MAP">
+  <mod:findName name="AUTO_DEFENSE_MAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LOCKED_GLOBAL_TELEPORT" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Central Teleport) Beam directly onto the station to try to avoid detection.</mod:selector>
         <mod:setValue>(Central Teleport) Beam directly onto the station to try to avoid detection.
@@ -1800,9 +1929,10 @@ Map Reveal</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_MAP_SENSORS_MV">
+  <mod:findName name="AUTO_DEFENSE_MAP_SENSORS_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1811,7 +1941,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_ITEM">
+  <mod:findName name="AUTO_DEFENSE_ITEM" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Attack the automated ship to get to the storage cache.</mod:selector>
@@ -1820,10 +1950,11 @@ Fight(HK: Reward ~ Only(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_ITEM">
+  <mod:findName name="AUTO_DEFENSE_ITEM" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1833,7 +1964,7 @@ Fight(HK: Reward ~ Only(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_ITEM">
+  <mod:findName name="AUTO_DEFENSE_ITEM" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid provoking the ship.</mod:selector>
@@ -1842,7 +1973,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_ITEM">
+  <mod:findName name="AUTO_DEFENSE_ITEM" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1855,8 +1986,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_ITEM">
+  <mod:findName name="AUTO_DEFENSE_ITEM" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="cloaking" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Cloaking) Attempt to cloak and access the cache.</mod:selector>
         <mod:setValue>(Cloaking) Attempt to cloak and access the cache.
@@ -1867,9 +1999,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_ITEM_CLOAK_MV">
+  <mod:findName name="AUTO_DEFENSE_ITEM_CLOAK_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1880,9 +2013,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_ITEM_CLOAK_MV">
+  <mod:findName name="AUTO_DEFENSE_ITEM_CLOAK_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1891,7 +2025,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_RADAR">
+  <mod:findName name="AUTO_DEFENSE_RADAR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Approach the station.</mod:selector>
@@ -1900,10 +2034,11 @@ Fight(HK: Reward ~ Only(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_RADAR">
+  <mod:findName name="AUTO_DEFENSE_RADAR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1913,7 +2048,7 @@ Fight(HK: Reward ~ Only(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_RADAR">
+  <mod:findName name="AUTO_DEFENSE_RADAR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Keep your distance and wait for the FTL to charge.</mod:selector>
@@ -1922,7 +2057,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_RADAR">
+  <mod:findName name="AUTO_DEFENSE_RADAR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1935,8 +2070,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_RADAR">
+  <mod:findName name="AUTO_DEFENSE_RADAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="COMBAT_DRONE_LIST" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Combat Drone) Send a drone to distract the automated ship.</mod:selector>
         <mod:setValue>(Combat Drone) Send a drone to distract the automated ship.
@@ -1948,7 +2084,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_RADAR_COMBAT_MV">
+  <mod:findName name="AUTO_DEFENSE_RADAR_COMBAT_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -1961,7 +2097,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_RADAR_COMBAT_MV">
+  <mod:findName name="AUTO_DEFENSE_RADAR_COMBAT_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -1974,9 +2110,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_DEFENSE_RADAR_COMBAT_MV">
+  <mod:findName name="AUTO_DEFENSE_RADAR_COMBAT_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1985,8 +2122,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BROKEN_REBEL_DRONE">
+  <mod:findName name="BROKEN_REBEL_DRONE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attempt to download the ship's data stores.</mod:selector>
         <mod:setValue>Attempt to download the ship's data stores.
@@ -1996,7 +2134,7 @@ Fight(HK: 50% Reward Standard(M))(SR: 10% Reward Stuff(R) 10% Reward { Only(L))<
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BROKEN_REBEL_DRONE">
+  <mod:findName name="BROKEN_REBEL_DRONE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Don't risk activating it, and just strip the ship for any useful scrap.</mod:selector>
@@ -2005,8 +2143,9 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BROKEN_REBEL_DRONE">
+  <mod:findName name="BROKEN_REBEL_DRONE" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="sensors" lvl="3" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Sensors) Remotely scan the ship.</mod:selector>
         <mod:setValue>(Adv. Sensors) Remotely scan the ship.
@@ -2016,9 +2155,10 @@ Fight(HK: 25% Reward Standard(M))(SR: 5% Reward Stuff(R) 5% Reward { Only(L))</m
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DOWNLOAD_DRONE_DATA_MV">
+  <mod:findName name="DOWNLOAD_DRONE_DATA_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2027,9 +2167,10 @@ Fight(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20% Reward { Only(L))</mod
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BROKEN_REBEL_DRONE_SENSORS_MV">
+  <mod:findName name="BROKEN_REBEL_DRONE_SENSORS_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Yes.</mod:selector>
           <mod:setValue>Yes.
@@ -2040,7 +2181,7 @@ Fight(HK: 50% Reward Standard(M))(SR: 10% Reward Stuff(R) 10% Reward { Only(L))<
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BROKEN_REBEL_DRONE_SENSORS_MV">
+  <mod:findName name="BROKEN_REBEL_DRONE_SENSORS_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -2051,7 +2192,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BROKEN_REBEL_DRONE_SENSORS_MV">
+  <mod:findName name="BROKEN_REBEL_DRONE_SENSORS_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="event">
@@ -2066,7 +2207,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR">
+  <mod:findName name="REBEL_DEFECTOR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
@@ -2075,10 +2216,11 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR">
+  <mod:findName name="REBEL_DEFECTOR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>Accept his proposal, and prepare to fight the Rebel ship.</mod:selector>
             <mod:setValue>Accept his proposal, and prepare to fight the Rebel ship.
@@ -2096,10 +2238,11 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR">
+  <mod:findName name="REBEL_DEFECTOR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>Reject his offer. You can never trust these Rebels.</mod:selector>
             <mod:setValue>Reject his offer. You can never trust these Rebels.
@@ -2110,10 +2253,11 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR">
+  <mod:findName name="REBEL_DEFECTOR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="0" max_lvl="0" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>Terminate the intruder immediately. You can never trust these Rebels.</mod:selector>
             <mod:setValue>Terminate the intruder immediately. You can never trust these Rebels.
@@ -2123,12 +2267,14 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR">
+  <mod:findName name="REBEL_DEFECTOR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="0" max_lvl="0" blue="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -2140,9 +2286,10 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_REJECT_MV">
+  <mod:findName name="REBEL_DEFECTOR_REJECT_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2151,9 +2298,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_REJECT_MV">
+  <mod:findName name="REBEL_DEFECTOR_REJECT_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2162,9 +2310,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_REJECT_MV">
+  <mod:findName name="REBEL_DEFECTOR_REJECT_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Reluctantly accept his proposal and fight the Rebel ship.</mod:selector>
           <mod:setValue>Reluctantly accept his proposal and fight the Rebel ship.
@@ -2180,10 +2329,11 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_REJECT_MV">
+  <mod:findName name="REBEL_DEFECTOR_REJECT_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2193,7 +2343,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_REJECT_MV">
+  <mod:findName name="REBEL_DEFECTOR_REJECT_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -2204,9 +2354,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_HELP_MV">
+  <mod:findName name="REBEL_DEFECTOR_HELP_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2215,9 +2366,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_HELP_MV">
+  <mod:findName name="REBEL_DEFECTOR_HELP_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2226,9 +2378,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_HELP_MV">
+  <mod:findName name="REBEL_DEFECTOR_HELP_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2237,9 +2390,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_HELP_MV">
+  <mod:findName name="REBEL_DEFECTOR_HELP_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2248,9 +2402,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_HELP_MV">
+  <mod:findName name="REBEL_DEFECTOR_HELP_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2259,9 +2414,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_HELP_MV">
+  <mod:findName name="REBEL_DEFECTOR_HELP_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2270,9 +2426,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_HELP_2_MV">
+  <mod:findName name="REBEL_DEFECTOR_HELP_2_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2281,9 +2438,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_HELP_2_MV">
+  <mod:findName name="REBEL_DEFECTOR_HELP_2_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2292,9 +2450,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_HELP_2_MV">
+  <mod:findName name="REBEL_DEFECTOR_HELP_2_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2303,9 +2462,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_HELP_2_MV">
+  <mod:findName name="REBEL_DEFECTOR_HELP_2_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2314,9 +2474,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_HELP_2_MV">
+  <mod:findName name="REBEL_DEFECTOR_HELP_2_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2325,9 +2486,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_HELP_2_MV">
+  <mod:findName name="REBEL_DEFECTOR_HELP_2_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2336,7 +2498,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_QUEST_MV">
+  <mod:findName name="REBEL_DEFECTOR_QUEST_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -2347,7 +2509,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DEFECTOR_QUEST_MV">
+  <mod:findName name="REBEL_DEFECTOR_QUEST_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -2358,8 +2520,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_SUPERFISH">
+  <mod:findName name="REBELHOLD_SUPERFISH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Your logo looks like it was drawn by a toddler.</mod:selector>
         <mod:setValue>Your logo looks like it was drawn by a toddler.
@@ -2367,10 +2530,12 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_SUPERFISH">
+  <mod:findName name="REBELHOLD_SUPERFISH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2380,8 +2545,9 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_SUPERFISH">
+  <mod:findName name="REBELHOLD_SUPERFISH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_JERRY"/>
       <mod:findLike type="text">
         <mod:selector>(Jerry) Compliment the logo.</mod:selector>
         <mod:setValue>(Jerry) Compliment the logo.
@@ -2389,7 +2555,7 @@ Gain a crew(Human Mfk)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_SUPERFISH">
+  <mod:findName name="REBELHOLD_SUPERFISH" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Agree not to fight.</mod:selector>
@@ -2398,7 +2564,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_SUPERFISH">
+  <mod:findName name="REBELHOLD_SUPERFISH" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2411,8 +2577,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_ELITE_CHOICE">
+  <mod:findName name="REBELHOLD_ELITE_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the ship.</mod:selector>
         <mod:setValue>Attack the ship.
@@ -2420,10 +2587,12 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Rebel))</mod:setV
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_ELITE_CHOICE">
+  <mod:findName name="REBELHOLD_ELITE_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2433,7 +2602,7 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Rebel))</mod:setV
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_ELITE_CHOICE">
+  <mod:findName name="REBELHOLD_ELITE_CHOICE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the Elite.</mod:selector>
@@ -2442,7 +2611,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_ELITE_CHOICE">
+  <mod:findName name="REBELHOLD_ELITE_CHOICE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2455,8 +2624,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_ARCHIVE">
+  <mod:findName name="REBELHOLD_ARCHIVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the patrol ship to get to the Archive.</mod:selector>
         <mod:setValue>Attack the patrol ship to get to the Archive.
@@ -2464,10 +2634,12 @@ Fight(HK=CK: Reward Standard(H) Gain an augment(Store Beacon) Map Reveal Fleet D
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_ARCHIVE">
+  <mod:findName name="REBELHOLD_ARCHIVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2477,8 +2649,9 @@ Fight(HK=CK: Reward Standard(H) Gain an augment(Store Beacon) Map Reveal Fleet D
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_ARCHIVE">
+  <mod:findName name="REBELHOLD_ARCHIVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the Archive.</mod:selector>
         <mod:setValue>Ignore the Archive.
@@ -2486,8 +2659,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_ARCHIVE">
+  <mod:findName name="REBELHOLD_ARCHIVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -2499,8 +2673,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_ARCHIVE_WIN">
+  <mod:findName name="REBELHOLD_ARCHIVE_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Download the data stores.</mod:selector>
         <mod:setValue>Download the data stores.
@@ -2510,7 +2685,7 @@ Fleet Delay(1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_SPEECH">
+  <mod:findName name="REBELHOLD_SPEECH" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Approach the city.</mod:selector>
@@ -2523,10 +2698,11 @@ Gain a crew(Human Soldier)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_SPEECH">
+  <mod:findName name="REBELHOLD_SPEECH" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2540,12 +2716,14 @@ Gain a crew(Human Soldier)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_SPEECH">
+  <mod:findName name="REBELHOLD_SPEECH" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
               <mod:findLike type="text">
                 <mod:selector>Send one of your crew to assassinate the politician.</mod:selector>
                 <mod:setValue>Send one of your crew to assassinate the politician.
@@ -2559,14 +2737,17 @@ Gain a crew(Human Soldier)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_SPEECH">
+  <mod:findName name="REBELHOLD_SPEECH" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -2582,12 +2763,14 @@ Gain a crew(Human Soldier)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_SPEECH">
+  <mod:findName name="REBELHOLD_SPEECH" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_ELITE"/>
               <mod:findLike type="text">
                 <mod:selector>(Elite Crew) Send your elite to assassinate the politician.</mod:selector>
                 <mod:setValue>(Elite Crew) Send your elite to assassinate the politician.
@@ -2599,12 +2782,14 @@ Fleet Delay(2)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_SPEECH">
+  <mod:findName name="REBELHOLD_SPEECH" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_SLUG"/>
               <mod:findLike type="text">
                 <mod:selector>(Slug Crew) Your Slug thinks they can hack into the screens.</mod:selector>
                 <mod:setValue>(Slug Crew) Your Slug thinks they can hack into the screens.
@@ -2616,7 +2801,7 @@ Gain a crew(Human Soldier)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_SPEECH">
+  <mod:findName name="REBELHOLD_SPEECH" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Ignore the planet.</mod:selector>
@@ -2625,7 +2810,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBELHOLD_SPEECH">
+  <mod:findName name="REBELHOLD_SPEECH" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2638,8 +2823,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_FLEEING_FROM_RENEGADE">
+  <mod:findName name="DISTRESS_REBEL_FLEEING_FROM_RENEGADE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2647,7 +2833,7 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT">
+  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Agree and go attract the attention of the checkpoint.</mod:selector>
@@ -2656,10 +2842,11 @@ Fight(CK: Reward Standard(H) Reward Standard(M))(HK: Reward Standard(L) Reward S
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT">
+  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_JERRY"/>
           <mod:findLike type="text">
             <mod:selector>(Jerry) "Hello!"</mod:selector>
             <mod:setValue>(Jerry) "Hello!"
@@ -2670,12 +2857,14 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT">
+  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_JERRY"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -2687,10 +2876,11 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT">
+  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="human_mfk"/>
           <mod:findLike type="text">
             <mod:selector>(MFK Ace Crew) Surprise inspection.</mod:selector>
             <mod:setValue>(MFK Ace Crew) Surprise inspection.
@@ -2700,12 +2890,14 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT">
+  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="human_mfk"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -2717,10 +2909,11 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT">
+  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="human_technician"/>
           <mod:findLike type="text">
             <mod:selector>(Technician Crew) Inform them you are here to provide a system upgrade.</mod:selector>
             <mod:setValue>(Technician Crew) Inform them you are here to provide a system upgrade.
@@ -2730,12 +2923,14 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT">
+  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="human_technician"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -2747,10 +2942,11 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT">
+  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attack.</mod:selector>
             <mod:setValue>Attack.
@@ -2760,10 +2956,11 @@ Fight(CK: Reward Standard(H) Reward Standard(M))(HK: Reward Standard(L) Reward S
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT">
+  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -2777,7 +2974,7 @@ Fight(CK: Reward Standard(H) Reward Standard(M))(HK: Reward Standard(L) Reward S
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT">
+  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>We can't help.</mod:selector>
@@ -2786,7 +2983,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT">
+  <mod:findName name="DISTRESS_REBEL_DISTRACT_CHECKPOINT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2799,7 +2996,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM">
+  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Aren't you already calling for help?</mod:selector>
@@ -2813,10 +3010,11 @@ Reward Standard(L)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM">
+  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="LIST_CREW_ENGINEER"/>
           <mod:findLike type="text">
             <mod:selector>(Engineer Crew) Send them an engineer.</mod:selector>
             <mod:setValue>(Engineer Crew) Send them an engineer.
@@ -2827,12 +3025,14 @@ Gain a weapon(Giftlist Missiles)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM">
+  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="LIST_CREW_ENGINEER"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -2845,10 +3045,11 @@ Gain a weapon(Giftlist Missiles)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM">
+  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="LIST_CREW_ENGI"/>
           <mod:findLike type="text">
             <mod:selector>(Engi Crew) Send them an Engi.</mod:selector>
             <mod:setValue>(Engi Crew) Send them an Engi.
@@ -2859,12 +3060,14 @@ Gain a weapon(Giftlist Missiles)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM">
+  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="LIST_CREW_ENGI"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -2877,10 +3080,11 @@ Gain a weapon(Giftlist Missiles)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM">
+  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="DRONE_CONTROL_REPAIR_ALL"/>
           <mod:findLike type="text">
             <mod:selector>(Repair Drone) Deploy a repair drone.</mod:selector>
             <mod:setValue>(Repair Drone) Deploy a repair drone.
@@ -2891,12 +3095,14 @@ Gain a weapon(Giftlist Missiles)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM">
+  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="DRONE_CONTROL_REPAIR_ALL"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -2909,10 +3115,11 @@ Gain a weapon(Giftlist Missiles)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM">
+  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Try to secure the depot.</mod:selector>
             <mod:setValue>Try to secure the depot.
@@ -2924,12 +3131,14 @@ Gain a weapon(Giftlist Missiles)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM">
+  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -2941,10 +3150,11 @@ Gain a weapon(Giftlist Missiles)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM">
+  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Destroy the depot.</mod:selector>
             <mod:setValue>Destroy the depot.
@@ -2955,7 +3165,7 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM">
+  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2968,7 +3178,7 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM">
+  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2985,7 +3195,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM">
+  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Do as they say.</mod:selector>
@@ -2994,7 +3204,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM">
+  <mod:findName name="DISTRESS_REBEL_DEPOT_PROBLEM" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3007,7 +3217,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBELHOLD_POW">
+  <mod:findName name="DISTRESS_REBELHOLD_POW" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Attack the MFK.</mod:selector>
@@ -3016,10 +3226,11 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_REBELHOLD_POW">
+  <mod:findName name="DISTRESS_REBELHOLD_POW" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -3029,8 +3240,9 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_SELITE_POW">
+  <mod:findName name="REBEL_SELITE_POW" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="sensors" lvl="2" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Upg. Sensors) Scan for the prisoner.</mod:selector>
         <mod:setValue>(Upg. Sensors) Scan for the prisoner.
@@ -3038,8 +3250,9 @@ Gain a crew(Federation Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_SELITE_POW">
+  <mod:findName name="REBEL_SELITE_POW" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIFE_SCANNER" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Lifeform Scanner) Scan for the prisoner.</mod:selector>
         <mod:setValue>(Lifeform Scanner) Scan for the prisoner.
@@ -3047,8 +3260,9 @@ Gain a crew(Federation Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_SELITE_POW">
+  <mod:findName name="REBEL_SELITE_POW" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_SLUG" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Slug Crew) Try to sense the prisoner.</mod:selector>
         <mod:setValue>(Slug Crew) Try to sense the prisoner.
@@ -3056,8 +3270,9 @@ Gain a crew(Federation Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_SELITE_POW">
+  <mod:findName name="REBEL_SELITE_POW" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="BLUELIST_CREW_SNAIL" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Telepathic Shell) Try to sense the prisoner.</mod:selector>
         <mod:setValue>(Telepathic Shell) Try to sense the prisoner.
@@ -3065,8 +3280,9 @@ Gain a crew(Federation Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_SELITE_POW">
+  <mod:findName name="REBEL_SELITE_POW" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Take some time to send down a search party.</mod:selector>
         <mod:setValue>Take some time to send down a search party.
@@ -3075,7 +3291,7 @@ Gain a crew(Federation Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CONSTRUCTION_CREW">
+  <mod:findName name="REBEL_CONSTRUCTION_CREW" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Get closer.</mod:selector>
@@ -3084,10 +3300,11 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 17% Reward Stuff(R) 17
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CONSTRUCTION_CREW">
+  <mod:findName name="REBEL_CONSTRUCTION_CREW" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -3097,8 +3314,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 17% Reward Stuff(R) 17
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CONSTRUCTION_CREW">
+  <mod:findName name="REBEL_CONSTRUCTION_CREW" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="mind" lvl="2"/>
       <mod:findLike type="text">
         <mod:selector>(Upg. Mind Control) Wait until the end of the meeting and compel one of the construction ships to fill you in.</mod:selector>
         <mod:setValue>(Upg. Mind Control) Wait until the end of the meeting and compel one of the construction ships to fill you in.
@@ -3106,8 +3324,9 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CONSTRUCTION_CREW">
+  <mod:findName name="REBEL_CONSTRUCTION_CREW" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="mind" lvl="2"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -3119,12 +3338,14 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CONSTRUCTION_CREW">
+  <mod:findName name="REBEL_CONSTRUCTION_CREW" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="mind" lvl="2"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -3136,8 +3357,9 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CONSTRUCTION_CREW">
+  <mod:findName name="REBEL_CONSTRUCTION_CREW" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="mind" lvl="1" max_lvl="1"/>
       <mod:findLike type="text">
         <mod:selector>(Mind Control) Wait until the end of the meeting and try to compel one of the construction ships to fill you in.</mod:selector>
         <mod:setValue>(Mind Control) Wait until the end of the meeting and try to compel one of the construction ships to fill you in.
@@ -3145,10 +3367,12 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 17% Reward Stuff(R) 17
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CONSTRUCTION_CREW">
+  <mod:findName name="REBEL_CONSTRUCTION_CREW" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="mind" lvl="1" max_lvl="1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -3158,8 +3382,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 17% Reward Stuff(R) 17
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CONSTRUCTION_CREW">
+  <mod:findName name="REBEL_CONSTRUCTION_CREW" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="cloaking" lvl="2"/>
       <mod:findLike type="text">
         <mod:selector>(Upg. Cloaking) Spy on the meeting.</mod:selector>
         <mod:setValue>(Upg. Cloaking) Spy on the meeting.
@@ -3167,8 +3392,9 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CONSTRUCTION_CREW">
+  <mod:findName name="REBEL_CONSTRUCTION_CREW" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="cloaking" lvl="2"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -3180,12 +3406,14 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CONSTRUCTION_CREW">
+  <mod:findName name="REBEL_CONSTRUCTION_CREW" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="cloaking" lvl="2"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -3197,8 +3425,9 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CONSTRUCTION_CREW">
+  <mod:findName name="REBEL_CONSTRUCTION_CREW" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="cloaking" lvl="1" max_lvl="1"/>
       <mod:findLike type="text">
         <mod:selector>(Cloaking) Try to spy on the meeting.</mod:selector>
         <mod:setValue>(Cloaking) Try to spy on the meeting.
@@ -3206,10 +3435,12 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 17% Reward Stuff(R) 17
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CONSTRUCTION_CREW">
+  <mod:findName name="REBEL_CONSTRUCTION_CREW" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="cloaking" lvl="1" max_lvl="1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -3219,7 +3450,7 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 17% Reward Stuff(R) 17
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CONSTRUCTION_CREW">
+  <mod:findName name="REBEL_CONSTRUCTION_CREW" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Keep your distance to avoid being spotted.</mod:selector>
@@ -3228,7 +3459,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_CONSTRUCTION_CREW">
+  <mod:findName name="REBEL_CONSTRUCTION_CREW" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3241,8 +3472,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_REBEL_INCOMPLETE_DOCK">
+  <mod:findName name="QUEST_REBEL_INCOMPLETE_DOCK" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -3250,7 +3482,7 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DOCK_GUARD_DEFEATED">
+  <mod:findName name="REBEL_DOCK_GUARD_DEFEATED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Continue to the partially-completed dock.</mod:selector>
@@ -3264,10 +3496,11 @@ Reward Stuff(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DOCK_GUARD_DEFEATED">
+  <mod:findName name="REBEL_DOCK_GUARD_DEFEATED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="weapons" lvl="5" hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>(Adv. Weapons) All out assault with your weapons system.</mod:selector>
             <mod:setValue>(Adv. Weapons) All out assault with your weapons system.
@@ -3278,10 +3511,11 @@ Fleet Delay(1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DOCK_GUARD_DEFEATED">
+  <mod:findName name="REBEL_DOCK_GUARD_DEFEATED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="BLUELIST_WEAPONS_HEAVY" hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>(Heavy Weapon) Hit the most sensitive spots with your heavy weapons.</mod:selector>
             <mod:setValue>(Heavy Weapon) Hit the most sensitive spots with your heavy weapons.
@@ -3292,7 +3526,7 @@ Fleet Delay(1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DOCK_GUARD_DEFEATED">
+  <mod:findName name="REBEL_DOCK_GUARD_DEFEATED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3307,7 +3541,7 @@ Reward Stuff(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_DOCK_GUARD_DEFEATED">
+  <mod:findName name="REBEL_DOCK_GUARD_DEFEATED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3324,8 +3558,9 @@ Reward Stuff(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COLONY_PRISONBREAK">
+  <mod:findName name="REBEL_COLONY_PRISONBREAK" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Avoid the colony.</mod:selector>
         <mod:setValue>Avoid the colony.
@@ -3333,8 +3568,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COLONY_PRISONBREAK">
+  <mod:findName name="REBEL_COLONY_PRISONBREAK" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -3346,8 +3582,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_REBEL_COLONY_PRISONBREAK_JAILER">
+  <mod:findName name="QUEST_REBEL_COLONY_PRISONBREAK_JAILER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -3355,8 +3592,9 @@ Fight(CK: Reward Standard(M) Reward Standard(H))(HK: Reward Standard(M))(SR: Rew
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COLONY_PRISONBREAK_JAILER_SURRENDER">
+  <mod:findName name="REBEL_COLONY_PRISONBREAK_JAILER_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Accept the surrender and free the slaves.</mod:selector>
         <mod:setValue>Accept the surrender and free the slaves.
@@ -3364,8 +3602,9 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEAD_CREW_REBEL_PRISONBREAK">
+  <mod:findName name="DEAD_CREW_REBEL_PRISONBREAK" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Check on the colonists.</mod:selector>
         <mod:setValue>Check on the colonists.
@@ -3373,8 +3612,9 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_REBEL_COLONY_PRISONBREAK_FINAL">
+  <mod:findName name="QUEST_REBEL_COLONY_PRISONBREAK_FINAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Try to rescue the colonists.</mod:selector>
         <mod:setValue>Try to rescue the colonists.
@@ -3382,10 +3622,12 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a crew(Random))</mod:s
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_REBEL_COLONY_PRISONBREAK_FINAL">
+  <mod:findName name="QUEST_REBEL_COLONY_PRISONBREAK_FINAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -3395,8 +3637,9 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a crew(Random))</mod:s
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_COLONY_PRISONBREAK_FINAL_DEADCREW">
+  <mod:findName name="REBEL_COLONY_PRISONBREAK_FINAL_DEADCREW" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Check on the colonists.</mod:selector>
         <mod:setValue>Check on the colonists.
@@ -3405,8 +3648,9 @@ Gain a crew(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_REBEL_REGULAR">
+  <mod:findName name="ENCOUNTER_REBEL_REGULAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -3414,8 +3658,9 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_REBEL_PULSAR">
+  <mod:findName name="ENCOUNTER_REBEL_PULSAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -3423,8 +3668,9 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_REBEL_ASTEROID">
+  <mod:findName name="ENCOUNTER_REBEL_ASTEROID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -3432,8 +3678,9 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_REBEL_SPY">
+  <mod:findName name="ENCOUNTER_REBEL_SPY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -3441,8 +3688,9 @@ Fight(HK: 20% Reward Standard(M) 20% Reward Standard(L))(CK: Reward Standard(H))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BOARDERS_REBEL_SHIP">
+  <mod:findName name="BOARDERS_REBEL_SHIP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -3450,8 +3698,9 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_AUTO_ION">
+  <mod:findName name="ENCOUNTER_AUTO_ION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -3459,8 +3708,9 @@ Fight(HK: Reward Standard No Item(M) Gain a weapon(Ion Pierce Chain))</mod:setVa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_REBELHOLD_STATION">
+  <mod:findName name="ENCOUNTER_REBELHOLD_STATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -3468,8 +3718,9 @@ Fight(HK: 50% Reward Standard(L) 50% Reward ~ Only(L))(CK: 20% Reward Stuff(M) 2
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_REBEL_ELITE">
+  <mod:findName name="ENCOUNTER_REBEL_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -3477,8 +3728,9 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Rebel))</mod:setV
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_QUEST">
+  <mod:findName name="JERRY_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="coords_jerry" lvl="0" hidden="true" blue="false" max_group="0"/>
       <mod:findLike type="text">
         <mod:selector>The "Protectorate"? Keep listening...</mod:selector>
         <mod:setValue>The "Protectorate"? Keep listening...
@@ -3486,8 +3738,9 @@ Fight(HK=CK: Reward Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_QUEST">
+  <mod:findName name="JERRY_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="coords_jerry" lvl="0" hidden="true" blue="false" max_group="0"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -3499,8 +3752,9 @@ Fight(HK=CK: Reward Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_QUEST">
+  <mod:findName name="JERRY_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="coords_jerry" lvl="0" hidden="true" blue="false" max_group="0"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
@@ -3516,14 +3770,16 @@ Fight(HK=CK: Reward Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_QUEST">
+  <mod:findName name="JERRY_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="coords_jerry" lvl="0" hidden="true" blue="false" max_group="0"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Follow that transport!</mod:selector>
                     <mod:setValue>Follow that transport!
@@ -3537,16 +3793,19 @@ Fight(HK=CK: Reward Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_QUEST">
+  <mod:findName name="JERRY_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="coords_jerry" lvl="0" hidden="true" blue="false" max_group="0"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Continue...</mod:selector>
                         <mod:setValue>Continue...
@@ -3562,14 +3821,16 @@ Fight(HK=CK: Reward Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_QUEST">
+  <mod:findName name="JERRY_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="coords_jerry" lvl="0" hidden="true" blue="false" max_group="0"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Politely ask for the co-ordinates.</mod:selector>
                     <mod:setValue>Politely ask for the co-ordinates.
@@ -3583,16 +3844,19 @@ Fight(HK=CK: Reward Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_QUEST">
+  <mod:findName name="JERRY_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="coords_jerry" lvl="0" hidden="true" blue="false" max_group="0"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Continue...</mod:selector>
                         <mod:setValue>Continue...
@@ -3608,8 +3872,9 @@ Fight(HK=CK: Reward Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_QUEST">
+  <mod:findName name="JERRY_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" blue="false" req="pilot" max_group="1"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the Rebels.</mod:selector>
         <mod:setValue>Ignore the Rebels.
@@ -3617,8 +3882,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_QUEST">
+  <mod:findName name="JERRY_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" blue="false" req="pilot" max_group="1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -3630,8 +3896,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLAGSHIP_CONSTRUCTION">
+  <mod:findName name="FLAGSHIP_CONSTRUCTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Inspect the shipyard.</mod:selector>
         <mod:setValue>Inspect the shipyard.
@@ -3643,10 +3910,12 @@ Fight(HK=CK: Reward Standard(H) Gain a weapon(Random))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLAGSHIP_CONSTRUCTION">
+  <mod:findName name="FLAGSHIP_CONSTRUCTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Investigate the hangar.</mod:selector>
             <mod:setValue>Investigate the hangar.
@@ -3657,12 +3926,15 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Rebel) ~75 {5 }5 |5 Gain a weapon(Random) Flee
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLAGSHIP_CONSTRUCTION">
+  <mod:findName name="FLAGSHIP_CONSTRUCTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Fight the Flagship.</mod:selector>
                 <mod:setValue>Fight the Flagship.
@@ -3675,14 +3947,18 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Rebel) ~75 {5 }5 |5 Gain a weapon(Random) Flee
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLAGSHIP_CONSTRUCTION">
+  <mod:findName name="FLAGSHIP_CONSTRUCTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -3697,12 +3973,15 @@ Fight(HK=CK: &lt;#&gt;Unlock Ship(Rebel) ~75 {5 }5 |5 Gain a weapon(Random) Flee
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLAGSHIP_CONSTRUCTION">
+  <mod:findName name="FLAGSHIP_CONSTRUCTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Get the hell out of here.</mod:selector>
                 <mod:setValue>Get the hell out of here.
@@ -3714,12 +3993,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLAGSHIP_CONSTRUCTION">
+  <mod:findName name="FLAGSHIP_CONSTRUCTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
                   <mod:findLike type="text">
@@ -3735,10 +4017,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLAGSHIP_CONSTRUCTION">
+  <mod:findName name="FLAGSHIP_CONSTRUCTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Fight one of the normal Rebel ships.</mod:selector>
             <mod:setValue>Fight one of the normal Rebel ships.
@@ -3748,12 +4032,15 @@ Fight(HK=CK: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLAGSHIP_CONSTRUCTION">
+  <mod:findName name="FLAGSHIP_CONSTRUCTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -3765,10 +4052,12 @@ Fight(HK=CK: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLAGSHIP_CONSTRUCTION">
+  <mod:findName name="FLAGSHIP_CONSTRUCTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Fight one of the Elite Rebel ships.</mod:selector>
             <mod:setValue>Fight one of the Elite Rebel ships.
@@ -3778,12 +4067,15 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLAGSHIP_CONSTRUCTION">
+  <mod:findName name="FLAGSHIP_CONSTRUCTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -3795,10 +4087,12 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLAGSHIP_CONSTRUCTION">
+  <mod:findName name="FLAGSHIP_CONSTRUCTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Fight one of the MFK Ace Rebel ships.</mod:selector>
             <mod:setValue>Fight one of the MFK Ace Rebel ships.
@@ -3808,12 +4102,15 @@ Fight(HK=CK: Reward Standard(H) Gain a weapon(Random))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLAGSHIP_CONSTRUCTION">
+  <mod:findName name="FLAGSHIP_CONSTRUCTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -3825,8 +4122,9 @@ Fight(HK=CK: Reward Standard(H) Gain a weapon(Random))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLAGSHIP_CONSTRUCTION">
+  <mod:findName name="FLAGSHIP_CONSTRUCTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Leave immediately.</mod:selector>
         <mod:setValue>Leave immediately.
@@ -3834,8 +4132,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLAGSHIP_CONSTRUCTION">
+  <mod:findName name="FLAGSHIP_CONSTRUCTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -3847,9 +4146,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_FLASHSHIP_CONSTRUCTION">
+  <mod:findName name="SHIP_FLASHSHIP_CONSTRUCTION" type="ship">
     <mod:findLike type="deadCrew">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Pillage the ship for supplies.</mod:selector>
           <mod:setValue>Pillage the ship for supplies.

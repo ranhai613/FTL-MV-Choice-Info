@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="FINISH_BEACON_AUTO">
+  <mod:findName name="FINISH_BEACON_AUTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Do something onboard the ship.</mod:selector>
         <mod:setValue>Do something onboard the ship.
@@ -8,8 +9,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_FREE_ITEMS">
+  <mod:findName name="AUTO_FREE_ITEMS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Do something onboard the ship.</mod:selector>
         <mod:setValue>Do something onboard the ship.
@@ -17,7 +19,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ITEM_NAMED">
+  <mod:findName name="AUTO_ITEM_NAMED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Ignore the radio chatter.</mod:selector>
@@ -26,7 +28,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ITEM_NAMED">
+  <mod:findName name="AUTO_ITEM_NAMED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -39,8 +41,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_SUPPORT">
+  <mod:findName name="AUTO_SUPPORT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Simply transmit your fake ID and hope for the best.</mod:selector>
         <mod:setValue>Simply transmit your fake ID and hope for the best.
@@ -49,8 +52,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_SUPPORT">
+  <mod:findName name="AUTO_SUPPORT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="hacking"/>
       <mod:findLike type="text">
         <mod:selector>(Hacking) Reprogram the ship to distribute to Federation ships as well.</mod:selector>
         <mod:setValue>(Hacking) Reprogram the ship to distribute to Federation ships as well.
@@ -58,8 +62,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_SUPPORT">
+  <mod:findName name="AUTO_SUPPORT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ENGI"/>
       <mod:findLike type="text">
         <mod:selector>(Engi Crew) Reprogram the ship to distribute to Federation ships as well.</mod:selector>
         <mod:setValue>(Engi Crew) Reprogram the ship to distribute to Federation ships as well.
@@ -67,8 +72,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_SUPPORT">
+  <mod:findName name="AUTO_SUPPORT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ENGINEER"/>
       <mod:findLike type="text">
         <mod:selector>(Engineer Crew) Reprogram the ship to distribute to Federation ships as well.</mod:selector>
         <mod:setValue>(Engineer Crew) Reprogram the ship to distribute to Federation ships as well.
@@ -76,8 +82,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_SUPPORT">
+  <mod:findName name="AUTO_SUPPORT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the Auto-Support.</mod:selector>
         <mod:setValue>Ignore the Auto-Support.
@@ -85,8 +92,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_SUPPORT">
+  <mod:findName name="AUTO_SUPPORT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -98,9 +106,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_SUPPORT_FAKEID">
+  <mod:findName name="AUTO_SUPPORT_FAKEID" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -109,7 +118,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENGINEER_BUY_DRONES">
+  <mod:findName name="ENGINEER_BUY_DRONES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Give droneparts for scrap.</mod:selector>
@@ -118,7 +127,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENGINEER_BUY_DRONES">
+  <mod:findName name="ENGINEER_BUY_DRONES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Give droneparts for fuel.</mod:selector>
@@ -127,7 +136,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENGINEER_BUY_DRONES">
+  <mod:findName name="ENGINEER_BUY_DRONES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Give droneparts for ammunition.</mod:selector>
@@ -136,7 +145,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENGINEER_BUY_DRONES">
+  <mod:findName name="ENGINEER_BUY_DRONES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Attack them!</mod:selector>
@@ -145,10 +154,11 @@ Fight(HK: 20% Reward Standard(M) 20% Reward Standard(L))(CK: Reward Standard(H))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENGINEER_BUY_DRONES">
+  <mod:findName name="ENGINEER_BUY_DRONES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -158,7 +168,7 @@ Fight(HK: 20% Reward Standard(M) 20% Reward Standard(L))(CK: Reward Standard(H))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENGINEER_BUY_DRONES">
+  <mod:findName name="ENGINEER_BUY_DRONES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Reject their offer.</mod:selector>
@@ -167,10 +177,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENGINEER_BUY_DRONES">
+  <mod:findName name="ENGINEER_BUY_DRONES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -180,8 +191,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BIRDLY_BOT">
+  <mod:findName name="AUTO_BIRDLY_BOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_tyrdeo_bird" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Wealsey) Show the Auto-ship your songbird.</mod:selector>
         <mod:setValue>(Wealsey) Show the Auto-ship your songbird.
@@ -189,10 +201,12 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BIRDLY_BOT">
+  <mod:findName name="AUTO_BIRDLY_BOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_tyrdeo_bird" hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="LIST_CREW_ENGINEER" hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>(Engineer Crew) Offer to diagnose and fix the malfunction.</mod:selector>
             <mod:setValue>(Engineer Crew) Offer to diagnose and fix the malfunction.
@@ -202,10 +216,12 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BIRDLY_BOT">
+  <mod:findName name="AUTO_BIRDLY_BOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_tyrdeo_bird" hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="LIST_CREW_ENGI" hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>(Engi Crew) Offer to diagnose and fix the malfunction.</mod:selector>
             <mod:setValue>(Engi Crew) Offer to diagnose and fix the malfunction.
@@ -215,7 +231,7 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BIRDLY_BOT">
+  <mod:findName name="AUTO_BIRDLY_BOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Ask for clarification.</mod:selector>
@@ -225,10 +241,11 @@ Reward Standard(M)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BIRDLY_BOT">
+  <mod:findName name="AUTO_BIRDLY_BOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="LIST_CREW_ENGINEER" hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>(Engineer Crew) Offer to diagnose and fix the malfunction.</mod:selector>
             <mod:setValue>(Engineer Crew) Offer to diagnose and fix the malfunction.
@@ -238,10 +255,11 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BIRDLY_BOT">
+  <mod:findName name="AUTO_BIRDLY_BOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="LIST_CREW_ENGI" hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>(Engi Crew) Offer to diagnose and fix the malfunction.</mod:selector>
             <mod:setValue>(Engi Crew) Offer to diagnose and fix the malfunction.
@@ -251,10 +269,11 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BIRDLY_BOT">
+  <mod:findName name="AUTO_BIRDLY_BOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="sensors" lvl="1" max_lvl="1" hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>(Sensors) Take some time gathering some sensor readings for the Auto-ship.</mod:selector>
             <mod:setValue>(Sensors) Take some time gathering some sensor readings for the Auto-ship.
@@ -265,10 +284,11 @@ Reward Standard(M)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BIRDLY_BOT">
+  <mod:findName name="AUTO_BIRDLY_BOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="sensors" lvl="2" hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>(Upg. Sensors) Gather some sensor readings for the Auto-ship.</mod:selector>
             <mod:setValue>(Upg. Sensors) Gather some sensor readings for the Auto-ship.
@@ -278,10 +298,11 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BIRDLY_BOT">
+  <mod:findName name="AUTO_BIRDLY_BOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="ADV_SCANNERS" hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>(Long-Ranged Scanners) Gather some readings for the Auto-ship.</mod:selector>
             <mod:setValue>(Long-Ranged Scanners) Gather some readings for the Auto-ship.
@@ -291,7 +312,7 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BIRDLY_BOT">
+  <mod:findName name="AUTO_BIRDLY_BOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Attack the Auto-ship.</mod:selector>
@@ -300,10 +321,11 @@ Fight(HK: Reward Standard(L))(SR: Gain a weapon(Random))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BIRDLY_BOT">
+  <mod:findName name="AUTO_BIRDLY_BOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -313,7 +335,7 @@ Fight(HK: Reward Standard(L))(SR: Gain a weapon(Random))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BIRDLY_BOT">
+  <mod:findName name="AUTO_BIRDLY_BOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Disengage.</mod:selector>
@@ -322,7 +344,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BIRDLY_BOT">
+  <mod:findName name="AUTO_BIRDLY_BOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -335,8 +357,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ZOLTAN_FACILITY">
+  <mod:findName name="AUTO_ZOLTAN_FACILITY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Approach.</mod:selector>
         <mod:setValue>Approach.
@@ -344,10 +367,12 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ZOLTAN_FACILITY">
+  <mod:findName name="AUTO_ZOLTAN_FACILITY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attack the Auto-ship!</mod:selector>
             <mod:setValue>Attack the Auto-ship!
@@ -357,12 +382,15 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ZOLTAN_FACILITY">
+  <mod:findName name="AUTO_ZOLTAN_FACILITY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -374,8 +402,9 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ZOLTAN_FACILITY">
+  <mod:findName name="AUTO_ZOLTAN_FACILITY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -388,8 +417,9 @@ Gain a crew(Zoltan)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ZOLTAN_FACILITY">
+  <mod:findName name="AUTO_ZOLTAN_FACILITY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the planet.</mod:selector>
         <mod:setValue>Ignore the planet.
@@ -397,8 +427,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ZOLTAN_FACILITY">
+  <mod:findName name="AUTO_ZOLTAN_FACILITY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -410,8 +441,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_YARD_CHOICE">
+  <mod:findName name="AUTO_YARD_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Fight the Auto-ship.</mod:selector>
         <mod:setValue>Fight the Auto-ship.
@@ -419,10 +451,12 @@ Fight(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20% Reward { Only(L))</mod
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_YARD_CHOICE">
+  <mod:findName name="AUTO_YARD_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -432,8 +466,9 @@ Fight(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20% Reward { Only(L))</mod
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_YARD_CHOICE">
+  <mod:findName name="AUTO_YARD_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Leave the Auto-ship alone.</mod:selector>
         <mod:setValue>Leave the Auto-ship alone.
@@ -441,8 +476,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_YARD_CHOICE">
+  <mod:findName name="AUTO_YARD_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -454,8 +490,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_FOREST">
+  <mod:findName name="AUTO_FOREST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the platform.</mod:selector>
         <mod:setValue>Attack the platform.
@@ -466,8 +503,9 @@ Fight(HK: 33% Reward Standard(M))(SR: 7% Reward Stuff(R) 7% Reward { Only(L))</m
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_FOREST">
+  <mod:findName name="AUTO_FOREST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the platform.</mod:selector>
         <mod:setValue>Ignore the platform.
@@ -475,8 +513,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_FOREST">
+  <mod:findName name="AUTO_FOREST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -488,9 +527,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_FOREST_ATTACK">
+  <mod:findName name="AUTO_FOREST_ATTACK" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -499,8 +539,9 @@ Fight(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20% Reward { Only(L))</mod
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ENGINEERS_SAVE">
+  <mod:findName name="AUTO_ENGINEERS_SAVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Save them from the pirate.</mod:selector>
         <mod:setValue>Save them from the pirate.
@@ -508,10 +549,12 @@ Fight(HK: Reward Standard(M) Gain a crew(Human Engineer))(CK: Reward Standard(H)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ENGINEERS_SAVE">
+  <mod:findName name="AUTO_ENGINEERS_SAVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -521,8 +564,9 @@ Fight(HK: Reward Standard(M) Gain a crew(Human Engineer))(CK: Reward Standard(H)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ENGINEERS_SAVE">
+  <mod:findName name="AUTO_ENGINEERS_SAVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>We aren't going to help any damn Rebels.</mod:selector>
         <mod:setValue>We aren't going to help any damn Rebels.
@@ -530,8 +574,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ENGINEERS_SAVE">
+  <mod:findName name="AUTO_ENGINEERS_SAVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -543,8 +588,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_PIRATE_CHOICE">
+  <mod:findName name="AUTO_PIRATE_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the Auto-Ship.</mod:selector>
         <mod:setValue>Attack the Auto-Ship.
@@ -552,10 +598,12 @@ Fight(HK: Reward Standard(M) Reward }(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_PIRATE_CHOICE">
+  <mod:findName name="AUTO_PIRATE_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -565,8 +613,9 @@ Fight(HK: Reward Standard(M) Reward }(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_PIRATE_CHOICE">
+  <mod:findName name="AUTO_PIRATE_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the Pirates.</mod:selector>
         <mod:setValue>Attack the Pirates.
@@ -574,10 +623,12 @@ Fight(HK=CK: Reward Standard(M) Reward |(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_PIRATE_CHOICE">
+  <mod:findName name="AUTO_PIRATE_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -587,8 +638,9 @@ Fight(HK=CK: Reward Standard(M) Reward |(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_PIRATE_CHOICE">
+  <mod:findName name="AUTO_PIRATE_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the ships.</mod:selector>
         <mod:setValue>Ignore the ships.
@@ -596,8 +648,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_PIRATE_CHOICE">
+  <mod:findName name="AUTO_PIRATE_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -609,8 +662,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_MINER">
+  <mod:findName name="AUTO_MINER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the ship to get to the platform.</mod:selector>
         <mod:setValue>Attack the ship to get to the platform.
@@ -618,10 +672,12 @@ Fight(HK: Reward Standard(M) Reward { Only(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_MINER">
+  <mod:findName name="AUTO_MINER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -631,8 +687,9 @@ Fight(HK: Reward Standard(M) Reward { Only(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_MINER">
+  <mod:findName name="AUTO_MINER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the ship.</mod:selector>
         <mod:setValue>Ignore the ship.
@@ -640,8 +697,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_MINER">
+  <mod:findName name="AUTO_MINER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -653,8 +711,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BOMB_MANUFACTURE">
+  <mod:findName name="AUTO_BOMB_MANUFACTURE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the ship.</mod:selector>
         <mod:setValue>Attack the ship.
@@ -662,10 +721,12 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BOMB_MANUFACTURE">
+  <mod:findName name="AUTO_BOMB_MANUFACTURE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -675,8 +736,9 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BOMB_MANUFACTURE">
+  <mod:findName name="AUTO_BOMB_MANUFACTURE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the factory.</mod:selector>
         <mod:setValue>Ignore the factory.
@@ -684,8 +746,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BOMB_MANUFACTURE">
+  <mod:findName name="AUTO_BOMB_MANUFACTURE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -697,8 +760,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BOMB_MANUFACTURE_FACTORY">
+  <mod:findName name="AUTO_BOMB_MANUFACTURE_FACTORY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Grab some ammunition.</mod:selector>
         <mod:setValue>Grab some ammunition.
@@ -706,8 +770,9 @@ Reward } Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BOMB_MANUFACTURE_FACTORY">
+  <mod:findName name="AUTO_BOMB_MANUFACTURE_FACTORY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Grab one of the weapons.</mod:selector>
         <mod:setValue>Grab one of the weapons.
@@ -715,8 +780,9 @@ Gain a weapon(Giftlist Ballistic)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_BOMB_MANUFACTURE_FACTORY">
+  <mod:findName name="AUTO_BOMB_MANUFACTURE_FACTORY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Grab all that you can, even if it means taking some damage.</mod:selector>
         <mod:setValue>Grab all that you can, even if it means taking some damage.
@@ -726,8 +792,9 @@ Reward } Only(H)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_AUTO_SPY">
+  <mod:findName name="REBEL_AUTO_SPY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the ship.</mod:selector>
         <mod:setValue>Attack the ship.
@@ -735,10 +802,12 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_AUTO_SPY">
+  <mod:findName name="REBEL_AUTO_SPY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -748,8 +817,9 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_AUTO_SPY">
+  <mod:findName name="REBEL_AUTO_SPY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Avoid the Surveyor.</mod:selector>
         <mod:setValue>Avoid the Surveyor.
@@ -757,8 +827,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_AUTO_SPY">
+  <mod:findName name="REBEL_AUTO_SPY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -770,8 +841,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_AUTO_SPY_WIN">
+  <mod:findName name="REBEL_AUTO_SPY_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Send it to the Rebels.</mod:selector>
         <mod:setValue>Send it to the Rebels.
@@ -779,8 +851,9 @@ Fleet Delay(2)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_AUTO_SPY_WIN">
+  <mod:findName name="REBEL_AUTO_SPY_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Download the data.</mod:selector>
         <mod:setValue>Download the data.
@@ -788,7 +861,7 @@ Map Reveal</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_REPAIRS">
+  <mod:findName name="DISTRESS_AUTO_REPAIRS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Assist in repairs.</mod:selector>
@@ -800,10 +873,11 @@ Fight(HK: 33% Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_REPAIRS">
+  <mod:findName name="DISTRESS_AUTO_REPAIRS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -815,8 +889,9 @@ Fight(HK: 33% Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_REPAIRS">
+  <mod:findName name="DISTRESS_AUTO_REPAIRS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Destroy the ship.</mod:selector>
         <mod:setValue>Destroy the ship.
@@ -824,10 +899,12 @@ Fight(HK: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_REPAIRS">
+  <mod:findName name="DISTRESS_AUTO_REPAIRS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -837,8 +914,9 @@ Fight(HK: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_REPAIRS">
+  <mod:findName name="DISTRESS_AUTO_REPAIRS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
         <mod:setValue>Avoid the ship.
@@ -846,8 +924,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_REPAIRS">
+  <mod:findName name="DISTRESS_AUTO_REPAIRS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -859,9 +938,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_REPAIRS_GIFT">
+  <mod:findName name="DISTRESS_AUTO_REPAIRS_GIFT" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -870,7 +950,7 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_TRASH">
+  <mod:findName name="DISTRESS_AUTO_TRASH" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Search for the distress signal.</mod:selector>
@@ -880,10 +960,11 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_TRASH">
+  <mod:findName name="DISTRESS_AUTO_TRASH" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -894,12 +975,14 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_TRASH">
+  <mod:findName name="DISTRESS_AUTO_TRASH" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -912,14 +995,17 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_TRASH">
+  <mod:findName name="DISTRESS_AUTO_TRASH" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector blue="false"/>
                   <mod:findLike type="text">
                     <mod:selector>Welcome it aboard.</mod:selector>
                     <mod:setValue>Welcome it aboard.
@@ -933,14 +1019,17 @@ Gain a drone(Repair)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_TRASH">
+  <mod:findName name="DISTRESS_AUTO_TRASH" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true" req="ORCHID_KIDS"/>
                   <mod:findLike type="text">
                     <mod:selector>(Orchid Children) Give the drone some plant matter.</mod:selector>
                     <mod:setValue>(Orchid Children) Give the drone some plant matter.
@@ -954,8 +1043,9 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_TRASH">
+  <mod:findName name="DISTRESS_AUTO_TRASH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Leave.</mod:selector>
         <mod:setValue>Leave.
@@ -963,8 +1053,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_TRASH">
+  <mod:findName name="DISTRESS_AUTO_TRASH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -976,7 +1067,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_MILITIA_CHAIN">
+  <mod:findName name="DISTRESS_AUTO_MILITIA_CHAIN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Chase down the Engineer to let the Militia focus on the Auto.</mod:selector>
@@ -985,10 +1076,11 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M) Reward ~ Only(L))(SR: Gain 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_MILITIA_CHAIN">
+  <mod:findName name="DISTRESS_AUTO_MILITIA_CHAIN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -998,7 +1090,7 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M) Reward ~ Only(L))(SR: Gain 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_MILITIA_CHAIN">
+  <mod:findName name="DISTRESS_AUTO_MILITIA_CHAIN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Attack the Auto to give the Militia some breathing room.</mod:selector>
@@ -1007,10 +1099,11 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_MILITIA_CHAIN">
+  <mod:findName name="DISTRESS_AUTO_MILITIA_CHAIN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1020,7 +1113,7 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_MILITIA_CHAIN">
+  <mod:findName name="DISTRESS_AUTO_MILITIA_CHAIN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Don't get involved.</mod:selector>
@@ -1029,7 +1122,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_AUTO_MILITIA_CHAIN">
+  <mod:findName name="DISTRESS_AUTO_MILITIA_CHAIN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1042,8 +1135,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_GHOST_WANTWRECK">
+  <mod:findName name="AUTO_GHOST_WANTWRECK" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>We can't help.</mod:selector>
         <mod:setValue>We can't help.
@@ -1051,8 +1145,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_GHOST_WANTWRECK">
+  <mod:findName name="AUTO_GHOST_WANTWRECK" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1064,8 +1159,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_GHOST_WANTWRECK_QUEST">
+  <mod:findName name="AUTO_GHOST_WANTWRECK_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1073,8 +1169,9 @@ Fight(HK: Gain a crew(Phantom Wraith) Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_GHOST_WANTWRECK_QUEST_WIN">
+  <mod:findName name="AUTO_GHOST_WANTWRECK_QUEST_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Wait for the Ghosts.</mod:selector>
         <mod:setValue>Wait for the Ghosts.
@@ -1082,10 +1179,12 @@ Gain a crew(Phantom Wraith)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_GHOST_WANTWRECK_QUEST_WIN">
+  <mod:findName name="AUTO_GHOST_WANTWRECK_QUEST_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1095,8 +1194,9 @@ Gain a crew(Phantom Wraith)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_GHOST_WANTWRECK_QUEST_WIN">
+  <mod:findName name="AUTO_GHOST_WANTWRECK_QUEST_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Scrap the wreckage.</mod:selector>
         <mod:setValue>Scrap the wreckage.
@@ -1104,8 +1204,9 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_AUTO_REGULAR">
+  <mod:findName name="ENCOUNTER_AUTO_REGULAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1113,8 +1214,9 @@ Fight(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20% Reward { Only(L))</mod
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_AUTO_WARNING">
+  <mod:findName name="ENCOUNTER_AUTO_WARNING" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1122,8 +1224,9 @@ Fight(HK: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_AUTO_HACKER">
+  <mod:findName name="ENCOUNTER_AUTO_HACKER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1131,8 +1234,9 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_AUTO_HACKER">
+  <mod:findName name="ENCOUNTER_AUTO_HACKER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="hacking"/>
       <mod:findLike type="text">
         <mod:selector>(Hacking) Counter the remote hacking.</mod:selector>
         <mod:setValue>(Hacking) Counter the remote hacking.
@@ -1140,10 +1244,12 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_AUTO_HACKER">
+  <mod:findName name="ENCOUNTER_AUTO_HACKER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="hacking"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1153,8 +1259,9 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_AUTO_HACKER">
+  <mod:findName name="ENCOUNTER_AUTO_HACKER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="ANTI_VIRUS"/>
       <mod:findLike type="text">
         <mod:selector>(Anti-Virus) Counter the remote hacking.</mod:selector>
         <mod:setValue>(Anti-Virus) Counter the remote hacking.
@@ -1162,10 +1269,12 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_AUTO_HACKER">
+  <mod:findName name="ENCOUNTER_AUTO_HACKER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="ANTI_VIRUS"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1175,8 +1284,9 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_AUTO_SUN">
+  <mod:findName name="ENCOUNTER_AUTO_SUN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1184,8 +1294,9 @@ Fight(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20% Reward { Only(L))</mod
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_AUTO_ASTEROID">
+  <mod:findName name="ENCOUNTER_AUTO_ASTEROID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1193,8 +1304,9 @@ Fight(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20% Reward { Only(L))</mod
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_ENGINEER">
+  <mod:findName name="ENCOUNTER_ENGINEER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1202,8 +1314,9 @@ Fight(HK: 20% Reward Standard(M) 20% Reward Standard(L))(CK: Reward Standard(H))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_ENGINEER_SALVAGE">
+  <mod:findName name="ENCOUNTER_ENGINEER_SALVAGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1211,8 +1324,9 @@ Fight(HK: Reward Standard(L) Reward Standard(M))(CK: Reward Standard(M))</mod:se
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_AUTO_ELITE">
+  <mod:findName name="ENCOUNTER_AUTO_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1220,8 +1334,9 @@ Fight(HK: Reward Standard No Item(H) Gain a weapon(Giftlist Estate))</mod:setVal
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ENGINEER_MISTAKE">
+  <mod:findName name="AUTO_ENGINEER_MISTAKE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Pick off the ship.</mod:selector>
         <mod:setValue>Pick off the ship.
@@ -1229,10 +1344,12 @@ Fight(HK: 20% Reward Standard(M) 20% Reward Standard(L))(CK: Reward Standard(H))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ENGINEER_MISTAKE">
+  <mod:findName name="AUTO_ENGINEER_MISTAKE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1242,8 +1359,9 @@ Fight(HK: 20% Reward Standard(M) 20% Reward Standard(L))(CK: Reward Standard(H))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ENGINEER_MISTAKE">
+  <mod:findName name="AUTO_ENGINEER_MISTAKE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the ship.</mod:selector>
         <mod:setValue>Ignore the ship.
@@ -1251,8 +1369,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ENGINEER_MISTAKE">
+  <mod:findName name="AUTO_ENGINEER_MISTAKE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1264,8 +1383,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ENGINEER_MISTAKE_QUEST">
+  <mod:findName name="AUTO_ENGINEER_MISTAKE_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Land and ask around.</mod:selector>
         <mod:setValue>Land and ask around.
@@ -1274,10 +1394,12 @@ Fight(SR: &lt;#&gt;Unlock Ship(Auto))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ENGINEER_MISTAKE_QUEST">
+  <mod:findName name="AUTO_ENGINEER_MISTAKE_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Go see the king.</mod:selector>
             <mod:setValue>Go see the king.
@@ -1288,12 +1410,15 @@ Fight(SR: &lt;#&gt;Unlock Ship(Auto))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ENGINEER_MISTAKE_QUEST">
+  <mod:findName name="AUTO_ENGINEER_MISTAKE_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1306,14 +1431,18 @@ Fight(SR: &lt;#&gt;Unlock Ship(Auto))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ENGINEER_MISTAKE_QUEST">
+  <mod:findName name="AUTO_ENGINEER_MISTAKE_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Shake his "hand".</mod:selector>
                     <mod:setValue>Shake his "hand".
@@ -1328,14 +1457,18 @@ Fight(SR: &lt;#&gt;Unlock Ship(Auto))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ENGINEER_MISTAKE_QUEST">
+  <mod:findName name="AUTO_ENGINEER_MISTAKE_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Get right to business.</mod:selector>
                     <mod:setValue>Get right to business.
@@ -1350,8 +1483,9 @@ Fight(SR: &lt;#&gt;Unlock Ship(Auto))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ENGINEER_MISTAKE_QUEST">
+  <mod:findName name="AUTO_ENGINEER_MISTAKE_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Avoid the city.</mod:selector>
         <mod:setValue>Avoid the city.
@@ -1359,8 +1493,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_ENGINEER_MISTAKE_QUEST">
+  <mod:findName name="AUTO_ENGINEER_MISTAKE_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1372,8 +1507,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="A55_HANDSHAKE">
+  <mod:findName name="A55_HANDSHAKE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Explain why you're here.</mod:selector>
         <mod:setValue>Explain why you're here.
@@ -1382,8 +1518,9 @@ Fight(SR: &lt;#&gt;Unlock Ship(Auto))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="A55_FIGHT">
+  <mod:findName name="A55_FIGHT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Then we have a standoff, don't we?</mod:selector>
         <mod:setValue>Then we have a standoff, don't we?
@@ -1392,10 +1529,12 @@ Fight(SR: &lt;#&gt;Unlock Ship(Auto))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="A55_FIGHT">
+  <mod:findName name="A55_FIGHT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Prepare to fight!</mod:selector>
             <mod:setValue>Prepare to fight!
@@ -1406,12 +1545,15 @@ Fight(SR: &lt;#&gt;Unlock Ship(Auto))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="A55_FIGHT">
+  <mod:findName name="A55_FIGHT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1424,8 +1566,9 @@ Fight(SR: &lt;#&gt;Unlock Ship(Auto))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="A55_DEFEAT">
+  <mod:findName name="A55_DEFEAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Hand over A55.</mod:selector>
         <mod:setValue>Hand over A55.
@@ -1433,8 +1576,9 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="A55_DEFEAT">
+  <mod:findName name="A55_DEFEAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Lie to the Engineers, tell them the Auto-ship is A55.</mod:selector>
         <mod:setValue>Lie to the Engineers, tell them the Auto-ship is A55.
@@ -1443,10 +1587,12 @@ Reward Standard No Item(L)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="A55_DEFEAT">
+  <mod:findName name="A55_DEFEAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="loc_a55_handshake" lvl="0" max_group="0" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1456,10 +1602,12 @@ Gain a drone(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="A55_DEFEAT">
+  <mod:findName name="A55_DEFEAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="loc_a55_handshake" lvl="1" max_group="0" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1470,8 +1618,9 @@ Gain a drone(A55 Battle)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE">
+  <mod:findName name="AUTO_POWERCORE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1480,10 +1629,12 @@ Fight(CK=HK: &lt;!&gt;Damage Hull(6) &lt;!&gt;Damage Hull(3))(SR: &lt;#&gt;Unloc
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE">
+  <mod:findName name="AUTO_POWERCORE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>There's time left, swing by and try to salvage some supplies.</mod:selector>
             <mod:setValue>There's time left, swing by and try to salvage some supplies.
@@ -1494,12 +1645,15 @@ Fight(CK=HK: &lt;!&gt;Damage Hull(6) &lt;!&gt;Damage Hull(3))(SR: &lt;#&gt;Unloc
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE">
+  <mod:findName name="AUTO_POWERCORE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1512,8 +1666,9 @@ Fight(CK=HK: &lt;!&gt;Damage Hull(6) &lt;!&gt;Damage Hull(3))(SR: &lt;#&gt;Unloc
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_ESCAPE">
+  <mod:findName name="AUTO_POWERCORE_ESCAPE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Crap.</mod:selector>
         <mod:setValue>Crap.
@@ -1522,8 +1677,9 @@ Fight(CK=HK: &lt;!&gt;Damage Hull(6) &lt;!&gt;Damage Hull(3))(SR: &lt;#&gt;Unloc
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_ESCAPE">
+  <mod:findName name="AUTO_POWERCORE_ESCAPE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="4" max_lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Upg. Engines) Get the hell out of there.</mod:selector>
         <mod:setValue>(Upg. Engines) Get the hell out of there.
@@ -1531,8 +1687,9 @@ Fight(CK=HK: &lt;!&gt;Damage Hull(6) &lt;!&gt;Damage Hull(3))(SR: &lt;#&gt;Unloc
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_DEFEAT">
+  <mod:findName name="AUTO_POWERCORE_DEFEAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Crap.</mod:selector>
         <mod:setValue>Crap.
@@ -1541,8 +1698,9 @@ Fight(CK=HK: &lt;!&gt;Damage Hull(6) &lt;!&gt;Damage Hull(3))(SR: &lt;#&gt;Unloc
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_DEFEAT">
+  <mod:findName name="AUTO_POWERCORE_DEFEAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="4" max_lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Upg. Engines) Get the hell out of there.</mod:selector>
         <mod:setValue>(Upg. Engines) Get the hell out of there.
@@ -1550,8 +1708,9 @@ Fight(CK=HK: &lt;!&gt;Damage Hull(6) &lt;!&gt;Damage Hull(3))(SR: &lt;#&gt;Unloc
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM">
+  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Urge the Engineers to stop fighting.</mod:selector>
         <mod:setValue>Urge the Engineers to stop fighting.
@@ -1559,10 +1718,12 @@ Fight(CK=HK: &lt;!&gt;Damage Hull(6) &lt;!&gt;Damage Hull(3))(SR: &lt;#&gt;Unloc
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM">
+  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Send in your crew to fix the reactor, and quickly!</mod:selector>
             <mod:setValue>Send in your crew to fix the reactor, and quickly!
@@ -1572,12 +1733,15 @@ Fight(CK=HK: &lt;!&gt;Damage Hull(6) &lt;!&gt;Damage Hull(3))(SR: &lt;#&gt;Unloc
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM">
+  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Press the big red one.</mod:selector>
                 <mod:setValue>Press the big red one.
@@ -1592,14 +1756,18 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM">
+  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1616,12 +1784,15 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM">
+  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Press the small blue one.</mod:selector>
                 <mod:setValue>Press the small blue one.
@@ -1636,14 +1807,18 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM">
+  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1660,12 +1835,15 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM">
+  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Press the square green one.</mod:selector>
                 <mod:setValue>Press the square green one.
@@ -1680,14 +1858,18 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM">
+  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1704,12 +1886,15 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM">
+  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="EXTRA_PREP"/>
               <mod:findLike type="text">
                 <mod:selector>(Emergency Manual) Read the manual.</mod:selector>
                 <mod:setValue>(Emergency Manual) Read the manual.
@@ -1724,14 +1909,18 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM">
+  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="EXTRA_PREP"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1748,12 +1937,15 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM">
+  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_ENGINEER"/>
               <mod:findLike type="text">
                 <mod:selector>(Engineer Crew) Have your engineer help.</mod:selector>
                 <mod:setValue>(Engineer Crew) Have your engineer help.
@@ -1768,14 +1960,18 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM">
+  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_ENGINEER"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1792,10 +1988,12 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM">
+  <mod:findName name="AUTO_POWERCORE_ALMOSTBOOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Leave, now!</mod:selector>
             <mod:setValue>Leave, now!
@@ -1805,8 +2003,9 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_SAVE">
+  <mod:findName name="AUTO_POWERCORE_SAVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1816,10 +2015,12 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="AUTO_POWERCORE_SAVE">
+  <mod:findName name="AUTO_POWERCORE_SAVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>My moral compass is legendary.</mod:selector>
             <mod:setValue>My moral compass is legendary.

@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="FINISH_BEACON_HEKTAR">
+  <mod:findName name="FINISH_BEACON_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_hektarexit" lvl="0" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -8,10 +9,12 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_HEKTAR">
+  <mod:findName name="FINISH_BEACON_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_hektarexit" lvl="0" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_VARIANT_BILLY"/>
           <mod:findLike type="text">
             <mod:selector>(Billy) Have Billy clear you for leaving.</mod:selector>
             <mod:setValue>(Billy) Have Billy clear you for leaving.
@@ -22,10 +25,12 @@ Gain a weapon(Giftlist Hektar)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_HEKTAR">
+  <mod:findName name="FINISH_BEACON_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_hektarexit" lvl="0" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_metyunt"/>
           <mod:findLike type="text">
             <mod:selector>(Metyunt) Have Metyunt clear you for leaving.</mod:selector>
             <mod:setValue>(Metyunt) Have Metyunt clear you for leaving.
@@ -36,10 +41,12 @@ Gain a weapon(Giftlist Hektar)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_HEKTAR">
+  <mod:findName name="FINISH_BEACON_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_hektarexit" lvl="0" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Looks like we'll have to fight our way out!</mod:selector>
             <mod:setValue>Looks like we'll have to fight our way out!
@@ -49,12 +56,15 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_HEKTAR">
+  <mod:findName name="FINISH_BEACON_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_hektarexit" lvl="0" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -66,8 +76,9 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_HEKTAR">
+  <mod:findName name="FINISH_BEACON_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_hektarexit" lvl="1" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -75,10 +86,12 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_HEKTAR">
+  <mod:findName name="FINISH_BEACON_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_hektarexit" lvl="1" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -88,10 +101,12 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_HEKTAR">
+  <mod:findName name="FINISH_BEACON_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_hektarexit" lvl="1" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="engines" lvl="6"/>
           <mod:findLike type="text">
             <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
             <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -101,8 +116,9 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_FINISH_BEACON_HEKTAR">
+  <mod:findName name="NEBULA_FINISH_BEACON_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_hektarexit" lvl="0" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -110,10 +126,12 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_FINISH_BEACON_HEKTAR">
+  <mod:findName name="NEBULA_FINISH_BEACON_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_hektarexit" lvl="0" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_VARIANT_BILLY"/>
           <mod:findLike type="text">
             <mod:selector>(Billy) Have Billy clear you for leaving.</mod:selector>
             <mod:setValue>(Billy) Have Billy clear you for leaving.
@@ -124,10 +142,12 @@ Gain a weapon(Giftlist Hektar)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_FINISH_BEACON_HEKTAR">
+  <mod:findName name="NEBULA_FINISH_BEACON_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_hektarexit" lvl="0" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_metyunt"/>
           <mod:findLike type="text">
             <mod:selector>(Metyunt) Have Metyunt clear you for leaving.</mod:selector>
             <mod:setValue>(Metyunt) Have Metyunt clear you for leaving.
@@ -138,10 +158,12 @@ Gain a weapon(Giftlist Hektar)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_FINISH_BEACON_HEKTAR">
+  <mod:findName name="NEBULA_FINISH_BEACON_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_hektarexit" lvl="0" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Looks like we'll have to fight our way out!</mod:selector>
             <mod:setValue>Looks like we'll have to fight our way out!
@@ -151,12 +173,15 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_FINISH_BEACON_HEKTAR">
+  <mod:findName name="NEBULA_FINISH_BEACON_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_hektarexit" lvl="0" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -168,8 +193,9 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_FINISH_BEACON_HEKTAR">
+  <mod:findName name="NEBULA_FINISH_BEACON_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_hektarexit" lvl="1" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -177,10 +203,12 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_FINISH_BEACON_HEKTAR">
+  <mod:findName name="NEBULA_FINISH_BEACON_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_hektarexit" lvl="1" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -190,10 +218,12 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_FINISH_BEACON_HEKTAR">
+  <mod:findName name="NEBULA_FINISH_BEACON_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_hektarexit" lvl="1" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="engines" lvl="6"/>
           <mod:findLike type="text">
             <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
             <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -203,8 +233,9 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_INVESTOR">
+  <mod:findName name="HEKTAR_INVESTOR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_dinkleman" lvl="0" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Hail them.</mod:selector>
         <mod:setValue>Hail them.
@@ -212,8 +243,9 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_INVESTOR">
+  <mod:findName name="HEKTAR_INVESTOR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_dinkleman" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Hail them.</mod:selector>
         <mod:setValue>Hail them.
@@ -221,8 +253,9 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_INVESTOR">
+  <mod:findName name="HEKTAR_INVESTOR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="pilot" lvl="1" max_group="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the tycoon.</mod:selector>
         <mod:setValue>Ignore the tycoon.
@@ -230,10 +263,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_INVESTOR">
+  <mod:findName name="HEKTAR_INVESTOR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="pilot" lvl="1" max_group="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -243,8 +278,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_NOTMET">
+  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_NOTMET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>They're tricking people into being trapped in this sector.</mod:selector>
         <mod:setValue>They're tricking people into being trapped in this sector.
@@ -252,8 +288,9 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_NOTMET">
+  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_NOTMET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>They're literally enslaving people.</mod:selector>
         <mod:setValue>They're literally enslaving people.
@@ -261,8 +298,9 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_NOTMET">
+  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_NOTMET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Meh, they're alright.</mod:selector>
         <mod:setValue>Meh, they're alright.
@@ -272,10 +310,12 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_NOTMET">
+  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_NOTMET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="HEKTAR_MODULAR_WEAPONS" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>They're pretty good.</mod:selector>
             <mod:setValue>They're pretty good.
@@ -285,10 +325,12 @@ Gain a crew(Engi)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_NOTMET">
+  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_NOTMET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="HEKTAR_MODULAR_WEAPONS" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>They're awful.</mod:selector>
             <mod:setValue>They're awful.
@@ -298,10 +340,12 @@ Gain a weapon(Shop Item Hektar Base)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_NOTMET">
+  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_NOTMET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Don't have any.</mod:selector>
             <mod:setValue>Don't have any.
@@ -311,8 +355,9 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_MET">
+  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_MET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>They're tricking people into being trapped in this sector.</mod:selector>
         <mod:setValue>They're tricking people into being trapped in this sector.
@@ -320,8 +365,9 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_MET">
+  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_MET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>They're literally enslaving people.</mod:selector>
         <mod:setValue>They're literally enslaving people.
@@ -329,8 +375,9 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_MET">
+  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_MET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Meh, they're alright.</mod:selector>
         <mod:setValue>Meh, they're alright.
@@ -340,10 +387,12 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_MET">
+  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_MET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="HEKTAR_MODULAR_WEAPONS" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>They're pretty good.</mod:selector>
             <mod:setValue>They're pretty good.
@@ -353,10 +402,12 @@ Gain a crew(Engi)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_MET">
+  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_MET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="HEKTAR_MODULAR_WEAPONS" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>They're awful.</mod:selector>
             <mod:setValue>They're awful.
@@ -366,10 +417,12 @@ Gain a weapon(Shop Item Hektar Base)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_MET">
+  <mod:findName name="HEKTAR_INVESTOR_QUESTIONS_MET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Don't have any.</mod:selector>
             <mod:setValue>Don't have any.
@@ -379,8 +432,9 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_HEKTAR_GHETTO">
+  <mod:findName name="DISTRESS_HEKTAR_GHETTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Rescue the lizards.</mod:selector>
         <mod:setValue>Rescue the lizards.
@@ -388,10 +442,12 @@ Fight(HK: Reward Standard(M) Gain a weapon(Shop Item Hektar Modules))(CK: Reward
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_HEKTAR_GHETTO">
+  <mod:findName name="DISTRESS_HEKTAR_GHETTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -401,8 +457,9 @@ Fight(HK: Reward Standard(M) Gain a weapon(Shop Item Hektar Modules))(CK: Reward
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_HEKTAR_GHETTO">
+  <mod:findName name="DISTRESS_HEKTAR_GHETTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the ghetto.</mod:selector>
         <mod:setValue>Ignore the ghetto.
@@ -410,10 +467,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_HEKTAR_GHETTO">
+  <mod:findName name="DISTRESS_HEKTAR_GHETTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -423,8 +482,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_UNION">
+  <mod:findName name="HEKTAR_UNION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Listen to their offer.</mod:selector>
         <mod:setValue>Listen to their offer.
@@ -432,10 +492,12 @@ Fight(CK: Reward Standard(M))(HK=SR: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_UNION">
+  <mod:findName name="HEKTAR_UNION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Agree.</mod:selector>
             <mod:setValue>Agree.
@@ -445,12 +507,15 @@ Fight(CK: Reward Standard(M))(HK=SR: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_UNION">
+  <mod:findName name="HEKTAR_UNION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -462,10 +527,12 @@ Fight(CK: Reward Standard(M))(HK=SR: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_UNION">
+  <mod:findName name="HEKTAR_UNION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Reveal their plan to their manager.</mod:selector>
             <mod:setValue>Reveal their plan to their manager.
@@ -475,8 +542,9 @@ Fight(CK: Reward Standard(M))(HK=SR: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_UNION">
+  <mod:findName name="HEKTAR_UNION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>No thanks.</mod:selector>
         <mod:setValue>No thanks.
@@ -484,10 +552,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_UNION">
+  <mod:findName name="HEKTAR_UNION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -497,8 +567,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SUZERAIN">
+  <mod:findName name="HEKTAR_SUZERAIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Hail them.</mod:selector>
         <mod:setValue>Hail them.
@@ -506,10 +577,12 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Mantis))</mod:set
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SUZERAIN">
+  <mod:findName name="HEKTAR_SUZERAIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="slug"/>
           <mod:findLike type="text">
             <mod:selector>(Slug Crew) We have.</mod:selector>
             <mod:setValue>(Slug Crew) We have.
@@ -519,10 +592,12 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SUZERAIN">
+  <mod:findName name="HEKTAR_SUZERAIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="slug_clansman"/>
           <mod:findLike type="text">
             <mod:selector>(Clansman Crew) We have.</mod:selector>
             <mod:setValue>(Clansman Crew) We have.
@@ -532,10 +607,12 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SUZERAIN">
+  <mod:findName name="HEKTAR_SUZERAIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="slug_saboteur"/>
           <mod:findLike type="text">
             <mod:selector>(Saboteur Crew) We have.</mod:selector>
             <mod:setValue>(Saboteur Crew) We have.
@@ -546,10 +623,12 @@ Gain a crew(Mantis Suzerain)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SUZERAIN">
+  <mod:findName name="HEKTAR_SUZERAIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="slug_ranger"/>
           <mod:findLike type="text">
             <mod:selector>(Ranger Crew) We have.</mod:selector>
             <mod:setValue>(Ranger Crew) We have.
@@ -560,10 +639,12 @@ Gain a crew(Mantis Suzerain)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SUZERAIN">
+  <mod:findName name="HEKTAR_SUZERAIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_VARIANT_HEKTAR"/>
           <mod:findLike type="text">
             <mod:selector>(Hektar Crew) We have.</mod:selector>
             <mod:setValue>(Hektar Crew) We have.
@@ -573,10 +654,12 @@ Gain a crew(Mantis Suzerain)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SUZERAIN">
+  <mod:findName name="HEKTAR_SUZERAIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_VARIANT_BILLY"/>
           <mod:findLike type="text">
             <mod:selector>(Billy) Introduce him to Billy.</mod:selector>
             <mod:setValue>(Billy) Introduce him to Billy.
@@ -587,10 +670,12 @@ Gain a crew(Mantis Suzerain)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SUZERAIN">
+  <mod:findName name="HEKTAR_SUZERAIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>We haven't.</mod:selector>
             <mod:setValue>We haven't.
@@ -600,12 +685,15 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Mantis))</mod:set
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SUZERAIN">
+  <mod:findName name="HEKTAR_SUZERAIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -617,8 +705,9 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Mantis))</mod:set
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SUZERAIN">
+  <mod:findName name="HEKTAR_SUZERAIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the Suzerains.</mod:selector>
         <mod:setValue>Ignore the Suzerains.
@@ -626,10 +715,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SUZERAIN">
+  <mod:findName name="HEKTAR_SUZERAIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -639,8 +730,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_RAIN">
+  <mod:findName name="NEBULA_HEKTAR_RAIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Check it out.</mod:selector>
         <mod:setValue>Check it out.
@@ -649,10 +741,12 @@ System Upgrade(Oxygen x1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_RAIN">
+  <mod:findName name="NEBULA_HEKTAR_RAIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Inquire what they're doing.</mod:selector>
             <mod:setValue>Inquire what they're doing.
@@ -663,12 +757,15 @@ System Upgrade(Oxygen x1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_RAIN">
+  <mod:findName name="NEBULA_HEKTAR_RAIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Join them.</mod:selector>
                 <mod:setValue>Join them.
@@ -681,8 +778,9 @@ System Upgrade(Oxygen x1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_RAIN">
+  <mod:findName name="NEBULA_HEKTAR_RAIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the facility.</mod:selector>
         <mod:setValue>Ignore the facility.
@@ -690,10 +788,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_RAIN">
+  <mod:findName name="NEBULA_HEKTAR_RAIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -703,8 +803,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_SYLVAN">
+  <mod:findName name="NEBULA_HEKTAR_SYLVAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Why are you pretending to be Sylvan?</mod:selector>
         <mod:setValue>Why are you pretending to be Sylvan?
@@ -712,10 +813,12 @@ Gain a crew(Slug Hektar)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_SYLVAN">
+  <mod:findName name="NEBULA_HEKTAR_SYLVAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>You're not quite up to his level, shield and weaponry wise.</mod:selector>
             <mod:setValue>You're not quite up to his level, shield and weaponry wise.
@@ -726,10 +829,12 @@ Gain a weapon(Laser Chaingun Gold)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_SYLVAN">
+  <mod:findName name="NEBULA_HEKTAR_SYLVAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -744,14 +849,17 @@ Gain a weapon(Laser Chaingun Gold)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_SYLVAN">
+  <mod:findName name="NEBULA_HEKTAR_SYLVAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -765,10 +873,12 @@ Gain a weapon(Laser Chaingun Gold)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_SYLVAN">
+  <mod:findName name="NEBULA_HEKTAR_SYLVAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_sylvan"/>
           <mod:findLike type="text">
             <mod:selector>(Sylvan) "Well hello, ssstranger!"</mod:selector>
             <mod:setValue>(Sylvan) "Well hello, ssstranger!"
@@ -778,8 +888,9 @@ Gain a crew(Slug Hektar)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_SYLVAN">
+  <mod:findName name="NEBULA_HEKTAR_SYLVAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the pretender.</mod:selector>
         <mod:setValue>Ignore the pretender.
@@ -787,10 +898,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_SYLVAN">
+  <mod:findName name="NEBULA_HEKTAR_SYLVAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -800,8 +913,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_TOYS">
+  <mod:findName name="NEBULA_HEKTAR_TOYS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Check it out.</mod:selector>
         <mod:setValue>Check it out.
@@ -811,10 +925,12 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_TOYS">
+  <mod:findName name="NEBULA_HEKTAR_TOYS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Pull the Human's string.</mod:selector>
             <mod:setValue>Pull the Human's string.
@@ -826,12 +942,15 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_TOYS">
+  <mod:findName name="NEBULA_HEKTAR_TOYS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Buy the toy for 20 scrap.</mod:selector>
                 <mod:setValue>Buy the toy for 20 scrap.
@@ -844,12 +963,15 @@ Gain a crew(Slug Hektar)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_TOYS">
+  <mod:findName name="NEBULA_HEKTAR_TOYS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_HUMAN"/>
               <mod:findLike type="text">
                 <mod:selector>(Human Crew) Offer your feedback.</mod:selector>
                 <mod:setValue>(Human Crew) Offer your feedback.
@@ -861,10 +983,12 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_TOYS">
+  <mod:findName name="NEBULA_HEKTAR_TOYS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Pull the Mantis's string.</mod:selector>
             <mod:setValue>Pull the Mantis's string.
@@ -876,12 +1000,15 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_TOYS">
+  <mod:findName name="NEBULA_HEKTAR_TOYS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Buy the toy for 20 scrap.</mod:selector>
                 <mod:setValue>Buy the toy for 20 scrap.
@@ -894,12 +1021,15 @@ Gain a crew(Slug Hektar)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_TOYS">
+  <mod:findName name="NEBULA_HEKTAR_TOYS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_MANTIS"/>
               <mod:findLike type="text">
                 <mod:selector>(Mantis Crew) Offer your feedback.</mod:selector>
                 <mod:setValue>(Mantis Crew) Offer your feedback.
@@ -911,10 +1041,12 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_TOYS">
+  <mod:findName name="NEBULA_HEKTAR_TOYS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Pull the Shell's string.</mod:selector>
             <mod:setValue>Pull the Shell's string.
@@ -926,12 +1058,15 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_TOYS">
+  <mod:findName name="NEBULA_HEKTAR_TOYS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Buy the toy for 20 scrap.</mod:selector>
                 <mod:setValue>Buy the toy for 20 scrap.
@@ -944,12 +1079,15 @@ Gain a crew(Slug Hektar)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_TOYS">
+  <mod:findName name="NEBULA_HEKTAR_TOYS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_SHELL"/>
               <mod:findLike type="text">
                 <mod:selector>(Shell Crew) Offer your feedback.</mod:selector>
                 <mod:setValue>(Shell Crew) Offer your feedback.
@@ -961,8 +1099,9 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_TOYS">
+  <mod:findName name="NEBULA_HEKTAR_TOYS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the gift-shop.</mod:selector>
         <mod:setValue>Ignore the gift-shop.
@@ -970,10 +1109,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_TOYS">
+  <mod:findName name="NEBULA_HEKTAR_TOYS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -983,8 +1124,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_HOPE">
+  <mod:findName name="NEBULA_HEKTAR_HOPE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Confess the truth - the Federation has no idea about this place.</mod:selector>
         <mod:setValue>Confess the truth - the Federation has no idea about this place.
@@ -993,8 +1135,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_HOPE">
+  <mod:findName name="NEBULA_HEKTAR_HOPE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Lie - promise them the Federation has arrived to help.</mod:selector>
         <mod:setValue>Lie - promise them the Federation has arrived to help.
@@ -1002,8 +1145,9 @@ Reward { Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_HOPE">
+  <mod:findName name="NEBULA_HEKTAR_HOPE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="human_soldier"/>
       <mod:findLike type="text">
         <mod:selector>(Soldier Crew) We did not come here to stop Hektar - but we will do our best now that we are here.</mod:selector>
         <mod:setValue>(Soldier Crew) We did not come here to stop Hektar - but we will do our best now that we are here.
@@ -1011,8 +1155,9 @@ Repair Hull(30$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_FANATIC">
+  <mod:findName name="NEBULA_HEKTAR_FANATIC" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>See what's going on.</mod:selector>
         <mod:setValue>See what's going on.
@@ -1020,10 +1165,12 @@ Fight(HK: Reward Standard(M) Gain a weapon(Shop Item Hektar Modules))(CK: Reward
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_FANATIC">
+  <mod:findName name="NEBULA_HEKTAR_FANATIC" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>YES!!!</mod:selector>
             <mod:setValue>YES!!!
@@ -1033,12 +1180,15 @@ Fight(HK: Reward Standard(M) Gain a weapon(Shop Item Hektar Modules))(CK: Reward
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_FANATIC">
+  <mod:findName name="NEBULA_HEKTAR_FANATIC" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1050,14 +1200,18 @@ Fight(HK: Reward Standard(M) Gain a weapon(Shop Item Hektar Modules))(CK: Reward
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_FANATIC">
+  <mod:findName name="NEBULA_HEKTAR_FANATIC" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>These guys have to be stopped!</mod:selector>
                     <mod:setValue>These guys have to be stopped!
@@ -1072,16 +1226,21 @@ Fight(HK: Reward Standard(M) Gain a weapon(Shop Item Hektar Modules))(CK: Reward
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_FANATIC">
+  <mod:findName name="NEBULA_HEKTAR_FANATIC" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Continue...</mod:selector>
                         <mod:setValue>Continue...
@@ -1097,8 +1256,9 @@ Fight(HK: Reward Standard(M) Gain a weapon(Shop Item Hektar Modules))(CK: Reward
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_FANATIC">
+  <mod:findName name="NEBULA_HEKTAR_FANATIC" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the warehouse.</mod:selector>
         <mod:setValue>Ignore the warehouse.
@@ -1106,10 +1266,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_FANATIC">
+  <mod:findName name="NEBULA_HEKTAR_FANATIC" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1119,8 +1281,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_POWERPLANT">
+  <mod:findName name="NEBULA_HEKTAR_POWERPLANT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Hail the Orchids.</mod:selector>
         <mod:setValue>Hail the Orchids.
@@ -1128,10 +1291,12 @@ Fight(HK: Reward Standard(M) Gain a crew(Orchid))(CK: Reward Standard(H) Gain a 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_POWERPLANT">
+  <mod:findName name="NEBULA_HEKTAR_POWERPLANT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Visit the powerplant.</mod:selector>
             <mod:setValue>Visit the powerplant.
@@ -1141,12 +1306,15 @@ Fight(HK: Reward Standard(M) Gain a crew(Orchid))(CK: Reward Standard(H) Gain a 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_POWERPLANT">
+  <mod:findName name="NEBULA_HEKTAR_POWERPLANT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Attack the facility!</mod:selector>
                 <mod:setValue>Attack the facility!
@@ -1158,14 +1326,18 @@ Fight(HK: Reward Standard(M) Gain a crew(Orchid))(CK: Reward Standard(H) Gain a 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_POWERPLANT">
+  <mod:findName name="NEBULA_HEKTAR_POWERPLANT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1179,12 +1351,15 @@ Fight(HK: Reward Standard(M) Gain a crew(Orchid))(CK: Reward Standard(H) Gain a 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_POWERPLANT">
+  <mod:findName name="NEBULA_HEKTAR_POWERPLANT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Help out the facility and attack the Orchids.</mod:selector>
                 <mod:setValue>Help out the facility and attack the Orchids.
@@ -1196,14 +1371,18 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_POWERPLANT">
+  <mod:findName name="NEBULA_HEKTAR_POWERPLANT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1217,12 +1396,15 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_POWERPLANT">
+  <mod:findName name="NEBULA_HEKTAR_POWERPLANT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Give up.</mod:selector>
                 <mod:setValue>Give up.
@@ -1234,12 +1416,15 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_POWERPLANT">
+  <mod:findName name="NEBULA_HEKTAR_POWERPLANT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_ORCHID"/>
               <mod:findLike type="text">
                 <mod:selector>(Orchid Crew) Explain the importance of not harming ecosystems, regardless of where or what they are.</mod:selector>
                 <mod:setValue>(Orchid Crew) Explain the importance of not harming ecosystems, regardless of where or what they are.
@@ -1251,14 +1436,18 @@ Gain a crew(Orchid)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_POWERPLANT">
+  <mod:findName name="NEBULA_HEKTAR_POWERPLANT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_ORCHID"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Return to Ithen.</mod:selector>
                     <mod:setValue>Return to Ithen.
@@ -1272,8 +1461,9 @@ Gain a crew(Orchid)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_POWERPLANT">
+  <mod:findName name="NEBULA_HEKTAR_POWERPLANT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ion storms suck, just leave.</mod:selector>
         <mod:setValue>Ion storms suck, just leave.
@@ -1281,10 +1471,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_POWERPLANT">
+  <mod:findName name="NEBULA_HEKTAR_POWERPLANT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1294,8 +1486,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_REFUEL">
+  <mod:findName name="NEBULA_HEKTAR_REFUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Dock.</mod:selector>
         <mod:setValue>Dock.
@@ -1304,10 +1497,12 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 20% Reward Stuff(R))</
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_REFUEL">
+  <mod:findName name="NEBULA_HEKTAR_REFUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1317,12 +1512,15 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 20% Reward Stuff(R))</
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_REFUEL">
+  <mod:findName name="NEBULA_HEKTAR_REFUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Hell no!</mod:selector>
                 <mod:setValue>Hell no!
@@ -1334,14 +1532,18 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 20% Reward Stuff(R))</
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_REFUEL">
+  <mod:findName name="NEBULA_HEKTAR_REFUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1355,12 +1557,15 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 20% Reward Stuff(R))</
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_REFUEL">
+  <mod:findName name="NEBULA_HEKTAR_REFUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Pay them all of the scrap you have.</mod:selector>
                 <mod:setValue>Pay them all of the scrap you have.
@@ -1372,12 +1577,15 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 20% Reward Stuff(R))</
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_REFUEL">
+  <mod:findName name="NEBULA_HEKTAR_REFUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_VARIANT_BILLY"/>
               <mod:findLike type="text">
                 <mod:selector>(Billy) "There isssn't a debt anymore, moronssss."</mod:selector>
                 <mod:setValue>(Billy) "There isssn't a debt anymore, moronssss."
@@ -1389,8 +1597,9 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_REFUEL">
+  <mod:findName name="NEBULA_HEKTAR_REFUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the station.</mod:selector>
         <mod:setValue>Ignore the station.
@@ -1398,10 +1607,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_REFUEL">
+  <mod:findName name="NEBULA_HEKTAR_REFUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1411,8 +1622,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_IKEA">
+  <mod:findName name="NEBULA_HEKTAR_IKEA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1420,10 +1632,12 @@ Fight(HK: Reward Standard(M) Gain a weapon(Random))(CK: Reward Standard(H) Gain 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_IKEA">
+  <mod:findName name="NEBULA_HEKTAR_IKEA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Agree.</mod:selector>
             <mod:setValue>Agree.
@@ -1433,12 +1647,15 @@ Fight(HK: Reward Standard(M) Gain a weapon(Random))(CK: Reward Standard(H) Gain 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_IKEA">
+  <mod:findName name="NEBULA_HEKTAR_IKEA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1450,8 +1667,9 @@ Fight(HK: Reward Standard(M) Gain a weapon(Random))(CK: Reward Standard(H) Gain 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_IKEA_WIN">
+  <mod:findName name="HEKTAR_IKEA_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Open the vault.</mod:selector>
         <mod:setValue>Open the vault.
@@ -1459,10 +1677,12 @@ Gain a weapon(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_IKEA_WIN">
+  <mod:findName name="HEKTAR_IKEA_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1472,12 +1692,15 @@ Gain a weapon(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_IKEA_WIN">
+  <mod:findName name="HEKTAR_IKEA_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1489,8 +1712,9 @@ Gain a weapon(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_PATENT">
+  <mod:findName name="NEBULA_HEKTAR_PATENT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Intervene and help the Hektar ship.</mod:selector>
         <mod:setValue>Intervene and help the Hektar ship.
@@ -1498,10 +1722,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H) Reward Standard(M))</mod:se
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_PATENT">
+  <mod:findName name="NEBULA_HEKTAR_PATENT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1511,8 +1737,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H) Reward Standard(M))</mod:se
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_PATENT">
+  <mod:findName name="NEBULA_HEKTAR_PATENT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Intervene and help the Zoltan.</mod:selector>
         <mod:setValue>Intervene and help the Zoltan.
@@ -1520,10 +1747,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H) Reward Standard(M))</mod:se
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_PATENT">
+  <mod:findName name="NEBULA_HEKTAR_PATENT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1533,8 +1762,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H) Reward Standard(M))</mod:se
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_PATENT">
+  <mod:findName name="NEBULA_HEKTAR_PATENT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the conflict.</mod:selector>
         <mod:setValue>Ignore the conflict.
@@ -1542,10 +1772,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_HEKTAR_PATENT">
+  <mod:findName name="NEBULA_HEKTAR_PATENT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1555,8 +1787,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_FEMALE">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_FEMALE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Your shipment?</mod:selector>
         <mod:setValue>Your shipment?
@@ -1564,10 +1797,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_FEMALE">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_FEMALE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>Help try to put down the revolt.</mod:selector>
             <mod:setValue>Help try to put down the revolt.
@@ -1579,10 +1814,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_FEMALE">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_FEMALE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Help the lizards.</mod:selector>
             <mod:setValue>Help the lizards.
@@ -1592,12 +1829,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_FEMALE">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_FEMALE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1609,10 +1849,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_FEMALE">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_FEMALE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>You disgust me.</mod:selector>
             <mod:setValue>You disgust me.
@@ -1622,12 +1864,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_FEMALE">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_FEMALE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -1639,8 +1884,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CRISIS">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CRISIS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>What's with the distress beacon?</mod:selector>
         <mod:setValue>What's with the distress beacon?
@@ -1649,10 +1895,12 @@ Gain a drone(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CRISIS">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CRISIS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>No. You either work, or you become obsolete.</mod:selector>
             <mod:setValue>No. You either work, or you become obsolete.
@@ -1662,10 +1910,12 @@ Reward Stuff(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CRISIS">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CRISIS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Yes. Work hard enough and eventually you'll be free from the cycle.</mod:selector>
             <mod:setValue>Yes. Work hard enough and eventually you'll be free from the cycle.
@@ -1675,10 +1925,12 @@ Gain a drone(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CRISIS">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CRISIS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>I'm not a philosopher.</mod:selector>
             <mod:setValue>I'm not a philosopher.
@@ -1688,12 +1940,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CRISIS">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CRISIS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -1705,8 +1960,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_DEBTORS">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_DEBTORS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Give them a small amount of scrap. [-15~]</mod:selector>
         <mod:setValue>Give them a small amount of scrap. [-15~]
@@ -1715,8 +1971,9 @@ System Upgrade(Oxygen x1)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_DEBTORS">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_DEBTORS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Give them a large amount of scrap. [-50~]</mod:selector>
         <mod:setValue>Give them a large amount of scrap. [-50~]
@@ -1727,8 +1984,9 @@ Map Reveal
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_DEBTORS">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_DEBTORS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>These guys are a good target. Attack!</mod:selector>
         <mod:setValue>These guys are a good target. Attack!
@@ -1736,10 +1994,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_DEBTORS">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_DEBTORS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1749,8 +2009,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_DEBTORS">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_DEBTORS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>We can't help, sorry.</mod:selector>
         <mod:setValue>We can't help, sorry.
@@ -1758,10 +2019,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_DEBTORS">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_DEBTORS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1771,8 +2034,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CHILDREN">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CHILDREN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Contact the factory owners.</mod:selector>
         <mod:setValue>Contact the factory owners.
@@ -1780,10 +2044,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CHILDREN">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CHILDREN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Assist the factory owners and disperse the protestors.</mod:selector>
             <mod:setValue>Assist the factory owners and disperse the protestors.
@@ -1794,10 +2060,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CHILDREN">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CHILDREN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Assist the protestors and liberate the children.</mod:selector>
             <mod:setValue>Assist the protestors and liberate the children.
@@ -1807,12 +2075,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CHILDREN">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CHILDREN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1824,10 +2095,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CHILDREN">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CHILDREN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="false"/>
           <mod:findLike type="text">
             <mod:selector>Pay the factory owner to free the children.</mod:selector>
             <mod:setValue>Pay the factory owner to free the children.
@@ -1837,12 +2110,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CHILDREN">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CHILDREN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="false"/>
               <mod:findLike type="text">
                 <mod:selector>Accept their gift.</mod:selector>
                 <mod:setValue>Accept their gift.
@@ -1854,12 +2130,15 @@ Gain a weapon(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CHILDREN">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CHILDREN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="false"/>
               <mod:findLike type="text">
                 <mod:selector>Ignore their gift, take one of the children, and quickly leave.</mod:selector>
                 <mod:setValue>Ignore their gift, take one of the children, and quickly leave.
@@ -1871,8 +2150,9 @@ Gain a crew(Slug)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CHILDREN">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CHILDREN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the factory.</mod:selector>
         <mod:setValue>Ignore the factory.
@@ -1880,10 +2160,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CHILDREN">
+  <mod:findName name="NEBULA_DISTRESS_HEKTAR_CHILDREN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1893,8 +2175,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_ENCOUNTER_HEKTAR">
+  <mod:findName name="NEBULA_ENCOUNTER_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1902,8 +2185,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 20% Reward Stuff(R))</
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_SYLVANHOME_QUARANTINE">
+  <mod:findName name="NEBULA_SYLVANHOME_QUARANTINE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Do something onboard the ship.</mod:selector>
         <mod:setValue>Do something onboard the ship.
@@ -1911,8 +2195,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_SYLVANHOME_REAL">
+  <mod:findName name="NEBULA_SYLVANHOME_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Approach.</mod:selector>
         <mod:setValue>Approach.
@@ -1920,10 +2205,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_SYLVANHOME_REAL">
+  <mod:findName name="NEBULA_SYLVANHOME_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_sylvan"/>
           <mod:findLike type="text">
             <mod:selector>(Sylvan) Sylvan seems to have something to say.</mod:selector>
             <mod:setValue>(Sylvan) Sylvan seems to have something to say.
@@ -1933,12 +2220,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_SYLVANHOME_REAL">
+  <mod:findName name="NEBULA_SYLVANHOME_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_sylvan"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Guess there's nothing to be done.</mod:selector>
                 <mod:setValue>Guess there's nothing to be done.
@@ -1950,14 +2240,18 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_SYLVANHOME_REAL">
+  <mod:findName name="NEBULA_SYLVANHOME_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_sylvan"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Do something onboard the ship.</mod:selector>
                     <mod:setValue>Do something onboard the ship.
@@ -1971,10 +2265,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_SYLVANHOME_REAL">
+  <mod:findName name="NEBULA_SYLVANHOME_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Guess there's nothing to be done.</mod:selector>
             <mod:setValue>Guess there's nothing to be done.
@@ -1984,12 +2280,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_SYLVANHOME_REAL">
+  <mod:findName name="NEBULA_SYLVANHOME_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -2001,8 +2300,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_SYLVANHOME_REAL">
+  <mod:findName name="NEBULA_SYLVANHOME_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Guess there's nothing to be done.</mod:selector>
         <mod:setValue>Guess there's nothing to be done.
@@ -2010,10 +2310,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_SYLVANHOME_REAL">
+  <mod:findName name="NEBULA_SYLVANHOME_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -2023,8 +2325,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_SYLVANHOME_HER">
+  <mod:findName name="NEBULA_SYLVANHOME_HER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Approach.</mod:selector>
         <mod:setValue>Approach.
@@ -2032,10 +2335,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_SYLVANHOME_HER">
+  <mod:findName name="NEBULA_SYLVANHOME_HER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_sylvan"/>
           <mod:findLike type="text">
             <mod:selector>(Sylvan) Sylvan seems to have something to say.</mod:selector>
             <mod:setValue>(Sylvan) Sylvan seems to have something to say.
@@ -2045,12 +2350,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_SYLVANHOME_HER">
+  <mod:findName name="NEBULA_SYLVANHOME_HER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_sylvan"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Ignore the door and leave.</mod:selector>
                 <mod:setValue>Ignore the door and leave.
@@ -2062,14 +2370,18 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_SYLVANHOME_HER">
+  <mod:findName name="NEBULA_SYLVANHOME_HER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_sylvan"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Do something onboard the ship.</mod:selector>
                     <mod:setValue>Do something onboard the ship.
@@ -2083,10 +2395,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_SYLVANHOME_HER">
+  <mod:findName name="NEBULA_SYLVANHOME_HER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Ignore the door and leave.</mod:selector>
             <mod:setValue>Ignore the door and leave.
@@ -2096,12 +2410,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_SYLVANHOME_HER">
+  <mod:findName name="NEBULA_SYLVANHOME_HER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -2113,8 +2430,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_SYLVANHOME_HER">
+  <mod:findName name="NEBULA_SYLVANHOME_HER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the pod and leave.</mod:selector>
         <mod:setValue>Ignore the pod and leave.
@@ -2122,10 +2440,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_SYLVANHOME_HER">
+  <mod:findName name="NEBULA_SYLVANHOME_HER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -2135,8 +2455,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_HEADQUARTERS">
+  <mod:findName name="HEKTAR_HEADQUARTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Investigate.</mod:selector>
         <mod:setValue>Investigate.
@@ -2145,10 +2466,12 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Angel))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_HEADQUARTERS">
+  <mod:findName name="HEKTAR_HEADQUARTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attempt to gain access.</mod:selector>
             <mod:setValue>Attempt to gain access.
@@ -2160,12 +2483,15 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Angel))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_HEADQUARTERS">
+  <mod:findName name="HEKTAR_HEADQUARTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -2178,10 +2504,12 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Angel))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_HEADQUARTERS">
+  <mod:findName name="HEKTAR_HEADQUARTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_VARIANT_HEKTAR"/>
           <mod:findLike type="text">
             <mod:selector>(Hektar Employee) Attempt to gain access.</mod:selector>
             <mod:setValue>(Hektar Employee) Attempt to gain access.
@@ -2192,10 +2520,12 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Angel))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_HEADQUARTERS">
+  <mod:findName name="HEKTAR_HEADQUARTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="hacking" lvl="2"/>
           <mod:findLike type="text">
             <mod:selector>(Upg. Hacking) Attempt to gain access.</mod:selector>
             <mod:setValue>(Upg. Hacking) Attempt to gain access.
@@ -2206,10 +2536,12 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Angel))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_HEADQUARTERS">
+  <mod:findName name="HEKTAR_HEADQUARTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="BLUELIST_CREW_NODOORS"/>
           <mod:findLike type="text">
             <mod:selector>(Phasing Crew) Attempt to gain access.</mod:selector>
             <mod:setValue>(Phasing Crew) Attempt to gain access.
@@ -2220,10 +2552,12 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Angel))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_HEADQUARTERS">
+  <mod:findName name="HEKTAR_HEADQUARTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_metyunt"/>
           <mod:findLike type="text">
             <mod:selector>(Metyunt) Attempt to gain access.</mod:selector>
             <mod:setValue>(Metyunt) Attempt to gain access.
@@ -2234,8 +2568,9 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Angel))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_HEADQUARTERS">
+  <mod:findName name="HEKTAR_HEADQUARTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Let this one go - could be a trap.</mod:selector>
         <mod:setValue>Let this one go - could be a trap.
@@ -2243,10 +2578,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_HEADQUARTERS">
+  <mod:findName name="HEKTAR_HEADQUARTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -2256,9 +2593,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_TAURUS">
+  <mod:findName name="SHIP_TAURUS" type="ship">
     <mod:findLike type="destroyed">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" req="LIST_VARIANT_BILLY" lvl="1" max_group="0" blue="false"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2268,9 +2606,10 @@ Gain a weapon(List Weapons Newgen)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_TAURUS">
+  <mod:findName name="SHIP_TAURUS" type="ship">
     <mod:findLike type="destroyed">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" req="LIST_VARIANT_BILLY" lvl="0" max_group="0" blue="false"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2279,9 +2618,10 @@ Gain a weapon(List Weapons Newgen)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_TAURUS">
+  <mod:findName name="SHIP_TAURUS" type="ship">
     <mod:findLike type="deadCrew">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" req="LIST_VARIANT_BILLY" lvl="1" max_group="0" blue="false"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2291,9 +2631,10 @@ Gain a weapon(List Weapons Newgen)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_TAURUS">
+  <mod:findName name="SHIP_TAURUS" type="ship">
     <mod:findLike type="deadCrew">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" req="LIST_VARIANT_BILLY" lvl="0" max_group="0" blue="false"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2302,8 +2643,9 @@ Gain a weapon(List Weapons Newgen)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BILLY">
+  <mod:findName name="BILLY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2312,10 +2654,12 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Angel))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BILLY">
+  <mod:findName name="BILLY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Who are you? And who is trying to kill you?</mod:selector>
             <mod:setValue>Who are you? And who is trying to kill you?
@@ -2326,12 +2670,15 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Angel))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BILLY">
+  <mod:findName name="BILLY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>You trapped yourself in your office?</mod:selector>
                 <mod:setValue>You trapped yourself in your office?
@@ -2344,14 +2691,18 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Angel))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BILLY">
+  <mod:findName name="BILLY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>I don't see how that led to you being trapped in an office.</mod:selector>
                     <mod:setValue>I don't see how that led to you being trapped in an office.
@@ -2366,16 +2717,21 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Angel))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BILLY">
+  <mod:findName name="BILLY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Wait- Do you mean THE Vael? Leader of the Syndicate?!</mod:selector>
                         <mod:setValue>Wait- Do you mean THE Vael? Leader of the Syndicate?!
@@ -2392,18 +2748,24 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Angel))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BILLY">
+  <mod:findName name="BILLY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="text">
                             <mod:selector>Get the hell out of here!</mod:selector>
                             <mod:setValue>Get the hell out of here!
@@ -2422,20 +2784,27 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Angel))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BILLY">
+  <mod:findName name="BILLY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="event">
                             <mod:findLike type="choice">
+                              <mod:selector hidden="true"/>
                               <mod:findLike type="text">
                                 <mod:selector>Who the hell are you?</mod:selector>
                                 <mod:setValue>Who the hell are you?
@@ -2456,22 +2825,30 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Angel))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BILLY">
+  <mod:findName name="BILLY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="event">
                             <mod:findLike type="choice">
+                              <mod:selector hidden="true"/>
                               <mod:findLike type="event">
                                 <mod:findLike type="choice">
+                                  <mod:selector hidden="true"/>
                                   <mod:findLike type="text">
                                     <mod:selector>Refuse.</mod:selector>
                                     <mod:setValue>Refuse.
@@ -2495,24 +2872,33 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Angel))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BILLY">
+  <mod:findName name="BILLY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="event">
                             <mod:findLike type="choice">
+                              <mod:selector hidden="true"/>
                               <mod:findLike type="event">
                                 <mod:findLike type="choice">
+                                  <mod:selector hidden="true"/>
                                   <mod:findLike type="event">
                                     <mod:findLike type="choice">
+                                      <mod:selector hidden="true"/>
                                       <mod:findLike type="text">
                                         <mod:selector>Continue...</mod:selector>
                                         <mod:setValue>Continue...
@@ -2537,8 +2923,9 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Angel))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BILLY_DEAD">
+  <mod:findName name="BILLY_DEAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2546,9 +2933,10 @@ Gain a weapon(List Weapons Newgen)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_HEKTAR_BOSS">
+  <mod:findName name="SHIP_HEKTAR_BOSS" type="ship">
     <mod:findLike type="destroyed">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2557,9 +2945,10 @@ Gain a weapon(List Weapons Newgen)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_HEKTAR_BOSS">
+  <mod:findName name="SHIP_HEKTAR_BOSS" type="ship">
     <mod:findLike type="deadCrew">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2568,8 +2957,9 @@ Gain a weapon(List Weapons Newgen)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SHIPYARDS">
+  <mod:findName name="HEKTAR_SHIPYARDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Speak to the manager.</mod:selector>
         <mod:setValue>Speak to the manager.
@@ -2578,10 +2968,12 @@ Fight(HK=CK: Reward Weapon(H) &lt;#&gt;Unlock Ship(Hektar))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SHIPYARDS">
+  <mod:findName name="HEKTAR_SHIPYARDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Your 'workforce' doesn't seem too happy.</mod:selector>
             <mod:setValue>Your 'workforce' doesn't seem too happy.
@@ -2592,12 +2984,15 @@ Fight(HK=CK: Reward Weapon(H) &lt;#&gt;Unlock Ship(Hektar))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SHIPYARDS">
+  <mod:findName name="HEKTAR_SHIPYARDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>That doesn't sound like helping your species.</mod:selector>
                 <mod:setValue>That doesn't sound like helping your species.
@@ -2610,14 +3005,18 @@ Fight(HK=CK: Reward Weapon(H) &lt;#&gt;Unlock Ship(Hektar))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SHIPYARDS">
+  <mod:findName name="HEKTAR_SHIPYARDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Protect the crowd.</mod:selector>
                     <mod:setValue>Protect the crowd.
@@ -2632,16 +3031,21 @@ Fight(HK=CK: Reward Weapon(H) &lt;#&gt;Unlock Ship(Hektar))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SHIPYARDS">
+  <mod:findName name="HEKTAR_SHIPYARDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Continue...</mod:selector>
                         <mod:setValue>Continue...
@@ -2658,12 +3062,15 @@ Fight(HK=CK: Reward Weapon(H) &lt;#&gt;Unlock Ship(Hektar))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SHIPYARDS">
+  <mod:findName name="HEKTAR_SHIPYARDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>They're just blind, you're right. Side with Metyunt.</mod:selector>
                 <mod:setValue>They're just blind, you're right. Side with Metyunt.
@@ -2676,12 +3083,15 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SHIPYARDS">
+  <mod:findName name="HEKTAR_SHIPYARDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="unique_guntput"/>
               <mod:findLike type="text">
                 <mod:selector>(Guntput) "You are big idiot! Our species still in danger!"</mod:selector>
                 <mod:setValue>(Guntput) "You are big idiot! Our species still in danger!"
@@ -2694,14 +3104,18 @@ Fight(HK=CK: Reward Weapon(H) &lt;#&gt;Unlock Ship(Hektar))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SHIPYARDS">
+  <mod:findName name="HEKTAR_SHIPYARDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="unique_guntput"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Protect the crowd.</mod:selector>
                     <mod:setValue>Protect the crowd.
@@ -2716,16 +3130,21 @@ Fight(HK=CK: Reward Weapon(H) &lt;#&gt;Unlock Ship(Hektar))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SHIPYARDS">
+  <mod:findName name="HEKTAR_SHIPYARDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="unique_guntput"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Continue...</mod:selector>
                         <mod:setValue>Continue...
@@ -2742,8 +3161,9 @@ Fight(HK=CK: Reward Weapon(H) &lt;#&gt;Unlock Ship(Hektar))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SHIPYARDS">
+  <mod:findName name="HEKTAR_SHIPYARDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the planet.</mod:selector>
         <mod:setValue>Ignore the planet.
@@ -2751,10 +3171,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SHIPYARDS">
+  <mod:findName name="HEKTAR_SHIPYARDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -2764,8 +3186,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SHIPYARDS_WIN">
+  <mod:findName name="HEKTAR_SHIPYARDS_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Convince Metyunt to talk them into standing down.</mod:selector>
         <mod:setValue>Convince Metyunt to talk them into standing down.
@@ -2773,10 +3196,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SHIPYARDS_WIN">
+  <mod:findName name="HEKTAR_SHIPYARDS_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>He deserves a second chance.</mod:selector>
             <mod:setValue>He deserves a second chance.
@@ -2786,12 +3211,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SHIPYARDS_WIN">
+  <mod:findName name="HEKTAR_SHIPYARDS_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -2803,10 +3231,12 @@ Gain a crew(Unique Metyunt)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HEKTAR_SHIPYARDS_WIN">
+  <mod:findName name="HEKTAR_SHIPYARDS_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>He's had his chance. He shouldn't get any more.</mod:selector>
             <mod:setValue>He's had his chance. He shouldn't get any more.

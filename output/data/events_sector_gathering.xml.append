@@ -1,5 +1,15 @@
 <FTL>
-  <mod:findName name="FINISH_BEACON_ORCHID">
+  <mod:findName name="FINISH_BEACON_ORCHID" type="event">
+    <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
+      <mod:findLike type="text">
+        <mod:selector>Do something onboard the ship.</mod:selector>
+        <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="ORCHID_FREE_ITEMS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Do something onboard the ship.</mod:selector>
@@ -8,16 +18,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FREE_ITEMS">
-    <mod:findLike type="choice">
-      <mod:findLike type="text">
-        <mod:selector>Do something onboard the ship.</mod:selector>
-        <mod:setValue>Do something onboard the ship.
-Storage Check</mod:setValue>
-      </mod:findLike>
-    </mod:findLike>
-  </mod:findName>
-  <mod:findName name="ORCHID_UNARMED">
+  <mod:findName name="ORCHID_UNARMED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their offer.</mod:selector>
@@ -26,8 +27,9 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_UNARMED">
+  <mod:findName name="ORCHID_UNARMED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Extort additional resources: they surely have more.</mod:selector>
         <mod:setValue>Extort additional resources: they surely have more.
@@ -35,10 +37,12 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_UNARMED">
+  <mod:findName name="ORCHID_UNARMED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Accept the better 'gift'.</mod:selector>
             <mod:setValue>Accept the better 'gift'.
@@ -48,10 +52,12 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_UNARMED">
+  <mod:findName name="ORCHID_UNARMED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Kill the Orchid and take everything he has.</mod:selector>
             <mod:setValue>Kill the Orchid and take everything he has.
@@ -61,8 +67,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_BOTANICAL_GALLERY">
+  <mod:findName name="ORCHID_BOTANICAL_GALLERY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Visit the station.</mod:selector>
         <mod:setValue>Visit the station.
@@ -73,8 +80,9 @@ Gain a crew(Mantis)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_BOTANICAL_GALLERY">
+  <mod:findName name="ORCHID_BOTANICAL_GALLERY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -87,8 +95,9 @@ Gain a weapon(Kernel 1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_BOTANICAL_GALLERY">
+  <mod:findName name="ORCHID_BOTANICAL_GALLERY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -101,8 +110,9 @@ Gain a crew(Mantis)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_BOTANICAL_GALLERY">
+  <mod:findName name="ORCHID_BOTANICAL_GALLERY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -115,8 +125,9 @@ Gain a crew(Mantis)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_BOTANICAL_GALLERY">
+  <mod:findName name="ORCHID_BOTANICAL_GALLERY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Charge the FTL drive.</mod:selector>
         <mod:setValue>Charge the FTL drive.
@@ -124,8 +135,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_BOTANICAL_GALLERY">
+  <mod:findName name="ORCHID_BOTANICAL_GALLERY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -137,8 +149,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SEEDS">
+  <mod:findName name="ORCHID_SEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Take the risk and open it.</mod:selector>
         <mod:setValue>Take the risk and open it.
@@ -148,8 +161,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SEEDS">
+  <mod:findName name="ORCHID_SEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_FLORAL"/>
       <mod:findLike type="text">
         <mod:selector>(Floral Crew) Have your Orchid inform you about the pod's purpose.</mod:selector>
         <mod:setValue>(Floral Crew) Have your Orchid inform you about the pod's purpose.
@@ -159,10 +173,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SEEDS">
+  <mod:findName name="ORCHID_SEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_FLORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Open it.</mod:selector>
             <mod:setValue>Open it.
@@ -174,10 +190,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SEEDS">
+  <mod:findName name="ORCHID_SEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_FLORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>If we can't predict what's inside, we shouldn't open it.</mod:selector>
             <mod:setValue>If we can't predict what's inside, we shouldn't open it.
@@ -187,10 +205,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SEEDS">
+  <mod:findName name="ORCHID_SEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_FLORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -204,8 +224,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SEEDS">
+  <mod:findName name="ORCHID_SEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the pod, it could be dangerous.</mod:selector>
         <mod:setValue>Ignore the pod, it could be dangerous.
@@ -213,8 +234,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SEEDS">
+  <mod:findName name="ORCHID_SEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -226,8 +248,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_TERRAFORMERS">
+  <mod:findName name="ORCHID_TERRAFORMERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Investigate the planet.</mod:selector>
         <mod:setValue>Investigate the planet.
@@ -236,8 +259,9 @@ Fight(HK: 33% Reward Standard(M) 33% Repair Hull(5$) 33% System Upgrade(Reactor 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_TERRAFORMERS">
+  <mod:findName name="ORCHID_TERRAFORMERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="sensors" lvl="3"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Sensors) Scan the planet.</mod:selector>
         <mod:setValue>(Adv. Sensors) Scan the planet.
@@ -246,8 +270,9 @@ Fight(HK: 33% Reward Standard(M) 33% Repair Hull(5$) 33% System Upgrade(Reactor 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_TERRAFORMERS">
+  <mod:findName name="ORCHID_TERRAFORMERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="ADV_SCANNERS"/>
       <mod:findLike type="text">
         <mod:selector>(Long-Ranged Scanners) Scan the planet.</mod:selector>
         <mod:setValue>(Long-Ranged Scanners) Scan the planet.
@@ -256,8 +281,9 @@ Fight(HK: 33% Reward Standard(M) 33% Repair Hull(5$) 33% System Upgrade(Reactor 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_TERRAFORMERS">
+  <mod:findName name="ORCHID_TERRAFORMERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Refuse.</mod:selector>
         <mod:setValue>Refuse.
@@ -265,8 +291,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_TERRAFORMERS">
+  <mod:findName name="ORCHID_TERRAFORMERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -278,7 +305,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_TERRAFORMERS_EXPLORE">
+  <mod:findName name="ORCHID_TERRAFORMERS_EXPLORE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -289,9 +316,10 @@ Gain a crew(Giftcoalition)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_TERRAFORMERS_EXPLORE">
+  <mod:findName name="ORCHID_TERRAFORMERS_EXPLORE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Report their location to the Florals.</mod:selector>
           <mod:setValue>Report their location to the Florals.
@@ -300,9 +328,10 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_TERRAFORMERS_EXPLORE">
+  <mod:findName name="ORCHID_TERRAFORMERS_EXPLORE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -311,7 +340,7 @@ Fight(HK: Reward Standard(M) Repair Hull(5$) System Upgrade(Reactor x1))(CK: Rew
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_TERRAFORMERS_SCAN">
+  <mod:findName name="ORCHID_TERRAFORMERS_SCAN" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -322,9 +351,10 @@ Gain a crew(Giftcoalition)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_TERRAFORMERS_SCAN">
+  <mod:findName name="ORCHID_TERRAFORMERS_SCAN" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Report their location to the Florals.</mod:selector>
           <mod:setValue>Report their location to the Florals.
@@ -333,9 +363,10 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_TERRAFORMERS_SCAN">
+  <mod:findName name="ORCHID_TERRAFORMERS_SCAN" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Destroy the ship!</mod:selector>
           <mod:setValue>Destroy the ship!
@@ -344,11 +375,13 @@ Fight(HK: Reward Standard(M) Repair Hull(5$) System Upgrade(Reactor x1))(CK: Rew
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_TERRAFORMERS_SCAN">
+  <mod:findName name="ORCHID_TERRAFORMERS_SCAN" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="event">
           <mod:findLike type="choice">
+            <mod:selector hidden="true"/>
             <mod:findLike type="text">
               <mod:selector>Continue...</mod:selector>
               <mod:setValue>Continue...
@@ -359,9 +392,10 @@ Fight(HK: Reward Standard(M) Repair Hull(5$) System Upgrade(Reactor x1))(CK: Rew
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_TERRAFORMERS_SCAN">
+  <mod:findName name="ORCHID_TERRAFORMERS_SCAN" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Set an explosive device to cripple the base. [-15}]</mod:selector>
           <mod:setValue>Set an explosive device to cripple the base. [-15}]
@@ -372,9 +406,10 @@ System Upgrade(Reactor x1)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_TERRAFORMERS_SCAN">
+  <mod:findName name="ORCHID_TERRAFORMERS_SCAN" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Report the base back to the Orchids.</mod:selector>
           <mod:setValue>Report the base back to the Orchids.
@@ -383,8 +418,9 @@ System Upgrade(Reactor x1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_PETITION">
+  <mod:findName name="ORCHID_PETITION" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_mayeb"/>
       <mod:findLike type="text">
         <mod:selector>(Mayeb) Lecture the petitioner.</mod:selector>
         <mod:setValue>(Mayeb) Lecture the petitioner.
@@ -392,10 +428,12 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_PETITION">
+  <mod:findName name="ORCHID_PETITION" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_mayeb"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -405,8 +443,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_PETITION">
+  <mod:findName name="ORCHID_PETITION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Sign the petition.</mod:selector>
         <mod:setValue>Sign the petition.
@@ -414,8 +453,9 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_PETITION">
+  <mod:findName name="ORCHID_PETITION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -427,7 +467,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_PETITION">
+  <mod:findName name="ORCHID_PETITION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Sign the petition and offer a charitable donation.</mod:selector>
@@ -437,10 +477,11 @@ Gain a weapon(Giftlist Kernel)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_PETITION">
+  <mod:findName name="ORCHID_PETITION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -450,8 +491,9 @@ Gain a weapon(Giftlist Kernel)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_PETITION">
+  <mod:findName name="ORCHID_PETITION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Refuse to sign the petition.</mod:selector>
         <mod:setValue>Refuse to sign the petition.
@@ -459,8 +501,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_PETITION">
+  <mod:findName name="ORCHID_PETITION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -472,8 +515,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_PETITION">
+  <mod:findName name="ORCHID_PETITION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Mock the Orchids.</mod:selector>
         <mod:setValue>Mock the Orchids.
@@ -481,10 +525,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_PETITION">
+  <mod:findName name="ORCHID_PETITION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -494,8 +540,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_KERNEL_FOREST">
+  <mod:findName name="ORCHID_KERNEL_FOREST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Investigate further.</mod:selector>
         <mod:setValue>Investigate further.
@@ -520,10 +567,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_KERNEL_FOREST">
+  <mod:findName name="ORCHID_KERNEL_FOREST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>This is your garden?</mod:selector>
             <mod:setValue>This is your garden?
@@ -550,10 +599,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_KERNEL_FOREST">
+  <mod:findName name="ORCHID_KERNEL_FOREST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -575,10 +626,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_KERNEL_FOREST">
+  <mod:findName name="ORCHID_KERNEL_FOREST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -600,12 +653,15 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_KERNEL_FOREST">
+  <mod:findName name="ORCHID_KERNEL_FOREST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_FLORAL"/>
               <mod:findLike type="text">
                 <mod:selector>(Floral Crew) Ask the Caretaker to join you.</mod:selector>
                 <mod:setValue>(Floral Crew) Ask the Caretaker to join you.
@@ -617,12 +673,15 @@ Gain a crew(Orchid Caretaker)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_KERNEL_FOREST">
+  <mod:findName name="ORCHID_KERNEL_FOREST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Attempt to steal one of the weapons.</mod:selector>
                 <mod:setValue>Attempt to steal one of the weapons.
@@ -634,14 +693,18 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_KERNEL_FOREST">
+  <mod:findName name="ORCHID_KERNEL_FOREST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -655,8 +718,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_KERNEL_FOREST">
+  <mod:findName name="ORCHID_KERNEL_FOREST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ok, time's up. Let's get moving.</mod:selector>
         <mod:setValue>Ok, time's up. Let's get moving.
@@ -664,8 +728,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_KERNEL_FOREST">
+  <mod:findName name="ORCHID_KERNEL_FOREST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -677,8 +742,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MEGATREE">
+  <mod:findName name="ORCHID_MEGATREE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Observe the tree.</mod:selector>
         <mod:setValue>Observe the tree.
@@ -686,10 +752,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MEGATREE">
+  <mod:findName name="ORCHID_MEGATREE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -699,10 +767,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MEGATREE">
+  <mod:findName name="ORCHID_MEGATREE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -716,14 +786,17 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MEGATREE">
+  <mod:findName name="ORCHID_MEGATREE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Dig for the weapon.</mod:selector>
                     <mod:setValue>Dig for the weapon.
@@ -737,16 +810,20 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MEGATREE">
+  <mod:findName name="ORCHID_MEGATREE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Continue...</mod:selector>
                         <mod:setValue>Continue...
@@ -762,14 +839,17 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MEGATREE">
+  <mod:findName name="ORCHID_MEGATREE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true" req="LIST_CREW_FLORAL"/>
                   <mod:findLike type="text">
                     <mod:selector>(Floral Crew) Convince the Mega-Tree guards to let you have the weapon.</mod:selector>
                     <mod:setValue>(Floral Crew) Convince the Mega-Tree guards to let you have the weapon.
@@ -783,14 +863,17 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MEGATREE">
+  <mod:findName name="ORCHID_MEGATREE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true" req="FLARE_DISTRACTION"/>
                   <mod:findLike type="text">
                     <mod:selector>(Flares) Launch a flare to distract the guards and buy you time.</mod:selector>
                     <mod:setValue>(Flares) Launch a flare to distract the guards and buy you time.
@@ -805,12 +888,15 @@ Reward }(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MEGATREE">
+  <mod:findName name="ORCHID_MEGATREE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Don't pay.</mod:selector>
                 <mod:setValue>Don't pay.
@@ -822,12 +908,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MEGATREE">
+  <mod:findName name="ORCHID_MEGATREE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
                   <mod:findLike type="text">
@@ -843,8 +932,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MEGATREE">
+  <mod:findName name="ORCHID_MEGATREE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the tree.</mod:selector>
         <mod:setValue>Ignore the tree.
@@ -852,8 +942,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MEGATREE">
+  <mod:findName name="ORCHID_MEGATREE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -865,9 +956,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MEGATREE_TALK">
+  <mod:findName name="ORCHID_MEGATREE_TALK" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Ignore them and dig for it anyways.</mod:selector>
           <mod:setValue>Ignore them and dig for it anyways.
@@ -876,11 +968,13 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MEGATREE_TALK">
+  <mod:findName name="ORCHID_MEGATREE_TALK" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="event">
           <mod:findLike type="choice">
+            <mod:selector hidden="true"/>
             <mod:findLike type="text">
               <mod:selector>Continue...</mod:selector>
               <mod:setValue>Continue...
@@ -891,8 +985,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_REFUGEES">
+  <mod:findName name="ORCHID_REFUGEES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Defend the immigration center.</mod:selector>
         <mod:setValue>Defend the immigration center.
@@ -900,10 +995,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_REFUGEES">
+  <mod:findName name="ORCHID_REFUGEES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -913,8 +1010,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_REFUGEES">
+  <mod:findName name="ORCHID_REFUGEES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Avoid the scene.</mod:selector>
         <mod:setValue>Avoid the scene.
@@ -922,8 +1020,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_REFUGEES">
+  <mod:findName name="ORCHID_REFUGEES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -935,7 +1034,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_REFUGEES_WIN">
+  <mod:findName name="ORCHID_REFUGEES_WIN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Offer to take him with you.</mod:selector>
@@ -944,8 +1043,9 @@ Gain a crew(Rock Commando)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_REFUGEES_WIN">
+  <mod:findName name="ORCHID_REFUGEES_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_ariadne" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Ariadne) "Buckle up soldier, the Multiverse needs all the help it can get."</mod:selector>
         <mod:setValue>(Ariadne) "Buckle up soldier, the Multiverse needs all the help it can get."
@@ -953,8 +1053,9 @@ Gain a crew(Rock Commando)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_REFUGEES_WIN">
+  <mod:findName name="ORCHID_REFUGEES_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Apologies, but we can't help.</mod:selector>
         <mod:setValue>Apologies, but we can't help.
@@ -962,8 +1063,9 @@ Reward }(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ESCAPE">
+  <mod:findName name="ORCHID_ESCAPE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Rescue the mysterious stranger.</mod:selector>
         <mod:setValue>Rescue the mysterious stranger.
@@ -973,8 +1075,9 @@ Reward }(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ESCAPE">
+  <mod:findName name="ORCHID_ESCAPE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Report them to the Gathering.</mod:selector>
         <mod:setValue>Report them to the Gathering.
@@ -982,8 +1085,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ESCAPE">
+  <mod:findName name="ORCHID_ESCAPE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="teleporter" lvl="2"/>
       <mod:findLike type="text">
         <mod:selector>(Upg. Teleporter) Teleport the Orchid aboard unnoticed.</mod:selector>
         <mod:setValue>(Upg. Teleporter) Teleport the Orchid aboard unnoticed.
@@ -991,8 +1095,9 @@ Gain a crew(Orchid)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ESCAPE">
+  <mod:findName name="ORCHID_ESCAPE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Decline.</mod:selector>
         <mod:setValue>Decline.
@@ -1000,8 +1105,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ESCAPE">
+  <mod:findName name="ORCHID_ESCAPE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1013,9 +1119,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ESCAPE_RESCUE">
+  <mod:findName name="ORCHID_ESCAPE_RESCUE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1024,9 +1131,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ESCAPE_RESCUE">
+  <mod:findName name="ORCHID_ESCAPE_RESCUE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1035,9 +1143,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ESCAPE_RESCUE">
+  <mod:findName name="ORCHID_ESCAPE_RESCUE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1046,8 +1155,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MERCENARY">
+  <mod:findName name="ORCHID_MERCENARY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Help the Orchid ship.</mod:selector>
         <mod:setValue>Help the Orchid ship.
@@ -1055,10 +1165,12 @@ Fight(HK: Reward Standard(M) 33% Gain a crew(Orchid Caretaker) 33% Reward Standa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MERCENARY">
+  <mod:findName name="ORCHID_MERCENARY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1068,7 +1180,7 @@ Fight(HK: Reward Standard(M) 33% Gain a crew(Orchid Caretaker) 33% Reward Standa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MERCENARY">
+  <mod:findName name="ORCHID_MERCENARY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Bribe the Syndicate into leaving them alone.</mod:selector>
@@ -1077,7 +1189,7 @@ Fight(HK: Reward Standard(M) 33% Gain a crew(Orchid Caretaker) 33% Reward Standa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MERCENARY">
+  <mod:findName name="ORCHID_MERCENARY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1090,7 +1202,7 @@ Gain a crew(Orchid Caretaker)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MERCENARY">
+  <mod:findName name="ORCHID_MERCENARY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1103,8 +1215,9 @@ Gain a weapon(Giftlist Kernel)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MERCENARY">
+  <mod:findName name="ORCHID_MERCENARY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Avoid the conflict.</mod:selector>
         <mod:setValue>Avoid the conflict.
@@ -1112,8 +1225,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_MERCENARY">
+  <mod:findName name="ORCHID_MERCENARY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1125,8 +1239,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SLAVES">
+  <mod:findName name="ORCHID_SLAVES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Piracy is despicable. Attack the slavers!</mod:selector>
         <mod:setValue>Piracy is despicable. Attack the slavers!
@@ -1134,10 +1249,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SLAVES">
+  <mod:findName name="ORCHID_SLAVES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1147,7 +1264,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SLAVES">
+  <mod:findName name="ORCHID_SLAVES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Buy a slave.</mod:selector>
@@ -1159,8 +1276,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SLAVES">
+  <mod:findName name="ORCHID_SLAVES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_CARETAKER"/>
       <mod:findLike type="text">
         <mod:selector>(Caretaker Crew) Appeal to the pirates' better interests.</mod:selector>
         <mod:setValue>(Caretaker Crew) Appeal to the pirates' better interests.
@@ -1169,8 +1287,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SLAVES">
+  <mod:findName name="ORCHID_SLAVES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Decline.</mod:selector>
         <mod:setValue>Decline.
@@ -1178,8 +1297,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SLAVES">
+  <mod:findName name="ORCHID_SLAVES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1191,9 +1311,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SLAVER_CARETAKER">
-    <mod:findName name="ORCHID_SLAVER_CARETAKER_FAIL">
+  <mod:findName name="ORCHID_SLAVER_CARETAKER" type="eventList">
+    <mod:findName name="ORCHID_SLAVER_CARETAKER_FAIL" type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Attack the slavers!</mod:selector>
           <mod:setValue>Attack the slavers!
@@ -1202,11 +1323,13 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findName>
   </mod:findName>
-  <mod:findName name="ORCHID_SLAVER_CARETAKER">
-    <mod:findName name="ORCHID_SLAVER_CARETAKER_FAIL">
+  <mod:findName name="ORCHID_SLAVER_CARETAKER" type="eventList">
+    <mod:findName name="ORCHID_SLAVER_CARETAKER_FAIL" type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="event">
           <mod:findLike type="choice">
+            <mod:selector hidden="true"/>
             <mod:findLike type="text">
               <mod:selector>Continue...</mod:selector>
               <mod:setValue>Continue...
@@ -1217,8 +1340,8 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findName>
   </mod:findName>
-  <mod:findName name="ORCHID_SLAVER_CARETAKER">
-    <mod:findName name="ORCHID_SLAVER_CARETAKER_FAIL">
+  <mod:findName name="ORCHID_SLAVER_CARETAKER" type="eventList">
+    <mod:findName name="ORCHID_SLAVER_CARETAKER_FAIL" type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
           <mod:selector>Change your mind and buy a slave.</mod:selector>
@@ -1231,8 +1354,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findName>
   </mod:findName>
-  <mod:findName name="ORCHID_INSULT">
+  <mod:findName name="ORCHID_INSULT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Agree to talk with the Slugs.</mod:selector>
         <mod:setValue>Agree to talk with the Slugs.
@@ -1240,10 +1364,12 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 17% Reward Stuff(R) 17
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INSULT">
+  <mod:findName name="ORCHID_INSULT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>We won't suffer such insults! Attack!</mod:selector>
             <mod:setValue>We won't suffer such insults! Attack!
@@ -1253,12 +1379,15 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 17% Reward Stuff(R) 17
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INSULT">
+  <mod:findName name="ORCHID_INSULT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1270,10 +1399,12 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 17% Reward Stuff(R) 17
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INSULT">
+  <mod:findName name="ORCHID_INSULT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="PDS_DISABLE"/>
           <mod:findLike type="text">
             <mod:selector>(Signal Diluter) Block any distress signals the Slug might make, and attack!</mod:selector>
             <mod:setValue>(Signal Diluter) Block any distress signals the Slug might make, and attack!
@@ -1283,12 +1414,15 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 17% Reward Stuff(R) 17
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INSULT">
+  <mod:findName name="ORCHID_INSULT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="PDS_DISABLE"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1300,10 +1434,12 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 17% Reward Stuff(R) 17
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INSULT">
+  <mod:findName name="ORCHID_INSULT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_nights"/>
           <mod:findLike type="text">
             <mod:selector>(Nights) Get personal.</mod:selector>
             <mod:setValue>(Nights) Get personal.
@@ -1313,12 +1449,15 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INSULT">
+  <mod:findName name="ORCHID_INSULT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_nights"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1330,10 +1469,12 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INSULT">
+  <mod:findName name="ORCHID_INSULT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_SLUG"/>
           <mod:findLike type="text">
             <mod:selector>(Slug Crew) Return the insult.</mod:selector>
             <mod:setValue>(Slug Crew) Return the insult.
@@ -1343,10 +1484,12 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INSULT">
+  <mod:findName name="ORCHID_INSULT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_tonysr"/>
           <mod:findLike type="text">
             <mod:selector>(Tony) Tony has begun to cry.</mod:selector>
             <mod:setValue>(Tony) Tony has begun to cry.
@@ -1356,8 +1499,9 @@ Reward Item(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INSULT">
+  <mod:findName name="ORCHID_INSULT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Decline.</mod:selector>
         <mod:setValue>Decline.
@@ -1365,8 +1509,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INSULT">
+  <mod:findName name="ORCHID_INSULT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1378,8 +1523,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_NORMAL">
+  <mod:findName name="ORCHID_FIELD_NORMAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ORCHID_UNIQUE" lvl="0" max_lvl="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Pick some flowers, maybe you can sell them.</mod:selector>
         <mod:setValue>Pick some flowers, maybe you can sell them.
@@ -1388,10 +1534,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_NORMAL">
+  <mod:findName name="ORCHID_FIELD_NORMAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ORCHID_UNIQUE" lvl="0" max_lvl="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Double down and take the corpses back with you.</mod:selector>
             <mod:setValue>Double down and take the corpses back with you.
@@ -1402,12 +1550,15 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_NORMAL">
+  <mod:findName name="ORCHID_FIELD_NORMAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ORCHID_UNIQUE" lvl="0" max_lvl="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1419,8 +1570,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_NORMAL">
+  <mod:findName name="ORCHID_FIELD_NORMAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_ivar" blue="false" max_group="0"/>
       <mod:findLike type="text">
         <mod:selector>Pick some flowers, maybe you can sell them.</mod:selector>
         <mod:setValue>Pick some flowers, maybe you can sell them.
@@ -1428,8 +1580,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_NORMAL">
+  <mod:findName name="ORCHID_FIELD_NORMAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_tyerel" blue="false" max_group="0"/>
       <mod:findLike type="text">
         <mod:selector>Pick some flowers, maybe you can sell them.</mod:selector>
         <mod:setValue>Pick some flowers, maybe you can sell them.
@@ -1437,8 +1590,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_NORMAL">
+  <mod:findName name="ORCHID_FIELD_NORMAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_ORCHID"/>
       <mod:findLike type="text">
         <mod:selector>(Orchid Crew) Your Orchid waves their vines frantically, warning you not to do it.</mod:selector>
         <mod:setValue>(Orchid Crew) Your Orchid waves their vines frantically, warning you not to do it.
@@ -1446,8 +1600,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_NORMAL">
+  <mod:findName name="ORCHID_FIELD_NORMAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_ORCHID"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1459,8 +1614,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_NORMAL">
+  <mod:findName name="ORCHID_FIELD_NORMAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BOMB_ELITE"/>
       <mod:findLike type="text">
         <mod:selector>(Promotion Bomb) Bomb the field. [-1}]</mod:selector>
         <mod:setValue>(Promotion Bomb) Bomb the field. [-1}]
@@ -1468,8 +1624,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_NORMAL">
+  <mod:findName name="ORCHID_FIELD_NORMAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BOMB_ELITE_CHAOS"/>
       <mod:findLike type="text">
         <mod:selector>(Chaotic Promotion Bomb) Bomb the field. [-15}]</mod:selector>
         <mod:setValue>(Chaotic Promotion Bomb) Bomb the field. [-15}]
@@ -1478,8 +1635,9 @@ Gain a crew(Orchid)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_NORMAL">
+  <mod:findName name="ORCHID_FIELD_NORMAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="NANO_MEDBAY"/>
       <mod:findLike type="text">
         <mod:selector>(Med-bots) Fertilize the fields.</mod:selector>
         <mod:setValue>(Med-bots) Fertilize the fields.
@@ -1487,8 +1645,9 @@ Reward Augment(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_NORMAL">
+  <mod:findName name="ORCHID_FIELD_NORMAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="COMMANDO_FIRE"/>
       <mod:findLike type="text">
         <mod:selector>(Lost Sun Crew) BURN IT ALL!</mod:selector>
         <mod:setValue>(Lost Sun Crew) BURN IT ALL!
@@ -1496,10 +1655,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_NORMAL">
+  <mod:findName name="ORCHID_FIELD_NORMAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="COMMANDO_FIRE"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1509,8 +1670,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_NORMAL">
+  <mod:findName name="ORCHID_FIELD_NORMAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>We have better things to do.</mod:selector>
         <mod:setValue>We have better things to do.
@@ -1518,8 +1680,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_NORMAL">
+  <mod:findName name="ORCHID_FIELD_NORMAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1531,8 +1694,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_SECURE">
+  <mod:findName name="ORCHID_FIELD_SECURE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>What's wrong?</mod:selector>
         <mod:setValue>What's wrong?
@@ -1540,10 +1704,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_SECURE">
+  <mod:findName name="ORCHID_FIELD_SECURE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Fight the station to access the planet.</mod:selector>
             <mod:setValue>Fight the station to access the planet.
@@ -1553,12 +1719,15 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_SECURE">
+  <mod:findName name="ORCHID_FIELD_SECURE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1570,10 +1739,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_SECURE">
+  <mod:findName name="ORCHID_FIELD_SECURE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Leave.</mod:selector>
             <mod:setValue>Leave.
@@ -1583,10 +1754,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_SECURE">
+  <mod:findName name="ORCHID_FIELD_SECURE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -1600,8 +1773,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_SECURE">
+  <mod:findName name="ORCHID_FIELD_SECURE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Agree to leave.</mod:selector>
         <mod:setValue>Agree to leave.
@@ -1609,8 +1783,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_SECURE">
+  <mod:findName name="ORCHID_FIELD_SECURE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1622,8 +1797,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_SECURE_WIN">
+  <mod:findName name="ORCHID_FIELD_SECURE_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ORCHID_UNIQUE" lvl="0" max_lvl="0" blue="false" max_group="0"/>
       <mod:findLike type="text">
         <mod:selector>Pluck the flowers.</mod:selector>
         <mod:setValue>Pluck the flowers.
@@ -1631,8 +1807,9 @@ Gain an augment(Orchid Kids)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_SECURE_WIN">
+  <mod:findName name="ORCHID_FIELD_SECURE_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_ivar" blue="false" max_group="0"/>
       <mod:findLike type="text">
         <mod:selector>Pluck the flowers.</mod:selector>
         <mod:setValue>Pluck the flowers.
@@ -1640,8 +1817,9 @@ Gain an augment(Orchid Kids)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_FIELD_SECURE_WIN">
+  <mod:findName name="ORCHID_FIELD_SECURE_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_tyerel" blue="false" max_group="0"/>
       <mod:findLike type="text">
         <mod:selector>Pluck the flowers.</mod:selector>
         <mod:setValue>Pluck the flowers.
@@ -1649,8 +1827,9 @@ Gain an augment(Orchid Kids)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="IVAR_PROTECTING_THE_KIDS">
+  <mod:findName name="IVAR_PROTECTING_THE_KIDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="COUNT_ALL_CREW" lvl="1" max_lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue trying to pluck the flowers.</mod:selector>
         <mod:setValue>Continue trying to pluck the flowers.
@@ -1658,8 +1837,9 @@ Gain an augment(Orchid Kids)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="IVAR_PROTECTING_THE_KIDS">
+  <mod:findName name="IVAR_PROTECTING_THE_KIDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="COUNT_ALL_CREW" lvl="1" max_lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1671,8 +1851,9 @@ Gain an augment(Orchid Kids)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="IVAR_PROTECTING_THE_KIDS">
+  <mod:findName name="IVAR_PROTECTING_THE_KIDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="COUNT_ALL_CREW" lvl="2" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue trying to pluck the flowers.</mod:selector>
         <mod:setValue>Continue trying to pluck the flowers.
@@ -1680,8 +1861,9 @@ Gain an augment(Orchid Kids)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="IVAR_PROTECTING_THE_KIDS">
+  <mod:findName name="IVAR_PROTECTING_THE_KIDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="COUNT_ALL_CREW" lvl="2" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1693,8 +1875,9 @@ Gain an augment(Orchid Kids)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TY_EREL_PROTECTING_THE_KIDS">
+  <mod:findName name="TY_EREL_PROTECTING_THE_KIDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="COUNT_ALL_CREW" max_lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Struggle free and continue trying to pluck the flowers.</mod:selector>
         <mod:setValue>Struggle free and continue trying to pluck the flowers.
@@ -1702,7 +1885,7 @@ Gain an augment(Orchid Kids)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_CHILDREN_MAYEB_LOOP">
+  <mod:findName name="ORCHID_CHILDREN_MAYEB_LOOP" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Try to get a word in.</mod:selector>
@@ -1711,7 +1894,7 @@ Gain an augment(Orchid Kids)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_CHILDREN_MAYEB_LOOP">
+  <mod:findName name="ORCHID_CHILDREN_MAYEB_LOOP" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1724,8 +1907,9 @@ Gain an augment(Orchid Kids)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_THEFT">
+  <mod:findName name="ORCHID_THEFT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Agree to rescue the children.</mod:selector>
         <mod:setValue>Agree to rescue the children.
@@ -1733,10 +1917,12 @@ Fight(HK: Reward Standard(M) Reward }(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_THEFT">
+  <mod:findName name="ORCHID_THEFT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1746,10 +1932,12 @@ Fight(HK: Reward Standard(M) Reward }(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_THEFT">
+  <mod:findName name="ORCHID_THEFT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="ORCHID_KIDS"/>
           <mod:findLike type="text">
             <mod:selector>(Orchid Children) Give it a plant.</mod:selector>
             <mod:setValue>(Orchid Children) Give it a plant.
@@ -1759,8 +1947,9 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_THEFT">
+  <mod:findName name="ORCHID_THEFT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>We can't help.</mod:selector>
         <mod:setValue>We can't help.
@@ -1768,8 +1957,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_THEFT">
+  <mod:findName name="ORCHID_THEFT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1781,7 +1971,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SACRIFICE">
+  <mod:findName name="ORCHID_SACRIFICE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Approach.</mod:selector>
@@ -1790,10 +1980,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SACRIFICE">
+  <mod:findName name="ORCHID_SACRIFICE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Rescue the Orchid!</mod:selector>
             <mod:setValue>Rescue the Orchid!
@@ -1805,12 +1996,14 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SACRIFICE">
+  <mod:findName name="ORCHID_SACRIFICE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1822,10 +2015,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SACRIFICE">
+  <mod:findName name="ORCHID_SACRIFICE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_FLORAL"/>
           <mod:findLike type="text">
             <mod:selector>(Floral Crew) Demand the prisoners are freed at once.</mod:selector>
             <mod:setValue>(Floral Crew) Demand the prisoners are freed at once.
@@ -1835,12 +2029,14 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SACRIFICE">
+  <mod:findName name="ORCHID_SACRIFICE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_FLORAL"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1852,10 +2048,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SACRIFICE">
+  <mod:findName name="ORCHID_SACRIFICE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="rock_commando"/>
           <mod:findLike type="text">
             <mod:selector>(Lost Sun Crew) Reason with them.</mod:selector>
             <mod:setValue>(Lost Sun Crew) Reason with them.
@@ -1865,10 +2062,11 @@ Gain a crew(Orchid Praetor)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SACRIFICE">
+  <mod:findName name="ORCHID_SACRIFICE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_ariadne"/>
           <mod:findLike type="text">
             <mod:selector>(Ariadne) Admonish them.</mod:selector>
             <mod:setValue>(Ariadne) Admonish them.
@@ -1879,7 +2077,7 @@ Gain a crew(Orchid Praetor)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SACRIFICE">
+  <mod:findName name="ORCHID_SACRIFICE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1892,7 +2090,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SACRIFICE">
+  <mod:findName name="ORCHID_SACRIFICE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1909,8 +2107,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SACRIFICE">
+  <mod:findName name="ORCHID_SACRIFICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Avoid the ships.</mod:selector>
         <mod:setValue>Avoid the ships.
@@ -1918,8 +2117,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SACRIFICE">
+  <mod:findName name="ORCHID_SACRIFICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1931,7 +2131,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ELITEDUEL">
+  <mod:findName name="ORCHID_ELITEDUEL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Protect the Orchids!</mod:selector>
@@ -1940,7 +2140,7 @@ Fight(HK=CK: Reward Standard(H) Gain a weapon(Giftlist Kernel Elite))</mod:setVa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ELITEDUEL">
+  <mod:findName name="ORCHID_ELITEDUEL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1953,7 +2153,7 @@ Fight(HK=CK: Reward Standard(H) Gain a weapon(Giftlist Kernel Elite))</mod:setVa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ELITEDUEL">
+  <mod:findName name="ORCHID_ELITEDUEL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Protect the Lanius!</mod:selector>
@@ -1962,7 +2162,7 @@ Fight(HK=CK: Reward Standard(H) Reward Stuff(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ELITEDUEL">
+  <mod:findName name="ORCHID_ELITEDUEL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1975,7 +2175,7 @@ Fight(HK=CK: Reward Standard(H) Reward Stuff(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ELITEDUEL">
+  <mod:findName name="ORCHID_ELITEDUEL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Fly the hell away from here!</mod:selector>
@@ -1984,7 +2184,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ELITEDUEL">
+  <mod:findName name="ORCHID_ELITEDUEL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1997,8 +2197,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GARDEN_DUEL_LANIUS_DEFEAT">
+  <mod:findName name="GARDEN_DUEL_LANIUS_DEFEAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Contact the Orchids.</mod:selector>
         <mod:setValue>Contact the Orchids.
@@ -2006,8 +2207,9 @@ Gain a weapon(Giftlist Kernel Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GARDEN_DUEL_ORCHID_DEFEAT">
+  <mod:findName name="GARDEN_DUEL_ORCHID_DEFEAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Contact the Lanius.</mod:selector>
         <mod:setValue>Contact the Lanius.
@@ -2015,8 +2217,9 @@ Reward Stuff(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_NOTPIRATES">
+  <mod:findName name="DISTRESS_ORCHID_NOTPIRATES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2024,8 +2227,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Standard(L))</m
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_WEEDS">
+  <mod:findName name="DISTRESS_ORCHID_WEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" blue="false" lvl="1"/>
       <mod:findLike type="text">
         <mod:selector>Send a team to assist! Massive man-eating weeds are no laughing matter.</mod:selector>
         <mod:setValue>Send a team to assist! Massive man-eating weeds are no laughing matter.
@@ -2034,8 +2238,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Standard(L))</m
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_WEEDS">
+  <mod:findName name="DISTRESS_ORCHID_WEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_GOUL"/>
       <mod:findLike type="text">
         <mod:selector>(Goul Crew) Purge the weeds.</mod:selector>
         <mod:setValue>(Goul Crew) Purge the weeds.
@@ -2043,8 +2248,9 @@ Gain a weapon(Giftlist Kernel)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_WEEDS">
+  <mod:findName name="DISTRESS_ORCHID_WEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_LOSTSUN"/>
       <mod:findLike type="text">
         <mod:selector>(Lost Sun Crew) Purge the weeds.</mod:selector>
         <mod:setValue>(Lost Sun Crew) Purge the weeds.
@@ -2052,8 +2258,9 @@ Gain a weapon(Giftlist Kernel)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_WEEDS">
+  <mod:findName name="DISTRESS_ORCHID_WEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="CREW_FIREARMS"/>
       <mod:findLike type="text">
         <mod:selector>(Improved Armories) Hunt the weeds down.</mod:selector>
         <mod:setValue>(Improved Armories) Hunt the weeds down.
@@ -2061,8 +2268,9 @@ Gain a weapon(Giftlist Kernel)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_WEEDS">
+  <mod:findName name="DISTRESS_ORCHID_WEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_CLAN"/>
       <mod:findLike type="text">
         <mod:selector>(Guild Crew) Hunt the weeds down.</mod:selector>
         <mod:setValue>(Guild Crew) Hunt the weeds down.
@@ -2070,8 +2278,9 @@ Gain a weapon(Giftlist Kernel)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_WEEDS">
+  <mod:findName name="DISTRESS_ORCHID_WEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_irwin"/>
       <mod:findLike type="text">
         <mod:selector>(Irwin) Hunt the weeds down.</mod:selector>
         <mod:setValue>(Irwin) Hunt the weeds down.
@@ -2079,8 +2288,9 @@ Gain a weapon(Giftlist Kernel)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_WEEDS">
+  <mod:findName name="DISTRESS_ORCHID_WEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BLUELIST_WEAPONS_FIRE_NODAMAGE"/>
       <mod:findLike type="text">
         <mod:selector>(Non-Damaging Fire Weapon) Purge the weeds.</mod:selector>
         <mod:setValue>(Non-Damaging Fire Weapon) Purge the weeds.
@@ -2088,8 +2298,9 @@ Gain a weapon(Giftlist Kernel)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_WEEDS">
+  <mod:findName name="DISTRESS_ORCHID_WEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BLUELIST_ANTIBIO_NODAMAGE"/>
       <mod:findLike type="text">
         <mod:selector>(Non-Damaging Bio Weapon) Purge the weeds.</mod:selector>
         <mod:setValue>(Non-Damaging Bio Weapon) Purge the weeds.
@@ -2097,8 +2308,9 @@ Gain a weapon(Giftlist Kernel)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_WEEDS">
+  <mod:findName name="DISTRESS_ORCHID_WEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="NANOBOT_DEFENSE_SYSTEM"/>
       <mod:findLike type="text">
         <mod:selector>(Murder-bots) Purge the weeds.</mod:selector>
         <mod:setValue>(Murder-bots) Purge the weeds.
@@ -2106,8 +2318,9 @@ Gain a weapon(Giftlist Kernel)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_WEEDS">
+  <mod:findName name="DISTRESS_ORCHID_WEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BLUELIST_GAS"/>
       <mod:findLike type="text">
         <mod:selector>(Toxic Gas) Purge the weeds.</mod:selector>
         <mod:setValue>(Toxic Gas) Purge the weeds.
@@ -2115,8 +2328,9 @@ Gain a weapon(Giftlist Kernel)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_WEEDS">
+  <mod:findName name="DISTRESS_ORCHID_WEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="shell_guardian"/>
       <mod:findLike type="text">
         <mod:selector>(Shell Guardian Crew) Have your Shell Guardian handle the weeds.</mod:selector>
         <mod:setValue>(Shell Guardian Crew) Have your Shell Guardian handle the weeds.
@@ -2124,8 +2338,9 @@ Gain a weapon(Giftlist Kernel)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_WEEDS">
+  <mod:findName name="DISTRESS_ORCHID_WEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="DRONE_CONTROL_BOARDING_DAMAGE"/>
       <mod:findLike type="text">
         <mod:selector>(Boarding Drone) Send your drone to handle the weeds.</mod:selector>
         <mod:setValue>(Boarding Drone) Send your drone to handle the weeds.
@@ -2133,8 +2348,9 @@ Gain a weapon(Giftlist Kernel)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_WEEDS">
+  <mod:findName name="DISTRESS_ORCHID_WEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>We'll pass.</mod:selector>
         <mod:setValue>We'll pass.
@@ -2142,8 +2358,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_WEEDS">
+  <mod:findName name="DISTRESS_ORCHID_WEEDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -2155,8 +2372,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_JUNGLE">
+  <mod:findName name="DISTRESS_ORCHID_JUNGLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Investigate.</mod:selector>
         <mod:setValue>Investigate.
@@ -2164,10 +2382,12 @@ Fight(HK: Reward Standard(L) 50% Gain a crew(Orchid) 50% Gain a weapon(Giftlist 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_JUNGLE">
+  <mod:findName name="DISTRESS_ORCHID_JUNGLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2177,12 +2397,15 @@ Fight(HK: Reward Standard(L) 50% Gain a crew(Orchid) 50% Gain a weapon(Giftlist 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_JUNGLE">
+  <mod:findName name="DISTRESS_ORCHID_JUNGLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>We won't stand for this.</mod:selector>
                 <mod:setValue>We won't stand for this.
@@ -2194,14 +2417,18 @@ Fight(HK: Reward Standard(L) 50% Gain a crew(Orchid) 50% Gain a weapon(Giftlist 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_JUNGLE">
+  <mod:findName name="DISTRESS_ORCHID_JUNGLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -2215,12 +2442,15 @@ Fight(HK: Reward Standard(L) 50% Gain a crew(Orchid) 50% Gain a weapon(Giftlist 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_JUNGLE">
+  <mod:findName name="DISTRESS_ORCHID_JUNGLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="weapons" lvl="5"/>
               <mod:findLike type="text">
                 <mod:selector>(Upg. Weapons) Fire a shot straight into the Rebel ship.</mod:selector>
                 <mod:setValue>(Upg. Weapons) Fire a shot straight into the Rebel ship.
@@ -2234,14 +2464,18 @@ Reward Standard(M)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_JUNGLE">
+  <mod:findName name="DISTRESS_ORCHID_JUNGLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="weapons" lvl="5"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -2256,12 +2490,15 @@ Reward Standard(M)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_JUNGLE">
+  <mod:findName name="DISTRESS_ORCHID_JUNGLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="mind"/>
               <mod:findLike type="text">
                 <mod:selector>(Mind Control) Turn the Rebels against each other.</mod:selector>
                 <mod:setValue>(Mind Control) Turn the Rebels against each other.
@@ -2275,14 +2512,18 @@ Reward Standard(H)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_JUNGLE">
+  <mod:findName name="DISTRESS_ORCHID_JUNGLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="mind"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -2297,12 +2538,15 @@ Reward Standard(H)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_JUNGLE">
+  <mod:findName name="DISTRESS_ORCHID_JUNGLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>There's nothing we can do.</mod:selector>
                 <mod:setValue>There's nothing we can do.
@@ -2314,12 +2558,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_JUNGLE">
+  <mod:findName name="DISTRESS_ORCHID_JUNGLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
                   <mod:findLike type="text">
@@ -2335,8 +2582,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_JUNGLE">
+  <mod:findName name="DISTRESS_ORCHID_JUNGLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Oh well, let's go.</mod:selector>
         <mod:setValue>Oh well, let's go.
@@ -2344,8 +2592,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_JUNGLE">
+  <mod:findName name="DISTRESS_ORCHID_JUNGLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -2357,8 +2606,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_ROCK_CRASH">
+  <mod:findName name="DISTRESS_ORCHID_ROCK_CRASH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Try to rescue the survivors.</mod:selector>
         <mod:setValue>Try to rescue the survivors.
@@ -2367,8 +2617,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_ROCK_CRASH">
+  <mod:findName name="DISTRESS_ORCHID_ROCK_CRASH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the wreck.</mod:selector>
         <mod:setValue>Ignore the wreck.
@@ -2376,8 +2627,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_ROCK_CRASH">
+  <mod:findName name="DISTRESS_ORCHID_ROCK_CRASH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -2389,8 +2641,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_EMPTY_SHIP">
+  <mod:findName name="DISTRESS_ORCHID_EMPTY_SHIP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Board the ship.</mod:selector>
         <mod:setValue>Board the ship.
@@ -2399,8 +2652,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_EMPTY_SHIP">
+  <mod:findName name="DISTRESS_ORCHID_EMPTY_SHIP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="sensors" lvl="3"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Sensors) Fetch the ship's security logs first.</mod:selector>
         <mod:setValue>(Adv. Sensors) Fetch the ship's security logs first.
@@ -2409,8 +2663,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_EMPTY_SHIP">
+  <mod:findName name="DISTRESS_ORCHID_EMPTY_SHIP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore it.</mod:selector>
         <mod:setValue>Ignore it.
@@ -2418,8 +2673,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_EMPTY_SHIP">
+  <mod:findName name="DISTRESS_ORCHID_EMPTY_SHIP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -2431,8 +2687,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_COLONY_FIRE">
+  <mod:findName name="DISTRESS_ORCHID_COLONY_FIRE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>This incident is no concern to us.</mod:selector>
         <mod:setValue>This incident is no concern to us.
@@ -2440,8 +2697,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_COLONY_FIRE">
+  <mod:findName name="DISTRESS_ORCHID_COLONY_FIRE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -2453,8 +2711,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_COLONY_FIRE">
+  <mod:findName name="DISTRESS_ORCHID_COLONY_FIRE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="FIRE_EXTINGUISHERS"/>
       <mod:findLike type="text">
         <mod:selector>(Fire Suppression) Use the augmentation to save the colony.</mod:selector>
         <mod:setValue>(Fire Suppression) Use the augmentation to save the colony.
@@ -2462,8 +2721,9 @@ Gain a crew(Orchid)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_COLONY_FIRE">
+  <mod:findName name="DISTRESS_ORCHID_COLONY_FIRE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BLUELIST_PHEROMONES"/>
       <mod:findLike type="text">
         <mod:selector>(Mantis Pheromones) Use the augmentation to speed up the evacuation.</mod:selector>
         <mod:setValue>(Mantis Pheromones) Use the augmentation to speed up the evacuation.
@@ -2471,8 +2731,9 @@ Gain a crew(Orchid)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_COLONY_FIRE">
+  <mod:findName name="DISTRESS_ORCHID_COLONY_FIRE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_CRYSTAL"/>
       <mod:findLike type="text">
         <mod:selector>(Crystal Crew) Block wildfire spreading to buy some time.</mod:selector>
         <mod:setValue>(Crystal Crew) Block wildfire spreading to buy some time.
@@ -2480,8 +2741,9 @@ Gain a crew(Orchid)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_COLONY_FIRE">
+  <mod:findName name="DISTRESS_ORCHID_COLONY_FIRE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BOMB_LOCK"/>
       <mod:findLike type="text">
         <mod:selector>(Lockdown Bomb) Block wildfire spreading to win some time.</mod:selector>
         <mod:setValue>(Lockdown Bomb) Block wildfire spreading to win some time.
@@ -2490,8 +2752,9 @@ Gain a crew(Orchid)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_COLONY_FIRE">
+  <mod:findName name="DISTRESS_ORCHID_COLONY_FIRE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="DRONE_SPEED"/>
       <mod:findLike type="text">
         <mod:selector>(Drone Reactor Booster) Deploy superior drones to help. [-2|]</mod:selector>
         <mod:setValue>(Drone Reactor Booster) Deploy superior drones to help. [-2|]
@@ -2500,8 +2763,9 @@ Gain a crew(Orchid)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ZOLTAN_QUEST_START">
+  <mod:findName name="ORCHID_ZOLTAN_QUEST_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Agree to deliver a gift.</mod:selector>
         <mod:setValue>Agree to deliver a gift.
@@ -2510,10 +2774,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ZOLTAN_QUEST_START">
+  <mod:findName name="ORCHID_ZOLTAN_QUEST_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="sensors" lvl="3"/>
           <mod:findLike type="text">
             <mod:selector>(Adv. Sensors) Scan the device.</mod:selector>
             <mod:setValue>(Adv. Sensors) Scan the device.
@@ -2523,12 +2789,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ZOLTAN_QUEST_START">
+  <mod:findName name="ORCHID_ZOLTAN_QUEST_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="sensors" lvl="3"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Confront the Zoltan.</mod:selector>
                 <mod:setValue>Confront the Zoltan.
@@ -2540,14 +2809,18 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ZOLTAN_QUEST_START">
+  <mod:findName name="ORCHID_ZOLTAN_QUEST_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="sensors" lvl="3"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -2561,10 +2834,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ZOLTAN_QUEST_START">
+  <mod:findName name="ORCHID_ZOLTAN_QUEST_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="sensors" lvl="3"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -2578,10 +2853,12 @@ Reward }(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ZOLTAN_QUEST_START">
+  <mod:findName name="ORCHID_ZOLTAN_QUEST_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_DUSK"/>
           <mod:findLike type="text">
             <mod:selector>(Duskbringer Crew) Your Duskbringer recognizes something strange with the device...</mod:selector>
             <mod:setValue>(Duskbringer Crew) Your Duskbringer recognizes something strange with the device...
@@ -2591,12 +2868,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ZOLTAN_QUEST_START">
+  <mod:findName name="ORCHID_ZOLTAN_QUEST_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_DUSK"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Confront the Zoltan.</mod:selector>
                 <mod:setValue>Confront the Zoltan.
@@ -2608,14 +2888,18 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ZOLTAN_QUEST_START">
+  <mod:findName name="ORCHID_ZOLTAN_QUEST_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_DUSK"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -2629,10 +2913,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ZOLTAN_QUEST_START">
+  <mod:findName name="ORCHID_ZOLTAN_QUEST_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_DUSK"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -2646,8 +2932,9 @@ Reward }(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ZOLTAN_QUEST_START">
+  <mod:findName name="ORCHID_ZOLTAN_QUEST_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Decline.</mod:selector>
         <mod:setValue>Decline.
@@ -2655,8 +2942,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ZOLTAN_QUEST_START">
+  <mod:findName name="ORCHID_ZOLTAN_QUEST_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -2668,8 +2956,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ZOLTAN_QUEST_FINISH">
+  <mod:findName name="ORCHID_ZOLTAN_QUEST_FINISH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Deliver the sculpture.</mod:selector>
         <mod:setValue>Deliver the sculpture.
@@ -2679,8 +2968,9 @@ Fight(CK: 25% Reward Standard(H))(HK: 25% Reward Standard(M))(SR: 25% Reward Stu
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ZOLTAN_QUEST_FINISH">
+  <mod:findName name="ORCHID_ZOLTAN_QUEST_FINISH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Keep the sculpture for yourself.</mod:selector>
         <mod:setValue>Keep the sculpture for yourself.
@@ -2688,8 +2978,9 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ZOLTAN_QUEST_FINISH">
+  <mod:findName name="ORCHID_ZOLTAN_QUEST_FINISH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="ORCHID_KIDS"/>
       <mod:findLike type="text">
         <mod:selector>(Orchid Children) Give them the corpses.</mod:selector>
         <mod:setValue>(Orchid Children) Give them the corpses.
@@ -2697,10 +2988,12 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Kernel Elite))</m
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ZOLTAN_QUEST_FINISH">
+  <mod:findName name="ORCHID_ZOLTAN_QUEST_FINISH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="ORCHID_KIDS"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2710,9 +3003,10 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Kernel Elite))</m
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ZOLTAN_QUEST_FINISH_DELIVER">
+  <mod:findName name="ORCHID_ZOLTAN_QUEST_FINISH_DELIVER" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2721,9 +3015,10 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_ZOLTAN_QUEST_FINISH_DELIVER">
+  <mod:findName name="ORCHID_ZOLTAN_QUEST_FINISH_DELIVER" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2732,8 +3027,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_PIRATE_ORCHID">
+  <mod:findName name="ENCOUNTER_PIRATE_ORCHID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2741,8 +3037,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_ROCK_ORCHID">
+  <mod:findName name="ENCOUNTER_ROCK_ORCHID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2750,8 +3047,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_REBEL_ORCHID">
+  <mod:findName name="ENCOUNTER_REBEL_ORCHID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2759,8 +3057,9 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_PIRATE_FRIENDLY_ASB">
+  <mod:findName name="ORCHID_PIRATE_FRIENDLY_ASB" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Engage the pirate alone.</mod:selector>
         <mod:setValue>Engage the pirate alone.
@@ -2768,8 +3067,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_PIRATE_FRIENDLY_ASB">
+  <mod:findName name="ORCHID_PIRATE_FRIENDLY_ASB" type="event">
     <mod:findLike type="choice">
+      <mod:selector blue="false" req="rep_comb_orchid" lvl="-999" max_lvl="1"/>
       <mod:findLike type="text">
         <mod:selector>Ask for help.</mod:selector>
         <mod:setValue>Ask for help.
@@ -2777,10 +3077,12 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_PIRATE_FRIENDLY_ASB">
+  <mod:findName name="ORCHID_PIRATE_FRIENDLY_ASB" type="event">
     <mod:findLike type="choice">
+      <mod:selector blue="false" req="rep_comb_orchid" lvl="-999" max_lvl="1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2790,8 +3092,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_PIRATE_FRIENDLY_ASB">
+  <mod:findName name="ORCHID_PIRATE_FRIENDLY_ASB" type="event">
     <mod:findLike type="choice">
+      <mod:selector blue="false" req="rep_comb_orchid" lvl="2"/>
       <mod:findLike type="text">
         <mod:selector>Ask for help.</mod:selector>
         <mod:setValue>Ask for help.
@@ -2799,10 +3102,12 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_PIRATE_FRIENDLY_ASB">
+  <mod:findName name="ORCHID_PIRATE_FRIENDLY_ASB" type="event">
     <mod:findLike type="choice">
+      <mod:selector blue="false" req="rep_comb_orchid" lvl="2"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2812,8 +3117,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_CAPTURED_REBEL">
+  <mod:findName name="ORCHID_CAPTURED_REBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2821,8 +3127,9 @@ Fight(CK: Reward Standard(H))(SR: 17% Reward Stuff(R) 17% Fleet Delay(2))</mod:s
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_SUZERAIN_VETERAN">
+  <mod:findName name="ORCHID_SUZERAIN_VETERAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2830,7 +3137,7 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Mantis))</mod:set
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CARETAKER_PRAETOR_ARGUMENT">
+  <mod:findName name="CARETAKER_PRAETOR_ARGUMENT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Ignore the two ships.</mod:selector>
@@ -2839,7 +3146,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CARETAKER_PRAETOR_ARGUMENT">
+  <mod:findName name="CARETAKER_PRAETOR_ARGUMENT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2852,7 +3159,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GARDEN_INVASION_QUEST">
+  <mod:findName name="GARDEN_INVASION_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Engage the Duskbringer.</mod:selector>
@@ -2862,8 +3169,9 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Orchid))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_WIN">
+  <mod:findName name="ORCHID_INVASION_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIFE_SCANNER"/>
       <mod:findLike type="text">
         <mod:selector>(Lifeform Scanners) Scan for survivors.</mod:selector>
         <mod:setValue>(Lifeform Scanners) Scan for survivors.
@@ -2871,8 +3179,9 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Orchid))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_WIN">
+  <mod:findName name="ORCHID_INVASION_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="sensors" lvl="2"/>
       <mod:findLike type="text">
         <mod:selector>(Upg. Sensors) Scan for survivors.</mod:selector>
         <mod:setValue>(Upg. Sensors) Scan for survivors.
@@ -2880,8 +3189,9 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Orchid))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_WIN">
+  <mod:findName name="ORCHID_INVASION_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_SLUG"/>
       <mod:findLike type="text">
         <mod:selector>(Slug Crew) Scan for survivors.</mod:selector>
         <mod:setValue>(Slug Crew) Scan for survivors.
@@ -2889,8 +3199,9 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Orchid))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_WIN">
+  <mod:findName name="ORCHID_INVASION_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="BLUELIST_CREW_SNAIL"/>
       <mod:findLike type="text">
         <mod:selector>(Telepathic Shell) Scan for survivors.</mod:selector>
         <mod:setValue>(Telepathic Shell) Scan for survivors.
@@ -2898,8 +3209,9 @@ Fight(HK=CK: Reward Standard No Item(H) &lt;#&gt;Unlock Ship(Orchid))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_WIN">
+  <mod:findName name="ORCHID_INVASION_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Search for survivors.</mod:selector>
         <mod:setValue>Search for survivors.
@@ -2908,8 +3220,9 @@ Reward Standard(M)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_WIN">
+  <mod:findName name="ORCHID_INVASION_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -2921,8 +3234,9 @@ Reward Standard(M)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_LIFE_SCAN">
+  <mod:findName name="ORCHID_INVASION_LIFE_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="medbay" lvl="2"/>
       <mod:findLike type="text">
         <mod:selector>(Upg. Medbay) Patch up the Praetor.</mod:selector>
         <mod:setValue>(Upg. Medbay) Patch up the Praetor.
@@ -2932,10 +3246,12 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_LIFE_SCAN">
+  <mod:findName name="ORCHID_INVASION_LIFE_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="medbay" lvl="2"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Discuss the situation with the Praetor.</mod:selector>
             <mod:setValue>Discuss the situation with the Praetor.
@@ -2947,8 +3263,9 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_LIFE_SCAN">
+  <mod:findName name="ORCHID_INVASION_LIFE_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="clonebay" lvl="2"/>
       <mod:findLike type="text">
         <mod:selector>(Upg. Clone Bay) Register the Praetor into the clone bay.</mod:selector>
         <mod:setValue>(Upg. Clone Bay) Register the Praetor into the clone bay.
@@ -2958,10 +3275,12 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_LIFE_SCAN">
+  <mod:findName name="ORCHID_INVASION_LIFE_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="clonebay" lvl="2"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Discuss the situation with the Praetor.</mod:selector>
             <mod:setValue>Discuss the situation with the Praetor.
@@ -2973,8 +3292,9 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_LIFE_SCAN">
+  <mod:findName name="ORCHID_INVASION_LIFE_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_MEDICAL"/>
       <mod:findLike type="text">
         <mod:selector>(Medical Crew) Patch up the Praetor.</mod:selector>
         <mod:setValue>(Medical Crew) Patch up the Praetor.
@@ -2984,10 +3304,12 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_LIFE_SCAN">
+  <mod:findName name="ORCHID_INVASION_LIFE_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_MEDICAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Discuss the situation with the Praetor.</mod:selector>
             <mod:setValue>Discuss the situation with the Praetor.
@@ -2999,8 +3321,9 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_LIFE_SCAN">
+  <mod:findName name="ORCHID_INVASION_LIFE_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="DRONE_CONTROL_MEDICAL"/>
       <mod:findLike type="text">
         <mod:selector>(Medical Drone) Patch up the Praetor.</mod:selector>
         <mod:setValue>(Medical Drone) Patch up the Praetor.
@@ -3010,10 +3333,12 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_LIFE_SCAN">
+  <mod:findName name="ORCHID_INVASION_LIFE_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="DRONE_CONTROL_MEDICAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Discuss the situation with the Praetor.</mod:selector>
             <mod:setValue>Discuss the situation with the Praetor.
@@ -3025,8 +3350,9 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_LIFE_SCAN">
+  <mod:findName name="ORCHID_INVASION_LIFE_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="BOMB_HEAL"/>
       <mod:findLike type="text">
         <mod:selector>(Heal Bomb) Heal the Praetor.</mod:selector>
         <mod:setValue>(Heal Bomb) Heal the Praetor.
@@ -3037,10 +3363,12 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_LIFE_SCAN">
+  <mod:findName name="ORCHID_INVASION_LIFE_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="BOMB_HEAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Discuss the situation with the Praetor.</mod:selector>
             <mod:setValue>Discuss the situation with the Praetor.
@@ -3052,8 +3380,9 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_LIFE_SCAN">
+  <mod:findName name="ORCHID_INVASION_LIFE_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="RECON_AND_TELEPORT"/>
       <mod:findLike type="text">
         <mod:selector>(Reconstructive Teleporter) Rescue the Praetor.</mod:selector>
         <mod:setValue>(Reconstructive Teleporter) Rescue the Praetor.
@@ -3063,10 +3392,12 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_LIFE_SCAN">
+  <mod:findName name="ORCHID_INVASION_LIFE_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="RECON_AND_TELEPORT"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Discuss the situation with the Praetor.</mod:selector>
             <mod:setValue>Discuss the situation with the Praetor.
@@ -3078,8 +3409,9 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_LIFE_SCAN">
+  <mod:findName name="ORCHID_INVASION_LIFE_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Nothing can be done to save this Orchid.</mod:selector>
         <mod:setValue>Nothing can be done to save this Orchid.
@@ -3088,8 +3420,9 @@ Reward Standard(M)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_LIFE_SCAN">
+  <mod:findName name="ORCHID_INVASION_LIFE_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -3101,7 +3434,7 @@ Reward Standard(M)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_PRAETOR_SAVED">
+  <mod:findName name="ORCHID_INVASION_PRAETOR_SAVED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>The Praetors from the front lines are hailing you.</mod:selector>
@@ -3110,7 +3443,7 @@ Reward Standard(M)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_INVASION_PRAETOR_SAVED">
+  <mod:findName name="ORCHID_INVASION_PRAETOR_SAVED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3123,9 +3456,11 @@ Gain a crew(Orchid Praetor)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_ORCHID_NONSAPIENT_ESCORT">
+  <mod:findName name="SHIP_ORCHID_NONSAPIENT_ESCORT" type="ship">
     <mod:findLike type="surrender">
+      <mod:selector chance="0.5" min="2" max="4"/>
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Convince them to turn their ships around and return to Rt'lak Et.</mod:selector>
           <mod:setValue>Convince them to turn their ships around and return to Rt'lak Et.
@@ -3135,11 +3470,14 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_ORCHID_NONSAPIENT_ESCORT">
+  <mod:findName name="SHIP_ORCHID_NONSAPIENT_ESCORT" type="ship">
     <mod:findLike type="surrender">
+      <mod:selector chance="0.5" min="2" max="4"/>
       <mod:findLike type="choice">
-        <mod:findName name="RELOCATION_SURRENDER">
+        <mod:selector hidden="true"/>
+        <mod:findName name="RELOCATION_SURRENDER" type="event">
           <mod:findLike type="choice">
+            <mod:selector hidden="true"/>
             <mod:findLike type="text">
               <mod:selector>The shuttle hails you...</mod:selector>
               <mod:setValue>The shuttle hails you...
@@ -3150,8 +3488,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_RELOCATION_QUEST">
+  <mod:findName name="ORCHID_RELOCATION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="false"/>
       <mod:findLike type="text">
         <mod:selector>Hail the ships.</mod:selector>
         <mod:setValue>Hail the ships.
@@ -3159,10 +3498,12 @@ Fight(CK=HK: Reward Standard(H) Reward Standard(M))(SR: Reward Stuff(R) Reward S
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_RELOCATION_QUEST">
+  <mod:findName name="ORCHID_RELOCATION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_tyerel"/>
           <mod:findLike type="text">
             <mod:selector>(Ty E'Rel) Inform them that they must turn their ship around.</mod:selector>
             <mod:setValue>(Ty E'Rel) Inform them that they must turn their ship around.
@@ -3172,12 +3513,15 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_RELOCATION_QUEST">
+  <mod:findName name="ORCHID_RELOCATION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_tyerel"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>The shuttle hails you...</mod:selector>
                 <mod:setValue>The shuttle hails you...
@@ -3189,10 +3533,12 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_RELOCATION_QUEST">
+  <mod:findName name="ORCHID_RELOCATION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_ivar"/>
           <mod:findLike type="text">
             <mod:selector>(Ivar) Convince them to turn back.</mod:selector>
             <mod:setValue>(Ivar) Convince them to turn back.
@@ -3202,12 +3548,15 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_RELOCATION_QUEST">
+  <mod:findName name="ORCHID_RELOCATION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_ivar"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>The shuttle hails you...</mod:selector>
                 <mod:setValue>The shuttle hails you...
@@ -3219,10 +3568,12 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_RELOCATION_QUEST">
+  <mod:findName name="ORCHID_RELOCATION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="rep_comb_orchid" lvl="-9999" max_lvl="-1"/>
           <mod:findLike type="text">
             <mod:selector>(Positive Orchid Reputation) Convince them to turn back.</mod:selector>
             <mod:setValue>(Positive Orchid Reputation) Convince them to turn back.
@@ -3232,12 +3583,15 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_RELOCATION_QUEST">
+  <mod:findName name="ORCHID_RELOCATION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="rep_comb_orchid" lvl="-9999" max_lvl="-1"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>The shuttle hails you...</mod:selector>
                 <mod:setValue>The shuttle hails you...
@@ -3249,8 +3603,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_RELOCATION_QUEST">
+  <mod:findName name="ORCHID_RELOCATION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -3262,12 +3617,14 @@ Fight(CK=HK: Reward Standard(H) Reward Standard(M))(SR: Reward Stuff(R) Reward S
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_RELOCATION_QUEST">
+  <mod:findName name="ORCHID_RELOCATION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Tell them you won't leave them alone until they change their mind.</mod:selector>
                 <mod:setValue>Tell them you won't leave them alone until they change their mind.
@@ -3279,12 +3636,14 @@ Fight(CK=HK: Reward Standard(H) Reward Standard(M))(SR: Reward Stuff(R) Reward S
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_RELOCATION_QUEST">
+  <mod:findName name="ORCHID_RELOCATION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
                   <mod:findLike type="text">
@@ -3300,12 +3659,14 @@ Fight(CK=HK: Reward Standard(H) Reward Standard(M))(SR: Reward Stuff(R) Reward S
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_RELOCATION_QUEST">
+  <mod:findName name="ORCHID_RELOCATION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
                   <mod:findLike type="event">
@@ -3325,8 +3686,9 @@ Fight(CK=HK: Reward Standard(H) Reward Standard(M))(SR: Reward Stuff(R) Reward S
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_RELOCATION_QUEST">
+  <mod:findName name="ORCHID_RELOCATION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="false"/>
       <mod:findLike type="text">
         <mod:selector>Attack the escort.</mod:selector>
         <mod:setValue>Attack the escort.
@@ -3334,8 +3696,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_RELOCATION_QUEST">
+  <mod:findName name="ORCHID_RELOCATION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -3347,7 +3710,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_RELOCATION_CONTACT_SHUTTLE">
+  <mod:findName name="ORCHID_RELOCATION_CONTACT_SHUTTLE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept the Caretaker and the coordinates.</mod:selector>
@@ -3356,8 +3719,9 @@ Gain a crew(Orchid Caretaker)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_NONSAPIENT_RESCUE">
+  <mod:findName name="ORCHID_NONSAPIENT_RESCUE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>The shuttle hails you...</mod:selector>
         <mod:setValue>The shuttle hails you...
@@ -3365,7 +3729,7 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GARDEN_WORLD_CRUISER_QUEST">
+  <mod:findName name="GARDEN_WORLD_CRUISER_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Get closer and tune into the communications between the Orchid factions.</mod:selector>
@@ -3375,7 +3739,7 @@ Fight(SR: &lt;#&gt;Unlock Ship(Caretaker))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GARDEN_WORLD_CRUISER_QUEST">
+  <mod:findName name="GARDEN_WORLD_CRUISER_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3389,7 +3753,7 @@ Fight(SR: &lt;#&gt;Unlock Ship(Caretaker))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GARDEN_WORLD_CRUISER_QUEST">
+  <mod:findName name="GARDEN_WORLD_CRUISER_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3407,7 +3771,7 @@ Fight(SR: &lt;#&gt;Unlock Ship(Caretaker))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GARDEN_WORLD_CRUISER_QUEST">
+  <mod:findName name="GARDEN_WORLD_CRUISER_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3429,7 +3793,7 @@ Fight(SR: &lt;#&gt;Unlock Ship(Caretaker))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GARDEN_WORLD_CRUISER_QUEST">
+  <mod:findName name="GARDEN_WORLD_CRUISER_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3455,7 +3819,7 @@ Fight(SR: &lt;#&gt;Unlock Ship(Caretaker))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GARDEN_WORLD_CRUISER_QUEST">
+  <mod:findName name="GARDEN_WORLD_CRUISER_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Exercise discretion and back out.</mod:selector>
@@ -3464,7 +3828,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GARDEN_WORLD_CRUISER_QUEST">
+  <mod:findName name="GARDEN_WORLD_CRUISER_QUEST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3477,8 +3841,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER">
+  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Try to end the fight diplomatically.</mod:selector>
         <mod:setValue>Try to end the fight diplomatically.
@@ -3486,10 +3851,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER">
+  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_ivar"/>
           <mod:findLike type="text">
             <mod:selector>(Ivar) Tell them who they just fired upon.</mod:selector>
             <mod:setValue>(Ivar) Tell them who they just fired upon.
@@ -3501,12 +3868,15 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER">
+  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_ivar"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Contact Mayeb and the counsellor.</mod:selector>
                 <mod:setValue>Contact Mayeb and the counsellor.
@@ -3520,10 +3890,12 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER">
+  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_tyerel"/>
           <mod:findLike type="text">
             <mod:selector>(Ty E'Rel) Assert diplomatic status.</mod:selector>
             <mod:setValue>(Ty E'Rel) Assert diplomatic status.
@@ -3535,12 +3907,15 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER">
+  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_tyerel"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Contact Mayeb and the counsellor.</mod:selector>
                 <mod:setValue>Contact Mayeb and the counsellor.
@@ -3554,10 +3929,12 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER">
+  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_tully"/>
           <mod:findLike type="text">
             <mod:selector>(Tully) Get to the root of the problem.</mod:selector>
             <mod:setValue>(Tully) Get to the root of the problem.
@@ -3569,12 +3946,15 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER">
+  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_tully"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Contact Mayeb and the counsellor.</mod:selector>
                 <mod:setValue>Contact Mayeb and the counsellor.
@@ -3588,8 +3968,9 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER">
+  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -3601,8 +3982,9 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER">
+  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
@@ -3618,8 +4000,9 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER">
+  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
@@ -3639,8 +4022,9 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER">
+  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
@@ -3666,8 +4050,9 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER">
+  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
@@ -3697,8 +4082,9 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER">
+  <mod:findName name="ORCHID_GARDENWORLD_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
@@ -3711,6 +4097,7 @@ Gain a weapon(Giftlist Kernel Elite)
                         <mod:findLike type="choice">
                           <mod:findLike type="event">
                             <mod:findLike type="choice">
+                              <mod:selector hidden="true"/>
                               <mod:findLike type="text">
                                 <mod:selector>Contact Mayeb.</mod:selector>
                                 <mod:setValue>Contact Mayeb.
@@ -3732,8 +4119,9 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_GARDENWORLD_MAYEB_WIN">
+  <mod:findName name="ORCHID_GARDENWORLD_MAYEB_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -3741,8 +4129,9 @@ Gain a weapon(Giftlist Kernel Elite)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_GARDENWORLD_MAYEB_WIN">
+  <mod:findName name="ORCHID_GARDENWORLD_MAYEB_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -3754,8 +4143,9 @@ Gain a crew(Unique Mayeb)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORCHID_GARDENWORLD_UNEASY_RESOLUTION">
+  <mod:findName name="ORCHID_GARDENWORLD_UNEASY_RESOLUTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -3763,8 +4153,9 @@ Gain a weapon(Giftlist Kernel Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GATHERING_LOW_TRAFFIC">
+  <mod:findName name="GATHERING_LOW_TRAFFIC" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_tyerel_met" max_lvl="0" lvl="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -3772,7 +4163,17 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GATHERING_LOW_TRAFFIC">
+  <mod:findName name="GATHERING_LOW_TRAFFIC" type="event">
+    <mod:findLike type="choice">
+      <mod:selector req="loc_tyerel_met" max_lvl="1" lvl="1" blue="false"/>
+      <mod:findLike type="text">
+        <mod:selector>Continue...</mod:selector>
+        <mod:setValue>Continue...
+Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="DISTRESS_ORCHID_PIRATE_TRAP" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
@@ -3781,16 +4182,7 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_PIRATE_TRAP">
-    <mod:findLike type="choice">
-      <mod:findLike type="text">
-        <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:setValue>
-      </mod:findLike>
-    </mod:findLike>
-  </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_AMBASSADOR">
+  <mod:findName name="DISTRESS_ORCHID_AMBASSADOR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Offer assistance to the Orchid.</mod:selector>
@@ -3799,7 +4191,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_AMBASSADOR">
+  <mod:findName name="DISTRESS_ORCHID_AMBASSADOR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3812,7 +4204,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_AMBASSADOR">
+  <mod:findName name="DISTRESS_ORCHID_AMBASSADOR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the encounter.</mod:selector>
@@ -3821,7 +4213,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_ORCHID_AMBASSADOR">
+  <mod:findName name="DISTRESS_ORCHID_AMBASSADOR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -3834,7 +4226,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TY_EREL_RESCUE_GATHERING">
+  <mod:findName name="TY_EREL_RESCUE_GATHERING" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
@@ -3844,10 +4236,11 @@ Reward Standard No Item(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TY_EREL_RESCUE_GATHERING">
+  <mod:findName name="TY_EREL_RESCUE_GATHERING" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>What's next for you?</mod:selector>
             <mod:setValue>What's next for you?

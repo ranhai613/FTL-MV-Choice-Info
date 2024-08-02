@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="REBEL_PULSAR">
+  <mod:findName name="REBEL_PULSAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -8,8 +9,9 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="PIRATE_PULSAR">
+  <mod:findName name="PIRATE_PULSAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -17,7 +19,7 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_PDS">
+  <mod:findName name="REBEL_PDS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Prepare to fight.</mod:selector>
@@ -26,8 +28,9 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_PDS">
+  <mod:findName name="REBEL_PDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="hacking" lvl="1"/>
       <mod:findLike type="text">
         <mod:selector>(Simple Hacking) Confuse the Anti-Ship Battery's targets.</mod:selector>
         <mod:setValue>(Simple Hacking) Confuse the Anti-Ship Battery's targets.
@@ -36,10 +39,12 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_PDS">
+  <mod:findName name="REBEL_PDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="hacking" lvl="1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -49,8 +54,9 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_PDS">
+  <mod:findName name="REBEL_PDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="hacking" lvl="3"/>
       <mod:findLike type="text">
         <mod:selector>(Advanced Hacking) Overwrite the Anti-Ship Battery's target.</mod:selector>
         <mod:setValue>(Advanced Hacking) Overwrite the Anti-Ship Battery's target.
@@ -59,10 +65,12 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_PDS">
+  <mod:findName name="REBEL_PDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="hacking" lvl="3"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -72,7 +80,7 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_AUTO_PDS">
+  <mod:findName name="REBEL_AUTO_PDS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Prepare to fight.</mod:selector>
@@ -81,8 +89,9 @@ Fight(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20% Reward { Only(L))</mod
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_AUTO_PDS">
+  <mod:findName name="REBEL_AUTO_PDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="hacking" lvl="1"/>
       <mod:findLike type="text">
         <mod:selector>(Simple Hacking) Confuse the Anti-Ship Battery's targets.</mod:selector>
         <mod:setValue>(Simple Hacking) Confuse the Anti-Ship Battery's targets.
@@ -90,8 +99,9 @@ Fight(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20% Reward { Only(L))</mod
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REBEL_AUTO_PDS">
+  <mod:findName name="REBEL_AUTO_PDS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="hacking" lvl="3"/>
       <mod:findLike type="text">
         <mod:selector>(Advanced Hacking) Override the ASB's target.</mod:selector>
         <mod:setValue>(Advanced Hacking) Override the ASB's target.

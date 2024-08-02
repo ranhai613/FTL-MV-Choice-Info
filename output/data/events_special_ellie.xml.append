@@ -1,7 +1,8 @@
 <FTL>
-  <mod:findName name="SHIP_ELLIE_STATION">
+  <mod:findName name="SHIP_ELLIE_STATION" type="ship">
     <mod:findLike type="deadCrew">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Find Ellie.</mod:selector>
           <mod:setValue>Find Ellie.
@@ -10,8 +11,9 @@ Gain a crew(Unique Ellie Lvl1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_START">
+  <mod:findName name="ELLIE_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Investigate the station. Maybe you can help?</mod:selector>
         <mod:setValue>Investigate the station. Maybe you can help?
@@ -19,10 +21,12 @@ Fight(HK=CK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_START">
+  <mod:findName name="ELLIE_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Are you okay? What's going on?</mod:selector>
             <mod:setValue>Are you okay? What's going on?
@@ -32,12 +36,15 @@ Fight(HK=CK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_START">
+  <mod:findName name="ELLIE_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>I can't remember.</mod:selector>
                 <mod:setValue>I can't remember.
@@ -49,14 +56,18 @@ Fight(HK=CK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_START">
+  <mod:findName name="ELLIE_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Agree to help her.</mod:selector>
                     <mod:setValue>Agree to help her.
@@ -70,16 +81,21 @@ Fight(HK=CK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_START">
+  <mod:findName name="ELLIE_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Continue...</mod:selector>
                         <mod:setValue>Continue...
@@ -95,12 +111,15 @@ Fight(HK=CK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_START">
+  <mod:findName name="ELLIE_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="unique_alkali"/>
               <mod:findLike type="text">
                 <mod:selector>(Alkali) "Professor Ellie, it's an honor to meet you in person!"</mod:selector>
                 <mod:setValue>(Alkali) "Professor Ellie, it's an honor to meet you in person!"
@@ -112,14 +131,18 @@ Fight(HK=CK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_START">
+  <mod:findName name="ELLIE_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="unique_alkali"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Agree to help her.</mod:selector>
                     <mod:setValue>Agree to help her.
@@ -133,16 +156,21 @@ Fight(HK=CK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_START">
+  <mod:findName name="ELLIE_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="unique_alkali"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Continue...</mod:selector>
                         <mod:setValue>Continue...
@@ -158,8 +186,9 @@ Fight(HK=CK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_START">
+  <mod:findName name="ELLIE_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Avoid the station.</mod:selector>
         <mod:setValue>Avoid the station.
@@ -167,10 +196,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_START">
+  <mod:findName name="ELLIE_START" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -180,8 +211,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_START_WIN">
+  <mod:findName name="ELLIE_START_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>What are you doing?</mod:selector>
         <mod:setValue>What are you doing?
@@ -189,10 +221,12 @@ Gain a crew(Unique Ellie Lvl1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_START_WIN">
+  <mod:findName name="ELLIE_START_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Did you just stab that guy?</mod:selector>
             <mod:setValue>Did you just stab that guy?
@@ -202,10 +236,12 @@ Gain a crew(Unique Ellie Lvl1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_START_WIN">
+  <mod:findName name="ELLIE_START_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -219,8 +255,9 @@ Gain a crew(Unique Ellie Lvl1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_RIGLEY">
+  <mod:findName name="ELLIE_RIGLEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Approach.</mod:selector>
         <mod:setValue>Approach.
@@ -228,10 +265,12 @@ Fight(HK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_RIGLEY">
+  <mod:findName name="ELLIE_RIGLEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Where's Rigley?</mod:selector>
             <mod:setValue>Where's Rigley?
@@ -241,12 +280,15 @@ Fight(HK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_RIGLEY">
+  <mod:findName name="ELLIE_RIGLEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Fight off the security.</mod:selector>
                 <mod:setValue>Fight off the security.
@@ -258,14 +300,18 @@ Fight(HK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_RIGLEY">
+  <mod:findName name="ELLIE_RIGLEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -279,8 +325,9 @@ Fight(HK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_RIGLEY">
+  <mod:findName name="ELLIE_RIGLEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Change your mind and leave.</mod:selector>
         <mod:setValue>Change your mind and leave.
@@ -288,10 +335,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_RIGLEY">
+  <mod:findName name="ELLIE_RIGLEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -301,8 +350,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_HUEGHEY">
+  <mod:findName name="ELLIE_HUEGHEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Enter.</mod:selector>
         <mod:setValue>Enter.
@@ -310,10 +360,12 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_HUEGHEY">
+  <mod:findName name="ELLIE_HUEGHEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>You don't look like a Hueghey.</mod:selector>
             <mod:setValue>You don't look like a Hueghey.
@@ -323,12 +375,15 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_HUEGHEY">
+  <mod:findName name="ELLIE_HUEGHEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>And so what if we are?</mod:selector>
                 <mod:setValue>And so what if we are?
@@ -340,14 +395,18 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_HUEGHEY">
+  <mod:findName name="ELLIE_HUEGHEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
-              <mod:findName name="ELLIE_HUEGHEY_2">
+              <mod:selector hidden="true"/>
+              <mod:findName name="ELLIE_HUEGHEY_2" type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Okay... and?</mod:selector>
                     <mod:setValue>Okay... and?
@@ -361,16 +420,21 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_HUEGHEY">
+  <mod:findName name="ELLIE_HUEGHEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
-              <mod:findName name="ELLIE_HUEGHEY_2">
+              <mod:selector hidden="true"/>
+              <mod:findName name="ELLIE_HUEGHEY_2" type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Fight off the security.</mod:selector>
                         <mod:setValue>Fight off the security.
@@ -386,18 +450,24 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_HUEGHEY">
+  <mod:findName name="ELLIE_HUEGHEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
-              <mod:findName name="ELLIE_HUEGHEY_2">
+              <mod:selector hidden="true"/>
+              <mod:findName name="ELLIE_HUEGHEY_2" type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="text">
                             <mod:selector>Continue...</mod:selector>
                             <mod:setValue>Continue...
@@ -415,10 +485,12 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_HUEGHEY">
+  <mod:findName name="ELLIE_HUEGHEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Your office smells terrible.</mod:selector>
             <mod:setValue>Your office smells terrible.
@@ -428,12 +500,15 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_HUEGHEY">
+  <mod:findName name="ELLIE_HUEGHEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>And so what if we are?</mod:selector>
                 <mod:setValue>And so what if we are?
@@ -445,10 +520,12 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_HUEGHEY">
+  <mod:findName name="ELLIE_HUEGHEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>You shouldn't smoke, it's bad for you.</mod:selector>
             <mod:setValue>You shouldn't smoke, it's bad for you.
@@ -458,12 +535,15 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_HUEGHEY">
+  <mod:findName name="ELLIE_HUEGHEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>And so what if we are?</mod:selector>
                 <mod:setValue>And so what if we are?
@@ -475,8 +555,9 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_HUEGHEY">
+  <mod:findName name="ELLIE_HUEGHEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Change your mind and leave.</mod:selector>
         <mod:setValue>Change your mind and leave.
@@ -484,10 +565,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_HUEGHEY">
+  <mod:findName name="ELLIE_HUEGHEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -497,8 +580,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_REMMY">
+  <mod:findName name="ELLIE_REMMY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Search for Remmy.</mod:selector>
         <mod:setValue>Search for Remmy.
@@ -506,10 +590,12 @@ Fight(HK=CK: Reward Stuff(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_REMMY">
+  <mod:findName name="ELLIE_REMMY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Wait, you're the one who plays Remmy?</mod:selector>
             <mod:setValue>Wait, you're the one who plays Remmy?
@@ -519,12 +605,15 @@ Fight(HK=CK: Reward Stuff(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_REMMY">
+  <mod:findName name="ELLIE_REMMY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Back up Ellie.</mod:selector>
                 <mod:setValue>Back up Ellie.
@@ -537,14 +626,18 @@ Fight(HK=CK: Reward Stuff(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_REMMY">
+  <mod:findName name="ELLIE_REMMY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -558,12 +651,15 @@ Fight(HK=CK: Reward Stuff(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_REMMY">
+  <mod:findName name="ELLIE_REMMY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>You can't do this, Ellie.</mod:selector>
                 <mod:setValue>You can't do this, Ellie.
@@ -576,8 +672,9 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_REMMY">
+  <mod:findName name="ELLIE_REMMY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Change your mind and leave.</mod:selector>
         <mod:setValue>Change your mind and leave.
@@ -585,10 +682,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_REMMY">
+  <mod:findName name="ELLIE_REMMY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -598,8 +697,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_PAUL">
+  <mod:findName name="ELLIE_PAUL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Attack the MFK.</mod:selector>
         <mod:setValue>Attack the MFK.
@@ -607,10 +707,12 @@ Fight(HK=CK: Reward Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_PAUL">
+  <mod:findName name="ELLIE_PAUL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -620,8 +722,9 @@ Fight(HK=CK: Reward Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_PAUL">
+  <mod:findName name="ELLIE_PAUL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Change your mind and leave.</mod:selector>
         <mod:setValue>Change your mind and leave.
@@ -629,10 +732,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_PAUL">
+  <mod:findName name="ELLIE_PAUL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -642,9 +747,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_SAMMY_CRUISER">
+  <mod:findName name="SHIP_SAMMY_CRUISER" type="ship">
     <mod:findLike type="destroyed">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -653,9 +759,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_SAMMY_CRUISER">
+  <mod:findName name="SHIP_SAMMY_CRUISER" type="ship">
     <mod:findLike type="deadCrew">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -664,8 +771,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_SAMMY">
+  <mod:findName name="ELLIE_SAMMY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Enter.</mod:selector>
         <mod:setValue>Enter.
@@ -674,10 +782,12 @@ Fight(HK=CK: Reward Item(H) &lt;#&gt;Unlock Ship(Horse))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_SAMMY">
+  <mod:findName name="ELLIE_SAMMY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Convince Ellie to go.</mod:selector>
             <mod:setValue>Convince Ellie to go.
@@ -688,12 +798,15 @@ Fight(HK=CK: Reward Item(H) &lt;#&gt;Unlock Ship(Horse))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_SAMMY">
+  <mod:findName name="ELLIE_SAMMY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ELLIE" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -706,8 +819,9 @@ Fight(HK=CK: Reward Item(H) &lt;#&gt;Unlock Ship(Horse))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_SAMMY">
+  <mod:findName name="ELLIE_SAMMY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Change your mind and leave.</mod:selector>
         <mod:setValue>Change your mind and leave.
@@ -715,10 +829,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_SAMMY">
+  <mod:findName name="ELLIE_SAMMY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -728,8 +844,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_SAMMY_WIN">
+  <mod:findName name="ELLIE_SAMMY_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>What? Seriously?! Haven't we done enough?</mod:selector>
         <mod:setValue>What? Seriously?! Haven't we done enough?
@@ -737,10 +854,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_SAMMY_WIN">
+  <mod:findName name="ELLIE_SAMMY_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="ELLIE_GOOD_CHECK"/>
           <mod:findLike type="text">
             <mod:selector>You've stopped enough of these murders. Maybe you can stop Ellie again?</mod:selector>
             <mod:setValue>You've stopped enough of these murders. Maybe you can stop Ellie again?
@@ -750,12 +869,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_SAMMY_WIN">
+  <mod:findName name="ELLIE_SAMMY_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="ELLIE_GOOD_CHECK"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Convince Stephan to turn himself in.</mod:selector>
                 <mod:setValue>Convince Stephan to turn himself in.
@@ -767,10 +889,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_SAMMY_WIN">
+  <mod:findName name="ELLIE_SAMMY_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>All you can do is watch in horror.</mod:selector>
             <mod:setValue>All you can do is watch in horror.
@@ -780,12 +904,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ELLIE_SAMMY_WIN">
+  <mod:findName name="ELLIE_SAMMY_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Leave Ellie behind.</mod:selector>
                 <mod:setValue>Leave Ellie behind.

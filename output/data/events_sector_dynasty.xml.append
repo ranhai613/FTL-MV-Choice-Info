@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="FINISH_BEACON_DYNASTY">
+  <mod:findName name="FINISH_BEACON_DYNASTY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Do something onboard the ship.</mod:selector>
         <mod:setValue>Do something onboard the ship.
@@ -8,7 +9,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_ROCK_HERESY">
+  <mod:findName name="DYNASTY_ROCK_HERESY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Encourage them to look for the truth, not ask for it.</mod:selector>
@@ -17,7 +18,7 @@ Map Reveal</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_ROCK_HERESY">
+  <mod:findName name="DYNASTY_ROCK_HERESY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Inform them of their fallacious reasoning.</mod:selector>
@@ -26,10 +27,11 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Rock))</mod:setVa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_ROCK_HERESY">
+  <mod:findName name="DYNASTY_ROCK_HERESY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -39,7 +41,7 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Rock))</mod:setVa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_ROCK_HERESY">
+  <mod:findName name="DYNASTY_ROCK_HERESY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Nod and move along.</mod:selector>
@@ -48,7 +50,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_ROCK_HERESY">
+  <mod:findName name="DYNASTY_ROCK_HERESY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -61,8 +63,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_CACHE">
+  <mod:findName name="DYNASTY_CACHE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Open the cache.</mod:selector>
         <mod:setValue>Open the cache.
@@ -72,8 +75,9 @@ Fight(HK: 33% Reward Standard(M))(CK: 33% Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_CACHE">
+  <mod:findName name="DYNASTY_CACHE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ROCK"/>
       <mod:findLike type="text">
         <mod:selector>(Rock Crew) Smash open the cache.</mod:selector>
         <mod:setValue>(Rock Crew) Smash open the cache.
@@ -82,8 +86,9 @@ Gain a weapon(Giftlist Rusty)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_CACHE">
+  <mod:findName name="DYNASTY_CACHE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="weapons" lvl="5"/>
       <mod:findLike type="text">
         <mod:selector>(Upg. Weapons) Blast open the cache.</mod:selector>
         <mod:setValue>(Upg. Weapons) Blast open the cache.
@@ -92,8 +97,9 @@ Gain a weapon(Giftlist Rusty)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_CACHE">
+  <mod:findName name="DYNASTY_CACHE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the cache.</mod:selector>
         <mod:setValue>Ignore the cache.
@@ -101,10 +107,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_CACHE">
+  <mod:findName name="DYNASTY_CACHE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -114,9 +122,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_CACHE_OPEN">
+  <mod:findName name="DYNASTY_CACHE_OPEN" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -125,8 +134,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_SLUGOCC">
+  <mod:findName name="DYNASTY_SLUGOCC" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Accept.</mod:selector>
         <mod:setValue>Accept.
@@ -134,10 +144,12 @@ Fight(CK=HK: Reward Standard(M) Reward Item(M))(SR: Reward Stuff(H))</mod:setVal
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_SLUGOCC">
+  <mod:findName name="DYNASTY_SLUGOCC" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attack them!</mod:selector>
             <mod:setValue>Attack them!
@@ -147,12 +159,15 @@ Fight(CK=HK: Reward Standard(M) Reward Item(M))(SR: Reward Stuff(H))</mod:setVal
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_SLUGOCC">
+  <mod:findName name="DYNASTY_SLUGOCC" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -164,8 +179,9 @@ Fight(CK=HK: Reward Standard(M) Reward Item(M))(SR: Reward Stuff(H))</mod:setVal
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_SLUGOCC">
+  <mod:findName name="DYNASTY_SLUGOCC" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Decline.</mod:selector>
         <mod:setValue>Decline.
@@ -173,10 +189,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_SLUGOCC">
+  <mod:findName name="DYNASTY_SLUGOCC" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -186,8 +204,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_DUEL">
+  <mod:findName name="DYNASTY_DUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Aid the Rebel ship.</mod:selector>
         <mod:setValue>Aid the Rebel ship.
@@ -195,10 +214,12 @@ Fight(HK=CK: Reward Standard(L) Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_DUEL">
+  <mod:findName name="DYNASTY_DUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -208,8 +229,9 @@ Fight(HK=CK: Reward Standard(L) Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_DUEL">
+  <mod:findName name="DYNASTY_DUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Aid the Ghost ship.</mod:selector>
         <mod:setValue>Aid the Ghost ship.
@@ -217,10 +239,12 @@ Fight(HK=CK: Reward Standard(L) Gain a crew(Phantom))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_DUEL">
+  <mod:findName name="DYNASTY_DUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -230,8 +254,9 @@ Fight(HK=CK: Reward Standard(L) Gain a crew(Phantom))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_DUEL">
+  <mod:findName name="DYNASTY_DUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Don't get involved.</mod:selector>
         <mod:setValue>Don't get involved.
@@ -239,10 +264,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_DUEL">
+  <mod:findName name="DYNASTY_DUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -252,8 +279,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_FILTH">
+  <mod:findName name="NEBULA_DYNASTY_FILTH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ask them what they're doing.</mod:selector>
         <mod:setValue>Ask them what they're doing.
@@ -261,10 +289,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_FILTH">
+  <mod:findName name="NEBULA_DYNASTY_FILTH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Woah man, calm down.</mod:selector>
             <mod:setValue>Woah man, calm down.
@@ -275,12 +305,15 @@ Reward Standard(L)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_FILTH">
+  <mod:findName name="NEBULA_DYNASTY_FILTH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Help with what?</mod:selector>
                 <mod:setValue>Help with what?
@@ -293,14 +326,18 @@ Reward Standard(L)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_FILTH">
+  <mod:findName name="NEBULA_DYNASTY_FILTH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Take some time to collect some scrap for him.</mod:selector>
                     <mod:setValue>Take some time to collect some scrap for him.
@@ -315,16 +352,21 @@ Reward Standard(L)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_FILTH">
+  <mod:findName name="NEBULA_DYNASTY_FILTH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Gather more scrap for him.</mod:selector>
                         <mod:setValue>Gather more scrap for him.
@@ -341,18 +383,24 @@ Reward Standard(M)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_FILTH">
+  <mod:findName name="NEBULA_DYNASTY_FILTH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="text">
                             <mod:selector>Gather even more scrap for him.</mod:selector>
                             <mod:setValue>Gather even more scrap for him.
@@ -372,10 +420,12 @@ Gain a crew(Phantom)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_FILTH">
+  <mod:findName name="NEBULA_DYNASTY_FILTH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>This guy is a nutjob. Put him out of his misery.</mod:selector>
             <mod:setValue>This guy is a nutjob. Put him out of his misery.
@@ -385,12 +435,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_FILTH">
+  <mod:findName name="NEBULA_DYNASTY_FILTH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -402,8 +455,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_FILTH">
+  <mod:findName name="NEBULA_DYNASTY_FILTH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the Ghosts.</mod:selector>
         <mod:setValue>Ignore the Ghosts.
@@ -411,10 +465,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_FILTH">
+  <mod:findName name="NEBULA_DYNASTY_FILTH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -424,8 +480,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPLIT">
+  <mod:findName name="NEBULA_DYNASTY_SPLIT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Dock.</mod:selector>
         <mod:setValue>Dock.
@@ -433,10 +490,12 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Dynasty))</mod:se
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPLIT">
+  <mod:findName name="NEBULA_DYNASTY_SPLIT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Try to talk the Alpha into splitting.</mod:selector>
             <mod:setValue>Try to talk the Alpha into splitting.
@@ -446,10 +505,12 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Dynasty))</mod:se
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPLIT">
+  <mod:findName name="NEBULA_DYNASTY_SPLIT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Shelter the Alpha from the other Ghosts.</mod:selector>
             <mod:setValue>Shelter the Alpha from the other Ghosts.
@@ -460,12 +521,15 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Dynasty))</mod:se
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPLIT">
+  <mod:findName name="NEBULA_DYNASTY_SPLIT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -477,10 +541,12 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Dynasty))</mod:se
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPLIT">
+  <mod:findName name="NEBULA_DYNASTY_SPLIT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="mind" max_lvl="1"/>
           <mod:findLike type="text">
             <mod:selector>(Mind Control) Subdue the Alpha.</mod:selector>
             <mod:setValue>(Mind Control) Subdue the Alpha.
@@ -490,10 +556,12 @@ Reward Drone(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPLIT">
+  <mod:findName name="NEBULA_DYNASTY_SPLIT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="mind" lvl="2"/>
           <mod:findLike type="text">
             <mod:selector>(Upg. Mind Control) Force the Alpha to split.</mod:selector>
             <mod:setValue>(Upg. Mind Control) Force the Alpha to split.
@@ -503,10 +571,12 @@ Gain a crew(Phantom)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPLIT">
+  <mod:findName name="NEBULA_DYNASTY_SPLIT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_SHELL_SCIENTIST"/>
           <mod:findLike type="text">
             <mod:selector>(Shell Scientist) Explain the process.</mod:selector>
             <mod:setValue>(Shell Scientist) Explain the process.
@@ -516,8 +586,9 @@ Reward Drone(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPLIT">
+  <mod:findName name="NEBULA_DYNASTY_SPLIT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the station.</mod:selector>
         <mod:setValue>Ignore the station.
@@ -525,10 +596,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPLIT">
+  <mod:findName name="NEBULA_DYNASTY_SPLIT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -538,8 +611,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_TRINKETS">
+  <mod:findName name="NEBULA_DYNASTY_TRINKETS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Go aboard.</mod:selector>
         <mod:setValue>Go aboard.
@@ -547,10 +621,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_TRINKETS">
+  <mod:findName name="NEBULA_DYNASTY_TRINKETS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Buy a totem of war [+8% weapon fire rate].</mod:selector>
             <mod:setValue>Buy a totem of war [+8% weapon fire rate].
@@ -560,10 +636,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_TRINKETS">
+  <mod:findName name="NEBULA_DYNASTY_TRINKETS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Buy an emblem of speed [+20% crew movement speed, +20% FTL recharge rate].</mod:selector>
             <mod:setValue>Buy an emblem of speed [+20% crew movement speed, +20% FTL recharge rate].
@@ -573,10 +651,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_TRINKETS">
+  <mod:findName name="NEBULA_DYNASTY_TRINKETS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Buy an ingot of fortitude [+20% shield charge speed, +10% system sabotage resistance].</mod:selector>
             <mod:setValue>Buy an ingot of fortitude [+20% shield charge speed, +10% system sabotage resistance].
@@ -586,8 +666,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_TRINKETS">
+  <mod:findName name="NEBULA_DYNASTY_TRINKETS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Avoid the Ghost.</mod:selector>
         <mod:setValue>Avoid the Ghost.
@@ -595,10 +676,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_TRINKETS">
+  <mod:findName name="NEBULA_DYNASTY_TRINKETS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -608,8 +691,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_INTERROGATION">
+  <mod:findName name="NEBULA_DYNASTY_INTERROGATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ask them what's happening.</mod:selector>
         <mod:setValue>Ask them what's happening.
@@ -618,10 +702,12 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_INTERROGATION">
+  <mod:findName name="NEBULA_DYNASTY_INTERROGATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>That's an Auto-ship...</mod:selector>
             <mod:setValue>That's an Auto-ship...
@@ -631,12 +717,15 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_INTERROGATION">
+  <mod:findName name="NEBULA_DYNASTY_INTERROGATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>It's not alive. It's just a machine.</mod:selector>
                 <mod:setValue>It's not alive. It's just a machine.
@@ -648,10 +737,12 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_INTERROGATION">
+  <mod:findName name="NEBULA_DYNASTY_INTERROGATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_ENGINEER"/>
           <mod:findLike type="text">
             <mod:selector>(Engineer Crew) Interface with the Auto and "make it speak".</mod:selector>
             <mod:setValue>(Engineer Crew) Interface with the Auto and "make it speak".
@@ -661,10 +752,12 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_INTERROGATION">
+  <mod:findName name="NEBULA_DYNASTY_INTERROGATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="hacking" lvl="2"/>
           <mod:findLike type="text">
             <mod:selector>(Upg. Hacking) Interface with the Auto and "make it speak".</mod:selector>
             <mod:setValue>(Upg. Hacking) Interface with the Auto and "make it speak".
@@ -674,8 +767,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_INTERROGATION">
+  <mod:findName name="NEBULA_DYNASTY_INTERROGATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Avoid them.</mod:selector>
         <mod:setValue>Avoid them.
@@ -683,10 +777,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_INTERROGATION">
+  <mod:findName name="NEBULA_DYNASTY_INTERROGATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -696,9 +792,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_INTERROGATION_TALK">
+  <mod:findName name="DYNASTY_INTERROGATION_TALK" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -707,8 +804,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_UNIQUE_HACKERBID">
+  <mod:findName name="NEBULA_DYNASTY_UNIQUE_HACKERBID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Inquire.</mod:selector>
         <mod:setValue>Inquire.
@@ -718,10 +816,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_UNIQUE_HACKERBID">
+  <mod:findName name="NEBULA_DYNASTY_UNIQUE_HACKERBID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Enter the bidding.</mod:selector>
             <mod:setValue>Enter the bidding.
@@ -733,10 +833,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_UNIQUE_HACKERBID">
+  <mod:findName name="NEBULA_DYNASTY_UNIQUE_HACKERBID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -752,10 +854,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_UNIQUE_HACKERBID">
+  <mod:findName name="NEBULA_DYNASTY_UNIQUE_HACKERBID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
@@ -775,10 +879,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_UNIQUE_HACKERBID">
+  <mod:findName name="NEBULA_DYNASTY_UNIQUE_HACKERBID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
@@ -802,8 +908,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_UNIQUE_HACKERBID">
+  <mod:findName name="NEBULA_DYNASTY_UNIQUE_HACKERBID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore them.</mod:selector>
         <mod:setValue>Ignore them.
@@ -811,10 +918,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_UNIQUE_HACKERBID">
+  <mod:findName name="NEBULA_DYNASTY_UNIQUE_HACKERBID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -824,8 +933,8 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_40">
-    <mod:findName name="DYNASTY_UNIQUE_HACKERBID_40_BID">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_40" type="eventList">
+    <mod:findName name="DYNASTY_UNIQUE_HACKERBID_40_BID" type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
           <mod:selector>Raise to 45.</mod:selector>
@@ -837,7 +946,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findName>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_40">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_40" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -849,7 +958,7 @@ Gain an augment(Combat Pilot Jammer)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_40">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_40" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -860,11 +969,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_40">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_40" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="event">
           <mod:findLike type="choice">
+            <mod:selector hidden="true"/>
             <mod:findLike type="text">
               <mod:selector>Continue...</mod:selector>
               <mod:setValue>Continue...
@@ -875,8 +985,8 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_45">
-    <mod:findName name="DYNASTY_UNIQUE_HACKERBID_45_BID">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_45" type="eventList">
+    <mod:findName name="DYNASTY_UNIQUE_HACKERBID_45_BID" type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
           <mod:selector>Raise to 50.</mod:selector>
@@ -888,7 +998,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findName>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_45">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_45" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -900,7 +1010,7 @@ Gain an augment(Combat Pilot Jammer)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_45">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_45" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -911,11 +1021,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_45">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_45" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="event">
           <mod:findLike type="choice">
+            <mod:selector hidden="true"/>
             <mod:findLike type="text">
               <mod:selector>Continue...</mod:selector>
               <mod:setValue>Continue...
@@ -926,8 +1037,8 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_50">
-    <mod:findName name="DYNASTY_UNIQUE_HACKERBID_50_BID">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_50" type="eventList">
+    <mod:findName name="DYNASTY_UNIQUE_HACKERBID_50_BID" type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
           <mod:selector>Raise to 55.</mod:selector>
@@ -939,7 +1050,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findName>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_50">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_50" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -951,7 +1062,7 @@ Gain an augment(Combat Pilot Jammer)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_50">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_50" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -962,11 +1073,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_50">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_50" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="event">
           <mod:findLike type="choice">
+            <mod:selector hidden="true"/>
             <mod:findLike type="text">
               <mod:selector>Continue...</mod:selector>
               <mod:setValue>Continue...
@@ -977,8 +1089,8 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_55">
-    <mod:findName name="DYNASTY_UNIQUE_HACKERBID_55_BID">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_55" type="eventList">
+    <mod:findName name="DYNASTY_UNIQUE_HACKERBID_55_BID" type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
           <mod:selector>Raise to 60.</mod:selector>
@@ -990,7 +1102,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findName>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_55">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_55" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -1002,7 +1114,7 @@ Gain an augment(Combat Pilot Jammer)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_55">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_55" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -1013,11 +1125,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_55">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_55" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="event">
           <mod:findLike type="choice">
+            <mod:selector hidden="true"/>
             <mod:findLike type="text">
               <mod:selector>Continue...</mod:selector>
               <mod:setValue>Continue...
@@ -1028,8 +1141,8 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_60">
-    <mod:findName name="DYNASTY_UNIQUE_HACKERBID_60_BID">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_60" type="eventList">
+    <mod:findName name="DYNASTY_UNIQUE_HACKERBID_60_BID" type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
           <mod:selector>Raise to 65.</mod:selector>
@@ -1041,7 +1154,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findName>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_60">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_60" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -1053,7 +1166,7 @@ Gain an augment(Combat Pilot Jammer)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_60">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_60" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -1064,11 +1177,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_60">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_60" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="event">
           <mod:findLike type="choice">
+            <mod:selector hidden="true"/>
             <mod:findLike type="text">
               <mod:selector>Continue...</mod:selector>
               <mod:setValue>Continue...
@@ -1079,7 +1193,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_65">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_65" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Pay.</mod:selector>
@@ -1089,7 +1203,7 @@ Gain an augment(Combat Pilot Jammer)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_65">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_65" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>We uh, can't.</mod:selector>
@@ -1098,10 +1212,11 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_65">
+  <mod:findName name="DYNASTY_UNIQUE_HACKERBID_65" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1111,8 +1226,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SMUGGLER">
+  <mod:findName name="NEBULA_DYNASTY_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Check out the checkpoint.</mod:selector>
         <mod:setValue>Check out the checkpoint.
@@ -1120,10 +1236,12 @@ Fight(HK: Reward Standard(M) Gain a weapon(Random))(CK: Reward Standard(H) Gain 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SMUGGLER">
+  <mod:findName name="NEBULA_DYNASTY_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attack the checkpoint.</mod:selector>
             <mod:setValue>Attack the checkpoint.
@@ -1133,12 +1251,15 @@ Fight(HK: Reward Standard(M) Gain a weapon(Random))(CK: Reward Standard(H) Gain 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SMUGGLER">
+  <mod:findName name="NEBULA_DYNASTY_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1150,8 +1271,9 @@ Fight(HK: Reward Standard(M) Gain a weapon(Random))(CK: Reward Standard(H) Gain 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SMUGGLER">
+  <mod:findName name="NEBULA_DYNASTY_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1164,12 +1286,14 @@ Gain a weapon(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SMUGGLER">
+  <mod:findName name="NEBULA_DYNASTY_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1181,8 +1305,9 @@ Gain a weapon(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SMUGGLER">
+  <mod:findName name="NEBULA_DYNASTY_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1194,10 +1319,12 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SMUGGLER">
+  <mod:findName name="NEBULA_DYNASTY_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="loc_dynasty_impressed"/>
           <mod:findLike type="text">
             <mod:selector>(Savior of the Dynasty) Could you do us a favor?</mod:selector>
             <mod:setValue>(Savior of the Dynasty) Could you do us a favor?
@@ -1207,12 +1334,15 @@ Gain a weapon(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SMUGGLER">
+  <mod:findName name="NEBULA_DYNASTY_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="loc_dynasty_impressed"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1224,8 +1354,9 @@ Gain a weapon(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SMUGGLER">
+  <mod:findName name="NEBULA_DYNASTY_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Fight the smugglers instead.</mod:selector>
         <mod:setValue>Fight the smugglers instead.
@@ -1233,10 +1364,12 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SMUGGLER">
+  <mod:findName name="NEBULA_DYNASTY_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1246,8 +1379,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SMUGGLER">
+  <mod:findName name="NEBULA_DYNASTY_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>We aren't going to work for some smugglers.</mod:selector>
         <mod:setValue>We aren't going to work for some smugglers.
@@ -1255,10 +1389,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SMUGGLER">
+  <mod:findName name="NEBULA_DYNASTY_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1268,8 +1404,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_AUTOQUEST">
+  <mod:findName name="NEBULA_DYNASTY_AUTOQUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the Ghosts.</mod:selector>
         <mod:setValue>Attack the Ghosts.
@@ -1277,10 +1414,12 @@ Fight(HK: Reward Standard(M) Gain a drone(Random))(CK: Reward Standard(H) Gain a
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_AUTOQUEST">
+  <mod:findName name="NEBULA_DYNASTY_AUTOQUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1290,8 +1429,9 @@ Fight(HK: Reward Standard(M) Gain a drone(Random))(CK: Reward Standard(H) Gain a
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_AUTOQUEST">
+  <mod:findName name="NEBULA_DYNASTY_AUTOQUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Just destroy the Auto.</mod:selector>
         <mod:setValue>Just destroy the Auto.
@@ -1299,10 +1439,12 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_AUTOQUEST">
+  <mod:findName name="NEBULA_DYNASTY_AUTOQUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1312,8 +1454,9 @@ Fight(HK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_AUTOQUEST">
+  <mod:findName name="NEBULA_DYNASTY_AUTOQUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Let them sort out the problem on their own.</mod:selector>
         <mod:setValue>Let them sort out the problem on their own.
@@ -1321,10 +1464,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_AUTOQUEST">
+  <mod:findName name="NEBULA_DYNASTY_AUTOQUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1334,8 +1479,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_ZOLTAUTO">
+  <mod:findName name="NEBULA_DYNASTY_ZOLTAUTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1343,10 +1489,12 @@ Fight(HK: 50% Reward Standard(M))(CK: 50% Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_ZOLTAUTO">
+  <mod:findName name="NEBULA_DYNASTY_ZOLTAUTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Chase down the Auto-ship.</mod:selector>
             <mod:setValue>Chase down the Auto-ship.
@@ -1356,10 +1504,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_ZOLTAUTO">
+  <mod:findName name="NEBULA_DYNASTY_ZOLTAUTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Decline.</mod:selector>
             <mod:setValue>Decline.
@@ -1369,9 +1519,10 @@ Fight(HK: 50% Reward Standard(M))(CK: 50% Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_ZOLTAUTO_DECLINE">
+  <mod:findName name="DYNASTY_ZOLTAUTO_DECLINE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1380,9 +1531,10 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_ZOLTAUTO_ACCEPT">
+  <mod:findName name="DYNASTY_ZOLTAUTO_ACCEPT" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1391,9 +1543,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_ZOLTAUTO_REWARD">
+  <mod:findName name="DYNASTY_ZOLTAUTO_REWARD" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" req="weapons" lvl="5"/>
         <mod:findLike type="text">
           <mod:selector>(Upg. Weapons) Threaten them.</mod:selector>
           <mod:setValue>(Upg. Weapons) Threaten them.
@@ -1402,9 +1555,10 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_ZOLTAUTO_REWARD">
+  <mod:findName name="DYNASTY_ZOLTAUTO_REWARD" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" req="weapons" lvl="5"/>
         <mod:findLike type="text">
           <mod:selector>(Upg. Weapons) Threaten them.</mod:selector>
           <mod:setValue>(Upg. Weapons) Threaten them.
@@ -1413,8 +1567,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_DESERTERS">
+  <mod:findName name="NEBULA_DYNASTY_DESERTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Turn in the deserters.</mod:selector>
         <mod:setValue>Turn in the deserters.
@@ -1423,8 +1578,9 @@ Fight(HK=CK: 50% Reward Standard(M) 50% Reward ~ Only(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_DESERTERS">
+  <mod:findName name="NEBULA_DYNASTY_DESERTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Allow the Ghost onto the crew.</mod:selector>
         <mod:setValue>Allow the Ghost onto the crew.
@@ -1433,8 +1589,9 @@ Fight(HK=CK: 50% Reward Standard(M) 50% Gain a crew(Phantom))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_DESERTERS">
+  <mod:findName name="NEBULA_DYNASTY_DESERTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Tough luck, but we aren't getting involved.</mod:selector>
         <mod:setValue>Tough luck, but we aren't getting involved.
@@ -1442,10 +1599,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_DESERTERS">
+  <mod:findName name="NEBULA_DYNASTY_DESERTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1455,9 +1614,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_DESERTERS_TURNIN">
+  <mod:findName name="DYNASTY_DESERTERS_TURNIN" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1466,9 +1626,10 @@ Fight(HK=CK: Reward Standard(M) Reward ~ Only(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_DESERTERS_ACCEPT">
+  <mod:findName name="DYNASTY_DESERTERS_ACCEPT" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1477,8 +1638,9 @@ Fight(HK=CK: Reward Standard(M) Gain a crew(Phantom))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_LOST">
+  <mod:findName name="NEBULA_DYNASTY_LOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Offer to escort them.</mod:selector>
         <mod:setValue>Offer to escort them.
@@ -1486,10 +1648,12 @@ Fight(CK=HK: Reward Standard(M))(SR: Gain a weapon(Random) Reward Stuff(M))</mod
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_LOST">
+  <mod:findName name="NEBULA_DYNASTY_LOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1499,8 +1663,9 @@ Fight(CK=HK: Reward Standard(M))(SR: Gain a weapon(Random) Reward Stuff(M))</mod
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_LOST">
+  <mod:findName name="NEBULA_DYNASTY_LOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_GHOST"/>
       <mod:findLike type="text">
         <mod:selector>(Ghost Crew) Offer to escort them.</mod:selector>
         <mod:setValue>(Ghost Crew) Offer to escort them.
@@ -1508,8 +1673,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_LOST">
+  <mod:findName name="NEBULA_DYNASTY_LOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore them.</mod:selector>
         <mod:setValue>Ignore them.
@@ -1517,10 +1683,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_LOST">
+  <mod:findName name="NEBULA_DYNASTY_LOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1530,8 +1698,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_OCCUPIED">
+  <mod:findName name="NEBULA_DYNASTY_OCCUPIED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Approach.</mod:selector>
         <mod:setValue>Approach.
@@ -1540,10 +1709,12 @@ Fight(HK=CK: Reward Standard(H) Gain a crew(Alpha))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_OCCUPIED">
+  <mod:findName name="NEBULA_DYNASTY_OCCUPIED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Search for the Duskbringer command.</mod:selector>
             <mod:setValue>Search for the Duskbringer command.
@@ -1553,12 +1724,15 @@ Fight(HK=CK: Reward Standard(H) Reward Item(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_OCCUPIED">
+  <mod:findName name="NEBULA_DYNASTY_OCCUPIED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Fight the Ghosts.</mod:selector>
                 <mod:setValue>Fight the Ghosts.
@@ -1570,14 +1744,18 @@ Fight(HK=CK: Reward Standard(H) Reward Item(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_OCCUPIED">
+  <mod:findName name="NEBULA_DYNASTY_OCCUPIED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1591,10 +1769,12 @@ Fight(HK=CK: Reward Standard(H) Reward Item(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_OCCUPIED">
+  <mod:findName name="NEBULA_DYNASTY_OCCUPIED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Search for the colony leaders.</mod:selector>
             <mod:setValue>Search for the colony leaders.
@@ -1604,12 +1784,15 @@ Fight(HK=CK: Reward Standard(H) Gain a crew(Alpha))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_OCCUPIED">
+  <mod:findName name="NEBULA_DYNASTY_OCCUPIED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Fight the Duskbringers.</mod:selector>
                 <mod:setValue>Fight the Duskbringers.
@@ -1621,14 +1804,18 @@ Fight(HK=CK: Reward Standard(H) Gain a crew(Alpha))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_OCCUPIED">
+  <mod:findName name="NEBULA_DYNASTY_OCCUPIED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1642,12 +1829,15 @@ Fight(HK=CK: Reward Standard(H) Gain a crew(Alpha))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_OCCUPIED">
+  <mod:findName name="NEBULA_DYNASTY_OCCUPIED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Report the Phantoms to the occupational forces.</mod:selector>
                 <mod:setValue>Report the Phantoms to the occupational forces.
@@ -1659,8 +1849,9 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_OCCUPIED">
+  <mod:findName name="NEBULA_DYNASTY_OCCUPIED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Avoid the colony.</mod:selector>
         <mod:setValue>Avoid the colony.
@@ -1668,10 +1859,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_OCCUPIED">
+  <mod:findName name="NEBULA_DYNASTY_OCCUPIED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1681,8 +1874,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_MONSTER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_MONSTER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Hail one of the stations.</mod:selector>
         <mod:setValue>Hail one of the stations.
@@ -1690,10 +1884,12 @@ Fight(HK: Reward Standard(L) Reward Drone(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_MONSTER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_MONSTER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>What monster?</mod:selector>
             <mod:setValue>What monster?
@@ -1703,12 +1899,15 @@ Fight(HK: Reward Standard(L) Reward Drone(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_MONSTER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_MONSTER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>We shall help! Fight the horrible demon.</mod:selector>
                 <mod:setValue>We shall help! Fight the horrible demon.
@@ -1720,14 +1919,18 @@ Fight(HK: Reward Standard(L) Reward Drone(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_MONSTER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_MONSTER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1741,8 +1944,9 @@ Fight(HK: Reward Standard(L) Reward Drone(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_MONSTER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_MONSTER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Take this warning and leave.</mod:selector>
         <mod:setValue>Take this warning and leave.
@@ -1750,10 +1954,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_MONSTER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_MONSTER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1763,8 +1969,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_ENGINEER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_ENGINEER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Try and track down the Engineers.</mod:selector>
         <mod:setValue>Try and track down the Engineers.
@@ -1772,10 +1979,12 @@ Fight(HK: Reward Standard(M) 50% Gain a crew(Human Engineer) 50% Fleet Delay(2))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_ENGINEER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_ENGINEER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Aid the engineer.</mod:selector>
             <mod:setValue>Aid the engineer.
@@ -1786,12 +1995,15 @@ Fight(HK: Reward Standard(M) 50% Gain a crew(Human Engineer) 50% Fleet Delay(2))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_ENGINEER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_ENGINEER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1803,8 +2015,9 @@ Fight(HK: Reward Standard(M) 50% Gain a crew(Human Engineer) 50% Fleet Delay(2))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_ENGINEER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_ENGINEER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Stay safe and hang back to scrap their ship.</mod:selector>
         <mod:setValue>Stay safe and hang back to scrap their ship.
@@ -1812,10 +2025,12 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_ENGINEER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_ENGINEER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1825,8 +2040,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>I believe you.</mod:selector>
         <mod:setValue>I believe you.
@@ -1834,8 +2050,9 @@ Fight(HK=CK: Reward Standard(M) Gain a crew(Phantom Alpha))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_SLUG"/>
       <mod:findLike type="text">
         <mod:selector>(Slug Crew) Check the thoughts of the Ghost.</mod:selector>
         <mod:setValue>(Slug Crew) Check the thoughts of the Ghost.
@@ -1844,10 +2061,12 @@ Fight(HK=CK: Reward Standard No Item(M) Gain a weapon(Giftlist Rusty))</mod:setV
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_SLUG"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Tell the Alpha you believe him.</mod:selector>
             <mod:setValue>Tell the Alpha you believe him.
@@ -1857,10 +2076,12 @@ Fight(HK=CK: Reward Standard(M) Gain a crew(Phantom Alpha))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_SLUG"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Try to explain to him that he can't be.</mod:selector>
             <mod:setValue>Try to explain to him that he can't be.
@@ -1870,12 +2091,15 @@ Fight(HK=CK: Reward Standard No Item(M) Gain a weapon(Giftlist Rusty))</mod:setV
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_SLUG"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1887,8 +2111,9 @@ Fight(HK=CK: Reward Standard No Item(M) Gain a weapon(Giftlist Rusty))</mod:setV
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BLUELIST_CREW_SNAIL"/>
       <mod:findLike type="text">
         <mod:selector>(Telepathic Shell) Check the thoughts of the Ghost.</mod:selector>
         <mod:setValue>(Telepathic Shell) Check the thoughts of the Ghost.
@@ -1897,10 +2122,12 @@ Fight(HK=CK: Reward Standard No Item(M) Gain a weapon(Giftlist Rusty))</mod:setV
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BLUELIST_CREW_SNAIL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Tell the Alpha you believe him.</mod:selector>
             <mod:setValue>Tell the Alpha you believe him.
@@ -1910,10 +2137,12 @@ Fight(HK=CK: Reward Standard(M) Gain a crew(Phantom Alpha))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BLUELIST_CREW_SNAIL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Try to explain to him that he can't be.</mod:selector>
             <mod:setValue>Try to explain to him that he can't be.
@@ -1923,12 +2152,15 @@ Fight(HK=CK: Reward Standard No Item(M) Gain a weapon(Giftlist Rusty))</mod:setV
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BLUELIST_CREW_SNAIL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1940,8 +2172,9 @@ Fight(HK=CK: Reward Standard No Item(M) Gain a weapon(Giftlist Rusty))</mod:setV
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>If you're his grandfather, then how are you not still in charge?</mod:selector>
         <mod:setValue>If you're his grandfather, then how are you not still in charge?
@@ -1949,10 +2182,12 @@ Fight(HK=CK: Reward Standard No Item(M) Gain a weapon(Giftlist Rusty))</mod:setV
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1962,8 +2197,9 @@ Fight(HK=CK: Reward Standard No Item(M) Gain a weapon(Giftlist Rusty))</mod:setV
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_dessius"/>
       <mod:findLike type="text">
         <mod:selector>(Dessius) "You are not my grandfather."</mod:selector>
         <mod:setValue>(Dessius) "You are not my grandfather."
@@ -1971,10 +2207,12 @@ Fight(HK=CK: Reward Standard No Item(M) Gain a weapon(Giftlist Rusty))</mod:setV
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER">
+  <mod:findName name="NEBULA_DISTRESS_DYNASTY_GRANDFATHER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_dessius"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1984,8 +2222,9 @@ Fight(HK=CK: Reward Standard No Item(M) Gain a weapon(Giftlist Rusty))</mod:setV
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_GRANDFATHER_BELIEVE">
+  <mod:findName name="DYNASTY_GRANDFATHER_BELIEVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Agree.</mod:selector>
         <mod:setValue>Agree.
@@ -1993,10 +2232,12 @@ Fight(HK=CK: Reward Standard(M) Gain a crew(Phantom Alpha))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_GRANDFATHER_BELIEVE">
+  <mod:findName name="DYNASTY_GRANDFATHER_BELIEVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2006,8 +2247,9 @@ Fight(HK=CK: Reward Standard(M) Gain a crew(Phantom Alpha))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_ENCOUNTER_DYNASTY">
+  <mod:findName name="NEBULA_ENCOUNTER_DYNASTY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2015,8 +2257,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_ENCOUNTER_VAGABOND_DYNASTY">
+  <mod:findName name="NEBULA_ENCOUNTER_VAGABOND_DYNASTY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2024,8 +2267,9 @@ Fight(HK=CK: Reward Stuff(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_ENCOUNTER_REBEL_DYNASTY">
+  <mod:findName name="NEBULA_ENCOUNTER_REBEL_DYNASTY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2033,8 +2277,9 @@ Fight(HK: 20% Reward Standard(M) 20% Reward Standard(L))(CK: Reward Standard(H))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_ENCOUNTER_AUTO_DYNASTY">
+  <mod:findName name="NEBULA_ENCOUNTER_AUTO_DYNASTY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2042,8 +2287,9 @@ Fight(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20% Reward { Only(L))</mod
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_ENCOUNTER_DYNASTY_HOSTAGE">
+  <mod:findName name="NEBULA_ENCOUNTER_DYNASTY_HOSTAGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2051,8 +2297,9 @@ Fight(HK=CK: Reward Standard(M) 33% Gain a crew(Human) 33% Reward Standard(M) 33
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_ENCOUNTER_DYNASTY_ELITE">
+  <mod:findName name="NEBULA_ENCOUNTER_DYNASTY_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2060,8 +2307,9 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Dynasty))</mod:se
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_OUTPOST">
+  <mod:findName name="DYNASTY_OUTPOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Engage the outpost.</mod:selector>
         <mod:setValue>Engage the outpost.
@@ -2069,10 +2317,12 @@ Fight(HK=CK: Reward Standard(H) Map Reveal Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_OUTPOST">
+  <mod:findName name="DYNASTY_OUTPOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2082,8 +2332,9 @@ Fight(HK=CK: Reward Standard(H) Map Reveal Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_OUTPOST">
+  <mod:findName name="DYNASTY_OUTPOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the outpost.</mod:selector>
         <mod:setValue>Ignore the outpost.
@@ -2091,8 +2342,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_OUTPOST">
+  <mod:findName name="DYNASTY_OUTPOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -2104,8 +2356,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_OUTPOST">
+  <mod:findName name="DYNASTY_OUTPOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_dessius"/>
       <mod:findLike type="text">
         <mod:selector>(Dessius) Request access to the data held in the outpost.</mod:selector>
         <mod:setValue>(Dessius) Request access to the data held in the outpost.
@@ -2115,8 +2368,9 @@ Fleet Delay(1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_OUTPOST">
+  <mod:findName name="NEBULA_DYNASTY_OUTPOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Engage the outpost.</mod:selector>
         <mod:setValue>Engage the outpost.
@@ -2124,10 +2378,12 @@ Fight(HK=CK: Reward Standard(H) Map Reveal Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_OUTPOST">
+  <mod:findName name="NEBULA_DYNASTY_OUTPOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2137,8 +2393,9 @@ Fight(HK=CK: Reward Standard(H) Map Reveal Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_OUTPOST">
+  <mod:findName name="NEBULA_DYNASTY_OUTPOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the outpost.</mod:selector>
         <mod:setValue>Ignore the outpost.
@@ -2146,8 +2403,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_OUTPOST">
+  <mod:findName name="NEBULA_DYNASTY_OUTPOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -2159,8 +2417,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_OUTPOST">
+  <mod:findName name="NEBULA_DYNASTY_OUTPOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_dessius"/>
       <mod:findLike type="text">
         <mod:selector>(Dessius) Request access to the data held in the outpost.</mod:selector>
         <mod:setValue>(Dessius) Request access to the data held in the outpost.
@@ -2170,8 +2429,9 @@ Fleet Delay(1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_OUTPOST_DEFEAT">
+  <mod:findName name="DYNASTY_OUTPOST_DEFEAT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2180,8 +2440,9 @@ Fleet Delay(1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN">
+  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2189,10 +2450,12 @@ Fight(HK=CK: Reward Standard No Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN">
+  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do you speak normally?</mod:selector>
             <mod:setValue>Do you speak normally?
@@ -2202,12 +2465,15 @@ Fight(HK=CK: Reward Standard No Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN">
+  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Fight them to access the ruins!</mod:selector>
                 <mod:setValue>Fight them to access the ruins!
@@ -2219,14 +2485,18 @@ Fight(HK=CK: Reward Standard No Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN">
+  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -2240,12 +2510,15 @@ Fight(HK=CK: Reward Standard No Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN">
+  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_ANCIENT_ALL"/>
               <mod:findLike type="text">
                 <mod:selector>(Obelisk Crew) "These ruins belong to us!"</mod:selector>
                 <mod:setValue>(Obelisk Crew) "These ruins belong to us!"
@@ -2257,14 +2530,18 @@ Fight(HK=CK: Reward Standard No Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN">
+  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_ANCIENT_ALL"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -2278,8 +2555,9 @@ Fight(HK=CK: Reward Standard No Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN_BOON">
+  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN_BOON" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2287,10 +2565,12 @@ Fight(HK=CK: Reward Standard No Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN_BOON">
+  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN_BOON" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do you speak normally?</mod:selector>
             <mod:setValue>Do you speak normally?
@@ -2300,12 +2580,15 @@ Fight(HK=CK: Reward Standard No Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN_BOON">
+  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN_BOON" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Fight them to access the ruins!</mod:selector>
                 <mod:setValue>Fight them to access the ruins!
@@ -2317,14 +2600,18 @@ Fight(HK=CK: Reward Standard No Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN_BOON">
+  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN_BOON" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -2338,12 +2625,15 @@ Fight(HK=CK: Reward Standard No Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN_BOON">
+  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN_BOON" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_ANCIENT_ALL"/>
               <mod:findLike type="text">
                 <mod:selector>(Obelisk Crew) "These ruins belong to us!"</mod:selector>
                 <mod:setValue>(Obelisk Crew) "These ruins belong to us!"
@@ -2355,14 +2645,18 @@ Fight(HK=CK: Reward Standard No Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN_BOON">
+  <mod:findName name="NEBULA_DYNASTY_SPECIALRUIN_BOON" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_ANCIENT_ALL"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -2376,8 +2670,9 @@ Fight(HK=CK: Reward Standard No Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_SPECIALRUIN_REWARD">
+  <mod:findName name="DYNASTY_SPECIALRUIN_REWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_dessius" max_group="0" lvl="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2386,10 +2681,12 @@ Gain an augment(Mvboss Spawner)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_SPECIALRUIN_REWARD">
+  <mod:findName name="DYNASTY_SPECIALRUIN_REWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_dessius" max_group="0" lvl="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2399,8 +2696,9 @@ Gain an augment(Mvboss Spawner)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_SPECIALRUIN_REWARD">
+  <mod:findName name="DYNASTY_SPECIALRUIN_REWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_dessius" max_group="0" lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2409,10 +2707,12 @@ Gain an augment(Mvboss Spawner)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_SPECIALRUIN_REWARD">
+  <mod:findName name="DYNASTY_SPECIALRUIN_REWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_dessius" max_group="0" lvl="1" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2422,8 +2722,9 @@ Gain an augment(Mvboss Spawner)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_DREADNAUGHT">
+  <mod:findName name="NEBULA_DYNASTY_DREADNAUGHT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2432,10 +2733,12 @@ Fight(HK: Reward Standard(H) Gain a crew(Unique Dessius) &lt;#&gt;Unlock Ship(Dy
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_DREADNAUGHT">
+  <mod:findName name="NEBULA_DYNASTY_DREADNAUGHT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Approach the ship.</mod:selector>
             <mod:setValue>Approach the ship.
@@ -2446,12 +2749,15 @@ Fight(HK: Reward Standard(H) Gain a crew(Unique Dessius) &lt;#&gt;Unlock Ship(Dy
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_DREADNAUGHT">
+  <mod:findName name="NEBULA_DYNASTY_DREADNAUGHT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Let's teach this hunk of metal some manners.</mod:selector>
                 <mod:setValue>Let's teach this hunk of metal some manners.
@@ -2464,14 +2770,18 @@ Fight(HK: Reward Standard(H) Gain a crew(Unique Dessius) &lt;#&gt;Unlock Ship(Dy
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_DREADNAUGHT">
+  <mod:findName name="NEBULA_DYNASTY_DREADNAUGHT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -2486,10 +2796,12 @@ Fight(HK: Reward Standard(H) Gain a crew(Unique Dessius) &lt;#&gt;Unlock Ship(Dy
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_DREADNAUGHT">
+  <mod:findName name="NEBULA_DYNASTY_DREADNAUGHT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>This is as good a time as any to leave.</mod:selector>
             <mod:setValue>This is as good a time as any to leave.
@@ -2499,12 +2811,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DYNASTY_DREADNAUGHT">
+  <mod:findName name="NEBULA_DYNASTY_DREADNAUGHT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -2516,8 +2831,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_DREADNAUGHT_VICTORY">
+  <mod:findName name="DYNASTY_DREADNAUGHT_VICTORY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2528,10 +2844,12 @@ Gain an augment(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_DREADNAUGHT_VICTORY">
+  <mod:findName name="DYNASTY_DREADNAUGHT_VICTORY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>I go by no name.</mod:selector>
             <mod:setValue>I go by no name.
@@ -2544,12 +2862,15 @@ Gain an augment(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_DREADNAUGHT_VICTORY">
+  <mod:findName name="DYNASTY_DREADNAUGHT_VICTORY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>The who?</mod:selector>
                 <mod:setValue>The who?
@@ -2564,14 +2885,18 @@ Gain an augment(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_DREADNAUGHT_VICTORY">
+  <mod:findName name="DYNASTY_DREADNAUGHT_VICTORY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>The Rebel AI is kept on the Flagship, not that Dreadnaught.</mod:selector>
                     <mod:setValue>The Rebel AI is kept on the Flagship, not that Dreadnaught.
@@ -2588,16 +2913,21 @@ Gain an augment(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DYNASTY_DREADNAUGHT_VICTORY">
+  <mod:findName name="DYNASTY_DREADNAUGHT_VICTORY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Continue...</mod:selector>
                         <mod:setValue>Continue...

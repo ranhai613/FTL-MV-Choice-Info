@@ -1,5 +1,15 @@
 <FTL>
-  <mod:findName name="FINISH_BEACON_LOSTSUN">
+  <mod:findName name="FINISH_BEACON_LOSTSUN" type="event">
+    <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
+      <mod:findLike type="text">
+        <mod:selector>Do something onboard the ship.</mod:selector>
+        <mod:setValue>Do something onboard the ship.
+Storage Check</mod:setValue>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
+  <mod:findName name="LOSTSUN_MISSILES_DRIFT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Do something onboard the ship.</mod:selector>
@@ -8,16 +18,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_MISSILES_DRIFT">
-    <mod:findLike type="choice">
-      <mod:findLike type="text">
-        <mod:selector>Do something onboard the ship.</mod:selector>
-        <mod:setValue>Do something onboard the ship.
-Storage Check</mod:setValue>
-      </mod:findLike>
-    </mod:findLike>
-  </mod:findName>
-  <mod:findName name="LOSTSUN_SHRINE">
+  <mod:findName name="LOSTSUN_SHRINE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Lend them some missiles.</mod:selector>
@@ -26,10 +27,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_SHRINE">
+  <mod:findName name="LOSTSUN_SHRINE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Let them keep the missiles.</mod:selector>
             <mod:setValue>Let them keep the missiles.
@@ -40,10 +42,11 @@ Repair Hull(5$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_SHRINE">
+  <mod:findName name="LOSTSUN_SHRINE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Request that they give the spares back.</mod:selector>
             <mod:setValue>Request that they give the spares back.
@@ -53,8 +56,9 @@ Repair Hull(5$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_SHRINE">
+  <mod:findName name="LOSTSUN_SHRINE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Apologize and turn down their offer.</mod:selector>
         <mod:setValue>Apologize and turn down their offer.
@@ -62,8 +66,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_SHRINE">
+  <mod:findName name="LOSTSUN_SHRINE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -75,8 +80,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CACHE">
+  <mod:findName name="LOSTSUN_CACHE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Open it.</mod:selector>
         <mod:setValue>Open it.
@@ -86,8 +92,9 @@ Fight(HK: 33% Reward Standard(M))(CK: 33% Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CACHE">
+  <mod:findName name="LOSTSUN_CACHE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Don't risk it.</mod:selector>
         <mod:setValue>Don't risk it.
@@ -95,8 +102,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CACHE">
+  <mod:findName name="LOSTSUN_CACHE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -108,9 +116,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CACHE_OPEN">
+  <mod:findName name="LOSTSUN_CACHE_OPEN" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -119,8 +128,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_DONATION">
+  <mod:findName name="LOSTSUN_DONATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Contact them.</mod:selector>
         <mod:setValue>Contact them.
@@ -132,8 +142,9 @@ Gain a weapon(Giftlist Fire)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_DONATION">
+  <mod:findName name="LOSTSUN_DONATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -146,12 +157,14 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_DONATION">
+  <mod:findName name="LOSTSUN_DONATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -163,8 +176,9 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_DONATION">
+  <mod:findName name="LOSTSUN_DONATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -177,12 +191,14 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_DONATION">
+  <mod:findName name="LOSTSUN_DONATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -194,10 +210,12 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_DONATION">
+  <mod:findName name="LOSTSUN_DONATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="RECYCLER"/>
           <mod:findLike type="text">
             <mod:selector>(Recycler Module) Give them the augment.</mod:selector>
             <mod:setValue>(Recycler Module) Give them the augment.
@@ -208,12 +226,15 @@ Gain a weapon(Giftlist Fire)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_DONATION">
+  <mod:findName name="LOSTSUN_DONATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="RECYCLER"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -226,10 +247,12 @@ Gain a weapon(Giftlist Fire)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_DONATION">
+  <mod:findName name="LOSTSUN_DONATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>We cannot help.</mod:selector>
             <mod:setValue>We cannot help.
@@ -239,10 +262,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_DONATION">
+  <mod:findName name="LOSTSUN_DONATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -256,8 +281,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_DONATION">
+  <mod:findName name="LOSTSUN_DONATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Leave them.</mod:selector>
         <mod:setValue>Leave them.
@@ -265,8 +291,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_DONATION">
+  <mod:findName name="LOSTSUN_DONATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -278,8 +305,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ASTEROID_EXPLORE_LOSTSUN">
+  <mod:findName name="ASTEROID_EXPLORE_LOSTSUN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Explore the asteroid field.</mod:selector>
         <mod:setValue>Explore the asteroid field.
@@ -291,7 +319,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ASTEROID_EXPLORE_LOSTSUN">
+  <mod:findName name="ASTEROID_EXPLORE_LOSTSUN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Too dangerous. We'll just wait for the FTL to charge.</mod:selector>
@@ -300,10 +328,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ASTEROID_EXPLORE_LOSTSUN">
+  <mod:findName name="ASTEROID_EXPLORE_LOSTSUN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -313,8 +342,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ASTEROID_EXPLORE_LOSTSUN">
+  <mod:findName name="ASTEROID_EXPLORE_LOSTSUN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="SCRAP_COLLECTOR" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Scrap Recovery Arm) Attempt to mine the asteroids.</mod:selector>
         <mod:setValue>(Scrap Recovery Arm) Attempt to mine the asteroids.
@@ -322,8 +352,9 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ASTEROID_EXPLORE_LOSTSUN">
+  <mod:findName name="ASTEROID_EXPLORE_LOSTSUN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="BEAM_MINING" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Mining Equipment) Attempt to mine the asteroids.</mod:selector>
         <mod:setValue>(Mining Equipment) Attempt to mine the asteroids.
@@ -331,8 +362,9 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ASTEROID_EXPLORE_LOSTSUN">
+  <mod:findName name="ASTEROID_EXPLORE_LOSTSUN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="DRONE_CONTROL_BEAM_DRONE" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Beam Drone) Attempt to mine the asteroids. [-1|]</mod:selector>
         <mod:setValue>(Beam Drone) Attempt to mine the asteroids. [-1|]
@@ -341,8 +373,9 @@ Reward ~ Only(H)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CIVILIAN_RESCUE">
+  <mod:findName name="LOSTSUN_CIVILIAN_RESCUE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Protect the civilians.</mod:selector>
         <mod:setValue>Protect the civilians.
@@ -350,10 +383,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CIVILIAN_RESCUE">
+  <mod:findName name="LOSTSUN_CIVILIAN_RESCUE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -363,8 +398,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CIVILIAN_RESCUE">
+  <mod:findName name="LOSTSUN_CIVILIAN_RESCUE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the ships.</mod:selector>
         <mod:setValue>Ignore the ships.
@@ -372,8 +408,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CIVILIAN_RESCUE">
+  <mod:findName name="LOSTSUN_CIVILIAN_RESCUE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -385,8 +422,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGERS">
+  <mod:findName name="LOSTSUN_CHALLENGERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Fight them for a normal reward.</mod:selector>
         <mod:setValue>Fight them for a normal reward.
@@ -394,10 +432,12 @@ Fight(CK=HK: Reward ~ Only(L))(SR: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGERS">
+  <mod:findName name="LOSTSUN_CHALLENGERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -407,8 +447,9 @@ Fight(CK=HK: Reward ~ Only(L))(SR: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGERS">
+  <mod:findName name="LOSTSUN_CHALLENGERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Fight them without life support or medical systems.</mod:selector>
         <mod:setValue>Fight them without life support or medical systems.
@@ -416,10 +457,12 @@ Fight(CK=HK: Reward ~ Only(L))(SR: Reward Standard(M) System Upgrade(Oxygen x1))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGERS">
+  <mod:findName name="LOSTSUN_CHALLENGERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -429,8 +472,9 @@ Fight(CK=HK: Reward ~ Only(L))(SR: Reward Standard(M) System Upgrade(Oxygen x1))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGERS">
+  <mod:findName name="LOSTSUN_CHALLENGERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Fight them with a weakened reactor.</mod:selector>
         <mod:setValue>Fight them with a weakened reactor.
@@ -438,10 +482,12 @@ Fight(CK=HK: Reward ~ Only(L))(SR: Reward Standard(M) System Upgrade(Reactor x1)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGERS">
+  <mod:findName name="LOSTSUN_CHALLENGERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -451,8 +497,9 @@ Fight(CK=HK: Reward ~ Only(L))(SR: Reward Standard(M) System Upgrade(Reactor x1)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGERS">
+  <mod:findName name="LOSTSUN_CHALLENGERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Fight them with weakened systems.</mod:selector>
         <mod:setValue>Fight them with weakened systems.
@@ -460,10 +507,12 @@ Fight(CK=HK: Reward ~ Only(L))(SR: Reward Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGERS">
+  <mod:findName name="LOSTSUN_CHALLENGERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -473,8 +522,9 @@ Fight(CK=HK: Reward ~ Only(L))(SR: Reward Item(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGERS">
+  <mod:findName name="LOSTSUN_CHALLENGERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Fight them with severely weakened systems.</mod:selector>
         <mod:setValue>Fight them with severely weakened systems.
@@ -482,10 +532,12 @@ Fight(CK=HK: Reward ~ Only(L))(SR: Reward Item(H) System Upgrade(Reactor x1) Rep
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGERS">
+  <mod:findName name="LOSTSUN_CHALLENGERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -495,7 +547,7 @@ Fight(CK=HK: Reward ~ Only(L))(SR: Reward Item(H) System Upgrade(Reactor x1) Rep
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGERS">
+  <mod:findName name="LOSTSUN_CHALLENGERS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>We aren't looking for a fight.</mod:selector>
@@ -504,10 +556,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGERS">
+  <mod:findName name="LOSTSUN_CHALLENGERS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -517,8 +570,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_PRISONERS">
+  <mod:findName name="LOSTSUN_PRISONERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the barricade and free the civilians.</mod:selector>
         <mod:setValue>Attack the barricade and free the civilians.
@@ -527,10 +581,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_PRISONERS">
+  <mod:findName name="LOSTSUN_PRISONERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -540,8 +596,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_PRISONERS">
+  <mod:findName name="LOSTSUN_PRISONERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the patrol ship.</mod:selector>
         <mod:setValue>Attack the patrol ship.
@@ -549,10 +606,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_PRISONERS">
+  <mod:findName name="LOSTSUN_PRISONERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -562,8 +621,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_PRISONERS">
+  <mod:findName name="LOSTSUN_PRISONERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="cloaking"/>
       <mod:findLike type="text">
         <mod:selector>(Cloaking) Wait for the patrol ship to pass by, then sabotage their defenses.</mod:selector>
         <mod:setValue>(Cloaking) Wait for the patrol ship to pass by, then sabotage their defenses.
@@ -572,10 +632,12 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_PRISONERS">
+  <mod:findName name="LOSTSUN_PRISONERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="cloaking"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -585,8 +647,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_ROCK_SPY">
+  <mod:findName name="LOSTSUN_ROCK_SPY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Pursue them.</mod:selector>
         <mod:setValue>Pursue them.
@@ -595,8 +658,9 @@ Fight(CK: 33% Reward Standard(H))(HK: 33% Reward Standard(M))(SR: 7% Reward Stuf
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_ROCK_SPY">
+  <mod:findName name="LOSTSUN_ROCK_SPY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="4"/>
       <mod:findLike type="text">
         <mod:selector>(Upg. Engines) Use your improved engines to track them down.</mod:selector>
         <mod:setValue>(Upg. Engines) Use your improved engines to track them down.
@@ -604,10 +668,12 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_ROCK_SPY">
+  <mod:findName name="LOSTSUN_ROCK_SPY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="4"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -617,9 +683,10 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_ROCK_SPY_PURSUE">
+  <mod:findName name="LOSTSUN_ROCK_SPY_PURSUE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -628,8 +695,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_MANTIS_LOST">
+  <mod:findName name="LOSTSUN_MANTIS_LOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the Mantis.</mod:selector>
         <mod:setValue>Attack the Mantis.
@@ -637,10 +705,12 @@ Fight(HK: Reward Standard(M))(CK: 20% Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_MANTIS_LOST">
+  <mod:findName name="LOSTSUN_MANTIS_LOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -650,8 +720,9 @@ Fight(HK: Reward Standard(M))(CK: 20% Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_MANTIS_LOST">
+  <mod:findName name="LOSTSUN_MANTIS_LOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Hail them.</mod:selector>
         <mod:setValue>Hail them.
@@ -659,10 +730,12 @@ Fight(HK: Reward Standard(L) 33% Reward ~ Only(L) 33% Gain a crew(Mantis) 33% 2â
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_MANTIS_LOST">
+  <mod:findName name="LOSTSUN_MANTIS_LOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -672,8 +745,9 @@ Fight(HK: Reward Standard(L) 33% Reward ~ Only(L) 33% Gain a crew(Mantis) 33% 2â
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_MANTIS_LOST">
+  <mod:findName name="LOSTSUN_MANTIS_LOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Leave.</mod:selector>
         <mod:setValue>Leave.
@@ -681,8 +755,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_MANTIS_LOST">
+  <mod:findName name="LOSTSUN_MANTIS_LOST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -694,8 +769,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE">
+  <mod:findName name="LOSTSUN_CHALLENGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Answer the call.</mod:selector>
         <mod:setValue>Answer the call.
@@ -703,10 +779,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE">
+  <mod:findName name="LOSTSUN_CHALLENGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Agree.</mod:selector>
             <mod:setValue>Agree.
@@ -716,12 +794,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE">
+  <mod:findName name="LOSTSUN_CHALLENGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>The use of propaganda to lie to their citizens.</mod:selector>
                 <mod:setValue>The use of propaganda to lie to their citizens.
@@ -733,12 +814,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE">
+  <mod:findName name="LOSTSUN_CHALLENGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Founding the Coalition.</mod:selector>
                 <mod:setValue>Founding the Coalition.
@@ -750,14 +834,18 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE">
+  <mod:findName name="LOSTSUN_CHALLENGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -771,12 +859,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE">
+  <mod:findName name="LOSTSUN_CHALLENGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Being a bunch of assholes.</mod:selector>
                 <mod:setValue>Being a bunch of assholes.
@@ -788,14 +879,18 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE">
+  <mod:findName name="LOSTSUN_CHALLENGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -809,12 +904,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE">
+  <mod:findName name="LOSTSUN_CHALLENGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_LOSTSUN"/>
               <mod:findLike type="text">
                 <mod:selector>(Lost Sun Crew) The use of propaganda to lie to their citizens.</mod:selector>
                 <mod:setValue>(Lost Sun Crew) The use of propaganda to lie to their citizens.
@@ -826,10 +924,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE">
+  <mod:findName name="LOSTSUN_CHALLENGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Refuse.</mod:selector>
             <mod:setValue>Refuse.
@@ -839,12 +939,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE">
+  <mod:findName name="LOSTSUN_CHALLENGE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -856,8 +959,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_1">
+  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_1" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -865,10 +969,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_1">
+  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_1" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>The Rockmen.</mod:selector>
             <mod:setValue>The Rockmen.
@@ -878,12 +984,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_1">
+  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_1" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -895,10 +1004,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_1">
+  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_1" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>The Crystals.</mod:selector>
             <mod:setValue>The Crystals.
@@ -908,12 +1019,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_1">
+  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_1" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -925,10 +1039,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_1">
+  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_1" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>None.</mod:selector>
             <mod:setValue>None.
@@ -938,10 +1054,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_1">
+  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_1" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>The Federation.</mod:selector>
             <mod:setValue>The Federation.
@@ -951,12 +1069,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_1">
+  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_1" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -968,10 +1089,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_1">
+  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_1" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_LOSTSUN"/>
           <mod:findLike type="text">
             <mod:selector>(Lost Sun Crew) None. There is no such thing as a holy race.</mod:selector>
             <mod:setValue>(Lost Sun Crew) None. There is no such thing as a holy race.
@@ -981,8 +1104,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_2">
+  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_2" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -990,10 +1114,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_2">
+  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_2" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>The Federation has been supporting the Lost Suns only to cripple the Coalition.</mod:selector>
             <mod:setValue>The Federation has been supporting the Lost Suns only to cripple the Coalition.
@@ -1003,10 +1129,12 @@ Gain a crew(Rock Commando)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_2">
+  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_2" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>The Federation is as responsible for the Rebellion as the Rebels themselves.</mod:selector>
             <mod:setValue>The Federation is as responsible for the Rebellion as the Rebels themselves.
@@ -1016,10 +1144,12 @@ Gain a crew(Rock Commando)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_2">
+  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_2" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>The Federation has committed as many warcrimes as any of their enemies.</mod:selector>
             <mod:setValue>The Federation has committed as many warcrimes as any of their enemies.
@@ -1029,10 +1159,12 @@ Gain a crew(Rock Commando)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_2">
+  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_2" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>The Federation has never told a lie.</mod:selector>
             <mod:setValue>The Federation has never told a lie.
@@ -1042,12 +1174,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_2">
+  <mod:findName name="LOSTSUN_CHALLENGE_CORRECT_2" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1059,8 +1194,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_ROCK_SETTLEMENT">
+  <mod:findName name="LOSTSUN_ROCK_SETTLEMENT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Help the Rockmen and destroy the Lost Suns.</mod:selector>
         <mod:setValue>Help the Rockmen and destroy the Lost Suns.
@@ -1068,10 +1204,12 @@ Fight(HK: Reward Standard(L) 50% Repair Hull(7$) 50% Gain a crew(Rock))(CK: Rewa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_ROCK_SETTLEMENT">
+  <mod:findName name="LOSTSUN_ROCK_SETTLEMENT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1081,8 +1219,9 @@ Fight(HK: Reward Standard(L) 50% Repair Hull(7$) 50% Gain a crew(Rock))(CK: Rewa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_ROCK_SETTLEMENT">
+  <mod:findName name="LOSTSUN_ROCK_SETTLEMENT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Aid in the destruction of the settlement.</mod:selector>
         <mod:setValue>Aid in the destruction of the settlement.
@@ -1090,8 +1229,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_ROCK_SETTLEMENT">
+  <mod:findName name="LOSTSUN_ROCK_SETTLEMENT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1103,8 +1243,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_ROCK_SETTLEMENT">
+  <mod:findName name="LOSTSUN_ROCK_SETTLEMENT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the settlement.</mod:selector>
         <mod:setValue>Ignore the settlement.
@@ -1112,8 +1253,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_ROCK_SETTLEMENT">
+  <mod:findName name="LOSTSUN_ROCK_SETTLEMENT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1125,7 +1267,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_LOSTSUN_CIVILIAN">
+  <mod:findName name="DISTRESS_LOSTSUN_CIVILIAN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Lend some fuel.</mod:selector>
@@ -1136,10 +1278,11 @@ Repair Hull(3$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_LOSTSUN_CIVILIAN">
+  <mod:findName name="DISTRESS_LOSTSUN_CIVILIAN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1150,8 +1293,9 @@ Repair Hull(3$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_LOSTSUN_CIVILIAN">
+  <mod:findName name="DISTRESS_LOSTSUN_CIVILIAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Tell them that you cannot help.</mod:selector>
         <mod:setValue>Tell them that you cannot help.
@@ -1159,10 +1303,12 @@ Fight(CK: Reward Standard(M))(HK: Reward Standard(L))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_LOSTSUN_CIVILIAN">
+  <mod:findName name="DISTRESS_LOSTSUN_CIVILIAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1172,8 +1318,9 @@ Fight(CK: Reward Standard(M))(HK: Reward Standard(L))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_LOSTSUN_COALITION">
+  <mod:findName name="DISTRESS_LOSTSUN_COALITION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1181,8 +1328,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_DISRUPTION">
+  <mod:findName name="QUEST_LOSTSUN_DISRUPTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Hail them.</mod:selector>
         <mod:setValue>Hail them.
@@ -1190,10 +1338,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_DISRUPTION">
+  <mod:findName name="QUEST_LOSTSUN_DISRUPTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>We cannot risk our primary mission.</mod:selector>
             <mod:setValue>We cannot risk our primary mission.
@@ -1203,12 +1353,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_DISRUPTION">
+  <mod:findName name="QUEST_LOSTSUN_DISRUPTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1220,8 +1373,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_DISRUPTION">
+  <mod:findName name="QUEST_LOSTSUN_DISRUPTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>We should do the same.</mod:selector>
         <mod:setValue>We should do the same.
@@ -1229,8 +1383,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_DISRUPTION">
+  <mod:findName name="QUEST_LOSTSUN_DISRUPTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1242,8 +1397,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_DISRUPTION_QUEST">
+  <mod:findName name="QUEST_LOSTSUN_DISRUPTION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attempt to fire on the station from a distance.</mod:selector>
         <mod:setValue>Attempt to fire on the station from a distance.
@@ -1251,8 +1407,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_DISRUPTION_QUEST">
+  <mod:findName name="QUEST_LOSTSUN_DISRUPTION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="hacking"/>
       <mod:findLike type="text">
         <mod:selector>(Hacking) Shut down the station's systems.</mod:selector>
         <mod:setValue>(Hacking) Shut down the station's systems.
@@ -1260,10 +1417,12 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_DISRUPTION_QUEST">
+  <mod:findName name="QUEST_LOSTSUN_DISRUPTION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="hacking"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1273,8 +1432,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_DISRUPTION_QUEST">
+  <mod:findName name="QUEST_LOSTSUN_DISRUPTION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_SLUG"/>
       <mod:findLike type="text">
         <mod:selector>(Slug Crew) Have your Slug hack into their relay systems.</mod:selector>
         <mod:setValue>(Slug Crew) Have your Slug hack into their relay systems.
@@ -1282,10 +1442,12 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_DISRUPTION_QUEST">
+  <mod:findName name="QUEST_LOSTSUN_DISRUPTION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_SLUG"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1295,8 +1457,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_DISRUPTION_QUEST">
+  <mod:findName name="QUEST_LOSTSUN_DISRUPTION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ENGI"/>
       <mod:findLike type="text">
         <mod:selector>(Engi Crew) Have your Engi hack into their relay systems.</mod:selector>
         <mod:setValue>(Engi Crew) Have your Engi hack into their relay systems.
@@ -1304,10 +1467,12 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_DISRUPTION_QUEST">
+  <mod:findName name="QUEST_LOSTSUN_DISRUPTION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ENGI"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1317,8 +1482,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_DISRUPTION_QUEST">
+  <mod:findName name="QUEST_LOSTSUN_DISRUPTION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>There's nothing we can do.</mod:selector>
         <mod:setValue>There's nothing we can do.
@@ -1326,8 +1492,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_DISRUPTION_QUEST">
+  <mod:findName name="QUEST_LOSTSUN_DISRUPTION_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1339,8 +1506,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_ESCORT">
+  <mod:findName name="QUEST_LOSTSUN_ESCORT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Deny their request.</mod:selector>
         <mod:setValue>Deny their request.
@@ -1348,8 +1516,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_ESCORT">
+  <mod:findName name="QUEST_LOSTSUN_ESCORT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1361,8 +1530,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_ESCORT">
+  <mod:findName name="QUEST_LOSTSUN_ESCORT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Offer some ammo.</mod:selector>
         <mod:setValue>Offer some ammo.
@@ -1370,10 +1540,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_ESCORT">
+  <mod:findName name="QUEST_LOSTSUN_ESCORT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Deny their request.</mod:selector>
             <mod:setValue>Deny their request.
@@ -1383,10 +1555,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_LOSTSUN_ESCORT">
+  <mod:findName name="QUEST_LOSTSUN_ESCORT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -1400,8 +1574,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_ESCORT_QUEST">
+  <mod:findName name="LOSTSUN_ESCORT_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1409,8 +1584,9 @@ Fight(HK=CK: Reward Standard(H) Gain a weapon(Random))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_ESCORT_QUEST_RAID_WIN">
+  <mod:findName name="LOSTSUN_ESCORT_QUEST_RAID_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1420,10 +1596,12 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_ESCORT_QUEST_RAID_WIN">
+  <mod:findName name="LOSTSUN_ESCORT_QUEST_RAID_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Accept.</mod:selector>
             <mod:setValue>Accept.
@@ -1434,10 +1612,12 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_ESCORT_QUEST_RAID_WIN">
+  <mod:findName name="LOSTSUN_ESCORT_QUEST_RAID_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Sorry, but we don't need more crew.</mod:selector>
             <mod:setValue>Sorry, but we don't need more crew.
@@ -1447,8 +1627,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_LOSTSUN_REGULAR">
+  <mod:findName name="ENCOUNTER_LOSTSUN_REGULAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1456,8 +1637,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_LOSTSUN_SUN">
+  <mod:findName name="ENCOUNTER_LOSTSUN_SUN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1465,8 +1647,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_ROCK_LOSTSUN_REGULAR">
+  <mod:findName name="ENCOUNTER_ROCK_LOSTSUN_REGULAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1474,8 +1657,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_LOSTSUN_ROCK_ASTEROID">
+  <mod:findName name="ENCOUNTER_LOSTSUN_ROCK_ASTEROID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1483,8 +1667,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_COALITION_LOSTSUN_1">
+  <mod:findName name="ENCOUNTER_COALITION_LOSTSUN_1" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1492,8 +1677,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_COALITION_LOSTSUN_2">
+  <mod:findName name="ENCOUNTER_COALITION_LOSTSUN_2" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1501,8 +1687,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_ROCK_CHOICE">
+  <mod:findName name="LOSTSUN_ROCK_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the Rock.</mod:selector>
         <mod:setValue>Attack the Rock.
@@ -1510,10 +1697,12 @@ Fight(HK=CK: Reward Standard(M) Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_ROCK_CHOICE">
+  <mod:findName name="LOSTSUN_ROCK_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1523,8 +1712,9 @@ Fight(HK=CK: Reward Standard(M) Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_ROCK_CHOICE">
+  <mod:findName name="LOSTSUN_ROCK_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the Lost Sun.</mod:selector>
         <mod:setValue>Attack the Lost Sun.
@@ -1532,10 +1722,12 @@ Fight(HK=CK: Reward Standard(M) Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_ROCK_CHOICE">
+  <mod:findName name="LOSTSUN_ROCK_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1545,8 +1737,9 @@ Fight(HK=CK: Reward Standard(M) Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_FLEET_UNLOCK1">
+  <mod:findName name="LOSTSUN_FLEET_UNLOCK1" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>We don't have the time.</mod:selector>
         <mod:setValue>We don't have the time.
@@ -1554,8 +1747,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_FLEET_UNLOCK1">
+  <mod:findName name="LOSTSUN_FLEET_UNLOCK1" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1567,8 +1761,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_FLEET_UNLOCK2">
+  <mod:findName name="LOSTSUN_FLEET_UNLOCK2" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>The Inquisition has failed before.</mod:selector>
         <mod:setValue>The Inquisition has failed before.
@@ -1577,10 +1772,12 @@ Fight(CK=SR: &lt;#&gt;Unlock Ship(Lostsun))(HK: Reward ~ Only(H))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_FLEET_UNLOCK2">
+  <mod:findName name="LOSTSUN_FLEET_UNLOCK2" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Spoken like a true Lost Sun.</mod:selector>
             <mod:setValue>Spoken like a true Lost Sun.
@@ -1591,12 +1788,15 @@ Fight(CK=SR: &lt;#&gt;Unlock Ship(Lostsun))(HK: Reward ~ Only(H))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_FLEET_UNLOCK2">
+  <mod:findName name="LOSTSUN_FLEET_UNLOCK2" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1609,8 +1809,9 @@ Fight(CK=SR: &lt;#&gt;Unlock Ship(Lostsun))(HK: Reward ~ Only(H))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_FLEET_UNLOCK3">
+  <mod:findName name="LOSTSUN_FLEET_UNLOCK3" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1621,8 +1822,9 @@ Gain a weapon(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="LOSTSUN_FLEET_UNLOCK3">
+  <mod:findName name="LOSTSUN_FLEET_UNLOCK3" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="ach_boss_rockcruiser"/>
       <mod:findLike type="text">
         <mod:selector>As a matter of fact, I did overthrow the Rock government once.</mod:selector>
         <mod:setValue>As a matter of fact, I did overthrow the Rock government once.

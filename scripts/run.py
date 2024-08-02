@@ -502,12 +502,14 @@ def main(stat=False, packageConfig: dict={}):
                 #iterate over parents to children.
                 reversed_ancestors_list = list(reversed(list(original_element.iterancestors())))[1:]#exclude [0] that is root element.
                 reversed_ancestors_list.extend([original_element, target_choice.textElement])
-                for original_child in reversed_ancestors_list:
-                    name = original_child.get('name')
+                for child_element_original in reversed_ancestors_list:
+                    name = child_element_original.get('name')
                     if name:
-                        new_element = ModElement('findName', attrib={'name': name})
+                        new_element = ModElement('findName', attrib={'name': name, 'type': child_element_original.tag})
                     else:
-                        new_element = ModElement('findLike', attrib={'type': original_child.tag})
+                        new_element = ModElement('findLike', attrib={'type': child_element_original.tag})
+                        if len(child_element_original.attrib):
+                            new_element.append(ModElement('selector', attrib=child_element_original.attrib))
                     parent_element.append(new_element)
                     parent_element = new_element
                 

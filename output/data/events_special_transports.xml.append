@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="TRANSPORT_DESTROYED">
+  <mod:findName name="TRANSPORT_DESTROYED" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="SCRAP_COLLECTOR"/>
       <mod:findLike type="text">
         <mod:selector>(Scrap Arm) Use the arm to collect extra scrap.</mod:selector>
         <mod:setValue>(Scrap Arm) Use the arm to collect extra scrap.
@@ -8,8 +9,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_DESTROYED">
+  <mod:findName name="TRANSPORT_DESTROYED" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="DRONE_RECOVERY"/>
       <mod:findLike type="text">
         <mod:selector>(Drone Arm) Use the arm to collect extra drone parts.</mod:selector>
         <mod:setValue>(Drone Arm) Use the arm to collect extra drone parts.
@@ -17,8 +19,9 @@ Reward | Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_DESTROYED">
+  <mod:findName name="TRANSPORT_DESTROYED" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="MAGNET_ARM"/>
       <mod:findLike type="text">
         <mod:selector>(Magnet Arm) Use the magnet to draw in some extra supplies.</mod:selector>
         <mod:setValue>(Magnet Arm) Use the magnet to draw in some extra supplies.
@@ -26,7 +29,7 @@ Reward Stuff(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_UNION_LOOT">
+  <mod:findName name="TRANSPORT_UNION_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -35,10 +38,11 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_UNION_LOOT">
+  <mod:findName name="TRANSPORT_UNION_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -48,8 +52,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_UNION_LOOT">
+  <mod:findName name="TRANSPORT_UNION_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="UNION_CREW_MORAL"/>
       <mod:findLike type="text">
         <mod:selector>(Union Elite + Good Reputation) Talk to the transport.</mod:selector>
         <mod:setValue>(Union Elite + Good Reputation) Talk to the transport.
@@ -59,8 +64,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_UNION_LOOT">
+  <mod:findName name="TRANSPORT_UNION_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="UNION_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -73,8 +79,9 @@ Gain a weapon(List Loot Union)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_UNION_LOOT">
+  <mod:findName name="TRANSPORT_UNION_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="UNION_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -86,12 +93,14 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_UNION_LOOT">
+  <mod:findName name="TRANSPORT_UNION_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="UNION_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -103,10 +112,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_UNION_LOOT">
+  <mod:findName name="TRANSPORT_UNION_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="UNION_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Nevermind.</mod:selector>
             <mod:setValue>Nevermind.
@@ -116,12 +127,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_UNION_LOOT">
+  <mod:findName name="TRANSPORT_UNION_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="UNION_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -133,7 +147,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_UNION_LOOT">
+  <mod:findName name="TRANSPORT_UNION_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -142,10 +156,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_UNION_LOOT">
+  <mod:findName name="TRANSPORT_UNION_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -155,7 +170,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_MILITIA_LOOT">
+  <mod:findName name="TRANSPORT_MILITIA_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -164,10 +179,11 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_MILITIA_LOOT">
+  <mod:findName name="TRANSPORT_MILITIA_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -177,8 +193,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_MILITIA_LOOT">
+  <mod:findName name="TRANSPORT_MILITIA_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="UNION_CREW_MORAL"/>
       <mod:findLike type="text">
         <mod:selector>(Union Elite + Good Reputation) Talk to the transport.</mod:selector>
         <mod:setValue>(Union Elite + Good Reputation) Talk to the transport.
@@ -188,8 +205,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_MILITIA_LOOT">
+  <mod:findName name="TRANSPORT_MILITIA_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="UNION_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -202,8 +220,9 @@ Gain a weapon(List Loot Militia)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_MILITIA_LOOT">
+  <mod:findName name="TRANSPORT_MILITIA_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="UNION_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -215,12 +234,14 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_MILITIA_LOOT">
+  <mod:findName name="TRANSPORT_MILITIA_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="UNION_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -232,10 +253,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_MILITIA_LOOT">
+  <mod:findName name="TRANSPORT_MILITIA_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="UNION_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Nevermind.</mod:selector>
             <mod:setValue>Nevermind.
@@ -245,12 +268,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_MILITIA_LOOT">
+  <mod:findName name="TRANSPORT_MILITIA_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="UNION_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -262,7 +288,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_MILITIA_LOOT">
+  <mod:findName name="TRANSPORT_MILITIA_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -271,10 +297,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_MILITIA_LOOT">
+  <mod:findName name="TRANSPORT_MILITIA_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -284,7 +311,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FEDERATION_LOOT">
+  <mod:findName name="TRANSPORT_FEDERATION_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -293,10 +320,11 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FEDERATION_LOOT">
+  <mod:findName name="TRANSPORT_FEDERATION_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -306,8 +334,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FEDERATION_LOOT">
+  <mod:findName name="TRANSPORT_FEDERATION_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="FEDERATION_CREW_MORAL"/>
       <mod:findLike type="text">
         <mod:selector>(Federation Elite + Good Reputation) Talk to the transport.</mod:selector>
         <mod:setValue>(Federation Elite + Good Reputation) Talk to the transport.
@@ -317,8 +346,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FEDERATION_LOOT">
+  <mod:findName name="TRANSPORT_FEDERATION_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="FEDERATION_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -331,8 +361,9 @@ Gain a weapon(List Loot Federation)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FEDERATION_LOOT">
+  <mod:findName name="TRANSPORT_FEDERATION_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="FEDERATION_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -344,12 +375,14 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FEDERATION_LOOT">
+  <mod:findName name="TRANSPORT_FEDERATION_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="FEDERATION_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -361,10 +394,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FEDERATION_LOOT">
+  <mod:findName name="TRANSPORT_FEDERATION_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="FEDERATION_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Nevermind.</mod:selector>
             <mod:setValue>Nevermind.
@@ -374,12 +409,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FEDERATION_LOOT">
+  <mod:findName name="TRANSPORT_FEDERATION_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="FEDERATION_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -391,7 +429,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FEDERATION_LOOT">
+  <mod:findName name="TRANSPORT_FEDERATION_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -400,10 +438,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FEDERATION_LOOT">
+  <mod:findName name="TRANSPORT_FEDERATION_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -413,7 +452,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_REBEL_LOOT">
+  <mod:findName name="TRANSPORT_REBEL_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -422,10 +461,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_REBEL_LOOT">
+  <mod:findName name="TRANSPORT_REBEL_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -435,7 +475,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_REBEL_LOOT">
+  <mod:findName name="TRANSPORT_REBEL_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -444,10 +484,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_REBEL_LOOT">
+  <mod:findName name="TRANSPORT_REBEL_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -457,8 +498,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_JERRY_LOOT">
+  <mod:findName name="TRANSPORT_JERRY_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_jerry"/>
       <mod:findLike type="text">
         <mod:selector>Jerry is on board... do you have anything for him?</mod:selector>
         <mod:setValue>Jerry is on board... do you have anything for him?
@@ -466,10 +508,12 @@ Gain a weapon(Horse Gun)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_JERRY_LOOT">
+  <mod:findName name="TRANSPORT_JERRY_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_jerry"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -479,7 +523,7 @@ Gain a weapon(Horse Gun)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_JERRY_LOOT">
+  <mod:findName name="TRANSPORT_JERRY_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -488,10 +532,11 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_JERRY_LOOT">
+  <mod:findName name="TRANSPORT_JERRY_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -501,7 +546,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_JERRY_LOOT">
+  <mod:findName name="TRANSPORT_JERRY_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -510,10 +555,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_JERRY_LOOT">
+  <mod:findName name="TRANSPORT_JERRY_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -523,8 +569,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_DESTROYED_JERRY">
+  <mod:findName name="TRANSPORT_DESTROYED_JERRY" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="SCRAP_COLLECTOR"/>
       <mod:findLike type="text">
         <mod:selector>(Scrap Arm) Use the arm to collect extra scrap.</mod:selector>
         <mod:setValue>(Scrap Arm) Use the arm to collect extra scrap.
@@ -532,8 +579,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_DESTROYED_JERRY">
+  <mod:findName name="TRANSPORT_DESTROYED_JERRY" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="DRONE_RECOVERY"/>
       <mod:findLike type="text">
         <mod:selector>(Drone Arm) Use the arm to collect extra drone parts.</mod:selector>
         <mod:setValue>(Drone Arm) Use the arm to collect extra drone parts.
@@ -541,8 +589,9 @@ Reward | Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_DESTROYED_JERRY">
+  <mod:findName name="TRANSPORT_DESTROYED_JERRY" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="MAGNET_ARM"/>
       <mod:findLike type="text">
         <mod:selector>(Magnet Arm) Use the magnet to draw in some extra supplies.</mod:selector>
         <mod:setValue>(Magnet Arm) Use the magnet to draw in some extra supplies.
@@ -550,8 +599,9 @@ Reward Stuff(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_CAPTURE_JERRY">
+  <mod:findName name="TRANSPORT_CAPTURE_JERRY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Open the cargo.</mod:selector>
         <mod:setValue>Open the cargo.
@@ -559,7 +609,7 @@ Gain a weapon(Horse Gun)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_AUTO_LOOT">
+  <mod:findName name="TRANSPORT_AUTO_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Capture their cargo.</mod:selector>
@@ -568,10 +618,11 @@ Fight(HK: Reward Standard No Item(M) Gain a drone(List Loot Auto))</mod:setValue
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_AUTO_LOOT">
+  <mod:findName name="TRANSPORT_AUTO_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -581,7 +632,7 @@ Fight(HK: Reward Standard No Item(M) Gain a drone(List Loot Auto))</mod:setValue
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_AUTO_LOOT">
+  <mod:findName name="TRANSPORT_AUTO_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -590,10 +641,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_AUTO_LOOT">
+  <mod:findName name="TRANSPORT_AUTO_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -603,7 +655,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ESTATE_LOOT">
+  <mod:findName name="TRANSPORT_ESTATE_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Capture their cargo.</mod:selector>
@@ -612,10 +664,11 @@ Fight(HK: Reward Standard No Item(M) Gain a drone(List Loot Estate))</mod:setVal
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ESTATE_LOOT">
+  <mod:findName name="TRANSPORT_ESTATE_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -625,7 +678,7 @@ Fight(HK: Reward Standard No Item(M) Gain a drone(List Loot Estate))</mod:setVal
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ESTATE_LOOT">
+  <mod:findName name="TRANSPORT_ESTATE_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -634,10 +687,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ESTATE_LOOT">
+  <mod:findName name="TRANSPORT_ESTATE_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -647,7 +701,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ENGI_LOOT">
+  <mod:findName name="TRANSPORT_ENGI_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -656,10 +710,11 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ENGI_LOOT">
+  <mod:findName name="TRANSPORT_ENGI_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -669,8 +724,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ENGI_LOOT">
+  <mod:findName name="TRANSPORT_ENGI_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="ENGI_CREW_MORAL"/>
       <mod:findLike type="text">
         <mod:selector>(Harmony Elite + Good Reputation) Talk to the transport.</mod:selector>
         <mod:setValue>(Harmony Elite + Good Reputation) Talk to the transport.
@@ -680,8 +736,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ENGI_LOOT">
+  <mod:findName name="TRANSPORT_ENGI_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="ENGI_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -694,8 +751,9 @@ Gain a drone(List Loot Engi)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ENGI_LOOT">
+  <mod:findName name="TRANSPORT_ENGI_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="ENGI_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -707,12 +765,14 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ENGI_LOOT">
+  <mod:findName name="TRANSPORT_ENGI_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="ENGI_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -724,10 +784,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ENGI_LOOT">
+  <mod:findName name="TRANSPORT_ENGI_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="ENGI_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Nevermind.</mod:selector>
             <mod:setValue>Nevermind.
@@ -737,12 +799,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ENGI_LOOT">
+  <mod:findName name="TRANSPORT_ENGI_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="ENGI_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -754,7 +819,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ENGI_LOOT">
+  <mod:findName name="TRANSPORT_ENGI_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -763,10 +828,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ENGI_LOOT">
+  <mod:findName name="TRANSPORT_ENGI_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -776,7 +842,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_SEPARATIST_LOOT">
+  <mod:findName name="TRANSPORT_SEPARATIST_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -785,10 +851,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a drone(List L
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_SEPARATIST_LOOT">
+  <mod:findName name="TRANSPORT_SEPARATIST_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -798,7 +865,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a drone(List L
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_SEPARATIST_LOOT">
+  <mod:findName name="TRANSPORT_SEPARATIST_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -807,10 +874,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_SEPARATIST_LOOT">
+  <mod:findName name="TRANSPORT_SEPARATIST_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -820,7 +888,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ZOLTAN_LOOT">
+  <mod:findName name="TRANSPORT_ZOLTAN_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -829,10 +897,11 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ZOLTAN_LOOT">
+  <mod:findName name="TRANSPORT_ZOLTAN_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -842,8 +911,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ZOLTAN_LOOT">
+  <mod:findName name="TRANSPORT_ZOLTAN_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="ZOLTAN_CREW_MORAL"/>
       <mod:findLike type="text">
         <mod:selector>(Ministry Elite + Good Reputation) Talk to the transport.</mod:selector>
         <mod:setValue>(Ministry Elite + Good Reputation) Talk to the transport.
@@ -853,8 +923,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ZOLTAN_LOOT">
+  <mod:findName name="TRANSPORT_ZOLTAN_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="ZOLTAN_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -867,8 +938,9 @@ Gain a weapon(List Loot Zoltan)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ZOLTAN_LOOT">
+  <mod:findName name="TRANSPORT_ZOLTAN_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="ZOLTAN_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -880,12 +952,14 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ZOLTAN_LOOT">
+  <mod:findName name="TRANSPORT_ZOLTAN_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="ZOLTAN_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -897,10 +971,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ZOLTAN_LOOT">
+  <mod:findName name="TRANSPORT_ZOLTAN_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="ZOLTAN_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Nevermind.</mod:selector>
             <mod:setValue>Nevermind.
@@ -910,12 +986,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ZOLTAN_LOOT">
+  <mod:findName name="TRANSPORT_ZOLTAN_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="ZOLTAN_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -927,7 +1006,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ZOLTAN_LOOT">
+  <mod:findName name="TRANSPORT_ZOLTAN_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -936,10 +1015,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ZOLTAN_LOOT">
+  <mod:findName name="TRANSPORT_ZOLTAN_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -949,7 +1029,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_DUSKBRINGER_LOOT">
+  <mod:findName name="TRANSPORT_DUSKBRINGER_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -958,10 +1038,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_DUSKBRINGER_LOOT">
+  <mod:findName name="TRANSPORT_DUSKBRINGER_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -971,7 +1052,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_DUSKBRINGER_LOOT">
+  <mod:findName name="TRANSPORT_DUSKBRINGER_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -980,10 +1061,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_DUSKBRINGER_LOOT">
+  <mod:findName name="TRANSPORT_DUSKBRINGER_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -993,7 +1075,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_MANTIS_LOOT">
+  <mod:findName name="TRANSPORT_MANTIS_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -1002,10 +1084,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_MANTIS_LOOT">
+  <mod:findName name="TRANSPORT_MANTIS_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1015,7 +1098,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_MANTIS_LOOT">
+  <mod:findName name="TRANSPORT_MANTIS_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -1024,10 +1107,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_MANTIS_LOOT">
+  <mod:findName name="TRANSPORT_MANTIS_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1037,7 +1121,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT">
+  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -1046,10 +1130,11 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT">
+  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1059,8 +1144,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT">
+  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="FREEMANTIS_CREW_MORAL"/>
       <mod:findLike type="text">
         <mod:selector>(Free Mantis Elite + Good Reputation) Talk to the transport.</mod:selector>
         <mod:setValue>(Free Mantis Elite + Good Reputation) Talk to the transport.
@@ -1070,8 +1156,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT">
+  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="FREEMANTIS_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1084,8 +1171,9 @@ Gain a weapon(List Loot Freemantis)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT">
+  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="FREEMANTIS_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1097,12 +1185,14 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT">
+  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="FREEMANTIS_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1114,10 +1204,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT">
+  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="FREEMANTIS_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Nevermind.</mod:selector>
             <mod:setValue>Nevermind.
@@ -1127,12 +1219,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT">
+  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="FREEMANTIS_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -1144,7 +1239,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT">
+  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -1153,10 +1248,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT">
+  <mod:findName name="TRANSPORT_FREEMANTIS_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1166,7 +1262,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ORCHID_LOOT">
+  <mod:findName name="TRANSPORT_ORCHID_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -1175,10 +1271,11 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ORCHID_LOOT">
+  <mod:findName name="TRANSPORT_ORCHID_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1188,8 +1285,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ORCHID_LOOT">
+  <mod:findName name="TRANSPORT_ORCHID_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="ORCHID_CREW_MORAL"/>
       <mod:findLike type="text">
         <mod:selector>(Gathering Elite + Good Reputation) Talk to the transport.</mod:selector>
         <mod:setValue>(Gathering Elite + Good Reputation) Talk to the transport.
@@ -1199,8 +1297,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ORCHID_LOOT">
+  <mod:findName name="TRANSPORT_ORCHID_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="ORCHID_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1213,8 +1312,9 @@ Gain a weapon(List Loot Orchid)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ORCHID_LOOT">
+  <mod:findName name="TRANSPORT_ORCHID_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="ORCHID_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1226,12 +1326,14 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ORCHID_LOOT">
+  <mod:findName name="TRANSPORT_ORCHID_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="ORCHID_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1243,10 +1345,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ORCHID_LOOT">
+  <mod:findName name="TRANSPORT_ORCHID_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="ORCHID_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Nevermind.</mod:selector>
             <mod:setValue>Nevermind.
@@ -1256,12 +1360,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ORCHID_LOOT">
+  <mod:findName name="TRANSPORT_ORCHID_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="ORCHID_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -1273,7 +1380,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ORCHID_LOOT">
+  <mod:findName name="TRANSPORT_ORCHID_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -1282,10 +1389,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ORCHID_LOOT">
+  <mod:findName name="TRANSPORT_ORCHID_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1295,7 +1403,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_VAMPWEED_LOOT">
+  <mod:findName name="TRANSPORT_VAMPWEED_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -1304,10 +1412,11 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_VAMPWEED_LOOT">
+  <mod:findName name="TRANSPORT_VAMPWEED_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1317,8 +1426,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_VAMPWEED_LOOT">
+  <mod:findName name="TRANSPORT_VAMPWEED_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="VAMPWEED_CREW_MORAL"/>
       <mod:findLike type="text">
         <mod:selector>(Confederate Elite + Good Reputation) Talk to the transport.</mod:selector>
         <mod:setValue>(Confederate Elite + Good Reputation) Talk to the transport.
@@ -1328,8 +1438,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_VAMPWEED_LOOT">
+  <mod:findName name="TRANSPORT_VAMPWEED_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="VAMPWEED_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1342,8 +1453,9 @@ Gain a weapon(List Loot Vampweed)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_VAMPWEED_LOOT">
+  <mod:findName name="TRANSPORT_VAMPWEED_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="VAMPWEED_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1355,12 +1467,14 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_VAMPWEED_LOOT">
+  <mod:findName name="TRANSPORT_VAMPWEED_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="VAMPWEED_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1372,10 +1486,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_VAMPWEED_LOOT">
+  <mod:findName name="TRANSPORT_VAMPWEED_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="VAMPWEED_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Nevermind.</mod:selector>
             <mod:setValue>Nevermind.
@@ -1385,12 +1501,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_VAMPWEED_LOOT">
+  <mod:findName name="TRANSPORT_VAMPWEED_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="VAMPWEED_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -1402,7 +1521,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_VAMPWEED_LOOT">
+  <mod:findName name="TRANSPORT_VAMPWEED_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -1411,10 +1530,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_VAMPWEED_LOOT">
+  <mod:findName name="TRANSPORT_VAMPWEED_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1424,7 +1544,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_CRYSTAL_LOOT">
+  <mod:findName name="TRANSPORT_CRYSTAL_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -1433,10 +1553,11 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_CRYSTAL_LOOT">
+  <mod:findName name="TRANSPORT_CRYSTAL_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1446,8 +1567,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_CRYSTAL_LOOT">
+  <mod:findName name="TRANSPORT_CRYSTAL_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="CRYSTAL_CREW_MORAL"/>
       <mod:findLike type="text">
         <mod:selector>(Imperial Elite + Good Reputation) Talk to the transport.</mod:selector>
         <mod:setValue>(Imperial Elite + Good Reputation) Talk to the transport.
@@ -1457,8 +1579,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_CRYSTAL_LOOT">
+  <mod:findName name="TRANSPORT_CRYSTAL_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="CRYSTAL_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1471,8 +1594,9 @@ Gain a weapon(List Loot Crystal)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_CRYSTAL_LOOT">
+  <mod:findName name="TRANSPORT_CRYSTAL_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="CRYSTAL_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1484,12 +1608,14 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_CRYSTAL_LOOT">
+  <mod:findName name="TRANSPORT_CRYSTAL_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="CRYSTAL_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1501,10 +1627,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_CRYSTAL_LOOT">
+  <mod:findName name="TRANSPORT_CRYSTAL_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="CRYSTAL_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Nevermind.</mod:selector>
             <mod:setValue>Nevermind.
@@ -1514,12 +1642,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_CRYSTAL_LOOT">
+  <mod:findName name="TRANSPORT_CRYSTAL_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="CRYSTAL_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -1531,7 +1662,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_CRYSTAL_LOOT">
+  <mod:findName name="TRANSPORT_CRYSTAL_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -1540,10 +1671,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_CRYSTAL_LOOT">
+  <mod:findName name="TRANSPORT_CRYSTAL_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1553,7 +1685,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ROCK_LOOT">
+  <mod:findName name="TRANSPORT_ROCK_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -1562,10 +1694,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ROCK_LOOT">
+  <mod:findName name="TRANSPORT_ROCK_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1575,7 +1708,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ROCK_LOOT">
+  <mod:findName name="TRANSPORT_ROCK_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -1584,10 +1717,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ROCK_LOOT">
+  <mod:findName name="TRANSPORT_ROCK_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1597,7 +1731,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_LOSTSUN_LOOT">
+  <mod:findName name="TRANSPORT_LOSTSUN_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -1606,10 +1740,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_LOSTSUN_LOOT">
+  <mod:findName name="TRANSPORT_LOSTSUN_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1619,7 +1754,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_LOSTSUN_LOOT">
+  <mod:findName name="TRANSPORT_LOSTSUN_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -1628,10 +1763,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_LOSTSUN_LOOT">
+  <mod:findName name="TRANSPORT_LOSTSUN_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1641,7 +1777,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_SLUG_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_SLUG_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -1650,10 +1786,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_SLUG_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_SLUG_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1663,7 +1800,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_SLUG_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_SLUG_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -1672,10 +1809,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_SLUG_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_SLUG_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1685,7 +1823,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_KNIGHT_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_KNIGHT_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -1694,10 +1832,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_KNIGHT_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_KNIGHT_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1707,7 +1846,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_KNIGHT_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_KNIGHT_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -1716,10 +1855,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_KNIGHT_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_KNIGHT_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1729,7 +1869,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_LEECH_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_LEECH_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -1738,10 +1878,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_LEECH_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_LEECH_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1751,7 +1892,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_LEECH_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_LEECH_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -1760,10 +1901,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_LEECH_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_LEECH_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1773,7 +1915,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_HEKTAR_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_HEKTAR_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -1782,10 +1924,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(Modul
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_HEKTAR_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_HEKTAR_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1795,7 +1938,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(Modul
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_HEKTAR_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_HEKTAR_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -1804,10 +1947,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_HEKTAR_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_HEKTAR_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1817,7 +1961,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_CLAN_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_CLAN_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -1826,10 +1970,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_CLAN_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_CLAN_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1839,7 +1984,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_CLAN_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_CLAN_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -1848,10 +1993,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_CLAN_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_CLAN_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1861,7 +2007,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -1870,10 +2016,11 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1883,8 +2030,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="SHELL_CREW_MORAL"/>
       <mod:findLike type="text">
         <mod:selector>(Geniocracy Elite + Good Reputation) Talk to the transport.</mod:selector>
         <mod:setValue>(Geniocracy Elite + Good Reputation) Talk to the transport.
@@ -1894,8 +2042,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="SHELL_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1908,8 +2057,9 @@ Gain a weapon(List Loot Shell)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="SHELL_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1921,12 +2071,14 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="SHELL_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1938,10 +2090,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="SHELL_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Nevermind.</mod:selector>
             <mod:setValue>Nevermind.
@@ -1951,12 +2105,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="SHELL_CREW_MORAL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -1968,7 +2125,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -1977,10 +2134,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_SHELL_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1990,7 +2148,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_COALITION_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_COALITION_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -1999,10 +2157,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_COALITION_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_COALITION_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2012,7 +2171,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_COALITION_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_COALITION_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -2021,10 +2180,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_COALITION_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_COALITION_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -2034,7 +2194,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_LANIUS_LOOT">
+  <mod:findName name="TRANSPORT_LANIUS_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -2043,10 +2203,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_LANIUS_LOOT">
+  <mod:findName name="TRANSPORT_LANIUS_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2056,7 +2217,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_LANIUS_LOOT">
+  <mod:findName name="TRANSPORT_LANIUS_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -2065,10 +2226,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_LANIUS_LOOT">
+  <mod:findName name="TRANSPORT_LANIUS_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -2078,7 +2240,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_AUG_LOOT">
+  <mod:findName name="TRANSPORT_AUG_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -2087,10 +2249,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a drone(List L
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_AUG_LOOT">
+  <mod:findName name="TRANSPORT_AUG_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2100,7 +2263,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a drone(List L
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_AUG_LOOT">
+  <mod:findName name="TRANSPORT_AUG_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -2109,10 +2272,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_AUG_LOOT">
+  <mod:findName name="TRANSPORT_AUG_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -2122,7 +2286,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_DYNASTY_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_DYNASTY_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -2131,10 +2295,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_DYNASTY_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_DYNASTY_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2144,7 +2309,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_DYNASTY_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_DYNASTY_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -2153,10 +2318,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_TRANSPORT_DYNASTY_LOOT">
+  <mod:findName name="NEBULA_TRANSPORT_DYNASTY_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -2166,7 +2332,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ANCIENT_LOOT">
+  <mod:findName name="TRANSPORT_ANCIENT_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -2175,10 +2341,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(H) Gain a weapon(Giftl
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ANCIENT_LOOT">
+  <mod:findName name="TRANSPORT_ANCIENT_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2188,7 +2355,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(H) Gain a weapon(Giftl
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ANCIENT_LOOT">
+  <mod:findName name="TRANSPORT_ANCIENT_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -2197,10 +2364,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ANCIENT_LOOT">
+  <mod:findName name="TRANSPORT_ANCIENT_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -2210,7 +2378,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ROYAL_LOOT">
+  <mod:findName name="TRANSPORT_ROYAL_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -2219,10 +2387,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(H) Gain a crew(Cogniti
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ROYAL_LOOT">
+  <mod:findName name="TRANSPORT_ROYAL_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2232,7 +2401,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(H) Gain a crew(Cogniti
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ROYAL_LOOT">
+  <mod:findName name="TRANSPORT_ROYAL_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -2241,10 +2410,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_ROYAL_LOOT">
+  <mod:findName name="TRANSPORT_ROYAL_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -2254,8 +2424,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_CAPTURE_ROYAL">
+  <mod:findName name="TRANSPORT_CAPTURE_ROYAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2264,7 +2435,7 @@ Gain a weapon(Giftlist Royal)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_CULTIST_LOOT">
+  <mod:findName name="TRANSPORT_CULTIST_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Demand the surrender of their goods.</mod:selector>
@@ -2273,10 +2444,11 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_CULTIST_LOOT">
+  <mod:findName name="TRANSPORT_CULTIST_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2286,7 +2458,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard No Item(M) Gain a weapon(List 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_CULTIST_LOOT">
+  <mod:findName name="TRANSPORT_CULTIST_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the ship.</mod:selector>
@@ -2295,10 +2467,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="TRANSPORT_CULTIST_LOOT">
+  <mod:findName name="TRANSPORT_CULTIST_LOOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.

@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="SALVAGE_DEFAULT_MINEFIELD">
+  <mod:findName name="SALVAGE_DEFAULT_MINEFIELD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Take the risk.</mod:selector>
         <mod:setValue>Take the risk.
@@ -10,8 +11,9 @@
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_MINEFIELD">
+  <mod:findName name="SALVAGE_DEFAULT_MINEFIELD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="rock_crusader"/>
       <mod:findLike type="text">
         <mod:selector>(Crusader Crew) Your Crusader knows a lot about explosives, and can also take a hit.</mod:selector>
         <mod:setValue>(Crusader Crew) Your Crusader knows a lot about explosives, and can also take a hit.
@@ -19,8 +21,9 @@ Reward }(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_MINEFIELD">
+  <mod:findName name="SALVAGE_DEFAULT_MINEFIELD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="rock_paladin"/>
       <mod:findLike type="text">
         <mod:selector>(Paladin Crew) Your Paladin knows a lot about explosives, and can also take a hit.</mod:selector>
         <mod:setValue>(Paladin Crew) Your Paladin knows a lot about explosives, and can also take a hit.
@@ -28,8 +31,9 @@ Reward }(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_MINEFIELD">
+  <mod:findName name="SALVAGE_DEFAULT_MINEFIELD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_LANIUS"/>
       <mod:findLike type="text">
         <mod:selector>(Lanius Crew) Your Lanius can melt down some mines for scrap.</mod:selector>
         <mod:setValue>(Lanius Crew) Your Lanius can melt down some mines for scrap.
@@ -37,8 +41,9 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_MINEFIELD">
+  <mod:findName name="SALVAGE_DEFAULT_MINEFIELD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="false"/>
       <mod:findLike type="text">
         <mod:selector>Don't risk it, just bring back a few of the outliers.</mod:selector>
         <mod:setValue>Don't risk it, just bring back a few of the outliers.
@@ -46,9 +51,10 @@ Reward } Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_MINEFIELD_RISK">
+  <mod:findName name="SALVAGE_DEFAULT_MINEFIELD_RISK" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="false"/>
         <mod:findLike type="text">
           <mod:selector>Get the Mine Launcher!</mod:selector>
           <mod:setValue>Get the Mine Launcher!
@@ -58,8 +64,9 @@ Gain a weapon(Giftlist Minelaunchers Trapper)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_DRONE">
+  <mod:findName name="SALVAGE_DEFAULT_DRONE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="false"/>
       <mod:findLike type="text">
         <mod:selector>Break them down for parts.</mod:selector>
         <mod:setValue>Break them down for parts.
@@ -67,8 +74,9 @@ Reward | Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_DRONE">
+  <mod:findName name="SALVAGE_DEFAULT_DRONE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Scan them.</mod:selector>
         <mod:setValue>Scan them.
@@ -77,8 +85,9 @@ Gain a drone(Battletog Defend)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_DRONE">
+  <mod:findName name="SALVAGE_DEFAULT_DRONE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CHECK_ENERGY_SHIELD"/>
       <mod:findLike type="text">
         <mod:selector>(Energy Shield) Approach without any fear of intruders.</mod:selector>
         <mod:setValue>(Energy Shield) Approach without any fear of intruders.
@@ -86,8 +95,9 @@ Gain a drone(Battletog Defend)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_DRONE">
+  <mod:findName name="SALVAGE_DEFAULT_DRONE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ENGI"/>
       <mod:findLike type="text">
         <mod:selector>(Engi Crew) Disable the drones first.</mod:selector>
         <mod:setValue>(Engi Crew) Disable the drones first.
@@ -95,8 +105,9 @@ Gain a drone(Battletog Defend)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_DRONE">
+  <mod:findName name="SALVAGE_DEFAULT_DRONE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ENGINEER"/>
       <mod:findLike type="text">
         <mod:selector>(Engineer Crew) Disable the drones first.</mod:selector>
         <mod:setValue>(Engineer Crew) Disable the drones first.
@@ -104,8 +115,9 @@ Gain a drone(Battletog Defend)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_PIRATES">
+  <mod:findName name="SALVAGE_DEFAULT_PIRATES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Send a team to see what loot might be inside.</mod:selector>
         <mod:setValue>Send a team to see what loot might be inside.
@@ -116,8 +128,9 @@ Gain a drone(Battletog Defend)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_PIRATES">
+  <mod:findName name="SALVAGE_DEFAULT_PIRATES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Scrap the hull.</mod:selector>
         <mod:setValue>Scrap the hull.
@@ -125,9 +138,10 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_PIRATES_LOOT">
+  <mod:findName name="SALVAGE_DEFAULT_PIRATES_LOOT" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Open their cargo.</mod:selector>
           <mod:setValue>Open their cargo.
@@ -137,9 +151,10 @@ Reward Standard(H)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_PIRATES_LOOT">
+  <mod:findName name="SALVAGE_DEFAULT_PIRATES_LOOT" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" req="BLUELIST_CREW_NODOORS"/>
         <mod:findLike type="text">
           <mod:selector>(Phasing Crew) Sneak inside.</mod:selector>
           <mod:setValue>(Phasing Crew) Sneak inside.
@@ -148,9 +163,10 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_PIRATES_LOOT">
+  <mod:findName name="SALVAGE_DEFAULT_PIRATES_LOOT" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true" req="LIST_CREW_ROCK"/>
         <mod:findLike type="text">
           <mod:selector>(Rock Crew) Send in your Rock first.</mod:selector>
           <mod:setValue>(Rock Crew) Send in your Rock first.
@@ -159,8 +175,9 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_CACHE">
+  <mod:findName name="SALVAGE_DEFAULT_CACHE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Attempt to open the cache.</mod:selector>
         <mod:setValue>Attempt to open the cache.
@@ -174,8 +191,9 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_CACHE">
+  <mod:findName name="SALVAGE_DEFAULT_CACHE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="DRONE_CONTROL_BOARDING_DAMAGE"/>
       <mod:findLike type="text">
         <mod:selector>(Boarding Drone) Attempt to open the cache.</mod:selector>
         <mod:setValue>(Boarding Drone) Attempt to open the cache.
@@ -189,8 +207,9 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_SHRINE">
+  <mod:findName name="SALVAGE_DEFAULT_SHRINE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Raid the shrine for any valuables.</mod:selector>
         <mod:setValue>Raid the shrine for any valuables.
@@ -198,8 +217,9 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_SHRINE">
+  <mod:findName name="SALVAGE_DEFAULT_SHRINE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ZOLTAN"/>
       <mod:findLike type="text">
         <mod:selector>(Zoltan Crew) Pray to the shrine.</mod:selector>
         <mod:setValue>(Zoltan Crew) Pray to the shrine.
@@ -208,9 +228,10 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_SHRINE_ROB">
+  <mod:findName name="SALVAGE_DEFAULT_SHRINE_ROB" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Take only a few.</mod:selector>
           <mod:setValue>Take only a few.
@@ -219,9 +240,10 @@ Reward { Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_SHRINE_ROB">
+  <mod:findName name="SALVAGE_DEFAULT_SHRINE_ROB" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Take as many as you can.</mod:selector>
           <mod:setValue>Take as many as you can.
@@ -230,8 +252,9 @@ Reward { Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SALVAGE_DEFAULT_COLONY">
+  <mod:findName name="SALVAGE_DEFAULT_COLONY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Visit the colony.</mod:selector>
         <mod:setValue>Visit the colony.

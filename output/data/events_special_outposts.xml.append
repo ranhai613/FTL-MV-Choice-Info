@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="OUTPOST_FEDERATION">
+  <mod:findName name="OUTPOST_FEDERATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="challenge_level" lvl="0" max_lvl="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Request free repairs. [7$]</mod:selector>
         <mod:setValue>Request free repairs. [7$]
@@ -8,7 +9,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FEDERATION">
+  <mod:findName name="OUTPOST_FEDERATION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request fuel.</mod:selector>
@@ -17,7 +18,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FEDERATION">
+  <mod:findName name="OUTPOST_FEDERATION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request ammunition.</mod:selector>
@@ -26,7 +27,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FEDERATION">
+  <mod:findName name="OUTPOST_FEDERATION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request droneparts.</mod:selector>
@@ -35,8 +36,9 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FEDERATION">
+  <mod:findName name="OUTPOST_FEDERATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the outpost!</mod:selector>
         <mod:setValue>Attack the outpost!
@@ -44,10 +46,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FEDERATION">
+  <mod:findName name="OUTPOST_FEDERATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -57,8 +61,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FEDERATION_BAD">
+  <mod:findName name="OUTPOST_FEDERATION_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Let the outpost be.</mod:selector>
         <mod:setValue>Let the outpost be.
@@ -66,8 +71,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FEDERATION_BAD">
+  <mod:findName name="OUTPOST_FEDERATION_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -79,8 +85,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FEDERATION_BAD">
+  <mod:findName name="OUTPOST_FEDERATION_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the outpost!</mod:selector>
         <mod:setValue>Attack the outpost!
@@ -88,10 +95,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FEDERATION_BAD">
+  <mod:findName name="OUTPOST_FEDERATION_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -101,8 +110,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_UNION">
+  <mod:findName name="OUTPOST_UNION" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="challenge_level" lvl="0" max_lvl="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Request free repairs. [7$]</mod:selector>
         <mod:setValue>Request free repairs. [7$]
@@ -110,7 +120,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_UNION">
+  <mod:findName name="OUTPOST_UNION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request fuel.</mod:selector>
@@ -119,7 +129,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_UNION">
+  <mod:findName name="OUTPOST_UNION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request ammunition.</mod:selector>
@@ -128,7 +138,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_UNION">
+  <mod:findName name="OUTPOST_UNION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request droneparts.</mod:selector>
@@ -137,8 +147,9 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_UNION">
+  <mod:findName name="OUTPOST_UNION" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_HUMAN"/>
       <mod:findLike type="text">
         <mod:selector>(Human Crew) Have your human bargain with them for repairs. [10$]</mod:selector>
         <mod:setValue>(Human Crew) Have your human bargain with them for repairs. [10$]
@@ -146,8 +157,9 @@ Repair Hull(10$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_UNION">
+  <mod:findName name="OUTPOST_UNION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the outpost!</mod:selector>
         <mod:setValue>Attack the outpost!
@@ -155,10 +167,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_UNION">
+  <mod:findName name="OUTPOST_UNION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -168,8 +182,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_UNION_BAD">
+  <mod:findName name="OUTPOST_UNION_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Let the outpost be.</mod:selector>
         <mod:setValue>Let the outpost be.
@@ -177,8 +192,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_UNION_BAD">
+  <mod:findName name="OUTPOST_UNION_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -190,8 +206,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_UNION_BAD">
+  <mod:findName name="OUTPOST_UNION_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the outpost!</mod:selector>
         <mod:setValue>Attack the outpost!
@@ -199,10 +216,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_UNION_BAD">
+  <mod:findName name="OUTPOST_UNION_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -212,8 +231,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ENGI">
+  <mod:findName name="OUTPOST_ENGI" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="challenge_level" lvl="0" max_lvl="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Request free repairs. [7$]</mod:selector>
         <mod:setValue>Request free repairs. [7$]
@@ -221,7 +241,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ENGI">
+  <mod:findName name="OUTPOST_ENGI" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request fuel.</mod:selector>
@@ -230,7 +250,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ENGI">
+  <mod:findName name="OUTPOST_ENGI" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request ammunition.</mod:selector>
@@ -239,7 +259,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ENGI">
+  <mod:findName name="OUTPOST_ENGI" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request droneparts.</mod:selector>
@@ -248,8 +268,9 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ENGI">
+  <mod:findName name="OUTPOST_ENGI" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_HARMONY"/>
       <mod:findLike type="text">
         <mod:selector>(Harmony Crew) Have your Engi bargain with them for a drone.</mod:selector>
         <mod:setValue>(Harmony Crew) Have your Engi bargain with them for a drone.
@@ -257,8 +278,9 @@ Gain a drone(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ENGI">
+  <mod:findName name="OUTPOST_ENGI" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the outpost!</mod:selector>
         <mod:setValue>Attack the outpost!
@@ -266,10 +288,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ENGI">
+  <mod:findName name="OUTPOST_ENGI" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -279,8 +303,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ENGI_BAD">
+  <mod:findName name="OUTPOST_ENGI_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Let the outpost be.</mod:selector>
         <mod:setValue>Let the outpost be.
@@ -288,8 +313,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ENGI_BAD">
+  <mod:findName name="OUTPOST_ENGI_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -301,8 +327,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ENGI_BAD">
+  <mod:findName name="OUTPOST_ENGI_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the outpost!</mod:selector>
         <mod:setValue>Attack the outpost!
@@ -310,10 +337,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ENGI_BAD">
+  <mod:findName name="OUTPOST_ENGI_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -323,8 +352,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ZOLTAN">
+  <mod:findName name="OUTPOST_ZOLTAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="challenge_level" lvl="0" max_lvl="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Request free repairs. [7$]</mod:selector>
         <mod:setValue>Request free repairs. [7$]
@@ -332,7 +362,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ZOLTAN">
+  <mod:findName name="OUTPOST_ZOLTAN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request fuel.</mod:selector>
@@ -341,7 +371,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ZOLTAN">
+  <mod:findName name="OUTPOST_ZOLTAN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request ammunition.</mod:selector>
@@ -350,7 +380,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ZOLTAN">
+  <mod:findName name="OUTPOST_ZOLTAN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request droneparts.</mod:selector>
@@ -359,8 +389,9 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ZOLTAN">
+  <mod:findName name="OUTPOST_ZOLTAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_ZOLTAN_CAPITAL"/>
       <mod:findLike type="text">
         <mod:selector>(Ministry Crew) Have your Zoltan bargain with them for a reactor upgrade.</mod:selector>
         <mod:setValue>(Ministry Crew) Have your Zoltan bargain with them for a reactor upgrade.
@@ -368,8 +399,9 @@ System Upgrade(Reactor x1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ZOLTAN">
+  <mod:findName name="OUTPOST_ZOLTAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the outpost!</mod:selector>
         <mod:setValue>Attack the outpost!
@@ -377,10 +409,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ZOLTAN">
+  <mod:findName name="OUTPOST_ZOLTAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -390,8 +424,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ZOLTAN_BAD">
+  <mod:findName name="OUTPOST_ZOLTAN_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Let the outpost be.</mod:selector>
         <mod:setValue>Let the outpost be.
@@ -399,8 +434,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ZOLTAN_BAD">
+  <mod:findName name="OUTPOST_ZOLTAN_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -412,8 +448,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ZOLTAN_BAD">
+  <mod:findName name="OUTPOST_ZOLTAN_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the outpost!</mod:selector>
         <mod:setValue>Attack the outpost!
@@ -421,10 +458,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ZOLTAN_BAD">
+  <mod:findName name="OUTPOST_ZOLTAN_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -434,8 +473,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ORCHID">
+  <mod:findName name="OUTPOST_ORCHID" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="challenge_level" lvl="0" max_lvl="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Request free repairs. [7$]</mod:selector>
         <mod:setValue>Request free repairs. [7$]
@@ -443,7 +483,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ORCHID">
+  <mod:findName name="OUTPOST_ORCHID" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request fuel.</mod:selector>
@@ -452,7 +492,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ORCHID">
+  <mod:findName name="OUTPOST_ORCHID" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request ammunition.</mod:selector>
@@ -461,7 +501,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ORCHID">
+  <mod:findName name="OUTPOST_ORCHID" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request droneparts.</mod:selector>
@@ -470,8 +510,9 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ORCHID">
+  <mod:findName name="OUTPOST_ORCHID" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_FLORAL"/>
       <mod:findLike type="text">
         <mod:selector>(Floral Crew) Have your Orchid bargain for a Kernel weapon.</mod:selector>
         <mod:setValue>(Floral Crew) Have your Orchid bargain for a Kernel weapon.
@@ -479,8 +520,9 @@ Gain a weapon(Giftlist Kernel)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ORCHID">
+  <mod:findName name="OUTPOST_ORCHID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the outpost!</mod:selector>
         <mod:setValue>Attack the outpost!
@@ -488,10 +530,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ORCHID">
+  <mod:findName name="OUTPOST_ORCHID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -501,8 +545,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ORCHID_BAD">
+  <mod:findName name="OUTPOST_ORCHID_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Let the outpost be.</mod:selector>
         <mod:setValue>Let the outpost be.
@@ -510,8 +555,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ORCHID_BAD">
+  <mod:findName name="OUTPOST_ORCHID_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -523,8 +569,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ORCHID_BAD">
+  <mod:findName name="OUTPOST_ORCHID_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the outpost!</mod:selector>
         <mod:setValue>Attack the outpost!
@@ -532,10 +579,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_ORCHID_BAD">
+  <mod:findName name="OUTPOST_ORCHID_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -545,8 +594,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FREEMANTIS">
+  <mod:findName name="OUTPOST_FREEMANTIS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="challenge_level" lvl="0" max_lvl="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Request free repairs. [7$]</mod:selector>
         <mod:setValue>Request free repairs. [7$]
@@ -554,7 +604,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FREEMANTIS">
+  <mod:findName name="OUTPOST_FREEMANTIS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request fuel.</mod:selector>
@@ -563,7 +613,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FREEMANTIS">
+  <mod:findName name="OUTPOST_FREEMANTIS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request ammunition.</mod:selector>
@@ -572,7 +622,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FREEMANTIS">
+  <mod:findName name="OUTPOST_FREEMANTIS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request droneparts.</mod:selector>
@@ -581,8 +631,9 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FREEMANTIS">
+  <mod:findName name="OUTPOST_FREEMANTIS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_FREEMAN"/>
       <mod:findLike type="text">
         <mod:selector>(Free Mantis Crew) Suggest that the Free Mantis join your crew.</mod:selector>
         <mod:setValue>(Free Mantis Crew) Suggest that the Free Mantis join your crew.
@@ -590,8 +641,9 @@ Gain a crew(Mantis Free)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FREEMANTIS">
+  <mod:findName name="OUTPOST_FREEMANTIS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the outpost!</mod:selector>
         <mod:setValue>Attack the outpost!
@@ -599,10 +651,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FREEMANTIS">
+  <mod:findName name="OUTPOST_FREEMANTIS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -612,8 +666,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FREEMANTIS_BAD">
+  <mod:findName name="OUTPOST_FREEMANTIS_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Let the outpost be.</mod:selector>
         <mod:setValue>Let the outpost be.
@@ -621,8 +676,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FREEMANTIS_BAD">
+  <mod:findName name="OUTPOST_FREEMANTIS_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -634,8 +690,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FREEMANTIS_BAD">
+  <mod:findName name="OUTPOST_FREEMANTIS_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the outpost!</mod:selector>
         <mod:setValue>Attack the outpost!
@@ -643,10 +700,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_FREEMANTIS_BAD">
+  <mod:findName name="OUTPOST_FREEMANTIS_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -656,8 +715,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_CRYSTAL">
+  <mod:findName name="OUTPOST_CRYSTAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="challenge_level" lvl="0" max_lvl="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Request free repairs. [7$]</mod:selector>
         <mod:setValue>Request free repairs. [7$]
@@ -665,7 +725,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_CRYSTAL">
+  <mod:findName name="OUTPOST_CRYSTAL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request fuel.</mod:selector>
@@ -674,7 +734,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_CRYSTAL">
+  <mod:findName name="OUTPOST_CRYSTAL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request ammunition.</mod:selector>
@@ -683,7 +743,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_CRYSTAL">
+  <mod:findName name="OUTPOST_CRYSTAL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request droneparts.</mod:selector>
@@ -692,8 +752,9 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_CRYSTAL">
+  <mod:findName name="OUTPOST_CRYSTAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_CRYSTAL"/>
       <mod:findLike type="text">
         <mod:selector>(Crystal Crew) Request that the Crystals give you a Crystal weapon.</mod:selector>
         <mod:setValue>(Crystal Crew) Request that the Crystals give you a Crystal weapon.
@@ -701,8 +762,9 @@ Gain a weapon(Giftlist Crystal)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_CRYSTAL">
+  <mod:findName name="OUTPOST_CRYSTAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the outpost!</mod:selector>
         <mod:setValue>Attack the outpost!
@@ -710,10 +772,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_CRYSTAL">
+  <mod:findName name="OUTPOST_CRYSTAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -723,8 +787,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_CRYSTAL_BAD">
+  <mod:findName name="OUTPOST_CRYSTAL_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Let the outpost be.</mod:selector>
         <mod:setValue>Let the outpost be.
@@ -732,8 +797,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_CRYSTAL_BAD">
+  <mod:findName name="OUTPOST_CRYSTAL_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -745,8 +811,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_CRYSTAL_BAD">
+  <mod:findName name="OUTPOST_CRYSTAL_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the outpost!</mod:selector>
         <mod:setValue>Attack the outpost!
@@ -754,10 +821,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_CRYSTAL_BAD">
+  <mod:findName name="OUTPOST_CRYSTAL_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -767,8 +836,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_OUTCAST">
+  <mod:findName name="OUTPOST_OUTCAST" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="challenge_level" lvl="0" max_lvl="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Request free repairs. [7$]</mod:selector>
         <mod:setValue>Request free repairs. [7$]
@@ -776,7 +846,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_OUTCAST">
+  <mod:findName name="OUTPOST_OUTCAST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request fuel.</mod:selector>
@@ -785,7 +855,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_OUTCAST">
+  <mod:findName name="OUTPOST_OUTCAST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request ammunition.</mod:selector>
@@ -794,7 +864,7 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_OUTCAST">
+  <mod:findName name="OUTPOST_OUTCAST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Request droneparts.</mod:selector>
@@ -803,8 +873,9 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_OUTCAST">
+  <mod:findName name="OUTPOST_OUTCAST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ROCK"/>
       <mod:findLike type="text">
         <mod:selector>(Rock Crew) Request that the Outcasts give you a missile weapon.</mod:selector>
         <mod:setValue>(Rock Crew) Request that the Outcasts give you a missile weapon.
@@ -812,8 +883,9 @@ Gain a weapon(Giftlist Missiles)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_OUTCAST">
+  <mod:findName name="OUTPOST_OUTCAST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the outpost!</mod:selector>
         <mod:setValue>Attack the outpost!
@@ -821,10 +893,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_OUTCAST">
+  <mod:findName name="OUTPOST_OUTCAST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -834,8 +908,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_OUTCAST_BAD">
+  <mod:findName name="OUTPOST_OUTCAST_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Let the outpost be.</mod:selector>
         <mod:setValue>Let the outpost be.
@@ -843,8 +918,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_OUTCAST_BAD">
+  <mod:findName name="OUTPOST_OUTCAST_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -856,8 +932,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_OUTCAST_BAD">
+  <mod:findName name="OUTPOST_OUTCAST_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the outpost!</mod:selector>
         <mod:setValue>Attack the outpost!
@@ -865,10 +942,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="OUTPOST_OUTCAST_BAD">
+  <mod:findName name="OUTPOST_OUTCAST_BAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...

@@ -1,5 +1,5 @@
 <FTL>
-  <mod:findName name="KNIGHT_CALL_CENTER">
+  <mod:findName name="KNIGHT_CALL_CENTER" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Blow them up!</mod:selector>
@@ -8,7 +8,7 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: &lt;!&gt;Damage Hull(2
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CALL_CENTER">
+  <mod:findName name="KNIGHT_CALL_CENTER" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -21,7 +21,7 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: &lt;!&gt;Damage Hull(2
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CALL_CENTER">
+  <mod:findName name="KNIGHT_CALL_CENTER" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Approach the station.</mod:selector>
@@ -30,7 +30,7 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: &lt;!&gt;Damage Hull(2
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CALL_CENTER">
+  <mod:findName name="KNIGHT_CALL_CENTER" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -43,7 +43,7 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: &lt;!&gt;Damage Hull(2
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CALL_CENTER">
+  <mod:findName name="KNIGHT_CALL_CENTER" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -60,7 +60,7 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: &lt;!&gt;Damage Hull(2
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CALL_CENTER">
+  <mod:findName name="KNIGHT_CALL_CENTER" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Who cares about some scammers? Leave.</mod:selector>
@@ -69,7 +69,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CALL_CENTER">
+  <mod:findName name="KNIGHT_CALL_CENTER" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -82,8 +82,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CALL_CENTER">
+  <mod:findName name="KNIGHT_CALL_CENTER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_SLUG" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Slug Crew) "I have an idea..."</mod:selector>
         <mod:setValue>(Slug Crew) "I have an idea..."
@@ -92,10 +93,12 @@ Gain a drone(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CALL_CENTER">
+  <mod:findName name="KNIGHT_CALL_CENTER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_SLUG" hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -106,8 +109,9 @@ Gain a drone(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_mayeb" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Mayeb) Talk about the Gathering.</mod:selector>
         <mod:setValue>(Mayeb) Talk about the Gathering.
@@ -116,8 +120,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_mayeb" hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -129,8 +134,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_mayeb" hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
@@ -146,8 +152,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_ivar" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Ivar) Tell the Knight about the Gathering.</mod:selector>
         <mod:setValue>(Ivar) Tell the Knight about the Gathering.
@@ -156,8 +163,9 @@ Gain a weapon(Giftlist Knight)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_tyerel" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Ty E'Rel) "I will support your emigration."</mod:selector>
         <mod:setValue>(Ty E'Rel) "I will support your emigration."
@@ -166,8 +174,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_tyerel" hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -179,8 +188,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_tyerel" hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
@@ -196,8 +206,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="orchid_praetor" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Praetor Crew) Talk about Rt'lak Et.</mod:selector>
         <mod:setValue>(Praetor Crew) Talk about Rt'lak Et.
@@ -205,8 +216,9 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="orchid_caretaker" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Caretaker Crew) Tell the knight about the Gardens.</mod:selector>
         <mod:setValue>(Caretaker Crew) Tell the knight about the Gardens.
@@ -214,8 +226,9 @@ Gain a weapon(Giftlist Knight)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="orchid" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Floral Crew) Talk about the Gathering.</mod:selector>
         <mod:setValue>(Floral Crew) Talk about the Gathering.
@@ -223,8 +236,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_VAMPWEED" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Vampweed Crew) Have your Vampweed talk about their experiences.</mod:selector>
         <mod:setValue>(Vampweed Crew) Have your Vampweed talk about their experiences.
@@ -232,8 +246,9 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_1"/>
       <mod:findLike type="text">
         <mod:selector>Offer the knight a Kernel Burst 1.</mod:selector>
         <mod:setValue>Offer the knight a Kernel Burst 1.
@@ -242,8 +257,9 @@ Gain a weapon(Giftlist Knight)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -256,8 +272,9 @@ Gain a weapon(Giftlist Knight)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_2"/>
       <mod:findLike type="text">
         <mod:selector>Offer the knight a Kernel Burst 2.</mod:selector>
         <mod:setValue>Offer the knight a Kernel Burst 2.
@@ -266,8 +283,9 @@ Gain a weapon(Giftlist Knight)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_2"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -280,8 +298,9 @@ Gain a weapon(Giftlist Knight)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_HEAVY"/>
       <mod:findLike type="text">
         <mod:selector>Offer the knight a Heavy Kernel.</mod:selector>
         <mod:setValue>Offer the knight a Heavy Kernel.
@@ -290,8 +309,9 @@ Gain a weapon(Giftlist Knight)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_HEAVY"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -304,8 +324,9 @@ Gain a weapon(Giftlist Knight)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_FIRE"/>
       <mod:findLike type="text">
         <mod:selector>Offer the knight a Fire Kernel.</mod:selector>
         <mod:setValue>Offer the knight a Fire Kernel.
@@ -314,8 +335,9 @@ Gain a weapon(Giftlist Knight)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_FIRE"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -328,8 +350,9 @@ Gain a weapon(Giftlist Knight)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_CHAIN"/>
       <mod:findLike type="text">
         <mod:selector>Offer the knight a Chain Kernel.</mod:selector>
         <mod:setValue>Offer the knight a Chain Kernel.
@@ -338,8 +361,9 @@ Gain a weapon(Giftlist Knight)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_CHAIN"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -352,8 +376,9 @@ Gain a weapon(Giftlist Knight)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_CHARGE"/>
       <mod:findLike type="text">
         <mod:selector>Offer the knight a Charge Kernel.</mod:selector>
         <mod:setValue>Offer the knight a Charge Kernel.
@@ -362,8 +387,9 @@ Gain a weapon(Giftlist Knight)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_CHARGE"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -376,8 +402,9 @@ Gain a weapon(Giftlist Knight)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="MINELAUNCHER_KERNEL"/>
       <mod:findLike type="text">
         <mod:selector>Offer the knight a Kernel Mine Launcher.</mod:selector>
         <mod:setValue>Offer the knight a Kernel Mine Launcher.
@@ -386,10 +413,12 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="MINELAUNCHER_KERNEL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -400,8 +429,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_1_ELITE"/>
       <mod:findLike type="text">
         <mod:selector>Offer the knight an elite Kernel Burst 1.</mod:selector>
         <mod:setValue>Offer the knight an elite Kernel Burst 1.
@@ -410,10 +440,12 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_1_ELITE"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -424,8 +456,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_2_ELITE"/>
       <mod:findLike type="text">
         <mod:selector>Offer the knight an elite Kernel Burst 2.</mod:selector>
         <mod:setValue>Offer the knight an elite Kernel Burst 2.
@@ -434,10 +467,12 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_2_ELITE"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -448,8 +483,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_HEAVY_ELITE"/>
       <mod:findLike type="text">
         <mod:selector>Offer the knight an elite Heavy Kernel.</mod:selector>
         <mod:setValue>Offer the knight an elite Heavy Kernel.
@@ -458,10 +494,12 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_HEAVY_ELITE"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -472,8 +510,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_FIRE_ELITE"/>
       <mod:findLike type="text">
         <mod:selector>Offer the knight an elite Fire Kernel.</mod:selector>
         <mod:setValue>Offer the knight an elite Fire Kernel.
@@ -482,10 +521,12 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_FIRE_ELITE"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -496,8 +537,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_CHAIN_ELITE"/>
       <mod:findLike type="text">
         <mod:selector>Offer the knight an elite Chain Kernel.</mod:selector>
         <mod:setValue>Offer the knight an elite Chain Kernel.
@@ -506,10 +548,12 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_CHAIN_ELITE"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -520,8 +564,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_CHARGE_ELITE"/>
       <mod:findLike type="text">
         <mod:selector>Offer the knight an elite Charge Kernel.</mod:selector>
         <mod:setValue>Offer the knight an elite Charge Kernel.
@@ -530,10 +575,12 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="KERNEL_CHARGE_ELITE"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -544,8 +591,9 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="STRAWBERRY"/>
       <mod:findLike type="text">
         <mod:selector>Offer the knight a Strawberry Gun.</mod:selector>
         <mod:setValue>Offer the knight a Strawberry Gun.
@@ -556,10 +604,12 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="STRAWBERRY"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -572,7 +622,7 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Attack the Knight's ship.</mod:selector>
@@ -581,7 +631,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -594,7 +644,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Ignore the strange Knight.</mod:selector>
@@ -603,7 +653,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_ORCHID_LOVER">
+  <mod:findName name="KNIGHT_ORCHID_LOVER" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -616,7 +666,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_KERNEL_PAYMENT_OR_TRADE">
+  <mod:findName name="KNIGHT_KERNEL_PAYMENT_OR_TRADE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Payment.</mod:selector>
@@ -625,7 +675,7 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_KERNEL_PAYMENT_OR_TRADE">
+  <mod:findName name="KNIGHT_KERNEL_PAYMENT_OR_TRADE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Trade.</mod:selector>
@@ -634,8 +684,9 @@ Gain a weapon(Giftlist Knight)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_HEKTAR">
+  <mod:findName name="KNIGHT_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_VARIANT_BILLY" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Billy) "Are you wassssting company money on thissss?"</mod:selector>
         <mod:setValue>(Billy) "Are you wassssting company money on thissss?"
@@ -644,8 +695,9 @@ Gain a weapon(Giftlist Modules)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_HEKTAR">
+  <mod:findName name="KNIGHT_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_VARIANT_BILLY" hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -657,8 +709,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_HEKTAR">
+  <mod:findName name="KNIGHT_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_VARIANT_BILLY" hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
@@ -674,8 +727,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_HEKTAR">
+  <mod:findName name="KNIGHT_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_metyunt" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Metyunt) "This isn't up to regulation."</mod:selector>
         <mod:setValue>(Metyunt) "This isn't up to regulation."
@@ -683,8 +737,9 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_HEKTAR">
+  <mod:findName name="KNIGHT_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_metyunt" hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -696,8 +751,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_HEKTAR">
+  <mod:findName name="KNIGHT_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="unique_metyunt" hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
@@ -713,8 +769,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_HEKTAR">
+  <mod:findName name="KNIGHT_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_VARIANT_HEKTAR"/>
       <mod:findLike type="text">
         <mod:selector>(Hektar Employee) Ask them if they really expect this to work.</mod:selector>
         <mod:setValue>(Hektar Employee) Ask them if they really expect this to work.
@@ -722,8 +779,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_HEKTAR">
+  <mod:findName name="KNIGHT_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_VARIANT_HEKTAR"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -735,8 +793,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_HEKTAR">
+  <mod:findName name="KNIGHT_HEKTAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_VARIANT_HEKTAR"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
@@ -752,7 +811,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_HEKTAR">
+  <mod:findName name="KNIGHT_HEKTAR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Buy a phony crown.</mod:selector>
@@ -761,7 +820,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_HEKTAR">
+  <mod:findName name="KNIGHT_HEKTAR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Attack the wayward Hektar.</mod:selector>
@@ -770,10 +829,11 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 20% Reward Stuff(R))</
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_HEKTAR">
+  <mod:findName name="KNIGHT_HEKTAR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -783,7 +843,7 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 20% Reward Stuff(R))</
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_HEKTAR">
+  <mod:findName name="KNIGHT_HEKTAR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Don't waste your money on this weirdo.</mod:selector>
@@ -792,7 +852,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_HEKTAR">
+  <mod:findName name="KNIGHT_HEKTAR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -805,8 +865,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_AMPERE_HOPEFUL">
+  <mod:findName name="KNIGHT_AMPERE_HOPEFUL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Tell him it's nice and wish him good luck.</mod:selector>
         <mod:setValue>Tell him it's nice and wish him good luck.
@@ -814,8 +875,9 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_AMPERE_HOPEFUL">
+  <mod:findName name="KNIGHT_AMPERE_HOPEFUL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Aren't Slugs... you know... telepathic?</mod:selector>
         <mod:setValue>Aren't Slugs... you know... telepathic?
@@ -823,8 +885,9 @@ Reward { Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_AMPERE_HOPEFUL">
+  <mod:findName name="KNIGHT_AMPERE_HOPEFUL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>You're going to need a Slug ship if you're going to pass.</mod:selector>
         <mod:setValue>You're going to need a Slug ship if you're going to pass.
@@ -832,7 +895,7 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_AMPERE_HOPEFUL">
+  <mod:findName name="KNIGHT_AMPERE_HOPEFUL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Attack this idiot.</mod:selector>
@@ -841,10 +904,11 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Leech))</mod:setV
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_AMPERE_HOPEFUL">
+  <mod:findName name="KNIGHT_AMPERE_HOPEFUL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -854,8 +918,9 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Leech))</mod:setV
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_QUIZ">
+  <mod:findName name="NEBULA_KNIGHT_QUIZ" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Respond.</mod:selector>
         <mod:setValue>Respond.
@@ -863,10 +928,12 @@ Fight(CK=HK: Reward Standard No Item(H) Gain a weapon(Giftlist Slug))(SR: 17% Re
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_QUIZ">
+  <mod:findName name="NEBULA_KNIGHT_QUIZ" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Yes.</mod:selector>
             <mod:setValue>Yes.
@@ -876,12 +943,15 @@ Fight(CK=HK: Reward Standard No Item(H) Gain a weapon(Giftlist Slug))(SR: 17% Re
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_QUIZ">
+  <mod:findName name="NEBULA_KNIGHT_QUIZ" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Slocknog is the true king.</mod:selector>
                 <mod:setValue>Slocknog is the true king.
@@ -893,14 +963,18 @@ Fight(CK=HK: Reward Standard No Item(H) Gain a weapon(Giftlist Slug))(SR: 17% Re
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_QUIZ">
+  <mod:findName name="NEBULA_KNIGHT_QUIZ" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>He keeps things traditional. No need to change what works.</mod:selector>
                     <mod:setValue>He keeps things traditional. No need to change what works.
@@ -914,14 +988,18 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_QUIZ">
+  <mod:findName name="NEBULA_KNIGHT_QUIZ" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>His name has a lot of S's in it.</mod:selector>
                     <mod:setValue>His name has a lot of S's in it.
@@ -935,16 +1013,21 @@ Fight(CK=HK: Reward Standard No Item(H) Gain a weapon(Giftlist Slug))(SR: 17% Re
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_QUIZ">
+  <mod:findName name="NEBULA_KNIGHT_QUIZ" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Continue...</mod:selector>
                         <mod:setValue>Continue...
@@ -960,14 +1043,18 @@ Fight(CK=HK: Reward Standard No Item(H) Gain a weapon(Giftlist Slug))(SR: 17% Re
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_QUIZ">
+  <mod:findName name="NEBULA_KNIGHT_QUIZ" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>He has yellow skin. That's pretty cool.</mod:selector>
                     <mod:setValue>He has yellow skin. That's pretty cool.
@@ -981,16 +1068,21 @@ Fight(CK=HK: Reward Standard No Item(H) Gain a weapon(Giftlist Slug))(SR: 17% Re
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_QUIZ">
+  <mod:findName name="NEBULA_KNIGHT_QUIZ" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Continue...</mod:selector>
                         <mod:setValue>Continue...
@@ -1006,12 +1098,15 @@ Fight(CK=HK: Reward Standard No Item(H) Gain a weapon(Giftlist Slug))(SR: 17% Re
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_QUIZ">
+  <mod:findName name="NEBULA_KNIGHT_QUIZ" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Nights is the true king.</mod:selector>
                 <mod:setValue>Nights is the true king.
@@ -1023,14 +1118,18 @@ Fight(CK=HK: Reward Standard No Item(H) Gain a weapon(Giftlist Slug))(SR: 17% Re
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_QUIZ">
+  <mod:findName name="NEBULA_KNIGHT_QUIZ" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1044,12 +1143,15 @@ Fight(CK=HK: Reward Standard No Item(H) Gain a weapon(Giftlist Slug))(SR: 17% Re
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_QUIZ">
+  <mod:findName name="NEBULA_KNIGHT_QUIZ" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>I'm indifferent.</mod:selector>
                 <mod:setValue>I'm indifferent.
@@ -1061,10 +1163,12 @@ Reward Stuff(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_QUIZ">
+  <mod:findName name="NEBULA_KNIGHT_QUIZ" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_slocknog"/>
           <mod:findLike type="text">
             <mod:selector>(Slocknog) "Yesss, it isss indeed that ssship."</mod:selector>
             <mod:setValue>(Slocknog) "Yesss, it isss indeed that ssship."
@@ -1075,8 +1179,9 @@ Gain a crew(Slug Saboteur)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_QUIZ">
+  <mod:findName name="NEBULA_KNIGHT_QUIZ" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Respond with violence!</mod:selector>
         <mod:setValue>Respond with violence!
@@ -1084,10 +1189,12 @@ Fight(CK=HK: Reward Standard No Item(H) Gain a weapon(Giftlist Slug))(SR: 17% Re
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_QUIZ">
+  <mod:findName name="NEBULA_KNIGHT_QUIZ" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1097,8 +1204,9 @@ Fight(CK=HK: Reward Standard No Item(H) Gain a weapon(Giftlist Slug))(SR: 17% Re
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_TRAP">
+  <mod:findName name="NEBULA_KNIGHT_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Question them.</mod:selector>
         <mod:setValue>Question them.
@@ -1106,10 +1214,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_TRAP">
+  <mod:findName name="NEBULA_KNIGHT_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>There's no one on that planet.</mod:selector>
             <mod:setValue>There's no one on that planet.
@@ -1119,10 +1229,12 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_TRAP">
+  <mod:findName name="NEBULA_KNIGHT_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Don't tell them the truth, but kill them and go investigate yourself.</mod:selector>
             <mod:setValue>Don't tell them the truth, but kill them and go investigate yourself.
@@ -1132,12 +1244,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_TRAP">
+  <mod:findName name="NEBULA_KNIGHT_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1149,8 +1264,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_TRAP">
+  <mod:findName name="NEBULA_KNIGHT_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the Slugs.</mod:selector>
         <mod:setValue>Ignore the Slugs.
@@ -1158,10 +1274,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_TRAP">
+  <mod:findName name="NEBULA_KNIGHT_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1171,8 +1289,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_TRAP_PLANET">
+  <mod:findName name="KNIGHT_TRAP_PLANET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Land.</mod:selector>
         <mod:setValue>Land.
@@ -1181,8 +1300,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_TRAP_PLANET">
+  <mod:findName name="KNIGHT_TRAP_PLANET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="sensors" lvl="2"/>
       <mod:findLike type="text">
         <mod:selector>(Upg. Sensors) Scan the surface from a distance.</mod:selector>
         <mod:setValue>(Upg. Sensors) Scan the surface from a distance.
@@ -1190,8 +1310,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_TRAP_PLANET">
+  <mod:findName name="KNIGHT_TRAP_PLANET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="ADV_SCANNERS" lvl="1"/>
       <mod:findLike type="text">
         <mod:selector>(Long-Ranged Scanners) Scan the surface from a distance.</mod:selector>
         <mod:setValue>(Long-Ranged Scanners) Scan the surface from a distance.
@@ -1199,8 +1320,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_SMUGGLER">
+  <mod:findName name="NEBULA_KNIGHT_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Hail them, maybe we can buy some contraband off of them.</mod:selector>
         <mod:setValue>Hail them, maybe we can buy some contraband off of them.
@@ -1210,8 +1332,9 @@ Gain an augment(Slug Narcotics)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_SMUGGLER">
+  <mod:findName name="NEBULA_KNIGHT_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1224,10 +1347,12 @@ Gain an augment(Slug Narcotics)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_SMUGGLER">
+  <mod:findName name="NEBULA_KNIGHT_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Fight them for the drugs!</mod:selector>
             <mod:setValue>Fight them for the drugs!
@@ -1237,10 +1362,12 @@ Gain an augment(Slug Narcotics)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_SMUGGLER">
+  <mod:findName name="NEBULA_KNIGHT_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="COMBAT_ENGINE_JAMMER"/>
           <mod:findLike type="text">
             <mod:selector>(Engine Disabler) Cripple their engines and demand they hand over the narcotics!</mod:selector>
             <mod:setValue>(Engine Disabler) Cripple their engines and demand they hand over the narcotics!
@@ -1250,10 +1377,12 @@ Gain an augment(Slug Narcotics)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_SMUGGLER">
+  <mod:findName name="NEBULA_KNIGHT_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="FTL_JAMMER"/>
           <mod:findLike type="text">
             <mod:selector>(FTL Jammer) Cripple their engines and demand they hand over the narcotics!</mod:selector>
             <mod:setValue>(FTL Jammer) Cripple their engines and demand they hand over the narcotics!
@@ -1263,10 +1392,12 @@ Gain an augment(Slug Narcotics)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_SMUGGLER">
+  <mod:findName name="NEBULA_KNIGHT_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="hacking" lvl="2"/>
           <mod:findLike type="text">
             <mod:selector>(Upg. Hacking) Cripple their engines and demand they hand over the narcotics!</mod:selector>
             <mod:setValue>(Upg. Hacking) Cripple their engines and demand they hand over the narcotics!
@@ -1276,8 +1407,9 @@ Gain an augment(Slug Narcotics)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_SMUGGLER">
+  <mod:findName name="NEBULA_KNIGHT_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the Smugglers.</mod:selector>
         <mod:setValue>Ignore the Smugglers.
@@ -1285,10 +1417,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_SMUGGLER">
+  <mod:findName name="NEBULA_KNIGHT_SMUGGLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1298,9 +1432,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_SMUGGLER_ATTACK">
+  <mod:findName name="KNIGHT_SMUGGLER_ATTACK" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1309,9 +1444,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_SMUGGLER_ATTACK">
+  <mod:findName name="KNIGHT_SMUGGLER_ATTACK" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1320,7 +1456,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_SMUGGLER_ATTACK">
+  <mod:findName name="KNIGHT_SMUGGLER_ATTACK" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -1332,9 +1468,10 @@ Gain an augment(Slug Narcotics)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_SMUGGLER_ATTACK">
+  <mod:findName name="KNIGHT_SMUGGLER_ATTACK" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>No, we're still going to kill you.</mod:selector>
           <mod:setValue>No, we're still going to kill you.
@@ -1343,11 +1480,13 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_SMUGGLER_ATTACK">
+  <mod:findName name="KNIGHT_SMUGGLER_ATTACK" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="event">
           <mod:findLike type="choice">
+            <mod:selector hidden="true"/>
             <mod:findLike type="text">
               <mod:selector>Continue...</mod:selector>
               <mod:setValue>Continue...
@@ -1358,8 +1497,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_DUEL">
+  <mod:findName name="NEBULA_KNIGHT_DUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Accept.</mod:selector>
         <mod:setValue>Accept.
@@ -1367,8 +1507,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_DUEL">
+  <mod:findName name="NEBULA_KNIGHT_DUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_MANTIS"/>
       <mod:findLike type="text">
         <mod:selector>(Mantis Crew) Have your Mantis duel.</mod:selector>
         <mod:setValue>(Mantis Crew) Have your Mantis duel.
@@ -1376,8 +1517,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_DUEL">
+  <mod:findName name="NEBULA_KNIGHT_DUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_dessius"/>
       <mod:findLike type="text">
         <mod:selector>(Dessius) Have Dessius take the duel.</mod:selector>
         <mod:setValue>(Dessius) Have Dessius take the duel.
@@ -1385,8 +1527,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_DUEL">
+  <mod:findName name="NEBULA_KNIGHT_DUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_devorak"/>
       <mod:findLike type="text">
         <mod:selector>(Devorak) Have Devorak take the duel.</mod:selector>
         <mod:setValue>(Devorak) Have Devorak take the duel.
@@ -1394,8 +1537,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_DUEL">
+  <mod:findName name="NEBULA_KNIGHT_DUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="slug_knight"/>
       <mod:findLike type="text">
         <mod:selector>(Knight Crew) Have your Knight duel.</mod:selector>
         <mod:setValue>(Knight Crew) Have your Knight duel.
@@ -1403,9 +1547,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_DUEL_DUEL">
+  <mod:findName name="KNIGHT_DUEL_DUEL" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>A deal is a deal.</mod:selector>
           <mod:setValue>A deal is a deal.
@@ -1414,9 +1559,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_DUEL_DUEL">
+  <mod:findName name="KNIGHT_DUEL_DUEL" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Refuse.</mod:selector>
           <mod:setValue>Refuse.
@@ -1425,11 +1571,13 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_DUEL_DUEL">
+  <mod:findName name="KNIGHT_DUEL_DUEL" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="event">
           <mod:findLike type="choice">
+            <mod:selector hidden="true"/>
             <mod:findLike type="text">
               <mod:selector>Continue...</mod:selector>
               <mod:setValue>Continue...
@@ -1440,11 +1588,13 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_DUEL_DUEL">
+  <mod:findName name="KNIGHT_DUEL_DUEL" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="event">
           <mod:findLike type="choice">
+            <mod:selector hidden="true" req="ANTI_VIRUS"/>
             <mod:findLike type="text">
               <mod:selector>(Anti-Virus) Unjam your shields.</mod:selector>
               <mod:setValue>(Anti-Virus) Unjam your shields.
@@ -1455,13 +1605,16 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_DUEL_DUEL">
+  <mod:findName name="KNIGHT_DUEL_DUEL" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="event">
           <mod:findLike type="choice">
+            <mod:selector hidden="true" req="ANTI_VIRUS"/>
             <mod:findLike type="event">
               <mod:findLike type="choice">
+                <mod:selector hidden="true"/>
                 <mod:findLike type="text">
                   <mod:selector>Continue...</mod:selector>
                   <mod:setValue>Continue...
@@ -1474,8 +1627,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_COALITION">
+  <mod:findName name="NEBULA_KNIGHT_COALITION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the Coalition!</mod:selector>
         <mod:setValue>Attack the Coalition!
@@ -1483,10 +1637,12 @@ Fight(CK=HK: Reward Standard(H))(SR: 50% &lt;!&gt;Damage Hull(3) 50% &lt;!&gt;En
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_COALITION">
+  <mod:findName name="NEBULA_KNIGHT_COALITION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1496,8 +1652,9 @@ Fight(CK=HK: Reward Standard(H))(SR: 50% &lt;!&gt;Damage Hull(3) 50% &lt;!&gt;En
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_COALITION">
+  <mod:findName name="NEBULA_KNIGHT_COALITION" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="SLUG_NARCOTICS" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Bribe the Coalition with the Narcotics.</mod:selector>
         <mod:setValue>Bribe the Coalition with the Narcotics.
@@ -1506,8 +1663,9 @@ Fight(CK=HK: Reward Standard(H))(SR: 50% &lt;!&gt;Damage Hull(3) 50% &lt;!&gt;En
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_COALITION">
+  <mod:findName name="NEBULA_KNIGHT_COALITION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the Coalition.</mod:selector>
         <mod:setValue>Ignore the Coalition.
@@ -1515,10 +1673,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_COALITION">
+  <mod:findName name="NEBULA_KNIGHT_COALITION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1528,9 +1688,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_COALITION_BRIBE">
+  <mod:findName name="KNIGHT_COALITION_BRIBE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1539,8 +1700,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_CHOICE">
+  <mod:findName name="NEBULA_KNIGHT_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Get involved.</mod:selector>
         <mod:setValue>Get involved.
@@ -1549,10 +1711,12 @@ Fight(HK=CK: Reward Standard(M) Gain a weapon(Random))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_CHOICE">
+  <mod:findName name="NEBULA_KNIGHT_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>The Knights!</mod:selector>
             <mod:setValue>The Knights!
@@ -1562,12 +1726,15 @@ Fight(HK=CK: Reward Standard(H) Gain a crew(Slug))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_CHOICE">
+  <mod:findName name="NEBULA_KNIGHT_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1579,10 +1746,12 @@ Fight(HK=CK: Reward Standard(H) Gain a crew(Slug))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_CHOICE">
+  <mod:findName name="NEBULA_KNIGHT_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="SLUG_NARCOTICS"/>
           <mod:findLike type="text">
             <mod:selector>(Slug Narcotics) Bribe the Knights to stop fighting.</mod:selector>
             <mod:setValue>(Slug Narcotics) Bribe the Knights to stop fighting.
@@ -1592,12 +1761,15 @@ Gain a weapon(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_CHOICE">
+  <mod:findName name="NEBULA_KNIGHT_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="SLUG_NARCOTICS"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1609,10 +1781,12 @@ Gain a weapon(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_CHOICE">
+  <mod:findName name="NEBULA_KNIGHT_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>The Clairvoyants!</mod:selector>
             <mod:setValue>The Clairvoyants!
@@ -1622,12 +1796,15 @@ Fight(HK=CK: Reward Standard(M) Gain a weapon(Random))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_CHOICE">
+  <mod:findName name="NEBULA_KNIGHT_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1639,8 +1816,9 @@ Fight(HK=CK: Reward Standard(M) Gain a weapon(Random))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_CHOICE">
+  <mod:findName name="NEBULA_KNIGHT_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Don't get involved.</mod:selector>
         <mod:setValue>Don't get involved.
@@ -1648,10 +1826,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_CHOICE">
+  <mod:findName name="NEBULA_KNIGHT_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1661,8 +1841,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_PROTESTERS">
+  <mod:findName name="NEBULA_KNIGHT_PROTESTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Accept.</mod:selector>
         <mod:setValue>Accept.
@@ -1670,10 +1851,12 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_PROTESTERS">
+  <mod:findName name="NEBULA_KNIGHT_PROTESTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attack!</mod:selector>
             <mod:setValue>Attack!
@@ -1683,12 +1866,15 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_PROTESTERS">
+  <mod:findName name="NEBULA_KNIGHT_PROTESTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1700,10 +1886,12 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_PROTESTERS">
+  <mod:findName name="NEBULA_KNIGHT_PROTESTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="SLUG_NARCOTICS"/>
           <mod:findLike type="text">
             <mod:selector>(Slug Narcotics) Bribe the Clairvoyant to turn on its own people.</mod:selector>
             <mod:setValue>(Slug Narcotics) Bribe the Clairvoyant to turn on its own people.
@@ -1713,8 +1901,9 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_PROTESTERS">
+  <mod:findName name="NEBULA_KNIGHT_PROTESTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Refuse.</mod:selector>
         <mod:setValue>Refuse.
@@ -1722,10 +1911,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_PROTESTERS">
+  <mod:findName name="NEBULA_KNIGHT_PROTESTERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1735,8 +1926,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PROTESTERS_WIN">
+  <mod:findName name="KNIGHT_PROTESTERS_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore them and force the colony to surrender.</mod:selector>
         <mod:setValue>Ignore them and force the colony to surrender.
@@ -1744,8 +1936,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PROTESTERS_WIN">
+  <mod:findName name="KNIGHT_PROTESTERS_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Kill the Saboteur and free the colony.</mod:selector>
         <mod:setValue>Kill the Saboteur and free the colony.
@@ -1754,8 +1947,9 @@ System Upgrade(Shields x1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PROTESTERS_WIN">
+  <mod:findName name="KNIGHT_PROTESTERS_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BLUELIST_FIRE_ALL"/>
       <mod:findLike type="text">
         <mod:selector>(Fire Weapon) Make an example, torch the colony.</mod:selector>
         <mod:setValue>(Fire Weapon) Make an example, torch the colony.
@@ -1763,8 +1957,9 @@ Gain a crew(Slug Saboteur)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_SHAKESPEARE">
+  <mod:findName name="NEBULA_KNIGHT_SHAKESPEARE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1775,10 +1970,12 @@ Reward { Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_SHAKESPEARE">
+  <mod:findName name="NEBULA_KNIGHT_SHAKESPEARE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Try to speak back in whatever language that was.</mod:selector>
             <mod:setValue>Try to speak back in whatever language that was.
@@ -1789,10 +1986,12 @@ Reward { Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_SHAKESPEARE">
+  <mod:findName name="NEBULA_KNIGHT_SHAKESPEARE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_haynes"/>
           <mod:findLike type="text">
             <mod:selector>(Haynes) Haynes recognizes the language.</mod:selector>
             <mod:setValue>(Haynes) Haynes recognizes the language.
@@ -1802,10 +2001,12 @@ Gain a weapon(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_SHAKESPEARE">
+  <mod:findName name="NEBULA_KNIGHT_SHAKESPEARE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_SLUG"/>
           <mod:findLike type="text">
             <mod:selector>(Slug Crew) Have your Slug speak with them.</mod:selector>
             <mod:setValue>(Slug Crew) Have your Slug speak with them.
@@ -1815,10 +2016,12 @@ Reward { Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_SHAKESPEARE">
+  <mod:findName name="NEBULA_KNIGHT_SHAKESPEARE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_ENGI"/>
           <mod:findLike type="text">
             <mod:selector>(Engi Crew) Analyze their speech patterns to translate.</mod:selector>
             <mod:setValue>(Engi Crew) Analyze their speech patterns to translate.
@@ -1828,9 +2031,10 @@ Reward { Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_SHAKESPEARE_GUESS">
+  <mod:findName name="KNIGHT_SHAKESPEARE_GUESS" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1839,9 +2043,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_SHAKESPEARE_GUESS">
+  <mod:findName name="KNIGHT_SHAKESPEARE_GUESS" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector req="SLUG_NARCOTICS"/>
         <mod:findLike type="text">
           <mod:selector>Bribe them with the narcotics.</mod:selector>
           <mod:setValue>Bribe them with the narcotics.
@@ -1850,8 +2055,9 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_JAILER">
+  <mod:findName name="NEBULA_KNIGHT_JAILER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the Jailer.</mod:selector>
         <mod:setValue>Attack the Jailer.
@@ -1859,10 +2065,12 @@ Fight(CK: Reward Standard(M) Gain a crew(Slug Saboteur))(HK: Reward Standard(H))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_JAILER">
+  <mod:findName name="NEBULA_KNIGHT_JAILER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1872,8 +2080,9 @@ Fight(CK: Reward Standard(M) Gain a crew(Slug Saboteur))(HK: Reward Standard(H))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_JAILER">
+  <mod:findName name="NEBULA_KNIGHT_JAILER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="FIREARMS_AND_TELEPORT"/>
       <mod:findLike type="text">
         <mod:selector>(Armories + Teleporter) Storm the Jailer.</mod:selector>
         <mod:setValue>(Armories + Teleporter) Storm the Jailer.
@@ -1881,8 +2090,9 @@ Gain a crew(Federation)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_JAILER">
+  <mod:findName name="NEBULA_KNIGHT_JAILER" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="SLUG_NARCOTICS" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Bribe them with the narcotics to let the prisoners go.</mod:selector>
         <mod:setValue>Bribe them with the narcotics to let the prisoners go.
@@ -1890,8 +2100,9 @@ Gain a crew(Slug Saboteur)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_JAILER">
+  <mod:findName name="NEBULA_KNIGHT_JAILER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the Jailer.</mod:selector>
         <mod:setValue>Ignore the Jailer.
@@ -1899,10 +2110,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_JAILER">
+  <mod:findName name="NEBULA_KNIGHT_JAILER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -1912,7 +2125,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_KNIGHT_JAILER">
+  <mod:findName name="SURRENDER_KNIGHT_JAILER" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept a prisoner.</mod:selector>
@@ -1921,8 +2134,9 @@ Gain a crew(Slug)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_JAILER_KILL">
+  <mod:findName name="KNIGHT_JAILER_KILL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Check the prisoners.</mod:selector>
         <mod:setValue>Check the prisoners.
@@ -1930,8 +2144,9 @@ Gain a crew(Slug Saboteur)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_JAILER_BRIBE">
+  <mod:findName name="KNIGHT_JAILER_BRIBE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Check the prisoners.</mod:selector>
         <mod:setValue>Check the prisoners.
@@ -1939,8 +2154,9 @@ Gain a crew(Slug Saboteur)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_KNIGHT_TAXES">
+  <mod:findName name="NEBULA_DISTRESS_KNIGHT_TAXES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Help the colony.</mod:selector>
         <mod:setValue>Help the colony.
@@ -1948,10 +2164,12 @@ Fight(HK=CK: Reward Standard(H) Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_KNIGHT_TAXES">
+  <mod:findName name="NEBULA_DISTRESS_KNIGHT_TAXES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1961,8 +2179,9 @@ Fight(HK=CK: Reward Standard(H) Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_KNIGHT_TAXES">
+  <mod:findName name="NEBULA_DISTRESS_KNIGHT_TAXES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Help the Knights.</mod:selector>
         <mod:setValue>Help the Knights.
@@ -1970,10 +2189,12 @@ Fight(HK: Reward Standard(M) Gain a crew(Slug))(CK: Reward Standard(H) Gain a cr
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_KNIGHT_TAXES">
+  <mod:findName name="NEBULA_DISTRESS_KNIGHT_TAXES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1983,8 +2204,9 @@ Fight(HK: Reward Standard(M) Gain a crew(Slug))(CK: Reward Standard(H) Gain a cr
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_KNIGHT_TAXES">
+  <mod:findName name="NEBULA_DISTRESS_KNIGHT_TAXES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Don't get involved.</mod:selector>
         <mod:setValue>Don't get involved.
@@ -1992,10 +2214,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_KNIGHT_TAXES">
+  <mod:findName name="NEBULA_DISTRESS_KNIGHT_TAXES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -2005,8 +2229,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_KNIGHT_SHELLSPY">
+  <mod:findName name="NEBULA_DISTRESS_KNIGHT_SHELLSPY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Receive their request.</mod:selector>
         <mod:setValue>Receive their request.
@@ -2014,10 +2239,12 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a crew(Shell Radiant))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_KNIGHT_SHELLSPY">
+  <mod:findName name="NEBULA_DISTRESS_KNIGHT_SHELLSPY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Agree.</mod:selector>
             <mod:setValue>Agree.
@@ -2027,12 +2254,15 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a crew(Shell Radiant))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_KNIGHT_SHELLSPY">
+  <mod:findName name="NEBULA_DISTRESS_KNIGHT_SHELLSPY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -2044,12 +2274,15 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a crew(Shell Radiant))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_KNIGHT_SHELLSPY">
+  <mod:findName name="NEBULA_DISTRESS_KNIGHT_SHELLSPY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector req="SLUG_NARCOTICS" hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Bribe them with the narcotics to let the Shells go.</mod:selector>
                 <mod:setValue>Bribe them with the narcotics to let the Shells go.
@@ -2061,8 +2294,9 @@ Gain a crew(Shell Radiant)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_KNIGHT_SHELLSPY">
+  <mod:findName name="NEBULA_DISTRESS_KNIGHT_SHELLSPY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Screw helping people, let's murder!</mod:selector>
         <mod:setValue>Screw helping people, let's murder!
@@ -2070,10 +2304,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_KNIGHT_SHELLSPY">
+  <mod:findName name="NEBULA_DISTRESS_KNIGHT_SHELLSPY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2083,8 +2319,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_KNIGHT_SHELLSPY">
+  <mod:findName name="NEBULA_DISTRESS_KNIGHT_SHELLSPY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the Shells.</mod:selector>
         <mod:setValue>Ignore the Shells.
@@ -2092,10 +2329,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_DISTRESS_KNIGHT_SHELLSPY">
+  <mod:findName name="NEBULA_DISTRESS_KNIGHT_SHELLSPY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -2105,8 +2344,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_SHELLSPY_BRIBE">
+  <mod:findName name="KNIGHT_SHELLSPY_BRIBE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Check on the spy.</mod:selector>
         <mod:setValue>Check on the spy.
@@ -2114,8 +2354,9 @@ Gain a crew(Shell Radiant)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_ENCOUNTER_KNIGHT_REGULAR">
+  <mod:findName name="NEBULA_ENCOUNTER_KNIGHT_REGULAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2123,8 +2364,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_ENCOUNTER_KNIGHT_REGULAR">
+  <mod:findName name="NEBULA_ENCOUNTER_KNIGHT_REGULAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="SLUG_NARCOTICS"/>
       <mod:findLike type="text">
         <mod:selector>Bribe them with the narcotics.</mod:selector>
         <mod:setValue>Bribe them with the narcotics.
@@ -2132,8 +2374,9 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_ENCOUNTER_KNIGHT_STORM">
+  <mod:findName name="NEBULA_ENCOUNTER_KNIGHT_STORM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2141,8 +2384,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_ENCOUNTER_KNIGHT_STORM">
+  <mod:findName name="NEBULA_ENCOUNTER_KNIGHT_STORM" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="SLUG_NARCOTICS"/>
       <mod:findLike type="text">
         <mod:selector>Bribe them with the narcotics.</mod:selector>
         <mod:setValue>Bribe them with the narcotics.
@@ -2150,8 +2394,9 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_ENCOUNTER_KNIGHT_CLAIRVOYANT">
+  <mod:findName name="NEBULA_ENCOUNTER_KNIGHT_CLAIRVOYANT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2159,8 +2404,9 @@ Fight(CK=HK: Reward Standard No Item(H) Gain a weapon(Giftlist Slug))(SR: 17% Re
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_ENCOUNTER_KNIGHT_CLAIRVOYANT">
+  <mod:findName name="NEBULA_ENCOUNTER_KNIGHT_CLAIRVOYANT" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="SLUG_NARCOTICS"/>
       <mod:findLike type="text">
         <mod:selector>Bribe them with the narcotics.</mod:selector>
         <mod:setValue>Bribe them with the narcotics.
@@ -2168,8 +2414,9 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_ENGINES">
+  <mod:findName name="NEBULA_KNIGHT_ENGINES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Refuse.</mod:selector>
         <mod:setValue>Refuse.
@@ -2177,10 +2424,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_ENGINES">
+  <mod:findName name="NEBULA_KNIGHT_ENGINES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2190,8 +2439,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_ENGINES">
+  <mod:findName name="NEBULA_KNIGHT_ENGINES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="ANTI_VIRUS"/>
       <mod:findLike type="text">
         <mod:selector>(Anti-Virus) Correct the issue yourself.</mod:selector>
         <mod:setValue>(Anti-Virus) Correct the issue yourself.
@@ -2199,10 +2449,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_ENGINES">
+  <mod:findName name="NEBULA_KNIGHT_ENGINES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="ANTI_VIRUS"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2212,8 +2464,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_ENGINES">
+  <mod:findName name="NEBULA_KNIGHT_ENGINES" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="SLUG_NARCOTICS"/>
       <mod:findLike type="text">
         <mod:selector>Bribe them with the narcotics.</mod:selector>
         <mod:setValue>Bribe them with the narcotics.
@@ -2221,7 +2474,7 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_KNIGHT_ENGINES">
+  <mod:findName name="NEBULA_KNIGHT_ENGINES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Pay.</mod:selector>
@@ -2230,8 +2483,9 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CLAN">
+  <mod:findName name="KNIGHT_CLAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Hail them.</mod:selector>
         <mod:setValue>Hail them.
@@ -2239,10 +2493,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CLAN">
+  <mod:findName name="KNIGHT_CLAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Why are you here?</mod:selector>
             <mod:setValue>Why are you here?
@@ -2252,10 +2508,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CLAN">
+  <mod:findName name="KNIGHT_CLAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -2270,12 +2528,15 @@ Map Reveal</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CLAN">
+  <mod:findName name="KNIGHT_CLAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector blue="false" req="shields" lvl="2"/>
               <mod:findLike type="text">
                 <mod:selector>Offer to take them with you.</mod:selector>
                 <mod:setValue>Offer to take them with you.
@@ -2287,14 +2548,18 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CLAN">
+  <mod:findName name="KNIGHT_CLAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector blue="false" req="shields" lvl="2"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -2308,14 +2573,18 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CLAN">
+  <mod:findName name="KNIGHT_CLAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector blue="false" req="shields" lvl="2"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true" req="ANTI_VIRUS"/>
                   <mod:findLike type="text">
                     <mod:selector>(Anti-Virus) Restore your shields.</mod:selector>
                     <mod:setValue>(Anti-Virus) Restore your shields.
@@ -2329,16 +2598,21 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CLAN">
+  <mod:findName name="KNIGHT_CLAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector blue="false" req="shields" lvl="2"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true" req="ANTI_VIRUS"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Continue...</mod:selector>
                         <mod:setValue>Continue...
@@ -2354,12 +2628,15 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CLAN">
+  <mod:findName name="KNIGHT_CLAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector blue="false" req="shields" lvl="0" max_lvl="1"/>
               <mod:findLike type="text">
                 <mod:selector>Offer to take them with you.</mod:selector>
                 <mod:setValue>Offer to take them with you.
@@ -2371,14 +2648,18 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CLAN">
+  <mod:findName name="KNIGHT_CLAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector blue="false" req="shields" lvl="0" max_lvl="1"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -2392,8 +2673,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CLAN">
+  <mod:findName name="KNIGHT_CLAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack!</mod:selector>
         <mod:setValue>Attack!
@@ -2401,10 +2683,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CLAN">
+  <mod:findName name="KNIGHT_CLAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2414,8 +2698,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CLAN">
+  <mod:findName name="KNIGHT_CLAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the Clansmen.</mod:selector>
         <mod:setValue>Ignore the Clansmen.
@@ -2423,10 +2708,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_CLAN">
+  <mod:findName name="KNIGHT_CLAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.
@@ -2436,8 +2723,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE">
+  <mod:findName name="KNIGHT_PALACE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2446,10 +2734,12 @@ Fight(HK=CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Knight))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE">
+  <mod:findName name="KNIGHT_PALACE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Stick around and watch.</mod:selector>
             <mod:setValue>Stick around and watch.
@@ -2460,12 +2750,15 @@ Fight(HK=CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Knight))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE">
+  <mod:findName name="KNIGHT_PALACE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -2478,14 +2771,18 @@ Fight(HK=CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Knight))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE">
+  <mod:findName name="KNIGHT_PALACE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -2500,16 +2797,21 @@ Fight(HK=CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Knight))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE">
+  <mod:findName name="KNIGHT_PALACE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Aid Slocknog - he seems reasonable enough, and might be able to bring the Slugs to a glory age.</mod:selector>
                         <mod:setValue>Aid Slocknog - he seems reasonable enough, and might be able to bring the Slugs to a glory age.
@@ -2526,18 +2828,24 @@ Fight(HK=CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Knight))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE">
+  <mod:findName name="KNIGHT_PALACE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="text">
                             <mod:selector>Continue...</mod:selector>
                             <mod:setValue>Continue...
@@ -2556,16 +2864,21 @@ Fight(HK=CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Knight))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE">
+  <mod:findName name="KNIGHT_PALACE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Aid Nights - he seems like the king the Slugs you know would want.</mod:selector>
                         <mod:setValue>Aid Nights - he seems like the king the Slugs you know would want.
@@ -2582,18 +2895,24 @@ Fight(HK=CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Knight))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE">
+  <mod:findName name="KNIGHT_PALACE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="text">
                             <mod:selector>Continue...</mod:selector>
                             <mod:setValue>Continue...
@@ -2612,10 +2931,12 @@ Fight(HK=CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Knight))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE">
+  <mod:findName name="KNIGHT_PALACE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Things might get hectic, let's leave while we can.</mod:selector>
             <mod:setValue>Things might get hectic, let's leave while we can.
@@ -2625,12 +2946,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE">
+  <mod:findName name="KNIGHT_PALACE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -2642,8 +2966,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2651,8 +2976,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_got_clancrown"/>
       <mod:findLike type="text">
         <mod:selector>Go after the crown yourself.</mod:selector>
         <mod:setValue>Go after the crown yourself.
@@ -2660,10 +2986,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_got_clancrown"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="slug_ranger"/>
           <mod:findLike type="text">
             <mod:selector>Your Clansman is alive, let's go for it.</mod:selector>
             <mod:setValue>Your Clansman is alive, let's go for it.
@@ -2673,12 +3001,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_got_clancrown"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="slug_ranger"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="cloaking" lvl="2"/>
               <mod:findLike type="text">
                 <mod:selector>(Upg. Cloaking) Cloak and approach.</mod:selector>
                 <mod:setValue>(Upg. Cloaking) Cloak and approach.
@@ -2690,14 +3021,18 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_got_clancrown"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="slug_ranger"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="cloaking" lvl="2"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true" req="teleporter"/>
                   <mod:findLike type="text">
                     <mod:selector>(Teleporter) Beam the crew aboard.</mod:selector>
                     <mod:setValue>(Teleporter) Beam the crew aboard.
@@ -2712,16 +3047,21 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_got_clancrown"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="slug_ranger"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="cloaking" lvl="2"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
-                  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG_BOARD">
+                  <mod:selector hidden="true" req="teleporter"/>
+                  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG_BOARD" type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Proceed in the darkness.</mod:selector>
                         <mod:setValue>Proceed in the darkness.
@@ -2738,14 +3078,18 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_got_clancrown"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="slug_ranger"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="cloaking" lvl="2"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true" req="LOCKED_GLOBAL_TELEPORT"/>
                   <mod:findLike type="text">
                     <mod:selector>(Central Teleport) Beam the crew aboard.</mod:selector>
                     <mod:setValue>(Central Teleport) Beam the crew aboard.
@@ -2760,14 +3104,18 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_got_clancrown"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="slug_ranger"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="cloaking" lvl="2"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Nevermind.</mod:selector>
                     <mod:setValue>Nevermind.
@@ -2781,12 +3129,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_got_clancrown"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="slug_ranger"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Nevermind.</mod:selector>
                 <mod:setValue>Nevermind.
@@ -2798,10 +3149,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_got_clancrown"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="beans"/>
           <mod:findLike type="text">
             <mod:selector>Bean Sylvan is alive, let's go for it.</mod:selector>
             <mod:setValue>Bean Sylvan is alive, let's go for it.
@@ -2811,12 +3164,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_got_clancrown"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="beans"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="cloaking" lvl="2"/>
               <mod:findLike type="text">
                 <mod:selector>(Upg. Cloaking) Cloak and approach.</mod:selector>
                 <mod:setValue>(Upg. Cloaking) Cloak and approach.
@@ -2828,14 +3184,18 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_got_clancrown"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="beans"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="cloaking" lvl="2"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true" req="teleporter"/>
                   <mod:findLike type="text">
                     <mod:selector>(Teleporter) Beam the crew aboard.</mod:selector>
                     <mod:setValue>(Teleporter) Beam the crew aboard.
@@ -2850,16 +3210,21 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_got_clancrown"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="beans"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="cloaking" lvl="2"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
-                  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG_BEANS_BOARD">
+                  <mod:selector hidden="true" req="teleporter"/>
+                  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG_BEANS_BOARD" type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Proceed in the darkness.</mod:selector>
                         <mod:setValue>Proceed in the darkness.
@@ -2876,14 +3241,18 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_got_clancrown"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="beans"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="cloaking" lvl="2"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true" req="LOCKED_GLOBAL_TELEPORT"/>
                   <mod:findLike type="text">
                     <mod:selector>(Central Teleport) Beam the crew aboard.</mod:selector>
                     <mod:setValue>(Central Teleport) Beam the crew aboard.
@@ -2898,14 +3267,18 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_got_clancrown"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="beans"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="cloaking" lvl="2"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Nevermind.</mod:selector>
                     <mod:setValue>Nevermind.
@@ -2919,12 +3292,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_got_clancrown"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="beans"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Nevermind.</mod:selector>
                 <mod:setValue>Nevermind.
@@ -2936,10 +3312,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_got_clancrown"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Nevermind.</mod:selector>
             <mod:setValue>Nevermind.
@@ -2949,8 +3327,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2958,10 +3337,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2971,12 +3352,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>These people need further influence - use a show of force to put Slocknog back in power.</mod:selector>
                 <mod:setValue>These people need further influence - use a show of force to put Slocknog back in power.
@@ -2991,14 +3375,18 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -3015,12 +3403,15 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Suggest that the Slugs hold an election the proper way - through a vote.</mod:selector>
                 <mod:setValue>Suggest that the Slugs hold an election the proper way - through a vote.
@@ -3034,14 +3425,18 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>We'll take him with us.</mod:selector>
                     <mod:setValue>We'll take him with us.
@@ -3055,14 +3450,18 @@ Gain a crew(Unique Slocknog)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_SLOCKNOG_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Execute him.</mod:selector>
                     <mod:setValue>Execute him.
@@ -3077,8 +3476,9 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_NIGHTS">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_NIGHTS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -3086,10 +3486,12 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_NIGHTS">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_NIGHTS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -3099,12 +3501,15 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_NIGHTS">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_NIGHTS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -3116,14 +3521,18 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_NIGHTS">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_NIGHTS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>These people need further influence - use a show of force to put Nights back in power.</mod:selector>
                     <mod:setValue>These people need further influence - use a show of force to put Nights back in power.
@@ -3139,16 +3548,21 @@ Reward ~ Only(H)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_NIGHTS">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_NIGHTS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Continue...</mod:selector>
                         <mod:setValue>Continue...
@@ -3166,18 +3580,24 @@ Reward ~ Only(H)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_NIGHTS">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_NIGHTS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="text">
                             <mod:selector>Continue...</mod:selector>
                             <mod:setValue>Continue...
@@ -3195,14 +3615,18 @@ Gain a crew(Slug Knight)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_NIGHTS">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_NIGHTS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Suggest that the Slugs hold an election the proper way - through a vote.</mod:selector>
                     <mod:setValue>Suggest that the Slugs hold an election the proper way - through a vote.
@@ -3218,16 +3642,21 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_NIGHTS">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_NIGHTS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>He can work for us to pay off his debt to the galaxy.</mod:selector>
                         <mod:setValue>He can work for us to pay off his debt to the galaxy.
@@ -3243,16 +3672,21 @@ Gain a crew(Unique Nights)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="KNIGHT_PALACE_RESOLUTION_NIGHTS">
+  <mod:findName name="KNIGHT_PALACE_RESOLUTION_NIGHTS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Execute him.</mod:selector>
                         <mod:setValue>Execute him.

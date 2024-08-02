@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="DESTROYED_REINFORCEMENTS">
+  <mod:findName name="DESTROYED_REINFORCEMENTS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="MAGNET_ARM"/>
       <mod:findLike type="text">
         <mod:selector>(Magnet Arm) Salvage the wreck further.</mod:selector>
         <mod:setValue>(Magnet Arm) Salvage the wreck further.
@@ -8,8 +9,9 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEADCREW_REINFORCEMENTS">
+  <mod:findName name="DEADCREW_REINFORCEMENTS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="MAGNET_ARM"/>
       <mod:findLike type="text">
         <mod:selector>(Magnet Arm) Salvage the wreck further.</mod:selector>
         <mod:setValue>(Magnet Arm) Salvage the wreck further.
@@ -17,7 +19,7 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_UNION">
+  <mod:findName name="SURRENDER_UNION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -26,7 +28,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_MILITIA">
+  <mod:findName name="SURRENDER_MILITIA" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -35,7 +37,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_FEDERATION">
+  <mod:findName name="SURRENDER_FEDERATION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -44,8 +46,9 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_REBEL_POD">
+  <mod:findName name="DESTROYED_REBEL_POD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_JERRY"/>
       <mod:findLike type="text">
         <mod:selector>(Jerry) Welcome them aboard.</mod:selector>
         <mod:setValue>(Jerry) Welcome them aboard.
@@ -53,8 +56,9 @@ Gain a crew(Human)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_REBEL_POD">
+  <mod:findName name="DESTROYED_REBEL_POD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Accept them onto your ship.</mod:selector>
         <mod:setValue>Accept them onto your ship.
@@ -63,8 +67,9 @@ Gain a crew(Human)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_REBEL_POD">
+  <mod:findName name="DESTROYED_REBEL_POD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="mind"/>
       <mod:findLike type="text">
         <mod:selector>(Mind Control) Keep the mind control online in-case they do anything bad.</mod:selector>
         <mod:setValue>(Mind Control) Keep the mind control online in-case they do anything bad.
@@ -72,8 +77,9 @@ Gain a crew(Human)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_REBEL_POD">
+  <mod:findName name="DESTROYED_REBEL_POD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Free the Rebel and let them go.</mod:selector>
         <mod:setValue>Free the Rebel and let them go.
@@ -82,7 +88,7 @@ Gain a crew(Human)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_REBEL_GENERIC">
+  <mod:findName name="SURRENDER_REBEL_GENERIC" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -91,7 +97,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_REBEL_FLEET">
+  <mod:findName name="SURRENDER_REBEL_FLEET" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender. [Delays the fleet 2 jumps]</mod:selector>
@@ -100,7 +106,7 @@ Fleet Delay(2)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_REBEL_STATION_GENERIC">
+  <mod:findName name="SURRENDER_REBEL_STATION_GENERIC" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -109,8 +115,9 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_AUTO_FUEL">
+  <mod:findName name="DESTROYED_AUTO_FUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Salvage the extra fuel cells.</mod:selector>
         <mod:setValue>Salvage the extra fuel cells.
@@ -118,8 +125,9 @@ Reward { Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_AUTO_MISSILES">
+  <mod:findName name="DESTROYED_AUTO_MISSILES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Salvage the extra ammunition.</mod:selector>
         <mod:setValue>Salvage the extra ammunition.
@@ -127,8 +135,9 @@ Reward } Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_AUTO_DRONES">
+  <mod:findName name="DESTROYED_AUTO_DRONES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Salvage the extra drone parts.</mod:selector>
         <mod:setValue>Salvage the extra drone parts.
@@ -136,7 +145,7 @@ Reward | Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_AUTO_GENERIC">
+  <mod:findName name="SURRENDER_AUTO_GENERIC" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -145,7 +154,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_AUTO_FUEL">
+  <mod:findName name="SURRENDER_AUTO_FUEL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept the surrender.</mod:selector>
@@ -154,8 +163,9 @@ Reward { Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_ESTATE_FUEL">
+  <mod:findName name="DESTROYED_ESTATE_FUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Salvage the extra fuel cells.</mod:selector>
         <mod:setValue>Salvage the extra fuel cells.
@@ -163,8 +173,9 @@ Reward { Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_ESTATE_MISSILES">
+  <mod:findName name="DESTROYED_ESTATE_MISSILES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Salvage the extra ammunition.</mod:selector>
         <mod:setValue>Salvage the extra ammunition.
@@ -172,8 +183,9 @@ Reward } Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_ESTATE_DRONES">
+  <mod:findName name="DESTROYED_ESTATE_DRONES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Salvage the extra drone parts.</mod:selector>
         <mod:setValue>Salvage the extra drone parts.
@@ -181,7 +193,7 @@ Reward | Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_ENGI">
+  <mod:findName name="SURRENDER_ENGI" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -190,8 +202,9 @@ Reward |(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_ENGI">
+  <mod:findName name="SURRENDER_ENGI" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_DEFENDER"/>
       <mod:findLike type="text">
         <mod:selector>(Engi Defender) Negotiate a great deal.</mod:selector>
         <mod:setValue>(Engi Defender) Negotiate a great deal.
@@ -199,8 +212,9 @@ Reward |(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_ENGI">
+  <mod:findName name="SURRENDER_ENGI" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="engi"/>
       <mod:findLike type="text">
         <mod:selector>(Engi Crew) Negotiate a different deal.</mod:selector>
         <mod:setValue>(Engi Crew) Negotiate a different deal.
@@ -208,7 +222,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_SEPARATIST">
+  <mod:findName name="SURRENDER_SEPARATIST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -217,7 +231,7 @@ Reward |(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_ZOLTAN_GENERIC">
+  <mod:findName name="SURRENDER_ZOLTAN_GENERIC" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -226,7 +240,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_ZOLTAN_FAIR">
+  <mod:findName name="SURRENDER_ZOLTAN_FAIR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their "trade".</mod:selector>
@@ -235,7 +249,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_ORCHID">
+  <mod:findName name="SURRENDER_ORCHID" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -244,7 +258,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_VAMPWEED">
+  <mod:findName name="SURRENDER_VAMPWEED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -253,7 +267,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_CRYSTAL_GENERIC">
+  <mod:findName name="SURRENDER_CRYSTAL_GENERIC" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -262,8 +276,9 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_CRYSTAL_GENERIC">
+  <mod:findName name="SURRENDER_CRYSTAL_GENERIC" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_CRYSTAL"/>
       <mod:findLike type="text">
         <mod:selector>(Crystalline Crew) Negotiate a better surrender.</mod:selector>
         <mod:setValue>(Crystalline Crew) Negotiate a better surrender.
@@ -271,8 +286,9 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_CRYSTAL_NOREWARD">
+  <mod:findName name="SURRENDER_CRYSTAL_NOREWARD" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_CRYSTAL"/>
       <mod:findLike type="text">
         <mod:selector>(Crystalline Crew) Have your Crystal demand payment from them.</mod:selector>
         <mod:setValue>(Crystalline Crew) Have your Crystal demand payment from them.
@@ -280,8 +296,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_PIRATE_FUEL">
+  <mod:findName name="DESTROYED_PIRATE_FUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Salvage the extra fuel cells.</mod:selector>
         <mod:setValue>Salvage the extra fuel cells.
@@ -289,8 +306,9 @@ Reward { Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_PIRATE_MISSILES">
+  <mod:findName name="DESTROYED_PIRATE_MISSILES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Salvage the extra ammunition.</mod:selector>
         <mod:setValue>Salvage the extra ammunition.
@@ -298,8 +316,9 @@ Reward } Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEAD_CREW_PIRATE_FUEL">
+  <mod:findName name="DEAD_CREW_PIRATE_FUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Salvage the extra fuel cells.</mod:selector>
         <mod:setValue>Salvage the extra fuel cells.
@@ -307,8 +326,9 @@ Reward { Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEAD_CREW_PIRATE_MISSILES">
+  <mod:findName name="DEAD_CREW_PIRATE_MISSILES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Salvage the extra missiles.</mod:selector>
         <mod:setValue>Salvage the extra missiles.
@@ -316,7 +336,7 @@ Reward } Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_PIRATE">
+  <mod:findName name="SURRENDER_PIRATE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -325,8 +345,9 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SLAVER_CHOICE_1">
+  <mod:findName name="SLAVER_CHOICE_1" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Demand the Mantis joins your crew but release the rest.</mod:selector>
         <mod:setValue>Demand the Mantis joins your crew but release the rest.
@@ -334,8 +355,9 @@ Gain a crew(Mantis)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SLAVER_CHOICE_1">
+  <mod:findName name="SLAVER_CHOICE_1" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Demand the Rockman joins your crew but release the rest.</mod:selector>
         <mod:setValue>Demand the Rockman joins your crew but release the rest.
@@ -343,8 +365,9 @@ Gain a crew(Rock)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SLAVER_CHOICE_1">
+  <mod:findName name="SLAVER_CHOICE_1" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Demand the Engi joins your crew but release the rest.</mod:selector>
         <mod:setValue>Demand the Engi joins your crew but release the rest.
@@ -352,8 +375,9 @@ Gain a crew(Engi)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SLAVER_CHOICE_1">
+  <mod:findName name="SLAVER_CHOICE_1" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>We aren't slavers. Free them all.</mod:selector>
         <mod:setValue>We aren't slavers. Free them all.
@@ -361,8 +385,9 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SLAVER_CHOICE_2">
+  <mod:findName name="SLAVER_CHOICE_2" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Demand the Orchid joins your crew but release the rest.</mod:selector>
         <mod:setValue>Demand the Orchid joins your crew but release the rest.
@@ -370,8 +395,9 @@ Gain a crew(Orchid)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SLAVER_CHOICE_2">
+  <mod:findName name="SLAVER_CHOICE_2" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Demand the Shell joins your crew but release the rest.</mod:selector>
         <mod:setValue>Demand the Shell joins your crew but release the rest.
@@ -379,8 +405,9 @@ Gain a crew(Shell)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SLAVER_CHOICE_2">
+  <mod:findName name="SLAVER_CHOICE_2" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Demand the Slug joins your crew but release the rest.</mod:selector>
         <mod:setValue>Demand the Slug joins your crew but release the rest.
@@ -388,8 +415,9 @@ Gain a crew(Slug)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SLAVER_CHOICE_2">
+  <mod:findName name="SLAVER_CHOICE_2" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>We aren't slavers. Free them all.</mod:selector>
         <mod:setValue>We aren't slavers. Free them all.
@@ -397,8 +425,9 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_BROOD_FUEL">
+  <mod:findName name="DESTROYED_BROOD_FUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Salvage the extra fuel cells.</mod:selector>
         <mod:setValue>Salvage the extra fuel cells.
@@ -406,8 +435,9 @@ Reward { Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_BROOD_MISSILES">
+  <mod:findName name="DESTROYED_BROOD_MISSILES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Salvage the extra ammunition.</mod:selector>
         <mod:setValue>Salvage the extra ammunition.
@@ -415,8 +445,9 @@ Reward } Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEAD_CREW_BROOD_FUEL">
+  <mod:findName name="DEAD_CREW_BROOD_FUEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Salvage the extra fuel cells.</mod:selector>
         <mod:setValue>Salvage the extra fuel cells.
@@ -424,8 +455,9 @@ Reward { Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEAD_CREW_BROOD_MISSILES">
+  <mod:findName name="DEAD_CREW_BROOD_MISSILES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Salvage the extra missiles.</mod:selector>
         <mod:setValue>Salvage the extra missiles.
@@ -433,8 +465,9 @@ Reward } Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEAD_CREW_HACKER_FLEET">
+  <mod:findName name="DEAD_CREW_HACKER_FLEET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -442,7 +475,7 @@ Fleet Delay(1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_HACKER_GENERIC">
+  <mod:findName name="SURRENDER_HACKER_GENERIC" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -451,7 +484,7 @@ Reward Standard(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_HACKER_TRAP">
+  <mod:findName name="SURRENDER_HACKER_TRAP" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -460,8 +493,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEAD_CREW_MANTIS_SLAVE">
+  <mod:findName name="DEAD_CREW_MANTIS_SLAVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Open the cargo.</mod:selector>
         <mod:setValue>Open the cargo.
@@ -469,7 +503,7 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_FREEMANTIS">
+  <mod:findName name="SURRENDER_FREEMANTIS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -478,7 +512,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_ROCK_GENERIC">
+  <mod:findName name="SURRENDER_ROCK_GENERIC" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -487,7 +521,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_ROCK_MISSILES">
+  <mod:findName name="SURRENDER_ROCK_MISSILES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -496,7 +530,7 @@ Reward } Only(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_ROCK_STATION_GENERIC">
+  <mod:findName name="SURRENDER_ROCK_STATION_GENERIC" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -505,7 +539,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_OUTCAST_GENERIC">
+  <mod:findName name="SURRENDER_OUTCAST_GENERIC" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -514,7 +548,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_OUTCAST_MISSILES">
+  <mod:findName name="SURRENDER_OUTCAST_MISSILES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -523,7 +557,7 @@ Reward } Only(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_OUTCAST_CREW">
+  <mod:findName name="SURRENDER_OUTCAST_CREW" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept the slave.</mod:selector>
@@ -532,7 +566,7 @@ Gain a crew(Rock Outcast)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_SLUG_GENERIC">
+  <mod:findName name="SURRENDER_SLUG_GENERIC" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -541,7 +575,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_SLUG_SWAP">
+  <mod:findName name="SURRENDER_SLUG_SWAP" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -550,7 +584,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_SLUG_BETRAY">
+  <mod:findName name="SURRENDER_SLUG_BETRAY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -559,8 +593,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEAD_CREW_CLAN_TROPHY">
+  <mod:findName name="DEAD_CREW_CLAN_TROPHY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -568,7 +603,7 @@ Gain a crew(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_CLAN_GENERIC">
+  <mod:findName name="SURRENDER_CLAN_GENERIC" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -577,7 +612,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_CLAN_BETRAY">
+  <mod:findName name="SURRENDER_CLAN_BETRAY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -586,7 +621,7 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_HEKTAR_GENERIC">
+  <mod:findName name="SURRENDER_HEKTAR_GENERIC" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -595,7 +630,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_HEKTAR_SWAP">
+  <mod:findName name="SURRENDER_HEKTAR_SWAP" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -604,7 +639,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_LEECH_GENERIC">
+  <mod:findName name="SURRENDER_LEECH_GENERIC" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -613,8 +648,9 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_LEECH_GIVEUP">
+  <mod:findName name="SURRENDER_LEECH_GIVEUP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Spare them and stop firing.</mod:selector>
         <mod:setValue>Spare them and stop firing.
@@ -623,7 +659,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_SHELL">
+  <mod:findName name="SURRENDER_SHELL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -632,8 +668,9 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_MORPH_EXTRA">
+  <mod:findName name="DESTROYED_MORPH_EXTRA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Collect the salvage.</mod:selector>
         <mod:setValue>Collect the salvage.
@@ -642,8 +679,9 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_MORPH">
+  <mod:findName name="SURRENDER_MORPH" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Accept their "surrender".</mod:selector>
         <mod:setValue>Accept their "surrender".
@@ -652,7 +690,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_COALITION">
+  <mod:findName name="SURRENDER_COALITION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -661,8 +699,9 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_LANIUS_BOARDER">
+  <mod:findName name="DESTROYED_LANIUS_BOARDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -670,7 +709,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SURRENDER_LANIUS">
+  <mod:findName name="SURRENDER_LANIUS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their surrender.</mod:selector>
@@ -679,8 +718,9 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEADCREW_SIREN_UNKNOWN">
+  <mod:findName name="DEADCREW_SIREN_UNKNOWN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -688,8 +728,9 @@ Gain a crew(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_AUGMENTED_BOARDER">
+  <mod:findName name="DESTROYED_AUGMENTED_BOARDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -697,8 +738,9 @@ Gain a crew(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_REBEL_ELITE">
+  <mod:findName name="DEFEAT_REBEL_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -706,8 +748,9 @@ Gain a weapon(Giftlist Rebel)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_AUTO_ELITE">
+  <mod:findName name="DEFEAT_AUTO_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -715,8 +758,9 @@ Gain a weapon(Giftlist Estate)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_ENGINEER_ELITE">
+  <mod:findName name="DEFEAT_ENGINEER_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -724,8 +768,9 @@ Gain a weapon(Giftlist Rebel)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_FED_ELITE">
+  <mod:findName name="DEFEAT_FED_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -733,8 +778,9 @@ Gain a weapon(Giftlist Federation)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_ENGI_ELITE">
+  <mod:findName name="DEFEAT_ENGI_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -742,8 +788,9 @@ Gain a drone(Giftlist Engi)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_ZOLTAN_ELITE">
+  <mod:findName name="DEFEAT_ZOLTAN_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -751,8 +798,9 @@ Gain a weapon(Giftlist Zoltan)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_MILITIA_ELITE">
+  <mod:findName name="DEFEAT_MILITIA_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -760,8 +808,9 @@ Gain a weapon(Giftlist Union)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_ORCHID_ELITE">
+  <mod:findName name="DEFEAT_ORCHID_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -769,8 +818,9 @@ Gain a weapon(Giftlist Kernel Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_VAMPWEED_ELITE">
+  <mod:findName name="DEFEAT_VAMPWEED_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -778,8 +828,9 @@ Gain a weapon(Giftlist Spore Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_CRYSTAL_ELITE">
+  <mod:findName name="DEFEAT_CRYSTAL_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -787,8 +838,9 @@ Gain a weapon(Giftlist Crystal Elite)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_ROCK_ELITE">
+  <mod:findName name="DEFEAT_ROCK_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -796,8 +848,9 @@ Gain a weapon(Giftlist Rock)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEADCREW_FREEMAN_ELITE">
+  <mod:findName name="DEADCREW_FREEMAN_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -805,8 +858,9 @@ Gain a crew(Mantis Warlord)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_SUZERAIN_ELITE">
+  <mod:findName name="DEFEAT_SUZERAIN_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -814,8 +868,9 @@ Gain a weapon(Giftlist Mantis)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_DUSK_ELITE">
+  <mod:findName name="DEFEAT_DUSK_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -823,8 +878,9 @@ Gain a weapon(Giftlist Dusk)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_SLUG_ELITE">
+  <mod:findName name="DEFEAT_SLUG_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -832,8 +888,9 @@ Gain a weapon(Giftlist Slug)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_SHELL_ELITE">
+  <mod:findName name="DEFEAT_SHELL_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -841,8 +898,9 @@ Gain a weapon(Giftlist Shell)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_LEECH_ELITE">
+  <mod:findName name="DEFEAT_LEECH_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -850,8 +908,9 @@ Gain a weapon(Giftlist Leech)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_COALITION_ELITE">
+  <mod:findName name="DEFEAT_COALITION_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -859,8 +918,9 @@ Gain a weapon(Giftlist Coalition)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_LANIUS_ELITE">
+  <mod:findName name="DEFEAT_LANIUS_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -868,8 +928,9 @@ Gain a weapon(Giftlist Lanius)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_VAGABOND_ELITE">
+  <mod:findName name="DEFEAT_VAGABOND_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -877,8 +938,9 @@ Gain a weapon(Giftlist Rusty)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DEFEAT_DYNASTY_ELITE">
+  <mod:findName name="DEFEAT_DYNASTY_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...

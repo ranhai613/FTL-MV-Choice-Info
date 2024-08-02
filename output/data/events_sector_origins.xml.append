@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="START_ORIGINS">
+  <mod:findName name="START_ORIGINS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_crystalhome" lvl="0" blue="false" max_group="0"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -12,8 +13,9 @@ Gain a crew(Rock Cultist)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_ORIGINS">
+  <mod:findName name="START_ORIGINS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_crystalhome" lvl="1" blue="false" max_group="0"/>
       <mod:findLike type="text">
         <mod:selector>We've been here before...</mod:selector>
         <mod:setValue>We've been here before...
@@ -25,8 +27,9 @@ Gain a crew(Rock Cultist)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_ORIGINS_RUWEN">
+  <mod:findName name="START_ORIGINS_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -38,8 +41,9 @@ Gain a crew(Rock Cultist)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_ORIGINS_RUWEN_2">
+  <mod:findName name="START_ORIGINS_RUWEN_2" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_crystalhome" lvl="0" blue="false" max_group="0"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -51,8 +55,9 @@ Gain a crew(Rock Cultist)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_ORIGINS_RUWEN_2">
+  <mod:findName name="START_ORIGINS_RUWEN_2" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_crystalhome" lvl="1" blue="false" max_group="0"/>
       <mod:findLike type="text">
         <mod:selector>We've been here before...</mod:selector>
         <mod:setValue>We've been here before...
@@ -64,8 +69,9 @@ Gain a crew(Rock Cultist)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST">
+  <mod:findName name="GUARD_CULTIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -77,10 +83,12 @@ Gain a crew(Rock Cultist)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST">
+  <mod:findName name="GUARD_CULTIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -94,12 +102,15 @@ Gain a crew(Rock Cultist)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST">
+  <mod:findName name="GUARD_CULTIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>The who?</mod:selector>
                 <mod:setValue>The who?
@@ -111,14 +122,18 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST">
+  <mod:findName name="GUARD_CULTIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -132,12 +147,15 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST">
+  <mod:findName name="GUARD_CULTIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="unique_vortigon"/>
               <mod:findLike type="text">
                 <mod:selector>(Vortigon) This vessel has permission from the Grand Priest to travel here.</mod:selector>
                 <mod:setValue>(Vortigon) This vessel has permission from the Grand Priest to travel here.
@@ -149,12 +167,15 @@ Reward Item(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST">
+  <mod:findName name="GUARD_CULTIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="rock_cultist"/>
               <mod:findLike type="text">
                 <mod:selector>(Cultist Crew) Show them proof of your loyalty.</mod:selector>
                 <mod:setValue>(Cultist Crew) Show them proof of your loyalty.
@@ -166,12 +187,15 @@ Gain a crew(Rock Cultist)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST">
+  <mod:findName name="GUARD_CULTIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_CRYSTAL"/>
               <mod:findLike type="text">
                 <mod:selector>(Crystal Crew) Reason with the cultists.</mod:selector>
                 <mod:setValue>(Crystal Crew) Reason with the cultists.
@@ -183,12 +207,15 @@ Gain a crew(Rock Cultist)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST">
+  <mod:findName name="GUARD_CULTIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="mind"/>
               <mod:findLike type="text">
                 <mod:selector>(Mind Control) Convince the guard to leave you alone.</mod:selector>
                 <mod:setValue>(Mind Control) Convince the guard to leave you alone.
@@ -200,12 +227,15 @@ Gain a crew(Rock Cultist)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST">
+  <mod:findName name="GUARD_CULTIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="cloaking"/>
               <mod:findLike type="text">
                 <mod:selector>(Cloaking) Cloak and try to escape.</mod:selector>
                 <mod:setValue>(Cloaking) Cloak and try to escape.
@@ -217,12 +247,15 @@ Gain a crew(Rock Cultist)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST">
+  <mod:findName name="GUARD_CULTIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="engines" lvl="5"/>
               <mod:findLike type="text">
                 <mod:selector>(Adv. Engines) Try to escape the guard.</mod:selector>
                 <mod:setValue>(Adv. Engines) Try to escape the guard.
@@ -234,12 +267,15 @@ Gain a crew(Rock Cultist)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST">
+  <mod:findName name="GUARD_CULTIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="pilot" lvl="3"/>
               <mod:findLike type="text">
                 <mod:selector>(Adv. Autopilot) Activate the auto-pilot to try and escape.</mod:selector>
                 <mod:setValue>(Adv. Autopilot) Activate the auto-pilot to try and escape.
@@ -251,7 +287,7 @@ Gain a crew(Rock Cultist)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST_REVISIT">
+  <mod:findName name="GUARD_CULTIST_REVISIT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Yeah yeah yeah, we've heard this all before.</mod:selector>
@@ -264,10 +300,11 @@ Gain a crew(Rock Cultist)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST_REVISIT">
+  <mod:findName name="GUARD_CULTIST_REVISIT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Nah, we'll just blow our way through.</mod:selector>
             <mod:setValue>Nah, we'll just blow our way through.
@@ -277,12 +314,14 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST_REVISIT">
+  <mod:findName name="GUARD_CULTIST_REVISIT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -294,10 +333,11 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST_REVISIT">
+  <mod:findName name="GUARD_CULTIST_REVISIT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_vortigon"/>
           <mod:findLike type="text">
             <mod:selector>(Vortigon) This vessel has permission from the Grand Priest to travel here.</mod:selector>
             <mod:setValue>(Vortigon) This vessel has permission from the Grand Priest to travel here.
@@ -307,10 +347,11 @@ Reward Item(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST_REVISIT">
+  <mod:findName name="GUARD_CULTIST_REVISIT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="rock_cultist"/>
           <mod:findLike type="text">
             <mod:selector>(Cultist Crew) Show them proof of your loyalty.</mod:selector>
             <mod:setValue>(Cultist Crew) Show them proof of your loyalty.
@@ -320,10 +361,11 @@ Gain a crew(Rock Cultist)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST_REVISIT">
+  <mod:findName name="GUARD_CULTIST_REVISIT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_CRYSTAL"/>
           <mod:findLike type="text">
             <mod:selector>(Crystal Crew) Reason with the cultists.</mod:selector>
             <mod:setValue>(Crystal Crew) Reason with the cultists.
@@ -333,10 +375,11 @@ Gain a crew(Rock Cultist)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST_REVISIT">
+  <mod:findName name="GUARD_CULTIST_REVISIT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="mind"/>
           <mod:findLike type="text">
             <mod:selector>(Mind Control) Convince the guard to leave you alone.</mod:selector>
             <mod:setValue>(Mind Control) Convince the guard to leave you alone.
@@ -346,10 +389,11 @@ Gain a crew(Rock Cultist)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST_REVISIT">
+  <mod:findName name="GUARD_CULTIST_REVISIT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="cloaking"/>
           <mod:findLike type="text">
             <mod:selector>(Cloaking) Cloak and try to escape.</mod:selector>
             <mod:setValue>(Cloaking) Cloak and try to escape.
@@ -359,10 +403,11 @@ Gain a crew(Rock Cultist)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST_REVISIT">
+  <mod:findName name="GUARD_CULTIST_REVISIT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="engines" lvl="5"/>
           <mod:findLike type="text">
             <mod:selector>(Adv. Engines) Try to escape the guard.</mod:selector>
             <mod:setValue>(Adv. Engines) Try to escape the guard.
@@ -372,10 +417,11 @@ Gain a crew(Rock Cultist)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GUARD_CULTIST_REVISIT">
+  <mod:findName name="GUARD_CULTIST_REVISIT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="pilot" lvl="3"/>
           <mod:findLike type="text">
             <mod:selector>(Adv. Autopilot) Activate the auto-pilot to try and escape.</mod:selector>
             <mod:setValue>(Adv. Autopilot) Activate the auto-pilot to try and escape.
@@ -385,8 +431,9 @@ Gain a crew(Rock Cultist)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="REINFORCEMENTS_CULTIST">
+  <mod:findName name="REINFORCEMENTS_CULTIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -394,8 +441,9 @@ Fight(HK=CK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_ORIGINS">
+  <mod:findName name="FINISH_BEACON_ORIGINS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Do something onboard the ship.</mod:selector>
         <mod:setValue>Do something onboard the ship.
@@ -403,8 +451,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN">
+  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_origins_exit" lvl="1" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -412,10 +461,12 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN">
+  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_origins_exit" lvl="1" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -425,10 +476,12 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN">
+  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="loc_origins_exit" lvl="1" max_group="0" hidden="true" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="engines" lvl="6"/>
           <mod:findLike type="text">
             <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
             <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -438,8 +491,9 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN">
+  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_waystone" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Inspect the Waystone.</mod:selector>
         <mod:setValue>Inspect the Waystone.
@@ -447,10 +501,12 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN">
+  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_waystone" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_ruwen" lvl="1" max_group="0" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>Talk to Ruwen.</mod:selector>
             <mod:setValue>Talk to Ruwen.
@@ -463,12 +519,15 @@ Repair Hull(15$)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN">
+  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_waystone" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_ruwen" lvl="1" max_group="0" blue="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="unique_vortigon" lvl="1" max_group="0" blue="false"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -482,12 +541,15 @@ Repair Hull(15$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN">
+  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_waystone" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_ruwen" lvl="1" max_group="0" blue="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="unique_vortigon" lvl="0" max_group="0" blue="false"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -502,10 +564,12 @@ Repair Hull(15$)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN">
+  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_waystone" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_ruwen" lvl="0" max_group="0" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -515,12 +579,15 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN">
+  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_waystone" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_ruwen" lvl="0" max_group="0" blue="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -532,8 +599,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN">
+  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_waystone" lvl="0" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -541,10 +609,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN">
+  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_waystone" lvl="0" max_group="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_ruwen" lvl="1" max_group="0" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>Talk to Ruwen.</mod:selector>
             <mod:setValue>Talk to Ruwen.
@@ -554,12 +624,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN">
+  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_waystone" lvl="0" max_group="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_ruwen" lvl="1" max_group="0" blue="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Yes? What is it?</mod:selector>
                 <mod:setValue>Yes? What is it?
@@ -571,10 +644,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN">
+  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_waystone" lvl="0" max_group="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_ruwen" lvl="0" max_group="0" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -584,12 +659,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN">
+  <mod:findName name="FINISH_BEACON_ORIGINS_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_waystone" lvl="0" max_group="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_ruwen" lvl="0" max_group="0" blue="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Do something onboard the ship.</mod:selector>
                 <mod:setValue>Do something onboard the ship.
@@ -601,8 +679,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_MOURNING">
+  <mod:findName name="CULTIST_MOURNING" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Sneak into the crowds and see if you can try and pilfer some stuff.</mod:selector>
         <mod:setValue>Sneak into the crowds and see if you can try and pilfer some stuff.
@@ -610,10 +689,12 @@ Fight(HK: 20% Reward Standard(M))(CK: 20% Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_MOURNING">
+  <mod:findName name="CULTIST_MOURNING" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Yes, definitely.</mod:selector>
             <mod:setValue>Yes, definitely.
@@ -623,12 +704,15 @@ Fight(HK: 20% Reward Standard(M))(CK: 20% Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_MOURNING">
+  <mod:findName name="CULTIST_MOURNING" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Anastasia.</mod:selector>
                 <mod:setValue>Anastasia.
@@ -642,12 +726,15 @@ Fight(HK: 20% Reward Standard(M))(CK: 20% Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_MOURNING">
+  <mod:findName name="CULTIST_MOURNING" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Reginald.</mod:selector>
                 <mod:setValue>Reginald.
@@ -661,12 +748,15 @@ Fight(HK: 20% Reward Standard(M))(CK: 20% Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_MOURNING">
+  <mod:findName name="CULTIST_MOURNING" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Steve.</mod:selector>
                 <mod:setValue>Steve.
@@ -680,12 +770,15 @@ Fight(HK: 20% Reward Standard(M))(CK: 20% Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_MOURNING">
+  <mod:findName name="CULTIST_MOURNING" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_SLUG"/>
               <mod:findLike type="text">
                 <mod:selector>(Slug Crew) Have your Slug answer.</mod:selector>
                 <mod:setValue>(Slug Crew) Have your Slug answer.
@@ -697,14 +790,18 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_MOURNING">
+  <mod:findName name="CULTIST_MOURNING" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="LIST_CREW_SLUG"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -718,12 +815,15 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_MOURNING">
+  <mod:findName name="CULTIST_MOURNING" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="BLUELIST_CREW_SNAIL"/>
               <mod:findLike type="text">
                 <mod:selector>(Telepathic Shell) Have your Shell answer.</mod:selector>
                 <mod:setValue>(Telepathic Shell) Have your Shell answer.
@@ -735,14 +835,18 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_MOURNING">
+  <mod:findName name="CULTIST_MOURNING" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" req="BLUELIST_CREW_SNAIL"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -756,10 +860,12 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_MOURNING">
+  <mod:findName name="CULTIST_MOURNING" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="rock_cultist"/>
           <mod:findLike type="text">
             <mod:selector>(Cultist Crew) "Yes!"</mod:selector>
             <mod:setValue>(Cultist Crew) "Yes!"
@@ -769,10 +875,12 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_MOURNING">
+  <mod:findName name="CULTIST_MOURNING" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_vortigon"/>
           <mod:findLike type="text">
             <mod:selector>(Vortigon) "Yes, you troglodyte."</mod:selector>
             <mod:setValue>(Vortigon) "Yes, you troglodyte."
@@ -783,7 +891,7 @@ Gain a weapon(Giftlist Crystal)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_MOURNING">
+  <mod:findName name="CULTIST_MOURNING" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the planet.</mod:selector>
@@ -792,7 +900,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_MOURNING">
+  <mod:findName name="CULTIST_MOURNING" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -805,8 +913,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_MOURNING_INCORRECT">
+  <mod:findName name="CULTIST_MOURNING_INCORRECT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -814,7 +923,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_BLESSED_WEAPON">
+  <mod:findName name="CULTIST_BLESSED_WEAPON" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Buy a weapon.</mod:selector>
@@ -835,7 +944,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_BLESSED_WEAPON">
+  <mod:findName name="CULTIST_BLESSED_WEAPON" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Buy a weapon.</mod:selector>
@@ -856,7 +965,7 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_BLESSED_WEAPON">
+  <mod:findName name="CULTIST_BLESSED_WEAPON" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Ignore the Cultists.</mod:selector>
@@ -865,7 +974,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_BLESSED_WEAPON">
+  <mod:findName name="CULTIST_BLESSED_WEAPON" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -878,8 +987,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_GASPLANET">
+  <mod:findName name="CULTIST_GASPLANET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ENGINEER"/>
       <mod:findLike type="text">
         <mod:selector>(Engineer Crew) Have your Engineer help them.</mod:selector>
         <mod:setValue>(Engineer Crew) Have your Engineer help them.
@@ -887,8 +997,9 @@ Reward {(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_GASPLANET">
+  <mod:findName name="CULTIST_GASPLANET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Scam them into buying some junk from you.</mod:selector>
         <mod:setValue>Scam them into buying some junk from you.
@@ -896,7 +1007,7 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_GASPLANET">
+  <mod:findName name="CULTIST_GASPLANET" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Ignore the Cultists.</mod:selector>
@@ -905,7 +1016,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_GASPLANET">
+  <mod:findName name="CULTIST_GASPLANET" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -918,8 +1029,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_ARGUMENT">
+  <mod:findName name="CULTIST_ARGUMENT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Eavesdrop on their conversation.</mod:selector>
         <mod:setValue>Eavesdrop on their conversation.
@@ -927,8 +1039,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_ARGUMENT">
+  <mod:findName name="CULTIST_ARGUMENT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -940,12 +1053,14 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_ARGUMENT">
+  <mod:findName name="CULTIST_ARGUMENT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Keep listening.</mod:selector>
                 <mod:setValue>Keep listening.
@@ -957,14 +1072,17 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_ARGUMENT">
+  <mod:findName name="CULTIST_ARGUMENT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Eternal "Ember" is correct.</mod:selector>
                     <mod:setValue>Eternal "Ember" is correct.
@@ -978,14 +1096,17 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_ARGUMENT">
+  <mod:findName name="CULTIST_ARGUMENT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>The Cult was meant to be named after the Eternal "Amber".</mod:selector>
                     <mod:setValue>The Cult was meant to be named after the Eternal "Amber".
@@ -999,7 +1120,7 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_ARGUMENT">
+  <mod:findName name="CULTIST_ARGUMENT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Leave them to their bickering.</mod:selector>
@@ -1008,7 +1129,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_ARGUMENT">
+  <mod:findName name="CULTIST_ARGUMENT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1021,8 +1142,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_REBEL_CHASE">
+  <mod:findName name="ORIGINS_REBEL_CHASE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Help the Rebels!</mod:selector>
         <mod:setValue>Help the Rebels!
@@ -1030,10 +1152,12 @@ Fight(HK=CK: Reward Standard(H) 33% Gain a crew(Human) 33% Fleet Delay(2))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_REBEL_CHASE">
+  <mod:findName name="ORIGINS_REBEL_CHASE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1043,8 +1167,9 @@ Fight(HK=CK: Reward Standard(H) 33% Gain a crew(Human) 33% Fleet Delay(2))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_REBEL_CHASE">
+  <mod:findName name="ORIGINS_REBEL_CHASE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Help the Cultists!</mod:selector>
         <mod:setValue>Help the Cultists!
@@ -1052,10 +1177,12 @@ Fight(HK=CK: Reward Standard(M) 33% Reward ~ Only(R))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_REBEL_CHASE">
+  <mod:findName name="ORIGINS_REBEL_CHASE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1065,7 +1192,7 @@ Fight(HK=CK: Reward Standard(M) 33% Reward ~ Only(R))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_REBEL_CHASE">
+  <mod:findName name="ORIGINS_REBEL_CHASE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Ignore the ships.</mod:selector>
@@ -1074,7 +1201,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_REBEL_CHASE">
+  <mod:findName name="ORIGINS_REBEL_CHASE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1087,8 +1214,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_PIRATE_RAIDERS">
+  <mod:findName name="ORIGINS_PIRATE_RAIDERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack!</mod:selector>
         <mod:setValue>Attack!
@@ -1096,10 +1224,12 @@ Fight(HK: Reward Standard(L) Reward Stuff(L) Gain a weapon(List Weapons Crystal 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_PIRATE_RAIDERS">
+  <mod:findName name="ORIGINS_PIRATE_RAIDERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1109,7 +1239,7 @@ Fight(HK: Reward Standard(L) Reward Stuff(L) Gain a weapon(List Weapons Crystal 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_PIRATE_RAIDERS">
+  <mod:findName name="ORIGINS_PIRATE_RAIDERS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Ignore them.</mod:selector>
@@ -1118,7 +1248,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_PIRATE_RAIDERS">
+  <mod:findName name="ORIGINS_PIRATE_RAIDERS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1131,8 +1261,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_DUEL_CHOICE">
+  <mod:findName name="ORIGINS_DUEL_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Assist the Crystals.</mod:selector>
         <mod:setValue>Assist the Crystals.
@@ -1140,10 +1271,12 @@ Fight(HK=CK: Reward Standard(H) Gain a crew(Crystal Sentinel))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_DUEL_CHOICE">
+  <mod:findName name="ORIGINS_DUEL_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1153,8 +1286,9 @@ Fight(HK=CK: Reward Standard(H) Gain a crew(Crystal Sentinel))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_DUEL_CHOICE">
+  <mod:findName name="ORIGINS_DUEL_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Assist the Cultists.</mod:selector>
         <mod:setValue>Assist the Cultists.
@@ -1162,10 +1296,12 @@ Fight(HK=CK: Reward Standard(H) Gain a crew(Rock Cultist))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_DUEL_CHOICE">
+  <mod:findName name="ORIGINS_DUEL_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1175,7 +1311,7 @@ Fight(HK=CK: Reward Standard(H) Gain a crew(Rock Cultist))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_DUEL_CHOICE">
+  <mod:findName name="ORIGINS_DUEL_CHOICE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Leave, quickly.</mod:selector>
@@ -1184,7 +1320,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_DUEL_CHOICE">
+  <mod:findName name="ORIGINS_DUEL_CHOICE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1197,8 +1333,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_BOUNTY">
+  <mod:findName name="CULTIST_BOUNTY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Reply.</mod:selector>
         <mod:setValue>Reply.
@@ -1206,10 +1343,12 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_BOUNTY">
+  <mod:findName name="CULTIST_BOUNTY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Agree.</mod:selector>
             <mod:setValue>Agree.
@@ -1219,12 +1358,15 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_BOUNTY">
+  <mod:findName name="CULTIST_BOUNTY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1236,7 +1378,7 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_BOUNTY">
+  <mod:findName name="CULTIST_BOUNTY" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Ignore their hail.</mod:selector>
@@ -1245,7 +1387,7 @@ Fight(HK: 50% Reward Standard(M))(CK: 50% Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_BOUNTY_IGNORE">
+  <mod:findName name="CULTIST_BOUNTY_IGNORE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">
@@ -1256,9 +1398,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_BOUNTY_IGNORE">
+  <mod:findName name="CULTIST_BOUNTY_IGNORE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1267,8 +1410,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_FAKE">
+  <mod:findName name="CULTIST_FAKE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>These poor souls have no idea what they're getting themselves into. Rescue them!</mod:selector>
         <mod:setValue>These poor souls have no idea what they're getting themselves into. Rescue them!
@@ -1276,10 +1420,12 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a drone(Divrepair) Gain a crew(Rock
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_FAKE">
+  <mod:findName name="CULTIST_FAKE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1289,7 +1435,7 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a drone(Divrepair) Gain a crew(Rock
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_FAKE">
+  <mod:findName name="CULTIST_FAKE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>These people can do whatever they want, it's their life.</mod:selector>
@@ -1298,7 +1444,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_FAKE">
+  <mod:findName name="CULTIST_FAKE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1311,8 +1457,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_FAKE_WIN">
+  <mod:findName name="CULTIST_FAKE_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Contact the other cultists.</mod:selector>
         <mod:setValue>Contact the other cultists.
@@ -1320,8 +1467,9 @@ Gain a crew(Rock Cultist)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_ATTACKERS">
+  <mod:findName name="ORIGINS_ATTACKERS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Save the Crystals!</mod:selector>
         <mod:setValue>Save the Crystals!
@@ -1329,7 +1477,7 @@ Fight(HK=CK: 33% Reward Standard(M) 17% Reward ~ Only(M) 17% Gain a crew(Crystal
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_ATTACKERS">
+  <mod:findName name="ORIGINS_ATTACKERS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Ignore the distress beacon.</mod:selector>
@@ -1338,7 +1486,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_ATTACKERS">
+  <mod:findName name="ORIGINS_ATTACKERS" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1351,9 +1499,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_ATTACKERS_LIST">
+  <mod:findName name="ORIGINS_ATTACKERS_LIST" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1362,9 +1511,10 @@ Fight(HK=CK: Reward Standard(M) 50% Reward ~ Only(M) 50% Gain a crew(Crystal))</
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_ATTACKERS_LIST">
+  <mod:findName name="ORIGINS_ATTACKERS_LIST" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1373,9 +1523,10 @@ Fight(HK=CK: Reward Standard(M) 50% Reward ~ Only(M) 50% Gain a crew(Crystal))</
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_ATTACKERS_LIST">
+  <mod:findName name="ORIGINS_ATTACKERS_LIST" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1384,8 +1535,9 @@ Fight(HK=CK: Reward Standard(M) 50% Reward ~ Only(M) 50% Gain a crew(Crystal))</
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ORIGINS_ATTACKERS_WIN">
+  <mod:findName name="ORIGINS_ATTACKERS_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Contact the Crystals.</mod:selector>
         <mod:setValue>Contact the Crystals.
@@ -1394,8 +1546,9 @@ Fight(HK=CK: Reward Standard(M) 50% Reward ~ Only(M) 50% Gain a crew(Crystal))</
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_CULTIST_REGULAR">
+  <mod:findName name="ENCOUNTER_CULTIST_REGULAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1403,8 +1556,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_CULTIST_REGULAR">
+  <mod:findName name="ENCOUNTER_CULTIST_REGULAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_vortigon"/>
       <mod:findLike type="text">
         <mod:selector>(Vortigon) Halt! This vessel has permission from the Grand Priest to travel here.</mod:selector>
         <mod:setValue>(Vortigon) Halt! This vessel has permission from the Grand Priest to travel here.
@@ -1412,8 +1566,9 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_CULTIST_SUN">
+  <mod:findName name="ENCOUNTER_CULTIST_SUN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1421,8 +1576,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_CULTIST_SUN">
+  <mod:findName name="ENCOUNTER_CULTIST_SUN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_vortigon"/>
       <mod:findLike type="text">
         <mod:selector>(Vortigon) Halt! This vessel has permission from the Grand Priest to travel here.</mod:selector>
         <mod:setValue>(Vortigon) Halt! This vessel has permission from the Grand Priest to travel here.
@@ -1430,8 +1586,9 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_ORIGINS_CRYSTAL_REGULAR">
+  <mod:findName name="ENCOUNTER_ORIGINS_CRYSTAL_REGULAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1439,8 +1596,9 @@ Fight(CK: 20% Reward Standard(H) 20% Reward Standard(M) 20% Gain a weapon(List W
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_ORIGINS_CRYSTAL_ASTEROID">
+  <mod:findName name="ENCOUNTER_ORIGINS_CRYSTAL_ASTEROID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1448,8 +1606,9 @@ Fight(CK: 20% Reward Standard(H) 20% Reward Standard(M) 20% Gain a weapon(List W
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_PIRATE_BURN">
+  <mod:findName name="CULTIST_PIRATE_BURN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1457,8 +1616,9 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_PIRATE_BURN_SHIP">
+  <mod:findName name="CULTIST_PIRATE_BURN_SHIP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Board and rescue the pirates.</mod:selector>
         <mod:setValue>Board and rescue the pirates.
@@ -1467,8 +1627,9 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_FAKE">
+  <mod:findName name="CULTIST_CHURCH_FAKE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_emberchurch_ruwen" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1476,8 +1637,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_FAKE">
+  <mod:findName name="CULTIST_CHURCH_FAKE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_emberchurch_ruwen" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1489,8 +1651,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_FAKE">
+  <mod:findName name="CULTIST_CHURCH_FAKE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_emberchurch_ruwen" lvl="0" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1498,8 +1661,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_FAKE">
+  <mod:findName name="CULTIST_CHURCH_FAKE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_emberchurch_ruwen" lvl="0" max_group="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1511,8 +1675,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_RUWEN">
+  <mod:findName name="CULTIST_CHURCH_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_emberchurch_noruwen" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1521,8 +1686,9 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_RUWEN">
+  <mod:findName name="CULTIST_CHURCH_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_emberchurch_noruwen" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1535,8 +1701,9 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_RUWEN">
+  <mod:findName name="CULTIST_CHURCH_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_emberchurch_noruwen" lvl="0" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1545,8 +1712,9 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_RUWEN">
+  <mod:findName name="CULTIST_CHURCH_RUWEN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_emberchurch_noruwen" lvl="0" max_group="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1559,8 +1727,9 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_BEGIN">
+  <mod:findName name="CULTIST_CHURCH_BEGIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>This is important; interrupt the sermon.</mod:selector>
         <mod:setValue>This is important; interrupt the sermon.
@@ -1569,10 +1738,12 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_BEGIN">
+  <mod:findName name="CULTIST_CHURCH_BEGIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_ruwen" lvl="1" max_group="0" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>Have Ruwen speak with him.</mod:selector>
             <mod:setValue>Have Ruwen speak with him.
@@ -1583,12 +1754,15 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_BEGIN">
+  <mod:findName name="CULTIST_CHURCH_BEGIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_ruwen" lvl="1" max_group="0" blue="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true" blue="false"/>
               <mod:findLike type="text">
                 <mod:selector>We've come for the Waystone Key.</mod:selector>
                 <mod:setValue>We've come for the Waystone Key.
@@ -1601,10 +1775,12 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_BEGIN">
+  <mod:findName name="CULTIST_CHURCH_BEGIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_ruwen" lvl="0" max_group="0" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>Just stand there and stare.</mod:selector>
             <mod:setValue>Just stand there and stare.
@@ -1614,8 +1790,9 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_BEGIN">
+  <mod:findName name="CULTIST_CHURCH_BEGIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attempt to sneak around and look for the key.</mod:selector>
         <mod:setValue>Attempt to sneak around and look for the key.
@@ -1624,10 +1801,12 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_BEGIN">
+  <mod:findName name="CULTIST_CHURCH_BEGIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Enter the door marked 'shrine'.</mod:selector>
             <mod:setValue>Enter the door marked 'shrine'.
@@ -1639,12 +1818,15 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_BEGIN">
+  <mod:findName name="CULTIST_CHURCH_BEGIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Break open the case.</mod:selector>
                 <mod:setValue>Break open the case.
@@ -1658,14 +1840,18 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_BEGIN">
+  <mod:findName name="CULTIST_CHURCH_BEGIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Hurry back to the ship!</mod:selector>
                     <mod:setValue>Hurry back to the ship!
@@ -1680,16 +1866,21 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_BEGIN">
+  <mod:findName name="CULTIST_CHURCH_BEGIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Attack, we need that key!</mod:selector>
                         <mod:setValue>Attack, we need that key!
@@ -1706,18 +1897,24 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_BEGIN">
+  <mod:findName name="CULTIST_CHURCH_BEGIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="text">
                             <mod:selector>Continue...</mod:selector>
                             <mod:setValue>Continue...
@@ -1736,16 +1933,21 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_BEGIN">
+  <mod:findName name="CULTIST_CHURCH_BEGIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>We can't risk it, run!</mod:selector>
                         <mod:setValue>We can't risk it, run!
@@ -1761,10 +1963,12 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_BEGIN">
+  <mod:findName name="CULTIST_CHURCH_BEGIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Enter the door marked 'storage'.</mod:selector>
             <mod:setValue>Enter the door marked 'storage'.
@@ -1775,8 +1979,9 @@ Reward Stuff(M)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_QUESTION">
+  <mod:findName name="CULTIST_CHURCH_QUESTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Take it through force!</mod:selector>
         <mod:setValue>Take it through force!
@@ -1784,8 +1989,9 @@ Reward Stuff(M)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_QUESTION">
+  <mod:findName name="CULTIST_CHURCH_QUESTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Leave, then sneak around back and look for the key.</mod:selector>
         <mod:setValue>Leave, then sneak around back and look for the key.
@@ -1794,10 +2000,12 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_QUESTION">
+  <mod:findName name="CULTIST_CHURCH_QUESTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Enter the door marked 'shrine'.</mod:selector>
             <mod:setValue>Enter the door marked 'shrine'.
@@ -1809,12 +2017,15 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_QUESTION">
+  <mod:findName name="CULTIST_CHURCH_QUESTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Break open the case.</mod:selector>
                 <mod:setValue>Break open the case.
@@ -1828,14 +2039,18 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_QUESTION">
+  <mod:findName name="CULTIST_CHURCH_QUESTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Hurry back to the ship!</mod:selector>
                     <mod:setValue>Hurry back to the ship!
@@ -1850,16 +2065,21 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_QUESTION">
+  <mod:findName name="CULTIST_CHURCH_QUESTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Attack, we need that key!</mod:selector>
                         <mod:setValue>Attack, we need that key!
@@ -1876,18 +2096,24 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_QUESTION">
+  <mod:findName name="CULTIST_CHURCH_QUESTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="text">
                             <mod:selector>Continue...</mod:selector>
                             <mod:setValue>Continue...
@@ -1906,16 +2132,21 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_QUESTION">
+  <mod:findName name="CULTIST_CHURCH_QUESTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>We can't risk it, run!</mod:selector>
                         <mod:setValue>We can't risk it, run!
@@ -1931,10 +2162,12 @@ Fight(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Cultist))(HK: Reward Standard(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CULTIST_CHURCH_QUESTION">
+  <mod:findName name="CULTIST_CHURCH_QUESTION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Enter the door marked 'storage'.</mod:selector>
             <mod:setValue>Enter the door marked 'storage'.
@@ -1945,8 +2178,9 @@ Reward Stuff(M)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VORTIGON_SURRENDER">
+  <mod:findName name="VORTIGON_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Simply stop firing.</mod:selector>
         <mod:setValue>Simply stop firing.
@@ -1954,10 +2188,12 @@ Reward Stuff(M)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VORTIGON_SURRENDER">
+  <mod:findName name="VORTIGON_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1967,12 +2203,15 @@ Reward Stuff(M)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VORTIGON_SURRENDER">
+  <mod:findName name="VORTIGON_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1984,8 +2223,9 @@ Reward Stuff(M)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VORTIGON_DEADCREW">
+  <mod:findName name="VORTIGON_DEADCREW" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1993,8 +2233,9 @@ Reward Stuff(M)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VORTIGON_KEY">
+  <mod:findName name="VORTIGON_KEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2002,10 +2243,12 @@ Gain a crew(Unique Vortigon)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VORTIGON_KEY">
+  <mod:findName name="VORTIGON_KEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="medbay" lvl="2"/>
           <mod:findLike type="text">
             <mod:selector>(Upg. Medbay) Hurry to the Medbay and heal him.</mod:selector>
             <mod:setValue>(Upg. Medbay) Hurry to the Medbay and heal him.
@@ -2015,12 +2258,15 @@ Gain a crew(Unique Vortigon)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VORTIGON_KEY">
+  <mod:findName name="VORTIGON_KEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="medbay" lvl="2"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -2032,10 +2278,12 @@ Gain a crew(Unique Vortigon)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VORTIGON_KEY">
+  <mod:findName name="VORTIGON_KEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="clonebay" lvl="1"/>
           <mod:findLike type="text">
             <mod:selector>(Clone Bay) Enter Vortigon's data into the Clone Bay.</mod:selector>
             <mod:setValue>(Clone Bay) Enter Vortigon's data into the Clone Bay.
@@ -2045,12 +2293,15 @@ Gain a crew(Unique Vortigon)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="VORTIGON_KEY">
+  <mod:findName name="VORTIGON_KEY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="clonebay" lvl="1"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...

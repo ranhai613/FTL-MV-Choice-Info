@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="FINISH_BEACON_FLEET_ELITE">
+  <mod:findName name="FINISH_BEACON_FLEET_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -8,8 +9,9 @@ Fight(HK=CK: {1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_FLEET_ELITE">
+  <mod:findName name="FINISH_BEACON_FLEET_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
         <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -17,8 +19,9 @@ Fight(HK=CK: {1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_FLEET_ACE">
+  <mod:findName name="FINISH_BEACON_FLEET_ACE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -26,8 +29,9 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_FLEET_ACE">
+  <mod:findName name="FINISH_BEACON_FLEET_ACE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
         <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -35,8 +39,9 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_ELITE">
+  <mod:findName name="FLEET_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -44,8 +49,9 @@ Fight(HK=CK: {1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_ELITE">
+  <mod:findName name="FLEET_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
         <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -53,8 +59,9 @@ Fight(HK=CK: {1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_ACE">
+  <mod:findName name="FLEET_ACE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -62,8 +69,9 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_ACE">
+  <mod:findName name="FLEET_ACE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
         <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -71,8 +79,9 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_ACE_S8">
+  <mod:findName name="FLEET_ACE_S8" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -80,8 +89,9 @@ Fight(HK=CK: {3 }1 |1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_ACE_S8">
+  <mod:findName name="FLEET_ACE_S8" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
         <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -89,9 +99,10 @@ Fight(HK=CK: {3 }1 |1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_ESCAPE">
+  <mod:findName name="FLEET_ESCAPE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -100,9 +111,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_ESCAPE">
+  <mod:findName name="FLEET_ESCAPE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -111,8 +123,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_ELITE_NEBULA">
+  <mod:findName name="FLEET_ELITE_NEBULA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -120,8 +133,9 @@ Fight(HK=CK: {1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_ELITE_NEBULA">
+  <mod:findName name="FLEET_ELITE_NEBULA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
         <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -129,8 +143,9 @@ Fight(HK=CK: {1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_ACE_NEBULA">
+  <mod:findName name="FLEET_ACE_NEBULA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -138,8 +153,9 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_ACE_NEBULA">
+  <mod:findName name="FLEET_ACE_NEBULA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
         <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -147,8 +163,9 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_ELITE_FEDERATION">
+  <mod:findName name="FLEET_ELITE_FEDERATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -156,8 +173,9 @@ Fight(HK=CK: {1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_ELITE_FEDERATION">
+  <mod:findName name="FLEET_ELITE_FEDERATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
         <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -165,8 +183,9 @@ Fight(HK=CK: {1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_ACE_FEDERATION">
+  <mod:findName name="FLEET_ACE_FEDERATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -174,8 +193,9 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_ACE_FEDERATION">
+  <mod:findName name="FLEET_ACE_FEDERATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
         <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -183,8 +203,9 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_FLEET_ELITE_FEDERATION">
+  <mod:findName name="FINISH_BEACON_FLEET_ELITE_FEDERATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -192,8 +213,9 @@ Fight(HK=CK: {1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_FLEET_ELITE_FEDERATION">
+  <mod:findName name="FINISH_BEACON_FLEET_ELITE_FEDERATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
         <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -201,8 +223,9 @@ Fight(HK=CK: {1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_FLEET_ACE_FEDERATION">
+  <mod:findName name="FINISH_BEACON_FLEET_ACE_FEDERATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -210,8 +233,9 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_FLEET_ACE_FEDERATION">
+  <mod:findName name="FINISH_BEACON_FLEET_ACE_FEDERATION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
         <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -219,9 +243,10 @@ Fight(HK=CK: {3 }1 |1 Fleet Delay(1))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_AUTO_FLEET">
+  <mod:findName name="SHIP_AUTO_FLEET" type="ship">
     <mod:findLike type="destroyed">
       <mod:findLike type="choice">
+        <mod:selector req="MAGNET_ARM"/>
         <mod:findLike type="text">
           <mod:selector>(Magnet Arm) Salvage the wreck further.</mod:selector>
           <mod:setValue>(Magnet Arm) Salvage the wreck further.
@@ -230,8 +255,9 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_AUTO_REAL">
+  <mod:findName name="FLEET_AUTO_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -239,8 +265,9 @@ Fight(HK: {1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_AUTO_REAL">
+  <mod:findName name="FLEET_AUTO_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Engines) Try to escape the Auto.</mod:selector>
         <mod:setValue>(Adv. Engines) Try to escape the Auto.
@@ -248,8 +275,9 @@ Fight(HK: {1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_FLEET_AUTO">
+  <mod:findName name="FINISH_BEACON_FLEET_AUTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -257,8 +285,9 @@ Fight(HK: {1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_FLEET_AUTO">
+  <mod:findName name="FINISH_BEACON_FLEET_AUTO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Engines) Try to escape the Auto.</mod:selector>
         <mod:setValue>(Adv. Engines) Try to escape the Auto.
@@ -266,8 +295,9 @@ Fight(HK: {1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_AUTO_NEBULA_REAL">
+  <mod:findName name="FLEET_AUTO_NEBULA_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -275,8 +305,9 @@ Fight(HK: {1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_AUTO_NEBULA_REAL">
+  <mod:findName name="FLEET_AUTO_NEBULA_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
         <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -284,9 +315,10 @@ Fight(HK: {1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_CHAOS_FLEET_GUNBOAT">
+  <mod:findName name="SHIP_CHAOS_FLEET_GUNBOAT" type="ship">
     <mod:findLike type="destroyed">
       <mod:findLike type="choice">
+        <mod:selector req="MAGNET_ARM"/>
         <mod:findLike type="text">
           <mod:selector>(Magnet Arm) Salvage the wreck further.</mod:selector>
           <mod:setValue>(Magnet Arm) Salvage the wreck further.
@@ -295,9 +327,10 @@ Reward Stuff(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_CHAOS_FLEET_GUNBOAT">
+  <mod:findName name="SHIP_CHAOS_FLEET_GUNBOAT" type="ship">
     <mod:findLike type="deadCrew">
       <mod:findLike type="choice">
+        <mod:selector req="MAGNET_ARM"/>
         <mod:findLike type="text">
           <mod:selector>(Magnet Arm) Salvage the wreck further.</mod:selector>
           <mod:setValue>(Magnet Arm) Salvage the wreck further.
@@ -306,9 +339,10 @@ Reward Stuff(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_CHAOS_FLEET_FLAGSHIP">
+  <mod:findName name="SHIP_CHAOS_FLEET_FLAGSHIP" type="ship">
     <mod:findLike type="destroyed">
       <mod:findLike type="choice">
+        <mod:selector req="MAGNET_ARM"/>
         <mod:findLike type="text">
           <mod:selector>(Magnet Arm) Salvage the wreck further.</mod:selector>
           <mod:setValue>(Magnet Arm) Salvage the wreck further.
@@ -317,9 +351,10 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_CHAOS_FLEET_FLAGSHIP">
+  <mod:findName name="SHIP_CHAOS_FLEET_FLAGSHIP" type="ship">
     <mod:findLike type="deadCrew">
       <mod:findLike type="choice">
+        <mod:selector req="MAGNET_ARM"/>
         <mod:findLike type="text">
           <mod:selector>(Magnet Arm) Salvage the wreck further.</mod:selector>
           <mod:setValue>(Magnet Arm) Salvage the wreck further.
@@ -328,8 +363,9 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_CHAOS">
+  <mod:findName name="FLEET_CHAOS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -337,8 +373,9 @@ Fight(HK=CK: {3 }1 |1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_CHAOS">
+  <mod:findName name="FLEET_CHAOS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
         <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -346,10 +383,12 @@ Fight(HK=CK: {3 }1 |1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_CHAOS">
+  <mod:findName name="FLEET_CHAOS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -359,8 +398,9 @@ Fight(HK=CK: {3 }1 |1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_CHAOS">
+  <mod:findName name="FLEET_CHAOS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_JERRY"/>
       <mod:findLike type="text">
         <mod:selector>(Jerry) "Hello!"</mod:selector>
         <mod:setValue>(Jerry) "Hello!"
@@ -368,10 +408,12 @@ Fight(HK=CK: {3 }1 |1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_CHAOS">
+  <mod:findName name="FLEET_CHAOS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_JERRY"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -381,8 +423,9 @@ Fight(HK=CK: {3 }1 |1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_FLEET_CHAOS">
+  <mod:findName name="NEBULA_FLEET_CHAOS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -390,8 +433,9 @@ Fight(HK=CK: {3 }1 |1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_FLEET_CHAOS">
+  <mod:findName name="NEBULA_FLEET_CHAOS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
         <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -399,10 +443,12 @@ Fight(HK=CK: {3 }1 |1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_FLEET_CHAOS">
+  <mod:findName name="NEBULA_FLEET_CHAOS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -412,8 +458,9 @@ Fight(HK=CK: {3 }1 |1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_FLEET_CHAOS">
+  <mod:findName name="NEBULA_FLEET_CHAOS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_JERRY"/>
       <mod:findLike type="text">
         <mod:selector>(Jerry) "Hello!"</mod:selector>
         <mod:setValue>(Jerry) "Hello!"
@@ -421,10 +468,12 @@ Fight(HK=CK: {3 }1 |1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_FLEET_CHAOS">
+  <mod:findName name="NEBULA_FLEET_CHAOS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_JERRY"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -434,8 +483,9 @@ Fight(HK=CK: {3 }1 |1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_CHAOS_FLAGSHIP">
+  <mod:findName name="FLEET_CHAOS_FLAGSHIP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -443,8 +493,9 @@ Fight(HK=CK: {5 }3 |3)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_CHAOS_FLAGSHIP">
+  <mod:findName name="FLEET_CHAOS_FLAGSHIP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
         <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -452,10 +503,12 @@ Fight(HK=CK: {5 }3 |3)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_CHAOS_FLAGSHIP">
+  <mod:findName name="FLEET_CHAOS_FLAGSHIP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -465,8 +518,9 @@ Fight(HK=CK: {5 }3 |3)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_CHAOS_FLAGSHIP">
+  <mod:findName name="FLEET_CHAOS_FLAGSHIP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_JERRY"/>
       <mod:findLike type="text">
         <mod:selector>(Jerry) "Hello!"</mod:selector>
         <mod:setValue>(Jerry) "Hello!"
@@ -474,10 +528,12 @@ Fight(HK=CK: {5 }3 |3)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FLEET_CHAOS_FLAGSHIP">
+  <mod:findName name="FLEET_CHAOS_FLAGSHIP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_JERRY"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -487,8 +543,9 @@ Fight(HK=CK: {5 }3 |3)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_FLEET_CHAOS_FLAGSHIP">
+  <mod:findName name="NEBULA_FLEET_CHAOS_FLAGSHIP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -496,8 +553,9 @@ Fight(HK=CK: {5 }3 |3)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_FLEET_CHAOS_FLAGSHIP">
+  <mod:findName name="NEBULA_FLEET_CHAOS_FLAGSHIP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Engines) Try to escape the Elite.</mod:selector>
         <mod:setValue>(Adv. Engines) Try to escape the Elite.
@@ -505,10 +563,12 @@ Fight(HK=CK: {5 }3 |3)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_FLEET_CHAOS_FLAGSHIP">
+  <mod:findName name="NEBULA_FLEET_CHAOS_FLAGSHIP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="engines" lvl="6"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -518,8 +578,9 @@ Fight(HK=CK: {5 }3 |3)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_FLEET_CHAOS_FLAGSHIP">
+  <mod:findName name="NEBULA_FLEET_CHAOS_FLAGSHIP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_JERRY"/>
       <mod:findLike type="text">
         <mod:selector>(Jerry) "Hello!"</mod:selector>
         <mod:setValue>(Jerry) "Hello!"
@@ -527,10 +588,12 @@ Fight(HK=CK: {5 }3 |3)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="NEBULA_FLEET_CHAOS_FLAGSHIP">
+  <mod:findName name="NEBULA_FLEET_CHAOS_FLAGSHIP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_JERRY"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...

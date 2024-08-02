@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="BOON_SELECT_SENSORS">
+  <mod:findName name="BOON_SELECT_SENSORS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="sensors" lvl="0" max_lvl="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -8,10 +9,12 @@ System Upgrade(Sensors x1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BOON_SELECT_SENSORS">
+  <mod:findName name="BOON_SELECT_SENSORS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="sensors" lvl="0" max_lvl="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -21,8 +24,9 @@ System Upgrade(Sensors x1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="BOON_SELECT_SENSORS">
+  <mod:findName name="BOON_SELECT_SENSORS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="sensors" lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...

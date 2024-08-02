@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="GIVE_ME_A_BREACH_BEAM">
+  <mod:findName name="GIVE_ME_A_BREACH_BEAM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="false"/>
       <mod:findLike type="text">
         <mod:selector>Yes please!</mod:selector>
         <mod:setValue>Yes please!
@@ -8,7 +9,7 @@ Gain a weapon(Beam Breach)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="STALEMATE_SURRENDER">
+  <mod:findName name="STALEMATE_SURRENDER" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their truce.</mod:selector>
@@ -17,8 +18,9 @@ Gain a weapon(Beam Breach)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_TUTORIAL">
+  <mod:findName name="START_BEACON_TUTORIAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Skip the tutorial.</mod:selector>
         <mod:setValue>Skip the tutorial.
@@ -26,10 +28,12 @@ Gain a weapon(Beam Breach)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_TUTORIAL">
+  <mod:findName name="START_BEACON_TUTORIAL" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="START_BEACON_TUTORIAL_SKIP">
+      <mod:selector hidden="true"/>
+      <mod:findName name="START_BEACON_TUTORIAL_SKIP" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Yes, I would like to skip the tutorial.</mod:selector>
             <mod:setValue>Yes, I would like to skip the tutorial.
@@ -39,8 +43,9 @@ Gain a weapon(Beam Breach)</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_FAKE">
+  <mod:findName name="START_BEACON_FAKE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -48,7 +53,7 @@ Gain a weapon(Beam Breach)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GENERIC_SURRENDER">
+  <mod:findName name="GENERIC_SURRENDER" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Accept their offer.</mod:selector>
@@ -57,8 +62,9 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CIVILIAN_SAVE">
+  <mod:findName name="CIVILIAN_SAVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -70,7 +76,7 @@ Reward Stuff(R)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CIVILIAN_GIFT_LIST_MV">
+  <mod:findName name="CIVILIAN_GIFT_LIST_MV" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
         <mod:findLike type="text">

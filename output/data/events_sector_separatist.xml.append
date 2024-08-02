@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="FINISH_BEACON_SEPARATIST">
+  <mod:findName name="FINISH_BEACON_SEPARATIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Do something onboard the ship.</mod:selector>
         <mod:setValue>Do something onboard the ship.
@@ -8,8 +9,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_VIRUS_TRAP">
+  <mod:findName name="SEPARATIST_VIRUS_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" blue="false" req="engi" lvl="1"/>
       <mod:findLike type="text">
         <mod:selector>Board the ship.</mod:selector>
         <mod:setValue>Board the ship.
@@ -19,10 +21,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_VIRUS_TRAP">
+  <mod:findName name="SEPARATIST_VIRUS_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" blue="false" req="engi" lvl="1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue scrapping the ship.</mod:selector>
             <mod:setValue>Continue scrapping the ship.
@@ -34,8 +38,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_VIRUS_TRAP">
+  <mod:findName name="SEPARATIST_VIRUS_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" blue="false" req="engi" lvl="0" max_lvl="0"/>
       <mod:findLike type="text">
         <mod:selector>Board the ship.</mod:selector>
         <mod:setValue>Board the ship.
@@ -45,8 +50,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_VIRUS_TRAP">
+  <mod:findName name="SEPARATIST_VIRUS_TRAP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Blow the ship up and harvest the remains.</mod:selector>
         <mod:setValue>Blow the ship up and harvest the remains.
@@ -54,7 +60,7 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_VIRUS_TRAP">
+  <mod:findName name="SEPARATIST_VIRUS_TRAP" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the suspicious derelict ship.</mod:selector>
@@ -63,7 +69,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_VIRUS_TRAP">
+  <mod:findName name="SEPARATIST_VIRUS_TRAP" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -76,7 +82,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_WORTHLESS_JUNK">
+  <mod:findName name="SEPARATIST_WORTHLESS_JUNK" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Do something onboard the ship.</mod:selector>
@@ -85,8 +91,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_TRAP_SCAN">
+  <mod:findName name="SEPARATIST_TRAP_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Download the data.</mod:selector>
         <mod:setValue>Download the data.
@@ -95,8 +102,9 @@ Fight(HK: 50% Reward Standard(M))(CK: 50% Reward Standard(M) 50% Map Reveal)</mo
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_TRAP_SCAN">
+  <mod:findName name="SEPARATIST_TRAP_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>No thanks.</mod:selector>
         <mod:setValue>No thanks.
@@ -104,8 +112,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_TRAP_SCAN">
+  <mod:findName name="SEPARATIST_TRAP_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -117,9 +126,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_TRAP_SCAN_ACCEPT">
+  <mod:findName name="SEPARATIST_TRAP_SCAN_ACCEPT" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -128,8 +138,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(M) Map Reveal)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_FREE_CREW">
+  <mod:findName name="SEPARATIST_FREE_CREW" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Welcome aboard!</mod:selector>
         <mod:setValue>Welcome aboard!
@@ -137,8 +148,9 @@ Gain a crew(Engi Separatist)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_FREE_CREW">
+  <mod:findName name="SEPARATIST_FREE_CREW" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>We don't need more crew.</mod:selector>
         <mod:setValue>We don't need more crew.
@@ -146,8 +158,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_FREE_CREW">
+  <mod:findName name="SEPARATIST_FREE_CREW" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -159,8 +172,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Allow him.</mod:selector>
         <mod:setValue>Allow him.
@@ -168,8 +182,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_SOLDIER"/>
       <mod:findLike type="text">
         <mod:selector>(Elite Human) Entice him with your Elite Human.</mod:selector>
         <mod:setValue>(Elite Human) Entice him with your Elite Human.
@@ -178,8 +193,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_SUZERAIN"/>
       <mod:findLike type="text">
         <mod:selector>(Hive Elite) Entice him with your Elite Mantis.</mod:selector>
         <mod:setValue>(Hive Elite) Entice him with your Elite Mantis.
@@ -188,8 +204,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_SABOTEUR"/>
       <mod:findLike type="text">
         <mod:selector>(Elite Slug) Entice him with your Elite Slug.</mod:selector>
         <mod:setValue>(Elite Slug) Entice him with your Elite Slug.
@@ -198,8 +215,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="zoltan_peacekeeper"/>
       <mod:findLike type="text">
         <mod:selector>(Peacekeeper) Entice him with your Peacekeeper.</mod:selector>
         <mod:setValue>(Peacekeeper) Entice him with your Peacekeeper.
@@ -208,8 +226,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_CRUSADER"/>
       <mod:findLike type="text">
         <mod:selector>(Elite Rock) Entice him with your Elite Rock.</mod:selector>
         <mod:setValue>(Elite Rock) Entice him with your Elite Rock.
@@ -218,8 +237,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="orchid_praetor"/>
       <mod:findLike type="text">
         <mod:selector>(Praetor) Entice him with your Praetor.</mod:selector>
         <mod:setValue>(Praetor) Entice him with your Praetor.
@@ -228,8 +248,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="orchid_cultivator"/>
       <mod:findLike type="text">
         <mod:selector>(Cultivator) Entice him with your Cultivator.</mod:selector>
         <mod:setValue>(Cultivator) Entice him with your Cultivator.
@@ -238,8 +259,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="crystal_sentinel"/>
       <mod:findLike type="text">
         <mod:selector>(Sentinel) Entice him with your Sentinel.</mod:selector>
         <mod:setValue>(Sentinel) Entice him with your Sentinel.
@@ -248,8 +270,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="lanius_welder"/>
       <mod:findLike type="text">
         <mod:selector>(Welder) Entice him with your Welder.</mod:selector>
         <mod:setValue>(Welder) Entice him with your Welder.
@@ -258,8 +281,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="phantom_alpha"/>
       <mod:findLike type="text">
         <mod:selector>(Alpha Phantom) Entice him with your Phantom Alpha.</mod:selector>
         <mod:setValue>(Alpha Phantom) Entice him with your Phantom Alpha.
@@ -268,8 +292,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="phantom_mare_alpha"/>
       <mod:findLike type="text">
         <mod:selector>(Alpha Mare) Entice him with your Mare Alpha.</mod:selector>
         <mod:setValue>(Alpha Mare) Entice him with your Mare Alpha.
@@ -278,8 +303,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="phantom_goul_alpha"/>
       <mod:findLike type="text">
         <mod:selector>(Alpha Goul) Entice him with your Goul Alpha.</mod:selector>
         <mod:setValue>(Alpha Goul) Entice him with your Goul Alpha.
@@ -288,8 +314,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="phantom_wraith_alpha"/>
       <mod:findLike type="text">
         <mod:selector>(Alpha Wraith) Entice him with your Wraith Alpha.</mod:selector>
         <mod:setValue>(Alpha Wraith) Entice him with your Wraith Alpha.
@@ -298,8 +325,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="shell_radiant"/>
       <mod:findLike type="text">
         <mod:selector>(Radiant) Entice him with your Radiant.</mod:selector>
         <mod:setValue>(Radiant) Entice him with your Radiant.
@@ -308,8 +336,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="zoltan_martyr"/>
       <mod:findLike type="text">
         <mod:selector>(Martyr) Entice him with your Martyr.</mod:selector>
         <mod:setValue>(Martyr) Entice him with your Martyr.
@@ -318,8 +347,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="mantis_warlord"/>
       <mod:findLike type="text">
         <mod:selector>(Warlord) Entice him with your Warlord.</mod:selector>
         <mod:setValue>(Warlord) Entice him with your Warlord.
@@ -328,8 +358,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="slug_ranger"/>
       <mod:findLike type="text">
         <mod:selector>(Ranger) Entice him with your Ranger.</mod:selector>
         <mod:setValue>(Ranger) Entice him with your Ranger.
@@ -338,8 +369,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="leech_ampere"/>
       <mod:findLike type="text">
         <mod:selector>(Ampere) Entice him with your Ampere.</mod:selector>
         <mod:setValue>(Ampere) Entice him with your Ampere.
@@ -348,8 +380,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="human_technician"/>
       <mod:findLike type="text">
         <mod:selector>(Technician) Entice him with your Technician.</mod:selector>
         <mod:setValue>(Technician) Entice him with your Technician.
@@ -358,8 +391,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Refuse.</mod:selector>
         <mod:setValue>Refuse.
@@ -367,8 +401,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BODY_SCAN">
+  <mod:findName name="SEPARATIST_BODY_SCAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -380,8 +415,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_ENGI_CHOICE">
+  <mod:findName name="SEPARATIST_ENGI_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Hail the ships.</mod:selector>
         <mod:setValue>Hail the ships.
@@ -389,10 +425,12 @@ Fight(HK=CK: Reward Standard(M) Gain a drone(Random))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_ENGI_CHOICE">
+  <mod:findName name="SEPARATIST_ENGI_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Side with the Harmony.</mod:selector>
             <mod:setValue>Side with the Harmony.
@@ -402,12 +440,15 @@ Fight(HK=CK: Reward Standard(M) Gain a drone(Random))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_ENGI_CHOICE">
+  <mod:findName name="SEPARATIST_ENGI_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -419,10 +460,12 @@ Fight(HK=CK: Reward Standard(M) Gain a drone(Random))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_ENGI_CHOICE">
+  <mod:findName name="SEPARATIST_ENGI_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Side with the Separatist.</mod:selector>
             <mod:setValue>Side with the Separatist.
@@ -432,12 +475,15 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_ENGI_CHOICE">
+  <mod:findName name="SEPARATIST_ENGI_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -449,8 +495,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_ENGI_CHOICE">
+  <mod:findName name="SEPARATIST_ENGI_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Fly away.</mod:selector>
         <mod:setValue>Fly away.
@@ -458,8 +505,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_ENGI_CHOICE">
+  <mod:findName name="SEPARATIST_ENGI_CHOICE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -471,8 +519,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BASKETBALL">
+  <mod:findName name="SEPARATIST_BASKETBALL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Encourage the conflicted Engi to play basketball with the Separatists.</mod:selector>
         <mod:setValue>Encourage the conflicted Engi to play basketball with the Separatists.
@@ -481,7 +530,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BASKETBALL">
+  <mod:findName name="SEPARATIST_BASKETBALL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Tell them that violence is the only solution.</mod:selector>
@@ -491,7 +540,7 @@ Fight(HK=CK: Reward Drone(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BASKETBALL">
+  <mod:findName name="SEPARATIST_BASKETBALL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -504,12 +553,13 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BASKETBALL">
+  <mod:findName name="SEPARATIST_BASKETBALL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -521,7 +571,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BASKETBALL">
+  <mod:findName name="SEPARATIST_BASKETBALL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -534,12 +584,13 @@ Fight(HK: Reward Standard(M))(CK: Gain a drone(Random) Repair Hull(5$) Reward St
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BASKETBALL">
+  <mod:findName name="SEPARATIST_BASKETBALL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -551,7 +602,7 @@ Fight(HK: Reward Standard(M))(CK: Gain a drone(Random) Repair Hull(5$) Reward St
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BASKETBALL">
+  <mod:findName name="SEPARATIST_BASKETBALL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -565,12 +616,13 @@ Fight(HK=CK: Reward Drone(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BASKETBALL">
+  <mod:findName name="SEPARATIST_BASKETBALL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -582,7 +634,7 @@ Fight(HK=CK: Reward Drone(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BASKETBALL">
+  <mod:findName name="SEPARATIST_BASKETBALL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Don't get involved.</mod:selector>
@@ -591,7 +643,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_BASKETBALL">
+  <mod:findName name="SEPARATIST_BASKETBALL" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -604,8 +656,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack.</mod:selector>
         <mod:setValue>Attack.
@@ -613,10 +666,12 @@ Fight(HK: Reward Standard(M) Gain an augment(Nanobot Defense System))</mod:setVa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -626,8 +681,9 @@ Fight(HK: Reward Standard(M) Gain an augment(Nanobot Defense System))</mod:setVa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Try to communicate.</mod:selector>
         <mod:setValue>Try to communicate.
@@ -635,10 +691,12 @@ Fight(HK: Reward Standard(M) Gain an augment(Nanobot Defense System))</mod:setVa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attack.</mod:selector>
             <mod:setValue>Attack.
@@ -648,12 +706,15 @@ Fight(HK: Reward Standard(M) Gain an augment(Nanobot Defense System))</mod:setVa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -665,10 +726,12 @@ Fight(HK: Reward Standard(M) Gain an augment(Nanobot Defense System))</mod:setVa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Ignore the ship.</mod:selector>
             <mod:setValue>Ignore the ship.
@@ -678,10 +741,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -695,8 +760,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_SLUG"/>
       <mod:findLike type="text">
         <mod:selector>(Slug Crew) Try to detect life signs.</mod:selector>
         <mod:setValue>(Slug Crew) Try to detect life signs.
@@ -704,10 +770,12 @@ Fight(HK: Reward Standard(M) Gain an augment(Nanobot Defense System))</mod:setVa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_SLUG"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attack.</mod:selector>
             <mod:setValue>Attack.
@@ -717,12 +785,15 @@ Fight(HK: Reward Standard(M) Gain an augment(Nanobot Defense System))</mod:setVa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_SLUG"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -734,10 +805,12 @@ Fight(HK: Reward Standard(M) Gain an augment(Nanobot Defense System))</mod:setVa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_SLUG"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Ignore the ship.</mod:selector>
             <mod:setValue>Ignore the ship.
@@ -747,10 +820,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_SLUG"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -764,8 +839,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BLUELIST_CREW_SNAIL"/>
       <mod:findLike type="text">
         <mod:selector>(Telepathic Shell) Try to detect life signs.</mod:selector>
         <mod:setValue>(Telepathic Shell) Try to detect life signs.
@@ -773,10 +849,12 @@ Fight(HK: Reward Standard(M) Gain an augment(Nanobot Defense System))</mod:setVa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BLUELIST_CREW_SNAIL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attack.</mod:selector>
             <mod:setValue>Attack.
@@ -786,12 +864,15 @@ Fight(HK: Reward Standard(M) Gain an augment(Nanobot Defense System))</mod:setVa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BLUELIST_CREW_SNAIL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -803,10 +884,12 @@ Fight(HK: Reward Standard(M) Gain an augment(Nanobot Defense System))</mod:setVa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BLUELIST_CREW_SNAIL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Ignore the ship.</mod:selector>
             <mod:setValue>Ignore the ship.
@@ -816,10 +899,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BLUELIST_CREW_SNAIL"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -833,8 +918,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the ship.</mod:selector>
         <mod:setValue>Ignore the ship.
@@ -842,8 +928,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD">
+  <mod:findName name="SEPARATIST_NANOCLOUD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -855,8 +942,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_NANOCLOUD_DESTROYED">
+  <mod:findName name="SEPARATIST_NANOCLOUD_DESTROYED" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -864,8 +952,9 @@ Gain an augment(Nanobot Defense System)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_FLEET_DELAY">
+  <mod:findName name="SEPARATIST_FLEET_DELAY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Listen to their offer.</mod:selector>
         <mod:setValue>Listen to their offer.
@@ -873,10 +962,12 @@ Fight(HK: Reward ~ Only(M) Fleet Delay(2))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_FLEET_DELAY">
+  <mod:findName name="SEPARATIST_FLEET_DELAY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Agree to kill the Auto-ship.</mod:selector>
             <mod:setValue>Agree to kill the Auto-ship.
@@ -886,12 +977,15 @@ Fight(HK: Reward ~ Only(M) Fleet Delay(2))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_FLEET_DELAY">
+  <mod:findName name="SEPARATIST_FLEET_DELAY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -903,10 +997,12 @@ Fight(HK: Reward ~ Only(M) Fleet Delay(2))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_FLEET_DELAY">
+  <mod:findName name="SEPARATIST_FLEET_DELAY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Refuse their offer.</mod:selector>
             <mod:setValue>Refuse their offer.
@@ -916,10 +1012,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_FLEET_DELAY">
+  <mod:findName name="SEPARATIST_FLEET_DELAY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -933,8 +1031,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_FLEET_DELAY">
+  <mod:findName name="SEPARATIST_FLEET_DELAY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>No thanks.</mod:selector>
         <mod:setValue>No thanks.
@@ -942,8 +1041,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_FLEET_DELAY">
+  <mod:findName name="SEPARATIST_FLEET_DELAY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -955,7 +1055,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_DISGUISE">
+  <mod:findName name="SEPARATIST_DISGUISE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Agree to their absurd request.</mod:selector>
@@ -965,10 +1065,11 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_DISGUISE">
+  <mod:findName name="SEPARATIST_DISGUISE" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue.</mod:selector>
             <mod:setValue>Continue.
@@ -978,8 +1079,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_DISGUISE">
+  <mod:findName name="SEPARATIST_DISGUISE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_HARMONY"/>
       <mod:findLike type="text">
         <mod:selector>(Harmony Crew) Contact them and ask to negotiate further.</mod:selector>
         <mod:setValue>(Harmony Crew) Contact them and ask to negotiate further.
@@ -987,10 +1089,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_DISGUISE">
+  <mod:findName name="SEPARATIST_DISGUISE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_HARMONY"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1000,8 +1104,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_DISGUISE">
+  <mod:findName name="SEPARATIST_DISGUISE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_VARIANT_SEPARATIST"/>
       <mod:findLike type="text">
         <mod:selector>(Separatist Crew) "It would seem that these [Engi] are Separatists."</mod:selector>
         <mod:setValue>(Separatist Crew) "It would seem that these [Engi] are Separatists."
@@ -1010,8 +1115,9 @@ Gain an augment(Nanobot Defense System)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_DISGUISE">
+  <mod:findName name="SEPARATIST_DISGUISE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_VARIANT_SEPARATIST"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1024,8 +1130,9 @@ Gain an augment(Nanobot Defense System)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_DISGUISE">
+  <mod:findName name="SEPARATIST_DISGUISE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Say you cannot help.</mod:selector>
         <mod:setValue>Say you cannot help.
@@ -1033,10 +1140,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_DISGUISE">
+  <mod:findName name="SEPARATIST_DISGUISE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1046,9 +1155,10 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_DISGUISE_DONATE">
+  <mod:findName name="SEPARATIST_DISGUISE_DONATE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Agree to split the supplies.</mod:selector>
           <mod:setValue>Agree to split the supplies.
@@ -1057,9 +1167,10 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_DISGUISE_DONATE">
+  <mod:findName name="SEPARATIST_DISGUISE_DONATE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Fight them.</mod:selector>
           <mod:setValue>Fight them.
@@ -1068,11 +1179,13 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_DISGUISE_DONATE">
+  <mod:findName name="SEPARATIST_DISGUISE_DONATE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="event">
           <mod:findLike type="choice">
+            <mod:selector hidden="true"/>
             <mod:findLike type="text">
               <mod:selector>Continue...</mod:selector>
               <mod:setValue>Continue...
@@ -1083,9 +1196,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_DISGUISE_DONATE">
+  <mod:findName name="SEPARATIST_DISGUISE_DONATE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Kill the bastards.</mod:selector>
           <mod:setValue>Kill the bastards.
@@ -1094,11 +1208,13 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SEPARATIST_DISGUISE_DONATE">
+  <mod:findName name="SEPARATIST_DISGUISE_DONATE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="event">
           <mod:findLike type="choice">
+            <mod:selector hidden="true"/>
             <mod:findLike type="text">
               <mod:selector>Continue...</mod:selector>
               <mod:setValue>Continue...
@@ -1109,7 +1225,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_SEPARATIST_GHOST">
+  <mod:findName name="DISTRESS_SEPARATIST_GHOST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Assist the Separatist.</mod:selector>
@@ -1118,10 +1234,11 @@ Fight(CK: Gain a weapon(Giftlist Rusty) Reward Standard(M))(HK: Reward Standard 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_SEPARATIST_GHOST">
+  <mod:findName name="DISTRESS_SEPARATIST_GHOST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1131,7 +1248,7 @@ Fight(CK: Gain a weapon(Giftlist Rusty) Reward Standard(M))(HK: Reward Standard 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_SEPARATIST_GHOST">
+  <mod:findName name="DISTRESS_SEPARATIST_GHOST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Don't get involved.</mod:selector>
@@ -1140,7 +1257,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_SEPARATIST_GHOST">
+  <mod:findName name="DISTRESS_SEPARATIST_GHOST" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1153,8 +1270,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS">
+  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Contact them.</mod:selector>
         <mod:setValue>Contact them.
@@ -1167,8 +1285,9 @@ Gain a drone(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS">
+  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1181,12 +1300,14 @@ Repair Hull(10$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS">
+  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1198,10 +1319,12 @@ Repair Hull(10$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS">
+  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="hacking"/>
           <mod:findLike type="text">
             <mod:selector>(Hacking) Use your hacking to isolate the virus.</mod:selector>
             <mod:setValue>(Hacking) Use your hacking to isolate the virus.
@@ -1211,12 +1334,15 @@ Repair Hull(10$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS">
+  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="hacking"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Stay back and cure more.</mod:selector>
                 <mod:setValue>Stay back and cure more.
@@ -1230,10 +1356,12 @@ Gain a crew(Engi Separatist)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS">
+  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="engi"/>
           <mod:findLike type="text">
             <mod:selector>(Engi Crew) Send your Engi down to help.</mod:selector>
             <mod:setValue>(Engi Crew) Send your Engi down to help.
@@ -1244,10 +1372,12 @@ Gain a crew(Engi Separatist)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS">
+  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_VARIANT_SEPARATIST"/>
           <mod:findLike type="text">
             <mod:selector>(Separatist Crew) Send your Separatist down to help.</mod:selector>
             <mod:setValue>(Separatist Crew) Send your Separatist down to help.
@@ -1258,10 +1388,12 @@ Gain a crew(Engi Separatist)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS">
+  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_DEFENDER"/>
           <mod:findLike type="text">
             <mod:selector>(Engi Defender Crew) Send your Defender down to help.</mod:selector>
             <mod:setValue>(Engi Defender Crew) Send your Defender down to help.
@@ -1271,10 +1403,12 @@ Gain a drone(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS">
+  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>We know nothing about infections.</mod:selector>
             <mod:setValue>We know nothing about infections.
@@ -1284,10 +1418,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS">
+  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -1301,8 +1437,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS">
+  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the colony.</mod:selector>
         <mod:setValue>Ignore the colony.
@@ -1310,8 +1447,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS">
+  <mod:findName name="DISTRESS_SEPARATIST_COMMUNITY_VIRUS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1323,8 +1461,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_SEPARATIST_TRAP_BEACON">
+  <mod:findName name="DISTRESS_SEPARATIST_TRAP_BEACON" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1332,8 +1471,9 @@ Fight(CK: 20% Reward Standard(M) 20% Gain a drone(List Drones Separatist Drop))(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_SEPARATIST_ENGI_BOUNTY">
+  <mod:findName name="QUEST_SEPARATIST_ENGI_BOUNTY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore them.</mod:selector>
         <mod:setValue>Ignore them.
@@ -1341,8 +1481,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_SEPARATIST_ENGI_BOUNTY">
+  <mod:findName name="QUEST_SEPARATIST_ENGI_BOUNTY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1354,8 +1495,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_SEPARATIST_ENGI_BOUNTY_QUEST">
+  <mod:findName name="QUEST_SEPARATIST_ENGI_BOUNTY_QUEST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1363,8 +1505,9 @@ Fight(HK: Reward Standard(M))(CK: Gain a drone(Random) Repair Hull(10$) Reward S
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_SEPARATIST">
+  <mod:findName name="ENCOUNTER_SEPARATIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1372,8 +1515,9 @@ Fight(CK: 20% Reward Standard(M) 20% Gain a drone(List Drones Separatist Drop))(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_ENGI_SEPARATIST">
+  <mod:findName name="ENCOUNTER_ENGI_SEPARATIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1381,8 +1525,9 @@ Fight(CK: 20% Reward Standard(H) 20% Reward Standard(M) 20% Gain a drone(List Dr
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_MANTIS_SEPARATIST">
+  <mod:findName name="ENCOUNTER_MANTIS_SEPARATIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1390,8 +1535,9 @@ Fight(HK: Reward Standard(M))(CK: 20% Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_ZOLTAN_AUTO_SEPARATIST">
+  <mod:findName name="ENCOUNTER_ZOLTAN_AUTO_SEPARATIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1399,8 +1545,9 @@ Fight(HK: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HARMONY_LINK_SEP">
+  <mod:findName name="HARMONY_LINK_SEP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" lvl="1" req="HARMONY_LINK_CHECK" max_group="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1410,8 +1557,9 @@ Fight(HK: 33% Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HARMONY_LINK_SEP">
+  <mod:findName name="HARMONY_LINK_SEP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" lvl="0" req="HARMONY_LINK_CHECK" max_group="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1420,8 +1568,9 @@ Fight(HK=CK: 50% Reward Standard No Item(H) 50% Gain a weapon(Giftlist Mantis))<
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HARMONY_LINK_UNIQUE_SEP">
+  <mod:findName name="HARMONY_LINK_UNIQUE_SEP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" lvl="1" req="HARMONY_LINK_CHECK" max_group="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1429,8 +1578,9 @@ Fight(HK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HARMONY_LINK_UNIQUE_SEP">
+  <mod:findName name="HARMONY_LINK_UNIQUE_SEP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" lvl="0" req="HARMONY_LINK_CHECK" max_group="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1439,8 +1589,9 @@ Fight(HK=CK: 50% Reward Standard No Item(H) 50% Gain a weapon(Giftlist Mantis))<
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HARMONY_LINK_SEPARATIST">
+  <mod:findName name="HARMONY_LINK_SEPARATIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Hail them.</mod:selector>
         <mod:setValue>Hail them.
@@ -1452,8 +1603,9 @@ Gain a drone(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HARMONY_LINK_SEPARATIST">
+  <mod:findName name="HARMONY_LINK_SEPARATIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1466,12 +1618,14 @@ Gain a drone(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HARMONY_LINK_SEPARATIST">
+  <mod:findName name="HARMONY_LINK_SEPARATIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1483,8 +1637,9 @@ Gain a drone(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HARMONY_LINK_SEPARATIST">
+  <mod:findName name="HARMONY_LINK_SEPARATIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1498,12 +1653,14 @@ Gain a drone(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HARMONY_LINK_SEPARATIST">
+  <mod:findName name="HARMONY_LINK_SEPARATIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1516,8 +1673,9 @@ Gain a drone(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HARMONY_LINK_SEPARATIST">
+  <mod:findName name="HARMONY_LINK_SEPARATIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Take advantage of this situation and attack!</mod:selector>
         <mod:setValue>Take advantage of this situation and attack!
@@ -1525,10 +1683,12 @@ Fight(CK: 20% Reward Standard(M) 20% Gain a drone(List Drones Separatist Drop))(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HARMONY_LINK_SEPARATIST">
+  <mod:findName name="HARMONY_LINK_SEPARATIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1538,8 +1698,9 @@ Fight(CK: 20% Reward Standard(M) 20% Gain a drone(List Drones Separatist Drop))(
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HARMONY_LINK_SEPARATIST">
+  <mod:findName name="HARMONY_LINK_SEPARATIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the Engi.</mod:selector>
         <mod:setValue>Ignore the Engi.
@@ -1547,8 +1708,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="HARMONY_LINK_SEPARATIST">
+  <mod:findName name="HARMONY_LINK_SEPARATIST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">

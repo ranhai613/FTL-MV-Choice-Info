@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="FINISH_BEACON_FREEMANTIS">
+  <mod:findName name="FINISH_BEACON_FREEMANTIS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Do something onboard the ship.</mod:selector>
         <mod:setValue>Do something onboard the ship.
@@ -8,8 +9,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DEMAND_INFO">
+  <mod:findName name="FREEMANTIS_DEMAND_INFO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Explain your mission.</mod:selector>
         <mod:setValue>Explain your mission.
@@ -17,8 +19,9 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DEMAND_INFO">
+  <mod:findName name="FREEMANTIS_DEMAND_INFO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="mantis_free"/>
       <mod:findLike type="text">
         <mod:selector>(Free Mantis Crew) Explain your mission.</mod:selector>
         <mod:setValue>(Free Mantis Crew) Explain your mission.
@@ -26,8 +29,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DEMAND_INFO">
+  <mod:findName name="FREEMANTIS_DEMAND_INFO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="mantis_warlord"/>
       <mod:findLike type="text">
         <mod:selector>(Warlord Crew) Explain your mission.</mod:selector>
         <mod:setValue>(Warlord Crew) Explain your mission.
@@ -35,8 +39,9 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DEMAND_INFO">
+  <mod:findName name="FREEMANTIS_DEMAND_INFO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_FREDDY"/>
       <mod:findLike type="text">
         <mod:selector>(Freddy) Explain your mission.</mod:selector>
         <mod:setValue>(Freddy) Explain your mission.
@@ -45,8 +50,9 @@ Gain a crew(Mantis Free)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DEMAND_INFO">
+  <mod:findName name="FREEMANTIS_DEMAND_INFO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_tully"/>
       <mod:findLike type="text">
         <mod:selector>(Tully) Explain your mission.</mod:selector>
         <mod:setValue>(Tully) Explain your mission.
@@ -55,8 +61,9 @@ Gain a crew(Mantis Free)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DEMAND_INFO">
+  <mod:findName name="FREEMANTIS_DEMAND_INFO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Refuse to share the information.</mod:selector>
         <mod:setValue>Refuse to share the information.
@@ -65,10 +72,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DEMAND_INFO">
+  <mod:findName name="FREEMANTIS_DEMAND_INFO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -78,8 +87,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_SLAVE_OFFER">
+  <mod:findName name="FREEMANTIS_SLAVE_OFFER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -87,8 +97,9 @@ Gain a crew(Human)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_SLAVE_OFFER">
+  <mod:findName name="FREEMANTIS_SLAVE_OFFER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -100,12 +111,14 @@ Gain a crew(Human)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_SLAVE_OFFER">
+  <mod:findName name="FREEMANTIS_SLAVE_OFFER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Accept the slave.</mod:selector>
                 <mod:setValue>Accept the slave.
@@ -117,12 +130,14 @@ Gain a crew(Human)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_SLAVE_OFFER">
+  <mod:findName name="FREEMANTIS_SLAVE_OFFER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Refuse.</mod:selector>
                 <mod:setValue>Refuse.
@@ -136,12 +151,14 @@ Reward | Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_SLAVE_OFFER">
+  <mod:findName name="FREEMANTIS_SLAVE_OFFER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
                   <mod:findLike type="text">
@@ -157,12 +174,14 @@ Reward { Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_SLAVE_OFFER">
+  <mod:findName name="FREEMANTIS_SLAVE_OFFER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
                   <mod:findLike type="text">
@@ -178,12 +197,14 @@ Reward } Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_SLAVE_OFFER">
+  <mod:findName name="FREEMANTIS_SLAVE_OFFER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
                   <mod:findLike type="text">
@@ -199,8 +220,9 @@ Reward | Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_ENGI_SURRENDER">
+  <mod:findName name="FREEMANTIS_ENGI_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Accept their transmission.</mod:selector>
         <mod:setValue>Accept their transmission.
@@ -209,10 +231,12 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_ENGI_SURRENDER">
+  <mod:findName name="FREEMANTIS_ENGI_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Agree and contact the Free Mantis ship.</mod:selector>
             <mod:setValue>Agree and contact the Free Mantis ship.
@@ -222,12 +246,15 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_ENGI_SURRENDER">
+  <mod:findName name="FREEMANTIS_ENGI_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Explain the situation to the Engi.</mod:selector>
                 <mod:setValue>Explain the situation to the Engi.
@@ -239,10 +266,12 @@ Reward ~ Only(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_ENGI_SURRENDER">
+  <mod:findName name="FREEMANTIS_ENGI_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_HARMONY"/>
           <mod:findLike type="text">
             <mod:selector>(Engi Crew) "Your concern = warranted. Free Mantis however are: allies to the Federation."</mod:selector>
             <mod:setValue>(Engi Crew) "Your concern = warranted. Free Mantis however are: allies to the Federation."
@@ -252,12 +281,15 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_ENGI_SURRENDER">
+  <mod:findName name="FREEMANTIS_ENGI_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_HARMONY"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -269,10 +301,12 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_ENGI_SURRENDER">
+  <mod:findName name="FREEMANTIS_ENGI_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Refuse.</mod:selector>
             <mod:setValue>Refuse.
@@ -282,10 +316,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_ENGI_SURRENDER">
+  <mod:findName name="FREEMANTIS_ENGI_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -299,8 +335,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_ENGI_SURRENDER">
+  <mod:findName name="FREEMANTIS_ENGI_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore them.</mod:selector>
         <mod:setValue>Ignore them.
@@ -308,8 +345,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_ENGI_SURRENDER">
+  <mod:findName name="FREEMANTIS_ENGI_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -321,8 +359,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_EXECUTIONER">
+  <mod:findName name="FREEMANTIS_EXECUTIONER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Approach.</mod:selector>
         <mod:setValue>Approach.
@@ -332,10 +371,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_EXECUTIONER">
+  <mod:findName name="FREEMANTIS_EXECUTIONER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Rescue the officer.</mod:selector>
             <mod:setValue>Rescue the officer.
@@ -347,12 +388,15 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_EXECUTIONER">
+  <mod:findName name="FREEMANTIS_EXECUTIONER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -366,8 +410,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_EXECUTIONER">
+  <mod:findName name="FREEMANTIS_EXECUTIONER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Leave the Free Mantis to their business.</mod:selector>
         <mod:setValue>Leave the Free Mantis to their business.
@@ -375,8 +420,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_EXECUTIONER">
+  <mod:findName name="FREEMANTIS_EXECUTIONER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -388,9 +434,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_EXECUTIONER_OFFICER">
+  <mod:findName name="FREEMANTIS_EXECUTIONER_OFFICER" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -399,9 +446,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_EXECUTIONER_OFFICER">
+  <mod:findName name="FREEMANTIS_EXECUTIONER_OFFICER" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -410,9 +458,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_EXECUTIONER_OFFICER_REWARD_REBEL">
+  <mod:findName name="FREEMANTIS_EXECUTIONER_OFFICER_REWARD_REBEL" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Let him go.</mod:selector>
           <mod:setValue>Let him go.
@@ -421,8 +470,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DEFEND">
+  <mod:findName name="FREEMANTIS_DEFEND" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Defend them from the Rebels.</mod:selector>
         <mod:setValue>Defend them from the Rebels.
@@ -430,10 +480,12 @@ Fight(HK: Reward Standard(M) Reward Standard(L))(CK: Reward Standard(H) Reward S
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DEFEND">
+  <mod:findName name="FREEMANTIS_DEFEND" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -443,8 +495,9 @@ Fight(HK: Reward Standard(M) Reward Standard(L))(CK: Reward Standard(H) Reward S
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DEFEND">
+  <mod:findName name="FREEMANTIS_DEFEND" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Tune them out.</mod:selector>
         <mod:setValue>Tune them out.
@@ -452,8 +505,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DEFEND">
+  <mod:findName name="FREEMANTIS_DEFEND" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -465,8 +519,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_THEFT">
+  <mod:findName name="FREEMANTIS_THEFT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Wait for the bigger ships to leave and then steal the supplies.</mod:selector>
         <mod:setValue>Wait for the bigger ships to leave and then steal the supplies.
@@ -476,8 +531,9 @@ Fight(HK: 33% Reward Standard(L) 8% Reward } Only(L) 8% Gain a weapon(Giftlist B
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_THEFT">
+  <mod:findName name="FREEMANTIS_THEFT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Leave them be.</mod:selector>
         <mod:setValue>Leave them be.
@@ -485,8 +541,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_THEFT">
+  <mod:findName name="FREEMANTIS_THEFT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -498,9 +555,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_THEFT_STEAL">
+  <mod:findName name="FREEMANTIS_THEFT_STEAL" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -509,9 +567,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_THEFT_STEAL">
+  <mod:findName name="FREEMANTIS_THEFT_STEAL" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -520,9 +579,10 @@ Fight(HK: Reward Standard(L) 25% Reward } Only(L) 25% Gain a weapon(Giftlist Bom
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_THEFT_STEAL">
+  <mod:findName name="FREEMANTIS_THEFT_STEAL" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -531,9 +591,10 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_THEFT_WAIT_MERCY">
+  <mod:findName name="FREEMANTIS_THEFT_WAIT_MERCY" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -548,8 +609,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_WEIRD_TRADE">
+  <mod:findName name="FREEMANTIS_WEIRD_TRADE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Agree.</mod:selector>
         <mod:setValue>Agree.
@@ -557,10 +619,12 @@ Fight(CK: Reward Standard(M))(HK: Reward Standard(L))(SR: Gain a weapon(Bomb Fre
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_WEIRD_TRADE">
+  <mod:findName name="FREEMANTIS_WEIRD_TRADE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -570,8 +634,9 @@ Fight(CK: Reward Standard(M))(HK: Reward Standard(L))(SR: Gain a weapon(Bomb Fre
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_WEIRD_TRADE">
+  <mod:findName name="FREEMANTIS_WEIRD_TRADE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>No thanks.</mod:selector>
         <mod:setValue>No thanks.
@@ -579,8 +644,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_WEIRD_TRADE">
+  <mod:findName name="FREEMANTIS_WEIRD_TRADE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -592,8 +658,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_REBEL_SAVE">
+  <mod:findName name="FREEMANTIS_REBEL_SAVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Take on the biggest ship to scare off the smaller Rebels.</mod:selector>
         <mod:setValue>Take on the biggest ship to scare off the smaller Rebels.
@@ -601,10 +668,12 @@ Fight(HK=CK: Reward Standard(H) 33% Reward ~ Only(L) 33% Gain a crew(Mantis Free
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_REBEL_SAVE">
+  <mod:findName name="FREEMANTIS_REBEL_SAVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -614,8 +683,9 @@ Fight(HK=CK: Reward Standard(H) 33% Reward ~ Only(L) 33% Gain a crew(Mantis Free
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_REBEL_SAVE">
+  <mod:findName name="FREEMANTIS_REBEL_SAVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Leave quickly.</mod:selector>
         <mod:setValue>Leave quickly.
@@ -623,9 +693,10 @@ Fight(CK: 50% Reward Standard(H))(HK: 10% Reward Standard(M) 10% Reward Standard
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_REBEL_SAVE_LEAVE">
+  <mod:findName name="FREEMANTIS_REBEL_SAVE_LEAVE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -634,8 +705,9 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_PULSARRAID">
+  <mod:findName name="FREEMANTIS_PULSARRAID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Hail their leader.</mod:selector>
         <mod:setValue>Hail their leader.
@@ -643,10 +715,12 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a crew(Mantis Warlord)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_PULSARRAID">
+  <mod:findName name="FREEMANTIS_PULSARRAID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attacking a pulsar is suicide!</mod:selector>
             <mod:setValue>Attacking a pulsar is suicide!
@@ -656,12 +730,15 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a crew(Mantis Warlord)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_PULSARRAID">
+  <mod:findName name="FREEMANTIS_PULSARRAID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -673,8 +750,9 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a crew(Mantis Warlord)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_PULSARRAID">
+  <mod:findName name="FREEMANTIS_PULSARRAID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -686,10 +764,12 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a crew(Mantis Warlord)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_PULSARRAID">
+  <mod:findName name="FREEMANTIS_PULSARRAID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_ENGINEER"/>
           <mod:findLike type="text">
             <mod:selector>(Engineer Crew) Have your Engineer explain how Pulsars work.</mod:selector>
             <mod:setValue>(Engineer Crew) Have your Engineer explain how Pulsars work.
@@ -699,12 +779,15 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a crew(Mantis Warlord)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_PULSARRAID">
+  <mod:findName name="FREEMANTIS_PULSARRAID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_ENGINEER"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -716,10 +799,12 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a crew(Mantis Warlord)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_PULSARRAID">
+  <mod:findName name="FREEMANTIS_PULSARRAID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_SHELL_SCIENTIST"/>
           <mod:findLike type="text">
             <mod:selector>(Shell Scientist Crew) Have your Scientist explain how Pulsars work.</mod:selector>
             <mod:setValue>(Shell Scientist Crew) Have your Scientist explain how Pulsars work.
@@ -729,12 +814,15 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a crew(Mantis Warlord)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_PULSARRAID">
+  <mod:findName name="FREEMANTIS_PULSARRAID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_SHELL_SCIENTIST"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -746,8 +834,9 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a crew(Mantis Warlord)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_PHEROMONES">
+  <mod:findName name="FREEMANTIS_PHEROMONES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Land, the Free Mantis should welcome us.</mod:selector>
         <mod:setValue>Land, the Free Mantis should welcome us.
@@ -755,10 +844,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_PHEROMONES">
+  <mod:findName name="FREEMANTIS_PHEROMONES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -768,12 +859,15 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_PHEROMONES">
+  <mod:findName name="FREEMANTIS_PHEROMONES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Attack the Zoltans!</mod:selector>
                 <mod:setValue>Attack the Zoltans!
@@ -785,14 +879,18 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_PHEROMONES">
+  <mod:findName name="FREEMANTIS_PHEROMONES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -806,8 +904,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_PHEROMONES">
+  <mod:findName name="FREEMANTIS_PHEROMONES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the city.</mod:selector>
         <mod:setValue>Ignore the city.
@@ -815,8 +914,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_PHEROMONES">
+  <mod:findName name="FREEMANTIS_PHEROMONES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -828,8 +928,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_PHEROMONES_WIN">
+  <mod:findName name="FREEMANTIS_PHEROMONES_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Question them about the factory.</mod:selector>
         <mod:setValue>Question them about the factory.
@@ -837,8 +938,9 @@ Gain an augment(Super Crew Stims)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_BURIAL">
+  <mod:findName name="FREEMANTIS_BURIAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack and take what you can!</mod:selector>
         <mod:setValue>Attack and take what you can!
@@ -846,10 +948,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_BURIAL">
+  <mod:findName name="FREEMANTIS_BURIAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -859,8 +963,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_BURIAL">
+  <mod:findName name="FREEMANTIS_BURIAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Request to come aboard and take some stuff.</mod:selector>
         <mod:setValue>Request to come aboard and take some stuff.
@@ -872,10 +977,12 @@ Gain a weapon(Random)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_BURIAL">
+  <mod:findName name="FREEMANTIS_BURIAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Attack them!</mod:selector>
             <mod:setValue>Attack them!
@@ -885,12 +992,15 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_BURIAL">
+  <mod:findName name="FREEMANTIS_BURIAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -902,10 +1012,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_BURIAL">
+  <mod:findName name="FREEMANTIS_BURIAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="LIST_CREW_FREEMAN" hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>(Free Mantis Crew) Convince them it's for a good cause.</mod:selector>
             <mod:setValue>(Free Mantis Crew) Convince them it's for a good cause.
@@ -915,8 +1027,9 @@ Gain a weapon(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_BURIAL">
+  <mod:findName name="FREEMANTIS_BURIAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -930,12 +1043,14 @@ Gain a weapon(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_BURIAL">
+  <mod:findName name="FREEMANTIS_BURIAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -948,8 +1063,9 @@ Gain a weapon(Random)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_BURIAL">
+  <mod:findName name="FREEMANTIS_BURIAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Leave them alone.</mod:selector>
         <mod:setValue>Leave them alone.
@@ -957,8 +1073,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_BURIAL">
+  <mod:findName name="FREEMANTIS_BURIAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -970,8 +1087,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Hail the vessels.</mod:selector>
         <mod:setValue>Hail the vessels.
@@ -979,10 +1097,12 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" blue="false" req="oxygen" lvl="1" max_group="0"/>
           <mod:findLike type="text">
             <mod:selector>Help arbitrate the two sides with your ship as meeting grounds.</mod:selector>
             <mod:setValue>Help arbitrate the two sides with your ship as meeting grounds.
@@ -996,12 +1116,15 @@ Gain a crew(Zoltan Peacekeeper)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" blue="false" req="oxygen" lvl="1" max_group="0"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Hear out the other side.</mod:selector>
                 <mod:setValue>Hear out the other side.
@@ -1017,14 +1140,18 @@ Gain a crew(Zoltan Peacekeeper)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" blue="false" req="oxygen" lvl="1" max_group="0"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1042,16 +1169,21 @@ Gain a crew(Zoltan Peacekeeper)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" blue="false" req="oxygen" lvl="1" max_group="0"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Side with the Free Mantis.</mod:selector>
                         <mod:setValue>Side with the Free Mantis.
@@ -1067,16 +1199,21 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" blue="false" req="oxygen" lvl="1" max_group="0"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Side with the Zoltan Ministry.</mod:selector>
                         <mod:setValue>Side with the Zoltan Ministry.
@@ -1092,16 +1229,21 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" blue="false" req="oxygen" lvl="1" max_group="0"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true" req="unique_anurak"/>
                       <mod:findLike type="text">
                         <mod:selector>(Anurak) "Come, let's share some soup!"</mod:selector>
                         <mod:setValue>(Anurak) "Come, let's share some soup!"
@@ -1117,16 +1259,21 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" blue="false" req="oxygen" lvl="1" max_group="0"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true" req="zoltan_monk"/>
                       <mod:findLike type="text">
                         <mod:selector>(Zoltan Monk) "This dialogue is an important step!"</mod:selector>
                         <mod:setValue>(Zoltan Monk) "This dialogue is an important step!"
@@ -1142,16 +1289,21 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" blue="false" req="oxygen" lvl="1" max_group="0"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true" req="LIST_CREW_FREDDY"/>
                       <mod:findLike type="text">
                         <mod:selector>(Freddy) "We're a young civilization, we have a lot of growing to do."</mod:selector>
                         <mod:setValue>(Freddy) "We're a young civilization, we have a lot of growing to do."
@@ -1168,16 +1320,21 @@ Gain a crew(Zoltan Peacekeeper)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" blue="false" req="oxygen" lvl="1" max_group="0"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true" req="unique_tyerel"/>
                       <mod:findLike type="text">
                         <mod:selector>(Ty E'Rel) Have Ty E'Rel show them how it's done.</mod:selector>
                         <mod:setValue>(Ty E'Rel) Have Ty E'Rel show them how it's done.
@@ -1193,16 +1350,21 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" blue="false" req="oxygen" lvl="1" max_group="0"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true" req="orchid_praetor"/>
                       <mod:findLike type="text">
                         <mod:selector>(Praetor Crew) Our Orchid can arbitrate.</mod:selector>
                         <mod:setValue>(Praetor Crew) Our Orchid can arbitrate.
@@ -1218,16 +1380,21 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" blue="false" req="oxygen" lvl="1" max_group="0"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true" req="LIST_CREW_CARETAKER"/>
                       <mod:findLike type="text">
                         <mod:selector>(Caretaker Crew) Our Orchid can arbitrate.</mod:selector>
                         <mod:setValue>(Caretaker Crew) Our Orchid can arbitrate.
@@ -1243,16 +1410,21 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" blue="false" req="oxygen" lvl="1" max_group="0"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true" req="orchid"/>
                       <mod:findLike type="text">
                         <mod:selector>(Floral Crew) Our Orchid can arbitrate.</mod:selector>
                         <mod:setValue>(Floral Crew) Our Orchid can arbitrate.
@@ -1269,10 +1441,12 @@ Reward Standard(H)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="oxygen" lvl="0" max_lvl="0" blue="false" max_group="0"/>
           <mod:findLike type="text">
             <mod:selector>Help arbitrate the two sides with your ship as meeting grounds.</mod:selector>
             <mod:setValue>Help arbitrate the two sides with your ship as meeting grounds.
@@ -1282,8 +1456,9 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the Warlord.</mod:selector>
         <mod:setValue>Attack the Warlord.
@@ -1291,10 +1466,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1304,8 +1481,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the Peacekeeper.</mod:selector>
         <mod:setValue>Attack the Peacekeeper.
@@ -1313,10 +1491,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1326,8 +1506,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Stay out of this.</mod:selector>
         <mod:setValue>Stay out of this.
@@ -1335,8 +1516,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_DIPLOMACY">
+  <mod:findName name="FREEMANTIS_DIPLOMACY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1348,8 +1530,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES">
+  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="DRONE_CONTROL_REPAIR_CREW"/>
       <mod:findLike type="text">
         <mod:selector>(Repair Drone) Have a drone patch up their breaches.</mod:selector>
         <mod:setValue>(Repair Drone) Have a drone patch up their breaches.
@@ -1359,8 +1542,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES">
+  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BLUELIST_CREW_NO2"/>
       <mod:findLike type="text">
         <mod:selector>(Anaerobic Crew) Have your anaerobic crew patch up their breaches.</mod:selector>
         <mod:setValue>(Anaerobic Crew) Have your anaerobic crew patch up their breaches.
@@ -1370,8 +1554,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES">
+  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ORCHID"/>
       <mod:findLike type="text">
         <mod:selector>(Orchid Crew) Have your Orchid boost their oxygen output to help them patch up their breaches.</mod:selector>
         <mod:setValue>(Orchid Crew) Have your Orchid boost their oxygen output to help them patch up their breaches.
@@ -1381,8 +1566,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES">
+  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="oxygen" lvl="3"/>
       <mod:findLike type="text">
         <mod:selector>(Adv. Life Support) Counteract the loss of oxygen.</mod:selector>
         <mod:setValue>(Adv. Life Support) Counteract the loss of oxygen.
@@ -1392,8 +1578,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES">
+  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="clonebay"/>
       <mod:findLike type="text">
         <mod:selector>(Clone Bay) Have your crew recklessly fix the breaches to save time.</mod:selector>
         <mod:setValue>(Clone Bay) Have your crew recklessly fix the breaches to save time.
@@ -1404,10 +1591,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES">
+  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="clonebay"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1419,8 +1608,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES">
+  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES" type="event">
     <mod:findLike type="choice">
+      <mod:selector blue="false" req="LIST_CHECK_ANY_CREW" lvl="1"/>
       <mod:findLike type="text">
         <mod:selector>Have your crew patch up their breaches.</mod:selector>
         <mod:setValue>Have your crew patch up their breaches.
@@ -1431,10 +1621,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES">
+  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES" type="event">
     <mod:findLike type="choice">
+      <mod:selector blue="false" req="LIST_CHECK_ANY_CREW" lvl="1"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1446,7 +1638,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES">
+  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Take advantage of their vulnerability!</mod:selector>
@@ -1455,10 +1647,11 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES">
+  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1468,7 +1661,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES">
+  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Apologize and leave.</mod:selector>
@@ -1477,7 +1670,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES">
+  <mod:findName name="DISTRESS_FREEMANTIS_BREACHES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1490,8 +1683,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_FREEMANTIS_STANDOFF">
+  <mod:findName name="DISTRESS_FREEMANTIS_STANDOFF" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1499,10 +1693,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_FREEMANTIS_STANDOFF">
+  <mod:findName name="DISTRESS_FREEMANTIS_STANDOFF" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Assist the Free Mantis!</mod:selector>
             <mod:setValue>Assist the Free Mantis!
@@ -1512,12 +1708,15 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_FREEMANTIS_STANDOFF">
+  <mod:findName name="DISTRESS_FREEMANTIS_STANDOFF" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1529,10 +1728,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_FREEMANTIS_STANDOFF">
+  <mod:findName name="DISTRESS_FREEMANTIS_STANDOFF" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Assist the Federation!</mod:selector>
             <mod:setValue>Assist the Federation!
@@ -1542,12 +1743,15 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_FREEMANTIS_STANDOFF">
+  <mod:findName name="DISTRESS_FREEMANTIS_STANDOFF" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1559,8 +1763,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_FREEMANTIS_CAPTIVE">
+  <mod:findName name="QUEST_FREEMANTIS_CAPTIVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Decline.</mod:selector>
         <mod:setValue>Decline.
@@ -1568,8 +1773,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_FREEMANTIS_CAPTIVE">
+  <mod:findName name="QUEST_FREEMANTIS_CAPTIVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1581,8 +1787,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_JAILER_ARRIVAL">
+  <mod:findName name="FREEMANTIS_JAILER_ARRIVAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1590,8 +1797,9 @@ Fight(HK=CK: Reward Standard(M))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_FREEMANTIS_MATE">
+  <mod:findName name="QUEST_FREEMANTIS_MATE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Scrap the wreck.</mod:selector>
         <mod:setValue>Scrap the wreck.
@@ -1603,8 +1811,9 @@ Fight(CK: 33% Reward Standard(H))(HK: 33% Reward Standard(M))(SR: 33% Reward Stu
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_FREEMANTIS_MATE">
+  <mod:findName name="QUEST_FREEMANTIS_MATE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Don't touch the wreck.</mod:selector>
         <mod:setValue>Don't touch the wreck.
@@ -1612,8 +1821,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_FREEMANTIS_MATE">
+  <mod:findName name="QUEST_FREEMANTIS_MATE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1625,9 +1835,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_MATE_SCRAP">
+  <mod:findName name="FREEMANTIS_MATE_SCRAP" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1636,8 +1847,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: Reward Stuff(R))</mod:
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_FREEMANTIS_BOAST">
+  <mod:findName name="ENCOUNTER_FREEMANTIS_BOAST" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1645,8 +1857,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_FREEMANTIS_CONFUSED_NORMAL">
+  <mod:findName name="ENCOUNTER_FREEMANTIS_CONFUSED_NORMAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1654,8 +1867,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_FREEMANTIS_CONFUSED_REBEL">
+  <mod:findName name="ENCOUNTER_FREEMANTIS_CONFUSED_REBEL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1663,8 +1877,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_FREEMANTIS_BROKEN_COMM">
+  <mod:findName name="ENCOUNTER_FREEMANTIS_BROKEN_COMM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Fire on them.</mod:selector>
         <mod:setValue>Fire on them.
@@ -1672,10 +1887,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_FREEMANTIS_BROKEN_COMM">
+  <mod:findName name="ENCOUNTER_FREEMANTIS_BROKEN_COMM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1685,8 +1902,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_FREEMANTIS_BROKEN_COMM">
+  <mod:findName name="ENCOUNTER_FREEMANTIS_BROKEN_COMM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Don't fire on them.</mod:selector>
         <mod:setValue>Don't fire on them.
@@ -1694,10 +1912,12 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_FREEMANTIS_BROKEN_COMM">
+  <mod:findName name="ENCOUNTER_FREEMANTIS_BROKEN_COMM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1707,8 +1927,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_FREEMANTIS_BROKEN_COMM">
+  <mod:findName name="ENCOUNTER_FREEMANTIS_BROKEN_COMM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="BLUELIST_BOMB_REPAIR"/>
       <mod:findLike type="text">
         <mod:selector>(Repair Bomb) Remotely fix their communications and tell them you don't want to fight.</mod:selector>
         <mod:setValue>(Repair Bomb) Remotely fix their communications and tell them you don't want to fight.
@@ -1717,8 +1938,9 @@ Reward {(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_FREEMANTIS_SUN">
+  <mod:findName name="ENCOUNTER_FREEMANTIS_SUN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1726,8 +1948,9 @@ Fight(HK: Reward Standard(M))(CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_MANTIS_FREEMANTIS_REGULAR">
+  <mod:findName name="ENCOUNTER_MANTIS_FREEMANTIS_REGULAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1735,8 +1958,9 @@ Fight(HK: Reward Standard(M))(CK: 20% Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_MANTIS_FREEMANTIS_ASTEROID">
+  <mod:findName name="ENCOUNTER_MANTIS_FREEMANTIS_ASTEROID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1744,8 +1968,9 @@ Fight(HK: Reward Standard(M))(CK: 20% Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_ZOLTAN_FREEMANTIS">
+  <mod:findName name="ENCOUNTER_ZOLTAN_FREEMANTIS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1753,8 +1978,9 @@ Fight(CK: Reward Standard(H))(HK: Reward Standard(M))(SR: 25% Reward Stuff(R) 25
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_ZOLTAN_FREEMANTIS_RESCUE">
+  <mod:findName name="ENCOUNTER_ZOLTAN_FREEMANTIS_RESCUE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1762,8 +1988,9 @@ Fight(HK: Reward Standard(M) Reward ~ Only(M))(CK: Reward Standard(H) Reward ~ O
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_REBEL_FREEMANTIS">
+  <mod:findName name="ENCOUNTER_REBEL_FREEMANTIS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1771,8 +1998,9 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_FREEMANTIS_ELITE">
+  <mod:findName name="ENCOUNTER_FREEMANTIS_ELITE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -1780,8 +2008,9 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a crew(Mantis Warlord)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_ZOLTAN_KILLER">
+  <mod:findName name="FREEMANTIS_ZOLTAN_KILLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Hail them.</mod:selector>
         <mod:setValue>Hail them.
@@ -1789,8 +2018,9 @@ Fight(CK: Reward Standard(M))(HK: Reward Standard(L))(SR: Gain a weapon(Zoltan D
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_ZOLTAN_KILLER">
+  <mod:findName name="FREEMANTIS_ZOLTAN_KILLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1803,10 +2033,12 @@ Gain an augment(Ex Zoltan Bypass)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_ZOLTAN_KILLER">
+  <mod:findName name="FREEMANTIS_ZOLTAN_KILLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Ask about their large Beam weapon.</mod:selector>
             <mod:setValue>Ask about their large Beam weapon.
@@ -1816,12 +2048,15 @@ Fight(CK: Reward Standard(M))(HK: Reward Standard(L))(SR: Gain a weapon(Zoltan D
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_ZOLTAN_KILLER">
+  <mod:findName name="FREEMANTIS_ZOLTAN_KILLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Agree to the challenge.</mod:selector>
                 <mod:setValue>Agree to the challenge.
@@ -1833,14 +2068,18 @@ Fight(CK: Reward Standard(M))(HK: Reward Standard(L))(SR: Gain a weapon(Zoltan D
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_ZOLTAN_KILLER">
+  <mod:findName name="FREEMANTIS_ZOLTAN_KILLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1854,8 +2093,9 @@ Fight(CK: Reward Standard(M))(HK: Reward Standard(L))(SR: Gain a weapon(Zoltan D
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_ZOLTAN_KILLER">
+  <mod:findName name="FREEMANTIS_ZOLTAN_KILLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>We shouldn't stick around.</mod:selector>
         <mod:setValue>We shouldn't stick around.
@@ -1863,8 +2103,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_ZOLTAN_KILLER">
+  <mod:findName name="FREEMANTIS_ZOLTAN_KILLER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1876,8 +2117,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_FLEET_MONITION">
+  <mod:findName name="FREEMANTIS_FLEET_MONITION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Fly past the ship.</mod:selector>
         <mod:setValue>Fly past the ship.
@@ -1885,8 +2127,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_FLEET_MONITION">
+  <mod:findName name="FREEMANTIS_FLEET_MONITION" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1898,9 +2141,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_FREEMANTIS_FLEET_BISHOP">
+  <mod:findName name="SHIP_FREEMANTIS_FLEET_BISHOP" type="ship">
     <mod:findLike type="deadCrew">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1910,8 +2154,9 @@ Gain a crew(Unique Freddy)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_FLEET_BISHOP">
+  <mod:findName name="FREEMANTIS_FLEET_BISHOP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Hail the Mantis.</mod:selector>
         <mod:setValue>Hail the Mantis.
@@ -1920,10 +2165,12 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Freema
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_FLEET_BISHOP">
+  <mod:findName name="FREEMANTIS_FLEET_BISHOP" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1934,8 +2181,9 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) &lt;#&gt;Unlock Ship(Freema
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_FLEET_FREDDYSAVE">
+  <mod:findName name="FREEMANTIS_FLEET_FREDDYSAVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>This must be Freddy!</mod:selector>
         <mod:setValue>This must be Freddy!
@@ -1944,10 +2192,12 @@ Gain a crew(Unique Freddy)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_FLEET_FREDDYSAVE">
+  <mod:findName name="FREEMANTIS_FLEET_FREDDYSAVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>You're Freddy?</mod:selector>
             <mod:setValue>You're Freddy?
@@ -1958,12 +2208,15 @@ Gain a crew(Unique Freddy)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_FLEET_FREDDYSAVE">
+  <mod:findName name="FREEMANTIS_FLEET_FREDDYSAVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>You seem unusually well spoken for a Mantis.</mod:selector>
                 <mod:setValue>You seem unusually well spoken for a Mantis.
@@ -1976,14 +2229,18 @@ Gain a crew(Unique Freddy)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_FLEET_FREDDYSAVE">
+  <mod:findName name="FREEMANTIS_FLEET_FREDDYSAVE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1998,9 +2255,10 @@ Gain a crew(Unique Freddy)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_FREEMANTIS_FLEET_ZOLTAN">
+  <mod:findName name="SHIP_FREEMANTIS_FLEET_ZOLTAN" type="ship">
     <mod:findLike type="destroyed">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2011,9 +2269,10 @@ System Upgrade(Weapons x1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="SHIP_FREEMANTIS_FLEET_ZOLTAN">
+  <mod:findName name="SHIP_FREEMANTIS_FLEET_ZOLTAN" type="ship">
     <mod:findLike type="deadCrew">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -2024,8 +2283,9 @@ System Upgrade(Weapons x1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_FLEET_ZOLTAN">
+  <mod:findName name="FREEMANTIS_FLEET_ZOLTAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Hail the Zoltan.</mod:selector>
         <mod:setValue>Hail the Zoltan.
@@ -2033,10 +2293,12 @@ Fight(HK=CK: Reward Standard(H) Repair Hull(10$) Reward Augment(H) System Upgrad
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_FLEET_ZOLTAN">
+  <mod:findName name="FREEMANTIS_FLEET_ZOLTAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Isn't murder against the monk lifestyle?</mod:selector>
             <mod:setValue>Isn't murder against the monk lifestyle?
@@ -2046,12 +2308,15 @@ Fight(HK=CK: Reward Standard(H) Repair Hull(10$) Reward Augment(H) System Upgrad
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_FLEET_ZOLTAN">
+  <mod:findName name="FREEMANTIS_FLEET_ZOLTAN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -2063,8 +2328,9 @@ Fight(HK=CK: Reward Standard(H) Repair Hull(10$) Reward Augment(H) System Upgrad
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FREEMANTIS_FLEET_ZOLTAN_WIN">
+  <mod:findName name="FREEMANTIS_FLEET_ZOLTAN_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...

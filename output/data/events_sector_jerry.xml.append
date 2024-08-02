@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="FINISH_BEACON_CYRA">
+  <mod:findName name="FINISH_BEACON_CYRA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_jerry" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -8,8 +9,9 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_CYRA">
+  <mod:findName name="FINISH_BEACON_CYRA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_jerrysave" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -17,8 +19,9 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_CYRA">
+  <mod:findName name="FINISH_BEACON_CYRA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_jerrykill" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -26,8 +29,9 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_CYRA">
+  <mod:findName name="FINISH_BEACON_CYRA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_jerrymet" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -35,8 +39,9 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_CYRA">
+  <mod:findName name="FINISH_BEACON_CYRA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="loc_jerrymet" lvl="0" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -44,8 +49,9 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CYRA_DEFEAT_JERRY">
+  <mod:findName name="CYRA_DEFEAT_JERRY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_jerry" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -53,8 +59,9 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CYRA_JERRY_SUCCESS">
+  <mod:findName name="CYRA_JERRY_SUCCESS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_jerry" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -62,10 +69,12 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CYRA_JERRY_SUCCESS">
+  <mod:findName name="CYRA_JERRY_SUCCESS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_jerry" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -75,12 +84,15 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CYRA_JERRY_SUCCESS">
+  <mod:findName name="CYRA_JERRY_SUCCESS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_jerry" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Don't blame yourself, kid. Vance would have gotten her anyways.</mod:selector>
                 <mod:setValue>Don't blame yourself, kid. Vance would have gotten her anyways.
@@ -92,8 +104,9 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CYRA_JERRY">
+  <mod:findName name="CYRA_JERRY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Refuse.</mod:selector>
         <mod:setValue>Refuse.
@@ -101,10 +114,12 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CYRA_JERRY">
+  <mod:findName name="CYRA_JERRY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -114,8 +129,9 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CYRA_JERRY">
+  <mod:findName name="CYRA_JERRY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Give her Jerry.</mod:selector>
         <mod:setValue>Give her Jerry.
@@ -123,8 +139,9 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CYRA">
+  <mod:findName name="CYRA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Take this chance to attack her!</mod:selector>
         <mod:setValue>Take this chance to attack her!
@@ -132,10 +149,12 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CYRA">
+  <mod:findName name="CYRA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -145,8 +164,9 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CYRA_JERRYMET">
+  <mod:findName name="CYRA_JERRYMET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Take this chance to attack her!</mod:selector>
         <mod:setValue>Take this chance to attack her!
@@ -154,10 +174,12 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CYRA_JERRYMET">
+  <mod:findName name="CYRA_JERRYMET" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -167,8 +189,9 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CYRA_JERRYDEAD">
+  <mod:findName name="CYRA_JERRYDEAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Uh oh.</mod:selector>
         <mod:setValue>Uh oh.
@@ -176,10 +199,12 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CYRA_JERRYDEAD">
+  <mod:findName name="CYRA_JERRYDEAD" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -189,8 +214,9 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CYRA_JERRYGONE">
+  <mod:findName name="CYRA_JERRYGONE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Uh oh.</mod:selector>
         <mod:setValue>Uh oh.
@@ -198,10 +224,12 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="CYRA_JERRYGONE">
+  <mod:findName name="CYRA_JERRYGONE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -211,8 +239,9 @@ Fight(HK=CK: Reward Weapon(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_SURRENDER">
+  <mod:findName name="JERRY_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -221,8 +250,9 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_SURRENDER">
+  <mod:findName name="JERRY_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -234,10 +264,12 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_SURRENDER">
+  <mod:findName name="JERRY_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>We had nothing to do with this.</mod:selector>
             <mod:setValue>We had nothing to do with this.
@@ -247,10 +279,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_SURRENDER">
+  <mod:findName name="JERRY_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -264,10 +298,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_SURRENDER">
+  <mod:findName name="JERRY_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_tully"/>
           <mod:findLike type="text">
             <mod:selector>(Tully) Ask Tully to give them an explanation.</mod:selector>
             <mod:setValue>(Tully) Ask Tully to give them an explanation.
@@ -277,10 +313,12 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_SURRENDER">
+  <mod:findName name="JERRY_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_jerry"/>
           <mod:findLike type="text">
             <mod:selector>(Jerry) Promise that things will get better.</mod:selector>
             <mod:setValue>(Jerry) Promise that things will get better.
@@ -290,10 +328,12 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_SURRENDER">
+  <mod:findName name="JERRY_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_MEDICAL"/>
           <mod:findLike type="text">
             <mod:selector>(Medical Crew) Send someone down to treat the citizens.</mod:selector>
             <mod:setValue>(Medical Crew) Send someone down to treat the citizens.
@@ -303,10 +343,12 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_SURRENDER">
+  <mod:findName name="JERRY_SURRENDER" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="DRONE_CONTROL_MEDICAL"/>
           <mod:findLike type="text">
             <mod:selector>(Medical Drone) Send a drone down to treat the citizens.</mod:selector>
             <mod:setValue>(Medical Drone) Send a drone down to treat the citizens.
@@ -316,8 +358,9 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HANGOUT">
+  <mod:findName name="JERRY_HANGOUT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Join them.</mod:selector>
         <mod:setValue>Join them.
@@ -325,10 +368,12 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HANGOUT">
+  <mod:findName name="JERRY_HANGOUT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -338,10 +383,12 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HANGOUT">
+  <mod:findName name="JERRY_HANGOUT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -355,10 +402,12 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HANGOUT">
+  <mod:findName name="JERRY_HANGOUT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
@@ -376,10 +425,12 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HANGOUT">
+  <mod:findName name="JERRY_HANGOUT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
@@ -401,10 +452,12 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HANGOUT">
+  <mod:findName name="JERRY_HANGOUT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
@@ -430,10 +483,12 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HANGOUT">
+  <mod:findName name="JERRY_HANGOUT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
@@ -463,10 +518,12 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HANGOUT">
+  <mod:findName name="JERRY_HANGOUT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
@@ -500,10 +557,12 @@ Reward Stuff(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HANGOUT">
+  <mod:findName name="JERRY_HANGOUT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
@@ -543,10 +602,12 @@ Gain a crew(Human Soldier)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HANGOUT">
+  <mod:findName name="JERRY_HANGOUT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
@@ -589,8 +650,9 @@ Gain a crew(Human Soldier)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HANGOUT">
+  <mod:findName name="JERRY_HANGOUT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>We don't have time.</mod:selector>
         <mod:setValue>We don't have time.
@@ -598,8 +660,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HANGOUT">
+  <mod:findName name="JERRY_HANGOUT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -611,8 +674,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_TAXES">
+  <mod:findName name="JERRY_TAXES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Dock.</mod:selector>
         <mod:setValue>Dock.
@@ -621,8 +685,9 @@ Fight(HK=CK: 33% Reward Standard No Item(H) 33% Gain a weapon(Giftlist Rebel))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_TAXES">
+  <mod:findName name="JERRY_TAXES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack them.</mod:selector>
         <mod:setValue>Attack them.
@@ -630,10 +695,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_TAXES">
+  <mod:findName name="JERRY_TAXES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -643,8 +710,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_TAXES">
+  <mod:findName name="JERRY_TAXES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>No thanks.</mod:selector>
         <mod:setValue>No thanks.
@@ -652,8 +720,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_TAXES">
+  <mod:findName name="JERRY_TAXES" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -665,9 +734,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_TAXES_DOCK">
+  <mod:findName name="JERRY_TAXES_DOCK" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -676,9 +746,10 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Rebel))</mod:setV
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_TAXES_DOCK">
+  <mod:findName name="JERRY_TAXES_DOCK" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -687,9 +758,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_TAXES_DOCK">
+  <mod:findName name="JERRY_TAXES_DOCK" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -698,8 +770,9 @@ Fight(HK=CK: Reward Standard No Item(H) Gain a weapon(Giftlist Rebel))</mod:setV
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_COLONISTS">
+  <mod:findName name="JERRY_COLONISTS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Hail them and ask if they can assist.</mod:selector>
         <mod:setValue>Hail them and ask if they can assist.
@@ -707,10 +780,12 @@ Fight(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20% Reward { Only(L))</mod
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_COLONISTS">
+  <mod:findName name="JERRY_COLONISTS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Promise that you'll free them from Jerome's tyranny.</mod:selector>
             <mod:setValue>Promise that you'll free them from Jerome's tyranny.
@@ -720,12 +795,15 @@ Fight(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20% Reward { Only(L))</mod
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_COLONISTS">
+  <mod:findName name="JERRY_COLONISTS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -737,10 +815,12 @@ Fight(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20% Reward { Only(L))</mod
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_COLONISTS">
+  <mod:findName name="JERRY_COLONISTS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_HUMAN"/>
           <mod:findLike type="text">
             <mod:selector>(Human Crew) Have your human pretend to be Rebel personnel and demand supplies.</mod:selector>
             <mod:setValue>(Human Crew) Have your human pretend to be Rebel personnel and demand supplies.
@@ -750,8 +830,9 @@ Reward }(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_COLONISTS">
+  <mod:findName name="JERRY_COLONISTS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the colony.</mod:selector>
         <mod:setValue>Ignore the colony.
@@ -759,8 +840,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_COLONISTS">
+  <mod:findName name="JERRY_COLONISTS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -772,7 +854,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Follow the signal.</mod:selector>
@@ -781,7 +863,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -794,7 +876,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -811,7 +893,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -832,7 +914,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -842,6 +924,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
                 <mod:findLike type="choice">
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector req="LIST_CREW_ELLIE_COSTUME" hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>(Ellie) "Don't worry, Ellie is here!"</mod:selector>
                         <mod:setValue>(Ellie) "Don't worry, Ellie is here!"
@@ -858,7 +941,7 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -868,6 +951,7 @@ Reward ~ Only(H)</mod:setValue>
                 <mod:findLike type="choice">
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector req="unique_ellie_stephan" hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>(Stephan) Have Stephan talk to them.</mod:selector>
                         <mod:setValue>(Stephan) Have Stephan talk to them.
@@ -884,7 +968,7 @@ Reward ~ Only(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -894,6 +978,7 @@ Reward ~ Only(H)</mod:setValue>
                 <mod:findLike type="choice">
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Wouldn't someone who rebels against you be the biggest Rebel of them all?</mod:selector>
                         <mod:setValue>Wouldn't someone who rebels against you be the biggest Rebel of them all?
@@ -910,7 +995,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -920,8 +1005,10 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
                 <mod:findLike type="choice">
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
-                      <mod:findName name="META_REBELLION_TRICK">
+                      <mod:selector hidden="true"/>
+                      <mod:findName name="META_REBELLION_TRICK" type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="text">
                             <mod:selector>Continue...</mod:selector>
                             <mod:setValue>Continue...
@@ -939,7 +1026,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -964,7 +1051,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -976,6 +1063,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
                     <mod:findLike type="choice">
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="text">
                             <mod:selector>Continue...</mod:selector>
                             <mod:setValue>Continue...
@@ -993,7 +1081,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1014,7 +1102,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1024,6 +1112,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
                 <mod:findLike type="choice">
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Wouldn't someone who rebels against you be the biggest Rebel of them all?</mod:selector>
                         <mod:setValue>Wouldn't someone who rebels against you be the biggest Rebel of them all?
@@ -1040,7 +1129,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1065,7 +1154,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1077,6 +1166,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
                     <mod:findLike type="choice">
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="text">
                             <mod:selector>Continue...</mod:selector>
                             <mod:setValue>Continue...
@@ -1094,7 +1184,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1102,6 +1192,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
             <mod:findLike type="choice">
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Wouldn't someone who rebels against you be the biggest Rebel of them all?</mod:selector>
                     <mod:setValue>Wouldn't someone who rebels against you be the biggest Rebel of them all?
@@ -1116,7 +1207,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1137,7 +1228,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1147,6 +1238,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
                 <mod:findLike type="choice">
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Continue...</mod:selector>
                         <mod:setValue>Continue...
@@ -1162,7 +1254,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1175,12 +1267,13 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1192,7 +1285,7 @@ Fight(HK: Reward Standard(M) Reward ~ Only(L))(CK: Reward Standard(H) Reward ~ O
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Avoid the signal.</mod:selector>
@@ -1201,7 +1294,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_META_REBELLION">
+  <mod:findName name="JERRY_META_REBELLION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1214,7 +1307,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_COALITION_SPIES">
+  <mod:findName name="JERRY_COALITION_SPIES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Hail them to ask why they are acting suspiciously.</mod:selector>
@@ -1223,7 +1316,7 @@ Fight(CK: Reward Standard No Item(H) Gain a weapon(Giftlist Rebel))</mod:setValu
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_COALITION_SPIES">
+  <mod:findName name="JERRY_COALITION_SPIES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1236,12 +1329,13 @@ Fight(CK: Reward Standard No Item(H) Gain a weapon(Giftlist Rebel))</mod:setValu
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_COALITION_SPIES">
+  <mod:findName name="JERRY_COALITION_SPIES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector req="LIST_CREW_MANTIS" hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>(Mantis Crew) Entice their Mantis with the promise of a better fight.</mod:selector>
                 <mod:setValue>(Mantis Crew) Entice their Mantis with the promise of a better fight.
@@ -1253,7 +1347,7 @@ Gain a crew(Mantis Suzerain)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_COALITION_SPIES">
+  <mod:findName name="JERRY_COALITION_SPIES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1271,7 +1365,7 @@ Fleet Delay(2)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_COALITION_SPIES">
+  <mod:findName name="JERRY_COALITION_SPIES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1288,7 +1382,7 @@ Fight(CK: Reward Standard No Item(H) Gain a weapon(Giftlist Rebel))</mod:setValu
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_COALITION_SPIES">
+  <mod:findName name="JERRY_COALITION_SPIES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1296,6 +1390,7 @@ Fight(CK: Reward Standard No Item(H) Gain a weapon(Giftlist Rebel))</mod:setValu
             <mod:findLike type="choice">
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1309,7 +1404,7 @@ Fight(CK: Reward Standard No Item(H) Gain a weapon(Giftlist Rebel))</mod:setValu
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_COALITION_SPIES">
+  <mod:findName name="JERRY_COALITION_SPIES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1322,7 +1417,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_COALITION_SPIES">
+  <mod:findName name="JERRY_COALITION_SPIES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1339,7 +1434,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_COALITION_SPIES">
+  <mod:findName name="JERRY_COALITION_SPIES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Attack the ship.</mod:selector>
@@ -1348,10 +1443,11 @@ Fight(CK: Reward Standard No Item(H) Gain a weapon(Giftlist Rebel))</mod:setValu
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_COALITION_SPIES">
+  <mod:findName name="JERRY_COALITION_SPIES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1361,7 +1457,7 @@ Fight(CK: Reward Standard No Item(H) Gain a weapon(Giftlist Rebel))</mod:setValu
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_COALITION_SPIES">
+  <mod:findName name="JERRY_COALITION_SPIES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Leave them alone.</mod:selector>
@@ -1370,7 +1466,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_COALITION_SPIES">
+  <mod:findName name="JERRY_COALITION_SPIES" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1383,8 +1479,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_DEPOT">
+  <mod:findName name="JERRY_DEPOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the depot.</mod:selector>
         <mod:setValue>Attack the depot.
@@ -1392,10 +1489,12 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_DEPOT">
+  <mod:findName name="JERRY_DEPOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1405,8 +1504,9 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_DEPOT">
+  <mod:findName name="JERRY_DEPOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the depot.</mod:selector>
         <mod:setValue>Ignore the depot.
@@ -1414,8 +1514,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_DEPOT">
+  <mod:findName name="JERRY_DEPOT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1427,8 +1528,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_DEPOT_RAID">
+  <mod:findName name="JERRY_DEPOT_RAID" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="false"/>
       <mod:findLike type="text">
         <mod:selector>Steal the supplies.</mod:selector>
         <mod:setValue>Steal the supplies.
@@ -1438,8 +1540,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_AUTO_REPLICA">
+  <mod:findName name="JERRY_AUTO_REPLICA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ask them what the Auto-ship is for.</mod:selector>
         <mod:setValue>Ask them what the Auto-ship is for.
@@ -1448,10 +1551,12 @@ Reward |(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_AUTO_REPLICA">
+  <mod:findName name="JERRY_AUTO_REPLICA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="LIST_CREW_JERRY"/>
           <mod:findLike type="text">
             <mod:selector>(Jerry) Jerry is on board, would you like to show him the gift?</mod:selector>
             <mod:setValue>(Jerry) Jerry is on board, would you like to show him the gift?
@@ -1461,10 +1566,12 @@ Reward Drone(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_AUTO_REPLICA">
+  <mod:findName name="JERRY_AUTO_REPLICA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="LIST_CREW_JERRY"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -1478,14 +1585,17 @@ Reward Drone(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_AUTO_REPLICA">
+  <mod:findName name="JERRY_AUTO_REPLICA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="LIST_CREW_JERRY"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1499,10 +1609,12 @@ Reward Drone(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_AUTO_REPLICA">
+  <mod:findName name="JERRY_AUTO_REPLICA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Lie: His ruthless and unforgiving nature. Makes him a good soldier.</mod:selector>
             <mod:setValue>Lie: His ruthless and unforgiving nature. Makes him a good soldier.
@@ -1512,12 +1624,15 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_AUTO_REPLICA">
+  <mod:findName name="JERRY_AUTO_REPLICA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Attack them!</mod:selector>
                 <mod:setValue>Attack them!
@@ -1529,14 +1644,18 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_AUTO_REPLICA">
+  <mod:findName name="JERRY_AUTO_REPLICA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1550,10 +1669,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_AUTO_REPLICA">
+  <mod:findName name="JERRY_AUTO_REPLICA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Lie: His authoritarian manner of ruling over people. He is the kind of strong leader this galaxy needs.</mod:selector>
             <mod:setValue>Lie: His authoritarian manner of ruling over people. He is the kind of strong leader this galaxy needs.
@@ -1563,12 +1684,15 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_AUTO_REPLICA">
+  <mod:findName name="JERRY_AUTO_REPLICA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Attack them!</mod:selector>
                 <mod:setValue>Attack them!
@@ -1580,14 +1704,18 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_AUTO_REPLICA">
+  <mod:findName name="JERRY_AUTO_REPLICA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1601,10 +1729,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_AUTO_REPLICA">
+  <mod:findName name="JERRY_AUTO_REPLICA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Lie: He's cool I guess.</mod:selector>
             <mod:setValue>Lie: He's cool I guess.
@@ -1614,8 +1744,9 @@ Reward |(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_AUTO_REPLICA">
+  <mod:findName name="JERRY_AUTO_REPLICA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attack the Rebels!</mod:selector>
         <mod:setValue>Attack the Rebels!
@@ -1623,10 +1754,12 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_AUTO_REPLICA">
+  <mod:findName name="JERRY_AUTO_REPLICA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1636,8 +1769,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_AUTO_REPLICA">
+  <mod:findName name="JERRY_AUTO_REPLICA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Ignore the Rebels.</mod:selector>
         <mod:setValue>Ignore the Rebels.
@@ -1645,8 +1779,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_AUTO_REPLICA">
+  <mod:findName name="JERRY_AUTO_REPLICA" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1658,8 +1793,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_MOCKBATTLE">
+  <mod:findName name="JERRY_MOCKBATTLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Intervene and try to mediate.</mod:selector>
         <mod:setValue>Intervene and try to mediate.
@@ -1667,10 +1803,12 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_MOCKBATTLE">
+  <mod:findName name="JERRY_MOCKBATTLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>The Rebellion's time here is limited. Stand down and submit to the Federation!</mod:selector>
             <mod:setValue>The Rebellion's time here is limited. Stand down and submit to the Federation!
@@ -1680,12 +1818,15 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_MOCKBATTLE">
+  <mod:findName name="JERRY_MOCKBATTLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1697,10 +1838,12 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_MOCKBATTLE">
+  <mod:findName name="JERRY_MOCKBATTLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>This is civilian territory! The Federation has better things to do than attack this place!</mod:selector>
             <mod:setValue>This is civilian territory! The Federation has better things to do than attack this place!
@@ -1710,8 +1853,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_MOCKBATTLE">
+  <mod:findName name="JERRY_MOCKBATTLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Hail the Federation commander and offer your support.</mod:selector>
         <mod:setValue>Hail the Federation commander and offer your support.
@@ -1719,10 +1863,12 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_MOCKBATTLE">
+  <mod:findName name="JERRY_MOCKBATTLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Intervene and try to mediate.</mod:selector>
             <mod:setValue>Intervene and try to mediate.
@@ -1732,12 +1878,15 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_MOCKBATTLE">
+  <mod:findName name="JERRY_MOCKBATTLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>The Rebellion's time here is limited. Stand down and submit to the Federation!</mod:selector>
                 <mod:setValue>The Rebellion's time here is limited. Stand down and submit to the Federation!
@@ -1749,14 +1898,18 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_MOCKBATTLE">
+  <mod:findName name="JERRY_MOCKBATTLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>Continue...</mod:selector>
                     <mod:setValue>Continue...
@@ -1770,12 +1923,15 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_MOCKBATTLE">
+  <mod:findName name="JERRY_MOCKBATTLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>This is civilian territory! The Federation has better things to do than attack this place!</mod:selector>
                 <mod:setValue>This is civilian territory! The Federation has better things to do than attack this place!
@@ -1787,10 +1943,12 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_MOCKBATTLE">
+  <mod:findName name="JERRY_MOCKBATTLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Give up.</mod:selector>
             <mod:setValue>Give up.
@@ -1800,10 +1958,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_MOCKBATTLE">
+  <mod:findName name="JERRY_MOCKBATTLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="text">
@@ -1817,8 +1977,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_MOCKBATTLE">
+  <mod:findName name="JERRY_MOCKBATTLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Leave immediately.</mod:selector>
         <mod:setValue>Leave immediately.
@@ -1826,8 +1987,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_MOCKBATTLE">
+  <mod:findName name="JERRY_MOCKBATTLE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -1839,7 +2001,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_REBEL_DEPRESSED">
+  <mod:findName name="JERRY_REBEL_DEPRESSED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Let's prove them right. Attack!</mod:selector>
@@ -1848,10 +2010,11 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_REBEL_DEPRESSED">
+  <mod:findName name="JERRY_REBEL_DEPRESSED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -1861,7 +2024,7 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_REBEL_DEPRESSED">
+  <mod:findName name="JERRY_REBEL_DEPRESSED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Ask them if something is wrong.</mod:selector>
@@ -1870,10 +2033,11 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_REBEL_DEPRESSED">
+  <mod:findName name="JERRY_REBEL_DEPRESSED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="unique_jerry"/>
           <mod:findLike type="text">
             <mod:selector>(Jerry) "I'm proud of you."</mod:selector>
             <mod:setValue>(Jerry) "I'm proud of you."
@@ -1883,10 +2047,11 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_REBEL_DEPRESSED">
+  <mod:findName name="JERRY_REBEL_DEPRESSED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Console them.</mod:selector>
             <mod:setValue>Console them.
@@ -1897,7 +2062,7 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_REBEL_DEPRESSED">
+  <mod:findName name="JERRY_REBEL_DEPRESSED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1910,12 +2075,13 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_REBEL_DEPRESSED">
+  <mod:findName name="JERRY_REBEL_DEPRESSED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
                 <mod:setValue>Continue...
@@ -1927,7 +2093,7 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_REBEL_DEPRESSED">
+  <mod:findName name="JERRY_REBEL_DEPRESSED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1940,7 +2106,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_REBEL_DEPRESSED">
+  <mod:findName name="JERRY_REBEL_DEPRESSED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1957,7 +2123,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_REBEL_DEPRESSED">
+  <mod:findName name="JERRY_REBEL_DEPRESSED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Spare the despondent Rebel.</mod:selector>
@@ -1966,7 +2132,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_REBEL_DEPRESSED">
+  <mod:findName name="JERRY_REBEL_DEPRESSED" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -1979,9 +2145,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_REBEL_DEPRESSED_CONSOLE">
+  <mod:findName name="JERRY_REBEL_DEPRESSED_CONSOLE" type="eventList">
     <mod:findLike type="event">
       <mod:findLike type="choice">
+        <mod:selector hidden="true"/>
         <mod:findLike type="text">
           <mod:selector>Continue...</mod:selector>
           <mod:setValue>Continue...
@@ -1990,8 +2157,9 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR">
+  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="MAGNET_ARM" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Magnetic Arm) Swoop in and grab the missile cache with your magnetic arm.</mod:selector>
         <mod:setValue>(Magnetic Arm) Swoop in and grab the missile cache with your magnetic arm.
@@ -2001,10 +2169,12 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR">
+  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="MAGNET_ARM" hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Return to the Dream Conjurers.</mod:selector>
             <mod:setValue>Return to the Dream Conjurers.
@@ -2014,8 +2184,9 @@ Reward ~ Only(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR">
+  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="BLUELIST_FOCUS_DAMAGE" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Damaging Pinpoint) Use your Pinpoint to precisely destroy the cache.</mod:selector>
         <mod:setValue>(Damaging Pinpoint) Use your Pinpoint to precisely destroy the cache.
@@ -2023,10 +2194,12 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR">
+  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="BLUELIST_FOCUS_DAMAGE" hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Return to the Dream Conjurers.</mod:selector>
             <mod:setValue>Return to the Dream Conjurers.
@@ -2036,8 +2209,9 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR">
+  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="BLUELIST_ACCURATE_BALLISTIC" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Accurate Ballistic Weapon) Use a missile to precisely destroy the cache.</mod:selector>
         <mod:setValue>(Accurate Ballistic Weapon) Use a missile to precisely destroy the cache.
@@ -2046,10 +2220,12 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR">
+  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="BLUELIST_ACCURATE_BALLISTIC" hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Return to the Dream Conjurers.</mod:selector>
             <mod:setValue>Return to the Dream Conjurers.
@@ -2059,8 +2235,9 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR">
+  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="SNIPER" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Nevermiss) Precisely destroy the cache.</mod:selector>
         <mod:setValue>(Nevermiss) Precisely destroy the cache.
@@ -2068,10 +2245,12 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR">
+  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="SNIPER" hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Return to the Dream Conjurers</mod:selector>
             <mod:setValue>Return to the Dream Conjurers
@@ -2081,8 +2260,9 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR">
+  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Destroy the Dream Conjurers.</mod:selector>
         <mod:setValue>Destroy the Dream Conjurers.
@@ -2090,7 +2270,7 @@ Reward Standard(L)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR">
+  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Ignore them.</mod:selector>
@@ -2099,7 +2279,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR">
+  <mod:findName name="DISTRESS_JERRY_SHOOTING_STAR" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2112,8 +2292,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_JERRY_ZOO">
+  <mod:findName name="DISTRESS_JERRY_ZOO" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="mind" lvl="1" hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>(Mind Control) Pacify the animals.</mod:selector>
         <mod:setValue>(Mind Control) Pacify the animals.
@@ -2121,8 +2302,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_JERRY_ZOO">
+  <mod:findName name="DISTRESS_JERRY_ZOO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="unique_irwin"/>
       <mod:findLike type="text">
         <mod:selector>(Irwin) Show them how it's done.</mod:selector>
         <mod:setValue>(Irwin) Show them how it's done.
@@ -2130,8 +2312,9 @@ Reward Standard(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_JERRY_ZOO">
+  <mod:findName name="DISTRESS_JERRY_ZOO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_CRYSTAL"/>
       <mod:findLike type="text">
         <mod:selector>(Crystal Crew) Erect barricades to guide the animals into their habitats.</mod:selector>
         <mod:setValue>(Crystal Crew) Erect barricades to guide the animals into their habitats.
@@ -2139,8 +2322,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_JERRY_ZOO">
+  <mod:findName name="DISTRESS_JERRY_ZOO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_ROCK"/>
       <mod:findLike type="text">
         <mod:selector>(Rock Crew) Have your Rockman use force.</mod:selector>
         <mod:setValue>(Rock Crew) Have your Rockman use force.
@@ -2148,8 +2332,9 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_JERRY_ZOO">
+  <mod:findName name="DISTRESS_JERRY_ZOO" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Send your crew in to help calm the animals.</mod:selector>
         <mod:setValue>Send your crew in to help calm the animals.
@@ -2158,7 +2343,7 @@ Reward Standard(M)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_JERRY_ZOO">
+  <mod:findName name="DISTRESS_JERRY_ZOO" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Ignore the zoo.</mod:selector>
@@ -2167,7 +2352,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DISTRESS_JERRY_ZOO">
+  <mod:findName name="DISTRESS_JERRY_ZOO" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2180,7 +2365,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Attack them, we don't do business with Rebels!</mod:selector>
@@ -2189,10 +2374,11 @@ Fight(HK: 20% Reward Standard(M) 20% Reward Standard(L))(CK: Reward Standard(H))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2202,7 +2388,7 @@ Fight(HK: 20% Reward Standard(M) 20% Reward Standard(L))(CK: Reward Standard(H))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Refuse the job.</mod:selector>
@@ -2211,10 +2397,11 @@ Fight(HK: 20% Reward Standard(M) 20% Reward Standard(L))(CK: Reward Standard(H))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2224,7 +2411,7 @@ Fight(HK: 20% Reward Standard(M) 20% Reward Standard(L))(CK: Reward Standard(H))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Attack them.</mod:selector>
@@ -2233,10 +2420,11 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2246,7 +2434,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Hail them first.</mod:selector>
@@ -2255,10 +2443,11 @@ Reward {(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="LIST_CREW_JERRY"/>
           <mod:findLike type="text">
             <mod:selector>(Jerry) Jerry wants to talk.</mod:selector>
             <mod:setValue>(Jerry) Jerry wants to talk.
@@ -2268,7 +2457,7 @@ Reward {(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2281,7 +2470,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2298,7 +2487,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2319,7 +2508,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2329,6 +2518,7 @@ Fight</mod:setValue>
                 <mod:findLike type="choice">
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Continue...</mod:selector>
                         <mod:setValue>Continue...
@@ -2344,7 +2534,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2362,7 +2552,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2384,7 +2574,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2394,6 +2584,7 @@ Fight</mod:setValue>
                 <mod:findLike type="choice">
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>A Rebel told us to kill you. We wanted to know why.</mod:selector>
                         <mod:setValue>A Rebel told us to kill you. We wanted to know why.
@@ -2409,7 +2600,7 @@ Reward {(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2434,7 +2625,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2446,6 +2637,7 @@ Fight</mod:setValue>
                     <mod:findLike type="choice">
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="text">
                             <mod:selector>Continue...</mod:selector>
                             <mod:setValue>Continue...
@@ -2463,7 +2655,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2484,7 +2676,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2509,7 +2701,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2521,6 +2713,7 @@ Fight</mod:setValue>
                     <mod:findLike type="choice">
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="text">
                             <mod:selector>Continue...</mod:selector>
                             <mod:setValue>Continue...
@@ -2538,7 +2731,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2555,7 +2748,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2576,7 +2769,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_SPOT" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2586,6 +2779,7 @@ Fight</mod:setValue>
                 <mod:findLike type="choice">
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>Continue...</mod:selector>
                         <mod:setValue>Continue...
@@ -2601,7 +2795,7 @@ Fight</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_REWARD">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_REWARD" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Open fire on them once they've given the reward.</mod:selector>
@@ -2610,10 +2804,11 @@ Fight(HK: 20% Reward Standard(M) 20% Reward Standard(L))(CK: Reward Standard(H))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_REWARD">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_REWARD" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2623,7 +2818,7 @@ Fight(HK: 20% Reward Standard(M) 20% Reward Standard(L))(CK: Reward Standard(H))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_REWARD">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_REWARD" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Make your departure.</mod:selector>
@@ -2632,7 +2827,7 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_REWARD">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_REWARD" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="event">
         <mod:findLike type="choice">
@@ -2645,8 +2840,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="QUEST_JERRY_ASSASSINATION_REVERSE">
+  <mod:findName name="QUEST_JERRY_ASSASSINATION_REVERSE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2654,8 +2850,9 @@ Fight(CK: Reward Standard(M) Reward ~ Only(H))(HK: Reward Standard(M))(SR: Rewar
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_TOM">
+  <mod:findName name="ENCOUNTER_TOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Not particularly.</mod:selector>
         <mod:setValue>Not particularly.
@@ -2663,10 +2860,12 @@ Fight(HK=CK: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_TOM">
+  <mod:findName name="ENCOUNTER_TOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2676,8 +2875,9 @@ Fight(HK=CK: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_TOM">
+  <mod:findName name="ENCOUNTER_TOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_JERRY"/>
       <mod:findLike type="text">
         <mod:selector>(Jerry) "Hey Tom!"</mod:selector>
         <mod:setValue>(Jerry) "Hey Tom!"
@@ -2685,10 +2885,12 @@ Fight(HK=CK: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_TOM">
+  <mod:findName name="ENCOUNTER_TOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_JERRY"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2698,8 +2900,9 @@ Fight(HK=CK: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_TOM">
+  <mod:findName name="DESTROYED_TOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CREW_JERRY" lvl="1"/>
       <mod:findLike type="text">
         <mod:selector>(Jerry) "Tom... calm down already."</mod:selector>
         <mod:setValue>(Jerry) "Tom... calm down already."
@@ -2707,8 +2910,9 @@ Fight(HK=CK: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_TOM">
+  <mod:findName name="DESTROYED_TOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Accept him onto your ship.</mod:selector>
         <mod:setValue>Accept him onto your ship.
@@ -2717,8 +2921,9 @@ Fight(HK=CK: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_TOM">
+  <mod:findName name="DESTROYED_TOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="mind"/>
       <mod:findLike type="text">
         <mod:selector>(Mind Control) Keep the mind control online in-case he does anything bad.</mod:selector>
         <mod:setValue>(Mind Control) Keep the mind control online in-case he does anything bad.
@@ -2726,8 +2931,9 @@ Fight(HK=CK: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="DESTROYED_TOM">
+  <mod:findName name="DESTROYED_TOM" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Free the Rebel and let them go.</mod:selector>
         <mod:setValue>Free the Rebel and let them go.
@@ -2736,8 +2942,9 @@ Fight(HK=CK: Reward Standard(L))</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_MV_JERRY">
+  <mod:findName name="ENCOUNTER_MV_JERRY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2745,8 +2952,9 @@ Fight(HK: 14% Reward Standard(M) 14% Reward Weapon(H) 14% Reward Augment(H) 14% 
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_REBEL_JERRY">
+  <mod:findName name="ENCOUNTER_REBEL_JERRY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2754,8 +2962,9 @@ Fight(CK: Reward Standard(H))(HK: 20% Reward Standard(M) 20% Reward Standard(L))
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="ENCOUNTER_AUTO_JERRY">
+  <mod:findName name="ENCOUNTER_AUTO_JERRY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -2763,8 +2972,9 @@ Fight(HK: Reward Standard(M))(SR: 20% Reward Stuff(R) 20% Reward { Only(L))</mod
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME">
+  <mod:findName name="JERRY_HOME" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Enter.</mod:selector>
         <mod:setValue>Enter.
@@ -2772,10 +2982,12 @@ Fight(HK: Gain a crew(Unique Jerry) Reward Weapon(H) Repair Hull(7$))</mod:setVa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME">
+  <mod:findName name="JERRY_HOME" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
             <mod:setValue>Continue...
@@ -2785,8 +2997,9 @@ Fight(HK: Gain a crew(Unique Jerry) Reward Weapon(H) Repair Hull(7$))</mod:setVa
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME">
+  <mod:findName name="JERRY_HOME" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>On second thought, maybe this isn't such a good idea.</mod:selector>
         <mod:setValue>On second thought, maybe this isn't such a good idea.
@@ -2794,8 +3007,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME">
+  <mod:findName name="JERRY_HOME" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -2807,8 +3021,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_WIN">
+  <mod:findName name="JERRY_HOME_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_JERRY"/>
       <mod:findLike type="text">
         <mod:selector>(Jerry) Ask for Jerry.</mod:selector>
         <mod:setValue>(Jerry) Ask for Jerry.
@@ -2818,10 +3033,12 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_WIN">
+  <mod:findName name="JERRY_HOME_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_JERRY"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_jerry" max_group="0" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>Tell Jerry about the Rebel Flagship.</mod:selector>
             <mod:setValue>Tell Jerry about the Rebel Flagship.
@@ -2833,12 +3050,15 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_WIN">
+  <mod:findName name="JERRY_HOME_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_JERRY"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_jerry" max_group="0" blue="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Why don't you come with us?</mod:selector>
                 <mod:setValue>Why don't you come with us?
@@ -2850,12 +3070,15 @@ Gain a crew(Unique Jerry)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_WIN">
+  <mod:findName name="JERRY_HOME_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_JERRY"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="unique_jerry" max_group="0" blue="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Don't worry, our Jerry can handle that.</mod:selector>
                 <mod:setValue>Don't worry, our Jerry can handle that.
@@ -2868,10 +3091,12 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_WIN">
+  <mod:findName name="JERRY_HOME_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_JERRY"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="LIST_CREW_JERRY" max_group="0" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>Tell Jerry about the Rebel Flagship.</mod:selector>
             <mod:setValue>Tell Jerry about the Rebel Flagship.
@@ -2883,12 +3108,15 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_WIN">
+  <mod:findName name="JERRY_HOME_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_JERRY"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="LIST_CREW_JERRY" max_group="0" blue="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Why don't you come with us?</mod:selector>
                 <mod:setValue>Why don't you come with us?
@@ -2900,12 +3128,15 @@ Gain a crew(Unique Jerry)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_WIN">
+  <mod:findName name="JERRY_HOME_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="LIST_CREW_JERRY"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector req="LIST_CREW_JERRY" max_group="0" blue="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Don't worry, our Jerry can handle that.</mod:selector>
                 <mod:setValue>Don't worry, our Jerry can handle that.
@@ -2918,8 +3149,9 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_WIN">
+  <mod:findName name="JERRY_HOME_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Your time is up, Jerome! The Federation has come for you at last!</mod:selector>
         <mod:setValue>Your time is up, Jerome! The Federation has come for you at last!
@@ -2927,10 +3159,12 @@ Reward Weapon(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_WIN">
+  <mod:findName name="JERRY_HOME_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>If we're a joke, then killing you is the punchline.</mod:selector>
             <mod:setValue>If we're a joke, then killing you is the punchline.
@@ -2940,12 +3174,15 @@ Reward Weapon(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_WIN">
+  <mod:findName name="JERRY_HOME_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>So, you're Jerome then.</mod:selector>
                 <mod:setValue>So, you're Jerome then.
@@ -2957,14 +3194,18 @@ Reward Weapon(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_WIN">
+  <mod:findName name="JERRY_HOME_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true" req="pilot" lvl="1" max_group="0" blue="false"/>
                   <mod:findLike type="text">
                     <mod:selector>Shoot him.</mod:selector>
                     <mod:setValue>Shoot him.
@@ -2978,14 +3219,18 @@ Reward Weapon(H)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_WIN">
+  <mod:findName name="JERRY_HOME_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true" req="rep_jerry" lvl="0" max_lvl="3" max_group="1" blue="false"/>
                   <mod:findLike type="text">
                     <mod:selector>Spare him.</mod:selector>
                     <mod:setValue>Spare him.
@@ -3001,16 +3246,21 @@ Gain a crew(Unique Jerry)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_WIN">
+  <mod:findName name="JERRY_HOME_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true" req="rep_jerry" lvl="0" max_lvl="3" max_group="1" blue="false"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>You're of more use to us alive than dead.</mod:selector>
                         <mod:setValue>You're of more use to us alive than dead.
@@ -3028,18 +3278,24 @@ Gain a crew(Unique Jerry)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_WIN">
+  <mod:findName name="JERRY_HOME_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true" req="rep_jerry" lvl="0" max_lvl="3" max_group="1" blue="false"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="text">
                             <mod:selector>You don't think you're a hero?</mod:selector>
                             <mod:setValue>You don't think you're a hero?
@@ -3059,16 +3315,21 @@ Gain a crew(Unique Jerry)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_WIN">
+  <mod:findName name="JERRY_HOME_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true" req="rep_jerry" lvl="0" max_lvl="3" max_group="1" blue="false"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>You aren't what we expected. Killing you doesn't feel right.</mod:selector>
                         <mod:setValue>You aren't what we expected. Killing you doesn't feel right.
@@ -3086,18 +3347,24 @@ Gain a crew(Unique Jerry)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_WIN">
+  <mod:findName name="JERRY_HOME_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true" req="rep_jerry" lvl="0" max_lvl="3" max_group="1" blue="false"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="text">
                             <mod:selector>You don't think you're a hero?</mod:selector>
                             <mod:setValue>You don't think you're a hero?
@@ -3117,16 +3384,21 @@ Gain a crew(Unique Jerry)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_WIN">
+  <mod:findName name="JERRY_HOME_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true" req="rep_jerry" lvl="0" max_lvl="3" max_group="1" blue="false"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>I've had a change of heart. Think I'll be one of those pacifist monk types now.</mod:selector>
                         <mod:setValue>I've had a change of heart. Think I'll be one of those pacifist monk types now.
@@ -3144,18 +3416,24 @@ Gain a crew(Unique Jerry)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_WIN">
+  <mod:findName name="JERRY_HOME_WIN" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true" req="rep_jerry" lvl="0" max_lvl="3" max_group="1" blue="false"/>
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="text">
                             <mod:selector>You don't think you're a hero?</mod:selector>
                             <mod:setValue>You don't think you're a hero?
@@ -3175,8 +3453,9 @@ Gain a crew(Unique Jerry)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_RECRUIT">
+  <mod:findName name="JERRY_HOME_RECRUIT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Sounds like you need to take your life into your own hands.</mod:selector>
         <mod:setValue>Sounds like you need to take your life into your own hands.
@@ -3186,10 +3465,12 @@ Gain a crew(Unique Jerry)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_RECRUIT">
+  <mod:findName name="JERRY_HOME_RECRUIT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="pilot" lvl="1" max_group="0" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>We can't help, nor stick around much longer, but you'll figure it out.</mod:selector>
             <mod:setValue>We can't help, nor stick around much longer, but you'll figure it out.
@@ -3200,10 +3481,12 @@ Repair Hull(7$)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_RECRUIT">
+  <mod:findName name="JERRY_HOME_RECRUIT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="loc_killedcyra" lvl="0" max_group="1" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>You could come with us. See the Multiverse. Maybe help improve it too.</mod:selector>
             <mod:setValue>You could come with us. See the Multiverse. Maybe help improve it too.
@@ -3213,12 +3496,15 @@ Gain a crew(Unique Jerry)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_RECRUIT">
+  <mod:findName name="JERRY_HOME_RECRUIT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="loc_killedcyra" lvl="0" max_group="1" blue="false"/>
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Nahhhhh. Probably.</mod:selector>
                 <mod:setValue>Nahhhhh. Probably.
@@ -3230,10 +3516,12 @@ Gain a crew(Unique Jerry)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="JERRY_HOME_RECRUIT">
+  <mod:findName name="JERRY_HOME_RECRUIT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="loc_killedcyra" lvl="1" max_group="1" blue="false"/>
           <mod:findLike type="text">
             <mod:selector>You could come with us. See the Multiverse. Maybe help improve it too.</mod:selector>
             <mod:setValue>You could come with us. See the Multiverse. Maybe help improve it too.

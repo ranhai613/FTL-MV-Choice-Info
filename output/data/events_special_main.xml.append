@@ -1,6 +1,7 @@
 <FTL>
-  <mod:findName name="FINISH_BEACON_REAL">
+  <mod:findName name="FINISH_BEACON_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Do something onboard the ship.</mod:selector>
         <mod:setValue>Do something onboard the ship.
@@ -8,8 +9,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="FINISH_BEACON_NEBULA_REAL">
+  <mod:findName name="FINISH_BEACON_NEBULA_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Do something onboard the ship.</mod:selector>
         <mod:setValue>Do something onboard the ship.
@@ -17,8 +19,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_REAL">
+  <mod:findName name="START_BEACON_REAL" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Proceed with your mission.</mod:selector>
         <mod:setValue>Proceed with your mission.
@@ -26,8 +29,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_COMPATIBILITY">
+  <mod:findName name="START_BEACON_COMPATIBILITY" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -35,8 +39,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Proceed with your mission.</mod:selector>
         <mod:setValue>Proceed with your mission.
@@ -44,10 +49,12 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="EX_PAYLOAD_CREATOR"/>
           <mod:findLike type="text">
             <mod:selector>Payload Fabricator</mod:selector>
             <mod:setValue>Payload Fabricator
@@ -57,10 +64,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="EX_O2_MASKS"/>
           <mod:findLike type="text">
             <mod:selector>Respirators</mod:selector>
             <mod:setValue>Respirators
@@ -70,10 +79,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="EX_FIRE_EXTINGUISHERS"/>
           <mod:findLike type="text">
             <mod:selector>Extinguishers</mod:selector>
             <mod:setValue>Extinguishers
@@ -83,10 +94,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="EX_BREACH_SEALANT"/>
           <mod:findLike type="text">
             <mod:selector>Sealant</mod:selector>
             <mod:setValue>Sealant
@@ -96,10 +109,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="EX_ZOLTAN_BYPASS"/>
           <mod:findLike type="text">
             <mod:selector>Hard-Light Bypass</mod:selector>
             <mod:setValue>Hard-Light Bypass
@@ -109,10 +124,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="EX_LIFE_SCANNER"/>
           <mod:findLike type="text">
             <mod:selector>Lifeform Scanner</mod:selector>
             <mod:setValue>Lifeform Scanner
@@ -122,10 +139,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="EX_DEFENSE_SCRAMBLER"/>
           <mod:findLike type="text">
             <mod:selector>Defense Scrambler</mod:selector>
             <mod:setValue>Defense Scrambler
@@ -135,10 +154,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="START_SHIELDBOOST"/>
           <mod:findLike type="text">
             <mod:selector>Shield Charge Booster</mod:selector>
             <mod:setValue>Shield Charge Booster
@@ -148,10 +169,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="START_IONARMOR"/>
           <mod:findLike type="text">
             <mod:selector>Ion Field</mod:selector>
             <mod:setValue>Ion Field
@@ -161,10 +184,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="EX_FTL_BOOSTER"/>
           <mod:findLike type="text">
             <mod:selector>FTL Booster</mod:selector>
             <mod:setValue>FTL Booster
@@ -174,10 +199,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="START_RELOADER"/>
           <mod:findLike type="text">
             <mod:selector>Re-loader</mod:selector>
             <mod:setValue>Re-loader
@@ -187,10 +214,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="EX_EXPLOSIVE_REPLICATOR"/>
           <mod:findLike type="text">
             <mod:selector>Explosive Replicator</mod:selector>
             <mod:setValue>Explosive Replicator
@@ -200,10 +229,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="EX_CLOAK_FIRE"/>
           <mod:findLike type="text">
             <mod:selector>Stealth Weapons</mod:selector>
             <mod:setValue>Stealth Weapons
@@ -213,10 +244,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="EX_MEDBAY_NANO"/>
           <mod:findLike type="text">
             <mod:selector>Med-bots</mod:selector>
             <mod:setValue>Med-bots
@@ -226,10 +259,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="EX_MEDBAY_SPEED"/>
           <mod:findLike type="text">
             <mod:selector>Medical Stimulants</mod:selector>
             <mod:setValue>Medical Stimulants
@@ -239,10 +274,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="EX_MEDBAY_RESISTANCE"/>
           <mod:findLike type="text">
             <mod:selector>Safety Blankets</mod:selector>
             <mod:setValue>Safety Blankets
@@ -252,10 +289,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="EX_BACKUP_DNA"/>
           <mod:findLike type="text">
             <mod:selector>Backup DNA</mod:selector>
             <mod:setValue>Backup DNA
@@ -265,10 +304,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="EX_DRONE_SPEED"/>
           <mod:findLike type="text">
             <mod:selector>Drone Booster</mod:selector>
             <mod:setValue>Drone Booster
@@ -278,10 +319,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="EX_TELEPORT_HEAL"/>
           <mod:findLike type="text">
             <mod:selector>Reconstructive Teleporter</mod:selector>
             <mod:setValue>Reconstructive Teleporter
@@ -291,10 +334,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="START_FTLJAM"/>
           <mod:findLike type="text">
             <mod:selector>FTL Jammer</mod:selector>
             <mod:setValue>FTL Jammer
@@ -304,10 +349,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="EX_HACKING_STUN"/>
           <mod:findLike type="text">
             <mod:selector>Neural Disruptor</mod:selector>
             <mod:setValue>Neural Disruptor
@@ -317,10 +364,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="LIGHTSPEED_DROPPOINT">
+      <mod:selector hidden="true"/>
+      <mod:findName name="LIGHTSPEED_DROPPOINT" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true" req="START_GENERATOR"/>
           <mod:findLike type="text">
             <mod:selector>Emergency Generator</mod:selector>
             <mod:setValue>Emergency Generator
@@ -330,8 +379,9 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="FEDERATION_DATABASE" lvl="0" max_lvl="0"/>
       <mod:findLike type="text">
         <mod:selector>Download the Federation Database entries. [HEAVILY recommended for beginners]</mod:selector>
         <mod:setValue>Download the Federation Database entries. [HEAVILY recommended for beginners]
@@ -339,8 +389,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PRESELECT">
+  <mod:findName name="START_BEACON_PRESELECT" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="FEDERATION_DATABASE" lvl="1" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Reread the Federation Database entries.</mod:selector>
         <mod:setValue>Reread the Federation Database entries.
@@ -348,8 +399,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GIVE_DATABASE">
+  <mod:findName name="GIVE_DATABASE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="pilot"/>
       <mod:findLike type="text">
         <mod:selector>[Federation Database] Remind yourself about your mission.</mod:selector>
         <mod:setValue>[Federation Database] Remind yourself about your mission.
@@ -357,9 +409,10 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GIVE_DATABASE">
+  <mod:findName name="GIVE_DATABASE" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="DATABASE_LOREDUMP">
+      <mod:selector hidden="true" req="pilot"/>
+      <mod:findName name="DATABASE_LOREDUMP" type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
             <mod:selector>Keep reading.</mod:selector>
@@ -370,9 +423,10 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GIVE_DATABASE">
+  <mod:findName name="GIVE_DATABASE" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="DATABASE_LOREDUMP">
+      <mod:selector hidden="true" req="pilot"/>
+      <mod:findName name="DATABASE_LOREDUMP" type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
@@ -387,9 +441,10 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GIVE_DATABASE">
+  <mod:findName name="GIVE_DATABASE" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="DATABASE_LOREDUMP">
+      <mod:selector hidden="true" req="pilot"/>
+      <mod:findName name="DATABASE_LOREDUMP" type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
@@ -408,9 +463,10 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GIVE_DATABASE">
+  <mod:findName name="GIVE_DATABASE" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="DATABASE_LOREDUMP">
+      <mod:selector hidden="true" req="pilot"/>
+      <mod:findName name="DATABASE_LOREDUMP" type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
@@ -433,9 +489,10 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GIVE_DATABASE">
+  <mod:findName name="GIVE_DATABASE" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="DATABASE_LOREDUMP">
+      <mod:selector hidden="true" req="pilot"/>
+      <mod:findName name="DATABASE_LOREDUMP" type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
@@ -462,9 +519,10 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GIVE_DATABASE">
+  <mod:findName name="GIVE_DATABASE" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="DATABASE_LOREDUMP">
+      <mod:selector hidden="true" req="pilot"/>
+      <mod:findName name="DATABASE_LOREDUMP" type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
@@ -476,6 +534,7 @@ Storage Check</mod:setValue>
                         <mod:findLike type="choice">
                           <mod:findLike type="event">
                             <mod:findLike type="choice">
+                              <mod:selector hidden="true"/>
                               <mod:findLike type="text">
                                 <mod:selector>That's all for now. Time to get on with the mission.</mod:selector>
                                 <mod:setValue>That's all for now. Time to get on with the mission.
@@ -495,9 +554,10 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GIVE_DATABASE">
+  <mod:findName name="GIVE_DATABASE" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="DATABASE_LOREDUMP">
+      <mod:selector hidden="true" req="pilot"/>
+      <mod:findName name="DATABASE_LOREDUMP" type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
@@ -507,6 +567,7 @@ Storage Check</mod:setValue>
                     <mod:findLike type="choice">
                       <mod:findLike type="event">
                         <mod:findLike type="choice">
+                          <mod:selector hidden="true"/>
                           <mod:findLike type="text">
                             <mod:selector>That's enough for now.</mod:selector>
                             <mod:setValue>That's enough for now.
@@ -524,9 +585,10 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GIVE_DATABASE">
+  <mod:findName name="GIVE_DATABASE" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="DATABASE_LOREDUMP">
+      <mod:selector hidden="true" req="pilot"/>
+      <mod:findName name="DATABASE_LOREDUMP" type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
@@ -534,6 +596,7 @@ Storage Check</mod:setValue>
                 <mod:findLike type="choice">
                   <mod:findLike type="event">
                     <mod:findLike type="choice">
+                      <mod:selector hidden="true"/>
                       <mod:findLike type="text">
                         <mod:selector>That's enough for now.</mod:selector>
                         <mod:setValue>That's enough for now.
@@ -549,14 +612,16 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GIVE_DATABASE">
+  <mod:findName name="GIVE_DATABASE" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="DATABASE_LOREDUMP">
+      <mod:selector hidden="true" req="pilot"/>
+      <mod:findName name="DATABASE_LOREDUMP" type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
               <mod:findLike type="event">
                 <mod:findLike type="choice">
+                  <mod:selector hidden="true"/>
                   <mod:findLike type="text">
                     <mod:selector>That's enough for now.</mod:selector>
                     <mod:setValue>That's enough for now.
@@ -570,12 +635,14 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GIVE_DATABASE">
+  <mod:findName name="GIVE_DATABASE" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="DATABASE_LOREDUMP">
+      <mod:selector hidden="true" req="pilot"/>
+      <mod:findName name="DATABASE_LOREDUMP" type="event">
         <mod:findLike type="choice">
           <mod:findLike type="event">
             <mod:findLike type="choice">
+              <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>That's enough for now.</mod:selector>
                 <mod:setValue>That's enough for now.
@@ -587,10 +654,12 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GIVE_DATABASE">
+  <mod:findName name="GIVE_DATABASE" type="event">
     <mod:findLike type="choice">
-      <mod:findName name="DATABASE_LOREDUMP">
+      <mod:selector hidden="true" req="pilot"/>
+      <mod:findName name="DATABASE_LOREDUMP" type="event">
         <mod:findLike type="choice">
+          <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>That's enough for now.</mod:selector>
             <mod:setValue>That's enough for now.
@@ -600,8 +669,9 @@ Storage Check</mod:setValue>
       </mod:findName>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="GIVE_DATABASE">
+  <mod:findName name="GIVE_DATABASE" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
         <mod:setValue>Continue...
@@ -609,8 +679,9 @@ Storage Check</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PREP_OPTIONS">
+  <mod:findName name="START_BEACON_PREP_OPTIONS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" lvl="0" max_group="0" req="NO_WEAPON" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Grab a weapon.</mod:selector>
         <mod:setValue>Grab a weapon.
@@ -621,8 +692,9 @@ Gain a weapon(Missiles 1)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PREP_OPTIONS">
+  <mod:findName name="START_BEACON_PREP_OPTIONS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" lvl="0" max_group="0" req="NO_WEAPON" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -634,8 +706,9 @@ Gain a weapon(Laser Burst 1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PREP_OPTIONS">
+  <mod:findName name="START_BEACON_PREP_OPTIONS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" lvl="0" max_group="0" req="NO_WEAPON" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -647,8 +720,9 @@ Gain a weapon(Ion 1)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PREP_OPTIONS">
+  <mod:findName name="START_BEACON_PREP_OPTIONS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" lvl="0" max_group="0" req="NO_WEAPON" blue="false"/>
       <mod:findLike type="event">
         <mod:findLike type="choice">
           <mod:findLike type="text">
@@ -661,8 +735,9 @@ Gain a weapon(Missiles 1)
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PREP_OPTIONS">
+  <mod:findName name="START_BEACON_PREP_OPTIONS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="pilot" lvl="1" max_group="2" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Find another crew member.</mod:selector>
         <mod:setValue>Find another crew member.
@@ -670,8 +745,9 @@ Gain a crew(Human)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PREP_OPTIONS">
+  <mod:findName name="START_BEACON_PREP_OPTIONS" type="event">
     <mod:findLike type="choice">
+      <mod:selector req="pilot" lvl="1" max_group="3" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Grab some extra resources.</mod:selector>
         <mod:setValue>Grab some extra resources.
@@ -679,8 +755,9 @@ Gain a crew(Human)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_PREP_OPTIONS">
+  <mod:findName name="START_BEACON_PREP_OPTIONS" type="event">
     <mod:findLike type="choice">
+      <mod:selector hidden="true" req="pilot" lvl="1" max_group="5" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>You're good with what you have. Get a head start on the fleet!</mod:selector>
         <mod:setValue>You're good with what you have. Get a head start on the fleet!
@@ -688,7 +765,7 @@ Fleet Delay(2)</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
-  <mod:findName name="START_BEACON_EXPLAIN">
+  <mod:findName name="START_BEACON_EXPLAIN" type="event">
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Do something onboard the ship.</mod:selector>
