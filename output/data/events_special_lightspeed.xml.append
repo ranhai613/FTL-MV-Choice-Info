@@ -4,13 +4,7 @@
       <mod:selector hidden="true" req="DISTRACTION_BUOY"/>
       <mod:findLike type="text">
         <mod:selector>(Decoy Buoys) Deploy the Buoys.</mod:selector>
-        <mod:setValue>(Decoy Buoys) Deploy the Buoys.
-Fleet Delay(1)
-&lt;=
-Fleet Delay(2)
-|-4
-Fleet Delay(3)
-|-8</mod:setValue>
+        <mod:setValue>(Decoy Buoys) Deploy the Buoys.[INFO][NAME]modifyPursuit[/NAME]Fleet Delay(1)[/INFO][INFO]&lt;=[/INFO][INFO][NAME]modifyPursuit[/NAME]Fleet Delay(2)[/INFO][INFO][NAME]itemModify[/NAME]|-4[/INFO][INFO][NAME]modifyPursuit[/NAME]Fleet Delay(3)[/INFO][INFO][NAME]itemModify[/NAME]|-8[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -22,9 +16,7 @@ Fleet Delay(3)
           <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>1 [Free, gives 1 delay]</mod:selector>
-            <mod:setValue>1 [Free, gives 1 delay]
-Fleet Delay(1)
-&lt;=</mod:setValue>
+            <mod:setValue>1 [Free, gives 1 delay][INFO][NAME]modifyPursuit[/NAME]Fleet Delay(1)[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -41,8 +33,7 @@ Fleet Delay(1)
               <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
-                <mod:setValue>Continue...
-&lt;=</mod:setValue>
+                <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
               </mod:findLike>
             </mod:findLike>
           </mod:findLike>
@@ -58,10 +49,7 @@ Fleet Delay(1)
           <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>2 [Costs 4|, gives 2 delay]</mod:selector>
-            <mod:setValue>2 [Costs 4|, gives 2 delay]
-Fleet Delay(2)
-|-4
-&lt;=</mod:setValue>
+            <mod:setValue>2 [Costs 4|, gives 2 delay][INFO][NAME]modifyPursuit[/NAME]Fleet Delay(2)[/INFO][INFO][NAME]itemModify[/NAME]|-4[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -78,8 +66,7 @@ Fleet Delay(2)
               <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
-                <mod:setValue>Continue...
-&lt;=</mod:setValue>
+                <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
               </mod:findLike>
             </mod:findLike>
           </mod:findLike>
@@ -95,10 +82,7 @@ Fleet Delay(2)
           <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>3 [Costs 8|, gives 3 delay]</mod:selector>
-            <mod:setValue>3 [Costs 8|, gives 3 delay]
-Fleet Delay(3)
-|-8
-&lt;=</mod:setValue>
+            <mod:setValue>3 [Costs 8|, gives 3 delay][INFO][NAME]modifyPursuit[/NAME]Fleet Delay(3)[/INFO][INFO][NAME]itemModify[/NAME]|-8[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -115,8 +99,7 @@ Fleet Delay(3)
               <mod:selector hidden="true"/>
               <mod:findLike type="text">
                 <mod:selector>Continue...</mod:selector>
-                <mod:setValue>Continue...
-&lt;=</mod:setValue>
+                <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
               </mod:findLike>
             </mod:findLike>
           </mod:findLike>
@@ -129,10 +112,7 @@ Fleet Delay(3)
       <mod:selector hidden="true" req="PRE_SCANNER"/>
       <mod:findLike type="text">
         <mod:selector>(Slip-Scanner) Run some scans. [Costs 3{, reveals next sector]</mod:selector>
-        <mod:setValue>(Slip-Scanner) Run some scans. [Costs 3{, reveals next sector]
-{-3
-Map Reveal
-&lt;=</mod:setValue>
+        <mod:setValue>(Slip-Scanner) Run some scans. [Costs 3{, reveals next sector][INFO][NAME]itemModify[/NAME]{-3[/INFO][INFO][NAME]revealMap[/NAME]Map Reveal[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -144,8 +124,7 @@ Map Reveal
           <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
-            <mod:setValue>Continue...
-&lt;=</mod:setValue>
+            <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -156,9 +135,7 @@ Map Reveal
       <mod:selector hidden="true" req="FUEL_CONSERVER"/>
       <mod:findLike type="text">
         <mod:selector>(Fuel Conserver) Recycle the fuel. [Gives back 2{]</mod:selector>
-        <mod:setValue>(Fuel Conserver) Recycle the fuel. [Gives back 2{]
-{2
-&lt;=</mod:setValue>
+        <mod:setValue>(Fuel Conserver) Recycle the fuel. [Gives back 2{][INFO][NAME]itemModify[/NAME]{2[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -170,8 +147,7 @@ Map Reveal
           <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
-            <mod:setValue>Continue...
-&lt;=</mod:setValue>
+            <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -182,9 +158,7 @@ Map Reveal
       <mod:selector hidden="true" req="KERNEL_REPLICATOR"/>
       <mod:findLike type="text">
         <mod:selector>(Greenhouse) Recycle the fuel. [Gives back 1{]</mod:selector>
-        <mod:setValue>(Greenhouse) Recycle the fuel. [Gives back 1{]
-{1
-&lt;=</mod:setValue>
+        <mod:setValue>(Greenhouse) Recycle the fuel. [Gives back 1{][INFO][NAME]itemModify[/NAME]{1[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -196,8 +170,7 @@ Map Reveal
           <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
-            <mod:setValue>Continue...
-&lt;=</mod:setValue>
+            <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -208,9 +181,7 @@ Map Reveal
       <mod:selector hidden="true" req="LOCKED_KERNEL_REPLICATOR"/>
       <mod:findLike type="text">
         <mod:selector>(Greenhouse) Recycle the fuel. [Gives back 1{]</mod:selector>
-        <mod:setValue>(Greenhouse) Recycle the fuel. [Gives back 1{]
-{1
-&lt;=</mod:setValue>
+        <mod:setValue>(Greenhouse) Recycle the fuel. [Gives back 1{][INFO][NAME]itemModify[/NAME]{1[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -222,8 +193,7 @@ Map Reveal
           <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
-            <mod:setValue>Continue...
-&lt;=</mod:setValue>
+            <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -234,10 +204,7 @@ Map Reveal
       <mod:selector hidden="true" req="FLEET_SKIP"/>
       <mod:findLike type="text">
         <mod:selector>(Engine Overdrive) Activate the Capacitor. [Delays Fleet 3 jumps, will cause 6 damage to Engines and Hull. Removes Augment]</mod:selector>
-        <mod:setValue>(Engine Overdrive) Activate the Capacitor. [Delays Fleet 3 jumps, will cause 6 damage to Engines and Hull. Removes Augment]
-&lt;!&gt;Damage Hull(6)
-Fleet Delay(3)
-&lt;=</mod:setValue>
+        <mod:setValue>(Engine Overdrive) Activate the Capacitor. [Delays Fleet 3 jumps, will cause 6 damage to Engines and Hull. Removes Augment][INFO][NAME]damage[/NAME]&lt;!&gt;Damage Hull(6)[/INFO][INFO][NAME]modifyPursuit[/NAME]Fleet Delay(3)[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -249,8 +216,7 @@ Fleet Delay(3)
           <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
-            <mod:setValue>Continue...
-&lt;=</mod:setValue>
+            <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -261,8 +227,7 @@ Fleet Delay(3)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Nevermind.</mod:selector>
-        <mod:setValue>Nevermind.
-&lt;=</mod:setValue>
+        <mod:setValue>Nevermind.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -271,8 +236,7 @@ Fleet Delay(3)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>What are locations of interest?</mod:selector>
-        <mod:setValue>What are locations of interest?
-&lt;=</mod:setValue>
+        <mod:setValue>What are locations of interest?[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -283,8 +247,7 @@ Fleet Delay(3)
         <mod:findLike type="choice">
           <mod:findLike type="text">
             <mod:selector>Return.</mod:selector>
-            <mod:setValue>Return.
-&lt;=</mod:setValue>
+            <mod:setValue>Return.[INFO]&lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -295,8 +258,7 @@ Fleet Delay(3)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>What does [!] represent?</mod:selector>
-        <mod:setValue>What does [!] represent?
-&lt;=</mod:setValue>
+        <mod:setValue>What does [!] represent?[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -307,8 +269,7 @@ Fleet Delay(3)
         <mod:findLike type="choice">
           <mod:findLike type="text">
             <mod:selector>Return.</mod:selector>
-            <mod:setValue>Return.
-&lt;=</mod:setValue>
+            <mod:setValue>Return.[INFO]&lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -319,8 +280,7 @@ Fleet Delay(3)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>How do I reroute locations?</mod:selector>
-        <mod:setValue>How do I reroute locations?
-&lt;=</mod:setValue>
+        <mod:setValue>How do I reroute locations?[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -331,8 +291,7 @@ Fleet Delay(3)
         <mod:findLike type="choice">
           <mod:findLike type="text">
             <mod:selector>Return.</mod:selector>
-            <mod:setValue>Return.
-&lt;=</mod:setValue>
+            <mod:setValue>Return.[INFO]&lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -343,8 +302,7 @@ Fleet Delay(3)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>What is the Rebel threat level?</mod:selector>
-        <mod:setValue>What is the Rebel threat level?
-&lt;=</mod:setValue>
+        <mod:setValue>What is the Rebel threat level?[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -355,8 +313,7 @@ Fleet Delay(3)
         <mod:findLike type="choice">
           <mod:findLike type="text">
             <mod:selector>Return.</mod:selector>
-            <mod:setValue>Return.
-&lt;=</mod:setValue>
+            <mod:setValue>Return.[INFO]&lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -367,8 +324,7 @@ Fleet Delay(3)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>What are fleet types?</mod:selector>
-        <mod:setValue>What are fleet types?
-&lt;=</mod:setValue>
+        <mod:setValue>What are fleet types?[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -379,8 +335,7 @@ Fleet Delay(3)
         <mod:findLike type="choice">
           <mod:findLike type="text">
             <mod:selector>Return.</mod:selector>
-            <mod:setValue>Return.
-&lt;=</mod:setValue>
+            <mod:setValue>Return.[INFO]&lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -390,8 +345,7 @@ Fleet Delay(3)
     <mod:findLike type="choice">
       <mod:findLike type="text">
         <mod:selector>Return.</mod:selector>
-        <mod:setValue>Return.
-&lt;=</mod:setValue>
+        <mod:setValue>Return.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -400,8 +354,7 @@ Fleet Delay(3)
       <mod:selector hidden="true" req="CURA_TASK_AND_LIGHTSPEED"/>
       <mod:findLike type="text">
         <mod:selector>View available tasks from C.U.R.A. and use a jumpspeed augment.</mod:selector>
-        <mod:setValue>View available tasks from C.U.R.A. and use a jumpspeed augment.
-&lt;=</mod:setValue>
+        <mod:setValue>View available tasks from C.U.R.A. and use a jumpspeed augment.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -410,8 +363,7 @@ Fleet Delay(3)
       <mod:selector hidden="true" req="CURA_TASK_CHECK"/>
       <mod:findLike type="text">
         <mod:selector>View available tasks from C.U.R.A.</mod:selector>
-        <mod:setValue>View available tasks from C.U.R.A.
-&lt;=</mod:setValue>
+        <mod:setValue>View available tasks from C.U.R.A.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -420,14 +372,7 @@ Fleet Delay(3)
       <mod:selector hidden="true" req="LIST_JUMPSPACE_EQUIPMENT"/>
       <mod:findLike type="text">
         <mod:selector>Use a jumpspeed augment.</mod:selector>
-        <mod:setValue>Use a jumpspeed augment.
-{-3
-Map Reveal
-&lt;=
-{2
-{1
-&lt;!&gt;Damage Hull(6)
-Fleet Delay(3)</mod:setValue>
+        <mod:setValue>Use a jumpspeed augment.[INFO][NAME]itemModify[/NAME]{-3[/INFO][INFO][NAME]revealMap[/NAME]Map Reveal[/INFO][INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]{2[/INFO][INFO][NAME]itemModify[/NAME]{1[/INFO][INFO][NAME]damage[/NAME]&lt;!&gt;Damage Hull(6)[/INFO][INFO][NAME]modifyPursuit[/NAME]Fleet Delay(3)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -436,8 +381,7 @@ Fleet Delay(3)</mod:setValue>
       <mod:selector hidden="true" req="FEDERATION_DATABASE"/>
       <mod:findLike type="text">
         <mod:selector>[Federation Database] Learn about the Atlas.</mod:selector>
-        <mod:setValue>[Federation Database] Learn about the Atlas.
-&lt;=</mod:setValue>
+        <mod:setValue>[Federation Database] Learn about the Atlas.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -446,9 +390,7 @@ Fleet Delay(3)</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_ASTEROID_GENERIC" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Mining Sector.</mod:selector>
-        <mod:setValue>Proceed to the Mining Sector.
-Fight(HK: 17% Reward Standard(M))(CK: 17% Reward Standard(M) 17% Gain a weapon(Giftlist Leech))
-Fight(HK: 17% Reward Standard(M))(CK: 17% Reward Standard(H) 17% Gain a weapon(Giftlist Rock))</mod:setValue>
+        <mod:setValue>Proceed to the Mining Sector.[FightINFO]Fight(HK: [INFO]17% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO])(CK: [INFO]17% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO] [INFO]17% [NAME]weapon[/NAME]Gain a weapon(Giftlist Leech)[/INFO])[/FightINFO][FightINFO]Fight(HK: [INFO]17% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO])(CK: [INFO]17% [NAME]autoReward[/NAME]Reward Standard(H)[/INFO] [INFO]17% [NAME]weapon[/NAME]Gain a weapon(Giftlist Rock)[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -457,8 +399,7 @@ Fight(HK: 17% Reward Standard(M))(CK: 17% Reward Standard(H) 17% Gain a weapon(G
       <mod:selector hidden="true" req="SEC SECTOR_UNION" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Union Sector.</mod:selector>
-        <mod:setValue>Proceed to the Union Sector.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Union Sector.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -467,8 +408,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_UNION_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Union Coreworlds.</mod:selector>
-        <mod:setValue>Proceed to the Union Coreworlds.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Union Coreworlds.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -477,9 +417,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_HACKER_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Union Sector.</mod:selector>
-        <mod:setValue>Proceed to the Union Sector.
-Fight(HK=CK: 50% Reward Standard(M) 50% Gain a crew(Union Random))
-Fight(HK=CK: Reward Standard(M) Gain a crew(Union Random))</mod:setValue>
+        <mod:setValue>Proceed to the Union Sector.[FightINFO]Fight(HK=CK: [INFO]50% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO] [INFO]50% [NAME]crewMember[/NAME]Gain a crew(Union Random)[/INFO])[/FightINFO][FightINFO]Fight(HK=CK: [INFO][NAME]autoReward[/NAME]Reward Standard(M)[/INFO] [INFO][NAME]crewMember[/NAME]Gain a crew(Union Random)[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -488,8 +426,7 @@ Fight(HK=CK: Reward Standard(M) Gain a crew(Union Random))</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_MILITIA_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Militia Encampment.</mod:selector>
-        <mod:setValue>Proceed to the Militia Encampment.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Militia Encampment.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -498,8 +435,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_HARMONY" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Engi Sector.</mod:selector>
-        <mod:setValue>Proceed to the Engi Sector.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Engi Sector.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -508,8 +444,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_HARMONY_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Engi Harmony.</mod:selector>
-        <mod:setValue>Proceed to the Engi Harmony.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Engi Harmony.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -518,8 +453,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_MINISTRY" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Zoltan Sector.</mod:selector>
-        <mod:setValue>Proceed to the Zoltan Sector.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Zoltan Sector.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -528,8 +462,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_MINISTRY_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Zoltan Capital.</mod:selector>
-        <mod:setValue>Proceed to the Zoltan Capital.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Zoltan Capital.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -538,8 +471,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_GATHERING" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Orchid Sector.</mod:selector>
-        <mod:setValue>Proceed to the Orchid Sector.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Orchid Sector.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -548,8 +480,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_GATHERING_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Orchid Gardenworlds.</mod:selector>
-        <mod:setValue>Proceed to the Orchid Gardenworlds.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Orchid Gardenworlds.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -558,8 +489,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_CONFEDERATE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Confederate Sector.</mod:selector>
-        <mod:setValue>Proceed to the Confederate Sector.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Confederate Sector.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -568,8 +498,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_CONFEDERATE_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Confederate Coreworlds.</mod:selector>
-        <mod:setValue>Proceed to the Confederate Coreworlds.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Confederate Coreworlds.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -578,8 +507,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_FREEMANTIS" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Free Mantis Sector.</mod:selector>
-        <mod:setValue>Proceed to the Free Mantis Sector.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Free Mantis Sector.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -588,8 +516,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_FREEMANTIS_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Hunting Grounds.</mod:selector>
-        <mod:setValue>Proceed to the Hunting Grounds.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Hunting Grounds.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -598,8 +525,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_SEPARATIST" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Separatist Sector.</mod:selector>
-        <mod:setValue>Proceed to the Separatist Sector.
-Storage Check</mod:setValue>
+        <mod:setValue>Proceed to the Separatist Sector.[INFO][NAME]storageCheck[/NAME]Storage Check[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -608,8 +534,7 @@ Storage Check</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_SEPARATIST_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Separatist Sector.</mod:selector>
-        <mod:setValue>Proceed to the Separatist Sector.
-Storage Check</mod:setValue>
+        <mod:setValue>Proceed to the Separatist Sector.[INFO][NAME]storageCheck[/NAME]Storage Check[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -618,8 +543,7 @@ Storage Check</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_IMPERIAL" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Crystalline Sector.</mod:selector>
-        <mod:setValue>Proceed to the Crystalline Sector.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Crystalline Sector.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -628,8 +552,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_IMPERIAL_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Crystalline New-Homelands.</mod:selector>
-        <mod:setValue>Proceed to the Crystalline New-Homelands.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Crystalline New-Homelands.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -638,8 +561,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_OUTCAST" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Outcast Sector.</mod:selector>
-        <mod:setValue>Proceed to the Outcast Sector.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Outcast Sector.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -648,8 +570,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_OUTCAST_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Theocracy Badlands.</mod:selector>
-        <mod:setValue>Proceed to the Theocracy Badlands.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Theocracy Badlands.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -658,9 +579,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_FEDERATION" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Federation Sector.</mod:selector>
-        <mod:setValue>Proceed to the Federation Sector.
-Fleet Delay(2)
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Federation Sector.[INFO][NAME]modifyPursuit[/NAME]Fleet Delay(2)[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -669,9 +588,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_FEDERATION_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Federation Sector.</mod:selector>
-        <mod:setValue>Proceed to the Federation Sector.
-Fleet Delay(2)
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Federation Sector.[INFO][NAME]modifyPursuit[/NAME]Fleet Delay(2)[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -680,8 +597,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_REBEL" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Rebel Sector.</mod:selector>
-        <mod:setValue>Proceed to the Rebel Sector.
-&lt;!&gt;Fleet Advance(1)</mod:setValue>
+        <mod:setValue>Proceed to the Rebel Sector.[INFO][NAME]modifyPursuit[/NAME]&lt;!&gt;Fleet Advance(1)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -690,9 +606,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_REBEL_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Rebel Stronghold.</mod:selector>
-        <mod:setValue>Proceed to the Rebel Stronghold.
-&lt;!&gt;Fleet Advance(1)
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Rebel Stronghold.[INFO][NAME]modifyPursuit[/NAME]&lt;!&gt;Fleet Advance(1)[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -701,15 +615,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_PIRATE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Pirate Sector.</mod:selector>
-        <mod:setValue>Proceed to the Pirate Sector.
-Fight
--40≤~≤-25
-50% Fight
-Reward ~ Only(H)
-Reward ~ Only(M)
-Reward Stuff(M)
-Reward Standard(M)
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Pirate Sector.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-40≤~≤-25[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward ~ Only(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward ~ Only(M)[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(M)[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(M)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -718,12 +624,7 @@ Reward Standard(M)
       <mod:selector hidden="true" req="SEC SECTOR_PIRATE_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Black Market.</mod:selector>
-        <mod:setValue>Proceed to the Black Market.
-25% &lt;!&gt;Enemy Boarding(x2 Random)
-25% Fight
-Fight
--35≤~≤-20
-50% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Black Market.[INFO]25% [NAME]boarders[/NAME]&lt;!&gt;Enemy Boarding(x2 Random)[/INFO][INFO]25% &lt;=[/INFO][INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-35≤~≤-20[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -732,11 +633,7 @@ Fight
       <mod:selector hidden="true" req="SEC SECTOR_HIVE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Mantis Sector.</mod:selector>
-        <mod:setValue>Proceed to the Mantis Sector.
-Fight
--25≤~≤-20
-50% Fight
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Mantis Sector.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]50% &lt;=[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -745,10 +642,7 @@ Fight
       <mod:selector hidden="true" req="SEC SECTOR_HIVE_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Mantis Hive.</mod:selector>
-        <mod:setValue>Proceed to the Mantis Hive.
-Fight
-50% Fight
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Mantis Hive.[INFO]&lt;=[/INFO][INFO]50% &lt;=[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -757,12 +651,7 @@ Fight
       <mod:selector hidden="true" req="SEC SECTOR_THEOCRACY" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Rock Sector.</mod:selector>
-        <mod:setValue>Proceed to the Rock Sector.
-Fight
--25≤~≤-20
-50% Fight
-Reward Standard(H)
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Rock Sector.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -771,9 +660,7 @@ Reward Standard(H)
       <mod:selector hidden="true" req="SEC SECTOR_THEOCRACY_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Rock Homeworlds.</mod:selector>
-        <mod:setValue>Proceed to the Rock Homeworlds.
-Fight
-Reward Standard(H)</mod:setValue>
+        <mod:setValue>Proceed to the Rock Homeworlds.[INFO]&lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -782,8 +669,7 @@ Reward Standard(H)</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_LOSTSUN_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Lost Sun Stronghold.</mod:selector>
-        <mod:setValue>Proceed to the Lost Sun Stronghold.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Lost Sun Stronghold.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -792,13 +678,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_DUSKBRINGER" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Duskbringer Sector.</mod:selector>
-        <mod:setValue>Proceed to the Duskbringer Sector.
-Fight
--25≤~≤-20
-50% Fight
-Reward Stuff(H)
-Reward Weapon(H)
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Duskbringer Sector.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward Weapon(H)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -807,12 +687,7 @@ Reward Weapon(H)
       <mod:selector hidden="true" req="SEC SECTOR_DUSKBRINGER_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Duskbringer Stronghold.</mod:selector>
-        <mod:setValue>Proceed to the Duskbringer Stronghold.
-Fight
-50% Reward Stuff(L)
-Reward Stuff(L)
-Reward Stuff(H)
-Reward Weapon(H)</mod:setValue>
+        <mod:setValue>Proceed to the Duskbringer Stronghold.[INFO]&lt;=[/INFO][INFO]50% [NAME]autoReward[/NAME]Reward Stuff(L)[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(L)[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward Weapon(H)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -821,11 +696,7 @@ Reward Weapon(H)</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_COALITION" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Coalition Sector.</mod:selector>
-        <mod:setValue>Proceed to the Coalition Sector.
-Fight
--25≤~≤-20
-33% Fight
-50% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Coalition Sector.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]33% &lt;=[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -834,8 +705,7 @@ Fight
       <mod:selector hidden="true" req="SEC SECTOR_COALITION_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Coalition Stronghold.</mod:selector>
-        <mod:setValue>Proceed to the Coalition Stronghold.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Coalition Stronghold.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -844,11 +714,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_AUTO" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Automated Shipyards.</mod:selector>
-        <mod:setValue>Proceed to the Automated Shipyards.
-Fight
-50% |-1
-50% Fight
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Automated Shipyards.[INFO]&lt;=[/INFO][INFO]50% [NAME]itemModify[/NAME]|-1[/INFO][INFO]50% &lt;=[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -857,11 +723,7 @@ Fight
       <mod:selector hidden="true" req="SEC SECTOR_AUTO_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Central Shipyards.</mod:selector>
-        <mod:setValue>Proceed to the Central Shipyards.
-Fight
-50% |-1
-50% Fight
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Central Shipyards.[INFO]&lt;=[/INFO][INFO]50% [NAME]itemModify[/NAME]|-1[/INFO][INFO]50% &lt;=[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -870,9 +732,7 @@ Fight
       <mod:selector hidden="true" req="SEC SECTOR_ABANDONED_GENERIC" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Abandoned Sector.</mod:selector>
-        <mod:setValue>Proceed to the Abandoned Sector.
-50% Storage Check
-50% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Abandoned Sector.[INFO]50% [NAME]storageCheck[/NAME]Storage Check[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -881,13 +741,7 @@ Fight
       <mod:selector hidden="true" req="SEC SECTOR_LANIUS_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Lanius Swarmlands.</mod:selector>
-        <mod:setValue>Proceed to the Lanius Swarmlands.
-Fight
-33% Reward Stuff(L)
-33% Fight
-Reward Stuff(M)
--35≤~≤-20
-Gain a weapon(Giftlist Lanius)</mod:setValue>
+        <mod:setValue>Proceed to the Lanius Swarmlands.[INFO]&lt;=[/INFO][INFO]33% [NAME]autoReward[/NAME]Reward Stuff(L)[/INFO][INFO]33% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(M)[/INFO][INFO][NAME]itemModify[/NAME]-35≤~≤-20[/INFO][INFO][NAME]weapon[/NAME]Gain a weapon(Giftlist Lanius)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -896,8 +750,7 @@ Gain a weapon(Giftlist Lanius)</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_UNEXPLORED_GENERIC" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Nebula Sector.</mod:selector>
-        <mod:setValue>Proceed to the Nebula Sector.
-Fleet Delay(1)</mod:setValue>
+        <mod:setValue>Proceed to the Nebula Sector.[INFO][NAME]modifyPursuit[/NAME]Fleet Delay(1)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -906,14 +759,7 @@ Fleet Delay(1)</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_KLEPTOCRACY" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Slug Sector.</mod:selector>
-        <mod:setValue>Proceed to the Slug Sector.
-Fight
--40≤~≤-25
-Reward Stuff(H)
-Reward Standard(L)
-Gain a weapon(Giftlist Slug)
-33% Fight
-50% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Slug Sector.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-40≤~≤-25[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(L)[/INFO][INFO][NAME]weapon[/NAME]Gain a weapon(Giftlist Slug)[/INFO][INFO]33% &lt;=[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -922,12 +768,7 @@ Gain a weapon(Giftlist Slug)
       <mod:selector hidden="true" req="SEC SECTOR_KLEPTOCRACY_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Slug Homeworlds.</mod:selector>
-        <mod:setValue>Proceed to the Slug Homeworlds.
-~-150
-Fight
-Reward Stuff(H)
-50% Fight
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Slug Homeworlds.[INFO][NAME]itemModify[/NAME]~-150[/INFO][INFO]&lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO]50% &lt;=[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -936,8 +777,7 @@ Reward Stuff(H)
       <mod:selector hidden="true" req="SEC SECTOR_CLAN_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Guild Territory.</mod:selector>
-        <mod:setValue>Proceed to the Guild Territory.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Guild Territory.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -946,11 +786,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_REPUBLIC" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Leech Sector.</mod:selector>
-        <mod:setValue>Proceed to the Leech Sector.
-33% Fight
-33% -25≤~≤-20
-11% Fight
-17% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Leech Sector.[INFO]33% &lt;=[/INFO][INFO]33% [NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]11% &lt;=[/INFO][INFO]17% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -959,8 +795,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_REPUBLIC_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Leech Capital.</mod:selector>
-        <mod:setValue>Proceed to the Leech Capital.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Leech Capital.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -969,8 +804,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_GENIOCRACY" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Shell Sector.</mod:selector>
-        <mod:setValue>Proceed to the Shell Sector.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Shell Sector.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -979,8 +813,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_GENIOCRACY_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Geniocracy Coreworlds.</mod:selector>
-        <mod:setValue>Proceed to the Geniocracy Coreworlds.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Geniocracy Coreworlds.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -989,11 +822,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_MORPH_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Geniocracy Science District.</mod:selector>
-        <mod:setValue>Proceed to the Geniocracy Science District.
-Fight
-Reward Standard(M)
-33% Fight
-50% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Geniocracy Science District.[INFO]&lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(M)[/INFO][INFO]33% &lt;=[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1002,8 +831,7 @@ Reward Standard(M)
       <mod:selector hidden="true" req="SEC SECTOR_VAGABOND" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Vagabond Nebula.</mod:selector>
-        <mod:setValue>Proceed to the Vagabond Nebula.
-Fight(HK: 50% Reward Standard(M))(CK: 50% Reward Standard(M) 50% Gain a weapon(Giftlist Rusty))</mod:setValue>
+        <mod:setValue>Proceed to the Vagabond Nebula.[FightINFO]Fight(HK: [INFO]50% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO])(CK: [INFO]50% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO] [INFO]50% [NAME]weapon[/NAME]Gain a weapon(Giftlist Rusty)[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1012,12 +840,7 @@ Fight(HK: 50% Reward Standard(M))(CK: 50% Reward Standard(M) 50% Gain a weapon(G
       <mod:selector hidden="true" req="SEC SECTOR_VAGABOND_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Spectral Wastelands.</mod:selector>
-        <mod:setValue>Proceed to the Spectral Wastelands.
-Fight
--25≤~≤-20
-50% Fight
-Reward Standard(H)
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Spectral Wastelands.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1026,12 +849,7 @@ Reward Standard(H)
       <mod:selector hidden="true" req="SEC SECTOR_DYNASTY" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Spectral Nebula.</mod:selector>
-        <mod:setValue>Proceed to the Spectral Nebula.
-Fight
--25≤~≤-20
-50% Fight
-Reward Standard(H)
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Spectral Nebula.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1040,9 +858,7 @@ Reward Standard(H)
       <mod:selector hidden="true" req="SEC SECTOR_DYNASTY_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Spectral Capital.</mod:selector>
-        <mod:setValue>Proceed to the Spectral Capital.
-Fight
-Reward Standard(M)</mod:setValue>
+        <mod:setValue>Proceed to the Spectral Capital.[INFO]&lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(M)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1051,8 +867,7 @@ Reward Standard(M)</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_MONK_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Illesctrian Oasis.</mod:selector>
-        <mod:setValue>Proceed to the Illesctrian Oasis.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Illesctrian Oasis.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1061,14 +876,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECRET_AUGMENTED" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Ancient Recovery Site.</mod:selector>
-        <mod:setValue>Proceed to the Ancient Recovery Site.
-~-60
-Gain a crew(Lanius Augmented)
-~-50
-Gain an augment(Ancient Dna)
-~-70
-Gain a weapon(Ancient Bomb)
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Ancient Recovery Site.[INFO][NAME]itemModify[/NAME]~-60[/INFO][INFO][NAME]crewMember[/NAME]Gain a crew(Lanius Augmented)[/INFO][INFO][NAME]itemModify[/NAME]~-50[/INFO][INFO][NAME]augment[/NAME]Gain an augment(Ancient Dna)[/INFO][INFO][NAME]itemModify[/NAME]~-70[/INFO][INFO][NAME]weapon[/NAME]Gain a weapon(Ancient Bomb)[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1077,8 +885,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECRET_ANCIENT" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Obelisk Sector.</mod:selector>
-        <mod:setValue>Proceed to the Obelisk Sector.
-Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a weapon(Giftlist Ancient))</mod:setValue>
+        <mod:setValue>Proceed to the Obelisk Sector.[FightINFO]Fight(HK: [INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO])(CK: [INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO] [INFO][NAME]weapon[/NAME]Gain a weapon(Giftlist Ancient)[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1087,8 +894,7 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a weapon(Giftlist Anci
       <mod:selector hidden="true" req="SEC SECRET_ROYAL" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Obelisk Homeworlds.</mod:selector>
-        <mod:setValue>Proceed to the Obelisk Homeworlds.
-Fight(HK=CK: Reward Standard(H))</mod:setValue>
+        <mod:setValue>Proceed to the Obelisk Homeworlds.[FightINFO]Fight(HK=CK: [INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1097,12 +903,7 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       <mod:selector hidden="true" req="SEC SECRET_ORIGINS" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Crystalline Origins.</mod:selector>
-        <mod:setValue>Proceed to the Crystalline Origins.
-Fight
-Reward Item(H)
-Gain a crew(Rock Cultist)
-50% Fight
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Crystalline Origins.[INFO]&lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Item(H)[/INFO][INFO][NAME]crewMember[/NAME]Gain a crew(Rock Cultist)[/INFO][INFO]50% &lt;=[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1111,8 +912,7 @@ Gain a crew(Rock Cultist)
       <mod:selector hidden="true" req="SEC SECRET_ORIGINS_RUWEN" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Crystalline Origins.</mod:selector>
-        <mod:setValue>Proceed to the Crystalline Origins.
-Fleet Delay(2)</mod:setValue>
+        <mod:setValue>Proceed to the Crystalline Origins.[INFO][NAME]modifyPursuit[/NAME]Fleet Delay(2)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1121,14 +921,7 @@ Fleet Delay(2)</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_KLEPTOCRACY_HEKTAR" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Slug Sector.</mod:selector>
-        <mod:setValue>Proceed to the Slug Sector.
-Fight
--40≤~≤-25
-Reward Stuff(H)
-Reward Standard(L)
-Gain a weapon(Giftlist Slug)
-33% Fight
-50% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Slug Sector.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-40≤~≤-25[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(L)[/INFO][INFO][NAME]weapon[/NAME]Gain a weapon(Giftlist Slug)[/INFO][INFO]33% &lt;=[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1137,15 +930,7 @@ Gain a weapon(Giftlist Slug)
       <mod:selector hidden="true" req="SEC SECTOR_PIRATE_HEKTAR" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Pirate Sector.</mod:selector>
-        <mod:setValue>Proceed to the Pirate Sector.
-Fight
--40≤~≤-25
-50% Fight
-Reward ~ Only(H)
-Reward ~ Only(M)
-Reward Stuff(M)
-Reward Standard(M)
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Pirate Sector.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-40≤~≤-25[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward ~ Only(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward ~ Only(M)[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(M)[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(M)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1154,9 +939,7 @@ Reward Standard(M)
       <mod:selector hidden="true" req="SEC SECTOR_ABANDONED_GENERIC_HEKTAR" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Abandoned Sector.</mod:selector>
-        <mod:setValue>Proceed to the Abandoned Sector.
-50% Storage Check
-50% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Abandoned Sector.[INFO]50% [NAME]storageCheck[/NAME]Storage Check[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1165,11 +948,7 @@ Reward Standard(M)
       <mod:selector hidden="true" req="SEC SECTOR_REPUBLIC_HEKTAR" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Leech Sector.</mod:selector>
-        <mod:setValue>Proceed to the Leech Sector.
-33% Fight
-33% -25≤~≤-20
-11% Fight
-17% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Leech Sector.[INFO]33% &lt;=[/INFO][INFO]33% [NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]11% &lt;=[/INFO][INFO]17% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1178,8 +957,7 @@ Reward Standard(M)
       <mod:selector hidden="true" req="SEC SECRET_SYLVAN" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to ???.</mod:selector>
-        <mod:setValue>Proceed to ???.
-Fight(HK: Gain a weapon(Prime Laser) Reward Standard No Item(H))</mod:setValue>
+        <mod:setValue>Proceed to ???.[FightINFO]Fight(HK: [INFO][NAME]weapon[/NAME]Gain a weapon(Prime Laser)[/INFO] [INFO][NAME]autoReward[/NAME]Reward Standard No Item(H)[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1188,9 +966,7 @@ Fight(HK: Gain a weapon(Prime Laser) Reward Standard No Item(H))</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_ASTEROID_GENERIC" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Mining Sector.</mod:selector>
-        <mod:setValue>Proceed to the Mining Sector.
-Fight(HK: 17% Reward Standard(M))(CK: 17% Reward Standard(M) 17% Gain a weapon(Giftlist Leech))
-Fight(HK: 17% Reward Standard(M))(CK: 17% Reward Standard(H) 17% Gain a weapon(Giftlist Rock))</mod:setValue>
+        <mod:setValue>Proceed to the Mining Sector.[FightINFO]Fight(HK: [INFO]17% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO])(CK: [INFO]17% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO] [INFO]17% [NAME]weapon[/NAME]Gain a weapon(Giftlist Leech)[/INFO])[/FightINFO][FightINFO]Fight(HK: [INFO]17% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO])(CK: [INFO]17% [NAME]autoReward[/NAME]Reward Standard(H)[/INFO] [INFO]17% [NAME]weapon[/NAME]Gain a weapon(Giftlist Rock)[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1199,8 +975,7 @@ Fight(HK: 17% Reward Standard(M))(CK: 17% Reward Standard(H) 17% Gain a weapon(G
       <mod:selector hidden="true" req="SEC SECTOR_UNION" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Union Sector.</mod:selector>
-        <mod:setValue>Proceed to the Union Sector.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Union Sector.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1209,8 +984,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_UNION_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Union Coreworlds.</mod:selector>
-        <mod:setValue>Proceed to the Union Coreworlds.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Union Coreworlds.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1219,9 +993,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_HACKER_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Union Sector.</mod:selector>
-        <mod:setValue>Proceed to the Union Sector.
-Fight(HK=CK: 50% Reward Standard(M) 50% Gain a crew(Union Random))
-Fight(HK=CK: Reward Standard(M) Gain a crew(Union Random))</mod:setValue>
+        <mod:setValue>Proceed to the Union Sector.[FightINFO]Fight(HK=CK: [INFO]50% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO] [INFO]50% [NAME]crewMember[/NAME]Gain a crew(Union Random)[/INFO])[/FightINFO][FightINFO]Fight(HK=CK: [INFO][NAME]autoReward[/NAME]Reward Standard(M)[/INFO] [INFO][NAME]crewMember[/NAME]Gain a crew(Union Random)[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1230,8 +1002,7 @@ Fight(HK=CK: Reward Standard(M) Gain a crew(Union Random))</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_MILITIA_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Militia Encampment.</mod:selector>
-        <mod:setValue>Proceed to the Militia Encampment.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Militia Encampment.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1240,8 +1011,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_HARMONY" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Engi Sector.</mod:selector>
-        <mod:setValue>Proceed to the Engi Sector.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Engi Sector.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1250,8 +1020,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_HARMONY_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Engi Harmony.</mod:selector>
-        <mod:setValue>Proceed to the Engi Harmony.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Engi Harmony.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1260,8 +1029,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_MINISTRY" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Zoltan Sector.</mod:selector>
-        <mod:setValue>Proceed to the Zoltan Sector.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Zoltan Sector.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1270,8 +1038,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_MINISTRY_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Zoltan Capital.</mod:selector>
-        <mod:setValue>Proceed to the Zoltan Capital.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Zoltan Capital.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1280,8 +1047,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_GATHERING" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Orchid Sector.</mod:selector>
-        <mod:setValue>Proceed to the Orchid Sector.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Orchid Sector.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1290,8 +1056,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_GATHERING_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Orchid Gardenworlds.</mod:selector>
-        <mod:setValue>Proceed to the Orchid Gardenworlds.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Orchid Gardenworlds.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1300,8 +1065,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_CONFEDERATE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Confederate Sector.</mod:selector>
-        <mod:setValue>Proceed to the Confederate Sector.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Confederate Sector.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1310,8 +1074,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_CONFEDERATE_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Confederate Coreworlds.</mod:selector>
-        <mod:setValue>Proceed to the Confederate Coreworlds.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Confederate Coreworlds.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1320,8 +1083,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_FREEMANTIS" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Free Mantis Sector.</mod:selector>
-        <mod:setValue>Proceed to the Free Mantis Sector.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Free Mantis Sector.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1330,8 +1092,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_FREEMANTIS_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Hunting Grounds.</mod:selector>
-        <mod:setValue>Proceed to the Hunting Grounds.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Hunting Grounds.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1340,8 +1101,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_SEPARATIST" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Separatist Sector.</mod:selector>
-        <mod:setValue>Proceed to the Separatist Sector.
-Storage Check</mod:setValue>
+        <mod:setValue>Proceed to the Separatist Sector.[INFO][NAME]storageCheck[/NAME]Storage Check[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1350,8 +1110,7 @@ Storage Check</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_SEPARATIST_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Separatist Sector.</mod:selector>
-        <mod:setValue>Proceed to the Separatist Sector.
-Storage Check</mod:setValue>
+        <mod:setValue>Proceed to the Separatist Sector.[INFO][NAME]storageCheck[/NAME]Storage Check[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1360,8 +1119,7 @@ Storage Check</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_IMPERIAL" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Crystalline Sector.</mod:selector>
-        <mod:setValue>Proceed to the Crystalline Sector.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Crystalline Sector.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1370,8 +1128,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_IMPERIAL_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Crystalline New-Homelands.</mod:selector>
-        <mod:setValue>Proceed to the Crystalline New-Homelands.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Crystalline New-Homelands.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1380,8 +1137,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_OUTCAST" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Outcast Sector.</mod:selector>
-        <mod:setValue>Proceed to the Outcast Sector.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Outcast Sector.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1390,8 +1146,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_OUTCAST_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Theocracy Badlands.</mod:selector>
-        <mod:setValue>Proceed to the Theocracy Badlands.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Theocracy Badlands.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1400,9 +1155,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_FEDERATION" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Federation Sector.</mod:selector>
-        <mod:setValue>Proceed to the Federation Sector.
-Fleet Delay(2)
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Federation Sector.[INFO][NAME]modifyPursuit[/NAME]Fleet Delay(2)[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1411,9 +1164,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_FEDERATION_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Federation Sector.</mod:selector>
-        <mod:setValue>Proceed to the Federation Sector.
-Fleet Delay(2)
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Federation Sector.[INFO][NAME]modifyPursuit[/NAME]Fleet Delay(2)[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1422,8 +1173,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_REBEL" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Rebel Sector.</mod:selector>
-        <mod:setValue>Proceed to the Rebel Sector.
-&lt;!&gt;Fleet Advance(1)</mod:setValue>
+        <mod:setValue>Proceed to the Rebel Sector.[INFO][NAME]modifyPursuit[/NAME]&lt;!&gt;Fleet Advance(1)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1432,9 +1182,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_REBEL_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Rebel Stronghold.</mod:selector>
-        <mod:setValue>Proceed to the Rebel Stronghold.
-&lt;!&gt;Fleet Advance(1)
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Rebel Stronghold.[INFO][NAME]modifyPursuit[/NAME]&lt;!&gt;Fleet Advance(1)[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1443,15 +1191,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_PIRATE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Pirate Sector.</mod:selector>
-        <mod:setValue>Proceed to the Pirate Sector.
-Fight
--40≤~≤-25
-50% Fight
-Reward ~ Only(H)
-Reward ~ Only(M)
-Reward Stuff(M)
-Reward Standard(M)
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Pirate Sector.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-40≤~≤-25[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward ~ Only(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward ~ Only(M)[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(M)[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(M)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1460,12 +1200,7 @@ Reward Standard(M)
       <mod:selector hidden="true" req="SEC SECTOR_PIRATE_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Black Market.</mod:selector>
-        <mod:setValue>Proceed to the Black Market.
-25% &lt;!&gt;Enemy Boarding(x2 Random)
-25% Fight
-Fight
--35≤~≤-20
-50% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Black Market.[INFO]25% [NAME]boarders[/NAME]&lt;!&gt;Enemy Boarding(x2 Random)[/INFO][INFO]25% &lt;=[/INFO][INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-35≤~≤-20[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1474,11 +1209,7 @@ Fight
       <mod:selector hidden="true" req="SEC SECTOR_HIVE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Mantis Sector.</mod:selector>
-        <mod:setValue>Proceed to the Mantis Sector.
-Fight
--25≤~≤-20
-50% Fight
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Mantis Sector.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]50% &lt;=[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1487,10 +1218,7 @@ Fight
       <mod:selector hidden="true" req="SEC SECTOR_HIVE_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Mantis Hive.</mod:selector>
-        <mod:setValue>Proceed to the Mantis Hive.
-Fight
-50% Fight
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Mantis Hive.[INFO]&lt;=[/INFO][INFO]50% &lt;=[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1499,12 +1227,7 @@ Fight
       <mod:selector hidden="true" req="SEC SECTOR_THEOCRACY" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Rock Sector.</mod:selector>
-        <mod:setValue>Proceed to the Rock Sector.
-Fight
--25≤~≤-20
-50% Fight
-Reward Standard(H)
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Rock Sector.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1513,9 +1236,7 @@ Reward Standard(H)
       <mod:selector hidden="true" req="SEC SECTOR_THEOCRACY_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Rock Homeworlds.</mod:selector>
-        <mod:setValue>Proceed to the Rock Homeworlds.
-Fight
-Reward Standard(H)</mod:setValue>
+        <mod:setValue>Proceed to the Rock Homeworlds.[INFO]&lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1524,8 +1245,7 @@ Reward Standard(H)</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_LOSTSUN_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Lost Sun Stronghold.</mod:selector>
-        <mod:setValue>Proceed to the Lost Sun Stronghold.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Lost Sun Stronghold.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1534,13 +1254,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_DUSKBRINGER" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Duskbringer Sector.</mod:selector>
-        <mod:setValue>Proceed to the Duskbringer Sector.
-Fight
--25≤~≤-20
-50% Fight
-Reward Stuff(H)
-Reward Weapon(H)
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Duskbringer Sector.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward Weapon(H)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1549,12 +1263,7 @@ Reward Weapon(H)
       <mod:selector hidden="true" req="SEC SECTOR_DUSKBRINGER_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Duskbringer Stronghold.</mod:selector>
-        <mod:setValue>Proceed to the Duskbringer Stronghold.
-Fight
-50% Reward Stuff(L)
-Reward Stuff(L)
-Reward Stuff(H)
-Reward Weapon(H)</mod:setValue>
+        <mod:setValue>Proceed to the Duskbringer Stronghold.[INFO]&lt;=[/INFO][INFO]50% [NAME]autoReward[/NAME]Reward Stuff(L)[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(L)[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward Weapon(H)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1563,11 +1272,7 @@ Reward Weapon(H)</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_COALITION" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Coalition Sector.</mod:selector>
-        <mod:setValue>Proceed to the Coalition Sector.
-Fight
--25≤~≤-20
-33% Fight
-50% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Coalition Sector.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]33% &lt;=[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1576,8 +1281,7 @@ Fight
       <mod:selector hidden="true" req="SEC SECTOR_COALITION_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Coalition Stronghold.</mod:selector>
-        <mod:setValue>Proceed to the Coalition Stronghold.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Coalition Stronghold.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1586,11 +1290,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_AUTO" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Automated Shipyards.</mod:selector>
-        <mod:setValue>Proceed to the Automated Shipyards.
-Fight
-50% |-1
-50% Fight
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Automated Shipyards.[INFO]&lt;=[/INFO][INFO]50% [NAME]itemModify[/NAME]|-1[/INFO][INFO]50% &lt;=[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1599,11 +1299,7 @@ Fight
       <mod:selector hidden="true" req="SEC SECTOR_AUTO_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Central Shipyards.</mod:selector>
-        <mod:setValue>Proceed to the Central Shipyards.
-Fight
-50% |-1
-50% Fight
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Central Shipyards.[INFO]&lt;=[/INFO][INFO]50% [NAME]itemModify[/NAME]|-1[/INFO][INFO]50% &lt;=[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1612,9 +1308,7 @@ Fight
       <mod:selector hidden="true" req="SEC SECTOR_ABANDONED_GENERIC" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Abandoned Sector.</mod:selector>
-        <mod:setValue>Proceed to the Abandoned Sector.
-50% Storage Check
-50% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Abandoned Sector.[INFO]50% [NAME]storageCheck[/NAME]Storage Check[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1623,13 +1317,7 @@ Fight
       <mod:selector hidden="true" req="SEC SECTOR_LANIUS_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Lanius Swarmlands.</mod:selector>
-        <mod:setValue>Proceed to the Lanius Swarmlands.
-Fight
-33% Reward Stuff(L)
-33% Fight
-Reward Stuff(M)
--35≤~≤-20
-Gain a weapon(Giftlist Lanius)</mod:setValue>
+        <mod:setValue>Proceed to the Lanius Swarmlands.[INFO]&lt;=[/INFO][INFO]33% [NAME]autoReward[/NAME]Reward Stuff(L)[/INFO][INFO]33% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(M)[/INFO][INFO][NAME]itemModify[/NAME]-35≤~≤-20[/INFO][INFO][NAME]weapon[/NAME]Gain a weapon(Giftlist Lanius)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1638,8 +1326,7 @@ Gain a weapon(Giftlist Lanius)</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_UNEXPLORED_GENERIC" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Nebula Sector.</mod:selector>
-        <mod:setValue>Proceed to the Nebula Sector.
-Fleet Delay(1)</mod:setValue>
+        <mod:setValue>Proceed to the Nebula Sector.[INFO][NAME]modifyPursuit[/NAME]Fleet Delay(1)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1648,14 +1335,7 @@ Fleet Delay(1)</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_KLEPTOCRACY" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Slug Sector.</mod:selector>
-        <mod:setValue>Proceed to the Slug Sector.
-Fight
--40≤~≤-25
-Reward Stuff(H)
-Reward Standard(L)
-Gain a weapon(Giftlist Slug)
-33% Fight
-50% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Slug Sector.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-40≤~≤-25[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(L)[/INFO][INFO][NAME]weapon[/NAME]Gain a weapon(Giftlist Slug)[/INFO][INFO]33% &lt;=[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1664,12 +1344,7 @@ Gain a weapon(Giftlist Slug)
       <mod:selector hidden="true" req="SEC SECTOR_KLEPTOCRACY_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Slug Homeworlds.</mod:selector>
-        <mod:setValue>Proceed to the Slug Homeworlds.
-~-150
-Fight
-Reward Stuff(H)
-50% Fight
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Slug Homeworlds.[INFO][NAME]itemModify[/NAME]~-150[/INFO][INFO]&lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO]50% &lt;=[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1678,8 +1353,7 @@ Reward Stuff(H)
       <mod:selector hidden="true" req="SEC SECTOR_CLAN_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Guild Territory.</mod:selector>
-        <mod:setValue>Proceed to the Guild Territory.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Guild Territory.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1688,11 +1362,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_REPUBLIC" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Leech Sector.</mod:selector>
-        <mod:setValue>Proceed to the Leech Sector.
-33% Fight
-33% -25≤~≤-20
-11% Fight
-17% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Leech Sector.[INFO]33% &lt;=[/INFO][INFO]33% [NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]11% &lt;=[/INFO][INFO]17% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1701,8 +1371,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_REPUBLIC_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Leech Capital.</mod:selector>
-        <mod:setValue>Proceed to the Leech Capital.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Leech Capital.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1711,8 +1380,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_GENIOCRACY" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Shell Sector.</mod:selector>
-        <mod:setValue>Proceed to the Shell Sector.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Shell Sector.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1721,8 +1389,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_GENIOCRACY_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Geniocracy Coreworlds.</mod:selector>
-        <mod:setValue>Proceed to the Geniocracy Coreworlds.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Geniocracy Coreworlds.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1731,11 +1398,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_MORPH_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Geniocracy Science District.</mod:selector>
-        <mod:setValue>Proceed to the Geniocracy Science District.
-Fight
-Reward Standard(M)
-33% Fight
-50% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Geniocracy Science District.[INFO]&lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(M)[/INFO][INFO]33% &lt;=[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1744,8 +1407,7 @@ Reward Standard(M)
       <mod:selector hidden="true" req="SEC SECTOR_VAGABOND" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Vagabond Nebula.</mod:selector>
-        <mod:setValue>Proceed to the Vagabond Nebula.
-Fight(HK: 50% Reward Standard(M))(CK: 50% Reward Standard(M) 50% Gain a weapon(Giftlist Rusty))</mod:setValue>
+        <mod:setValue>Proceed to the Vagabond Nebula.[FightINFO]Fight(HK: [INFO]50% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO])(CK: [INFO]50% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO] [INFO]50% [NAME]weapon[/NAME]Gain a weapon(Giftlist Rusty)[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1754,12 +1416,7 @@ Fight(HK: 50% Reward Standard(M))(CK: 50% Reward Standard(M) 50% Gain a weapon(G
       <mod:selector hidden="true" req="SEC SECTOR_VAGABOND_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Spectral Wastelands.</mod:selector>
-        <mod:setValue>Proceed to the Spectral Wastelands.
-Fight
--25≤~≤-20
-50% Fight
-Reward Standard(H)
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Spectral Wastelands.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1768,12 +1425,7 @@ Reward Standard(H)
       <mod:selector hidden="true" req="SEC SECTOR_DYNASTY" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Spectral Nebula.</mod:selector>
-        <mod:setValue>Proceed to the Spectral Nebula.
-Fight
--25≤~≤-20
-50% Fight
-Reward Standard(H)
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Spectral Nebula.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1782,9 +1434,7 @@ Reward Standard(H)
       <mod:selector hidden="true" req="SEC SECTOR_DYNASTY_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Spectral Capital.</mod:selector>
-        <mod:setValue>Proceed to the Spectral Capital.
-Fight
-Reward Standard(M)</mod:setValue>
+        <mod:setValue>Proceed to the Spectral Capital.[INFO]&lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(M)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1793,8 +1443,7 @@ Reward Standard(M)</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_MONK_UNIQUE" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Illesctrian Oasis.</mod:selector>
-        <mod:setValue>Proceed to the Illesctrian Oasis.
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Illesctrian Oasis.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1803,14 +1452,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECRET_AUGMENTED" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Ancient Recovery Site.</mod:selector>
-        <mod:setValue>Proceed to the Ancient Recovery Site.
-~-60
-Gain a crew(Lanius Augmented)
-~-50
-Gain an augment(Ancient Dna)
-~-70
-Gain a weapon(Ancient Bomb)
-Fight</mod:setValue>
+        <mod:setValue>Proceed to the Ancient Recovery Site.[INFO][NAME]itemModify[/NAME]~-60[/INFO][INFO][NAME]crewMember[/NAME]Gain a crew(Lanius Augmented)[/INFO][INFO][NAME]itemModify[/NAME]~-50[/INFO][INFO][NAME]augment[/NAME]Gain an augment(Ancient Dna)[/INFO][INFO][NAME]itemModify[/NAME]~-70[/INFO][INFO][NAME]weapon[/NAME]Gain a weapon(Ancient Bomb)[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1819,8 +1461,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="SEC SECRET_ANCIENT" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Obelisk Sector.</mod:selector>
-        <mod:setValue>Proceed to the Obelisk Sector.
-Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a weapon(Giftlist Ancient))</mod:setValue>
+        <mod:setValue>Proceed to the Obelisk Sector.[FightINFO]Fight(HK: [INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO])(CK: [INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO] [INFO][NAME]weapon[/NAME]Gain a weapon(Giftlist Ancient)[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1829,8 +1470,7 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a weapon(Giftlist Anci
       <mod:selector hidden="true" req="SEC SECRET_ROYAL" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Obelisk Homeworlds.</mod:selector>
-        <mod:setValue>Proceed to the Obelisk Homeworlds.
-Fight(HK=CK: Reward Standard(H))</mod:setValue>
+        <mod:setValue>Proceed to the Obelisk Homeworlds.[FightINFO]Fight(HK=CK: [INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1839,12 +1479,7 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       <mod:selector hidden="true" req="SEC SECRET_ORIGINS" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Crystalline Origins.</mod:selector>
-        <mod:setValue>Proceed to the Crystalline Origins.
-Fight
-Reward Item(H)
-Gain a crew(Rock Cultist)
-50% Fight
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Crystalline Origins.[INFO]&lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Item(H)[/INFO][INFO][NAME]crewMember[/NAME]Gain a crew(Rock Cultist)[/INFO][INFO]50% &lt;=[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1853,8 +1488,7 @@ Gain a crew(Rock Cultist)
       <mod:selector hidden="true" req="SEC SECRET_ORIGINS_RUWEN" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Crystalline Origins.</mod:selector>
-        <mod:setValue>Proceed to the Crystalline Origins.
-Fleet Delay(2)</mod:setValue>
+        <mod:setValue>Proceed to the Crystalline Origins.[INFO][NAME]modifyPursuit[/NAME]Fleet Delay(2)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1863,14 +1497,7 @@ Fleet Delay(2)</mod:setValue>
       <mod:selector hidden="true" req="SEC SECTOR_KLEPTOCRACY_HEKTAR" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Slug Sector.</mod:selector>
-        <mod:setValue>Proceed to the Slug Sector.
-Fight
--40≤~≤-25
-Reward Stuff(H)
-Reward Standard(L)
-Gain a weapon(Giftlist Slug)
-33% Fight
-50% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Slug Sector.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-40≤~≤-25[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(L)[/INFO][INFO][NAME]weapon[/NAME]Gain a weapon(Giftlist Slug)[/INFO][INFO]33% &lt;=[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1879,15 +1506,7 @@ Gain a weapon(Giftlist Slug)
       <mod:selector hidden="true" req="SEC SECTOR_PIRATE_HEKTAR" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Pirate Sector.</mod:selector>
-        <mod:setValue>Proceed to the Pirate Sector.
-Fight
--40≤~≤-25
-50% Fight
-Reward ~ Only(H)
-Reward ~ Only(M)
-Reward Stuff(M)
-Reward Standard(M)
-33% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Pirate Sector.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-40≤~≤-25[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward ~ Only(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward ~ Only(M)[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(M)[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(M)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1896,9 +1515,7 @@ Reward Standard(M)
       <mod:selector hidden="true" req="SEC SECTOR_ABANDONED_GENERIC_HEKTAR" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Abandoned Sector.</mod:selector>
-        <mod:setValue>Proceed to the Abandoned Sector.
-50% Storage Check
-50% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Abandoned Sector.[INFO]50% [NAME]storageCheck[/NAME]Storage Check[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1907,11 +1524,7 @@ Reward Standard(M)
       <mod:selector hidden="true" req="SEC SECTOR_REPUBLIC_HEKTAR" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to the Leech Sector.</mod:selector>
-        <mod:setValue>Proceed to the Leech Sector.
-33% Fight
-33% -25≤~≤-20
-11% Fight
-17% Fight</mod:setValue>
+        <mod:setValue>Proceed to the Leech Sector.[INFO]33% &lt;=[/INFO][INFO]33% [NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]11% &lt;=[/INFO][INFO]17% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1920,8 +1533,7 @@ Reward Standard(M)
       <mod:selector hidden="true" req="SEC SECRET_SYLVAN" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Proceed to ???.</mod:selector>
-        <mod:setValue>Proceed to ???.
-Fight(HK: Gain a weapon(Prime Laser) Reward Standard No Item(H))</mod:setValue>
+        <mod:setValue>Proceed to ???.[FightINFO]Fight(HK: [INFO][NAME]weapon[/NAME]Gain a weapon(Prime Laser)[/INFO] [INFO][NAME]autoReward[/NAME]Reward Standard No Item(H)[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1930,8 +1542,7 @@ Fight(HK: Gain a weapon(Prime Laser) Reward Standard No Item(H))</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1940,10 +1551,7 @@ Fight(HK: Gain a weapon(Prime Laser) Reward Standard No Item(H))</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-17% Fleet Delay(1)
-Fight(HK: 17% Reward Standard(M))(CK: 17% Reward Standard(M) 17% Gain a weapon(Giftlist Leech))
-Fight(HK: 17% Reward Standard(M))(CK: 17% Reward Standard(H) 17% Gain a weapon(Giftlist Rock))</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]17% [NAME]modifyPursuit[/NAME]Fleet Delay(1)[/INFO][FightINFO]Fight(HK: [INFO]17% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO])(CK: [INFO]17% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO] [INFO]17% [NAME]weapon[/NAME]Gain a weapon(Giftlist Leech)[/INFO])[/FightINFO][FightINFO]Fight(HK: [INFO]17% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO])(CK: [INFO]17% [NAME]autoReward[/NAME]Reward Standard(H)[/INFO] [INFO]17% [NAME]weapon[/NAME]Gain a weapon(Giftlist Rock)[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1952,8 +1560,7 @@ Fight(HK: 17% Reward Standard(M))(CK: 17% Reward Standard(H) 17% Gain a weapon(G
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1962,8 +1569,7 @@ Fight(HK: 17% Reward Standard(M))(CK: 17% Reward Standard(H) 17% Gain a weapon(G
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1972,8 +1578,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1982,8 +1587,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -1992,8 +1596,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2002,9 +1605,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight(HK=CK: 50% Reward Standard(M) 50% Gain a crew(Union Random))
-Fight(HK=CK: Reward Standard(M) Gain a crew(Union Random))</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[FightINFO]Fight(HK=CK: [INFO]50% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO] [INFO]50% [NAME]crewMember[/NAME]Gain a crew(Union Random)[/INFO])[/FightINFO][FightINFO]Fight(HK=CK: [INFO][NAME]autoReward[/NAME]Reward Standard(M)[/INFO] [INFO][NAME]crewMember[/NAME]Gain a crew(Union Random)[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2013,8 +1614,7 @@ Fight(HK=CK: Reward Standard(M) Gain a crew(Union Random))</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2023,8 +1623,7 @@ Fight(HK=CK: Reward Standard(M) Gain a crew(Union Random))</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2033,8 +1632,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2043,8 +1641,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2053,8 +1650,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2063,8 +1659,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2073,8 +1668,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2083,8 +1677,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2093,8 +1686,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2103,8 +1695,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2113,8 +1704,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2123,8 +1713,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2133,8 +1722,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2143,8 +1731,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2153,8 +1740,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2163,8 +1749,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2173,8 +1758,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2183,8 +1767,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2193,8 +1776,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2203,8 +1785,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2213,8 +1794,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2223,8 +1803,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2233,8 +1812,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2243,8 +1821,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Storage Check</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO][NAME]storageCheck[/NAME]Storage Check[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2253,8 +1830,7 @@ Storage Check</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2263,8 +1839,7 @@ Storage Check</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2273,8 +1848,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2283,8 +1857,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2293,8 +1866,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2303,8 +1875,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2313,8 +1884,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2323,8 +1893,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2333,8 +1902,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2343,9 +1911,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fleet Delay(2)
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO][NAME]modifyPursuit[/NAME]Fleet Delay(2)[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2354,8 +1920,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2364,9 +1929,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fleet Delay(2)
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO][NAME]modifyPursuit[/NAME]Fleet Delay(2)[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2375,8 +1938,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2385,8 +1947,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-&lt;!&gt;Fleet Advance(1)</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO][NAME]modifyPursuit[/NAME]&lt;!&gt;Fleet Advance(1)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2395,8 +1956,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2405,9 +1965,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-&lt;!&gt;Fleet Advance(1)
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO][NAME]modifyPursuit[/NAME]&lt;!&gt;Fleet Advance(1)[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2416,8 +1974,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2426,15 +1983,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
--40≤~≤-25
-50% Fight
-Reward ~ Only(H)
-Reward ~ Only(M)
-Reward Stuff(M)
-Reward Standard(M)
-33% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-40≤~≤-25[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward ~ Only(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward ~ Only(M)[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(M)[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(M)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2443,8 +1992,7 @@ Reward Standard(M)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2453,12 +2001,7 @@ Reward Standard(M)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-25% &lt;!&gt;Enemy Boarding(x2 Random)
-25% Fight
-Fight
--35≤~≤-20
-50% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]25% [NAME]boarders[/NAME]&lt;!&gt;Enemy Boarding(x2 Random)[/INFO][INFO]25% &lt;=[/INFO][INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-35≤~≤-20[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2467,8 +2010,7 @@ Fight
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2477,11 +2019,7 @@ Fight
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
--25≤~≤-20
-50% Fight
-33% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]50% &lt;=[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2490,8 +2028,7 @@ Fight
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2500,10 +2037,7 @@ Fight
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
-50% Fight
-33% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO]50% &lt;=[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2512,8 +2046,7 @@ Fight
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2522,12 +2055,7 @@ Fight
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
--25≤~≤-20
-50% Fight
-Reward Standard(H)
-33% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2536,8 +2064,7 @@ Reward Standard(H)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2546,9 +2073,7 @@ Reward Standard(H)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
-Reward Standard(H)</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2557,8 +2082,7 @@ Reward Standard(H)</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2567,8 +2091,7 @@ Reward Standard(H)</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2577,8 +2100,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2587,13 +2109,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
--25≤~≤-20
-50% Fight
-Reward Stuff(H)
-Reward Weapon(H)
-33% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward Weapon(H)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2602,8 +2118,7 @@ Reward Weapon(H)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2612,12 +2127,7 @@ Reward Weapon(H)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
-50% Reward Stuff(L)
-Reward Stuff(L)
-Reward Stuff(H)
-Reward Weapon(H)</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO]50% [NAME]autoReward[/NAME]Reward Stuff(L)[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(L)[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward Weapon(H)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2626,8 +2136,7 @@ Reward Weapon(H)</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2636,11 +2145,7 @@ Reward Weapon(H)</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
--25≤~≤-20
-33% Fight
-50% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]33% &lt;=[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2649,8 +2154,7 @@ Fight
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2659,8 +2163,7 @@ Fight
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2669,8 +2172,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2679,11 +2181,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
-50% |-1
-50% Fight
-33% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO]50% [NAME]itemModify[/NAME]|-1[/INFO][INFO]50% &lt;=[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2692,8 +2190,7 @@ Fight
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2702,11 +2199,7 @@ Fight
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
-50% |-1
-50% Fight
-33% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO]50% [NAME]itemModify[/NAME]|-1[/INFO][INFO]50% &lt;=[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2715,8 +2208,7 @@ Fight
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2725,9 +2217,7 @@ Fight
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-50% Storage Check
-50% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]50% [NAME]storageCheck[/NAME]Storage Check[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2736,8 +2226,7 @@ Fight
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2746,13 +2235,7 @@ Fight
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
-33% Reward Stuff(L)
-33% Fight
-Reward Stuff(M)
--35≤~≤-20
-Gain a weapon(Giftlist Lanius)</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO]33% [NAME]autoReward[/NAME]Reward Stuff(L)[/INFO][INFO]33% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(M)[/INFO][INFO][NAME]itemModify[/NAME]-35≤~≤-20[/INFO][INFO][NAME]weapon[/NAME]Gain a weapon(Giftlist Lanius)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2761,8 +2244,7 @@ Gain a weapon(Giftlist Lanius)</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2771,8 +2253,7 @@ Gain a weapon(Giftlist Lanius)</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fleet Delay(1)</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO][NAME]modifyPursuit[/NAME]Fleet Delay(1)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2781,8 +2262,7 @@ Fleet Delay(1)</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2791,14 +2271,7 @@ Fleet Delay(1)</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
--40≤~≤-25
-Reward Stuff(H)
-Reward Standard(L)
-Gain a weapon(Giftlist Slug)
-33% Fight
-50% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-40≤~≤-25[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(L)[/INFO][INFO][NAME]weapon[/NAME]Gain a weapon(Giftlist Slug)[/INFO][INFO]33% &lt;=[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2807,8 +2280,7 @@ Gain a weapon(Giftlist Slug)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2817,12 +2289,7 @@ Gain a weapon(Giftlist Slug)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-~-150
-Fight
-Reward Stuff(H)
-50% Fight
-33% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO][NAME]itemModify[/NAME]~-150[/INFO][INFO]&lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO]50% &lt;=[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2831,8 +2298,7 @@ Reward Stuff(H)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2841,8 +2307,7 @@ Reward Stuff(H)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2851,8 +2316,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2861,8 +2325,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2871,8 +2334,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2881,8 +2343,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2891,8 +2352,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2901,11 +2361,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
-Reward Standard(M)
-33% Fight
-50% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(M)[/INFO][INFO]33% &lt;=[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2914,8 +2370,7 @@ Reward Standard(M)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2924,11 +2379,7 @@ Reward Standard(M)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-33% Fight
-33% -25≤~≤-20
-11% Fight
-17% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]33% &lt;=[/INFO][INFO]33% [NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]11% &lt;=[/INFO][INFO]17% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2937,8 +2388,7 @@ Reward Standard(M)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2947,8 +2397,7 @@ Reward Standard(M)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2957,8 +2406,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2967,8 +2415,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight(HK: 50% Reward Standard(M))(CK: 50% Reward Standard(M) 50% Gain a weapon(Giftlist Rusty))</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[FightINFO]Fight(HK: [INFO]50% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO])(CK: [INFO]50% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO] [INFO]50% [NAME]weapon[/NAME]Gain a weapon(Giftlist Rusty)[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2977,8 +2424,7 @@ Fight(HK: 50% Reward Standard(M))(CK: 50% Reward Standard(M) 50% Gain a weapon(G
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -2987,12 +2433,7 @@ Fight(HK: 50% Reward Standard(M))(CK: 50% Reward Standard(M) 50% Gain a weapon(G
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
--25≤~≤-20
-50% Fight
-Reward Standard(H)
-33% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3001,8 +2442,7 @@ Reward Standard(H)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3011,12 +2451,7 @@ Reward Standard(H)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
--25≤~≤-20
-50% Fight
-Reward Standard(H)
-33% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3025,8 +2460,7 @@ Reward Standard(H)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3035,9 +2469,7 @@ Reward Standard(H)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
-Reward Standard(M)</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(M)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3046,8 +2478,7 @@ Reward Standard(M)</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3056,8 +2487,7 @@ Reward Standard(M)</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3066,8 +2496,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3076,14 +2505,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true" req="loc_beentomarket" lvl="0" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
--40≤~≤-25
-Reward Stuff(H)
-Reward Standard(L)
-Gain a weapon(Giftlist Slug)
-33% Fight
-50% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-40≤~≤-25[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(L)[/INFO][INFO][NAME]weapon[/NAME]Gain a weapon(Giftlist Slug)[/INFO][INFO]33% &lt;=[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3095,14 +2517,7 @@ Gain a weapon(Giftlist Slug)
           <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
-            <mod:setValue>Continue...
-Fight
--40≤~≤-25
-Reward Stuff(H)
-Reward Standard(L)
-Gain a weapon(Giftlist Slug)
-33% Fight
-50% Fight</mod:setValue>
+            <mod:setValue>Continue...[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-40≤~≤-25[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(L)[/INFO][INFO][NAME]weapon[/NAME]Gain a weapon(Giftlist Slug)[/INFO][INFO]33% &lt;=[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -3113,14 +2528,7 @@ Gain a weapon(Giftlist Slug)
       <mod:selector hidden="true" req="loc_beentomarket" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
--40≤~≤-25
-Reward Stuff(H)
-Reward Standard(L)
-Gain a weapon(Giftlist Slug)
-33% Fight
-50% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-40≤~≤-25[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(L)[/INFO][INFO][NAME]weapon[/NAME]Gain a weapon(Giftlist Slug)[/INFO][INFO]33% &lt;=[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3132,14 +2540,7 @@ Gain a weapon(Giftlist Slug)
           <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
-            <mod:setValue>Continue...
-Fight
--40≤~≤-25
-Reward Stuff(H)
-Reward Standard(L)
-Gain a weapon(Giftlist Slug)
-33% Fight
-50% Fight</mod:setValue>
+            <mod:setValue>Continue...[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-40≤~≤-25[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(L)[/INFO][INFO][NAME]weapon[/NAME]Gain a weapon(Giftlist Slug)[/INFO][INFO]33% &lt;=[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -3150,8 +2551,7 @@ Gain a weapon(Giftlist Slug)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3160,15 +2560,7 @@ Gain a weapon(Giftlist Slug)
       <mod:selector hidden="true" req="loc_beentomarket" lvl="0" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
--40≤~≤-25
-50% Fight
-Reward ~ Only(H)
-Reward ~ Only(M)
-Reward Stuff(M)
-Reward Standard(M)
-33% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-40≤~≤-25[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward ~ Only(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward ~ Only(M)[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(M)[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(M)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3180,15 +2572,7 @@ Reward Standard(M)
           <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
-            <mod:setValue>Continue...
-Fight
--40≤~≤-25
-50% Fight
-Reward ~ Only(H)
-Reward ~ Only(M)
-Reward Stuff(M)
-Reward Standard(M)
-33% Fight</mod:setValue>
+            <mod:setValue>Continue...[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-40≤~≤-25[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward ~ Only(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward ~ Only(M)[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(M)[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(M)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -3199,15 +2583,7 @@ Reward Standard(M)
       <mod:selector hidden="true" req="loc_beentomarket" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
--40≤~≤-25
-50% Fight
-Reward ~ Only(H)
-Reward ~ Only(M)
-Reward Stuff(M)
-Reward Standard(M)
-33% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-40≤~≤-25[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward ~ Only(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward ~ Only(M)[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(M)[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(M)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3219,15 +2595,7 @@ Reward Standard(M)
           <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
-            <mod:setValue>Continue...
-Fight
--40≤~≤-25
-50% Fight
-Reward ~ Only(H)
-Reward ~ Only(M)
-Reward Stuff(M)
-Reward Standard(M)
-33% Fight</mod:setValue>
+            <mod:setValue>Continue...[INFO]&lt;=[/INFO][INFO][NAME]itemModify[/NAME]-40≤~≤-25[/INFO][INFO]50% &lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward ~ Only(H)[/INFO][INFO][NAME]autoReward[/NAME]Reward ~ Only(M)[/INFO][INFO][NAME]autoReward[/NAME]Reward Stuff(M)[/INFO][INFO][NAME]autoReward[/NAME]Reward Standard(M)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -3238,8 +2606,7 @@ Reward Standard(M)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3248,9 +2615,7 @@ Reward Standard(M)
       <mod:selector hidden="true" req="loc_beentomarket" lvl="0" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-50% Storage Check
-50% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]50% [NAME]storageCheck[/NAME]Storage Check[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3262,9 +2627,7 @@ Reward Standard(M)
           <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
-            <mod:setValue>Continue...
-50% Storage Check
-50% Fight</mod:setValue>
+            <mod:setValue>Continue...[INFO]50% [NAME]storageCheck[/NAME]Storage Check[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -3275,9 +2638,7 @@ Reward Standard(M)
       <mod:selector hidden="true" req="loc_beentomarket" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-50% Storage Check
-50% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]50% [NAME]storageCheck[/NAME]Storage Check[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3289,9 +2650,7 @@ Reward Standard(M)
           <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
-            <mod:setValue>Continue...
-50% Storage Check
-50% Fight</mod:setValue>
+            <mod:setValue>Continue...[INFO]50% [NAME]storageCheck[/NAME]Storage Check[/INFO][INFO]50% &lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -3302,8 +2661,7 @@ Reward Standard(M)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3312,11 +2670,7 @@ Reward Standard(M)
       <mod:selector hidden="true" req="loc_beentomarket" lvl="0" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-33% Fight
-33% -25≤~≤-20
-11% Fight
-17% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]33% &lt;=[/INFO][INFO]33% [NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]11% &lt;=[/INFO][INFO]17% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3328,11 +2682,7 @@ Reward Standard(M)
           <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
-            <mod:setValue>Continue...
-33% Fight
-33% -25≤~≤-20
-11% Fight
-17% Fight</mod:setValue>
+            <mod:setValue>Continue...[INFO]33% &lt;=[/INFO][INFO]33% [NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]11% &lt;=[/INFO][INFO]17% &lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -3343,11 +2693,7 @@ Reward Standard(M)
       <mod:selector hidden="true" req="loc_beentomarket" lvl="1" max_group="0" blue="false"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-33% Fight
-33% -25≤~≤-20
-11% Fight
-17% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]33% &lt;=[/INFO][INFO]33% [NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]11% &lt;=[/INFO][INFO]17% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3359,11 +2705,7 @@ Reward Standard(M)
           <mod:selector hidden="true"/>
           <mod:findLike type="text">
             <mod:selector>Continue...</mod:selector>
-            <mod:setValue>Continue...
-33% Fight
-33% -25≤~≤-20
-11% Fight
-17% Fight</mod:setValue>
+            <mod:setValue>Continue...[INFO]33% &lt;=[/INFO][INFO]33% [NAME]itemModify[/NAME]-25≤~≤-20[/INFO][INFO]11% &lt;=[/INFO][INFO]17% &lt;=[/INFO]</mod:setValue>
           </mod:findLike>
         </mod:findLike>
       </mod:findLike>
@@ -3374,8 +2716,7 @@ Reward Standard(M)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3384,14 +2725,7 @@ Reward Standard(M)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-~-60
-Gain a crew(Lanius Augmented)
-~-50
-Gain an augment(Ancient Dna)
-~-70
-Gain a weapon(Ancient Bomb)
-Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO][NAME]itemModify[/NAME]~-60[/INFO][INFO][NAME]crewMember[/NAME]Gain a crew(Lanius Augmented)[/INFO][INFO][NAME]itemModify[/NAME]~-50[/INFO][INFO][NAME]augment[/NAME]Gain an augment(Ancient Dna)[/INFO][INFO][NAME]itemModify[/NAME]~-70[/INFO][INFO][NAME]weapon[/NAME]Gain a weapon(Ancient Bomb)[/INFO][INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3400,8 +2734,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3410,9 +2743,7 @@ Fight</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fleet Delay(10)
-Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a weapon(Giftlist Ancient))</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO][NAME]modifyPursuit[/NAME]Fleet Delay(10)[/INFO][FightINFO]Fight(HK: [INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO])(CK: [INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO] [INFO][NAME]weapon[/NAME]Gain a weapon(Giftlist Ancient)[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3421,8 +2752,7 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a weapon(Giftlist Anci
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3431,8 +2761,7 @@ Fight(HK: Reward Standard(H))(CK: Reward Standard(H) Gain a weapon(Giftlist Anci
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight(HK=CK: Reward Standard(H))</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[FightINFO]Fight(HK=CK: [INFO][NAME]autoReward[/NAME]Reward Standard(H)[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3441,8 +2770,7 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3451,12 +2779,7 @@ Fight(HK=CK: Reward Standard(H))</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fight
-Reward Item(H)
-Gain a crew(Rock Cultist)
-50% Fight
-33% Fight</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO]&lt;=[/INFO][INFO][NAME]autoReward[/NAME]Reward Item(H)[/INFO][INFO][NAME]crewMember[/NAME]Gain a crew(Rock Cultist)[/INFO][INFO]50% &lt;=[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3465,8 +2788,7 @@ Gain a crew(Rock Cultist)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3475,8 +2797,7 @@ Gain a crew(Rock Cultist)
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fleet Delay(2)</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO][NAME]modifyPursuit[/NAME]Fleet Delay(2)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3485,8 +2806,7 @@ Fleet Delay(2)</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Continue...</mod:selector>
-        <mod:setValue>Continue...
-&lt;=</mod:setValue>
+        <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -3495,9 +2815,7 @@ Fleet Delay(2)</mod:setValue>
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Exit hyperspeed.</mod:selector>
-        <mod:setValue>Exit hyperspeed.
-Fleet Delay(45)
-Fight(HK: Gain a weapon(Prime Laser) Reward Standard No Item(H))</mod:setValue>
+        <mod:setValue>Exit hyperspeed.[INFO][NAME]modifyPursuit[/NAME]Fleet Delay(45)[/INFO][FightINFO]Fight(HK: [INFO][NAME]weapon[/NAME]Gain a weapon(Prime Laser)[/INFO] [INFO][NAME]autoReward[/NAME]Reward Standard No Item(H)[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>

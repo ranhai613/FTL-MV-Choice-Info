@@ -15,9 +15,6 @@ from pprint import pprint
 
 FIXED_EVENT_MAP = {
     'STORAGE_CHECK': 'Storage Check',
-    'COMBAT_CHECK': 'Fight',
-    'ATLAS_MENU': 'HyperSpeed Menu',
-    'ATLAS_MENU_NOEQUIPMENT': 'HyperSpeed Menu',
 }
 
 def stop_watch(func):
@@ -63,8 +60,9 @@ class ElementBaseClass():
 
 class EventAnalyzer():
     '''A component of Choice class, containing child events of Choice and analyzing them.'''
-    def __init__(self, childEvents) -> None:
+    def __init__(self, childEvents, eventName) -> None:
         self._childEvents = childEvents
+        self._eventName = eventName
         self._is_ensured = False
     
     @property
@@ -109,6 +107,8 @@ class EventAnalyzer():
                     # print('found fight event ship is not given to: ', event.xmlpath, '#L', event.element.sourceline)
                     pass
                 
+                if ship is not None:
+                    global_shipReference_map[load_event_name].add(ship)
                 load_event = global_event_map.get(load_event_name)
                 if not load_event:
                     new_events.append(event)
@@ -243,32 +243,32 @@ class EventAnalyzer():
                                 textInfo = eventclass.getInfo()
                                 if textInfo:
                                     diagram[textInfo] += prob
-                            nece_info.extend([f'{prob:.0%} {textInfo}' if prob < 1 else textInfo for textInfo, prob in diagram.items()])
+                            nece_info.extend([f'[INFO]{prob:.0%} {textInfo}[/INFO]' if prob < 1 else f'[INFO]{textInfo}[/INFO]' for textInfo, prob in diagram.items()])
                         
                         if fightDict is not None:
                             fightDict = {key: ' '.join(value) for key, value in fightDict.items() if value}
                             length = len(fightDict)
                             if length == 3:
                                 if fightDict['HK'] == fightDict['CK'] and fightDict['CK'] == fightDict['SR']:
-                                    nece_info.append(f'Fight(CK=HK=SR: {fightDict["HK"]})')
+                                    nece_info.append(f'[FightINFO]Fight(CK=HK=SR: {fightDict["HK"]})[/FightINFO]')
                                 elif fightDict['HK'] == fightDict['CK']:
-                                    nece_info.append(f'Fight(CK=HK: {fightDict["HK"]})(SR: {fightDict["SR"]})')
+                                    nece_info.append(f'[FightINFO]Fight(CK=HK: {fightDict["HK"]})(SR: {fightDict["SR"]})[/FightINFO]')
                                 elif fightDict['HK'] == fightDict['SR']:
-                                    nece_info.append(f'Fight(CK: {fightDict["CK"]})(HK=SR: {fightDict["HK"]})')
+                                    nece_info.append(f'[FightINFO]Fight(CK: {fightDict["CK"]})(HK=SR: {fightDict["HK"]})[/FightINFO]')
                                 elif fightDict['CK'] == fightDict['SR']:
-                                    nece_info.append(f'Fight(CK=SR: {fightDict["CK"]})(HK: {fightDict["HK"]})')
+                                    nece_info.append(f'[FightINFO]Fight(CK=SR: {fightDict["CK"]})(HK: {fightDict["HK"]})[/FightINFO]')
                                 else:
-                                    nece_info.append(f'Fight(CK: {fightDict["CK"]})(HK: {fightDict["HK"]})(SR: {fightDict["SR"]})')
+                                    nece_info.append(f'[FightINFO]Fight(CK: {fightDict["CK"]})(HK: {fightDict["HK"]})(SR: {fightDict["SR"]})[/FightINFO]')
                             elif length == 2:
                                 keyList = list(fightDict.keys())
                                 infoList = list(fightDict.values())
                                 if infoList[0] == infoList[1]:
-                                    nece_info.append(f'Fight({keyList[0]}={keyList[1]}: {infoList[0]})')
+                                    nece_info.append(f'[FightINFO]Fight({keyList[0]}={keyList[1]}: {infoList[0]})[/FightINFO]')
                                 else:
-                                    nece_info.append(f'Fight({keyList[0]}: {infoList[0]})({keyList[1]}: {infoList[1]})')
+                                    nece_info.append(f'[FightINFO]Fight({keyList[0]}: {infoList[0]})({keyList[1]}: {infoList[1]})[/FightINFO]')
                             elif length == 1:
                                 for key, value in fightDict.items():
-                                    nece_info.append(f'Fight({key}: {value})')
+                                    nece_info.append(f'[FightINFO]Fight({key}: {value})[/FightINFO]')
                 
                 if len(nece_info) > 0:
                     #remove duplicated info before return list. I don't like to use set() to remove them because it doesn't care the order, that makes hard to see diff under dev.
@@ -299,7 +299,7 @@ class Choice(ElementBaseClass):
 
     @childEvents.setter
     def childEvents(self, value):
-        self._evetnAnalyzer = EventAnalyzer(value)
+        self._evetnAnalyzer = EventAnalyzer(value, self.eventName())
         self._evetnAnalyzer.ensureChildEvents(self._ship)
     
     @property
@@ -310,6 +310,17 @@ class Choice(ElementBaseClass):
 
         return texttags[0]
 
+    def eventName(self) -> str|None:
+        if self._element is None:
+            return None
+        
+        for element in self._element.iterancestors('event', 'eventList'):
+            name = element.attrib.get('name')
+            if name:
+                return name
+        else:
+            return None
+    
     def init_shipTag(self):
         for parent in self._element.iterancestors():
             ships = [ship.get('load') for ship in xpath(parent, './ship') if ship.get('load')]
@@ -323,7 +334,7 @@ class Choice(ElementBaseClass):
         self._ship = global_ship_map.get(ships[0])
 
     def init_childEventTags(self):
-        self._evetnAnalyzer = EventAnalyzer([Event(element, self._xmlpath, self._uniqueXPathGenerator) for element in xpath(self._element, './event')])
+        self._evetnAnalyzer = EventAnalyzer([Event(element, self._xmlpath, self._uniqueXPathGenerator) for element in xpath(self._element, './event')], self.eventName())
         self._evetnAnalyzer.ensureChildEvents(self._ship)
                 
     def get_textTag_uniqueXPath(self) -> str|None:
@@ -334,7 +345,7 @@ class Choice(ElementBaseClass):
         return self._uniqueXPathGenerator.getpath(texttags[0])
         
     def set_additional_info(self):
-        self._additional_info = '\n'.join(self._evetnAnalyzer.getInfoList())
+        self._additional_info = ''.join(self._evetnAnalyzer.getInfoList())
     
     def get_formatted_additional_info(self):
         return self._additional_info
@@ -421,6 +432,8 @@ loadEvent_stat = set()
 global_event_map = {}
 global_choice_map = {}
 global_ship_map = {}
+
+global_shipReference_map = defaultdict(set)
 
 PackageConfig = None
 
@@ -509,14 +522,14 @@ def main(stat=False, packageConfig: dict={}):
                     else:
                         new_element = ModElement('findLike', attrib={'type': child_element_original.tag})
                         if len(child_element_original.attrib):
-                            new_element.append(ModElement('selector', attrib=child_element_original.attrib))
+                            new_element.append(ModElement('selector', attrib={key: value for key, value in child_element_original.attrib.items() if value}))
                     parent_element.append(new_element)
                     parent_element = new_element
                 
                 selector = ModElement('selector')
                 selector.text = target_choice.textElement.text
                 setValue = ModElement('setValue')
-                setValue.text = f'{target_choice.textElement.text}\n{info}'
+                setValue.text = f'{target_choice.textElement.text}{info}'
                 parent_element.extend((selector, setValue))
                 is_changed = True
 

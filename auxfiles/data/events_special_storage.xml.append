@@ -1,0 +1,298 @@
+<mod:findName type="event" name="STORAGE_CHECK_BUTTON">
+  <mod-append:choice>
+    <text>Change your Choice Info options.</text>
+    <event load="STORAGE_CHECK_CHOICEINFO_OPTIONS"/>
+  </mod-append:choice>
+</mod:findName>
+
+<event name="STORAGE_CHECK_CHOICEINFO_OPTIONS">
+  <text>Which Choice Info element would you like to toggle?</text>
+
+  <choice req="choiceInfo_bottom_fullInfo" lvl="0" max_lvl="0" blue="false">
+    <text>Enable Bottom Full Info [Current: Disabled]</text>
+    <event>
+      <metaVariable name="choiceInfo_bottom_fullInfo" op="set" val="1"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_bottom_fullInfo" lvl="1" max_lvl="1" blue="false">
+    <text>Disable Bottom Full Info [Current: Enabled]</text>
+    <event>
+      <metaVariable name="choiceInfo_bottom_fullInfo" op="set" val="0"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice blue="false" hidden="true">
+    <text>Turn All Info shown.</text>
+    <event>
+      <metaVariable name="choiceInfo_event_storageCheck" op="set" val="1"/>
+      <metaVariable name="choiceInfo_event_unlockCustomShip" op="set" val="1"/>
+      <metaVariable name="choiceInfo_event_removeCrew" op="set" val="1"/>
+      <metaVariable name="choiceInfo_event_crewMember" op="set" val="1"/>
+      <metaVariable name="choiceInfo_event_revealMap" op="set" val="1"/>
+      <metaVariable name="choiceInfo_event_autoReward" op="set" val="1"/>
+      <metaVariable name="choiceInfo_event_itemModify" op="set" val="1"/>
+      <metaVariable name="choiceInfo_event_modifyPursuit" op="set" val="1"/>
+      <metaVariable name="choiceInfo_event_weapon" op="set" val="1"/>
+      <metaVariable name="choiceInfo_event_drone" op="set" val="1"/>
+      <metaVariable name="choiceInfo_event_augment" op="set" val="1"/>
+      <metaVariable name="choiceInfo_event_damage" op="set" val="1"/>
+      <metaVariable name="choiceInfo_event_upgrade" op="set" val="1"/>
+      <metaVariable name="choiceInfo_event_boarders" op="set" val="1"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+  
+  <choice blue="false" hidden="true">
+    <text>Turn All Info hidden.</text>
+    <event>
+      <metaVariable name="choiceInfo_event_storageCheck" op="set" val="0"/>
+      <metaVariable name="choiceInfo_event_unlockCustomShip" op="set" val="0"/>
+      <metaVariable name="choiceInfo_event_removeCrew" op="set" val="0"/>
+      <metaVariable name="choiceInfo_event_crewMember" op="set" val="0"/>
+      <metaVariable name="choiceInfo_event_revealMap" op="set" val="0"/>
+      <metaVariable name="choiceInfo_event_autoReward" op="set" val="0"/>
+      <metaVariable name="choiceInfo_event_itemModify" op="set" val="0"/>
+      <metaVariable name="choiceInfo_event_modifyPursuit" op="set" val="0"/>
+      <metaVariable name="choiceInfo_event_weapon" op="set" val="0"/>
+      <metaVariable name="choiceInfo_event_drone" op="set" val="0"/>
+      <metaVariable name="choiceInfo_event_augment" op="set" val="0"/>
+      <metaVariable name="choiceInfo_event_damage" op="set" val="0"/>
+      <metaVariable name="choiceInfo_event_upgrade" op="set" val="0"/>
+      <metaVariable name="choiceInfo_event_boarders" op="set" val="0"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+  
+  <choice req="choiceInfo_event_storageCheck" lvl="0" max_lvl="0" blue="false">
+    <text>Storage Check [Current: Hidden]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_storageCheck" op="set" val="1"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_storageCheck" lvl="1" max_lvl="1" blue="false">
+    <text>Storage Check [Current: Shown]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_storageCheck" op="set" val="0"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+  
+    <choice req="choiceInfo_event_unlockCustomShip" lvl="0" max_lvl="0" blue="false">
+    <text>Ship Unlock [Current: Hidden]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_unlockCustomShip" op="set" val="1"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_unlockCustomShip" lvl="1" max_lvl="1" blue="false">
+    <text>Ship Unlock [Current: Shown]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_unlockCustomShip" op="set" val="0"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_removeCrew" lvl="0" max_lvl="0" blue="false">
+    <text>Crew Loss [Current: Hidden]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_removeCrew" op="set" val="1"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_removeCrew" lvl="1" max_lvl="1" blue="false">
+    <text>Crew Loss [Current: Shown]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_removeCrew" op="set" val="0"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_crewMember" lvl="0" max_lvl="0" blue="false">
+    <text>Gain Crew [Current: Hidden]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_crewMember" op="set" val="1"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_crewMember" lvl="1" max_lvl="1" blue="false">
+    <text>Gain Crew [Current: Shown]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_crewMember" op="set" val="0"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_revealMap" lvl="0" max_lvl="0" blue="false">
+    <text>Map Reveal [Current: Hidden]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_revealMap" op="set" val="1"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_revealMap" lvl="1" max_lvl="1" blue="false">
+    <text>Map Reveal [Current: Shown]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_revealMap" op="set" val="0"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_autoReward" lvl="0" max_lvl="0" blue="false">
+    <text>Auto Reward [Current: Hidden]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_autoReward" op="set" val="1"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_autoReward" lvl="1" max_lvl="1" blue="false">
+    <text>Auto Reward [Current: Shown]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_autoReward" op="set" val="0"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_itemModify" lvl="0" max_lvl="0" blue="false">
+    <text>Modify Item [Current: Hidden]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_itemModify" op="set" val="1"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_itemModify" lvl="1" max_lvl="1" blue="false">
+    <text>Modify Item [Current: Shown]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_itemModify" op="set" val="0"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_modifyPursuit" lvl="0" max_lvl="0" blue="false">
+    <text>Modify Pursuit [Current: Hidden]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_modifyPursuit" op="set" val="1"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_modifyPursuit" lvl="1" max_lvl="1" blue="false">
+    <text>Modify Pursuit [Current: Shown]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_modifyPursuit" op="set" val="0"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_weapon" lvl="0" max_lvl="0" blue="false">
+    <text>Gain Weapon [Current: Hidden]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_weapon" op="set" val="1"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_weapon" lvl="1" max_lvl="1" blue="false">
+    <text>Gain Weapon [Current: Shown]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_weapon" op="set" val="0"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_drone" lvl="0" max_lvl="0" blue="false">
+    <text>Gain Drone [Current: Hidden]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_drone" op="set" val="1"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_drone" lvl="1" max_lvl="1" blue="false">
+    <text>Gain Drone [Current: Shown]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_drone" op="set" val="0"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_augment" lvl="0" max_lvl="0" blue="false">
+    <text>Gain Augment [Current: Hidden]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_augment" op="set" val="1"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_augment" lvl="1" max_lvl="1" blue="false">
+    <text>Gain Augment [Current: Shown]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_augment" op="set" val="0"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_damage" lvl="0" max_lvl="0" blue="false">
+    <text>Hull Damage/Repair [Current: Hidden]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_damage" op="set" val="1"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_damage" lvl="1" max_lvl="1" blue="false">
+    <text>Hull Damage/Repair [Current: Shown]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_damage" op="set" val="0"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_upgrade" lvl="0" max_lvl="0" blue="false">
+    <text>System Upgrade [Current: Hidden]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_upgrade" op="set" val="1"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_upgrade" lvl="1" max_lvl="1" blue="false">
+    <text>System Upgrade [Current: Shown]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_upgrade" op="set" val="0"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_boarders" lvl="0" max_lvl="0" blue="false">
+    <text>Enemy Boarder [Current: Hidden]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_boarders" op="set" val="1"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="choiceInfo_event_boarders" lvl="1" max_lvl="1" blue="false">
+    <text>Enemy Boarder [Current: Shown]</text>
+    <event>
+      <metaVariable name="choiceInfo_event_boarders" op="set" val="0"/>
+      <loadEvent>STORAGE_CHECK_CHOICEINFO_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="pilot" max_group="999" blue="false" hidden="true">
+    <text>Nevermind.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+
+</event>

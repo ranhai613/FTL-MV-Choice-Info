@@ -55,7 +55,7 @@ class NameReturn():
         return self._priority
     
     def getInfo(self):
-        return self._infoText
+        return '[NAME]storageCheck[/NAME]' + self._infoText
     
 class TextReturn(EventBaseClass):
     '''A proxy of loadEvent and this deals with <textReturn>.'''
@@ -72,7 +72,7 @@ class UnlockCustomShip(EventBaseClass):
     
     def setInfo(self):
         text = ajustText(self._element.text.replace('PLAYER_SHIP_', ''), False)
-        self._infoText = f'<#>Unlock Ship({text})'
+        self._infoText = f'[NAME]unlockCustomShip[/NAME]<#>Unlock Ship({text})'
 
 class RemoveCrew(EventBaseClass):
     '''Deal with <removeCrew>.'''
@@ -83,15 +83,15 @@ class RemoveCrew(EventBaseClass):
         clonetags = xpath(self._element, './clone')
         if len(clonetags) != 1:
             print('Warning in RemoveCrew: There are multiple <clone> tags or no such tags.')
-            self._infoText = '<!>Lose your crew(?)'
+            self._infoText = '[NAME]removeCrew[/NAME]<!>Lose your crew(?)'
             return
         if clonetags[0].text == 'true':
-            self._infoText = '<!>Lose your crew(clonable)'
+            self._infoText = '[NAME]removeCrew[/NAME]<!>Lose your crew(clonable)'
         elif clonetags[0].text == 'false':
-            self._infoText = '<!>Lose your crew(UNCLONABLE)'
+            self._infoText = '[NAME]removeCrew[/NAME]<!>Lose your crew(UNCLONABLE)'
         else:
             print('Warning in RemoveCrew: <clone>.text was expected as "true" or "false", but an unknown word came: ', clonetags[0].text) 
-            self._infoText = '<!>Lose your crew(?)'
+            self._infoText = '[NAME]removeCrew[/NAME]<!>Lose your crew(?)'
 
 class CrewMember(EventBaseClass):
     '''Deal with <crewMember>. This shows crew gain info if "amount" is plus, otherwise crew loss(unclonable) info if "amount" is minus.'''
@@ -107,9 +107,9 @@ class CrewMember(EventBaseClass):
         
         if amount > 0:
             race = ajustText(self._element.get('class', 'Random').replace('LIST_CREW_', ''), False)
-            self._infoText = f'Gain a crew({race})'
+            self._infoText = f'[NAME]crewMember[/NAME]Gain a crew({race})'
         elif amount < 0:
-            self._infoText = '<!>Lose your crew(UNCLONABLE)'
+            self._infoText = '[NAME]removeCrew[/NAME]<!>Lose your crew(UNCLONABLE)'
 
 class CrewMember_CrewLossOnly(EventBaseClass):
     '''Deal with <crewMember> only when "amount" is minus and show crew loss(unclonable) info.'''
@@ -124,7 +124,7 @@ class CrewMember_CrewLossOnly(EventBaseClass):
             return
         
         if amount < 0:
-            self._infoText = '<!>Lose your crew(UNCLONABLE)'
+            self._infoText = '[NAME]removeCrew[/NAME]<!>Lose your crew(UNCLONABLE)'
 
 class RevealMap(EventBaseClass):
     '''Deal with <revealMap>.'''
@@ -132,7 +132,7 @@ class RevealMap(EventBaseClass):
         super().__init__(element, priority)
     
     def setInfo(self):
-        self._infoText = 'Map Reveal'
+        self._infoText = '[NAME]revealMap[/NAME]Map Reveal'
 
 class AutoReward(EventBaseClass):
     '''Deal with <autoReward>.'''
@@ -142,7 +142,7 @@ class AutoReward(EventBaseClass):
     def setInfo(self):
         level = self._element.get('level', '?')[0]
         stuff_type = ajustText(self._element.text)
-        self._infoText = f'Reward {stuff_type}({level})'
+        self._infoText = f'[NAME]autoReward[/NAME]Reward {stuff_type}({level})'
 
 class ItemModify(EventBaseClass):
     '''Deal with <itemModify>.'''
@@ -170,7 +170,7 @@ class ItemModify(EventBaseClass):
                 itemlist.append(f'{item}{amount_min}')
             else:
                 itemlist.append(f'{amount_min}≤{item}≤{amount_max}')
-        self._infoText = ' '.join(itemlist)
+        self._infoText = '[NAME]itemModify[/NAME]' + ' '.join(itemlist)
 
 class ModifyPursuit(EventBaseClass):
     '''Deal with <modifyPursuit>.'''
@@ -188,9 +188,9 @@ class ModifyPursuit(EventBaseClass):
             return
         
         if amount < 0:
-            self._infoText = f'Fleet Delay({str(amount * -1)})'
+            self._infoText = f'[NAME]modifyPursuit[/NAME]Fleet Delay({str(amount * -1)})'
         elif amount > 0:
-            self._infoText = f'<!>Fleet Advance({str(amount)})'
+            self._infoText = f'[NAME]modifyPursuit[/NAME]<!>Fleet Advance({str(amount)})'
 
 class Reward(EventBaseClass):
     '''Deal with <weapon>, <drone>, and <augment>.'''
@@ -200,9 +200,9 @@ class Reward(EventBaseClass):
     def setInfo(self):
         name = ajustText(self._element.get('name', '?'), False)
         if self._element.tag[0] in ('a', 'e', 'i', 'o', 'u'):
-            self._infoText = f'Gain an {self._element.tag}({name})'
+            self._infoText = f'[NAME]{self._element.tag}[/NAME]Gain an {self._element.tag}({name})'
         else:
-            self._infoText = f'Gain a {self._element.tag}({name})'
+            self._infoText = f'[NAME]{self._element.tag}[/NAME]Gain a {self._element.tag}({name})'
 
 class Damage(EventBaseClass):
     '''Deal with <damage>.'''
@@ -220,9 +220,9 @@ class Damage(EventBaseClass):
             return
         
         if amount < 0:
-            self._infoText = f'Repair Hull({str(amount * -1)}$)'
+            self._infoText = f'[NAME]damage[/NAME]Repair Hull({str(amount * -1)}$)'
         elif amount > 0:
-            self._infoText = f'<!>Damage Hull({str(amount)})'
+            self._infoText = f'[NAME]damage[/NAME]<!>Damage Hull({str(amount)})'
 
 class Upgrade(EventBaseClass):
     '''Deal with <upgrade>.'''
@@ -235,7 +235,7 @@ class Upgrade(EventBaseClass):
         if system is None or amount is None:
             return
         
-        self._infoText = f'System Upgrade({system} x{amount})'
+        self._infoText = f'[NAME]upgrade[/NAME]System Upgrade({system} x{amount})'
 
 class Boarders(EventBaseClass):
     '''Deal with <boarders>.'''
@@ -251,13 +251,13 @@ class Boarders(EventBaseClass):
             amount_max = int(amount_max)
         except ValueError as e:
             print(e)
-            self._infoText = f'<!>Enemy Boarding({race})'
+            self._infoText = f'[NAME]boarders[/NAME]<!>Enemy Boarding({race})'
             return
         
         if amount_min == amount_max:
-            self._infoText = f'<!>Enemy Boarding(x{str(amount_min)} {race})'
+            self._infoText = f'[NAME]boarders[/NAME]<!>Enemy Boarding(x{str(amount_min)} {race})'
         else:
-            self._infoText = f'<!>Enemy Boarding(x{str(amount_min)}-x{str(amount_max)} {race})'
+            self._infoText = f'[NAME]boarders[/NAME]<!>Enemy Boarding(x{str(amount_min)}-x{str(amount_max)} {race})'
 
 class Test(EventBaseClass):
     def __init__(self, element, priority) -> None:
