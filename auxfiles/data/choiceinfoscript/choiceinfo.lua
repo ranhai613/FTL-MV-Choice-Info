@@ -8,7 +8,7 @@ local vter_with_i_n = function (cvec)
 end
 
 local parseINFO = function (full)
-	local analyzeINFO = function (text)
+	return function (text)
 		text = text:sub(7, -8)
 		local name = text:match('%[NAME%].-%[/NAME%]')
 		if name == nil then
@@ -21,11 +21,10 @@ local parseINFO = function (full)
 			return ''
 		end
 	end
-	return analyzeINFO
 end
 
 local parseFightINFO = function (full)
-	local analyzeFightINFO = function (text)
+	return function (text)
 		local is_worthShowing = false
 		text = text:sub(12, -13)
 		text = text:gsub('%[INFO%].-%[/INFO%]', function (info)
@@ -41,7 +40,6 @@ local parseFightINFO = function (full)
 			return ''
 		end
 	end
-	return analyzeFightINFO	
 end
 
 local parse = function (text, full)
@@ -54,6 +52,10 @@ script.on_internal_event(Defines.InternalEvents.PRE_CREATE_CHOICEBOX, function(e
     local Choices = event:GetChoices()
 	local fullInfo = '--------[Full Info]--------'
     for choice, i, n in vter_with_i_n(Choices) do
+		if choice.text.isLiteral == false then
+			choice.text.data = choice.text:getText()
+			choice.text.isLiteral = true
+		end	
 		local original_text = choice.text.data
         choice.text.data = parse(original_text, false)
 		fullInfo = fullInfo..'\n\n'..tostring(i + 1)..'. '..parse(original_text, true)
