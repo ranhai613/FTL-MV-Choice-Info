@@ -32,12 +32,12 @@ def package(name, dist_dir):
         make_archive(f'{dist_dir}/{name}', 'zip', tmp_root)
 
 MV_VERSION = '5.4.6'
-CHOICE_INFO_VERSION = '0.2.1'
+CHOICE_INFO_VERSION = '2.1'
 
 #{package name: config} the config defaults to the full version, so each setting is for restricting info.
 packagedict = {
     #Full version
-    f'[MV{MV_VERSION}]ChoiceInfo-Full-{CHOICE_INFO_VERSION}': {},
+    f'[MV{MV_VERSION}]ChoiceInfo-{CHOICE_INFO_VERSION}': {},
 }
 
 if __name__ == '__main__':
