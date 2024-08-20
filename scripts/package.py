@@ -1,32 +1,47 @@
 from run import main
-from shutil import make_archive, rmtree
-from os import mkdir
-from events import EVENTCLASSMAPS
+import re
+from shutil import make_archive, rmtree, copytree, copy
+from tempfile import TemporaryDirectory
+from mvlocscript.fstools import glob_posix, ensureparent
+from mvlocscript.ftl import parse_ftlxml, write_ftlxml
 
-def package(name, config):
-    #analyze info and write it to xml.append.
-    main(packageConfig=config)
-    #make zip file.
-    make_archive(f'packages/{name}', 'zip', 'output')
+def package(name, dist_dir):
+    with TemporaryDirectory() as tmp_root:
+        tmp_root += '/working/'
+        copytree('output', tmp_root)
+        output_files = {file for file in glob_posix('**', root_dir='output')}
+        for auxfile_path in glob_posix('**', root_dir='auxfiles'):
+            if auxfile_path not in output_files:
+                print('copying file: ',  auxfile_path)
+                ensureparent(tmp_root + auxfile_path)
+                copy('auxfiles/' + auxfile_path, tmp_root + auxfile_path)
+                continue
+            
+            if not re.match(r'.+\.xml\.append$', auxfile_path):
+                print('unhandlable file found: ', auxfile_path)
+                continue
+            
+            print('merging xml file: ', auxfile_path)
+            output_tree = parse_ftlxml('output/' + auxfile_path)
+            auxfile_tree = parse_ftlxml('auxfiles/' + auxfile_path)
+            
+            output_tree.getroot().extend([element for element in auxfile_tree.getroot().iterchildren()])
+            write_ftlxml(tmp_root + auxfile_path, output_tree)
+                    
+        #make zip file.
+        make_archive(f'{dist_dir}/{name}', 'zip', tmp_root)
 
 MV_VERSION = '5.4.6'
-CHOICE_INFO_VERSION = 'beta0.1.5'
+CHOICE_INFO_VERSION = '0.2.0'
 
 #{package name: config} the config defaults to the full version, so each setting is for restricting info.
 packagedict = {
-    #Ship Unlock + Crew Loss only version
-    f'[MV{MV_VERSION}]ChoiceInfo-ShipUnlock+CrewLoss-{CHOICE_INFO_VERSION}':
-        {
-         'eventMap': EVENTCLASSMAPS['ShipUnlock+CrewLoss'], #default: all events in events.py. You can restrict to specific events by set an event class map.
-         'ignoreFixedEvent' : True, #default: False. Wether ignore fixed events(i.g. Storage Check) or not.
-         'maxDeeperRetry': 1, #default: 10. How many times Event Analyzer searches info one step deeply if it cannot find any info.
-        },
     #Full version
     f'[MV{MV_VERSION}]ChoiceInfo-Full-{CHOICE_INFO_VERSION}': {},
 }
 
 if __name__ == '__main__':
     for name, config in packagedict.items():
-        rmtree('output/data')
-        mkdir('output/data')
-        package(name, config)
+        rmtree('output')
+        main(packageConfig=config)
+        package(name, 'packages')

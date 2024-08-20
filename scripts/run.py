@@ -1,7 +1,7 @@
 from mvlocscript.ftl import parse_ftlxml, ftl_xpath_matchers, write_ftlxml
 from mvlocscript.xmltools import xpath, UniqueXPathGenerator
 from mvlocscript.potools import readpo
-from mvlocscript.fstools import glob_posix
+from mvlocscript.fstools import glob_posix, ensureparent
 from events import EVENTCLASSMAPS, NameReturn
 from loadevent import sanitize_loadEvent
 from json5 import load
@@ -535,6 +535,7 @@ def main(stat=False, packageConfig: dict={}):
 
             if is_changed:
                 path = f'output/{xmlpath}' if re.match(r'.+\.xml\.append$', xmlpath) else f'output/{xmlpath}.append'
+                ensureparent(path)
                 write_ftlxml(path, root)
     else:
         return {name: global_event_map[name] for name in loadEvent_stat}
