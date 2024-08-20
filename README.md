@@ -5,9 +5,11 @@ This mod shows you event info for each choice in events and fight(crew kill, hul
 
 ## Running the script
 
-You can find it in `scripts/`.
+Download MV data.zip and extract data/ into src-en/ at this directory(so it should be src-en/data/)
 
-The script is written in Python3.11 and managed by poetry. To install poetry, just enter `pip install poetry`. And you can install dependencies by `poetry install`.
+You can find scritps it in `scripts/`.
+
+The scripts are written in Python3.11 and managed by poetry. To install poetry, just enter `pip install poetry`. And you can install dependencies by `poetry install`.
 
 To make packages, run `python scripts/package.py`. After the packaging process, you will see the mod in `packages/`.
 
