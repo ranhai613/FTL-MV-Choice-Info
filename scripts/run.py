@@ -89,28 +89,34 @@ class EventAnalyzer():
                     loadEventTags = xpath(event.element, './loadEvent')
                     if len(loadEventTags) == 1:
                         loadEventName = loadEventTags[0].text
-                        if loadEventName:
-                            loadEvent_stat.add(loadEventName)
-                            # loadEvent = global_event_map.get(loadEventName)
-                            # if loadEvent is not None:
-                            #     new_events.append(loadEvent)
-                            #     is_changed = True
+                        assert loadEventName
+                        
+                        loadEvent_stat.add(loadEventName)
+                        # TODO: find a way to handle loadEvent without falling into infinite loop.
                     else:
                         new_events.append(event)
                     continue
                 
-                if load_event_name == 'COMBAT_CHECK' and ship is not None:
-                    fightEvent = FightEvent(ship)
-                    new_events.append(fightEvent)
-                    continue
-                elif load_event_name == 'COMBAT_CHECK' and ship is None:
-                    # print('found fight event ship is not given to: ', event.xmlpath, '#L', event.element.sourceline)
-                    pass
+                if load_event_name == 'COMBAT_CHECK':
+                    if ship is None:
+                        referred_ship_set = global_shipReference_map.get(self._eventName)
+                        if referred_ship_set is None:
+                            # print('found fight event ship is not given to: ', event.xmlpath, '#L', event.element.sourceline)
+                            pass
+                        else:
+                            if len(referred_ship_set) == 1:
+                                ship = next(iter(referred_ship_set))
+                            # TODO: decide how to handle multiple ships
+                    
+                    if ship is not None:
+                        fightEvent = FightEvent(ship)
+                        new_events.append(fightEvent)
+                        continue
                 
-                if ship is not None:
-                    global_shipReference_map[load_event_name].add(ship)
                 load_event = global_event_map.get(load_event_name)
                 if not load_event:
+                    # TODO: make all events registered in global_event_map.
+                    #print('found no load event: ', load_event_name)
                     new_events.append(event)
                     continue
                 
@@ -271,7 +277,7 @@ class EventAnalyzer():
                                     nece_info.append(f'[FightINFO]Fight({key}: {value})[/FightINFO]')
                 
                 if len(nece_info) > 0:
-                    #remove duplicated info before return list. I don't like to use set() to remove them because it doesn't care the order, that makes hard to see diff under dev.
+                    #remove duplicated info before return list.
                     return list(dict.fromkeys(nece_info))
             else:
                 return []
@@ -299,7 +305,7 @@ class Choice(ElementBaseClass):
 
     @childEvents.setter
     def childEvents(self, value):
-        self._evetnAnalyzer = EventAnalyzer(value, self.eventName())
+        self._evetnAnalyzer = EventAnalyzer(value, self.get_eventName())
         self._evetnAnalyzer.ensureChildEvents(self._ship)
     
     @property
@@ -310,7 +316,7 @@ class Choice(ElementBaseClass):
 
         return texttags[0]
 
-    def eventName(self) -> str|None:
+    def get_eventName(self) -> str|None:
         if self._element is None:
             return None
         
@@ -328,13 +334,20 @@ class Choice(ElementBaseClass):
                 break
         else:
             return
-        if len(ships) > 1:
-            return
+        
+        assert len(ships) == 1
     
         self._ship = global_ship_map.get(ships[0])
+        if self._ship is None:
+            return
+        
+        for eventElement in self.element.iter('event'):
+            loadName = eventElement.attrib.get('load')
+            if loadName:
+                global_shipReference_map[loadName].add(self._ship)
 
     def init_childEventTags(self):
-        self._evetnAnalyzer = EventAnalyzer([Event(element, self._xmlpath, self._uniqueXPathGenerator) for element in xpath(self._element, './event')], self.eventName())
+        self._evetnAnalyzer = EventAnalyzer([Event(element, self._xmlpath, self._uniqueXPathGenerator) for element in xpath(self._element, './event')], self.get_eventName())
         self._evetnAnalyzer.ensureChildEvents(self._ship)
                 
     def get_textTag_uniqueXPath(self) -> str|None:

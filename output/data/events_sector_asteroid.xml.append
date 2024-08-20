@@ -147,7 +147,7 @@
       <mod:selector hidden="true"/>
       <mod:findLike type="text">
         <mod:selector>Attempt to salvage some of the wreckage from the collision.</mod:selector>
-        <mod:setValue>Attempt to salvage some of the wreckage from the collision.[INFO]33% [NAME]autoReward[/NAME]Reward Stuff(M)[/INFO][INFO]33% [NAME]modifyPursuit[/NAME]&lt;!&gt;Fleet Advance(1)[/INFO][INFO]33% [NAME]autoReward[/NAME]Reward Stuff(H)[/INFO][INFO]33% &lt;=[/INFO]</mod:setValue>
+        <mod:setValue>Attempt to salvage some of the wreckage from the collision.[INFO]33% [NAME]autoReward[/NAME]Reward Stuff(M)[/INFO][INFO]33% [NAME]modifyPursuit[/NAME]&lt;!&gt;Fleet Advance(1)[/INFO][INFO]33% [NAME]autoReward[/NAME]Reward Stuff(H)[/INFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
@@ -185,17 +185,6 @@
             <mod:selector>Do something onboard the ship.</mod:selector>
             <mod:setValue>Do something onboard the ship.[INFO][NAME]storageCheck[/NAME]Storage Check[/INFO]</mod:setValue>
           </mod:findLike>
-        </mod:findLike>
-      </mod:findLike>
-    </mod:findLike>
-  </mod:findName>
-  <mod:findName name="ASTEROID_HURTMINER_STEAL" type="eventList">
-    <mod:findLike type="event">
-      <mod:findLike type="choice">
-        <mod:selector hidden="true"/>
-        <mod:findLike type="text">
-          <mod:selector>Continue...</mod:selector>
-          <mod:setValue>Continue...[INFO]&lt;=[/INFO]</mod:setValue>
         </mod:findLike>
       </mod:findLike>
     </mod:findLike>
@@ -1119,7 +1108,7 @@
       <mod:selector hidden="true" req="ZOLTAN_DELETER"/>
       <mod:findLike type="text">
         <mod:selector>(Zoltan Deleter) Threaten the Zoltans.</mod:selector>
-        <mod:setValue>(Zoltan Deleter) Threaten the Zoltans.[INFO]25% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO][INFO]25% &lt;=[/INFO]</mod:setValue>
+        <mod:setValue>(Zoltan Deleter) Threaten the Zoltans.[INFO]25% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO][FightINFO]Fight(CK: [INFO]25% [NAME]autoReward[/NAME]Reward Standard(H)[/INFO])(HK: [INFO]25% [NAME]autoReward[/NAME]Reward Standard(M)[/INFO])(SR: [INFO]6% [NAME]autoReward[/NAME]Reward Stuff(R)[/INFO] [INFO]6% [NAME]itemModify[/NAME]-4≤{≤-1 25≤~≤45 -2≤}≤-1 -2≤|≤0[/INFO])[/FightINFO]</mod:setValue>
       </mod:findLike>
     </mod:findLike>
   </mod:findName>
