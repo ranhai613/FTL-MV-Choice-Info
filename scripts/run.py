@@ -321,7 +321,7 @@ class Choice(ElementBaseClass):
             return None
         
         for element in self._element.iterancestors('event', 'eventList'):
-            name = element.attrib.get('name')
+            name = element.get('name')
             if name:
                 return name
         else:
@@ -342,7 +342,7 @@ class Choice(ElementBaseClass):
             return
         
         for eventElement in self.element.iter('event'):
-            loadName = eventElement.attrib.get('load')
+            loadName = eventElement.get('load')
             if loadName:
                 global_shipReference_map[loadName].add(self._ship)
 
@@ -496,6 +496,7 @@ def main(stat=False, packageConfig: dict={}):
     for tag in global_choice_map.values():
         tag.init_shipTag()
         tag.init_childEventTags()
+    deleteNoneKey(global_shipReference_map)
     print('initializing events...')
     for tag in global_event_map.values():
         tag.init_childChoiceTags()
