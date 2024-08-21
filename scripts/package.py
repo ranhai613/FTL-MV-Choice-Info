@@ -5,6 +5,11 @@ from tempfile import TemporaryDirectory
 from mvlocscript.fstools import glob_posix, ensureparent
 from mvlocscript.ftl import parse_ftlxml, write_ftlxml
 
+MV_VERSION = '5.4.6'
+CHOICE_INFO_VERSION = '2.1'
+
+PACKAGE_NAME = f'[MV{MV_VERSION}]ChoiceInfo-{CHOICE_INFO_VERSION}'
+
 def package(name, dist_dir):
     with TemporaryDirectory() as tmp_root:
         tmp_root += '/working/'
@@ -31,17 +36,7 @@ def package(name, dist_dir):
         #make zip file.
         make_archive(f'{dist_dir}/{name}', 'zip', tmp_root)
 
-MV_VERSION = '5.4.6'
-CHOICE_INFO_VERSION = '2.1'
-
-#{package name: config} the config defaults to the full version, so each setting is for restricting info.
-packagedict = {
-    #Full version
-    f'[MV{MV_VERSION}]ChoiceInfo-{CHOICE_INFO_VERSION}': {},
-}
-
 if __name__ == '__main__':
-    for name, config in packagedict.items():
-        rmtree('output')
-        main(packageConfig=config)
-        package(name, 'packages')
+    rmtree('output')
+    main()
+    package(PACKAGE_NAME, 'packages')

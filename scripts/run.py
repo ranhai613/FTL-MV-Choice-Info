@@ -2,7 +2,7 @@ from mvlocscript.ftl import parse_ftlxml, ftl_xpath_matchers, write_ftlxml
 from mvlocscript.xmltools import xpath, UniqueXPathGenerator
 from mvlocscript.potools import readpo
 from mvlocscript.fstools import glob_posix, ensureparent
-from events import EVENTCLASSMAPS, NameReturn
+from events import EVENTCLASSMAP, NameReturn
 from loadevent import sanitize_loadEvent
 from json5 import load
 import re
@@ -187,9 +187,6 @@ class EventAnalyzer():
         
         @eventAnalyze.register
         def _(event: FixedEvent, tree):
-            global PackageConfig
-            if PackageConfig.get('ignoreFixedEvent'):
-                return None, None
             return [NameReturn(event.eventText)], None
         
         @eventAnalyze.register
@@ -206,9 +203,8 @@ class EventAnalyzer():
         
         @eventAnalyze.register
         def _(event: Event, tree):
-            global PackageConfig
             eventlist = []
-            eventMap = PackageConfig.get('eventMap', EVENTCLASSMAPS['Full'])
+            eventMap = EVENTCLASSMAP
             for element in event._element.iterchildren(*eventMap.keys()):
                 try:
                     eventclass = eventMap[element.tag](element)
@@ -225,12 +221,11 @@ class EventAnalyzer():
             params:
             - eventclass.priority: param for each event. Important event should be bigger on this param. You can edit it in events.py
             - increment: default to 0. If a parent node has only one child, the child node's increment += 1. If a parent node has multiple children, the value reset to 0.
-            - i: default to range(10). If treeAnalyze cannot find any info, increment i and retry. You can change max retry value by PackageConfig['maxDeeperRetry'].
+            - i: default to range(10). If treeAnalyze cannot find any info, increment i and retry.
             - tree.depth(node): how deep the node locates from the root.
             - tune: default to 0. You can change the base value by editing this. For now it isn't used.
             '''
-            global PackageConfig
-            for i in range(PackageConfig.get('maxDeeperRetry') or 10):
+            for i in range(10):
                 nece_info = []
                 for node in tree.all_nodes_itr():
                     info = []
@@ -448,19 +443,16 @@ global_ship_map = {}
 
 global_shipReference_map = defaultdict(set)
 
-PackageConfig = None
-
-with open('mvloc.config.jsonc', 'tr', encoding='utf8') as f:
-    config = load(f)
 
 @stop_watch
-def main(stat=False, packageConfig: dict={}):
+def main(stat=False):
     '''analyze events in xml and write info to .po files in locale/. po file is used for MV translation, and you need one more step to generate xml from po files.
     
     stat: if true, the script does not generate po files. Instead it returns stat of events that are invoked by <loadEvent>, that the script cannot handle with by default. The stat is used for additional process to sanitize <loadEvent>
     '''
-    global PackageConfig
-    PackageConfig = packageConfig
+    with open('mvloc.config.jsonc', 'tr', encoding='utf8') as f:
+            config = load(f)
+    
     for xmlpath in glob_posix('src-en/data/*'):
         #find xml
         if not re.match(r'.+\.(xml|xml\.append)$', xmlpath):
@@ -505,7 +497,7 @@ def main(stat=False, packageConfig: dict={}):
         tag.set_additional_info()
     
     if not stat:
-        print('creating xmls...')
+        print('generating xmls...')
         textTag_map = {f'{choice._xmlpath}${choice.get_textTag_uniqueXPath()}': choice for choice in global_choice_map.values()}
         deleteNoneKey(textTag_map)
 

@@ -11,7 +11,7 @@ CUSTOM_FONT = {
     'fire': '‰',
     'power': '†',
     'cooldown': '‡',
-    #'upgraded': '™'
+    #'upgraded': '™'# Not supported in MV font?
 }
 
 class EventBaseClass():
@@ -32,8 +32,7 @@ class EventBaseClass():
         return self._infoText
 
 def ajustText(text, use_custom_font = True):
-    if text is None:
-        return None
+    assert text is not None
     
     if use_custom_font:
         text = text.lower()
@@ -81,17 +80,14 @@ class RemoveCrew(EventBaseClass):
     
     def setInfo(self):
         clonetags = xpath(self._element, './clone')
-        if len(clonetags) != 1:
-            print('Warning in RemoveCrew: There are multiple <clone> tags or no such tags.')
-            self._infoText = '[NAME]removeCrew[/NAME]<!>Lose your crew(?)'
-            return
+        assert len(clonetags) == 1
+        
         if clonetags[0].text == 'true':
             self._infoText = '[NAME]removeCrew[/NAME]<!>Lose your crew(clonable)'
         elif clonetags[0].text == 'false':
             self._infoText = '[NAME]removeCrew[/NAME]<!>Lose your crew(UNCLONABLE)'
         else:
-            print('Warning in RemoveCrew: <clone>.text was expected as "true" or "false", but an unknown word came: ', clonetags[0].text) 
-            self._infoText = '[NAME]removeCrew[/NAME]<!>Lose your crew(?)'
+            raise ValueError
 
 class CrewMember(EventBaseClass):
     '''Deal with <crewMember>. This shows crew gain info if "amount" is plus, otherwise crew loss(unclonable) info if "amount" is minus.'''
@@ -99,31 +95,11 @@ class CrewMember(EventBaseClass):
         super().__init__(element, priority)
     
     def setInfo(self):
-        try:
-            amount = int(self._element.get('amount'))
-        except ValueError as e:
-            print(e)
-            return
-        
+        amount = int(self._element.attrib['amount'])        
         if amount > 0:
             race = ajustText(self._element.get('class', 'Random').replace('LIST_CREW_', ''), False)
             self._infoText = f'[NAME]crewMember[/NAME]Gain a crew({race})'
         elif amount < 0:
-            self._infoText = '[NAME]removeCrew[/NAME]<!>Lose your crew(UNCLONABLE)'
-
-class CrewMember_CrewLossOnly(EventBaseClass):
-    '''Deal with <crewMember> only when "amount" is minus and show crew loss(unclonable) info.'''
-    def __init__(self, element, priority=1) -> None:
-        super().__init__(element, priority)
-    
-    def setInfo(self):
-        try:
-            amount = int(self._element.get('amount'))
-        except ValueError as e:
-            print(e)
-            return
-        
-        if amount < 0:
             self._infoText = '[NAME]removeCrew[/NAME]<!>Lose your crew(UNCLONABLE)'
 
 class RevealMap(EventBaseClass):
@@ -140,7 +116,7 @@ class AutoReward(EventBaseClass):
         super().__init__(element, priority)
     
     def setInfo(self):
-        level = self._element.get('level', '?')[0]
+        level = self._element.attrib['level'][0]
         stuff_type = ajustText(self._element.text)
         self._infoText = f'[NAME]autoReward[/NAME]Reward {stuff_type}({level})'
 
@@ -151,25 +127,20 @@ class ItemModify(EventBaseClass):
     
     def setInfo(self):
         itemtags = xpath(self._element, './item')
-        if len(itemtags) == 0:
-            return
+        assert len(itemtags) > 0
         
         itemlist = []
         for itemtag in itemtags:
-            item = ajustText(itemtag.get('type'))
-            amount_min = itemtag.get('min')
-            amount_max = itemtag.get('max')
-            try:
-                amount_min = int(amount_min)
-                amount_max = int(amount_max)
-            except ValueError as e:
-                print(e)
-                continue
+            item = ajustText(itemtag.attrib['type'])
+            amount_min = int(itemtag.attrib['min'])
+            amount_max = int(itemtag.attrib['max'])
             
             if amount_min == amount_max:
                 itemlist.append(f'{item}{amount_min}')
-            else:
+            elif amount_max > amount_min:
                 itemlist.append(f'{amount_min}≤{item}≤{amount_max}')
+            else:
+                raise ValueError
         self._infoText = '[NAME]itemModify[/NAME]' + ' '.join(itemlist)
 
 class ModifyPursuit(EventBaseClass):
@@ -178,19 +149,14 @@ class ModifyPursuit(EventBaseClass):
         super().__init__(element, priority)
     
     def setInfo(self):
-        amount = self._element.get('amount')
-        if amount is None:
-            return
-        try:
-            amount = int(amount)
-        except ValueError as e:
-            print(e)
-            return
+        amount = int(self._element.attrib['amount'])
         
         if amount < 0:
-            self._infoText = f'[NAME]modifyPursuit[/NAME]Fleet Delay({str(amount * -1)})'
+            self._infoText = f'[NAME]modifyPursuit[/NAME]Fleet Delay({amount * -1})'
         elif amount > 0:
-            self._infoText = f'[NAME]modifyPursuit[/NAME]<!>Fleet Advance({str(amount)})'
+            self._infoText = f'[NAME]modifyPursuit[/NAME]<!>Fleet Advance({amount})'
+        else:
+            raise ValueError
 
 class Reward(EventBaseClass):
     '''Deal with <weapon>, <drone>, and <augment>.'''
@@ -198,7 +164,7 @@ class Reward(EventBaseClass):
         super().__init__(element, priority)
     
     def setInfo(self):
-        name = ajustText(self._element.get('name', '?'), False)
+        name = ajustText(self._element.attrib['name'], False)
         if self._element.tag[0] in ('a', 'e', 'i', 'o', 'u'):
             self._infoText = f'[NAME]{self._element.tag}[/NAME]Gain an {self._element.tag}({name})'
         else:
@@ -210,19 +176,15 @@ class Damage(EventBaseClass):
         super().__init__(element, priority)
     
     def setInfo(self):
-        amount = self._element.get('amount')
-        if amount is None:
-            return
-        try:
-            amount = int(amount)
-        except ValueError as e:
-            print(e)
-            return
+        amount = int(self._element.attrib['amount'])
         
         if amount < 0:
-            self._infoText = f'[NAME]damage[/NAME]Repair Hull({str(amount * -1)}$)'
+            self._infoText = f'[NAME]damage[/NAME]Repair Hull({amount * -1}$)'
         elif amount > 0:
-            self._infoText = f'[NAME]damage[/NAME]<!>Damage Hull({str(amount)})'
+            self._infoText = f'[NAME]damage[/NAME]<!>Damage Hull({amount})'
+        else:
+            # NOTE: there is a case where amount is 0 - example attrib of such tag: {'amount': '0', 'system': 'room', 'effect': 'breach'}
+            pass
 
 class Upgrade(EventBaseClass):
     '''Deal with <upgrade>.'''
@@ -230,10 +192,8 @@ class Upgrade(EventBaseClass):
         super().__init__(element, priority)
     
     def setInfo(self):
-        system = ajustText(self._element.get('system'))
-        amount = self._element.get('amount')
-        if system is None or amount is None:
-            return
+        system = ajustText(self._element.attrib['system'])
+        amount = self._element.attrib['amount']
         
         self._infoText = f'[NAME]upgrade[/NAME]System Upgrade({system} x{amount})'
 
@@ -244,20 +204,15 @@ class Boarders(EventBaseClass):
     
     def setInfo(self):
         race = ajustText(self._element.get('class', '?').replace('LIST_CREW_', ''), False)
-        amount_min = self._element.get('min')
-        amount_max = self._element.get('max')
-        try:
-            amount_min = int(amount_min)
-            amount_max = int(amount_max)
-        except ValueError as e:
-            print(e)
-            self._infoText = f'[NAME]boarders[/NAME]<!>Enemy Boarding({race})'
-            return
+        amount_min = int(self._element.attrib['min'])
+        amount_max = int(self._element.attrib['max'])
         
         if amount_min == amount_max:
-            self._infoText = f'[NAME]boarders[/NAME]<!>Enemy Boarding(x{str(amount_min)} {race})'
+            self._infoText = f'[NAME]boarders[/NAME]<!>Enemy Boarding(x{amount_min} {race})'
+        elif amount_max > amount_min:
+            self._infoText = f'[NAME]boarders[/NAME]<!>Enemy Boarding(x{amount_min}-x{amount_max} {race})'
         else:
-            self._infoText = f'[NAME]boarders[/NAME]<!>Enemy Boarding(x{str(amount_min)}-x{str(amount_max)} {race})'
+            raise ValueError
 
 class Test(EventBaseClass):
     def __init__(self, element, priority) -> None:
@@ -265,26 +220,19 @@ class Test(EventBaseClass):
 
 
 #not done(or not planned to implement): 'environment', 'recallBoarders', 'achievement', 'choiceRequiresCrew', 'instantEscape', 'win', 'lose'
-EVENTCLASSMAPS = {
-    "Full": {
-        "textReturn": TextReturn,
-        "unlockCustomShip": UnlockCustomShip,
-        "removeCrew": RemoveCrew,
-        "crewMember": CrewMember,
-        "reveal_map": RevealMap,
-        "autoReward": AutoReward,
-        "item_modify": ItemModify,
-        "modifyPursuit": ModifyPursuit,
-        "weapon": Reward,
-        "drone": Reward,
-        "augment": Reward,
-        "damage": Damage,
-        "upgrade": Upgrade,
-        "boarders": Boarders
-    },
-    "ShipUnlock+CrewLoss": {
-        "unlockCustomShip": UnlockCustomShip,
-        "removeCrew": RemoveCrew,
-        "crewMember": CrewMember_CrewLossOnly
-    }
+EVENTCLASSMAP = {
+    "textReturn": TextReturn,
+    "unlockCustomShip": UnlockCustomShip,
+    "removeCrew": RemoveCrew,
+    "crewMember": CrewMember,
+    "reveal_map": RevealMap,
+    "autoReward": AutoReward,
+    "item_modify": ItemModify,
+    "modifyPursuit": ModifyPursuit,
+    "weapon": Reward,
+    "drone": Reward,
+    "augment": Reward,
+    "damage": Damage,
+    "upgrade": Upgrade,
+    "boarders": Boarders,
 }
